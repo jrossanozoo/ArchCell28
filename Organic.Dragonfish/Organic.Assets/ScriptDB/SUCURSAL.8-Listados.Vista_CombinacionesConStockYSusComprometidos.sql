@@ -1,0 +1,72 @@
+/*------------------------------------------------------------------------------------------------------------------------*/
+-- Create date: <Junio'19>
+-- Description:	<Vista para omptimizar el uso de la tabla COMB>
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+--if exists (select 1 from sys.objects where object_id = object_id(N'[Listados].[CombinacionesConStockYSusComprometidos]') AND type = N'V')
+--	drop view [Listados].[CombinacionesConStockYSusComprometidos]
+--GO;
+
+--create view [Listados].[CombinacionesConStockYSusComprometidos]
+--as
+--	(
+--	SELECT 'CombinacionesConStockYSusComprometidos' as Origen
+--		, c_COMB.COART
+--		, c_COMB.COCOL
+--		, c_COMB.TALLE
+--		, c_COMB.COCOD
+--		, c_COMB.CORIG
+--		, c_COMB.CORIGPEDCO
+--		, c_COMB.CORIGPEDID
+--		, c_COMB.CORIGPRESU
+--		, c_COMB.DESCFW
+--		, c_COMB.COCANT
+--		, c_COMB.ENTRANSITO
+--		, c_COMB.PEDCOMP
+--		, c_COMB.PEDIDO
+--		, c_COMB.PRESUPUEST
+--		, c_COMB.MAXREPO
+--		, c_COMB.MINREPO
+--		, c_COMB.BDALTAFW
+--		, c_COMB.BDMODIFW
+--		, c_COMB.ESTTRANS
+--		, case when c_COMB.faltafw = '01/01/1900 00:00:00' then null else c_COMB.faltafw end as FALTAFW
+--		, case when c_COMB.fecexpo = '01/01/1900 00:00:00' then null else c_COMB.fecexpo end as FECEXPO
+--		, case when c_COMB.fecimpo = '01/01/1900 00:00:00' then null else c_COMB.fecimpo end as FECIMPO
+--		, case when c_COMB.fmodifw = '01/01/1900 00:00:00' then null else c_COMB.fmodifw end as FMODIFW
+--		, case when c_COMB.fectrans = '01/01/1900 00:00:00' then null else c_COMB.fectrans end as FECTRANS
+--		, c_COMB.HALTAFW
+--		, c_COMB.HORAEXPO
+--		, c_COMB.HORAIMPO
+--		, c_COMB.HMODIFW
+--		, c_COMB.SALTAFW
+--		, c_COMB.SMODIFW
+--		, c_COMB.UALTAFW
+--		, c_COMB.UMODIFW
+--		, c_COMB.VALTAFW
+--		, c_COMB.VMODIFW
+--		, vta.AFESALDO CompVta
+--		, cpr.AFESALDO CompCpr
+--		, art.CATEARTI
+--		, art.CLASIFART
+--		, art.FAMILIA
+--		, art.GRUPO
+--		, art.LINEA
+--		, art.MAT
+--		, art.ATEMPORADA
+--		, art.TIPOARTI
+--		, art.ARTFAB
+--	FROM ZooLogic.COMB c_COMB
+--	INNER join ZooLogic.ART art on art.ARTCOD = c_comb.COART
+--	LEFT JOIN (
+--				select det.FART, det.CCOLOR, det.TALLE, sum( det.AFESALDO ) AFESALDO
+--				from Zoologic.COMPROBANTEVDET as det
+--				INNER JOIN ZooLogic.COMPROBANTEV as cab  ON cab.CODIGO = det.CODIGO AND cab.FACTTIPO = 23
+--				group by det.FART, det.CCOLOR, det.TALLE
+--				) vta ON c_COMB.COART=vta.FART AND c_COMB.COCOL=vta.CCOLOR	AND c_COMB.TALLE=vta.TALLE
+--	LEFT JOIN (
+--				select det.FART, det.FCOLO, det.FTALL, sum( det.AFESALDO ) AFESALDO
+--				from Zoologic.PEDCOMPRADET as det
+--				group by det.FART, det.FCOLO, det.FTALL
+--			  ) cpr ON c_COMB.COART	= cpr.FART AND c_COMB.COCOL	= cpr.FCOLO AND c_comb.TALLE=CPR.FTALL
+--	)

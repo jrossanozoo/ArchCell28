@@ -1,0 +1,14 @@
+*.FXP
+*.BAK
+*.ERR
+packages
+TestResults
+references
+bin
+obj
+.legacy-tests-build
+.docs
+*.code-workspace
+
+# Excepción: incluir din_menuprincipal.fxp
+!din_menuprincipal.FXP

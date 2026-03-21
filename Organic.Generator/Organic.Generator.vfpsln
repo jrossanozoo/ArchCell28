@@ -1,0 +1,27 @@
+<Solution Version="1.0">
+  <CreatedDate>2025-08-21T01:06:36Z</CreatedDate>
+  <LastModified>2025-08-21T01:06:36Z</LastModified>
+  <StartupProject>Organic.Sample</StartupProject>
+  <Projects>
+    <Project Guid="52b0219a-0c08-4d60-aab3-80f281c06135">
+      <RelativePath>Organic.Sample\Organic.Sample.vfpproj</RelativePath>
+      <IsAvailable>True</IsAvailable>
+    </Project>
+    <Project Guid="dd7d73f1-8c87-4c3b-b011-653a5c0052f2">
+      <RelativePath>Organic.BusinessLogic\Organic.Generator.vfpproj</RelativePath>
+      <IsAvailable>True</IsAvailable>
+    </Project>
+    <Project Guid="aa538f06-26e7-46aa-84fd-d0d5be2e1809">
+      <RelativePath>Organic.Tests\Organic.Tests.vfpproj</RelativePath>
+      <IsAvailable>True</IsAvailable>
+    </Project>
+    <Project Guid="876df615-0ac5-4017-a852-4dd9a571c000">
+      <RelativePath>Organic.Generated\Organic.Generator.Generated.vfpproj</RelativePath>
+      <IsAvailable>True</IsAvailable>
+    </Project>
+    <Project Guid="d8f3e2a1-5b7c-4d6e-9f8a-1c2d3e4f5a6b">
+      <RelativePath>Organic.Mocks\Organic.Generator.Mocks.vfpproj</RelativePath>
+      <IsAvailable>True</IsAvailable>
+    </Project>
+  </Projects>
+</Solution>

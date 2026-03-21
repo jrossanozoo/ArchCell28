@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="" DefaultTargets="Build">
+  <!-- PropertyGroup - Contiene la configuración principal del proyecto -->
+  <PropertyGroup>
+    <OutputType>PRG</OutputType>
+    <StartupObject></StartupObject>
+    <AssemblyName></AssemblyName>
+    <Company>Zoo Logic S.A.</Company>
+    <NoWarn>DVFP0001,DVFP0002,DVFP0003,DVFP0004</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup Label="VFP_Files">
+    <Content Include="Generados/**/*.prg" />
+    <Content Include="**/*.h" />
+    <Content Remove="@(bin;obj;Debug;Release)/**/*" />
+  </ItemGroup>
+
+  <!-- Configuración de versión -->
+  <PropertyGroup Label="Version">
+    <ProjectVersion Condition="'$(ProjectVersion)' == ''">1.0.0</ProjectVersion>
+    <ProductName Condition="'$(ProductName)' == ''">Organic.Drawing.Mocks</ProductName>
+  </PropertyGroup>
+
+  <!-- Configuración de compilación -->
+  <PropertyGroup Label="Build">
+    <Configuration Condition="'$(Configuration)' == '' And '$(BUILD_DEBUG)' == '2'">Release</Configuration>
+    <Configuration Condition="'$(Configuration)' == '' And '$(BUILD_DEBUG)' != '2'">Debug</Configuration>
+    <IsReleaseMode Condition="'$(Configuration)' == 'Release' Or '$(BUILD_DEBUG)' == '2'">true</IsReleaseMode>
+    <IsReleaseMode Condition="'$(IsReleaseMode)' == ''">false</IsReleaseMode>
+    <IsDebugMode Condition="'$(IsReleaseMode)' == 'false'">true</IsDebugMode>
+    <IsDebugMode Condition="'$(IsReleaseMode)' == 'true'">false</IsDebugMode>
+  </PropertyGroup>
+</Project>

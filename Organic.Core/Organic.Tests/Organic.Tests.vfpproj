@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-16"?>
+ <Project Sdk="">
+	<PropertyGroup>
+		<OutputType>Test</OutputType>
+		<StartupObject>mainTest.prg</StartupObject>
+		<AssemblyName></AssemblyName>
+		<ApplicationIcon></ApplicationIcon>
+	    <Company>Zoo Logic S.A.</Company>
+	    <NoWarn>DVFP0001,DVFP0002,DVFP0003</NoWarn>
+	</PropertyGroup>
+	<ItemGroup Label="VFP_Files">
+		<Content Include="..\Taspein_vie\_Base\controladordelogsadnimplant.prg" />
+		<Content Include=".legacy-tests-build/**/*.prg" />
+		<Content Include="Tests/**/*.prg" />
+		<Content Include="*.prg" />
+		<Content Include="*.h" />
+		<Content Include="_dovfp_excluidos\old_entidad.prg" isExcluded="true" />
+	</ItemGroup>
+	<PropertyGroup>
+		<!--
+			LegacyFoxUnitTestFiles: indica a DOVFP test dÃ³nde hacer discovery de tests legacy.
+			Los tests se descubren desde .legacy-tests-build/ (donde estÃ¡n los PRG transformados
+			que heredan de FxuTestCaseLegacy en lugar de FxuTestCase).
+
+			IMPORTANTE: transform-legacy-tests.ps1 se ejecuta como PreBuild Target y copia
+			los tests desde Tests.Legacy/ a .legacy-tests-build/ aplicando la transformaciÃ³n.
+		-->
+		<LegacyFoxUnitTestFiles>.legacy-tests-build/**/*.prg</LegacyFoxUnitTestFiles>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include = "..\Organic.Sample\Organic.Sample.vfpproj" />
+		<ProjectReference Include = "..\Organic.Mocks\Organic.Core.Mocks.vfpproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<AppReference Include="dovfp.FxuLegacy.app" />
+		<!-- <AppReference Include="..\..\dovfp.FxuLegacy\src\bin\App\dovfp.FxuLegacy.app" /> -->
+		<AppReference Include="Organic.AdnImplant.app" />
+		<AppReference Include="Organic.Drawing.app" />
+		<AppReference Include="Organic.Generator.app" />
+	</ItemGroup>
+
+	<PropertyGroup>
+	    <CoverageExclude>Organic.Mocks\**\*</CoverageExclude>
+	</PropertyGroup>
+
+	<!-- Copiar clasesdeprueba a bin\Test -->
+	<ItemGroup Label="TestAssets">
+		<!-- Copiar clasesdeprueba como carpeta -->
+		<None Update="clasesdeprueba">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>clasesdeprueba</TargetPath>
+		</None>
+
+		<!-- Copiar configuracionbasica como carpeta -->
+		<None Update="..\Organic.Assets\configuracionbasica">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>..\configuracionbasica</TargetPath>
+		</None>
+
+		<!-- Copiar adb como carpeta -->
+		<None Update="..\Organic.Generated\adn">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>adn</TargetPath>
+		</None>
+
+		<!-- Copiar data como carpeta. Tablas del anterior Taspein -->
+		<!-- Copia en bin\taspein\data (para SET PATH y para código que usa cRutaInicial + "..\taspein\data\") -->
+		<None Update="..\Organic.Assets\taspein\data">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>..\taspein\data</TargetPath>
+		</None>
+
+		<!-- FinePrint: instalador + DLLs requeridos para auto-instalacion en tests -->
+		<None Update="..\Organic.Assets\componentes\fineprint">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>componentes\fineprint</TargetPath>
+		</None>
+
+		<!-- Crystal Reports: instalador runtime para auto-instalacion en tests -->
+		<None Update="..\Organic.Assets\componentes\Reportes">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>componentes\Reportes</TargetPath>
+		</None>
+
+		<!-- MSXML4: MSI installer para auto-instalacion en tests (requerido por VFP9 XMLTOCURSOR/XMLAdapter) -->
+		<None Update="..\Organic.Assets\componentes\msxml4">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>componentes\msxml4</TargetPath>
+		</None>
+	</ItemGroup>
+
+	<!-- PreBuild: Transformar tests legacy antes de compilar -->
+	<Target Name="TransformLegacyTests" BeforeTargets="Build">
+		<Message Text="Transformando tests legacy..." Importance="high" />
+		<Exec Command="powershell -ExecutionPolicy Bypass -File scripts\transform-legacy-tests.ps1" />
+	</Target>
+</Project>

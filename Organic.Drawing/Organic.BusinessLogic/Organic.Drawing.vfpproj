@@ -1,0 +1,1565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="">
+  <PropertyGroup>
+    <OutputType>App</OutputType>
+    <StartupObject>mainDrawing2028.PRG</StartupObject> <!-- Agrega esta línea -->
+    <ApplicationIcon>CENTRALSS\Imagenes\Iconos\IconoZooLogic.ico</ApplicationIcon>
+    <Company>Zoo Logic S.A.</Company>
+	<Copyright>Copyright © Zoo Logic S.A.</Copyright>
+  </PropertyGroup>
+
+	<!-- Configuración de versión - Nomenclatura estándar .NET/MSBuild -->
+	<PropertyGroup Label="Version">
+		<!-- ProjectVersion debe venir de dovfp -project_version, si no hay valor usa default -->
+		<ProjectVersion Condition="'$(ProjectVersion)' == ''">1.0.0</ProjectVersion>
+		
+		<!-- Parsear versión en componentes estándar -->
+		<MajorVersionRaw Condition="'$(MajorVersionRaw)' == ''">$([System.Convert]::ToInt32($([System.String]::Copy($(ProjectVersion)).Split('.')[0])))</MajorVersionRaw>
+		<MinorVersionRaw Condition="'$(MinorVersionRaw)' == ''">$([System.Convert]::ToInt32($([System.String]::Copy($(ProjectVersion)).Split('.')[1])))</MinorVersionRaw>
+		<BuildNumberRaw Condition="'$(BuildNumberRaw)' == ''">$([System.Convert]::ToInt32($([System.String]::Copy($(ProjectVersion)).Split('.')[2])))</BuildNumberRaw>
+		
+		<!-- Azure Key Vault (solo usado en modo Release BUILD_DEBUG=2) -->
+		<!-- Prioridad: 1) Parámetro, 2) Variable de entorno, 3) Default -->
+		<AzureKeyVaultName Condition="'$(AzureKeyVaultName)' == '' AND '$(AZURE_KEYVAULT_NAME)' != ''">$(AZURE_KEYVAULT_NAME)</AzureKeyVaultName>
+		<AzureKeyVaultName Condition="'$(AzureKeyVaultName)' == ''">kv-prod-organic</AzureKeyVaultName>
+	</PropertyGroup>
+
+	<!-- Target PreBuild que se ejecuta antes de Build -->
+	<Target Name="PreBuild" BeforeTargets="Build">
+		<Message Text="PreBuild - Modo: $(BUILD_DEBUG) (1=Debug, 2=Release)" Importance="high" />
+		<PropertyGroup>
+			<PreBuildScript>$(MSBuildProjectDirectory)\Generate-BuildH.ps1</PreBuildScript>
+			<!-- Fallback: Si AssemblyName está vacío, usa nombre del proyecto -->
+			<PreBuildExeName Condition="'$(AssemblyName)' != ''">$(AssemblyName)</PreBuildExeName>
+			<PreBuildExeName Condition="'$(AssemblyName)' == ''">$(MSBuildProjectName)</PreBuildExeName>
+			<!-- Solo pasar KeyVaultName en Release (BUILD_DEBUG=2) -->
+			<PreBuildKeyVault Condition="'$(BUILD_DEBUG)' == '2'">-KeyVaultName '$(AzureKeyVaultName)'</PreBuildKeyVault>
+			<PreBuildKeyVault Condition="'$(BUILD_DEBUG)' != '2'"></PreBuildKeyVault>
+		</PropertyGroup>
+		<Exec Command="powershell.exe -NoProfile -ExecutionPolicy Bypass -Command &quot;&amp; '$(PreBuildScript)' -OutputPath 'obj\$(OutputType)\' -Major $(MajorVersionRaw) -Minor $(MinorVersionRaw) -Build $(BuildNumberRaw) -BuildDebug $(BUILD_DEBUG) -ExeName '$(PreBuildExeName)' $(PreBuildKeyVault)&quot;" IgnoreExitCode="false" />
+	</Target>
+
+
+	<ItemGroup>
+		<None Update="bin\app\bin\appendersFE.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>content\Recursos\appendersFE.xml</TargetPath>
+		</None>
+		<None Update="bin\app\bin\LoggersFE.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>content\Recursos\LoggersFE.xml</TargetPath>
+		</None>
+</ItemGroup>
+
+<ItemGroup>
+    <None Update="..\Organic.Assets\appenders.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>appenders.xml</TargetPath>
+    </None>
+    <None Update="..\Organic.Assets\Loggers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>Loggers.xml</TargetPath>
+    </None>
+    <None Update="..\Organic.Assets\dataconfig.sqlexpress.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>dataconfig.ini</TargetPath>
+    </None>
+    <None Update="..\Organic.Assets\Aplicacion.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>Aplicacion.ini</TargetPath>
+    </None>
+    <None Update="..\Organic.Assets\config.fpw">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>config.fpw</TargetPath>
+    </None>
+    <None Update="..\Organic.Assets\KSoze32.Dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>KSoze32.Dat</TargetPath>
+    </None>
+    <None Update="..\Organic.Assets\Pkware.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>Pkware.exe</TargetPath>
+    </None>
+    <None Update="..\Organic.Assets\PkWare.Sys">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>PkWare.Sys</TargetPath>
+    </None>
+    <None Update="..\Organic.Assets\ScriptDB">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>ScriptDB</TargetPath>
+    </None>
+<!-- Copiar data como carpeta. Tablas del anterior Taspein -->
+	<None Update="..\Organic.Assets\taspein\data">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		<TargetPath>data</TargetPath>
+	</None>
+</ItemGroup>
+
+  <Target Name="DeleteDuplicateContentFiles" AfterTargets="Build">
+    <Message Text="🧹 Eliminando archivos XML duplicados en bin\$(OutputType)\bin..." Importance="high" />
+    
+    <!-- Buscar archivos usando $(OutputType) dinámicamente -->
+    <ItemGroup>
+      <DuplicateAppendersFE Include="$(OutputPath)bin\$(OutputType)\bin\appendersFE.xml" />
+      <DuplicateLoggersFE Include="$(OutputPath)bin\$(OutputType)\bin\LoggersFE.xml" />
+      
+      <!-- Combinar ambas listas -->
+      <AllDuplicateFiles Include="@(DuplicateAppendersFE);@(DuplicateLoggersFE)" />
+    </ItemGroup>
+    
+    <!-- Debug: Mostrar qué tipo de proyecto se está usando -->
+    <Message Text="🔍 OutputType = $(OutputType)" Importance="high" />
+    <Message Text="🔍 Buscando en: $(OutputPath)bin\$(OutputType)\bin\" Importance="high" />
+    
+    <!-- Mostrar qué archivos se van a eliminar -->
+    <Message Text="📄 Eliminando: %(AllDuplicateFiles.Identity)" Importance="high" Condition="'@(AllDuplicateFiles)' != ''" />
+    
+    <!-- Eliminar los duplicados -->
+    <Delete Files="@(AllDuplicateFiles)" />
+    
+    <Message Text="✅ Archivos eliminados: @(AllDuplicateFiles->Count())" Importance="high" Condition="'@(AllDuplicateFiles)' != ''" />
+    <Message Text="ℹ️ No se encontraron archivos duplicados" Importance="high" Condition="'@(AllDuplicateFiles)' == ''" />
+  </Target>
+
+	<ItemGroup Label="VFP_Files">
+		<Content Include="**/*.prg" /><!-- Incluir archivos: **/*.prg -->
+		<Content Include="**/*.vcx" /><!-- Incluir archivos: **/*.vcx -->
+		<Content Include="**/*.scx" /><!-- Incluir archivos: **/*.scx -->
+		<Content Include="**/*.h" /><!-- Incluir archivos: **/*.h -->
+		<Content Include="**/*.mpr" /><!-- Incluir archivos: **/*.mpr -->
+		<Content Include="**/*.bmp" /><!-- Incluir archivos: **/*.bmp -->
+		<Content Include="**/*.ico" /><!-- Incluir archivos: **/*.ico -->
+		<Content Include="**/*.jpg" /><!-- Incluir archivos: **/*.jpg -->
+		<Content Include="**/*.gif" /><!-- Incluir archivos: **/*.gif -->
+		<Content Include="**/*.cur" /><!-- Incluir archivos: **/*.cur -->
+		<Content Include="**/*.fll" /><!-- Incluir archivos: **/*.fll -->
+		<Content Include="**/*.png" /><!-- Incluir archivos: **/*.png -->
+		<Content Include="**/*.txt" /><!-- Incluir archivos: **/*.txt -->
+		<Content Include="**/*.xml" /><!-- Incluir archivos: **/*.xml -->
+		<Content Include="**/*.app" /><!-- Incluir archivos: **/*.app -->
+		<Content Include="**/*.dll" /><!-- Incluir archivos: **/*.dll -->
+		<Content Include="CENTRALSS/Dlls/wwDotNetBridge/ClrHost.dll" isExcluded="true" /><!-- Incluir archivos: **/*.dll -->
+		<Content Include="..\Organic.Assets\taspein\manager\TextosLince.h" />
+		<Content Include="**/*.sql" /><!-- Incluir archivos: **/*.sql -->
+		<Content Include="**/*.sdb" /><!-- Incluir archivos: **/*.sdb -->
+		<Content Include="**/*.szl" /><!-- Incluir archivos: **/*.szl -->
+		<Content Remove="@(bin;obj;Debug;Release)/**/*" /><!-- Excluir archivos: @(bin;obj;Debug;Release)/**/* -->
+		<Content Remove="@(generados;mocks;hooks;test;.vs;.git;.vscode)/**/*" />
+		<Content Remove="@(DBCSerializado;IndiceAdn;abmmetadata;clasesdeprueba)/**/*" />
+		<Content Remove="@(COMWrapper4Managed;PAQUETES;BIN;OBJ;PACKAGES)/**/*" />
+		<Content Remove="@(AYUDA;TEMPLATES;ScriptDB;TestTools)/**/*" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Organic.Generated\Organic.Drawing.Generated.vfpproj" />
+	</ItemGroup>
+  <ItemGroup>
+		<AppReference Include="Organic.AdnImplant.app" />
+		<AppReference Include="Organic.Core.app" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Update="..\Organic.Assets\ClrHost.dll">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>ClrHost.dll</TargetPath>
+		</None>
+    <None Update="..\Organic.Assets\wwDotNetBridge.dll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        <TargetPath>wwDotNetBridge.dll</TargetPath>
+    </None>
+	<None Update="..\Organic.Assets\cpptimer.fll">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		<TargetPath>cpptimer.fll</TargetPath>
+	</None>
+</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ZooLogicSA.ManagerWebHook" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="genMantenimiento" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="genSeguridad" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.MantenimientoReplica" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="MantenimientoReplica" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooBkp" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AccesoDatos" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AceptacionDeValores" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.Formularios" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.InterfazVisual" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.AdnImplant.Lanzadores" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.MantenimientoBD" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.Sql.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.Sql" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.Sql.GestionBD" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.Sql.Lanzador" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.Sql.MantenimientoBD" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.Sql.ScriptsBD" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.Sql.Semaforo" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.Sql.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AdnImplant.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.BackupBDSql" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.BibliotecaFixes.ColorYTalle" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.BibliotecaFixes.Nike" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Buscador.ColorYTalle.Generados" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Buscador.DevExForms" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Buscador" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Buscador.Lanzador" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Buscador.Negocio" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Buscador.Nike.Generados" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Buscador.Presentacion" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Buscador.ZL.Generados" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.CondicionDePago.Componente" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.CondicionDePago.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ConectorDeRedes.ConectorWCF" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ConectorDeRedes" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ConectorDeRedes.Factory" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Conectorderedes.Manager" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ConectorDeRedesLanzador" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ConfiguradorEdicion" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ConsultasListados" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ControladoresFiscales" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ControladoresFiscales.EpsonTMT900FA" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ControladoresFiscales.HasarPT1000F" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ControladoresFiscales.Ibm" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ControladoresFiscales.Sam4sELLIX40F" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ControlEspacio" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.CopiadorDeParametros.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.CopiadorDeParametros" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.AdministracionServicios" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.ADN" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.Adn.Validaciones" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.BasesDeDatos" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.Core.Common" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.Configuraciones" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.ControlAcceso" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.Correcciones" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.DatosAplicacion" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.DBConnection" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.Formularios" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.FormulariosV2" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.Funciones" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.Logueo" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.Parametros" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.Seguridad" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.ServiciosWeb" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Core.StructureMapContainer" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.CreadorPDF" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.DataLayer" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.DispositivosPinpad.VisaPos" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.DispositivosPinpad.VisaPos.Spike" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.EjecutadorDeScripts" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.FacturacionElectronicaMTXCA.Nacional" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.FacturacionElectronicaV2" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.FacturacionElectronicaV2.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.FacturacionElectronicaV2.Exportacion.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.FacturacionElectronicaV2.ExportacionV0" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.FacturacionElectronicaV2.Nacional" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.FacturacionElectronicaV2.RNConfiguracion" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.FacturacionElectronicaV2.UIConfiguracion" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Fixes" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.Cliente" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.Modelo" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.Negocio" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.Net" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.Organic" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.Seguridad" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.ServiciosJson" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.ServiciosWcf" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.Sql" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.Windows" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.Winforms" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.Zl" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Framework.zNube" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.GeneradorDeDatos" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.GeneradorFuncionesSql" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ImportadorDeFeriados.Conexiones" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ImportadorDeFeriados.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ImportadorDeFeriados" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.InstaladorComponentes" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.InstaladorComponentes.ActualizadorCRDll" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Omnicanalidad" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.Omnicanalidad.DataAccess" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.StockOnline" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.CloudServicesSettings" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Interoperabilidad" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Lancelot" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.LanzadorListados" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.LanzadorScriptOrganic" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Mail" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ManejadorArchivos" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Migrador" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Migrador.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.MigradorLinceDragonfish" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.MigradorLinceDragonfish.Ejecutable" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.MigradorLinceDragonfish.Orm" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Modelo" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.OrganicServiciosREST.Colorytalle" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Organic.EnlaceInterprocesos" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.OrganicServiciosREST" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.OrganicServiciosREST.Cliente.Configurador" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.OrganicServiciosREST.Cliente.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.OrganicServiciosREST.Colorytalle.Generados" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.OrganicServiciosREST.Zl.Generados" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.OrganicServiciosREST.Zl" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.OrganicServiciosREST.Documentacion" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.PrePantalla.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.PreSeleccion.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Promociones.Asistente" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Promociones" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Promociones.Negocio" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Promociones.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.RecoveryManager.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.RecoveryManager.Tool" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.RecoveryManager.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Redondeos" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ReemplazadorSentencias" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.RemitoElectronicoArba" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.RestauradorVersion" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SaludDeBasesDeDatos" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SqlDmoWrapper" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SR.AO.AccesoADatos" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SR.AO.Common" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SR.AO.Configurador" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SR.AO.Configurar" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SR.AO.Instalador" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SR.AO.Negocio" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SR.AO.Organic" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SR.AO.TrayApp" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SR.AO.Winforms" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SW.CI.Negocio" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.TraductorSentencias" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Transferencias" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.UI.Mensajeria" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ZipWrapper" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ZooUpdate" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicZip" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ComWrapper4Managed" Version="1.0.0.1" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.DisplayVFD" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="srvmng" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.PrePantallaDePrecios.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Zoo.nHibernate" Version="2.1.2.4000" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicGreenIcono" Version="1.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.COT.CertificateBuilder" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.COT.Common" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.COT.Provider" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.COT.WsConsumer" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.COT.Adaptador" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.COT.AdaptadorExe" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.COT.CertificadoDigital" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Meeting" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AvisPa.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Actualizador" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Ecommerce" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.ControlDeImpresoras" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ValidarCombinacionesRepetidas" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ConsultarPadronAFIPWS" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.S3Amazon" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ColaboradorActiveDir" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Crypto" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ActivacionOnline" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ConectorWebAPI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Estadisticas" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.DispositivoMercadoPagoPoint" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SalesDelivery" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.MensajeriaPostVentaMercadoLibre" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.EtiquetasEnvioMercadoLibre" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Acceso" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.ValidarTelefonos" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.AreaNotificaciones" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ControladoresFiscales.Verificacion" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.CodigoQR" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.DispositivosFiServ" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.DispositivosPayTech" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.SIREWS" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.MercadoPagoAPIRest" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.PrismaAPIRest" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.GoCuotasAPIRest" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ConectorAPIRest" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.MercadoPagoInterfaz" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.PrismaInterfaz" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.GoCuotasInterfaz" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.PlusPagosAPIRest" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.PlusPagosInterfaz" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.TiendaCryptoAPIRest" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.TiendaCryptoInterfaz" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.ToastNotification" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.FacturacionElectronicaUruguay" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.EditorHTML.UI" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.CentralizacionDeDatos.Publicacion.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.CentralizacionDeDatos.Publicacion.PublicacionSubida" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.Omnicanalidad.RealTime" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.Omnicanalidad.Core" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.ZED" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.MocksInterfacesDePago" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.LasPiedrasShopping" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZoologicSA.DispositivoPosnet" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZooLogicSA.DispositivoPosnet.Spike" Version="" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ZL.IO.Swagger" Version="1.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Zoo.7zip" Version="9.20.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress" Version="20.1.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Autofac" Version="2.6.3.862" IgnoreArchivedPath="true"/>
+    <PackageReference Include="QrCode.Net" Version="0.4.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Zoo.FileHelpers" Version="2.9.9" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.BonusSkins" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.Data" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.Printing" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.RichEdit" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.Tutorials" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.Utils" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.XtraBars" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.XtraEditors" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.XtraGrid" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.XtraLayout" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.XtraRichEdit" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.XtraNavBar" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.XtraScheduler" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.XtraTreeList" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.XtraVerticalGrid" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevExpress.XtraWizard" Version="11.2.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="HasarLibreriaFiscal3561" Version="1.0.120" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Interop.appc" Version="1.0.154.16" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Interop.checksum" Version="1.0.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Interop.EpsonFPHostControlX" Version="1.8.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Interop.IWshRuntimeLibrary" Version="1.0.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Interop.NetFwTypeLib" Version="1.0.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Interop.VisualFoxpro" Version="9.0.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Interop.ActiveDs" Version="1.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Interop.XceedEncryptionLib" Version="1.1.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Interop.ZED" Version="2.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Unofficial.Ionic.Zip" Version="1.9.1.8" IgnoreArchivedPath="true"/>
+    <PackageReference Include="iTextSharp" Version="3.1.8.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="JWT" Version="2.4.2" IgnoreArchivedPath="true"/>
+    <PackageReference Include="log4net" Version="2.0.15" IgnoreArchivedPath="true"/>
+    <PackageReference Include="mercadopago" Version="18.04.7" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Microsoft.SyncFramework.DatabaseProviders" Version="3.1.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Microsoft.SqlServer" Version="11.0.2100.60" IgnoreArchivedPath="true"/>
+    <PackageReference Include="VisualBasic.PowerPacks.Controls" Version="9.0.30729.1" IgnoreArchivedPath="true"/>
+    <PackageReference Include="VisualBasic.Compatibility.Data" Version="11.0.50501.17626" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Microsoft.VisualStudio.CustomPack" Version="1.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Microsoft.LightSwitch.CustomPack" Version="11.0.50522.1" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Microsoft.Data.CustomPack" Version="1.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Microsoft.Internal.Tasks.Dataflow" Version="4.0.30319.17626" IgnoreArchivedPath="true"/>
+    <PackageReference Include="net-sdk" Version="18.04.10" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" IgnoreArchivedPath="true"/>
+    <PackageReference Include="RestSharp" Version="105.0.1" IgnoreArchivedPath="true"/>
+    <PackageReference Include="structuremap" Version="2.6.1.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="DevexpressSP" Version="11.2.11.0" IgnoreArchivedPath="false"/>
+    <PackageReference Include="ftplib" Version="1.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="AWSSDK.Core" Version="3.3.100.2" IgnoreArchivedPath="true"/>
+    <PackageReference Include="AWSSDK.S3" Version="3.3.100.1" IgnoreArchivedPath="true"/>
+    <PackageReference Include="AWSSDK.SecurityToken" Version="3.3.100.2" IgnoreArchivedPath="true"/>
+    <PackageReference Include="xdmessaging" Version="2.0.3.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Clover.RemotePayWindows" Version="4.0.2" IgnoreArchivedPath="true"/>
+    <PackageReference Include="System.Threading.dll" Version="1.0.2856.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Flurl" Version="2.8.2" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Flurl.Http" Version="2.4.2" IgnoreArchivedPath="true"/>
+    <PackageReference Include="Google.LibPhoneNumber" Version="1.0.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="libphonenumber-csharp" Version="8.12.11" IgnoreArchivedPath="true"/>
+    <PackageReference Include="ComponentesFiServ" Version="1.0.3" IgnoreArchivedPath="true"/>
+    <PackageReference Include="MailKit" Version="3.2.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="MimeKit" Version="3.2.0" IgnoreArchivedPath="true"/>
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.1" IgnoreArchivedPath="true"/>
+    <PackageReference Include="System.Memory" Version="4.5.4" IgnoreArchivedPath="true"/>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.3" IgnoreArchivedPath="true"/>
+    <PackageReference Include="System.Buffers" Version="4.5.1" IgnoreArchivedPath="true"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ZooLogicSA.ManagerWebHook">
+      <HintPath>lib\net472\ZooLogicSA.ManagerWebHook.dll</HintPath>
+    </Reference>
+    <Reference Include="genMantenimiento">
+      <HintPath>lib\net472\genMantenimiento.exe</HintPath>
+      <HintPath>lib\net472\genMantenimiento.exe.config</HintPath>
+    </Reference>
+    <Reference Include="genSeguridad">
+      <HintPath>lib\net472\genSeguridad.exe</HintPath>
+      <HintPath>lib\net472\genSeguridad.exe.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.MantenimientoReplica">
+      <HintPath>lib\net472\ZooLogicSA.MantenimientoReplica.dll</HintPath>
+    </Reference>
+    <Reference Include="MantenimientoReplica">
+      <HintPath>lib\net472\MantenimientoReplica.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooBkp">
+      <HintPath>lib\net472\ZooBkp.exe</HintPath>
+      <HintPath>lib\net472\ZooBkp.exe.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AccesoDatos">
+      <HintPath>lib\net472\ZooLogicSA.AccesoDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AceptacionDeValores">
+      <HintPath>lib\net472\ZooLogicSA.AceptacionDeValores.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.Core">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.Formularios">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.Formularios.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.InterfazVisual">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.InterfazVisual.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.AdnImplant.Lanzadores">
+      <HintPath>lib\net472\ZoologicSA.AdnImplant.Lanzadores.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.MantenimientoBD">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.MantenimientoBD.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.Sql.Core">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.Sql.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.Sql">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.Sql.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.Sql.GestionBD">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.Sql.GestionBD.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.Sql.Lanzador">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.Sql.Lanzador.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.Sql.MantenimientoBD">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.Sql.MantenimientoBD.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.Sql.ScriptsBD">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.Sql.ScriptsBD.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.Sql.Semaforo">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.Sql.Semaforo.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.Sql.UI">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.Sql.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AdnImplant.UI">
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.UI.exe</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.AdnImplant.UI.exe.config</HintPath>
+    </Reference>
+    <None Update="packages\App\bin\ZooLogicSA.AdnImplant.UI.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>ZooLogicSA.AdnImplant.exe</TargetPath>
+    </None>
+    <None Update="packages\App\bin\ZooLogicSA.AdnImplant.UI.exe.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>ZooLogicSA.AdnImplant.exe.config</TargetPath>
+    </None>
+    <Reference Include="ZooLogicSA.BackupBDSql">
+      <HintPath>lib\net472\ZooLogicSA.BackupBDSql.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.BackupBDSql.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.BibliotecaFixes.ColorYTalle">
+      <HintPath>lib\net472\ZooLogicSA.BibliotecaFixes.ColorYTalle.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.BibliotecaFixes.Nike">
+      <HintPath>lib\net472\ZooLogicSA.BibliotecaFixes.Nike.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Buscador.ColorYTalle.Generados">
+      <HintPath>lib\net472\ZooLogicSA.Buscador.ColorYTalle.Generados.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Buscador.DevExForms">
+      <HintPath>lib\net472\ZooLogicSA.Buscador.DevExForms.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Buscador">
+      <HintPath>lib\net472\ZooLogicSA.Buscador.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Buscador.Lanzador">
+      <HintPath>lib\net472\ZooLogicSA.Buscador.Lanzador.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Buscador.Negocio">
+      <HintPath>lib\net472\ZooLogicSA.Buscador.Negocio.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Buscador.Nike.Generados">
+      <HintPath>lib\net472\ZooLogicSA.Buscador.Nike.Generados.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Buscador.Presentacion">
+      <HintPath>lib\net472\ZooLogicSA.Buscador.Presentacion.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Buscador.ZL.Generados">
+      <HintPath>lib\net472\ZooLogicSA.Buscador.ZL.Generados.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.CondicionDePago.Componente">
+      <HintPath>lib\net472\ZooLogicSA.CondicionDePago.Componente.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.CondicionDePago.UI">
+      <HintPath>lib\net472\ZooLogicSA.CondicionDePago.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ConectorDeRedes.ConectorWCF">
+      <HintPath>lib\net472\ZooLogicSA.ConectorDeRedes.ConectorWCF.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ConectorDeRedes">
+      <HintPath>lib\net472\ZooLogicSA.ConectorDeRedes.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.ConectorDeRedes.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ConectorDeRedes.Factory">
+      <HintPath>lib\net472\ZooLogicSA.ConectorDeRedes.Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Conectorderedes.Manager">
+      <HintPath>lib\net472\ZooLogicSA.Conectorderedes.Manager.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ConectorDeRedesLanzador">
+      <HintPath>lib\net472\ZooLogicSA.ConectorDeRedesLanzador.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ConfiguradorEdicion">
+      <HintPath>lib\net472\ZooLogicSA.ConfiguradorEdicion.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ConsultasListados">
+      <HintPath>lib\net472\ZooLogicSA.ConsultasListados.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ControladoresFiscales">
+      <HintPath>lib\net472\ZooLogicSA.ControladoresFiscales.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ControladoresFiscales.EpsonTMT900FA">
+      <HintPath>lib\net472\ZooLogicSA.ControladoresFiscales.EpsonTMT900FA.dll</HintPath>
+      <HintPath>lib\net472\EpsonFiscalInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ControladoresFiscales.HasarPT1000F">
+      <HintPath>lib\net472\ZooLogicSA.ControladoresFiscales.HasarPT1000F.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ControladoresFiscales.Ibm">
+      <HintPath>lib\net472\ZooLogicSA.ControladoresFiscales.Ibm.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.ControladoresFiscales.Ibm.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ControladoresFiscales.Sam4sELLIX40F">
+      <HintPath>lib\net472\ZooLogicSA.ControladoresFiscales.Sam4sELLIX40F.dll</HintPath>
+      <HintPath>lib\net472\Sam4sFiscalDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ControlEspacio">
+      <HintPath>lib\net472\ZooLogicSA.ControlEspacio.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.CopiadorDeParametros.UI">
+      <HintPath>lib\net472\ZooLogicSA.CopiadorDeParametros.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.CopiadorDeParametros">
+      <HintPath>lib\net472\ZooLogicSA.CopiadorDeParametros.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.AdministracionServicios">
+      <HintPath>lib\net472\ZooLogicSA.Core.AdministracionServicios.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.ADN">
+      <HintPath>lib\net472\ZooLogicSA.Core.ADN.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.Adn.Validaciones">
+      <HintPath>lib\net472\ZooLogicSA.Core.Adn.Validaciones.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.BasesDeDatos">
+      <HintPath>lib\net472\ZooLogicSA.Core.BasesDeDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.Core.Common">
+      <HintPath>lib\net472\ZoologicSA.Core.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.Configuraciones">
+      <HintPath>lib\net472\ZooLogicSA.Core.Configuraciones.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.ControlAcceso">
+      <HintPath>lib\net472\ZooLogicSA.Core.ControlAcceso.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.Correcciones">
+      <HintPath>lib\net472\ZooLogicSA.Core.Correcciones.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.DatosAplicacion">
+      <HintPath>lib\net472\ZooLogicSA.Core.DatosAplicacion.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.DBConnection">
+      <HintPath>lib\net472\ZooLogicSA.Core.DBConnection.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core">
+      <HintPath>lib\net472\ZooLogicSA.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.Formularios">
+      <HintPath>lib\net472\ZooLogicSA.Core.Formularios.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.FormulariosV2">
+      <HintPath>lib\net472\ZooLogicSA.Core.FormulariosV2.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.Funciones">
+      <HintPath>lib\net472\ZooLogicSA.Core.Funciones.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.Logueo">
+      <HintPath>lib\net472\ZooLogicSA.Core.Logueo.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.Parametros">
+      <HintPath>lib\net472\ZooLogicSA.Core.Parametros.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.Seguridad">
+      <HintPath>lib\net472\ZooLogicSA.Core.Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.ServiciosWeb">
+      <HintPath>lib\net472\ZooLogicSA.Core.ServiciosWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Core.StructureMapContainer">
+      <HintPath>lib\net472\ZooLogicSA.Core.StructureMapContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.CreadorPDF">
+      <HintPath>lib\net472\ZooLogicSA.CreadorPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.DataLayer">
+      <HintPath>lib\net472\ZooLogicSA.DataLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.DispositivosPinpad.VisaPos">
+      <HintPath>lib\net472\ZooLogicSA.DispositivosPinpad.VisaPos.dll</HintPath>
+      <HintPath>content\IngStore.dll</HintPath>
+      <HintPath>content\VpiPc.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.DispositivosPinpad.VisaPos.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.DispositivosPinpad.VisaPos.Spike">
+      <HintPath>lib\net472\ZooLogicSA.DispositivosPinpad.VisaPos.Spike.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.EjecutadorDeScripts">
+      <HintPath>lib\net472\ZooLogicSA.EjecutadorDeScripts.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.FacturacionElectronicaMTXCA.Nacional">
+      <HintPath>lib\net472\ZooLogicSA.FacturacionElectronicaMTXCA.Nacional.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.FacturacionElectronicaV2">
+      <HintPath>lib\net472\ZooLogicSA.FacturacionElectronicaV2.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.FacturacionElectronicaV2.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.FacturacionElectronicaV2.Core">
+      <HintPath>lib\net472\ZooLogicSA.FacturacionElectronicaV2.Core.dll</HintPath>
+			<HintPath>content\Recursos\appendersFE.xml</HintPath>
+			<HintPath>content\Recursos\LoggersFE.xml</HintPath>
+    </Reference>
+<Reference Include="ZooLogicSA.FacturacionElectronicaV2.Exportacion.Core">
+      <HintPath>lib\net472\ZooLogicSA.FacturacionElectronicaV2.Exportacion.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.FacturacionElectronicaV2.ExportacionV0">
+      <HintPath>lib\net472\ZooLogicSA.FacturacionElectronicaV2.ExportacionV0.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.FacturacionElectronicaV2.Nacional">
+      <HintPath>lib\net472\ZooLogicSA.FacturacionElectronicaV2.Nacional.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.FacturacionElectronicaV2.RNConfiguracion">
+      <HintPath>lib\net472\ZooLogicSA.FacturacionElectronicaV2.RNConfiguracion.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.FacturacionElectronicaV2.UIConfiguracion">
+      <HintPath>lib\net472\ZooLogicSA.FacturacionElectronicaV2.UIConfiguracion.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.FacturacionElectronicaV2.UIConfiguracion.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Fixes">
+      <HintPath>lib\net472\ZooLogicSA.Fixes.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.Cliente">
+      <HintPath>lib\net472\ZooLogicSA.Framework.Cliente.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.Modelo">
+      <HintPath>lib\net472\ZooLogicSA.Framework.Modelo.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.Negocio">
+      <HintPath>lib\net472\ZooLogicSA.Framework.Negocio.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.Net">
+      <HintPath>lib\net472\ZooLogicSA.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.Organic">
+      <HintPath>lib\net472\ZooLogicSA.Framework.Organic.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.Seguridad">
+      <HintPath>lib\net472\ZooLogicSA.Framework.Seguridad.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.Framework.Seguridad.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.ServiciosJson">
+      <HintPath>lib\net472\ZooLogicSA.Framework.ServiciosJson.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.ServiciosWcf">
+      <HintPath>lib\net472\ZooLogicSA.Framework.ServiciosWcf.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.Framework.ServiciosWcf.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.Sql">
+      <HintPath>lib\net472\ZooLogicSA.Framework.Sql.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.Windows">
+      <HintPath>lib\net472\ZooLogicSA.Framework.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.Winforms">
+      <HintPath>lib\net472\ZooLogicSA.Framework.Winforms.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.Zl">
+      <HintPath>lib\net472\ZooLogicSA.Framework.Zl.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Framework.zNube">
+      <HintPath>lib\net472\ZooLogicSA.Framework.zNube.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.GeneradorDeDatos">
+      <HintPath>lib\net472\ZooLogicSA.GeneradorDeDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.GeneradorFuncionesSql">
+      <HintPath>lib\net472\ZooLogicSA.GeneradorFuncionesSql.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ImportadorDeFeriados.Conexiones">
+      <HintPath>lib\net472\ZooLogicSA.ImportadorDeFeriados.Conexiones.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ImportadorDeFeriados.Core">
+      <HintPath>lib\net472\ZooLogicSA.ImportadorDeFeriados.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ImportadorDeFeriados">
+      <HintPath>lib\net472\ZooLogicSA.ImportadorDeFeriados.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.InstaladorComponentes">
+      <HintPath>lib\net472\ZooLogicSA.InstaladorComponentes.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.InstaladorComponentes.ActualizadorCRDll">
+      <HintPath>lib\net472\ZooLogicSA.InstaladorComponentes.ActualizadorCRDll.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Omnicanalidad">
+      <HintPath>lib\net472\ZooLogicSA.Omnicanalidad.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.Omnicanalidad.DataAccess">
+      <HintPath>lib\net472\ZoologicSA.Omnicanalidad.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.StockOnline">
+      <HintPath>lib\net472\ZooLogicSA.StockOnline.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.CloudServicesSettings">
+      <HintPath>lib\net472\ZooLogicSA.CloudServicesSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Interoperabilidad">
+      <HintPath>lib\net472\ZooLogicSA.Interoperabilidad.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Lancelot">
+      <HintPath>lib\net472\ZooLogicSA.Lancelot.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.Lancelot.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.LanzadorListados">
+      <HintPath>lib\net472\ZooLogicSA.LanzadorListados.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.LanzadorScriptOrganic">
+      <HintPath>lib\net472\ZooLogicSA.LanzadorScriptOrganic.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Mail">
+      <HintPath>lib\net472\ZooLogicSA.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ManejadorArchivos">
+      <HintPath>lib\net472\ZooLogicSA.ManejadorArchivos.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Migrador">
+      <HintPath>lib\net472\ZooLogicSA.Migrador.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Migrador.UI">
+      <HintPath>lib\net472\ZooLogicSA.Migrador.UI.exe</HintPath>
+      <HintPath>content\AppendersMigrador.xml</HintPath>
+      <HintPath>content\ConfiguracionMigrador.xml</HintPath>
+      <HintPath>content\LoggersMigrador.xml</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.MigradorLinceDragonfish">
+      <HintPath>lib\net472\ZooLogicSA.MigradorLinceDragonfish.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.MigradorLinceDragonfish.Ejecutable">
+      <HintPath>lib\net472\ZooLogicSA.MigradorLinceDragonfish.Ejecutable.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.MigradorLinceDragonfish.Orm">
+      <HintPath>lib\net472\ZooLogicSA.MigradorLinceDragonfish.Orm.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Modelo">
+      <HintPath>lib\net472\ZooLogicSA.Modelo.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.OrganicServiciosREST.Colorytalle">
+      <HintPath>lib\net472\ZooLogicSA.OrganicServiciosREST.Colorytalle.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Organic.EnlaceInterprocesos">
+      <HintPath>lib\net472\ZooLogicSA.Organic.EnlaceInterprocesos.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.OrganicServiciosREST">
+      <HintPath>lib\net472\ZooLogicSA.OrganicServiciosREST.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.OrganicServiciosREST.Cliente.Configurador">
+      <HintPath>lib\net472\ZooLogicSA.OrganicServiciosREST.Cliente.Configurador.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.OrganicServiciosREST.Cliente.Core">
+      <HintPath>lib\net472\ZooLogicSA.OrganicServiciosREST.Cliente.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.OrganicServiciosREST.Colorytalle.Generados">
+      <HintPath>lib\net472\ZooLogicSA.OrganicServiciosREST.Colorytalle.Generados.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.OrganicServiciosREST.Zl.Generados">
+      <HintPath>lib\net472\ZooLogicSA.OrganicServiciosREST.Zl.Generados.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.OrganicServiciosREST.Zl">
+      <HintPath>lib\net472\ZooLogicSA.OrganicServiciosREST.Zl.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.OrganicServiciosREST.Documentacion">
+      <HintPath>lib\net472\ZooLogicSA.OrganicServiciosREST.Documentacion.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.PrePantalla.UI">
+      <HintPath>lib\net472\ZooLogicSA.PrePantalla.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.PreSeleccion.UI">
+      <HintPath>lib\net472\ZooLogicSA.PreSeleccion.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Promociones.Asistente">
+      <HintPath>lib\net472\ZooLogicSA.Promociones.Asistente.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Promociones">
+      <HintPath>lib\net472\ZooLogicSA.Promociones.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.Promociones.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Promociones.Negocio">
+      <HintPath>lib\net472\ZooLogicSA.Promociones.Negocio.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Promociones.UI">
+      <HintPath>lib\net472\ZooLogicSA.Promociones.UI.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.Promociones.UI.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.RecoveryManager.Core">
+      <HintPath>lib\net472\ZooLogicSA.RecoveryManager.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.RecoveryManager.Tool">
+      <HintPath>lib\net472\ZooLogicSA.RecoveryManager.Tool.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.RecoveryManager.UI">
+      <HintPath>lib\net472\ZooLogicSA.RecoveryManager.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Redondeos">
+      <HintPath>lib\net472\ZooLogicSA.Redondeos.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ReemplazadorSentencias">
+      <HintPath>lib\net472\ZooLogicSA.ReemplazadorSentencias.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.RemitoElectronicoArba">
+      <HintPath>lib\net472\ZooLogicSA.RemitoElectronicoArba.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.RestauradorVersion">
+      <HintPath>lib\net472\ZoologicSA.RestauradorVersion.exe</HintPath>
+      <HintPath>lib\net472\ZoologicSA.RestauradorVersion.exe.config</HintPath>
+      <HintPath>content\ConfiguracionRestaurador.xml</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SaludDeBasesDeDatos">
+      <HintPath>lib\net472\ZooLogicSA.SaludDeBasesDeDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SqlDmoWrapper">
+      <HintPath>lib\net472\ZooLogicSA.SqlDmoWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SR.AO.AccesoADatos">
+      <HintPath>lib\net472\ZooLogicSA.SR.AO.AccesoADatos.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SR.AO.Common">
+      <HintPath>lib\net472\ZooLogicSA.SR.AO.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SR.AO.Configurador">
+      <HintPath>lib\net472\ZooLogicSA.SR.AO.Configurador.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SR.AO.Configurar">
+      <HintPath>lib\net472\ZooLogicSA.SR.AO.Configurar.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SR.AO.Instalador">
+      <HintPath>lib\net472\ZooLogicSA.SR.AO.Instalador.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SR.AO.Negocio">
+      <HintPath>lib\net472\ZooLogicSA.SR.AO.Negocio.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SR.AO.Organic">
+      <HintPath>lib\net472\ZooLogicSA.SR.AO.Organic.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SR.AO.TrayApp">
+      <HintPath>lib\net472\ZooLogicSA.SR.AO.TrayApp.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SR.AO.Winforms">
+      <HintPath>lib\net472\ZooLogicSA.SR.AO.Winforms.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SW.CI.Negocio">
+      <HintPath>lib\net472\ZooLogicSA.SW.CI.Negocio.dll</HintPath>
+      <HintPath>content\Appenders.xml</HintPath>
+      <HintPath>content\Loggers.xml</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.TraductorSentencias">
+      <HintPath>lib\net472\ZooLogicSA.TraductorSentencias.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Transferencias">
+      <HintPath>lib\net472\ZooLogicSA.Transferencias.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.UI.Mensajeria">
+      <HintPath>lib\net472\ZooLogicSA.UI.Mensajeria.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ZipWrapper">
+      <HintPath>lib\net472\ZooLogicSA.ZipWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ZooUpdate">
+      <HintPath>lib\net472\ZooLogicSA.ZooUpdate.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.ZooUpdate.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicZip">
+      <HintPath>lib\net472\ZooLogicZip.exe</HintPath>
+    </Reference>
+    <Reference Include="ComWrapper4Managed">
+      <HintPath>comwrapper4managed.app</HintPath>
+      <HintPath>comwrapper4managed.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.DisplayVFD">
+      <HintPath>lib\net472\ZooLogicSA.DisplayVFD.dll</HintPath>
+    </Reference>
+    <Reference Include="srvmng">
+      <HintPath>lib\net472\srvmng.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.PrePantallaDePrecios.UI">
+      <HintPath>lib\net472\ZooLogicSA.PrePantallaDePrecios.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Zoo.nHibernate">
+      <HintPath>lib\Antlr3.Runtime.dll</HintPath>
+      <HintPath>lib\hibernate.cfg.xml</HintPath>
+      <HintPath>lib\Iesi.Collections.dll</HintPath>
+      <HintPath>lib\Iesi.Collections.xml</HintPath>
+      <HintPath>lib\LinFu.DynamicProxy.dll</HintPath>
+      <HintPath>lib\nhibernate-configuration.xsd</HintPath>
+      <HintPath>lib\nhibernate-mapping.xsd</HintPath>
+      <HintPath>lib\NHibernate.ByteCode.LinFu.dll</HintPath>
+      <HintPath>lib\NHibernate.ByteCode.LinFu.xml</HintPath>
+      <HintPath>lib\NHibernate.dll</HintPath>
+      <HintPath>lib\NHibernate.xml</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicGreenIcono">
+      <HintPath>content\ZoologicGreen.ico</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.COT.CertificateBuilder">
+      <HintPath>lib\net472\ZooLogicSA.COT.CertificateBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.COT.Common">
+      <HintPath>lib\net472\ZooLogicSA.COT.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.COT.Provider">
+      <HintPath>lib\net472\ZooLogicSA.COT.Provider.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.COT.WsConsumer">
+      <HintPath>lib\net472\ZooLogicSA.COT.WsConsumer.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.COT.Adaptador">
+      <HintPath>lib\net472\ZooLogicSA.COT.Adaptador.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.COT.AdaptadorExe">
+      <HintPath>lib\net472\ZooLogicSA.COT.AdaptadorExe.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.COT.CertificadoDigital">
+      <HintPath>lib\net472\ZooLogicSA.COT.CertificadoDigital.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Meeting">
+      <HintPath>lib\net472\ZooLogicSA.Meeting.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AvisPa.Core">
+      <HintPath>lib\net472\ZooLogicSA.AvisPa.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Actualizador">
+      <HintPath>lib\net472\ZooLogicSA.Actualizador.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Ecommerce">
+      <HintPath>lib\net472\ZooLogicSA.Ecommerce.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.ControlDeImpresoras">
+      <HintPath>lib\net472\ZoologicSA.ControlDeImpresoras.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ValidarCombinacionesRepetidas">
+      <HintPath>lib\net472\ZooLogicSA.ValidarCombinacionesRepetidas.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ConsultarPadronAFIPWS">
+      <HintPath>lib\net472\ZooLogicSA.ConsultarPadronAFIPWS.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.S3Amazon">
+      <HintPath>lib\net472\ZoologicSA.S3Amazon.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ColaboradorActiveDir">
+      <HintPath>lib\net472\ZooLogicSA.ColaboradorActiveDir.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Crypto">
+      <HintPath>lib\net472\ZooLogicSA.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ActivacionOnline">
+      <HintPath>lib\net472\ZooLogicSA.ActivacionOnline.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.ActivacionOnline.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ConectorWebAPI">
+      <HintPath>lib\net472\ZooLogicSA.ConectorWebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Estadisticas">
+      <HintPath>lib\net472\ZooLogicSA.Estadisticas.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.DispositivoMercadoPagoPoint">
+      <HintPath>lib\net472\ZooLogicSA.DispositivoMercadoPagoPoint.dll</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.DispositivoMercadoPagoPoint.dll.config</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SalesDelivery">
+      <HintPath>lib\net472\ZooLogicSA.SalesDelivery.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.MensajeriaPostVentaMercadoLibre">
+      <HintPath>lib\net472\ZooLogicSA.MensajeriaPostVentaMercadoLibre.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.EtiquetasEnvioMercadoLibre">
+      <HintPath>lib\net472\ZooLogicSA.EtiquetasEnvioMercadoLibre.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Acceso">
+      <HintPath>lib\net472\ZooLogicSA.Acceso.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.ValidarTelefonos">
+      <HintPath>lib\net472\ZoologicSA.ValidarTelefonos.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.AreaNotificaciones">
+      <HintPath>lib\net472\ZooLogicSA.AreaNotificaciones.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ControladoresFiscales.Verificacion">
+      <HintPath>lib\net472\ZooLogicSA.ControladoresFiscales.Verificacion.exe</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.CodigoQR">
+      <HintPath>lib\net472\ZooLogicSA.CodigoQR.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.DispositivosFiServ">
+      <HintPath>lib\net472\ZooLogicSA.DispositivosFiServ.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.DispositivosPayTech">
+      <HintPath>lib\net472\ZooLogicSA.DispositivosPayTech.dll</HintPath>
+      <HintPath>lib\net472\PayTechConfig.json</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.SIREWS">
+      <HintPath>lib\net472\ZooLogicSA.SIREWS.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.MercadoPagoAPIRest">
+      <HintPath>lib\netstandard2.0\ZooLogicSA.MercadoPagoAPIRest.dll</HintPath>
+      <HintPath>lib\netstandard2.0\MercadoPagoApiRestConfig.json</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.PrismaAPIRest">
+      <HintPath>lib\netstandard2.0\ZooLogicSA.PrismaAPIRest.dll</HintPath>
+      <HintPath>lib\netstandard2.0\PrismaConfig.json</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.GoCuotasAPIRest">
+      <HintPath>lib\netstandard2.0\ZooLogicSA.GoCuotasAPIRest.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ConectorAPIRest">
+      <HintPath>lib\netstandard2.0\ZooLogicSA.ConectorAPIRest.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.MercadoPagoInterfaz">
+      <HintPath>lib\net472\ZooLogicSA.MercadoPagoInterfaz.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.PrismaInterfaz">
+      <HintPath>lib\net472\ZooLogicSA.PrismaInterfaz.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.GoCuotasInterfaz">
+      <HintPath>lib\net472\ZooLogicSA.GoCuotasInterfaz.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.PlusPagosAPIRest">
+      <HintPath>lib\netstandard2.0\ZooLogicSA.PlusPagosAPIRest.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.PlusPagosInterfaz">
+      <HintPath>lib\net472\ZooLogicSA.PlusPagosInterfaz.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.TiendaCryptoAPIRest">
+      <HintPath>lib\netstandard2.0\ZooLogicSA.TiendaCryptoAPIRest.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.TiendaCryptoInterfaz">
+      <HintPath>lib\net472\ZooLogicSA.TiendaCryptoInterfaz.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.ToastNotification">
+      <HintPath>lib\net472\ZooLogicSA.ToastNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.FacturacionElectronicaUruguay">
+      <HintPath>lib\net472\ZoologicSA.FacturacionElectronicaUruguay.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.EditorHTML.UI">
+      <HintPath>lib\net472\ZooLogicSA.EditorHTML.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.CentralizacionDeDatos.Publicacion.Core">
+      <HintPath>lib\net472\ZooLogicSA.CentralizacionDeDatos.Publicacion.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.CentralizacionDeDatos.Publicacion.PublicacionSubida">
+      <HintPath>lib\net472\ZooLogicSA.CentralizacionDeDatos.Publicacion.PublicacionSubida.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.Omnicanalidad.RealTime">
+      <HintPath>lib\net472\ZooLogicSA.Omnicanalidad.RealTime.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.Omnicanalidad.Core">
+      <HintPath>lib\net472\ZoologicSA.Omnicanalidad.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.ZED">
+      <HintPath>lib\net472\ZooLogicSA.ZED.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.MocksInterfacesDePago">
+      <HintPath>lib\net472\ZooLogicSA.MocksInterfacesDePago.dll</HintPath>
+      <HintPath>lib\net472\RespuestaInterfazConfig.json</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.LasPiedrasShopping">
+      <HintPath>lib\net472\ZoologicSA.LasPiedrasShopping.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoologicSA.DispositivoPosnet">
+      <HintPath>lib\net472\ZoologicSA.DispositivoPosnet.dll</HintPath>
+    </Reference>
+    <Reference Include="ZooLogicSA.DispositivoPosnet.Spike">
+      <HintPath>lib\net472\ZooLogicSA.DispositivoPosnet.Spike.exe</HintPath>
+      <HintPath>lib\net472\ZooLogicSA.DispositivoPosnet.Spike.exe.config</HintPath>
+    </Reference>
+    <Reference Include="ZL.IO.Swagger">
+      <HintPath>lib\net45\IO.Swagger.dll</HintPath>
+    </Reference>
+    <Reference Include="Zoo.7zip">
+      <HintPath>7za.exe</HintPath>
+      <HintPath>7zCon.sfx</HintPath>
+    </Reference>
+    <Reference Include="DevExpress">
+      <HintPath>lib\net452\DevExpress.Data.Desktop.v20.1.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.Data.v20.1.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.Data.v20.1.xml</HintPath>
+      <HintPath>lib\net452\DevExpress.Utils.v20.1.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.Utils.v20.1.xml</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraBars.v20.1.Design.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraBars.v20.1.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraBars.v20.1.xml</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraEditors.v20.1.Design.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraEditors.v20.1.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraEditors.v20.1.xml</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraGrid.v20.1.Design.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraGrid.v20.1.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraGrid.v20.1.xml</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraLayout.v20.1.Design.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraLayout.v20.1.dll</HintPath>
+      <HintPath>lib\net452\DevExpress.XtraLayout.v20.1.xml</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>lib\net35\Autofac.dll</HintPath>
+      <HintPath>lib\net35\Autofac.xml</HintPath>
+    </Reference>
+    <Reference Include="QrCode.Net">
+      <HintPath>lib\net35\Gma.QrCodeNet.Encoding.dll</HintPath>
+      <HintPath>lib\net35\Gma.QrCodeNet.Encoding.xml</HintPath>
+    </Reference>
+    <Reference Include="Zoo.FileHelpers">
+      <HintPath>lib\FileHelpers.DataLink.dll</HintPath>
+      <HintPath>lib\FileHelpers.DataLink.xml</HintPath>
+      <HintPath>lib\FileHelpers.dll</HintPath>
+      <HintPath>lib\FileHelpers.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins">
+      <HintPath>lib\DevExpress.BonusSkins.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data">
+      <HintPath>lib\DevExpress.Data.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.Data.v11.2.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing">
+      <HintPath>lib\DevExpress.Printing.v11.2.Core.dll</HintPath>
+      <HintPath>lib\DevExpress.Printing.v11.2.Core.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit">
+      <HintPath>lib\DevExpress.RichEdit.v11.2.Core.dll</HintPath>
+      <HintPath>lib\DevExpress.RichEdit.v11.2.Core.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials">
+      <HintPath>lib\DevExpress.Tutorials.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils">
+      <HintPath>lib\DevExpress.Utils.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.Utils.v11.2.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars">
+      <HintPath>lib\DevExpress.XtraBars.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraBars.v11.2.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors">
+      <HintPath>lib\DevExpress.XtraEditors.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraEditors.v11.2.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid">
+      <HintPath>lib\DevExpress.XtraGrid.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraGrid.v11.2.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout">
+      <HintPath>lib\DevExpress.XtraLayout.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraLayout.v11.2.xml</HintPath>
+      <HintPath>lib\DevExpress.XtraLayout.v11.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit">
+      <HintPath>lib\DevExpress.XtraRichEdit.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraRichEdit.v11.2.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar">
+      <HintPath>lib\DevExpress.XtraNavBar.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraNavBar.v11.2.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler">
+      <HintPath>lib\DevExpress.XtraScheduler.v11.2.Core.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraScheduler.v11.2.Core.xml</HintPath>
+      <HintPath>lib\DevExpress.XtraScheduler.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraScheduler.v11.2.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList">
+      <HintPath>lib\DevExpress.XtraTreeList.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraTreeList.v11.2.xml</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid">
+      <HintPath>lib\DevExpress.XtraVerticalGrid.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraVerticalGrid.v11.2.xml</HintPath>
+      <HintPath>lib\DevExpress.XtraVerticalGrid.v11.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard">
+      <HintPath>lib\DevExpress.XtraWizard.v11.2.dll</HintPath>
+      <HintPath>lib\DevExpress.XtraWizard.v11.2.xml</HintPath>
+    </Reference>
+    <Reference Include="HasarLibreriaFiscal3561">
+      <HintPath>lib\HasarLibreriaFiscal3561.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.appc">
+      <HintPath>Interop.appc.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.checksum">
+      <HintPath>Interop.checksum.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.EpsonFPHostControlX">
+      <HintPath>Interop.EpsonFPHostControlX.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IWshRuntimeLibrary">
+      <HintPath>Interop.IWshRuntimeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.NetFwTypeLib">
+      <HintPath>Interop.NetFwTypeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VisualFoxpro">
+      <HintPath>Interop.VisualFoxpro.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ActiveDs">
+      <HintPath>lib\net35\Interop.ActiveDs.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.XceedEncryptionLib">
+      <HintPath>Interop.XceedEncryptionLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ZED">
+      <HintPath>lib\Interop.ZED.dll</HintPath>
+    </Reference>
+    <Reference Include="Unofficial.Ionic.Zip">
+      <HintPath>lib\Ionic.Zip.dll</HintPath>
+      <HintPath>content\Ionic.Zip.xml</HintPath>
+    </Reference>
+    <Reference Include="iTextSharp">
+      <HintPath>itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT">
+      <HintPath>lib\net35\jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>lib\net45\log4net.dll</HintPath>
+      <HintPath>lib\net45\log4net.xml</HintPath>
+    </Reference>
+    <Reference Include="mercadopago">
+      <HintPath>lib\net20\mercadopago.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SyncFramework.DatabaseProviders">
+      <HintPath>lib\net35\Microsoft.Synchronization.Data.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Synchronization.Data.Server.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Synchronization.Data.SqlServer.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Synchronization.Data.SqlServerCe.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Synchronization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer">
+      <HintPath>lib\net35\Microsoft.sqlserver.batchparser.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.sqlserver.BatchParserClient.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.ConnectionInfoExtended.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Dmf.Adapters.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Dmf.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.DmfSqlClrWrapper.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Management.Collector.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Management.CollectorEnum.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Management.Utility.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Management.UtilityEnum.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Management.XEvent.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Management.XEventEnum.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.PolicyEnum.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.RegSvrEnum.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Replication.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.ServiceBrokerEnum.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Smo.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.SqlClrProvider.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.SqlWmiManagement.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.SString.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.TransactSql.ScriptDom.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.Types.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.SqlServer.WmiEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualBasic.PowerPacks.Controls">
+      <HintPath>lib\net35\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualBasic.Compatibility.Data">
+      <HintPath>lib\net35\Microsoft.VisualBasic.Compatibility.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.CustomPack">
+      <HintPath>lib\net35\Microsoft.VisualStudio.Data.Framework.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.VisualStudio.Data.Providers.SqlCompact.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.VisualStudio.Data.Providers.SqlCompact.resources.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.VisualStudio.Data.Tools.Delta.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.VisualStudio.Data.Tools.Delta.UI.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.VisualStudio.DataDesign.Common.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.VisualStudio.DataDesign.DataSetDesigner.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.VisualStudio.DataDesign.Interfaces.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.VisualStudio.DataDesign.WpfDataTool.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.VisualStudio.Progression.DataManager.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.VisualStudio.Text.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.LightSwitch.CustomPack">
+      <HintPath>lib\net35\Microsoft.LightSwitch.Design.DataAccess.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.LightSwitch.Design.DataAccess.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.CustomPack">
+      <HintPath>lib\net35\Microsoft.Data.Edm.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Entity.Build.Tasks.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.OData.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.Generators.Sql.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.ScriptDom.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.ScriptDom.Sql.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.Sql.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.Tasks.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.Tasks.Sql.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.Tools.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.Tools.Sql.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.UnitTesting.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Schema.Utilities.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Services.Client.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Services.Design.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Services.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Tools.Design.Core.dll</HintPath>
+      <HintPath>lib\net35\Microsoft.Data.Tools.Schema.DbSqlReference.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Internal.Tasks.Dataflow">
+      <HintPath>lib\net35\Microsoft.Internal.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="net-sdk">
+      <HintPath>lib\net35\net-sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\net35\Newtonsoft.Json.dll</HintPath>
+      <HintPath>lib\net35\Newtonsoft.Json.xml</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>lib\net35\RestSharp.dll</HintPath>
+      <HintPath>lib\net35\RestSharp.xml</HintPath>
+    </Reference>
+    <Reference Include="structuremap">
+      <HintPath>lib\StructureMap.dll</HintPath>
+      <HintPath>lib\StructureMap.xml</HintPath>
+    </Reference>
+    <Reference Include="DevexpressSP">
+      <HintPath>es\DevExpress.Data.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.PivotGrid.v11.2.Core.resources.dll</HintPath>
+      <HintPath>es\DevExpress.RichEdit.v11.2.Core.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Utils.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Web.ASPxEditors.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Web.ASPxGridView.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Web.ASPxHtmlEditor.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Web.ASPxScheduler.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Web.ASPxSpellChecker.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Web.ASPxTreeList.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Web.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.Charts.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.Core.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.Docking.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.Gauges.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.Grid.v11.2.Core.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.LayoutControl.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.NavBar.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.Printing.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.Ribbon.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.RichEdit.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpf.Scheduler.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.Xpo.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraBars.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraCharts.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraEditors.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraGauges.v11.2.Core.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraGauges.v11.2.Presets.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraGrid.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraLayout.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraNavBar.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraPivotGrid.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraPrinting.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraReports.v11.2.Extensions.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraReports.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraReports.v11.2.Web.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraRichEdit.v11.2.Extensions.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraRichEdit.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraScheduler.v11.2.Core.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraScheduler.v11.2.Extensions.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraScheduler.v11.2.Reporting.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraScheduler.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraSpellChecker.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraTreeList.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraVerticalGrid.v11.2.resources.dll</HintPath>
+      <HintPath>es\DevExpress.XtraWizard.v11.2.resources.dll</HintPath>
+      <HintPath>es\Microsoft.SqlServer.Replication.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="ftplib">
+      <HintPath>lib\ftplib.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core">
+      <HintPath>lib\net35\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.S3">
+      <HintPath>lib\net35\AWSSDK.S3.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SecurityToken">
+      <HintPath>lib\net35\AWSSDK.SecurityToken.dll</HintPath>
+    </Reference>
+    <Reference Include="xdmessaging">
+      <HintPath>lib\XDMessaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Clover.RemotePayWindows">
+      <HintPath>lib\net45\CloverConnector.dll</HintPath>
+      <HintPath>lib\net45\CloverConnector.xml</HintPath>
+      <HintPath>lib\net45\CloverWindowsSDK.dll</HintPath>
+      <HintPath>lib\net45\CloverWindowsTransport.dll</HintPath>
+      <HintPath>lib\net45\LibUsbDotNet.dll</HintPath>
+      <HintPath>lib\net45\LibUsbDotNet.xml</HintPath>
+      <HintPath>lib\net45\SuperSocket.ClientEngine.dll</HintPath>
+      <HintPath>lib\net45\WebSocket4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.dll">
+      <HintPath>lib\net35\System.Threading.dll</HintPath>
+      <HintPath>lib\net35\System.Threading.xml</HintPath>
+    </Reference>
+    <Reference Include="Flurl">
+      <HintPath>lib\net40\Flurl.dll</HintPath>
+      <HintPath>lib\net40\Flurl.xml</HintPath>
+    </Reference>
+    <Reference Include="Flurl.Http">
+      <HintPath>lib\net45\Flurl.Http.dll</HintPath>
+      <HintPath>lib\net45\Flurl.Http.xml</HintPath>
+    </Reference>
+    <Reference Include="Google.LibPhoneNumber">
+      <HintPath>lib\libphonenumber.dll</HintPath>
+    </Reference>
+    <Reference Include="libphonenumber-csharp">
+      <HintPath>lib\net40\PhoneNumbers.dll</HintPath>
+      <HintPath>lib\net40\PhoneNumbers.xml</HintPath>
+    </Reference>
+    <Reference Include="ComponentesFiServ">
+      <HintPath>lib\net35\RechargeRPC.dll</HintPath>
+      <HintPath>lib\net35\QREncode32.dll</HintPath>
+      <HintPath>lib\net35\libemv.dll</HintPath>
+      <HintPath>lib\net35\libcurl32.dll</HintPath>
+      <HintPath>lib\net35\libcurl.dll</HintPath>
+      <HintPath>lib\net35\Espanhol.ini</HintPath>
+      <HintPath>lib\net35\CloverSiTef.exe</HintPath>
+      <HintPath>lib\net35\CliSiTef.ini</HintPath>
+      <HintPath>lib\net35\ca_cert_prod.pem</HintPath>
+      <HintPath>lib\net35\CliSiTef32I.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit">
+      <HintPath>lib\net461\MailKit.dll</HintPath>
+      <HintPath>lib\net461\MailKit.xml</HintPath>
+    </Reference>
+    <Reference Include="MimeKit">
+      <HintPath>lib\net461\MimeKit.dll</HintPath>
+      <HintPath>lib\net461\MimeKit.xml</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>lib\net461\System.Memory.dll</HintPath>
+      <HintPath>lib\net461\System.Memory.xml</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>lib\net461\System.Runtime.CompilerServices.Unsafe.xml</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>lib\net461\System.Buffers.dll</HintPath>
+      <HintPath>lib\net461\System.Buffers.xml</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

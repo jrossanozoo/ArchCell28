@@ -1,0 +1,9 @@
+*.FXP
+*.BAK
+*.ERR
+packages
+TestResults
+references
+bin
+obj
+.legacy-tests-build

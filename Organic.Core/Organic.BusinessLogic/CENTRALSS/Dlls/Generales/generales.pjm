@@ -1,0 +1,31 @@
+Version=  1.20
+Author=
+Company=
+Address=
+City=
+State=
+Zip=
+Country=
+SaveCode=.T.
+Debug=.T.
+Encrypt=.F.
+NoLogo=.F.
+CommentStyle=1
+Comments=
+CompanyName=
+FileDescription=
+LegalCopyright=
+LegalTrademarks=
+ProductName=
+Major=
+Minor=
+Revision=
+AutoIncrement=.F.
+[OLEServers]
+[OLEServersEnd]
+[ProjectFiles]
+ 886332941,P,librerias.prg,.F.,.T.,1252,,,
+ 886332941,P,test\ztestlibrerias.prg,.F.,.F.,1252,,,
+ 890342632,P,correccionortografia.prg,.F.,.F.,1252,,,
+ 890343136,P,test\ztestcorreccionortografia.prg,.F.,.F.,1252,,,
+[EOF]

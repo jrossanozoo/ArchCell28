@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="" DefaultTargets="PostBuildValidation">
+  <!-- PropertyGroup - Contiene la configuración principal del proyecto -->
+  <PropertyGroup>
+    <OutputType>PRG</OutputType>
+    <StartupObject>main.prg</StartupObject>
+    <AssemblyName></AssemblyName>
+    <Company>Zoo Logic S.A.</Company>
+    <NoWarn>DVFP0001,DVFP0002,DVFP0003,DVFP0004</NoWarn>
+  </PropertyGroup>
+
+	<ItemGroup Label="VFP_Files">
+		<!-- Incluir SOLO archivos de la carpeta Generados y subcarpetas -->
+		<Content Include="Generados/**/*.prg" />
+		<Content Include="Generados/**/*.vcx" />
+		<Content Include="Generados/**/*.scx" />
+		<Content Include="Generados/**/*.h" />
+		<Content Include="Generados/**/*.mpr" />
+		<Content Include="Generados/**/*.bmp" />
+		<Content Include="Generados/**/*.ico" />
+		<Content Include="Generados/**/*.jpg" />
+		<Content Include="Generados/**/*.gif" />
+		<Content Include="Generados/**/*.cur" />
+		<Content Include="Generados/**/*.fll" />
+		<Content Include="Generados/**/*.png" />
+		<Content Include="Generados/**/*.txt" />
+		<Content Include="Generados/**/*.xml" />
+		<Content Include="Generados/**/*.app" />
+		<Content Include="Generados/**/*.dll" />
+		<Content Include="Generados/**/*.sql" />
+		<Content Include="Generados/**/*.sdb" />
+		<Content Include="Generados/**/*.szl" />
+		<Content Remove="@(bin;obj;Debug;Release)/**/*" /><!-- Excluir archivos: @(bin;obj;Debug;Release)/**/* -->
+	</ItemGroup>
+
+  <!-- Configuración de versión - Nomenclatura estándar .NET/MSBuild -->
+  <PropertyGroup Label="Version">
+    <!-- ProjectVersion debe venir de dovfp -project_version, si no hay valor es un ERROR -->
+    <ProjectVersion Condition="'$(ProjectVersion)' == ''">ERROR-NO-VERSION</ProjectVersion>
+    <!-- ProductName debe venir de dovfp -product_name, si no hay valor es un ERROR -->
+    <ProductName Condition="'$(ProductName)' == ''">ERROR-NO-PRODUCT-NAME</ProductName>
+    
+    <!-- Parsear versión en componentes estándar -->
+    <VersionPrefix Condition="'$(VersionPrefix)' == ''">$(ProjectVersion)</VersionPrefix>
+    <MajorVersion Condition="'$(MajorVersion)' == ''">$([System.String]::Copy($(ProjectVersion)).Split('.')[0].PadLeft(2, '0'))</MajorVersion>
+    <MinorVersionRaw Condition="'$(MinorVersionRaw)' == ''">$([System.String]::Copy($(ProjectVersion)).Split('.')[1])</MinorVersionRaw>
+    <MinorVersion Condition="'$(MinorVersion)' == ''">$([System.String]::Copy($(ProjectVersion)).Split('.')[1].PadLeft(4, '0'))</MinorVersion>
+    <BuildNumber Condition="'$(BuildNumber)' == ''">$([System.String]::Copy($(ProjectVersion)).Split('.')[2].PadLeft(5, '0'))</BuildNumber>
+    
+    <!-- Componentes individuales SIN ceros a la izquierda para XML -->
+    <MajorVersionRaw Condition="'$(MajorVersionRaw)' == ''">$([System.Convert]::ToInt32($([System.String]::Copy($(ProjectVersion)).Split('.')[0])))</MajorVersionRaw>
+    <MinorVersionRawInt Condition="'$(MinorVersionRawInt)' == ''">$([System.Convert]::ToInt32($([System.String]::Copy($(ProjectVersion)).Split('.')[1])))</MinorVersionRawInt>
+    <BuildNumberRaw Condition="'$(BuildNumberRaw)' == ''">$([System.Convert]::ToInt32($([System.String]::Copy($(ProjectVersion)).Split('.')[2])))</BuildNumberRaw>
+    
+    <!-- Versión normalizada en formato 01.0001.00000 -->
+    <NormalizedVersion Condition="'$(NormalizedVersion)' == ''">$(MajorVersion).$(MinorVersion).$(BuildNumber)</NormalizedVersion>
+    
+    <!-- Propiedades adicionales dovfp -->
+    <BuildEncrypted Condition="'$(BuildEncrypted)' == ''">false</BuildEncrypted>
+    <BuildForce Condition="'$(BuildForce)' == ''">false</BuildForce>
+  </PropertyGroup>
+
+  <!-- Configuración de compilación - Estándar MSBuild -->
+  <PropertyGroup Label="Build">
+    <!-- BUILD_DEBUG viene de dovfp -build_debug: 1=Debug (default), 2=Release -->
+    <Configuration Condition="'$(Configuration)' == '' And '$(BUILD_DEBUG)' == '2'">Release</Configuration>
+    <Configuration Condition="'$(Configuration)' == '' And '$(BUILD_DEBUG)' != '2'">Debug</Configuration>
+    
+    <!-- Properties de modo compilación -->
+    <IsReleaseMode Condition="'$(Configuration)' == 'Release' Or '$(BUILD_DEBUG)' == '2'">true</IsReleaseMode>
+    <IsReleaseMode Condition="'$(IsReleaseMode)' == ''">false</IsReleaseMode>
+    
+    <IsDebugMode Condition="'$(IsReleaseMode)' == 'false'">true</IsDebugMode>
+    <IsDebugMode Condition="'$(IsReleaseMode)' == 'true'">false</IsDebugMode>
+    
+    <!-- Build flags adicionales -->
+    <DebugSymbols Condition="'$(IsDebugMode)' == 'true'">true</DebugSymbols>
+    <Optimize Condition="'$(IsReleaseMode)' == 'true'">true</Optimize>
+  </PropertyGroup>
+
+  <!-- PreBuild: Agregar LoadReference a clases VCX -->
+  <Target Name="AddVcxLoadReferences" BeforeTargets="ShowBuildMode">
+    <Message Text="Agregando LoadReference a clases VCX..." Importance="high" />
+    <Exec Command="powershell -ExecutionPolicy Bypass -File Add-VcxLoadReference.ps1" 
+          WorkingDirectory="$(MSBuildProjectDirectory)" />
+  </Target>
+
+  <!-- TARGET 0: Mostrar información de compilación - Estilo profesional -->
+  <Target Name="ShowBuildMode">
+    <Message Text="=================================================" Importance="high" />
+    <Message Text="ORGANIC CORE GENERATED - BUILD INFORMATION" Importance="high" />
+    <Message Text="=================================================" Importance="high" />
+    <Message Text="Product Name: $(ProductName)" Importance="high" />
+    <Message Text="Project Version: $(ProjectVersion)" Importance="high" />
+    <Message Text="Normalized Version: $(NormalizedVersion)" Importance="high" />
+    <Message Text="Configuration: $(Configuration)" Importance="high" />
+    <Message Text="BUILD_DEBUG Parameter: $(BUILD_DEBUG)" Importance="high" />
+    <Message Text="Is Release Mode: $(IsReleaseMode)" Importance="high" />
+    <Message Text="Is Debug Mode: $(IsDebugMode)" Importance="high" />
+    <Message Text="Build Encrypted: $(BuildEncrypted)" Importance="high" />
+    <Message Text="Build Force: $(BuildForce)" Importance="high" />
+    <Message Text="=================================================" Importance="high" />
+  </Target>
+
+  <!-- TARGET 1: Actualizar archivos Din_Transferencia* usando script externo -->
+  <!-- Solo se ejecuta en modo Release (build_debug=2) -->
+  <Target Name="UpdateTransferenciaVersions" DependsOnTargets="ShowBuildMode" Condition="'$(IsReleaseMode)' == 'true'">
+    <Message Text="[RELEASE MODE] Actualizando archivos Din_Transferencia*..." Importance="high" />
+    <Exec Command="powershell -ExecutionPolicy Bypass -File &quot;$(MSBuildProjectDirectory)\Update-TransferenciaVersions.ps1&quot; -ProjectDirectory &quot;$(MSBuildProjectDirectory)&quot; -Version &quot;$(NormalizedVersion)&quot;"
+          ContinueOnError="false" />
+  </Target>
+
+  <!-- TARGET 1-DEBUG: Mensaje informativo en modo Debug -->
+  <Target Name="UpdateTransferenciaVersionsDebug" DependsOnTargets="ShowBuildMode" Condition="'$(IsDebugMode)' == 'true'">
+    <Message Text="[DEBUG MODE] Omitiendo actualización de archivos Din_Transferencia* (solo en modo Release)" Importance="normal" />
+  </Target>
+
+  <!-- TARGET 2: Actualizar Din_Estructuraadn.prg usando script externo -->
+  <!-- Solo se ejecuta en modo Release (build_debug=2) -->
+  <Target Name="UpdateEstructuraAdnPrg" DependsOnTargets="UpdateTransferenciaVersions;UpdateTransferenciaVersionsDebug" Condition="'$(IsReleaseMode)' == 'true'">
+    <Message Text="[RELEASE MODE] Actualizando Din_Estructuraadn.prg..." Importance="high" />
+    <Exec Command="powershell -ExecutionPolicy Bypass -File &quot;$(MSBuildProjectDirectory)\Update-EstructuraAdnPrg.ps1&quot; -Version &quot;$(NormalizedVersion)&quot; -FilePath &quot;$(MSBuildProjectDirectory)\Generados\Din_Estructuraadn.prg&quot;"
+          ContinueOnError="false" />
+  </Target>
+
+  <!-- TARGET 2-DEBUG: Mensaje informativo en modo Debug -->
+  <Target Name="UpdateEstructuraAdnPrgDebug" Condition="'$(IsDebugMode)' == 'true'" DependsOnTargets="UpdateTransferenciaVersionsDebug">
+    <Message Text="[DEBUG MODE] Omitiendo actualización de Din_Estructuraadn.prg (solo en modo Release)" Importance="normal" />
+  </Target>
+
+  <!-- TARGET 3: Actualizar din_estructuraadn.xml -->
+  <!-- Solo se ejecuta en modo Release (build_debug=2) -->
+  <Target Name="UpdateEstructuraAdnXml" DependsOnTargets="UpdateEstructuraAdnPrg" Condition="'$(IsReleaseMode)' == 'true'">
+    <Message Text="[RELEASE MODE] Actualizando din_estructuraadn.xml..." Importance="high" />
+
+    <PropertyGroup>
+      <EstructuraAdnXmlFile>$(MSBuildProjectDirectory)\Generados\din_estructuraadn.xml</EstructuraAdnXmlFile>
+    </PropertyGroup>
+
+    <XmlPoke XmlInputPath="$(EstructuraAdnXmlFile)"
+             Query="/EstructuraAdn/Version/Version"
+             Value="$(NormalizedVersion)"
+             Condition="Exists('$(EstructuraAdnXmlFile)')" />
+
+    <XmlPoke XmlInputPath="$(EstructuraAdnXmlFile)"
+             Query="/EstructuraAdn/Version/Major"
+             Value="$(MajorVersionRaw)"
+             Condition="Exists('$(EstructuraAdnXmlFile)')" />
+
+    <XmlPoke XmlInputPath="$(EstructuraAdnXmlFile)"
+             Query="/EstructuraAdn/Version/Release"
+             Value="$(MinorVersionRawInt)"
+             Condition="Exists('$(EstructuraAdnXmlFile)')" />
+
+    <XmlPoke XmlInputPath="$(EstructuraAdnXmlFile)"
+             Query="/EstructuraAdn/Version/Build"
+             Value="$(BuildNumberRaw)"
+             Condition="Exists('$(EstructuraAdnXmlFile)')" />
+
+    <Message Text="XML actualizado con nueva versión" Importance="high" Condition="Exists('$(EstructuraAdnXmlFile)')" />
+    <Message Text="XML file not found: $(EstructuraAdnXmlFile)" Importance="normal" Condition="!Exists('$(EstructuraAdnXmlFile)')" />
+  </Target>
+
+  <!-- TARGET 3-DEBUG: Mensaje informativo en modo Debug -->
+  <Target Name="UpdateEstructuraAdnXmlDebug" Condition="'$(IsDebugMode)' == 'true'" DependsOnTargets="UpdateEstructuraAdnPrgDebug">
+    <Message Text="[DEBUG MODE] Omitiendo actualización de din_estructuraadn.xml (solo en modo Release)" Importance="normal" />
+  </Target>
+
+  <!-- TARGET 4: Mostrar resumen -->
+  <!-- Solo se ejecuta en modo Release (build_debug=2) -->
+  <Target Name="ShowVersionUpdateSummary" DependsOnTargets="UpdateEstructuraAdnXml" Condition="'$(IsReleaseMode)' == 'true'">
+    <Message Text="============================================" Importance="high" />
+    <Message Text="[RELEASE MODE] ACTUALIZACIÓN DE VERSIONES COMPLETADA" Importance="high" />
+    <Message Text="Versión: $(ProjectVersion)" Importance="high" />
+    <Message Text="  - Major: $(MajorVersionRaw)" Importance="high" />
+    <Message Text="  - Minor: $(MinorVersionRawInt)" Importance="high" />
+    <Message Text="  - Build: $(BuildNumberRaw)" Importance="high" />
+    <Message Text="============================================" Importance="high" />
+  </Target>
+
+  <!-- TARGET 4-DEBUG: Resumen en modo Debug -->
+  <Target Name="ShowVersionUpdateSummaryDebug" DependsOnTargets="UpdateEstructuraAdnXmlDebug" Condition="'$(IsDebugMode)' == 'true'">
+    <Message Text="============================================" Importance="high" />
+    <Message Text="[DEBUG MODE] COMPILACIÓN EN MODO DEBUG" Importance="high" />
+    <Message Text="Versión: $(ProjectVersion)" Importance="high" />
+    <Message Text="  - Actualización de versiones: OMITIDA (solo en Release)" Importance="high" />
+    <Message Text="  - Archivos de versión: NO MODIFICADOS" Importance="high" />
+    <Message Text="============================================" Importance="high" />
+  </Target>
+
+  <!-- TARGET: Build principal - ejecuta todos los targets de actualizaci?n -->
+  <Target Name="Build" DependsOnTargets="ShowBuildMode;ShowVersionUpdateSummary;ShowVersionUpdateSummaryDebug">
+    <Message Text="Proyecto construido exitosamente" Importance="high" />
+  </Target>
+
+  <!-- TARGET: POST-BUILD - Validaci?n de versiones (SIEMPRE SE EJECUTA) -->
+  <Target Name="PostBuildValidation" DependsOnTargets="Build">
+    <Message Text="=== EJECUTANDO VALIDACIÓN POST-BUILD ===" Importance="high" />
+    <Message Text="Validando versiones actualizadas por el pre-build..." Importance="high" />
+    <Exec Command="powershell -ExecutionPolicy Bypass -File &quot;$(MSBuildProjectDirectory)\Validate-VersionsPostBuild.ps1&quot; -ProjectDirectory &quot;$(MSBuildProjectDirectory)&quot; -ExpectedVersion &quot;$(NormalizedVersion)&quot;"
+          ContinueOnError="false" />
+    <Message Text="=== VALIDACIÓN POST-BUILD COMPLETADA ===" Importance="high" />
+  </Target>
+
+</Project>

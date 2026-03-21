@@ -1,0 +1,27 @@
+<Solution Version="1.0">
+  <CreatedDate>2026-01-06T19:12:57Z</CreatedDate>
+  <LastModified>2026-01-06T19:12:57Z</LastModified>
+  <StartupProject>Organic.Dragonfish</StartupProject>
+  <Projects>
+    <Project Guid="876df615-0ac5-4017-a852-4dd9a571c000">
+      <RelativePath>Organic.Generated\Organic.Dragonfish.Generated.vfpproj</RelativePath>
+      <IsAvailable>True</IsAvailable>
+    </Project>
+    <Project Guid="ef9d9ece-ec82-409b-b0eb-523c880186d5">
+      <RelativePath>Organic.Hooks\Organic.Dragonfish.Hooks.vfpproj</RelativePath>
+      <IsAvailable>True</IsAvailable>
+    </Project>
+    <Project Guid="52b0219a-0c08-4d60-aab3-80f281c06135">
+      <RelativePath>Organic.BusinessLogic\Organic.Dragonfish.vfpproj</RelativePath>
+      <IsAvailable>True</IsAvailable>
+    </Project>
+    <Project Guid="22c8b754-ba90-4ca0-af44-67f211b39f59">
+      <RelativePath>Organic.Tests\Organic.Tests.vfpproj</RelativePath>
+      <IsAvailable>True</IsAvailable>
+    </Project>
+    <Project Guid="109783df-c002-418e-892b-876357ad1995">
+      <RelativePath>Organic.Mocks\Organic.Dragonfish.Mocks.vfpproj</RelativePath>
+      <IsAvailable>True</IsAvailable>
+    </Project>
+  </Projects>
+</Solution>

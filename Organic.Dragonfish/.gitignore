@@ -1,0 +1,24 @@
+.legacy-tests-build/
+
+*.FXP
+*.BAK
+*.ERR
+packages
+TestResults
+references
+bin
+obj
+
+# Archivos NSIS
+C
+# Output compilado
+Output/
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
