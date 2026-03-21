@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCONCEPTOS","Codigo","OPETARCON","Codigo",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMCONCEPTOS","Concepto","OPETARCON","Concepto",T,"C",50,0,"CODIGO",F,"CONCEPTOLIQUIDACIONTARJETA",F,"",T,""
+"ITEMCONCEPTOS","ConceptoDetalle","OPETARCON","ConDescri",T,"C",50,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMCONCEPTOS","Orden","OPETARCON","Orden",T,"N",4,0,"NUMERICO",F,"",F,"",F,""

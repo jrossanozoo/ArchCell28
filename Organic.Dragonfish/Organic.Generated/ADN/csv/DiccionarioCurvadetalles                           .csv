@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CURVADETALLES","Codigo","CTALLE","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"CURVADETALLES","Descripcion","CTALLE","Descrip",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"CURVADETALLES","Talles","DCTALLE","Codigo",T,"C",10,0,"DETALLEITEMTALLES",F,"",F,"",F,""
+"CURVADETALLES","Observacion","CTALLE","MObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

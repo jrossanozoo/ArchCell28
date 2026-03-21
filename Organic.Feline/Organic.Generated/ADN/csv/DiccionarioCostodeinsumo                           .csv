@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"COSTODEINSUMO","Codigo","COSTOINS","CODIGO",F,"C",58,0,"CODIGO",T,"",F,"",F,""
+"COSTODEINSUMO","Insumo","COSTOINS","Insumo",F,"C",23,0,"CODIGO",F,"Insumo",F,"",T,""
+"COSTODEINSUMO","ListaDecosto","COSTOINS","ListaCost",F,"C",6,0,"CODIGO",F,"LISTADECOSTOSDEPRODUCCION",F,"",T,""
+"COSTODEINSUMO","Color","COSTOINS","COLORES",F,"C",2,0,"CODIGO",F,"Color",F,"",F,""
+"COSTODEINSUMO","Proceso","COSTOINS","Proceso",T,"C",10,0,"CODIGO",F,"PROCESOPRODUCCION",F,"",T,""
+"COSTODEINSUMO","Taller","COSTOINS","Taller",T,"C",10,0,"CODIGO",F,"TALLER",F,"",F,""
+"COSTODEINSUMO","DesdeCantidad","COSTOINS","Cantidad",T,"N",7,0,"NUMERICONONEGATIVO",F,"",F,"",F,""

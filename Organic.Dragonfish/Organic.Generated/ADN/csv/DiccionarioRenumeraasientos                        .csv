@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"RENUMERAASIENTOS","AsientoNro","renuasiento","nroasiento",T,"N",9,0,"NUMERICO",F,"",T,"this.ObtenerNumeroDeAsientoSugerido()",T,""
+"RENUMERAASIENTOS","NroInicial","renuasiento","nroinicial",T,"N",9,0,"NUMERICO",F,"",F,"",T,""
+"RENUMERAASIENTOS","Codigo","renuasiento","codigo",T,"N",9,0,"CODIGONUMERICO",T,"",F,"@ObtenerSiguienteNumerico()",F,""
+"RENUMERAASIENTOS","Fecha","renuasiento","fecha",T,"D",8,0,"FECHA",F,"",F,"=goServicios.librerias.ObtenerFecha()",F,""
+"RENUMERAASIENTOS","Obs","renuasiento","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

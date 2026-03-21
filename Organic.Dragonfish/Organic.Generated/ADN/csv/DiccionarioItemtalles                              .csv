@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMTALLES","Codigo","DCTALLE","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMTALLES","Talle","DCTALLE","CodTall",T,"C",5,0,"CODIGO",F,"TALLE",F,"",T,""
+"ITEMTALLES","TalleDetalle","DCTALLE","Descrip",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Talle.Descripcion"
+"ITEMTALLES","OrdenVisual","DCTALLE","Orden",T,"N",3,0,"NUMERICO",F,"",F,"",F,""

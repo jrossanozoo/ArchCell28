@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMLOTE","Codigo","DETCIELOTE","Cod",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMLOTE","NroLote","DETCIELOTE","NroLote",T,"N",8,0,"NUMERICO",F,"",F,"",F,""
+"ITEMLOTE","Tarjeta","DETCIELOTE","Tarjeta",T,"C",5,0,"CODIGO",F,"VALOR",F,"",T,""
+"ITEMLOTE","TarjetaDetalle","DETCIELOTE","DescTarj",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,"Tarjeta.Descripcion"
+"ITEMLOTE","MontoTotalCompras","DETCIELOTE","MTotCom",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMLOTE","MontoTotalAnulacionCompras","DETCIELOTE","MTotAnuCom",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMLOTE","MontoTotalDevoluciones","DETCIELOTE","MTotDev",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMLOTE","MontoTotalAnulacionDevoluciones","DETCIELOTE","MTotAnuDev",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMLOTE","MontoTotal","DETCIELOTE","MTot",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

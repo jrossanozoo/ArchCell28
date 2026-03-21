@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONFIRMACIONVALORESENTRANSITO","Codigo","ACCVTRANS","Codigo",F,"G",38,0,"CODIGO",T,"",F,"=goServicios.Librerias.ObtenerGuidPk()",F,""
+"CONFIRMACIONVALORESENTRANSITO","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"CONFIRMACIONVALORESENTRANSITO","Vendedor","","",T,"C",5,0,"CODIGO",F,"VENDEDOR",F,"",T,""

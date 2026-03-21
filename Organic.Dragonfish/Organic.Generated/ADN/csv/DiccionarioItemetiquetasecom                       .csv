@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMETIQUETASECOM","Codigo","CfgArtEcomEti","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMETIQUETASECOM","CodEtiqueta","CfgArtEcomEti","CodEti",T,"C",15,0,"CODIGO",F,"ETIQUETASECOMMERCE",F,"",T,""
+"ITEMETIQUETASECOM","DescEtiqueta","CfgArtEcomEti","DescEti",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"CodEtiqueta.Etiqueta"
+"ITEMETIQUETASECOM","Plataforma","CfgArtEcomEti","PlatafEti",T,"C",10,0,"CODIGO",F,"ECOMMERCE",F,"",F,""

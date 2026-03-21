@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMBOLSASYCAJAS","Articulo","DETBOLYCAJ","MART",T,"C",13,0,"CLAVECONLECTURACB",F,"ARTICULO",F,"",T,""
+"ITEMBOLSASYCAJAS","Codigo","DETBOLYCAJ","NUMR",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMBOLSASYCAJAS","CodigoDeBarras","","",F,"C",30,0,"CARACTER",F,"",F,"",F,""
+"ITEMBOLSASYCAJAS","Equivalencia","DETBOLYCAJ","Equiv",F,"C",14,0,"CODIGO",F,"Equivalencia",F,"",F,""
+"ITEMBOLSASYCAJAS","NoProcesarStock","DETBOLYCAJ","ProcStock",F,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMBOLSASYCAJAS","Comportamiento","DETBOLYCAJ","COMP",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMBOLSASYCAJAS","ArticuloDetalle","DETBOLYCAJ","DESCRIP",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,"Articulo.Descripcion"
+"ITEMBOLSASYCAJAS","Color","DETBOLYCAJ","MCOLO",T,"C",2,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMBOLSASYCAJAS","ColorDetalle","DETBOLYCAJ","MDES",T,"C",50,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMBOLSASYCAJAS","Talle","DETBOLYCAJ","MTALL",T,"C",3,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMBOLSASYCAJAS","Cantidad","DETBOLYCAJ","CANTI",T,"N",8,2,"NUMERICO",F,"",F,"",F,""

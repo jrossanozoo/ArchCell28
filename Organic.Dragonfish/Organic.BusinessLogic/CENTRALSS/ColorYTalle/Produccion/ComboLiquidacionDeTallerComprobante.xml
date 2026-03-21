@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>                    </valor>
+		<cdefault>retorno</cdefault>
+		<orden>0</orden>
+		<retorno></retorno>
+	</xml>
+	<xml>
+		<valor>Remito de compra</valor>
+		<cdefault></cdefault>
+		<orden>1</orden>
+		<retorno>REMITODECOMPRA</retorno>                      
+	</xml>
+	<xml>
+		<valor>Factura de compra</valor>
+		<cdefault></cdefault>
+		<orden>2</orden>
+		<retorno>FACTURADECOMPRA</retorno>                      
+	</xml>
+</VFPData>

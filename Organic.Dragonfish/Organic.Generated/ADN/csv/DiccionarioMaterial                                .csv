@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MATERIAL","CampoFiltro","MAT","MATC",F,"N",1,0,"FILTRO",F,"",F,"1",F,""
+"MATERIAL","Codigo","MAT","MATCOD",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"MATERIAL","Descripcion","MAT","MATDES",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"MATERIAL","Observaciones","MAT","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"MATERIAL","Composicion1","MAT","MCO1",T,"C",60,0,"CARACTER",F,"",F,"",F,""
+"MATERIAL","Composicion2","MAT","MCO2",T,"C",60,0,"CARACTER",F,"",F,"",F,""
+"MATERIAL","Composicion3","MAT","MCO3",T,"C",60,0,"CARACTER",F,"",F,"",F,""
+"MATERIAL","Composicion4","MAT","MCO4",T,"C",60,0,"CARACTER",F,"",F,"",F,""
+"MATERIAL","Composicion5","MAT","MCO5",T,"C",60,0,"CARACTER",F,"",F,"",F,""
+"MATERIAL","Imagen","MAT","MAIMAGEN",T,"C",180,0,"IMAGENCONRUTADINAMICA",F,"",F,"",F,""
+"MATERIAL","FechaDeAlta","","",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"MATERIAL","FechaUltimaModificacion","","",F,"D",8,0,"FECHA",F,"",F,"",F,""

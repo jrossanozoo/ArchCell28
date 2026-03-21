@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAJSTOCKART","codigo","ajustockDeta","ajdCodigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMAJSTOCKART","Articulo","ajustockDeta","ajdArt",T,"C",13,0,"CODIGO",F,"ARTICULO",F,"",F,""
+"ITEMAJSTOCKART","ArticuloDetalle","ajustockDeta","ajdADesc",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,"articulo.descripcion"
+"ITEMAJSTOCKART","StockAct","ajustockDeta","ajdstock",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMAJSTOCKART","StockProy","ajustockDeta","ajdProy",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMAJSTOCKART","Cantidad","ajustockDeta","ajdCant",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

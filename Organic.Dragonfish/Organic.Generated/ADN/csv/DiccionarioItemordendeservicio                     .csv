@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMORDENDESERVICIO","Codigo","SelecOSDet","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMORDENDESERVICIO","Orden","","",T,"C",20,0,"CODIGO",F,"ORDENDESERVICIO",F,"",T,""
+"ITEMORDENDESERVICIO","TipoDeOrden","","",T,"C",20,0,"CODIGO",F,"TIPODEORDEN",F,"",F,"Orden.TipoDeOrden"
+"ITEMORDENDESERVICIO","Articulo","","",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",F,"Orden.Articulo"
+"ITEMORDENDESERVICIO","Cliente","","",T,"C",10,0,"CODIGO",F,"CLIENTE",F,"",F,"Orden.Cliente"
+"ITEMORDENDESERVICIO","BaseDeDatos","","",T,"C",8,0,"CARACTER",F,"",T,"",F,"Orden.BaseDeDatosAltaFW"
+"ITEMORDENDESERVICIO","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",F,"Orden.Fecha"
+"ITEMORDENDESERVICIO","Color","","",F,"C",6,0,"CODIGO",F,"COLOR",F,"",F,"Orden.Color"
+"ITEMORDENDESERVICIO","Talle","","",F,"C",5,0,"CODIGO",F,"TALLE",F,"",F,"Orden.Talle"

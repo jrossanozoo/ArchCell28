@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"IMPRESIONDEETIQUETA","Numero","ImpEt","numero",T,"N",10,0,"CODIGONUMERICO",T,"",F,"",F,""
+"IMPRESIONDEETIQUETA","Descripcion","ImpEt","Descri",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"IMPRESIONDEETIQUETA","Observacion","ImpEt","CLOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"IMPRESIONDEETIQUETA","Fecha","ImpEt","fecha",T,"D",8,0,"FECHA",F,"",F,"=goServicios.Librerias.ObtenerFecha()",F,""
+"IMPRESIONDEETIQUETA","Hora","ImpEt","dHora",T,"C",8,0,"CARACTER",F,"",F,"=goServicios.Librerias.ObtenerHora()",F,""
+"IMPRESIONDEETIQUETA","Serie","ImpEt","Serie",T,"C",7,0,"CARACTER",F,"",F,"=_Screen.Zoo.App.cSerie",F,""
+"IMPRESIONDEETIQUETA","Usuario","ImpEt","dUsuario",T,"C",100,0,"CARACTER",F,"",F,"=goServicios.Seguridad.cUsuarioLogueado",F,""
+"IMPRESIONDEETIQUETA","ETIQUETADETALLE","ImpEtDet","numero",T,"N",10,0,"DETALLEITEMIMPETIQUETA",F,"",F,"",F,""

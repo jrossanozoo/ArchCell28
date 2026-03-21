@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+  <xml>
+    <valor>Todos</valor>
+    <cdefault>retorno</cdefault>
+    <orden>0</orden>
+    <retorno>-1</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de crédito manual de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>40</orden>
+    <retorno>3</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de débito manual de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>45</orden>
+    <retorno>4</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Seña</valor>
+    <cdefault>
+    </cdefault>
+    <orden>50</orden>
+    <retorno>58</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Cancelación de señas</valor>
+    <cdefault>
+    </cdefault>
+    <orden>51</orden>
+    <retorno>45</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Presupuesto de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>55</orden>
+    <retorno>25</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Pedido de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>60</orden>
+    <retorno>23</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Preparación de mercadería</valor>
+    <cdefault>
+    </cdefault>
+    <orden>61</orden>
+    <retorno>57</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Remito de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>65</orden>
+    <retorno>11</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Cancelación de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>70</orden>
+    <retorno>12</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Pedido de compra</valor>
+    <cdefault>
+    </cdefault>
+    <orden>36</orden>
+    <retorno>38</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de crédito de exportación de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>50</orden>
+    <retorno>48</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de débito de exportación de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>60</orden>
+    <retorno>49</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Descarga de cheques de terceros</valor>
+    <cdefault>
+    </cdefault>
+    <orden>2</orden>
+    <retorno>46</retorno>
+    <pais>
+    </pais>
+  </xml>
+</VFPData>

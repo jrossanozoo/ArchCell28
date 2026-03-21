@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"RAZONSOCIAL","Codigo","RAZONS","RZCOD",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"RAZONSOCIAL","Descripcion","RAZONS","RZDES",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"RAZONSOCIAL","Cuit","RAZONS","CUIT",T,"C",15,0,"CUIT",F,"",F,"",F,""
+"RAZONSOCIAL","Observacion","RAZONS","ROBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

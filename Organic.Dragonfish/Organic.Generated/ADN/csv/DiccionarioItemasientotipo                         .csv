@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMASIENTOTIPO","Codigo","ATIPODET","CODIGO",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMASIENTOTIPO","HabilitaDebe","ATIPODET","HabilitaD",F,"C",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMASIENTOTIPO","HabilitaHaber","ATIPODET","HabilitaH",F,"C",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMASIENTOTIPO","CodigoConcepto","ATIPODET","CodConc",F,"C",15,0,"CARACTER",F,"",F,"",F,""
+"ITEMASIENTOTIPO","Concepto","ATIPODET","CONCEPTO",T,"C",23,0,"DESCRIPCION",F,"",F,"",T,""
+"ITEMASIENTOTIPO","PlanDeCuentasDebe","ATIPODET","CUENTADE",T,"C",30,0,"CODIGODIBUJADOCHICO",F,"PLANDECUENTAS",F,"",F,""
+"ITEMASIENTOTIPO","PlanDeCuentasDebeDetalle","ATIPODET","CDEBEDET",T,"C",90,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMASIENTOTIPO","PlanDeCuentasHaber","ATIPODET","CUENTAHA",T,"C",30,0,"CODIGODIBUJADOCHICO",F,"PLANDECUENTAS",F,"",F,""
+"ITEMASIENTOTIPO","PlanDeCuentasHaberDetalle","ATIPODET","CHABERDET",T,"C",90,0,"DESCRIPCION",F,"",F,"",F,""

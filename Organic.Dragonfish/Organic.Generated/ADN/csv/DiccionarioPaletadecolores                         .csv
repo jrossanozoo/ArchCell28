@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"PALETADECOLORES","Codigo","PCOLOR","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"PALETADECOLORES","Descripcion","PCOLOR","Descrip",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"PALETADECOLORES","Colores","DPCOLOR","Codigo",T,"C",10,0,"DETALLEITEMCOLORES",F,"",F,"",F,""
+"PALETADECOLORES","Observacion","PCOLOR","MObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

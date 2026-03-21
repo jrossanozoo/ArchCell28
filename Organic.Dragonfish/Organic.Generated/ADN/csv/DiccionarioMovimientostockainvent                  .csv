@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MOVIMIENTOSTOCKAINVENT","Codigo","MSTOCKAINV","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",T,""
+"MOVIMIENTOSTOCKAINVENT","Tipo","MSTOCKAINV","DIRMOV",T,"N",1,0,"COMBOMOVMER",F,"",F,"2",T,""
+"MOVIMIENTOSTOCKAINVENT","InventarioOrigen","MSTOCKAINV","INVENTORIG",T,"C",15,0,"CODIGO",F,"INVENTARIO",F,"",T,""
+"MOVIMIENTOSTOCKAINVENT","InventarioDestino","MSTOCKAINV","INVENTDEST",F,"C",15,0,"CODIGO",F,"INVENTARIO",F,"",F,""
+"MOVIMIENTOSTOCKAINVENT","Numero","MSTOCKAINV","NUMERO",T,"N",8,0,"CLAVECANDIDATA",F,"",F,"",F,""
+"MOVIMIENTOSTOCKAINVENT","Fecha","MSTOCKAINV","FECHA",T,"D",8,0,"FECHACOMPROBANTE",F,"",T,"=goServicios.librerias.ObtenerFecha()",T,""
+"MOVIMIENTOSTOCKAINVENT","Obs","MSTOCKAINV","MObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"MOVIMIENTOSTOCKAINVENT","MovimientoDetalle","DETMSTOCKAINV","NUMR",T,"G",38,0,"DETALLEITEMMSTOCKAINV",F,"",F,"",F,""

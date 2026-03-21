@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MOTIVODATOSADICIONALESCOMPROBANTESA","Codigo","MOTADICA","Codigo",T,"N",2,0,"CODIGONUMERICO",T,"",F,"",F,""
+"MOTIVODATOSADICIONALESCOMPROBANTESA","Descripcion","MOTADICA","Descrip",T,"C",70,0,"DESCRIPCION",F,"",T,"",F,""
+"MOTIVODATOSADICIONALESCOMPROBANTESA","DescripcionCorta","MOTADICA","DescCorta",F,"C",40,0,"CARACTER",F,"",F,"",F,""

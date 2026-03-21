@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIPOCLIENTE","Codigo","TipoCli","TCCOD",T,"C",10,0,"CODIGO",T,"",F,"",T,""
+"TIPOCLIENTE","Descripcion","TipoCli","TCDES",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"TIPOCLIENTE","Observacion","TipoCli","TCOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

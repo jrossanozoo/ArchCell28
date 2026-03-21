@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMDISPMOVILPOINT","Codigo","POINTDispMovil","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMDISPMOVILPOINT","DispositivoMovil","POINTDispMovil","DispMovil",T,"C",40,0,"CARACTER",F,"",F,"",T,""
+"ITEMDISPMOVILPOINT","Disponible","POINTDispMovil","Disponible",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMDISPMOVILPOINT","Sugerido","POINTDispMovil","Sugerido",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMDISPMOVILPOINT","VinculacionPDV","POINTDispMovil","VincPDV",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

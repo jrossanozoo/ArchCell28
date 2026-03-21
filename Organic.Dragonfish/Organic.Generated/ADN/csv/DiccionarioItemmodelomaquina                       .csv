@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMMODELOMAQUINA","Codigo","MODMAQ","CodModMaq",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMMODELOMAQUINA","Proceso","MODMAQ","Proceso",T,"C",15,0,"CODIGO",F,"PROCESOPRODUCCION",F,"",T,""
+"ITEMMODELOMAQUINA","Maquina","MODMAQ","Maquina",T,"C",15,0,"CODIGO",F,"MAQUINARIA",F,"",F,""
+"ITEMMODELOMAQUINA","MaquinaDetalle","MODMAQ","MaqDeta",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"Maquina.Descripcion"
+"ITEMMODELOMAQUINA","TipoMaquinaria","MODMAQ","Tipo",T,"N",2,0,"COMBOSERVICIOPRODUCCION",F,"",T,"",F,"Maquina.TipoMaquinaria"
+"ITEMMODELOMAQUINA","UnidadDeTiempo","MODMAQ","Unidad",T,"N",2,0,"COMBOSERVICIOPRODUCCION",F,"",T,"",F,"Maquina.UnidadDeTiempo"
+"ITEMMODELOMAQUINA","Tiempo","MODMAQ","Tiempo",T,"N",6,2,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMMODELOMAQUINA","Desperdicio","MODMAQ","Desperdici",T,"N",6,2,"NUMERICONONEGATIVO",F,"",F,"",F,""

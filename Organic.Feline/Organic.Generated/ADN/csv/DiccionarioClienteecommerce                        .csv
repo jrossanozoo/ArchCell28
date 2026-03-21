@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"Clienteecommerce","Codigo","CLIECOM","numero",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"Clienteecommerce","ClienteEcommerce","CLIECOM","CLIENECOM",T,"C",40,0,"CARACTER",F,"",T,"",T,""
+"Clienteecommerce","Cuentaecommerce","CLIECOM","cuenta",T,"C",10,0,"CODIGO",F,"ECOMMERCE",F,"",T,""
+"Clienteecommerce","ClienteDragon","CLIECOM","cliedragon",T,"C",5,0,"CODIGO",F,"CLIENTE",F,"",F,""
+"Clienteecommerce","NombreCompleto","CLIECOM","NOMYAPE",F,"C",80,0,"CARACTER",F,"",F,"",F,""
+"Clienteecommerce","Nombre","CLIECOM","NOMBRE",T,"C",40,0,"CARACTER",F,"",F,"",F,""
+"Clienteecommerce","Apellido","CLIECOM","APELLIDO",T,"C",40,0,"CARACTER",F,"",F,"",F,""
+"Clienteecommerce","Mail","CLIECOM","EMAIL",T,"C",100,0,"MAIL",F,"",F,"",F,""
+"Clienteecommerce","Telefono","CLIECOM","TELEFONO",T,"C",40,0,"CARACTER",F,"",F,"",F,""
+"Clienteecommerce","TipoDoc","CLIECOM","TIPODOC",T,"C",5,0,"CARACTER",F,"",F,"",F,""
+"Clienteecommerce","NroDoc","CLIECOM","NRODOC",T,"C",40,0,"CARACTER",F,"",F,"",F,""
+"Clienteecommerce","Observacion","CLIECOM","obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

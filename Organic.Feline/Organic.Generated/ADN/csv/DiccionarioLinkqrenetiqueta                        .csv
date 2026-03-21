@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"LINKQRENETIQUETA","Codigo","LINKQRETI","LQrCod",T,"C",20,0,"CODIGOSKU",T,"",F,"",F,""
+"LINKQRENETIQUETA","Articulo","LINKQRETI","ArtCod",T,"C",13,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"LINKQRENETIQUETA","Color","LINKQRETI","CodCol",T,"C",2,0,"CODIGO",F,"COLOR",F,"",F,""
+"LINKQRENETIQUETA","Talle","LINKQRETI","CodTall",T,"C",3,0,"DESCRIPCION",F,"",F,"",F,""
+"LINKQRENETIQUETA","QRLink1","LINKQRETI","QRLink1",T,"M",0,0,"OBSERVACION4R",F,"",F,"",T,""
+"LINKQRENETIQUETA","QRLink2","LINKQRETI","QRLink2",T,"M",0,0,"OBSERVACION4R",F,"",F,"",F,""
+"LINKQRENETIQUETA","QRLink3","LINKQRETI","QRLink3",T,"M",0,0,"OBSERVACION4R",F,"",F,"",F,""
+"LINKQRENETIQUETA","Observacion","LINKQRETI","Obs",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""

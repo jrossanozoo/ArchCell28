@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MAILPORLOTE","Codigo","MCAEPL","CODIGO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",F,""
+"MAILPORLOTE","FechaAltaFW","MCAEPL","FAltaFW",T,"D",8,0,"FECHA",F,"",F,"=golibrerias.obtenerfecha()",F,""
+"MAILPORLOTE","Entidad","MCAEPL","Comprob",T,"C",40,0,"COMBOENTIDADESCAEPORLOTE",F,"",T,"="FACTURAELECTRONICA"",T,""
+"MAILPORLOTE","Letra","MCAEPL","Letra",T,"C",1,0,"CARACTER",F,"",F,"="A"",T,""
+"MAILPORLOTE","PuntoDeVenta","MCAEPL","ptovta",T,"N",4,0,"NUMERICO",F,"",F,"=goServicios.Parametros.Felino.GestionDeVentas.FacturacionElectronica.Nacional.PuntoDeVenta",T,""
+"MAILPORLOTE","NumeroDesde","MCAEPL","NumDesde",T,"N",9,0,"EtiquetaCaracterDesdeHasta",F,"",F,"",F,""
+"MAILPORLOTE","NumeroHasta","MCAEPL","NumHasta",T,"N",9,0,"EtiquetaCaracterDesdeHasta",F,"",F,"",F,""
+"MAILPORLOTE","Serie","MCAEPL","serie",T,"C",20,0,"CARACTER",F,"",F,"=_screen.zoo.app.cSerie",F,""
+"MAILPORLOTE","Version","MCAEPL","vrsn",T,"C",20,0,"CARACTER",F,"",F,"=_screen.zoo.app.ObtenerVersion()",F,""
+"MAILPORLOTE","Db","MCAEPL","db",T,"C",20,0,"CARACTER",F,"",F,"=_screen.zoo.app.cSucursalActiva",F,""
+"MAILPORLOTE","Usuario","MCAEPL","usuario",T,"C",100,0,"CARACTER",F,"",F,"=goServicios.Seguridad.cUsuarioLogueado",F,""
+"MAILPORLOTE","Obs","MCAEPL","detalle",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

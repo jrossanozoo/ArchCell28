@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor> </valor>
+		<cdefault>VALOR</cdefault>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Exportar</valor>
+		<cdefault>VALOR</cdefault>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>Imprimir</valor>
+		<cdefault>VALOR</cdefault>
+		<orden>3</orden>
+	</xml>
+</VFPData>

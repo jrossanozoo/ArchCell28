@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMREMITOELEC","Codigo","detremelec","Codigo",F,"N",8,0,"CODIGONUMERICO",T,"",F,"",F,""
+"ITEMREMITOELEC","Comprobante","detremelec","Comprob",F,"G",38,0,"CODIGO",F,"REMITO",F,"",F,""
+"ITEMREMITOELEC","ImporteNeto","detremelec","ImpNeto",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMREMITOELEC","Remito","detremelec","Remito",T,"C",20,0,"CARACTERREMELEC",F,"",F,"",T,""
+"ITEMREMITOELEC","Cliente","detremelec","Cliente",T,"C",10,0,"CODIGO",F,"CLIENTE",F,"",F,""
+"ITEMREMITOELEC","ClienteDetalle","detremelec","Cliedeta",T,"C",185,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMREMITOELEC","Direccion","detremelec","Direccion",T,"C",220,0,"CARACTER",F,"",F,"",F,""
+"ITEMREMITOELEC","Cantidad","detremelec","Cantidad",T,"N",15,2,"NUMERICO",F,"",F,"",F,"comprobante.TotalCantidad"
+"ITEMREMITOELEC","NoTerminadoDevuelto","detremelec","Notermdev",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMREMITOELEC","ImporteTotal","detremelec","Importe",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMREMITOELEC","Procesado","detremelec","Procesado",T,"C",15,0,"CARACTER",F,"",F,"",F,""

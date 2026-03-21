@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMATRIBUTOSIMPO","Codigo","DisImpoAtri","iCod",F,"C",40,0,"CODIGO",T,"",F,"",F,""
+"ITEMATRIBUTOSIMPO","Area","DisImpoAtri","cArea",T,"C",20,0,"CARACTER",F,"",F,"",T,""
+"ITEMATRIBUTOSIMPO","Tipo","DisImpoAtri","cTipo",T,"C",3,0,"CODIGO",F,"TipoAtributosExportacion",F,"="ATR"",F,""
+"ITEMATRIBUTOSIMPO","TipoDetalle","DisImpoAtri","cTipDet",T,"C",100,0,"CARACTER",F,"",T,"="Atributo"",F,"Tipo.Descripcion"
+"ITEMATRIBUTOSIMPO","Atributo","DisImpoAtri","cAtributo",T,"C",100,0,"CARACTER",F,"",F,"",F,""
+"ITEMATRIBUTOSIMPO","Orden","DisImpoAtri","nOrden",T,"N",3,0,"NUMERICO",F,"",F,"",F,""
+"ITEMATRIBUTOSIMPO","Ancho","DisImpoAtri","nLong",T,"N",3,0,"NUMERICO",F,"",F,"",F,""
+"ITEMATRIBUTOSIMPO","Conversion","DisImpoAtri","cConv",T,"C",40,0,"CODIGO",F,"conversion",F,"",F,""
+"ITEMATRIBUTOSIMPO","Formato","DisImpoAtri","cFormato",T,"C",40,0,"CODIGO",F,"FormatoExportacion",F,"",F,""
+"ITEMATRIBUTOSIMPO","Condicion","DisImpoAtri","cCondicion",T,"C",40,0,"CODIGO",F,"CONDICIONIMPO",F,"",F,""
+"ITEMATRIBUTOSIMPO","SubArea","DisImpoAtri","cSubArea",F,"C",20,0,"CARACTER",F,"",F,"",F,""

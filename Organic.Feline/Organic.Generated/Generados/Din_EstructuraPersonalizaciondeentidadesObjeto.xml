@@ -1,0 +1,932 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPDataSet xml:space="preserve">
+	<xsd:schema id="VFPDataSet" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPDataSet" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="c_Estructura" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="entidad" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="atributo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="claveprimaria" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="muestrarelacion" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="claveforanea" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="dominio" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="30"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tabla" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="15"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="campo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="10"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tipodato" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="10"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="longitud" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:decimal">
+											<xsd:totalDigits value="3"/>
+											<xsd:fractionDigits value="0"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="decimales" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:decimal">
+											<xsd:totalDigits value="2"/>
+											<xsd:fractionDigits value="0"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="ordenreglanegocio" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:decimal">
+											<xsd:totalDigits value="3"/>
+											<xsd:fractionDigits value="0"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="obligatorio" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="mantenerenrecepcion" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="genhabilitar" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="clavecandidata" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:decimal">
+											<xsd:totalDigits value="2"/>
+											<xsd:fractionDigits value="0"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="etiquetacorta" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="60"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="etiqueta" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="160"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="visible" type="xsd:boolean"/>
+								<xsd:element name="filtro" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="80"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tipoatributo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="versionminimaderecepcion" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="20"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="espk" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="escc" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="esquema" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="50"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="esfk" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="esvirtual" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="forzarfiltro" type="xsd:boolean" minOccurs="0"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>BASEDEDATOSALTAFW                       </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>BDALTAFW  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Base alta                                                   </etiquetacorta>
+		<etiqueta>Base de datos alta                                                                                                                                              </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>BASEDEDATOSMODIFICACIONFW               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>BDMODIFW  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Base modif.                                                 </etiquetacorta>
+		<etiqueta>Base de datos modificación                                                                                                                                      </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>Codigo                                  </atributo>
+		<claveprimaria>true</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CODIGO                        </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>Codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Código                                                      </etiquetacorta>
+		<etiqueta>Código                                                                                                                                                          </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>true</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>DenominacionCorta                       </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>DenCor    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>true</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Corta                                                       </etiquetacorta>
+		<etiqueta>Corta                                                                                                                                                           </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>DenominacionPlural                      </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>DenSin    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>true</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Singular                                                    </etiquetacorta>
+		<etiqueta>Singular                                                                                                                                                        </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>DenominacionSingular                    </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>DenPlu    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>true</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Plural                                                      </etiquetacorta>
+		<etiqueta>Plural                                                                                                                                                          </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>ESTADOTRANSFERENCIA                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>ESTTRANS  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>20</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Est. Transf.                                                </etiquetacorta>
+		<etiqueta>Estado transferencia                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>Entidad                                 </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>true</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>COMBOENTIDADESPERSONALIZABLES </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>Ent       </campo>
+		<tipodato>C         </tipodato>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>true</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Entidad                                                     </etiquetacorta>
+		<etiqueta>Entidad                                                                                                                                                         </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>FECHAALTAFW                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>FALTAFW   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Alta                                                   </etiquetacorta>
+		<etiqueta>Fecha alta                                                                                                                                                      </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>FECHAEXPO                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>FECEXPO   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Expo.                                                  </etiquetacorta>
+		<etiqueta>Fecha exportación                                                                                                                                               </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>FECHAIMPO                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>FECIMPO   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Impo.                                                  </etiquetacorta>
+		<etiqueta>Fecha importación                                                                                                                                               </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>FECHAMODIFICACIONFW                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>FMODIFW   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Modif.                                                 </etiquetacorta>
+		<etiqueta>Fecha modificación                                                                                                                                              </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>FECHATRANSFERENCIA                      </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>FECTRANS  </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Transf.                                                </etiquetacorta>
+		<etiqueta>Fecha transferencia                                                                                                                                             </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>HORAALTAFW                              </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>HALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora alta                                                   </etiquetacorta>
+		<etiqueta>Hora alta                                                                                                                                                       </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>HORAEXPO                                </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>HORAEXPO  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora expo.                                                  </etiquetacorta>
+		<etiqueta>Hora exportación                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>HORAIMPO                                </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>HORAIMPO  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora Impo.                                                  </etiquetacorta>
+		<etiqueta>Hora importación                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>HORAMODIFICACIONFW                      </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>HMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora modif.                                                 </etiquetacorta>
+		<etiqueta>Hora modificación                                                                                                                                               </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>Observacion                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>OBSERVACION                   </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>Obs       </campo>
+		<tipodato>M         </tipodato>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Observación                                                 </etiquetacorta>
+		<etiqueta>Observación                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>Ocultar                                 </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>SINOBOOL                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>Ocultar   </campo>
+		<tipodato>L         </tipodato>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Ocultar                                                     </etiquetacorta>
+		<etiqueta>Ocultar                                                                                                                                                         </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>SERIEALTAFW                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>SALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>7</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Seria alta                                                  </etiquetacorta>
+		<etiqueta>Serie alta                                                                                                                                                      </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>SERIEMODIFICACIONFW                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>SMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>7</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Serie modif.                                                </etiquetacorta>
+		<etiqueta>Serie modificación                                                                                                                                              </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>USUARIOALTAFW                           </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>UALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Usuario alta                                                </etiquetacorta>
+		<etiqueta>Usuario alta                                                                                                                                                    </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>USUARIOMODIFICACIONFW                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>UMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Usuario modif.                                              </etiquetacorta>
+		<etiqueta>Usuario modificación                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>VERSIONALTAFW                           </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>VALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>13</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Versión alta                                                </etiquetacorta>
+		<etiqueta>Versión alta                                                                                                                                                    </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>VERSIONMODIFICACIONFW                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>VMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>13</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Versión modif.                                              </etiquetacorta>
+		<etiqueta>Versión modificación                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PERSONALIZACIONDEENTIDADES              </entidad>
+		<atributo>ZADSFW                                  </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>PerEnt         </tabla>
+		<campo>ZADSFW    </campo>
+		<tipodato>M         </tipodato>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Acciones del sistema                                        </etiquetacorta>
+		<etiqueta>Acciones del sistema                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ORGANIZACION                                      </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+</VFPDataSet>

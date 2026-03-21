@@ -1,0 +1,2 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"OPEECOMENPROCESO","Codigo","OpeEcoEnProc","Codigo",T,"C",38,0,"CODIGO",T,"",F,"",T,""

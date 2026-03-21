@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ERRORESCFIBM4610KC4","Codigo","ibm4610kc4","cCod",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ERRORESCFIBM4610KC4","LanzaExcepcion","ibm4610kc4","cExcep",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ERRORESCFIBM4610KC4","Detalle","ibm4610kc4","cDet",T,"C",254,0,"OBSERVACION4R",F,"",T,"",F,""
+"ERRORESCFIBM4610KC4","Respuesta","ibm4610kc4","cResp",T,"C",254,0,"OBSERVACION4R",F,"",F,"",F,""
+"ERRORESCFIBM4610KC4","Observacion","ibm4610kc4","cObs",T,"C",254,0,"OBSERVACION4R",F,"",F,"",F,""
+"ERRORESCFIBM4610KC4","DetalleEnIngles","ibm4610kc4","cDetI",T,"C",254,0,"OBSERVACION4R",F,"",F,"",F,""
+"ERRORESCFIBM4610KC4","RespuestaEnIngles","ibm4610kc4","cRespI",T,"C",254,0,"OBSERVACION4R",F,"",F,"",F,""
+"ERRORESCFIBM4610KC4","ObservacionEnIngles","ibm4610kc4","cObsI",T,"C",254,0,"OBSERVACION4R",F,"",F,"",F,""

@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ItemRetenciones","codigo","RetProDet","Cod",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ItemRetenciones","Jurisdiccion","RetProDet","jurisdicci",T,"C",8,0,"CODIGO",F,"JURISDICCION",F,"",T,""
+"ItemRetenciones","JurisdiccionDetalle","RetProDet","DesJur",T,"C",50,0,"DESCRIPCION",F,"",F,"",F,""
+"ItemRetenciones","Resolucion","RetProDet","Resol",T,"C",60,0,"CARACTER",F,"",F,"",F,""
+"ItemRetenciones","Porcentaje","RetProDet","porcen",T,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"ItemRetenciones","FechaExpiracion","RetProDet","FecExp",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMRETENCIONES","Excluido","RetProDet","Excluido",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMRETENCIONES","SedeExtraJuris","RetProDet","SedeExtJur",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

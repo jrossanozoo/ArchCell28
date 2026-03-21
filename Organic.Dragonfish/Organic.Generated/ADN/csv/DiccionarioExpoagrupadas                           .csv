@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"EXPOAGRUPADAS","clasehook","ExpoAgrup","clasehook",F,"C",100,0,"DESCRIPCION",F,"",F,"",T,""
+"EXPOAGRUPADAS","Codigo","ExpoAgrup","Codigo",T,"C",20,0,"CODIGO",T,"",T,"",F,""
+"EXPOAGRUPADAS","Descripcion","ExpoAgrup","cDes",T,"C",100,0,"DESCRIPCION",F,"",F,"",T,""
+"EXPOAGRUPADAS","filtraFecha","ExpoAgrup","filtrafec",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"EXPOAGRUPADAS","Categoria","ExpoAgrup","categoria",T,"N",2,0,"COMBOXML",F,"",F,"",F,""
+"EXPOAGRUPADAS","Favorito","ExpoAgrup","favorito",T,"L",1,0,"SINOBOOL",F,"",F,"=.F.",F,""
+"EXPOAGRUPADAS","Obs","ExpoAgrup","cObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"EXPOAGRUPADAS","Disenos","ExpoAgrupItem","iCod",T,"C",20,0,"DETALLEITEMEXPOAGRUPADAS",F,"",F,"",F,""

@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"RUBROPRODUCCION","Codigo","RUBROPROD","CodCons",T,"C",15,0,"CODIGO",T,"",F,"",F,""
+"RUBROPRODUCCION","Descripcion","RUBROPROD","Descrip",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"RUBROPRODUCCION","Observ","RUBROPROD","CObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

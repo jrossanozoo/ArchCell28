@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMIMPUESTOSLIQ","Codigo","ImpLiqMen","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMIMPUESTOSLIQ","PorcentajeDeIva","ImpLiqMen","IVAPorcent",F,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSLIQ","MontoDeIva","ImpLiqMen","IVAMonto",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSLIQ","MontoDeIvaSinDescuento","ImpLiqMen","IVAMonSD",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSLIQ","MontoNoGravado","ImpLiqMen","IVAMonNG",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSLIQ","MontoNoGravadoSinDescuento","ImpLiqMen","IVAMNGSD",F,"N",15,2,"NUMERICO",F,"",F,"",F,""

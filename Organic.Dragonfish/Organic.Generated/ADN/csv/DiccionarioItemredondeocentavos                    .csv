@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMREDONDEOCENTAVOS","Codigo","redoDetPorCent","codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMREDONDEOCENTAVOS","TerminacionCaracter","redoDetPorCent","termialfa",T,"C",2,0,"CARACTER",F,"",F,"",T,""
+"ITEMREDONDEOCENTAVOS","Desde","redoDetPorCent","desde",T,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"ITEMREDONDEOCENTAVOS","Hasta","redoDetPorCent","hasta",T,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"ITEMREDONDEOCENTAVOS","DesdePrecio","redoDetPorCent","desdepre",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMREDONDEOCENTAVOS","HastaPrecio","redoDetPorCent","hastapre",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMREDONDEOCENTAVOS","Terminacion","redoDetPorCent","termi",F,"N",2,0,"NUMERICO",F,"",F,"",F,""

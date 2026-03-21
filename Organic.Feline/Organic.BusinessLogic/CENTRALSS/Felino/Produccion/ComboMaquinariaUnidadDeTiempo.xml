@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Segundo</valor>
+		<cdefault>retorno</cdefault>
+		<orden>1</orden>
+		<retorno>1</retorno>
+	</xml>
+	<xml>
+		<valor>Minuto</valor>
+		<cdefault></cdefault>
+		<orden>2</orden>
+		<retorno>2</retorno>
+	</xml>
+	<xml>
+		<valor>Hora</valor>
+		<cdefault>retorno</cdefault>
+		<orden>3</orden>
+		<retorno>3</retorno>
+	</xml>
+	<xml>
+		<valor>Día</valor>
+		<cdefault>retorno</cdefault>
+		<orden>4</orden>
+		<retorno>4</retorno>
+	</xml>
+</VFPData>

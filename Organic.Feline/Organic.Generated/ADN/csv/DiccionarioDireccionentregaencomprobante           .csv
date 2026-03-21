@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DIRECCIONENTREGAENCOMPROBANTE","DireccionEntrega","ComprobanteV","DirEntr",T,"C",250,0,"COMBODIRECCIONESENTREGA",F,"",T,"",F,""
+"DIRECCIONENTREGAENCOMPROBANTE","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"DIRECCIONENTREGAENCOMPROBANTE","Codigo","COMPROBANTEV","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",T,""

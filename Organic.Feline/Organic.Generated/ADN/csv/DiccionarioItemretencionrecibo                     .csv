@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMRETENCIONRECIBO","Codigo","ReciRete","codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMRETENCIONRECIBO","idComprobante","ReciRete","idcomprob",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMRETENCIONRECIBO","Impuesto","ReciRete","impuesto",T,"C",10,0,"CODIGOVALOR",F,"IMPUESTO",F,"",T,""
+"ITEMRETENCIONRECIBO","ImpuestoDetalle","ReciRete","impudeta",T,"C",50,0,"CARACTER",F,"",T,"",F,"IMPUESTO.DESCRIPCION"
+"ITEMRETENCIONRECIBO","Monto","ReciRete","monto",T,"N",12,2,"NUMERICONONEGATIVO",F,"",F,"",F,""

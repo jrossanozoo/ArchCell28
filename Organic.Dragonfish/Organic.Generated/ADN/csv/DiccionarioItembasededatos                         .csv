@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMBASEDEDATOS","Codigo","AGRUPBD","Codigo",F,"C",21,0,"CODIGO",T,"",F,"",F,""
+"ITEMBASEDEDATOS","Incluye","AGRUPBD","incluye",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMBASEDEDATOS","BaseDeDatos","AGRUPBD","Basededato",T,"C",8,0,"CODIGO",F,"BASEDEDATOS",F,"",T,""
+"ITEMBASEDEDATOS","BaseDeDatosDetalle","AGRUPBD","Ruta",T,"C",250,0,"CARACTER",F,"",F,"",F,"BaseDeDatos.Ruta"

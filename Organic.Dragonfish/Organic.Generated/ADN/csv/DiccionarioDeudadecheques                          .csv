@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DEUDADECHEQUES","Codigo","DEUDACH","cCod",F,"G",38,0,"CODIGO",T,"",F,"",T,""
+"DEUDADECHEQUES","Estado","DEUDACH","Estado",T,"C",5,0,"COMBOSERVICIOCHEQUE",F,"",F,"",T,""
+"DEUDADECHEQUES","Cliente","DEUDACH","Cliente",F,"C",10,0,"CARACTER",F,"",F,"",T,""
+"DEUDADECHEQUES","idglobal","DEUDACH","globalid",T,"C",38,0,"CARACTER",F,"",F,"",T,""
+"DEUDADECHEQUES","Fecha","DEUDACH","cFecha",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",T,""
+"DEUDADECHEQUES","Monto","DEUDACH","cMonto",T,"N",15,2,"NUMERICO",F,"",F,"",T,""
+"DEUDADECHEQUES","FechaEmision","DEUDACH","cFechaEmi",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",T,""
+"DEUDADECHEQUES","Numero","DEUDACH","cNumero",T,"N",8,0,"NUMERICO",F,"",F,"",T,""
+"DEUDADECHEQUES","Moneda","DEUDACH","cMoneda",T,"C",10,0,"CARACTER",F,"",F,"",F,""

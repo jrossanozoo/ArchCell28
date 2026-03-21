@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DatosAdicionalesSIPRIB","Codigo","SIPRIBdatadic","Codigo",T,"C",20,0,"CODIGO",T,"",F,"",T,""
+"DatosAdicionalesSIPRIB","Descripcion","SIPRIBdatadic","Descrip",T,"C",15,0,"CARACTER",F,"",T,"Código SIPRIB",F,""
+"DatosAdicionalesSIPRIB","CondIIBB","SIPRIBdatadic","CondIIBB",T,"N",2,0,"COMBOXML",F,"",F,"",T,""
+"DatosAdicionalesSIPRIB","ArticuloInciso","SIPRIBdatadic","ArticuloIn",T,"N",3,0,"COMBOTABLA",F,"ARTICULOINCISODATOSADICIONALESSIPRIB",F,"",T,""
+"DatosAdicionalesSIPRIB","TipoExencion","SIPRIBdatadic","TipoExenc",T,"N",2,0,"COMBOXML",F,"",F,"1",F,""
+"DatosAdicionalesSIPRIB","Ano","SIPRIBdatadic","Anio",T,"N",4,0,"NUMERICO",F,"",F,"",F,""
+"DatosAdicionalesSIPRIB","Certificado","SIPRIBdatadic","Certific",T,"N",6,0,"NUMERICO",F,"",F,"",F,""
+"DatosAdicionalesSIPRIB","OtrosGravamenes","SIPRIBdatadic","OtrosGrav",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"DatosAdicionalesSIPRIB","RegistroeInspeccion","SIPRIBdatadic","Registro",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

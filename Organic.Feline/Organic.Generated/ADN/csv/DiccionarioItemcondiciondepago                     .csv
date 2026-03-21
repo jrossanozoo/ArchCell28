@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCONDICIONDEPAGO","Codigo","DetCondicion","clcod",F,"C",5,0,"CODIGO",T,"",F,"",F,""
+"ITEMCONDICIONDEPAGO","Condiciondetipo","DetCondicion","cltpo",F,"N",1,0,"NUMERICO",F,"",F,"8",F,""
+"ITEMCONDICIONDEPAGO","Valor","DetCondicion","clvcod",T,"C",5,0,"CODIGO",F,"Valor",F,"",F,""
+"ITEMCONDICIONDEPAGO","ValorDetalle","DetCondicion","CC201",T,"C",30,0,"DESCRIPCION",F,"",T,"",F,"Valor.Descripcion"
+"ITEMCONDICIONDEPAGO","dias","DetCondicion","CLVDIAS",T,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCONDICIONDEPAGO","porcentaje","DetCondicion","clvporj",T,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCONDICIONDEPAGO","tipo","","",T,"C",5,0,"CARACTER",F,"",F,"",F,""

@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ESTADOCONTROLADORFISCAL","Descrip","ErrorCF","Descripci",F,"C",50,0,"CARACTER",F,"",T,"",F,""
+"ESTADOCONTROLADORFISCAL","Codigo","ErrorCF","Cod",F,"C",6,0,"CODIGO",T,"",F,"",F,""
+"ESTADOCONTROLADORFISCAL","PuntoDeVenta","ErrorCF","FPTOVEN",F,"N",4,0,"NUMERICO",F,"",F,"",T,""
+"ESTADOCONTROLADORFISCAL","Comprobante","ErrorCF","Comp",F,"N",2,0,"NUMERICO",F,"",F,"",T,""
+"ESTADOCONTROLADORFISCAL","TieneError","ErrorCF","Tieneerr",F,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ESTADOCONTROLADORFISCAL","IdComprobante","ErrorCF","CodComp",F,"N",10,0,"NUMERICO",F,"",F,"",F,""
+"ESTADOCONTROLADORFISCAL","CodigoComprobante","ErrorCF","GUIComp",F,"G",38,0,"CARACTER",F,"",F,"",F,""
+"ESTADOCONTROLADORFISCAL","Obs","ErrorCF","OBS",F,"C",100,0,"OBSERVACION",F,"",F,"",F,""

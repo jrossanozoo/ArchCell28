@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"GRUPO","Codigo","Grupo","Cod",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"GRUPO","Descripcion","Grupo","Descrip",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"GRUPO","Obs","Grupo","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

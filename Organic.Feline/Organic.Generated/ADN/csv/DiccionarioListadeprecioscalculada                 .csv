@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"LISTADEPRECIOSCALCULADA","Numero","LCALCULADA","NUMERO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",F,""
+"LISTADEPRECIOSCALCULADA","ListaDePrecios","LCALCULADA","LPC_LISTA",T,"C",6,0,"CODIGO",F,"LISTADEPRECIOS",F,"",T,""
+"LISTADEPRECIOSCALCULADA","Formula","LCALCULADA","LPC_FORM",T,"C",10,0,"CODIGO",F,"FORMULA",F,"",T,""
+"LISTADEPRECIOSCALCULADA","Proveedor","LCALCULADA","LPC_PROV",T,"C",5,0,"CODIGO",F,"PROVEEDOR",F,"",F,""
+"LISTADEPRECIOSCALCULADA","Expresion","","",T,"M",0,0,"EXPRESION",F,"",F,"",F,""
+"LISTADEPRECIOSCALCULADA","Obs","LCALCULADA","LPC_OBS",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""

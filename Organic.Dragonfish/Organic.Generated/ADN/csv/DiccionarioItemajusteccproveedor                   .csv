@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAJUSTECCPROVEEDOR","Tipo","","",F,"N",2,0,"NUMERICO",F,"",F,"=6",F,""
+"ITEMAJUSTECCPROVEEDOR","Proveedor","detajuccpro","FPerson",T,"C",10,0,"CODIGO",F,"PROVEEDOR",F,"",T,""
+"ITEMAJUSTECCPROVEEDOR","ProveedorDetalle","detajuccpro","FPROVEE",T,"C",60,0,"CARACTER",F,"",T,"",F,"Proveedor.Nombre"
+"ITEMAJUSTECCPROVEEDOR","FechaVencimiento","detajuccpro","FechaVto",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMAJUSTECCPROVEEDOR","Descripcion","detajuccpro","Descrip",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMAJUSTECCPROVEEDOR","Monto","detajuccpro","RMonto",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMAJUSTECCPROVEEDOR","Valor","","",F,"C",5,0,"CODIGO",F,"VALOR",F,"",F,""
+"ITEMAJUSTECCPROVEEDOR","Moneda","","",F,"C",10,0,"CODIGO",F,"MONEDA",F,"",F,"Valor.SimboloMonetario"
+"ITEMAJUSTECCPROVEEDOR","Fecha","","",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMAJUSTECCPROVEEDOR","Codigo","detajuccpro","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",F,""

@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIINVENTARIOFISICODETALLE","Codigo","TIInvFisDet","CODIGO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",F,""
+"TIINVENTARIOFISICODETALLE","IDCabecera","TIInvFisDet","IDCABECERA",T,"N",8,0,"CODIGONUMERICO",F,"TIInventarioFisico",F,"",T,""
+"TIINVENTARIOFISICODETALLE","Obs","TIInvFisDet","MOBS",T,"C",100,0,"OBSERVACION",F,"",T,"",F,""
+"TIINVENTARIOFISICODETALLE","Articulo","TIInvFisDet","ART",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"TIINVENTARIOFISICODETALLE","Color","TIInvFisDet","cColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"TIINVENTARIOFISICODETALLE","Talle","TIInvFisDet","Talle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"TIINVENTARIOFISICODETALLE","Cantidad","TIInvFisDet","CANTI",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

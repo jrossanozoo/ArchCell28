@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAREASIMPRESION","Codigo","DisAreas","iCod",F,"C",40,0,"CODIGO",T,"",F,"",F,""
+"ITEMAREASIMPRESION","Area","DisAreas","cArea",T,"C",20,0,"CARACTER",F,"",T,"",T,""
+"ITEMAREASIMPRESION","Tipo","DisAreas","cTipo",T,"C",20,0,"CODIGO",F,"TIPOAREAIMPRESION",F,"",F,""
+"ITEMAREASIMPRESION","x","DisAreas","cPosX",T,"N",9,2,"TWIPSAMM",F,"",F,"",F,""
+"ITEMAREASIMPRESION","y","DisAreas","cPosY",T,"N",9,2,"TWIPSAMM",F,"",F,"",F,""
+"ITEMAREASIMPRESION","Ancho","DisAreas","cAncho",T,"N",9,2,"TWIPSAMM",F,"",F,"",F,""
+"ITEMAREASIMPRESION","Alto","DisAreas","cAlto",T,"N",9,2,"TWIPSAMM",F,"",F,"",F,""
+"ITEMAREASIMPRESION","Estilo","DisAreas","cEstilo",T,"C",10,0,"CODIGO",F,"ESTILOIMPRESION",F,"",F,""
+"ITEMAREASIMPRESION","EsDet","DisAreas","cDetalle",F,"L",1,0,"SINOBOOL",F,"",F,"",F,"Tipo.Detalle"
+"ITEMAREASIMPRESION","Condicion","DisAreas","cCondicion",T,"C",254,0,"CARACTER",F,"",T,"",F,""

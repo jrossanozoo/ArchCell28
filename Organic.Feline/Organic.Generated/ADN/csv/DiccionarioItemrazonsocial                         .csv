@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMRAZONSOCIAL","Codigo","RAZSOC","RZCOD",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMRAZONSOCIAL","Cliente","","",T,"C",5,0,"CODIGO",F,"CLIENTE",F,"",F,""
+"ITEMRAZONSOCIAL","Nombre","","",T,"C",30,0,"DESCRIPCION",F,"",T,"",F,"Cliente.Nombre"

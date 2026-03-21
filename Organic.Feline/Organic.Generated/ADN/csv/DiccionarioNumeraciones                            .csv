@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"Numeraciones","Codigo","IniTal","cCod",F,"N",1,0,"CODIGONUMERICO",T,"",F,"",F,""
+"Numeraciones","Descripcion","","",F,"C",100,0,"CARACTER",F,"",T,"",F,""
+"Numeraciones","Observacion","","",F,"C",100,0,"OBSERVACION",F,"",F,"",F,""
+"Numeraciones","Talonarios","","",T,"N",1,0,"DETALLEITEMTALONARIO",F,"",F,"",F,""

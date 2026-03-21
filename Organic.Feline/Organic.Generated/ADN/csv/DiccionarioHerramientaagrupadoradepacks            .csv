@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"HERRAMIENTAAGRUPADORADEPACKS","Numero","HerPack","Numero",T,"N",10,0,"CODIGONUMERICO",T,"",F,"",T,""
+"HERRAMIENTAAGRUPADORADEPACKS","Motivo","HerPack","Motivo",T,"C",3,0,"CODIGO",F,"MOTIVO",F,"",F,""
+"HERRAMIENTAAGRUPADORADEPACKS","Vendedor","HerPack","Vendedor",T,"C",5,0,"CODIGO",F,"VENDEDOR",F,"",F,""
+"HERRAMIENTAAGRUPADORADEPACKS","Fecha","HerPack","Fecha",T,"D",8,0,"FECHA",F,"",T,"=goServicios.Librerias.ObtenerFecha()",F,""
+"HERRAMIENTAAGRUPADORADEPACKS","Accion","HerPack","Accion",T,"N",1,0,"COMBOXML",F,"",F,"",T,""
+"HERRAMIENTAAGRUPADORADEPACKS","MovEntrada","HerPack","MovEnt",F,"C",100,0,"CARACTER",F,"",F,"",F,""
+"HERRAMIENTAAGRUPADORADEPACKS","MovSalida","HerPack","MovSal",F,"C",100,0,"CARACTER",F,"",F,"",F,""
+"HERRAMIENTAAGRUPADORADEPACKS","Observacion","HerPack","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"HERRAMIENTAAGRUPADORADEPACKS","DetallePacks","HerPackDet","Numero",T,"C",10,0,"DETALLEITEMAGRUPADORDEPACK",F,"",F,"",F,""

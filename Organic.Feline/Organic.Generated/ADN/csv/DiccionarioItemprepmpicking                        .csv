@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMPREPMPICKING","Codigo","DetPrepMPicking","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMPREPMPICKING","NroItem","DetPrepMPicking","NroItem",F,"N",5,0,"NUMERICO",F,"",F,"",F,""
+"ITEMPREPMPICKING","Articulo","DetPrepMPicking","Articulo",T,"C",13,0,"CLAVECONLECTURACB",F,"ARTICULO",F,"",F,""
+"ITEMPREPMPICKING","Color","DetPrepMPicking","cColor",T,"C",2,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMPREPMPICKING","Talle","DetPrepMPicking","Talle",T,"C",3,0,"CARACTER",F,"",F,"",F,""
+"ITEMPREPMPICKING","CantidadAfectada","DetPrepMPicking","CantAfe",T,"N",8,0,"NUMERICO",F,"",F,"",F,""
+"ITEMPREPMPICKING","Equivalencia","DetPrepMPicking","Equiv",F,"C",14,0,"CODIGO",F,"Equivalencia",F,"",F,""
+"ITEMPREPMPICKING","CodigoOri","DetPrepMPicking","CodigoOri",F,"G",38,0,"CODIGO",F,"Picking",F,"",F,""
+"ITEMPREPMPICKING","IdItemArticulos","DetPrepMPicking","IdItem",F,"G",38,0,"CARACTER",F,"",F,"=goServicios.Librerias.ObtenerGuidPk()",F,""
+"ITEMPREPMPICKING","CantidadOriginal","DetPrepMPicking","CantOri",T,"N",8,2,"NUMERICO",F,"",F,"",F,""
+"ITEMPREPMPICKING","CantidadDisponible","","",T,"N",8,2,"NUMERICO",F,"",F,"",F,""

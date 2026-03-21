@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"INDICESINFLACION","Codigo","INDICES","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"INDICESINFLACION","DESCRIPCION","INDICES","Descip",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"INDICESINFLACION","VigenciaDesde","INDICES","VigDesde",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",T,""
+"INDICESINFLACION","VigenciaHasta","INDICES","VigHasta",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",T,""
+"INDICESINFLACION","Indices","INDICESDET","Codigo",T,"C",10,0,"DETALLEITEMINDICESINFLACION",F,"",F,"",F,""
+"INDICESINFLACION","Observacion","INDICES","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMTERMINALESLAPOS","Codigo","LAPOSTerminal","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMTERMINALESLAPOS","Terminal","LAPOSTerminal","Terminal",T,"C",60,0,"CARACTER",F,"",F,"",T,""
+"ITEMTERMINALESLAPOS","Disponible","LAPOSTerminal","Disponible",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMTERMINALESLAPOS","Sugerido","LAPOSTerminal","Sugerido",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

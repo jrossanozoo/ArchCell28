@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CIERREEJERCICIO","Numero","CIERREEJ","NUMERO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",T,""
+"CIERREEJERCICIO","Descripcion","CIERREEJ","DESCRIP",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"CIERREEJERCICIO","Ejercicio","CIERREEJ","EJERCICIO",T,"N",8,0,"CODIGONUMERICO",F,"EJERCICIO",F,"=this.ObtenerEjercicio()",T,""
+"CIERREEJERCICIO","TiposDeAsientosIncluidos","CIERREEJ","AsienInclu",T,"N",1,0,"COMBOXML",F,"",F,"",F,""
+"CIERREEJERCICIO","AsientoAjustePorInflacion","CIERREEJ","AjuInfla",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"CIERREEJERCICIO","Indice","CIERREEJ","IndiceInf",T,"C",10,0,"CODIGO",F,"INDICESINFLACION",F,"",F,""
+"CIERREEJERCICIO","CuentaBancaria","CIERREEJ","CuentaAjus",T,"C",30,0,"CODIGO",F,"PLANDECUENTAS",F,"",F,""
+"CIERREEJERCICIO","Resultado","CIERREEJ","Resultado",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"CIERREEJERCICIO","Patrimonial","CIERREEJ","Patrimonia",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"CIERREEJERCICIO","PlanDeCuentas","CIERREEJ","PCUENTA",T,"C",30,0,"CODIGO",F,"PLANDECUENTAS",F,"",F,""
+"CIERREEJERCICIO","Fecha","CIERREEJ","FECHAAS",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.librerias.ObtenerFecha()",F,""
+"CIERREEJERCICIO","Observacion","CIERREEJ","EOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

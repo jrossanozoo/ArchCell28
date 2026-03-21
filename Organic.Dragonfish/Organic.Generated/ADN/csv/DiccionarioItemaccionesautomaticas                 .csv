@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMACCIONESAUTOMATICAS","Codigo","daccaut","Codigo",F,"C",40,0,"CODIGO",T,"",F,"",F,""
+"ITEMACCIONESAUTOMATICAS","Metodo","daccaut","Metodo",T,"C",50,0,"COMBOXML",F,"",F,"",T,""
+"ITEMACCIONESAUTOMATICAS","Accion","daccaut","Accion",T,"C",50,0,"COMBOXML",F,"",F,"",F,""
+"ITEMACCIONESAUTOMATICAS","Expresion","daccaut","Expr",T,"C",250,0,"CARACTERACCIONESAUTOMATICAS",F,"",F,"",F,""
+"ITEMACCIONESAUTOMATICAS","Orden","daccaut","Orden",T,"N",2,0,"NUMERICO",F,"",F,"",F,""

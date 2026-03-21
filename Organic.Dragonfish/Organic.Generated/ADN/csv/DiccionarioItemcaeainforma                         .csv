@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCAEAINFORMA","Codigo","CAEAINFDET","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCAEAINFORMA","Fecha","CAEAINFDET","FechaComp",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMCAEAINFORMA","TipoComp","CAEAINFDET","TipoComp",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMCAEAINFORMA","CodigoComp","CAEAINFDET","CodComp",F,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMCAEAINFORMA","TotalComp","CAEAINFDET","TotalComp",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCAEAINFORMA","Resultado","CAEAINFDET","Resultado",T,"C",10,0,"CARACTER",F,"",F,"",F,""
+"ITEMCAEAINFORMA","FechaProceso","CAEAINFDET","FechaProc",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMCAEAINFORMA","ComentariosAFIP","CAEAINFDET","ObsAfip",T,"C",250,0,"CARACTER",F,"",F,"",F,""

@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ERRORSAP","Codigo","ERRORSAP","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",T,""
+"ERRORSAP","ProblemaInformado","ERRORSAP","Problema",T,"C",200,0,"TEXTO",F,"",T,"",T,""
+"ERRORSAP","Explicacion","ERRORSAP","Explica",T,"C",200,0,"TEXTO",F,"",F,"",T,""
+"ERRORSAP","Observacion","ERRORSAP","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

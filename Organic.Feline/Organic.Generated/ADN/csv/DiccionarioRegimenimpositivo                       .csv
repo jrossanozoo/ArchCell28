@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"REGIMENIMPOSITIVO","Codigo","RegImp","Codigo",T,"C",5,0,"CODIGO",T,"",F,"",T,""
+"REGIMENIMPOSITIVO","Descripcion","RegImp","Descrip",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"REGIMENIMPOSITIVO","Tipo","RegImp","tipo",T,"C",10,0,"CODIGO",F,"TIPOIMPUESTO",F,"",F,""
+"REGIMENIMPOSITIVO","Observación","RegImp","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

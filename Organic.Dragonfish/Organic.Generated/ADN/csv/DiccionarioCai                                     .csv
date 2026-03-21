@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CAI","Codigo","Numeraciones","Talonario",T,"C",35,0,"CODIGO",T,"",F,"",F,""
+"CAI","Obs","Numeraciones","pobs",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"CAI","Entidad","NUMERACIONES","Entidad",T,"C",150,0,"COMBORELANUMERACIONES",F,"",F,"",F,""
+"CAI","Letra","NUMERACIONES","Letra",T,"C",1,0,"CARACTER",F,"",F,"",F,""
+"CAI","PuntoDeVenta","NUMERACIONES","PtoVen",T,"N",4,0,"NUMERICO",F,"",F,"",F,""
+"CAI","CAIDetalle","DETALLECAIS","Codigo",T,"C",35,0,"DETALLEITEMCAI",F,"",F,"",F,""

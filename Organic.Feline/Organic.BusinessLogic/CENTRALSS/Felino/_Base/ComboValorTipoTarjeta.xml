@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Crédito</valor>
+		<cdefault>VALOR</cdefault>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Débito</valor>
+		<cdefault>VALOR</cdefault>
+		<orden>2</orden>
+	</xml>
+</VFPData>

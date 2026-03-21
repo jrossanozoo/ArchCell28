@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"EnvioDeMensajeria","Codigo","ENVMENS","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",T,""
+"EnvioDeMensajeria","Numero","ENVMENS","NUMERO",T,"N",4,0,"CLAVEDEBUSQUEDA",F,"",F,"",T,""
+"EnvioDeMensajeria","Ecommerce","ENVMENS","Ecommerce",T,"C",10,0,"CODIGO",F,"ECOMMERCE",F,"",T,""
+"EnvioDeMensajeria","Entidad","ENVMENS","ENTIDAD",T,"C",40,0,"COMBOXML",F,"",F,"",T,""
+"EnvioDeMensajeria","Diseno","ENVMENS","DIS",T,"C",40,0,"CODIGO",F,"DISENOIMPRESION",F,"",F,""
+"ENVIODEMENSAJERIA","MLEnvioUno","ENVMENS","MLENVUNO",T,"L",1,0,"TIPOSDEENTREGAML",F,"",F,"",F,""
+"ENVIODEMENSAJERIA","MLEnvioDos","ENVMENS","MLENVDOS",T,"L",1,0,"TIPOSDEENTREGAML",F,"",F,"",F,""
+"ENVIODEMENSAJERIA","MLAcordar","ENVMENS","MLACORDAR",T,"L",1,0,"TIPOSDEENTREGAML",F,"",F,"",F,""
+"ENVIODEMENSAJERIA","MotivoParaComunicarse","ENVMENS","MotivoMens",T,"C",180,0,"COMBOMOTIVOMENSAJERIA",F,"",F,"",F,""
+"ENVIODEMENSAJERIA","Template","ENVMENS","Template",T,"C",180,0,"COMBOTEMPLATEMENSAJERIA",F,"",F,"",F,""
+"EnvioDeMensajeria","Mensaje","ENVMENS","MENSAJE",T,"M",0,0,"OBSERVACION10R",F,"",T,"",F,""
+"EnvioDeMensajeria","Imagen","ENVMENS","IMAGEN",T,"C",180,0,"IMAGENCONRUTADINAMICA",F,"",F,"",F,""

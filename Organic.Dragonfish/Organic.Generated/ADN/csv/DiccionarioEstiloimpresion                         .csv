@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ESTILOIMPRESION","Codigo","EstImp","cCod",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ESTILOIMPRESION","Descripcion","EstImp","cDes",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"ESTILOIMPRESION","Obs","EstImp","cObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"ESTILOIMPRESION","Fuente","EstImp","cFuente",T,"C",40,0,"COMBOFUENTE",F,"",F,"",T,""
+"ESTILOIMPRESION","Tamano","EstImp","cTam",T,"N",3,0,"NUMERICO",F,"",F,"",T,""
+"ESTILOIMPRESION","Negrita","EstImp","cNegrita",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ESTILOIMPRESION","Italica","EstImp","cItalica",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ESTILOIMPRESION","Subrayado","EstImp","cSubraya",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ESTILOIMPRESION","EsCodbarra","EstImp","lbarra",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ESTILOIMPRESION","Delimitador","EstImp","cdelimita",T,"C",1,0,"CARACTER",F,"",F,"",F,""

@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMGESTIONPROCESO","Codigo","GESTORDPRO","CodGestPro",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMGESTIONPROCESO","Proceso","GESTORDPRO","Codigo",T,"C",15,0,"CODIGO",F,"PROCESOPRODUCCION",F,"",T,""
+"ITEMGESTIONPROCESO","ProcesoDetalle","GESTORDPRO","cProcDet",T,"C",250,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMGESTIONPROCESO","Orden","GESTORDPRO","Orden",T,"N",5,0,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMGESTIONPROCESO","Taller","GESTORDPRO","Taller",T,"C",15,0,"CODIGO",F,"TALLER",F,"",F,""
+"ITEMGESTIONPROCESO","InventarioEntrada","GESTORDPRO","InvEnt",T,"C",15,0,"CODIGO",F,"INVENTARIO",F,"",F,""
+"ITEMGESTIONPROCESO","InventarioSalida","GESTORDPRO","InvSal",T,"C",15,0,"CODIGO",F,"INVENTARIO",F,"",F,""

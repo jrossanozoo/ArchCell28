@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ENTIDADFINANCIERA","Codigo","ENTFIN","EfCod",T,"C",5,0,"CODIGO",T,"",F,"",T,""
+"ENTIDADFINANCIERA","Descripcion","ENTFIN","EfDes",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"ENTIDADFINANCIERA","CUIT","ENTFIN","EfCuit",T,"C",15,0,"CUIT",F,"",F,"",F,""
+"ENTIDADFINANCIERA","RUT","ENTFIN","EfRUT",T,"C",12,0,"RUT",F,"",F,"",F,""
+"ENTIDADFINANCIERA","Observacion","ENTFIN","EObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

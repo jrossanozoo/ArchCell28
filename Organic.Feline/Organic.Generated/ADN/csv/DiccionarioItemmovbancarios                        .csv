@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMMOVBANCARIOS","Codigo","DETMOVBANC","Codigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMMOVBANCARIOS","Movimiento","DETMOVBANC","Mov",T,"C",20,0,"CODIGO",F,"MOVIMIENTOBANCARIO",F,"",T,""
+"ITEMMOVBANCARIOS","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",F,"Movimiento.Fecha"
+"ITEMMOVBANCARIOS","Concepto","","",T,"C",10,0,"CARACTER",F,"",F,"",F,"Movimiento.Concepto_pk"
+"ITEMMOVBANCARIOS","Numero","","",T,"N",10,0,"NUMERICO",F,"",F,"",F,"Movimiento.Numero"
+"ITEMMOVBANCARIOS","ConceptoDetalle","","",T,"C",100,0,"CARACTER",F,"",F,"",F,"Concepto.Concepto"
+"ITEMMOVBANCARIOS","Importe","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,"Movimiento.Importe"

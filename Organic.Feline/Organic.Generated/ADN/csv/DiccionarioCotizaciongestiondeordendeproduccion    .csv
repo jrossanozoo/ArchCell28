@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"COTIZACIONGESTIONDEORDENDEPRODUCCION","Codigo","COTIZAGOP","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"COTIZACIONGESTIONDEORDENDEPRODUCCION","Descripcion","COTIZAGOP","Descrip",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"COTIZACIONGESTIONDEORDENDEPRODUCCION","Observ","COTIZAGOP","CObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

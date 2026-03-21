@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAJAUDIENTRANSITO","codigo","ajAuEnTranDet","ajdCodigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMAJAUDIENTRANSITO","Comportamiento","ajAuEnTranDet","COMP",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMAJAUDIENTRANSITO","Articulo","ajAuEnTranDet","ajdart",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",F,""
+"ITEMAJAUDIENTRANSITO","ArticuloDetalle","ajAuEnTranDet","ajdADesc",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"articulo.descripcion"
+"ITEMAJAUDIENTRANSITO","Color","ajAuEnTranDet","ajdColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMAJAUDIENTRANSITO","ColorDetalle","ajAuEnTranDet","ajdCDesc",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Color.descripcion"
+"ITEMAJAUDIENTRANSITO","Talle","ajAuEnTranDet","ajdTalle",T,"C",5,0,"CODIGO",F,"Talle",F,"",F,""
+"ITEMAJAUDIENTRANSITO","StockAct","ajAuEnTranDet","ajdstock",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMAJAUDIENTRANSITO","StockProy","ajAuEnTranDet","ajdstocksi",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMAJAUDIENTRANSITO","Cantidad","ajAuEnTranDet","ajdCant",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

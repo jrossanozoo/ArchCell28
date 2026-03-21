@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONCEPTOCAJA","Codigo","CONCECAJA","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"CONCEPTOCAJA","Descripcion","CONCECAJA","Descrip",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"CONCEPTOCAJA","Clasificacion","CONCECAJA","Clasif",T,"C",10,0,"CODIGO",F,"CLASIFICACIONCONCEPTOCAJA",F,"",F,""
+"CONCEPTOCAJA","EstadoCheque","CONCECAJA","estcheque",T,"C",5,0,"COMBOSERVICIOESTADOCHEQUE",F,"",F,"",F,""
+"CONCEPTOCAJA","CuentaBancaria","CONCECAJA","CtaBanc",T,"C",5,0,"CODIGO",F,"CUENTABANCARIA",F,"",F,""
+"CONCEPTOCAJA","Tipo","CONCECAJA","Tipo",T,"N",1,0,"ENTRADASALIDA",F,"",F,"",F,""
+"CONCEPTOCAJA","CajaDestino","CONCECAJA","CajaDest",T,"N",2,0,"CODIGONUMERICO",F,"CAJAESTADO",F,"",F,""
+"CONCEPTOCAJA","Observ","CONCECAJA","CObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

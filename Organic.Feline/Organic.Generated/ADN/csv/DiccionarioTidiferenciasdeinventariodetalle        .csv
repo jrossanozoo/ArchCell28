@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIDIFERENCIASDEINVENTARIODETALLE","Obs","TIDifInvDet","MObs",T,"C",20,0,"OBSERVACION",F,"",T,"",F,""
+"TIDIFERENCIASDEINVENTARIODETALLE","Numero","TIDifInvDet","Numero",T,"A",8,0,"CLAVECANDIDATA",F,"",F,"",F,""
+"TIDIFERENCIASDEINVENTARIODETALLE","Codigo","TIDifInvDet","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"TIDIFERENCIASDEINVENTARIODETALLE","IDCabecera","TIDifInvDet","IDCABECERA",T,"N",8,0,"CODIGONUMERICO",F,"TIDiferenciasDeInventario",F,"",T,""
+"TIDIFERENCIASDEINVENTARIODETALLE","Tipo","TIDifInvDet","TIPO",F,"N",1,0,"NUMERICO",F,"",F,"",F,""
+"TIDIFERENCIASDEINVENTARIODETALLE","Articulo","TIDifInvDet","MART",T,"C",13,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"TIDIFERENCIASDEINVENTARIODETALLE","Color","TIDifInvDet","MCOLO",T,"C",2,0,"CODIGO",F,"COLOR",F,"",F,""
+"TIDIFERENCIASDEINVENTARIODETALLE","Talle","TIDifInvDet","MTALL",T,"C",3,0,"DESCRIPCION",F,"",F,"",F,""
+"TIDIFERENCIASDEINVENTARIODETALLE","Diferencia","TIDifInvDet","DIFERENCIA",T,"N",8,2,"NUMERICO",F,"",F,"",F,""
+"TIDIFERENCIASDEINVENTARIODETALLE","Rechazado","TIDifInvDet","Rechazado",F,"L",1,0,"COMBOXML",F,"",F,"=.F.",F,""

@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"PROVINCIA","Codigo","PROVINCI","PRV_COD",T,"C",2,0,"CODIGO",T,"",F,"",F,""
+"PROVINCIA","Descripcion","PROVINCI","PRV_DES",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"PROVINCIA","Jurisdiccion","PROVINCI","PRV_JUR",T,"C",3,0,"CARACTER",F,"",F,"",F,""
+"PROVINCIA","IvaLiberado","PROVINCI","PRV_IVALIB",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"PROVINCIA","EquivalenciaArba","PROVINCI","Arba",T,"C",1,0,"CARACTER",F,"",F,"",F,""
+"PROVINCIA","Observacion","PROVINCI","PObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

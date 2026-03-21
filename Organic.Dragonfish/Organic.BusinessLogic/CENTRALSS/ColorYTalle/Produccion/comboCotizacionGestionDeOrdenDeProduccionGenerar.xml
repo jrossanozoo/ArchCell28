@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>No liquidar</valor>
+		<cdefault>RETORNO</cdefault>
+		<orden>1</orden>
+		<retorno>0</retorno>
+	</xml>	
+
+	<xml>
+		<valor>Liquidar con remito de compra</valor>
+		<cdefault></cdefault>
+		<orden>2</orden>
+		<retorno>1</retorno>
+	</xml>
+	<xml>
+		<valor>Liquidar con factura de compra</valor>
+		<cdefault></cdefault>
+		<orden>3</orden>
+		<retorno>2</retorno>	
+	</xml>
+</VFPData>

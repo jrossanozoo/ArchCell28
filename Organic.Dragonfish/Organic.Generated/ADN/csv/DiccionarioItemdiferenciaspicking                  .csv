@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMDIFERENCIASPICKING","Codigo","DetDifPicking","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMDIFERENCIASPICKING","Articulo","DetDifPicking","DPArticulo",T,"C",15,0,"CLAVECONLECTURACB",F,"ARTICULO",F,"",T,""
+"ITEMDIFERENCIASPICKING","NoProcesarStock","DetDifPicking","ProcStock",F,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMDIFERENCIASPICKING","CodigoDeBarras","","",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMDIFERENCIASPICKING","Equivalencia","DetDifPicking","Equiv",F,"C",20,0,"CODIGO",F,"Equivalencia",F,"",F,""
+"ITEMDIFERENCIASPICKING","Comportamiento","DetDifPicking","COMP",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMDIFERENCIASPICKING","ArticuloDetalle","DetDifPicking","DPDescArt",T,"C",100,0,"DESCRIPCION",F,"",F,"",F,"Articulo.Descripcion"
+"ITEMDIFERENCIASPICKING","Color","DetDifPicking","DPColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMDIFERENCIASPICKING","ColorDetalle","DetDifPicking","DPDescColo",T,"C",50,0,"DESCRIPCION",F,"",F,"",F,"Color.Descripcion"
+"ITEMDIFERENCIASPICKING","Talle","DetDifPicking","DPTalle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"ITEMDIFERENCIASPICKING","Cantidad","DetDifPicking","DPCantidad",T,"N",8,2,"NUMERICO",F,"",F,"",F,""

@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"FINALDEPRODUCCION","Codigo","FINALPROD","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",T,""
+"FINALDEPRODUCCION","OrdenDeProduccion","FINALPROD","OrdenProd",T,"G",38,0,"CODIGO",F,"ORDENDEPRODUCCION",F,"",T,""
+"FINALDEPRODUCCION","NumeroDeOrden","","",F,"N",12,0,"NUMERICONONEGATIVO",F,"",F,"",F,"OrdenDeProduccion.Numero"
+"FINALDEPRODUCCION","Proceso","FINALPROD","Proceso",T,"C",15,0,"CODIGO",F,"PROCESOPRODUCCION",F,"",T,""
+"FINALDEPRODUCCION","Numero","FINALPROD","NUMERO",T,"N",8,0,"CLAVECANDIDATA",F,"",F,"",F,""
+"FINALDEPRODUCCION","Fecha","FINALPROD","FECHA",T,"D",8,0,"FECHACOMPROBANTE",F,"",T,"=goServicios.librerias.ObtenerFecha()",T,""
+"FINALDEPRODUCCION","Obs","FINALPROD","MObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"FINALDEPRODUCCION","MovimientoDetalle","DETARTFINALPROD","NUMR",T,"G",38,0,"DETALLEITEMARTICFINALDEPROD",F,"",F,"",F,""

@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CATEGORIADEARTICULO","Codigo","CATEGART","Cod",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"CATEGORIADEARTICULO","Descripcion","CATEGART","Descrip",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"CATEGORIADEARTICULO","Obs","CATEGART","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

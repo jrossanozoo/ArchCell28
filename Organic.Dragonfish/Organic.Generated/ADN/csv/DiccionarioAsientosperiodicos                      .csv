@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ASIENTOSPERIODICOS","FechaBase","","",T,"D",8,0,"FECHA",F,"",T,"",T,""
+"ASIENTOSPERIODICOS","CantidadRepeticiones","","",T,"N",2,0,"NUMERICONONEGATIVO",F,"",F,"1",T,""
+"ASIENTOSPERIODICOS","Codigo","AsiPer","Codigo",F,"G",38,0,"CODIGO",T,"",F,"=goServicios.Librerias.ObtenerGuidPk()",F,""
+"ASIENTOSPERIODICOS","Repetir","","",T,"N",2,0,"REPETIRMESES",F,"",F,"",T,""
+"ASIENTOSPERIODICOS","DiaNumero","","",T,"N",2,0,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ASIENTOSPERIODICOS","OrdenDiaCombo","","",T,"C",10,0,"DOBLECOMBO",F,"",F,"",F,""
+"ASIENTOSPERIODICOS","DiaSemanaCombo","","",T,"C",10,0,"DOBLECOMBO",F,"",F,"",F,""
+"ASIENTOSPERIODICOS","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""

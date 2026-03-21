@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMLIQTALLERADICIONAL","Codigo","LIQTADIC","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMLIQTALLERADICIONAL","IdItemArticulo","LIQTADIC","IdItem",F,"G",38,0,"CARACTER",F,"",F,"=goServicios.Librerias.ObtenerGuidPk()",F,""
+"ITEMLIQTALLERADICIONAL","Articulo","LIQTADIC","ArtLiq",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"ITEMLIQTALLERADICIONAL","ArticuloDetalle","LIQTADIC","ArtDesc",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"Articulo.Descripcion"
+"ITEMLIQTALLERADICIONAL","Cantidad","LIQTADIC","Cantidad",T,"N",14,6,"NUMERICODECIMALPARAMETRIZADOPR",F,"",F,"",F,""
+"ITEMLIQTALLERADICIONAL","Costo","LIQTADIC","Costo",T,"N",12,4,"NUMERICODECIMALPARAMETRIZADOPR",F,"",F,"",F,""
+"ITEMLIQTALLERADICIONAL","Monto","LIQTADIC","Monto",T,"N",15,4,"NUMERICODECIMALPARAMETRIZADOPR",F,"",F,"",F,""
+"ITEMLIQTALLERADICIONAL","Resto","","",F,"N",14,6,"NUMERICO",F,"",F,"",F,""

@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<diccionarioentidad>
+		<entidad>ITEMDESCUENTO</entidad>
+		<atributo>Codigo</atributo>
+		<tabla>DescuentoDet</tabla>
+		<campo>CODIGO</campo>
+		<alta>false</alta>
+		<tipodato>C</tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<dominio>CODIGO</dominio>
+		<claveprimaria>true</claveprimaria>
+		<claveforanea/>
+		<muestrarelacion>false</muestrarelacion>
+		<valorsugerido/>
+		<obligatorio>false</obligatorio>
+		<atributoforaneo/>
+	</diccionarioentidad>
+	<diccionarioentidad>
+		<entidad>ITEMDESCUENTO</entidad>
+		<atributo>Comprobante</atributo>
+		<tabla>DescuentoDet</tabla>
+		<campo>Comprobant</campo>
+		<alta>true</alta>
+		<tipodato>C</tipodato>
+		<longitud>35</longitud>
+		<decimales>0</decimales>
+		<dominio>COMBODESCUENTOENTIDAD</dominio>
+		<claveprimaria>false</claveprimaria>
+		<claveforanea/>
+		<muestrarelacion>false</muestrarelacion>
+		<valorsugerido/>
+		<obligatorio>true</obligatorio>
+		<atributoforaneo/>
+	</diccionarioentidad>
+</VFPData>

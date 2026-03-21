@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMARTICULOSDESPACHO","Codigo","DespImpDet","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMARTICULOSDESPACHO","CodigoDeBarras","","",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMARTICULOSDESPACHO","Equivalencia","","",F,"C",20,0,"CODIGO",F,"Equivalencia",F,"",F,""
+"ITEMARTICULOSDESPACHO","Articulo","DespImpDet","CodArt",T,"C",15,0,"CLAVECONLECTURACB",F,"ARTICULO",F,"",T,""
+"ITEMARTICULOSDESPACHO","ArticuloDetalle","DespImpDet","Descrip",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"Articulo.Descripcion"
+"ITEMARTICULOSDESPACHO","Oficializacion","DespImpDet","Oficializ",F,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""

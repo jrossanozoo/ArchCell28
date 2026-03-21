@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"Itemtalonario","Codigo","","",F,"N",1,0,"CODIGONUMERICO",T,"",F,"",F,""
+"Itemtalonario","Talonario","numeraciones","Talonario",F,"C",35,0,"CARACTER",F,"",F,"",F,""
+"Itemtalonario","DescripcionEntidad","","",T,"C",150,0,"CARACTER",F,"",F,"",F,""
+"Itemtalonario","Entidad","numeraciones","Entidad",T,"C",150,0,"CARACTER",F,"",T,"",F,""
+"Itemtalonario","Letra","numeraciones","Letra",T,"C",1,0,"CARACTER",F,"",F,"",F,""
+"Itemtalonario","PuntoDeVenta","numeraciones","PtoVen",T,"N",4,0,"NUMERICO",F,"",F,"",F,""
+"Itemtalonario","Numero","numeraciones","Numero",T,"N",10,0,"NUMERICO",F,"",F,"",F,""

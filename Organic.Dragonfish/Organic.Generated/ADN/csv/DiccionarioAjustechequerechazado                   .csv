@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"AJUSTECHEQUERECHAZADO","Codigo","AjChTRech","Codigo",T,"C",20,0,"CODIGO",T,"",F,"",T,""
+"AJUSTECHEQUERECHAZADO","Nombre","AjChTRech","Nombre",T,"C",40,0,"DESCRIPCION",F,"",T,"",T,""
+"AJUSTECHEQUERECHAZADO","RealizaAjuste","AjChTRech","AjRealiza",T,"N",1,0,"COMBOXML",F,"",F,"1",F,""
+"AJUSTECHEQUERECHAZADO","MotivoAjuste","AjChTRech","AjMotivo",T,"C",3,0,"CODIGO",F,"MOTIVO",F,"",F,""
+"AJUSTECHEQUERECHAZADO","RealizaRecargo","AjChTRech","RecRealiza",T,"N",1,0,"COMBOXML",F,"",F,"1",F,""
+"AJUSTECHEQUERECHAZADO","TipoRecargo","AjChTRech","RecTipo",T,"N",1,0,"COMBOXML",F,"",F,"",F,""
+"AJUSTECHEQUERECHAZADO","PorcentajeRecargo","AjChTRech","RecPorcen",T,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"AJUSTECHEQUERECHAZADO","ImporteRecargo","AjChTRech","RecImporte",T,"N",9,2,"NUMERICO",F,"",F,"",F,""
+"AJUSTECHEQUERECHAZADO","TipoComprobante","AjChTRech","CompTipo",T,"N",1,0,"COMBOXML",F,"",F,"",F,""
+"AJUSTECHEQUERECHAZADO","ArticuloRecargo","AjChTRech","RecArtic",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",F,""
+"AJUSTECHEQUERECHAZADO","ValorRecargo","AjChTRech","RecValor",T,"C",5,0,"CODIGO",F,"VALOR",F,"",F,""
+"AJUSTECHEQUERECHAZADO","Observacion","AjChTRech","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CODIGOPOSTAL","Codigo","CodPostal1","Codigo",F,"G",38,0,"CARACTER",F,"",F,"",F,""
+"CODIGOPOSTAL","CodigoPostal","CodPostal1","CP",T,"C",8,0,"CODIGO",T,"",F,"",T,""
+"CODIGOPOSTAL","Provincia","CodPostal1","Provincia",T,"C",2,0,"CODIGO",F,"PROVINCIA",F,"",F,""
+"CODIGOPOSTAL","Localidad","CodPostal1","Localidad",T,"C",100,0,"CARACTER",F,"",T,"",F,""
+"CODIGOPOSTAL","Desde","CodPostal1","Desde",T,"N",6,0,"NUMERICO",F,"",F,"",F,""
+"CODIGOPOSTAL","Hasta","CodPostal1","Hasta",T,"N",6,0,"NUMERICO",F,"",F,"",F,""
+"CODIGOPOSTAL","Obs","CodPostal1","CLOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"SELECHEQUEAINSERTAR","SaldoPendiente","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"SELECHEQUEAINSERTAR","CriterioDeSeleccion","","",T,"N",1,0,"COMBOXML",F,"",F,"1",F,""
+"SELECHEQUEAINSERTAR","Ordenamiento","","",T,"N",1,0,"COMBOXML",F,"",F,"1",F,""
+"SELECHEQUEAINSERTAR","Codigo","SELCHEINS","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"SELECHEQUEAINSERTAR","DetalleChequesAInsertar","","",T,"C",10,0,"DETALLEITEMSELECHEQUEAINSERTAR",F,"",F,"",F,""
+"SELECHEQUEAINSERTAR","Diferencia","","",T,"N",15,2,"TOTALMULTIMONEDA",F,"",F,"",F,""
+"SELECHEQUEAINSERTAR","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""

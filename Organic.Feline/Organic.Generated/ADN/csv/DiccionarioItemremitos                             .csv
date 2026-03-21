@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMREMITOS","Codigo","ENTMERDET","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMREMITOS","Comprobante","ENTMERDET","Comprob",F,"G",38,0,"CODIGO",F,"REMITO",F,"",F,""
+"ITEMREMITOS","Remito","ENTMERDET","Remito",T,"C",20,0,"CARACTERREMELEC",F,"",F,"",T,""
+"ITEMREMITOS","Cliente","ENTMERDET","Cliente",T,"C",5,0,"CODIGO",F,"CLIENTE",F,"",F,""
+"ITEMREMITOS","ClienteDetalle","ENTMERDET","Cliedeta",T,"C",30,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMREMITOS","Direccion","ENTMERDET","Direccion",T,"C",220,0,"CARACTER",F,"",F,"",F,""
+"ITEMREMITOS","Cantidad","ENTMERDET","Cantidad",T,"N",15,2,"NUMERICO",F,"",F,"",F,"comprobante.TotalCantidad"
+"ITEMREMITOS","ImporteTotal","ENTMERDET","Importe",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

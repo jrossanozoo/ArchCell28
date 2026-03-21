@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAREASEXPO","Codigo","DisExpoArea","iCod",F,"C",40,0,"CODIGO",T,"",F,"",F,""
+"ITEMAREASEXPO","Area","DisExpoArea","cArea",T,"C",20,0,"CARACTER",F,"",F,"",T,""
+"ITEMAREASEXPO","Tipo","DisExpoArea","cTipo",T,"C",3,0,"CODIGO",F,"TIPOAREAEXPORTACION",F,"",F,""
+"ITEMAREASEXPO","TipoDetalle","DisExpoArea","cTipDet",T,"C",100,0,"CARACTER",F,"",T,"",F,"Tipo.Descripcion"
+"ITEMAREASEXPO","Orden","DisExpoArea","nOrden",T,"N",3,0,"NUMERICO",F,"",F,"",F,""

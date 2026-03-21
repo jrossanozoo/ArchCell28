@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CAE","Codigo","CAE","CODIGO",T,"C",38,0,"CODIGO",T,"",F,"",T,""
+"CAE","Numero","CAE","Numero",T,"C",20,0,"CARACTER",F,"",T,"",F,""
+"CAE","FechaVencimiento","CAE","FechaVTO",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"CAE","Observaciones","CAE","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"CAE","Resultado","CAE","Resultado",T,"C",1,0,"CARACTER",F,"",F,"",T,""
+"CAE","CodigoBarraCAE","CAE","CodBarra",F,"C",40,0,"CARACTER",F,"",F,"",F,""
+"CAE","Incoterms","CAE","Inco",T,"C",3,0,"CARACTER",F,"INCOTERMS",F,"",F,""
+"CAE","Moneda","CAE","Mone",T,"C",10,0,"CODIGO",F,"MONEDA",F,"",F,""
+"CAE","DGISerie","CAE","DGISerie",F,"C",2,0,"CARACTER",F,"",F,"",F,""
+"CAE","DGINumero","CAE","DGINumero",F,"N",7,0,"NUMERICO",F,"",F,"",F,""
+"CAE","CodigoCAEA","CAE","CodigoCAEA",T,"N",15,0,"NUMERICO",F,"",F,"",F,""
+"CAE","CAEAInformado","CAE","CAEAInf",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

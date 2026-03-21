@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"SELECCIONCOMPROBANTEASOCIADO","Codigo","CompAsoc","Codigo",F,"G",38,0,"CODIGO",T,"",F,"=goServicios.Librerias.ObtenerGuidPk()",F,""
+"SELECCIONCOMPROBANTEASOCIADO","TipoCpteRelacionado","","",T,"N",2,0,"COMPROBANTERELACIONADO",F,"",F,"",F,""
+"SELECCIONCOMPROBANTEASOCIADO","LetraCpteRelacionado","","",T,"C",1,0,"COMPROBANTERELACIONADO",F,"",F,"",F,""
+"SELECCIONCOMPROBANTEASOCIADO","PuntoDeVentaCpteRelacionado","","",T,"N",4,0,"COMPROBANTERELACIONADO",F,"",F,"",F,""
+"SELECCIONCOMPROBANTEASOCIADO","NumeroCpteRelacionado","","",T,"N",8,0,"COMPROBANTERELACIONADO",F,"",F,"",F,""
+"SELECCIONCOMPROBANTEASOCIADO","FechaCpteRelacionado","","",T,"D",8,0,"COMPROBANTERELACIONADO",F,"",F,"",F,""
+"SELECCIONCOMPROBANTEASOCIADO","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""

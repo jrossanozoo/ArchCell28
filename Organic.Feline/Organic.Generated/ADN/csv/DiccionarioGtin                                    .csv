@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"GTIN","Codigo","GTIN","Codigo",T,"C",13,0,"CLAVECONCUALQUIERCARACTER",T,"",F,"",T,""
+"GTIN","Plantilla","GTIN","EsqCons",F,"M",0,0,"TEXTO",F,"",F,"",F,""
+"GTIN","AtributosUsados","GTIN","Atributos",F,"M",0,0,"TEXTO",F,"",F,"",F,""
+"GTIN","DetRangos","DETGTIN","Codigo",T,"C",13,0,"DETALLEITEMEQUIGTIN",F,"",F,"",F,""
+"GTIN","Observacion","GTIN","MObs",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""

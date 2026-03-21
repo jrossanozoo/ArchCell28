@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMESCALA","codigo","EscalaImp","codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMESCALA","porcentaje","EscalaImp","porcentaje",T,"N",6,2,"NUMERICONONEGATIVO",F,"",F,"",T,""
+"ITEMESCALA","sobreexcedente","EscalaImp","excedente",T,"N",12,2,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMESCALA","montofijo","EscalaImp","montofijo",T,"N",12,2,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMESCALA","mayora","EscalaImp","mayora",T,"N",12,2,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMESCALA","hasta","EscalaImp","hasta",T,"N",12,2,"NUMERICONONEGATIVO",F,"",F,"",F,""

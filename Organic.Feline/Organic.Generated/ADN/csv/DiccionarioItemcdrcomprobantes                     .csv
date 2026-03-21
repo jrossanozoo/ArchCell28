@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCDRCOMPROBANTES","Codigo","CRCompDet","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCDRCOMPROBANTES","Letra","CRCompDet","LetraAfec",F,"C",1,0,"CARACTER",F,"",F,"",T,""
+"ITEMCDRCOMPROBANTES","PuntoDeVenta","CRCompDet","PtoAfec",F,"N",4,0,"NUMERICO",F,"",F,"",T,""
+"ITEMCDRCOMPROBANTES","NumeroDeComprobante","CRCompDet","Numafec",F,"N",8,0,"NUMERICO",F,"",F,"",T,""
+"ITEMCDRCOMPROBANTES","TipoDeComprobante","CRCompDet","Tipo",F,"C",2,0,"CARACTER",F,"",F,"",T,""
+"ITEMCDRCOMPROBANTES","CodigoComprobante","CRCompDet","CodComp",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMCDRCOMPROBANTES","Descripcion","CRCompDet","Descrip",T,"C",100,0,"CARACTER",F,"",T,"",F,""

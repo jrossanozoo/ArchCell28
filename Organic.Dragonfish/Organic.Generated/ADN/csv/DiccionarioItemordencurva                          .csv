@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMORDENCURVA","CodigoOrden","ORDPCURV","CodOrden",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMORDENCURVA","Producto","ORDPCURV","Producto",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"ITEMORDENCURVA","ProductoDetalle","ORDPCURV","cProdDet",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"Producto.Descripcion"
+"ITEMORDENCURVA","Color","ORDPCURV","CodColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMORDENCURVA","ColorDetalle","ORDPCURV","CColTxt",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Color.Descripcion"
+"ITEMORDENCURVA","Talle","ORDPCURV","CodTalle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"ITEMORDENCURVA","TalleDetalle","ORDPCURV","CTalleTxt",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Talle.Descripcion"
+"ITEMORDENCURVA","Cantidad","ORDPCURV","CantCurva",T,"N",8,2,"NUMERICONONEGATIVO",F,"",F,"=1",F,""
+"ITEMORDENCURVA","Total","ORDPCURV","CantTotal",T,"N",10,2,"NUMERICONONEGATIVO",F,"",F,"",F,""

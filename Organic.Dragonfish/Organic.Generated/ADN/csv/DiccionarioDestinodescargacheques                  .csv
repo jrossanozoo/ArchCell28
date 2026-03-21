@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"Destinodescargacheques","Codigo","DESTDESC","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"Destinodescargacheques","Descripcion","DESTDESC","Descrip",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"Destinodescargacheques","Observ","DESTDESC","CObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

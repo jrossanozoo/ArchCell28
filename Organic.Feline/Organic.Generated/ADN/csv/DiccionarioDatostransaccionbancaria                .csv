@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DATOSTRANSACCIONBANCARIA","Codigo","TraBanc","Cod",F,"C",1,0,"CARACTER",T,"",F,"",T,""
+"DATOSTRANSACCIONBANCARIA","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",T,""
+"DATOSTRANSACCIONBANCARIA","Hora","","",T,"C",5,0,"HORA",F,"",F,"",T,""
+"DATOSTRANSACCIONBANCARIA","CuentaBancaria","","",T,"C",5,0,"CODIGO",F,"CUENTABANCARIA",F,"",T,""
+"DATOSTRANSACCIONBANCARIA","Identificador","","",T,"C",30,0,"CARACTER",F,"",T,"",F,""
+"DATOSTRANSACCIONBANCARIA","CodigoBanco","","",T,"C",30,0,"CARACTER",F,"",F,"",F,""
+"DATOSTRANSACCIONBANCARIA","Importe","","",T,"N",15,2,"NUMERICO",F,"",F,"",T,""
+"DATOSTRANSACCIONBANCARIA","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""

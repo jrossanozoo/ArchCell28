@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MOTIVO","Codigo","MOTIVO","MOTCOD",T,"C",3,0,"CODIGO",T,"",F,"",F,""
+"MOTIVO","Descripcion","MOTIVO","MOTDES",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"MOTIVO","GeneraAsiento","MOTIVO","ASIENTO",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"MOTIVO","Observacion","MOTIVO","MObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

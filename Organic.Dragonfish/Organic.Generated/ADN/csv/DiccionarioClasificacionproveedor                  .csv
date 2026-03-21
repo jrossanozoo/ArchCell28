@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CLASIFICACIONPROVEEDOR","Codigo","CLASPROV","CLACOD",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"CLASIFICACIONPROVEEDOR","Descripcion","CLASPROV","CLADES",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"CLASIFICACIONPROVEEDOR","Obs","CLASPROV","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

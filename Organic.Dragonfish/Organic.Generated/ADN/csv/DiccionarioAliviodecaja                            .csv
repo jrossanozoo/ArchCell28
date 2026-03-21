@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ALIVIODECAJA","Codigo","Alivio","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",T,""
+"ALIVIODECAJA","Descripcion","Alivio","Descri",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"ALIVIODECAJA","BaseDeDatos","Alivio","BaseDatos",T,"C",8,0,"COMBOBASEDEDATOS",F,"",F,"",F,""
+"ALIVIODECAJA","TipoAlivio","Alivio","TipoAlivio",T,"N",2,0,"COMBOXML",F,"",F,"",F,""
+"ALIVIODECAJA","DetalleAlivio","AlivioDet","Codigo",T,"C",15,0,"DETALLEITEMALIVIO",F,"",F,"",F,""
+"ALIVIODECAJA","Observacion","Alivio","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

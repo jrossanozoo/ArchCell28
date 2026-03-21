@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"IMPDIRLIQ","Numero","IMPDIRLIQ","NUMERO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",T,""
+"IMPDIRLIQ","Descripcion","IMPDIRLIQ","Descripcio",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"IMPDIRLIQ","PlanDeCuentas","IMPDIRLIQ","PCUENTA",T,"C",30,0,"CODIGO",F,"PLANDECUENTAS",F,"",T,""
+"IMPDIRLIQ","Importancia","IMPDIRLIQ","Importanci",T,"N",5,0,"NUMERICONONEGATIVO",F,"",F,"",T,""
+"IMPDIRLIQ","f_Concepto_Desde","IMPDIRLIQ","ConDesde",T,"C",50,0,"EtiquetaCaracterDesdeHasta",F,"",F,"",F,""
+"IMPDIRLIQ","f_Concepto_Hasta","IMPDIRLIQ","ConHasta",T,"C",50,0,"EtiquetaCaracterDesdeHasta",F,"",F,"ZZZZZZZZZZ",F,""
+"IMPDIRLIQ","Observacion","IMPDIRLIQ","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

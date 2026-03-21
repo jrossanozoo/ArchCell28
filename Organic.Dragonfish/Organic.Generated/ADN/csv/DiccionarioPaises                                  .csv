@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"PAISES","Codigo","PAISES","pcod",T,"C",3,0,"CODIGO",T,"",F,"",F,""
+"PAISES","Descripcion","PAISES","pdes",T,"C",30,0,"DESCRIPCION",F,"",T,"",F,""
+"PAISES","Observacion","PAISES","pobs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"PAISES","EquivalenciaAfip","PAISES","paaf",T,"N",3,0,"CODIGONUMERICO",F,"PAISAFIP",F,"",F,""

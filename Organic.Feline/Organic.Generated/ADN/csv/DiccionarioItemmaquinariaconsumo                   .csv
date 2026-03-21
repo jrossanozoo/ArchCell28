@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMMAQUINARIACONSUMO","Codigo","MAQDETCONS","CodCons",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMMAQUINARIACONSUMO","Consumo","MAQDETCONS","Consumo",T,"C",10,0,"CODIGO",F,"CONSUMOPRODUCCION",F,"",F,""
+"ITEMMAQUINARIACONSUMO","Descripcion","MAQDETCONS","Detalle",T,"C",100,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMMAQUINARIACONSUMO","Valor","MAQDETCONS","Valor",T,"N",11,6,"NUMERICO",F,"",F,"",F,""
+"ITEMMAQUINARIACONSUMO","UnidadMedida","MAQDETCONS","Unidad",T,"C",10,0,"CARACTER",F,"",F,"",F,""

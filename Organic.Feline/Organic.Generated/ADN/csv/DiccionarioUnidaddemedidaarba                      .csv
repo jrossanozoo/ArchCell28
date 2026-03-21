@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"UNIDADDEMEDIDAARBA","Codigo","UMARBA","Cod",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"UNIDADDEMEDIDAARBA","Descripcion","UMARBA","Descrip",T,"C",10,0,"DESCRIPCION",F,"",T,"",F,""
+"UNIDADDEMEDIDAARBA","Obs","UMARBA","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

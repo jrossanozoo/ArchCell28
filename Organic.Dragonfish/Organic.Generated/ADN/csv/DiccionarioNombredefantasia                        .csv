@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"NOMBREDEFANTASIA","Codigo","NomFant","NFCOD",T,"C",50,0,"CODIGOSINMUESTRARELACION",T,"",T,"",T,""
+"NOMBREDEFANTASIA","NombreFantasia","NomFant","NFNOMF",F,"C",60,0,"DESCRIPCION",F,"",F,"",F,""
+"NOMBREDEFANTASIA","Observacion","NomFant","NFOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"NOMBREDEFANTASIA","RazonSocial","RAZSOC","RZCOD",T,"C",10,0,"DETALLEITEMRAZONSOCIAL",F,"",F,"",F,""

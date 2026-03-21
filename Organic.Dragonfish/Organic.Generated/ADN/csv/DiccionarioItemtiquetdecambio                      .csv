@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMTIQUETDECAMBIO","Codigo","TICKETCAMBIODET","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMTIQUETDECAMBIO","Articulo","TICKETCAMBIODET","tdArt",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",F,""
+"ITEMTIQUETDECAMBIO","ArticuloDetalle","TICKETCAMBIODET","tdArtDes",T,"C",100,0,"DESCRIPCION",F,"",F,"",F,"Articulo.Descripcion"
+"ITEMTIQUETDECAMBIO","Color","TICKETCAMBIODET","tdColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMTIQUETDECAMBIO","ColorDetalle","TICKETCAMBIODET","tdColDes",T,"C",50,0,"DESCRIPCION",F,"",F,"",F,"Color.Descripcion"
+"ITEMTIQUETDECAMBIO","Talle","TICKETCAMBIODET","tdTalle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"ITEMTIQUETDECAMBIO","TalleDetalle","TICKETCAMBIODET","tdTalleDes",T,"C",50,0,"DESCRIPCION",F,"",F,"",F,"Talle.Descripcion"
+"ITEMTIQUETDECAMBIO","Cantidad","TICKETCAMBIODET","tdCant",T,"N",10,2,"NUMERICO",F,"",F,"",F,""
+"ITEMTIQUETDECAMBIO","Comportamiento","TICKETCAMBIODET","Comp",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMTIQUETDECAMBIO","NroItem","TICKETCAMBIODET","NroItem",F,"N",5,0,"NUMERICO",F,"",F,"",F,""

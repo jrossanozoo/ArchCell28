@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMPROCESOMAQUINA","Codigo","PROCPRMAQ","CodProcMaq",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMPROCESOMAQUINA","Maquina","PROCPRMAQ","Maquina",T,"C",15,0,"CODIGO",F,"MAQUINARIA",F,"",T,""
+"ITEMPROCESOMAQUINA","MaquinaDescripcion","PROCPRMAQ","Detalle",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"Maquina.Descripcion"
+"ITEMPROCESOMAQUINA","TipoMaquinaria","PROCPRMAQ","TipoMaquin",T,"N",2,0,"COMBOSERVICIOPRODUCCION",F,"",T,"",F,"Maquina.TipoMaquinaria"

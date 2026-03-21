@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIPOSUCURSAL","Codigo","TSUCUR","TCOD",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"TIPOSUCURSAL","Descripcion","TSUCUR","TDES",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"TIPOSUCURSAL","Observaciones","TSUCUR","TOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

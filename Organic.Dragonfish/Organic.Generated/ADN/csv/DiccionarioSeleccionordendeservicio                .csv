@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"SELECCIONORDENDESERVICIO","Codigo","SelecOS","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"SELECCIONORDENDESERVICIO","Relleno","","",F,"C",1,0,"CARACTER",F,"",T,"",F,""
+"SELECCIONORDENDESERVICIO","DetalleOrdenes","SelecOSDet","Codigo",T,"C",10,0,"DETALLEITEMORDENDESERVICIO",F,"",F,"",F,""
+"SELECCIONORDENDESERVICIO","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""

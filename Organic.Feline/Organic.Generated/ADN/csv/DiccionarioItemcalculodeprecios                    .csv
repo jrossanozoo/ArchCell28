@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCALCULODEPRECIOS","Codigo","CALCPRECDET","Codigo",F,"N",8,0,"CODIGONUMERICO",T,"",F,"",F,""
+"ITEMCALCULODEPRECIOS","LPrecio","CALCPRECDET","LPrecio",T,"C",6,0,"CODIGO",F,"LISTADEPRECIOS",F,"",T,""
+"ITEMCALCULODEPRECIOS","LPrecioDetalle","CALCPRECDET","LPrecioNom",T,"C",30,0,"CARACTER",F,"",T,"",F,"LPrecio.Nombre"
+"ITEMCALCULODEPRECIOS","Accion","CALCPRECDET","Accion",T,"C",2,0,"COMBOXML",F,"",F,"="1"",F,""
+"ITEMCALCULODEPRECIOS","LPrecioA","CALCPRECDET","LPrecioA",T,"C",6,0,"CODIGO",F,"LISTADEPRECIOS",F,"",F,""
+"ITEMCALCULODEPRECIOS","Valor","CALCPRECDET","Valor",T,"N",12,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCALCULODEPRECIOS","Formula","CALCPRECDET","Formula",T,"C",10,0,"CODIGO",F,"FORMULA",F,"",F,""
+"ITEMCALCULODEPRECIOS","Redondeo","CALCPRECDET","Redondeo",T,"C",10,0,"CODIGO",F,"REDONDEODEPRECIOS",F,"",F,""

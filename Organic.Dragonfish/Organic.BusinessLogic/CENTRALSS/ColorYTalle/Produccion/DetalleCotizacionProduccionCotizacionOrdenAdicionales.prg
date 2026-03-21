@@ -1,0 +1,7 @@
+define class DetalleCotizacionProduccionCotizacionOrdenAdicionales as din_DetalleCotizacionProduccionCotizacionOrdenAdicionales of din_DetalleCotizacionProduccionCotizacionOrdenAdicionales.prg
+
+	#if .f.
+		local this as DetalleCotizacionProduccionCotizacionOrdenAdicionales of DetalleCotizacionProduccionCotizacionOrdenAdicionales.prg
+	#endif
+
+enddefine

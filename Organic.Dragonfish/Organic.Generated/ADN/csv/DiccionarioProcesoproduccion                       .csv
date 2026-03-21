@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"PROCESOPRODUCCION","Codigo","PROCPRODUC","Codigo",T,"C",15,0,"CODIGO",T,"",F,"",T,""
+"PROCESOPRODUCCION","Descripcion","PROCPRODUC","Descrip",T,"C",250,0,"CARACTER",F,"",T,"",F,""
+"PROCESOPRODUCCION","Rubro","PROCPRODUC","Rubro",T,"C",15,0,"CODIGO",F,"RUBROPRODUCCION",F,"",F,""
+"PROCESOPRODUCCION","Clasificacion","PROCPRODUC","Clasif",T,"C",15,0,"CODIGO",F,"CLASIFICACIONPRODUCCION",F,"",F,""
+"PROCESOPRODUCCION","ArticuloLiquidacionProduccion","PROCPRODUC","CodArtLiqP",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",F,""
+"PROCESOPRODUCCION","ArticuloLiquidacionDescarte","PROCPRODUC","CodArtLiqD",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",F,""
+"PROCESOPRODUCCION","ProcesoMaquina","PROCPRMAQ","CodProcMaq",T,"C",15,0,"DETALLEITEMPROCESOMAQUINA",F,"",F,"",F,""
+"PROCESOPRODUCCION","Obs","PROCPRODUC","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

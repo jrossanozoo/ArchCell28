@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMRETENCIONRECIBIDA","Codigo","CompRRDet","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMRETENCIONRECIBIDA","Impuesto","CompRRDet","Impuesto",T,"C",10,0,"CODIGO",F,"IMPUESTO",F,"",F,""
+"ITEMRETENCIONRECIBIDA","Jurisdiccion","CompRRDet","jurisdicci",T,"C",8,0,"CARACTER",F,"",F,"",F,""
+"ITEMRETENCIONRECIBIDA","Resolucion","CompRRDet","resolucion",T,"C",60,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMRETENCIONRECIBIDA","Monto","CompRRDet","monto",T,"N",12,2,"NUMERICONONEGATIVO",F,"",F,"",F,""

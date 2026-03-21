@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCAJAAUDITORIA","IdCajaAuditoria","DETAUDI","Codigo",T,"N",10,0,"CODIGONUMERICO",T,"",F,"",F,""
+"ITEMCAJAAUDITORIA","Valor","DETAUDI","Valor",T,"C",5,0,"CODIGO",F,"VALOR",F,"",F,""
+"ITEMCAJAAUDITORIA","Monto","DETAUDI","Monto",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

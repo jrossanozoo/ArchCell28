@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMACREDITACIONDEPLAN","Codigo","TARJEACREDET","Cod",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMACREDITACIONDEPLAN","Cuotas","TARJEACREDET","cuotas",T,"N",3,0,"NUMERICONONEGATIVO",F,"",F,"",T,""
+"ITEMACREDITACIONDEPLAN","CantidadDeDias","TARJEACREDET","canttiempo",T,"N",5,0,"NUMERICO",F,"",F,"",F,""
+"ITEMACREDITACIONDEPLAN","Modo","TARJEACREDET","modotiempo",T,"C",50,0,"COMBOXML",F,"",F,"",F,""

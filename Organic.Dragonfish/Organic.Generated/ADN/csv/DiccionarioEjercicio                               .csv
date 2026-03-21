@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"EJERCICIO","Numero","EJERCICIO","NUMERO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",T,""
+"EJERCICIO","Descripcion","EJERCICIO","DESCRIP",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"EJERCICIO","DescripcionEstado","EJERCICIO","",T,"C",7,0,"CARACTER",F,"",F,"",F,""
+"EJERCICIO","RazonSocial","EJERCICIO","Razons",T,"C",10,0,"CODIGO",F,"RAZONSOCIAL",F,"",F,""
+"EJERCICIO","MetodoCosteo","EJERCICIO","MetodoCMV",T,"C",4,0,"COMBOXML",F,"",F,"",F,""
+"EJERCICIO","FechaDesde","EJERCICIO","FECHADES",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"EJERCICIO","FechaHasta","EJERCICIO","FECHAHAS",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"EJERCICIO","Observacion","EJERCICIO","EOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,1594 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="row" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:attribute name="tabla" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="expresion" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="250"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="filtro" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="250"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="_tag" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="10"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="ubicacion" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="25"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="ordentag" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:decimal">
+										<xsd:totalDigits value="2"/>
+										<xsd:fractionDigits value="0"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<row tabla="ACCAUT" expresion="CODIGO" filtro="" _tag="ACCAUT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ACCAUT" expresion="Codigo" filtro="" _tag="_AAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ACCAUT" expresion="ENTIDAD" filtro="" _tag="ACCAUT002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ACCAUT" expresion="Entidad" filtro="" _tag="_AACC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ACCESOAOBJ" expresion="CODIGO" filtro="" _tag="ACCESOA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ACCVTRANS" expresion="CODIGO" filtro="" _tag="ACCVTRA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ACCVTRANS" expresion="Codigo" filtro="" _tag="_VTCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_ART" expresion="ADT_COD" filtro="" _tag="ADT_ART001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_ART" expresion="ADT_Cod" filtro="" _tag="_AUD024PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_ART" expresion="ADT_Cod" filtro="" _tag="_AUDARTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_CLI" expresion="ADT_COD" filtro="" _tag="ADT_CLI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_CLI" expresion="ADT_Cod" filtro="" _tag="_AUDCLIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_COMB" expresion="ADT_COD" filtro="" _tag="ADT_COM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_COMB" expresion="ADT_Cod" filtro="" _tag="_AUD012PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_CONCLI" expresion="ADT_COD" filtro="" _tag="ADT_CON001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_CONCLI" expresion="ADT_Cod" filtro="" _tag="_AUDCCLPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_DESCUENTOS" expresion="ADT_COD" filtro="" _tag="ADT_DES001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_DESCUENTOS" expresion="ADT_Cod" filtro="" _tag="_AUDDESPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_ERRORCF" expresion="ADT_COD" filtro="" _tag="ADT_ERR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_ERRORCF" expresion="ADT_Cod" filtro="" _tag="_AUD140PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_LCONSUMO" expresion="ADT_COD" filtro="" _tag="ADT_LCO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_LCONSUMO" expresion="ADT_Cod" filtro="" _tag="_AUDLCNPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_PRECIOAR" expresion="ADT_COD" filtro="" _tag="ADT_PRE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_PRECIOAR" expresion="ADT_Cod" filtro="" _tag="_AUD018PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_PROV" expresion="ADT_COD" filtro="" _tag="ADT_PRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_PROV" expresion="ADT_Cod" filtro="" _tag="_AUDPRVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_STOCKINV" expresion="ADT_COD" filtro="" _tag="ADT_STO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_STOCKINV" expresion="ADT_Cod" filtro="" _tag="_AUD013PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_VEN" expresion="ADT_COD" filtro="" _tag="ADT_VEN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ADT_VEN" expresion="ADT_Cod" filtro="" _tag="_AUDVENPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AFIP3668" expresion="CODIGO" filtro="" _tag="AFIP366001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AFIP3668" expresion="Codigo" filtro="" _tag="_DAAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AFIP4523" expresion="CODIGO" filtro="" _tag="AFIP452001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AFIP4523" expresion="Codigo" filtro="" _tag="_DSIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AFIPMO" expresion="CODIGO" filtro="" _tag="AFIPMO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AFIPMO" expresion="Codigo" filtro="" _tag="_MAFPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AFIPPA" expresion="CODIGO" filtro="" _tag="AFIPPA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AFIPPa" expresion="Codigo" filtro="" _tag="_PAFPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRPLTDS" expresion="CODIGO" filtro="" _tag="AGRPLTD001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="AGRPLTDS" expresion="NOMBRE" filtro="" _tag="AGRPLTD002" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="AGRPLTDSDET" expresion="NOMBRE" filtro="" _tag="AGRPLTD001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="AGRUPA" expresion="PAGCOD" filtro="LEN(TRIM(PAGCOD))&gt;0.AND.LEN(TRIM(PSUCUR))&gt;0" _tag="AGRUPA1" ubicacion="puesto" ordentag="1"/>
+	<row tabla="AGRUPA" expresion="PSUCUR" filtro="LEN(TRIM(PAGCOD))&gt;0.AND.LEN(TRIM(PSUCUR))&gt;0" _tag="AGRUPA2" ubicacion="puesto" ordentag="2"/>
+	<row tabla="AGRUPABUZON" expresion="CODIGO" filtro="" _tag="AGRUPAB001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPAG" expresion="CODIGO" filtro="" _tag="AGRUPAG001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPAGB" expresion="CODIGO" filtro="" _tag="AGRUPAG001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPAGPORCOMP" expresion="CODIGO" filtro="" _tag="AGRUPAG001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPAMIENTO" expresion="CODIGO" filtro="" _tag="AGRUPAM001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPAMIENTO" expresion="Codigo" filtro="" _tag="_AGRPK" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPAMIENTOCOM" expresion="CODIGO" filtro="" _tag="AGRUPAM001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPAMIENTOCOM" expresion="Codigo" filtro="" _tag="_AGCPK" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPBD" expresion="CODIGO" filtro="" _tag="AGRUPBD001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPBDPORCOMP" expresion="CODIGO" filtro="" _tag="AGRUPBD001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPBUZ" expresion="CODIGO" filtro="" _tag="AGRUPBU001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AGRUPUB" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB001" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB003" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB010" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB056" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB131" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB132" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB150" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB153" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB205" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB206" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUB208" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBADC" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBAJR" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBART" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBCAV" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBCBA" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBCCA" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBCDP" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBCDT" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBCLA" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBCLT" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBCOM" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBCOS" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBDES" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBDET" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBDFI" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBDJC" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBEA1" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBEA2" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBEA3" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBEDI" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBENF" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBFER" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBFML" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBGDV" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBGPV" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBGRP" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBIMS" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBINO" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBLIN" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBLPR" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBLQR" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBMAR" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBMDD" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBMIL" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBMIN" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBMON" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBMOT" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBODS" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBPAI" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBPR0" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBPRO" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBPRV" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBPTC" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBRED" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBREG" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBSDC" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBSGR" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBSMT" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBTDD" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBTDO" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBTIM" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBUDM" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBVAL" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBVEN" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AGRUPUBWHK" expresion="CODIGO" filtro="" _tag="AGRUPUB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJAUDIARTDET" expresion="AJDCODIGO" filtro="" _tag="AJAUDIA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJAUDICOMBDET" expresion="AJDCODIGO" filtro="" _tag="AJAUDIC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJAUENTRANDET" expresion="AJDCODIGO" filtro="" _tag="AJAUENT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJCHTRECH" expresion="CODIGO" filtro="" _tag="AJCHTRE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJCOMPDET" expresion="AJCOMPCOD" filtro="" _tag="AJCOMPD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJESTAUDCOMBDET" expresion="AJDCODIGO" filtro="" _tag="AJESTAU001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCCCLI" expresion="CODIGO" filtro="FACTTIPO = 43" _tag="AJUCCCL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCCCLI" expresion="FACTTIPO" filtro="FACTTIPO = 43" _tag="AJUCCCL002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCCCLI" expresion="FLETRA" filtro="FACTTIPO = 43" _tag="AJUCCCL003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCCCLI" expresion="FNUMCOMP" filtro="FACTTIPO = 43" _tag="AJUCCCL004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCCCLI" expresion="FPTOVEN" filtro="FACTTIPO = 43" _tag="AJUCCCL005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCCPRO" expresion="CODIGO" filtro="FACTTIPO = 44" _tag="AJUCCPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCCPRO" expresion="FLETRA" filtro="FACTTIPO = 44" _tag="AJUCCPR002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCCPRO" expresion="FNUMCOMP" filtro="FACTTIPO = 44" _tag="AJUCCPR003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCCPRO" expresion="FPTOVEN" filtro="FACTTIPO = 44" _tag="AJUCCPR004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCUPON" expresion="CODIGO" filtro="" _tag="AJUCUPO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUCUPON" expresion="IDCUPON" filtro="" _tag="AJUCUPO002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUENTRANDET" expresion="AJDCODIGO" filtro="" _tag="AJUENTR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUESTADOS" expresion="AJCODIGO" filtro="" _tag="AJUESTA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUESTADOSDET" expresion="AJDCODIGO" filtro="" _tag="AJUESTA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUSTOCK" expresion="AJCODIGO" filtro="" _tag="AJUSTOC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUSTOCKDET" expresion="AJDCODIGO" filtro="" _tag="AJUSTOC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AJUSTOCKDETA" expresion="AJDCODIGO" filtro="" _tag="AJUSTOC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ALIVIO" expresion="CODIGO" filtro="" _tag="ALIVIO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ALIVIODET" expresion="CODIGO" filtro="" _tag="ALIVIOD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="APAUTOENT" expresion="USU" filtro="" _tag="APAUTOE001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="APEREJER" expresion="NUMERO" filtro="" _tag="APEREJE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="APEREJER" expresion="Numero" filtro="" _tag="_ADEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ARQCAJA" expresion="CODIGO" filtro="" _tag="ARQCAJA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ARQCAJA" expresion="Codigo" filtro="" _tag="_ARQPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ARQEFECTDET" expresion="CODIGO" filtro="" _tag="ARQEFEC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ARQOTROSDET" expresion="CODIGO" filtro="" _tag="ARQOTRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ARQTOTDET" expresion="CODIGO" filtro="" _tag="ARQTOTD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ART" expresion="ARTCOD" filtro="" _tag="ART001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ART" expresion="ARTCOD" filtro="" _tag="_024PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ART" expresion="ARTCOD" filtro="" _tag="_ARTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ARTINDASIPRIB" expresion="CODIGO" filtro="" _tag="ARTINDA001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ARTINDASIPRIB" expresion="Codigo" filtro="" _tag="_ADAPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ARTIOPER" expresion="AOINT" filtro="" _tag="ARTIOPE001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ARTIOPER" expresion="AOINT" filtro="" _tag="_AAOPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ARTIOPER" expresion="AONUM" filtro="" _tag="ARTIOPE002" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ARTIOPER" expresion="str( AONUM, 8, 0)" filtro="" _tag="_AAOCC" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ARZBD" expresion="NUMERO" filtro="" _tag="ARZBD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ARZBD" expresion="numero" filtro="" _tag="_ARBPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ASIENTO" expresion="ACOD" filtro="" _tag="ASIENTO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ASIENTO" expresion="ACOD" filtro="" _tag="_ASIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ASIENTO" expresion="NUMERO" filtro="" _tag="ASIENTO002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ASIENTO" expresion="str( NUMERO, 8, 0)" filtro="" _tag="_ASICC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ASIENTODET" expresion="CODIGO" filtro="" _tag="ASIENTO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ASIPER" expresion="CODIGO" filtro="" _tag="ASIPER001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ATIPO" expresion="CODIGO" filtro="" _tag="ATIPO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ATIPO" expresion="CODIGO" filtro="" _tag="_ATIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ATIPODET" expresion="CODIGO" filtro="" _tag="ATIPODE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AccesoAOBJ" expresion="Codigo" filtro="" _tag="_AOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AgrpLtds" expresion="Codigo" filtro="" _tag="_ALPCC" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="AgrpLtds" expresion="Nombre" filtro="" _tag="_ALPPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="AgruPub" expresion="Codigo" filtro="" _tag="_APPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Agrupabuzon" expresion="Codigo" filtro="" _tag="_ABZPK" ubicacion="puesto" ordentag="99"/>
+	<row tabla="AjChTRech" expresion="Codigo" filtro="" _tag="_AJRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AjuCupon" expresion="Codigo" filtro="" _tag="_AJCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="AjuCupon" expresion="IdCupon" filtro="" _tag="_AJCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Alivio" expresion="Codigo" filtro="" _tag="_ADCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ApAutoEnt" expresion="Usu" filtro="" _tag="_AAEPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="AsiPer" expresion="Codigo" filtro="" _tag="_RASPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="BOLYCAJ" expresion="CODIGO" filtro="" _tag="BOLYCAJ001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="BOLYCAJ" expresion="CODIGO" filtro="" _tag="_BYCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="BOLYCAJ" expresion="NUMERO" filtro="" _tag="BOLYCAJ002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="BOLYCAJ" expresion="str( NUMERO, 8, 0)" filtro="" _tag="_BYCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CACEPV" expresion="NUMERO" filtro="" _tag="CACEPV001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAE" expresion="CODIGO" filtro="" _tag="CAE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAE" expresion="CODIGO" filtro="" _tag="_FAEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAEA" expresion="NINTERNO" filtro="" _tag="CAEA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAEA" expresion="NInterno" filtro="" _tag="_OCAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAEAINF" expresion="CODIGO" filtro="" _tag="CAEAINF001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAEAINF" expresion="Codigo" filtro="" _tag="_IMCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAEAINFDET" expresion="CODIGO" filtro="" _tag="CAEAINF001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAEPL" expresion="CODIGO" filtro="" _tag="CAEPL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAEPL" expresion="CODIGO" filtro="" _tag="_OFAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAJAAUDI" expresion="CODIGO" filtro="" _tag="CAJAAUD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAJAAUDI" expresion="Codigo" filtro="" _tag="_CAAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAJAESTA" expresion="NUMCAJA" filtro="" _tag="CAJAEST001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAJASALD" expresion="CODIGO" filtro="" _tag="CAJASAL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CAJASALD" expresion="Codigo" filtro="" _tag="_CASPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CALCPREC" expresion="CODIGO" filtro="" _tag="CALCPRE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CALCPREC" expresion="CODIGO" filtro="" _tag="_041PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CALCPRECDET" expresion="CODIGO" filtro="" _tag="CALCPRE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANCOMPRA" expresion="CODIGO" filtro="FACTTIPO = 41" _tag="CANCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANCOMPRA" expresion="CODIGO" filtro="FactTipo = 41" _tag="_CACPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANCOMPRA" expresion="FACTTIPO" filtro="FACTTIPO = 41" _tag="CANCOMP002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANCOMPRA" expresion="FLETRA" filtro="FACTTIPO = 41" _tag="CANCOMP003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANCOMPRA" expresion="FNUMCOMP" filtro="FACTTIPO = 41" _tag="CANCOMP004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANCOMPRA" expresion="FPTOVEN" filtro="FACTTIPO = 41" _tag="CANCOMP005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANCOMPRA" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0)" filtro="FactTipo = 41" _tag="_CACCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANCOMPRADET" expresion="CODIGO" filtro="" _tag="CANCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANJECUPONES" expresion="CODIGO" filtro="" _tag="CANJECU001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANJECUPONES" expresion="FACTTIPO" filtro="" _tag="CANJECU002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANJECUPONES" expresion="FLETRA" filtro="" _tag="CANJECU003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANJECUPONES" expresion="FPTOVEN" filtro="" _tag="CANJECU004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANJECUPONES" expresion="NUMERO" filtro="" _tag="CANJECU005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANJECUPONESDET" expresion="JJNUM" filtro="" _tag="CANJECU001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANJECUPONESENT" expresion="CODIGO" filtro="" _tag="CANJECU001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANSENIA" expresion="CODIGO" filtro="" _tag="CANSENI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANSENIA" expresion="LETRA" filtro="" _tag="CANSENI002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANSENIA" expresion="NUMERO" filtro="" _tag="CANSENI003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CANSENIA" expresion="PTOVENTA" filtro="" _tag="CANSENI004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CATCLI" expresion="CGCOD" filtro="" _tag="CATCLI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CATEGART" expresion="COD" filtro="" _tag="CATEGAR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CATEGART" expresion="Cod" filtro="" _tag="_SGRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CATEGECOM" expresion="CODIGO" filtro="" _tag="CATEGEC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CATEGGS" expresion="CODIGO" filtro="" _tag="CATEGGS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCCOMPRA" expresion="CODIGO" filtro="" _tag="CCCOMPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCCOMPRA" expresion="FECHAVEN" filtro="" _tag="CCCOMPR002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCCOMPRA" expresion="LETRA" filtro="" _tag="CCCOMPR003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCCOMPRA" expresion="NUMERO" filtro="" _tag="CCCOMPR004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCCOMPRA" expresion="PROVEE" filtro="" _tag="CCCOMPR005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCCOMPRA" expresion="PTOVTA" filtro="" _tag="CCCOMPR006" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCCOMPRA" expresion="TIPOCOMP" filtro="" _tag="CCCOMPR007" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCCOMPRA" expresion="VALOR" filtro="" _tag="CCCOMPR008" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCORREO" expresion="CODIGO" filtro="" _tag="CCORREO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCOSTO" expresion="COSCOD" filtro="" _tag="CCOSTO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CCOSTO" expresion="COSCOD" filtro="" _tag="_CCOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CFGARTECOM" expresion="CODIGO" filtro="" _tag="CFGARTE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CFGARTECOMCAT" expresion="CODIGO" filtro="" _tag="CFGARTE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CFGARTECOMDIM" expresion="CODIGO" filtro="" _tag="CFGARTE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CFGARTECOMETI" expresion="CODIGO" filtro="" _tag="CFGARTE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHCUSTODIA" expresion="CODIGO" filtro="" _tag="CHCUSTO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHCUSTODIA" expresion="Codigo" filtro="" _tag="_GCCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHCUSTODIADET" expresion="CODIGO" filtro="" _tag="CHCUSTO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHEQDISP" expresion="CODIGO" filtro="" _tag="CHEQDIS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHEQUE" expresion="CCOD" filtro="" _tag="CHEQUE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHEQUE" expresion="NUMEROC" filtro="" _tag="CHEQUE002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHEQUE" expresion="PTOVENTA" filtro="" _tag="CHEQUE003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHEQUE" expresion="cCod" filtro="" _tag="_CHPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHEQUE" expresion="str( ptoventa, 4, 0) + str( numeroC, 8, 0)" filtro="" _tag="_CHCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHEQUEHIST" expresion="CODIGO" filtro="" _tag="CHEQUEH001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHEQUERA" expresion="CQCOD" filtro="" _tag="CHEQUER001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHPROPHIST" expresion="CODIGO" filtro="" _tag="CHPROPH001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHQPROP" expresion="CCOD" filtro="" _tag="CHQPROP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHQPROP" expresion="NUMEROC" filtro="" _tag="CHQPROP002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHQPROP" expresion="PTOVENTA" filtro="" _tag="CHQPROP003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHQPROP" expresion="cCod" filtro="" _tag="_CPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CHQPROP" expresion="str( ptoventa, 4, 0) + str( numeroC, 8, 0)" filtro="" _tag="_CPCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CIELOTE" expresion="COD" filtro="" _tag="CIELOTE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CIELOTE" expresion="Cod" filtro="" _tag="_057PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CIELOTE" expresion="NUMEROC" filtro="" _tag="CIELOTE002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CIELOTE" expresion="str( numeroC, 8, 0)" filtro="" _tag="_057CC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CIERREEJ" expresion="NUMERO" filtro="" _tag="CIERREE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CIERREEJ" expresion="NUMERO" filtro="" _tag="_CEJPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASCONCEPAGO" expresion="CODIGO" filtro="" _tag="CLASCON001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASCONCEPAGO" expresion="Codigo" filtro="" _tag="_CCPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASIF" expresion="CLACOD" filtro="" _tag="CLASIF001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASIF" expresion="CLACOD" filtro="" _tag="_203PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASIFART" expresion="CODIGO" filtro="" _tag="CLASIFA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASIFART" expresion="CODIGO" filtro="" _tag="_205PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASIFCCAJA" expresion="CODIGO" filtro="" _tag="CLASIFC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASIFCCAJA" expresion="CODIGO" filtro="" _tag="_CCCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASPROD" expresion="CODCONS" filtro="" _tag="CLASPRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASPROD" expresion="CodCons" filtro="" _tag="_CLPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASPROV" expresion="CLACOD" filtro="" _tag="CLASPRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASPROV" expresion="CLACOD" filtro="" _tag="_207PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASVEND" expresion="CLACOD" filtro="" _tag="CLASVEN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLASVEND" expresion="CLACOD" filtro="" _tag="_208PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLATARJ" expresion="CDTCODIGO" filtro="" _tag="CLATARJ001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLI" expresion="CLCOD" filtro="" _tag="CLI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLI" expresion="CLCOD" filtro="" _tag="_CLIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLI" expresion="CLCOD" filtro="" _tag="_CLRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLIECOM" expresion="CLIENECOM" filtro="" _tag="CLIECOM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLIECOM" expresion="CLIENECOM + cuenta" filtro="" _tag="_CECCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLIECOM" expresion="CUENTA" filtro="" _tag="CLIECOM002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLIECOM" expresion="NUMERO" filtro="" _tag="CLIECOM003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLIECOM" expresion="numero" filtro="" _tag="_CECPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CLIOTRASDIR" expresion="ODCOD" filtro="" _tag="CLIOTRA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CMVFACCOMPRA" expresion="CODIGO" filtro="" _tag="CMVFACC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CMVFILTROSTPRE" expresion="CODIGO" filtro="" _tag="CMVFILT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CMVFacCompra" expresion="Codigo" filtro="" _tag="_CMVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CMVFiltroStPre" expresion="Codigo" filtro="" _tag="_FSPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CODBARALTER" expresion="CODIGO" filtro="" _tag="CODBARA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CODBARALTER" expresion="Codigo" filtro="" _tag="_CABPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CODBARALTERDET" expresion="CODIGO" filtro="" _tag="CODBARA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CODPOSTAL1" expresion="CP" filtro="" _tag="CODPOST001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="CODSERV" expresion="CODIGO" filtro="" _tag="CODSERV001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CODSERVDET" expresion="COD" filtro="" _tag="CODSERV001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COL" expresion="COLCOD" filtro="" _tag="COL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COL" expresion="COLCOD" filtro="" _tag="_001PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMB" expresion="UPPER( COART )" filtro="" _tag="ARTUPPER" ubicacion="" ordentag="0"/>
+	<row tabla="COMB" expresion="UPPER( COCOL )" filtro="" _tag="COLUPPER" ubicacion="" ordentag="0"/>
+	<row tabla="COMB" expresion="UPPER( TALLE )" filtro="" _tag="TALLEUPPER" ubicacion="" ordentag="0"/>
+	<row tabla="COMB" expresion="COART" filtro="" _tag="COMB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMB" expresion="COART + COCOL + Talle" filtro="" _tag="_012CC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMB" expresion="COCOD" filtro="" _tag="COMB002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMB" expresion="COCOD" filtro="" _tag="_012PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMB" expresion="COCOL" filtro="" _tag="COMB003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMB" expresion="TALLE" filtro="" _tag="COMB004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMCAJ" expresion="CODIGO" filtro="" _tag="COMCAJ001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMCAJ" expresion="Codigo" filtro="" _tag="_COCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMCODSU" expresion="ENTIDAD" filtro="" _tag="COMCODS001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="COMISION" expresion="CODIGO" filtro="" _tag="COMISIO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMISION" expresion="CODIGO" filtro="" _tag="_COMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPACONT" expresion="CODIGO" filtro="" _tag="COMPACO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPACONT" expresion="Codigo" filtro="" _tag="_FCCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPAFE" expresion="CODIGO" filtro="" _tag="COMPAFE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPAINS" expresion="CODIGO" filtro="" _tag="COMPAIN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPAINS" expresion="Codigo" filtro="" _tag="_FCIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPASOC" expresion="CODIGO" filtro="" _tag="COMPASO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPCAJADET" expresion="CODDETVAL" filtro="" _tag="COMPCAJ001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPECOM" expresion="NUMERO" filtro="" _tag="COMPECO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPECOM" expresion="NUMERO" filtro="" _tag="_COEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPPAGO" expresion="CODIGO" filtro="" _tag="COMPPAG001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPPAGO" expresion="CODIGO" filtro="" _tag="_COPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPPAGO" expresion="NUMERO" filtro="" _tag="COMPPAG002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPPAGO" expresion="str( Numero, 10, 0)" filtro="" _tag="_COPCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPPAGODET" expresion="CODIGO" filtro="" _tag="COMPPAG001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPPL" expresion="CODIGO" filtro="" _tag="COMPPL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPPL" expresion="CODIGO" filtro="" _tag="_IPLPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="CODIGO" filtro="TIPOIMP= 'GANANCIAS'" _tag="COMPRET001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="CODIGO" filtro="TIPOIMP= 'IIBB'" _tag="COMPRET002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="CODIGO" filtro="TIPOIMP= 'IVA'" _tag="COMPRET003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="CODIGO" filtro="TIPOIMP= 'SUSS'" _tag="COMPRET004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="NUMERO" filtro="TIPOIMP= 'GANANCIAS'" _tag="COMPRET005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="NUMERO" filtro="TIPOIMP= 'IIBB'" _tag="COMPRET006" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="NUMERO" filtro="TIPOIMP= 'IVA'" _tag="COMPRET007" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="NUMERO" filtro="TIPOIMP= 'SUSS'" _tag="COMPRET008" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="PTOVENTA" filtro="TIPOIMP= 'GANANCIAS'" _tag="COMPRET009" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="PTOVENTA" filtro="TIPOIMP= 'IIBB'" _tag="COMPRET010" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="PTOVENTA" filtro="TIPOIMP= 'IVA'" _tag="COMPRET011" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="PTOVENTA" filtro="TIPOIMP= 'SUSS'" _tag="COMPRET012" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="TIPOIMP" filtro="TIPOIMP= 'GANANCIAS'" _tag="COMPRET013" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="TIPOIMP" filtro="TIPOIMP= 'IIBB'" _tag="COMPRET014" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="TIPOIMP" filtro="TIPOIMP= 'IVA'" _tag="COMPRET015" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRET" expresion="TIPOIMP" filtro="TIPOIMP= 'SUSS'" _tag="COMPRET016" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="" _tag="COMPROB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="" _tag="_DIEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="" _tag="_ECPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="" _tag="_EMMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="" _tag="_VECPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 1" _tag="COMPROB002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 11" _tag="COMPROB003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 12" _tag="COMPROB004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 2" _tag="COMPROB005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 23" _tag="COMPROB006" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 25" _tag="COMPROB007" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 27" _tag="COMPROB008" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 28" _tag="COMPROB009" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 29" _tag="COMPROB010" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 3" _tag="COMPROB011" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 33" _tag="COMPROB012" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 35" _tag="COMPROB013" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 36" _tag="COMPROB014" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 4" _tag="COMPROB015" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 47" _tag="COMPROB016" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 48" _tag="COMPROB017" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 49" _tag="COMPROB018" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 5" _tag="COMPROB019" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 54" _tag="COMPROB020" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 55" _tag="COMPROB021" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 56" _tag="COMPROB022" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 57" _tag="COMPROB023" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FACTTIPO = 6" _tag="COMPROB024" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 1" _tag="_FCVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 2" _tag="_TFCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 27" _tag="_FENPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 28" _tag="_CENPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 29" _tag="_DENPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 3" _tag="_NCVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 33" _tag="_FEEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 35" _tag="_CEEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 36" _tag="_DEEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 4" _tag="_NDVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 5" _tag="_TNCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 54" _tag="_FAGPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 54" _tag="_FEMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 55" _tag="_CEMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 55" _tag="_NAGPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 56" _tag="_DEMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 56" _tag="_XADPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="CODIGO" filtro="FactTipo = 6" _tag="_TNDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 1" _tag="COMPROB025" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 11" _tag="COMPROB026" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 12" _tag="COMPROB027" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 2" _tag="COMPROB028" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 23" _tag="COMPROB029" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 25" _tag="COMPROB030" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 27" _tag="COMPROB031" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 28" _tag="COMPROB032" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 29" _tag="COMPROB033" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 3" _tag="COMPROB034" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 33" _tag="COMPROB035" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 35" _tag="COMPROB036" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 36" _tag="COMPROB037" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 4" _tag="COMPROB038" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 47" _tag="COMPROB039" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 48" _tag="COMPROB040" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 49" _tag="COMPROB041" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 5" _tag="COMPROB042" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 54" _tag="COMPROB043" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 55" _tag="COMPROB044" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 56" _tag="COMPROB045" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 57" _tag="COMPROB046" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTSEC" filtro="FACTTIPO = 6" _tag="COMPROB047" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 1" _tag="COMPROB048" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 11" _tag="COMPROB049" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 12" _tag="COMPROB050" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 2" _tag="COMPROB051" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 23" _tag="COMPROB052" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 25" _tag="COMPROB053" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 27" _tag="COMPROB054" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 28" _tag="COMPROB055" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 29" _tag="COMPROB056" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 3" _tag="COMPROB057" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 33" _tag="COMPROB058" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 35" _tag="COMPROB059" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 36" _tag="COMPROB060" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 4" _tag="COMPROB061" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 47" _tag="COMPROB062" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 48" _tag="COMPROB063" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 49" _tag="COMPROB064" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 5" _tag="COMPROB065" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 54" _tag="COMPROB066" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 55" _tag="COMPROB067" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 56" _tag="COMPROB068" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 57" _tag="COMPROB069" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FACTTIPO" filtro="FACTTIPO = 6" _tag="COMPROB070" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 1" _tag="COMPROB071" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 11" _tag="COMPROB072" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 12" _tag="COMPROB073" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 2" _tag="COMPROB074" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 23" _tag="COMPROB075" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 25" _tag="COMPROB076" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 27" _tag="COMPROB077" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 28" _tag="COMPROB078" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 29" _tag="COMPROB079" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 3" _tag="COMPROB080" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 33" _tag="COMPROB081" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 35" _tag="COMPROB082" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 36" _tag="COMPROB083" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 4" _tag="COMPROB084" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 47" _tag="COMPROB085" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 48" _tag="COMPROB086" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 49" _tag="COMPROB087" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 5" _tag="COMPROB088" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 54" _tag="COMPROB089" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 55" _tag="COMPROB090" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 56" _tag="COMPROB091" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 57" _tag="COMPROB092" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FLETRA" filtro="FACTTIPO = 6" _tag="COMPROB093" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 1" _tag="COMPROB094" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 11" _tag="COMPROB095" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 12" _tag="COMPROB096" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 2" _tag="COMPROB097" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 23" _tag="COMPROB098" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 25" _tag="COMPROB099" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 27" _tag="COMPROB100" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 28" _tag="COMPROB101" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 29" _tag="COMPROB102" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 3" _tag="COMPROB103" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 33" _tag="COMPROB104" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 35" _tag="COMPROB105" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 36" _tag="COMPROB106" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 4" _tag="COMPROB107" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 47" _tag="COMPROB108" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 48" _tag="COMPROB109" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 49" _tag="COMPROB110" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 5" _tag="COMPROB111" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 54" _tag="COMPROB112" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 55" _tag="COMPROB113" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 56" _tag="COMPROB114" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 57" _tag="COMPROB115" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FNUMCOMP" filtro="FACTTIPO = 6" _tag="COMPROB116" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 1" _tag="COMPROB117" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 11" _tag="COMPROB118" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 12" _tag="COMPROB119" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 2" _tag="COMPROB120" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 23" _tag="COMPROB121" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 25" _tag="COMPROB122" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 27" _tag="COMPROB123" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 28" _tag="COMPROB124" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 29" _tag="COMPROB125" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 3" _tag="COMPROB126" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 33" _tag="COMPROB127" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 35" _tag="COMPROB128" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 36" _tag="COMPROB129" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 4" _tag="COMPROB130" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 47" _tag="COMPROB131" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 48" _tag="COMPROB132" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 49" _tag="COMPROB133" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 5" _tag="COMPROB134" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 54" _tag="COMPROB135" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 55" _tag="COMPROB136" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 56" _tag="COMPROB137" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 57" _tag="COMPROB138" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="FPTOVEN" filtro="FACTTIPO = 6" _tag="COMPROB139" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 1" _tag="_FCVCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 2" _tag="_TFCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 27" _tag="_FENCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 28" _tag="_CENCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 29" _tag="_DENCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 3" _tag="_NCVCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 33" _tag="_FEECC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 35" _tag="_CEECC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 36" _tag="_DEECC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 4" _tag="_NDVCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 5" _tag="_TNCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 54" _tag="_FAGCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 54" _tag="_FEMCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 55" _tag="_CEMCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 55" _tag="_NAGCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 56" _tag="_DEMCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 56" _tag="_XADCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 6" _tag="_TNDCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPROBANTEVDET" expresion="CODIGO" filtro="" _tag="COMPROB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRR" expresion="CODIGO" filtro="" _tag="COMPRR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRR" expresion="NUMINT" filtro="" _tag="COMPRR002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRRDATA" expresion="CODIGO" filtro="" _tag="COMPRRD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPRRDET" expresion="CODIGO" filtro="" _tag="COMPRRD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPVTAS" expresion="CODIGO" filtro="" _tag="COMPVTA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COMPVTAS" expresion="Codigo" filtro="" _tag="_CVEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCCAJA" expresion="CCCODIGO" filtro="" _tag="CONCCAJ001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCECAJA" expresion="CODIGO" filtro="" _tag="CONCECA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCECAJA" expresion="Codigo" filtro="" _tag="_CCAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCEPAGO" expresion="CODIGO" filtro="" _tag="CONCEPA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCEPAGO" expresion="Codigo" filtro="" _tag="_CPAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCILIACION" expresion="CODIGO" filtro="" _tag="CONCILI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCILIACION" expresion="Codigo" filtro="" _tag="_COBPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCLI" expresion="CODCOMP" filtro="" _tag="CONCLI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCLI" expresion="CODIGO" filtro="" _tag="CONCLI002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCLI" expresion="Codigo" filtro="" _tag="_CCLPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCLI" expresion="LETRA" filtro="" _tag="CONCLI003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCLI" expresion="NUM" filtro="" _tag="CONCLI004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCLI" expresion="PTOVTA" filtro="" _tag="CONCLI005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCLI" expresion="TIPCOMP" filtro="" _tag="CONCLI006" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCLI" expresion="str( TipComp, 2, 0) + Letra + str( ptoVta, 4, 0) + str( num, 8, 0) + codcomp" filtro="" _tag="_CCLCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCMOVI" expresion="CCCODIGO" filtro="" _tag="CONCMOV001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONCSALD" expresion="CCCODIGO" filtro="" _tag="CONCSAL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONDIMPO" expresion="CODIGO" filtro="" _tag="CONDIMP001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="CONDIMPO" expresion="codigo" filtro="" _tag="_CONPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="CONDPAGO" expresion="CLCOD" filtro="" _tag="CONDPAG001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONDPAGO" expresion="CLCOD" filtro="" _tag="_CDPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONENTFIN" expresion="CODIGO" filtro="" _tag="CONENTF001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONENTFIN" expresion="CONCEPTO" filtro="" _tag="CONENTF002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONENTFIN" expresion="ENTFIN" filtro="" _tag="CONENTF003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONLIQTAR" expresion="CODIGO" filtro="" _tag="CONLIQT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONSPROD" expresion="CODCONS" filtro="" _tag="CONSPRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONSPROD" expresion="CodCons" filtro="" _tag="_CSMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONTABIL" expresion="NUMERO" filtro="" _tag="CONTABI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONTABIL" expresion="NUMERO" filtro="" _tag="_CATPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONTACTO" expresion="CTCOD" filtro="" _tag="CONTACT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONTACTODET" expresion="CONCOD" filtro="" _tag="CONTACT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONTPROVDET" expresion="CONCOD" filtro="" _tag="CONTPRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONVENIO" expresion="CODIGO" filtro="" _tag="CONVENI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONVENIO" expresion="Codigo" filtro="" _tag="_CMLPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CONVER" expresion="CODIGO" filtro="" _tag="CONVER001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="CONVERVAL" expresion="BASEDATOS" filtro="" _tag="CONVERV001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="CONVERVAL" expresion="CODIGO" filtro="" _tag="CONVERV002" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="CONVERVAL" expresion="CONVERSION" filtro="" _tag="CONVERV003" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="CONVERVAL" expresion="VALORIG" filtro="" _tag="CONVERV004" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="CORRE" expresion="CLCOD" filtro="" _tag="CORRE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CORRE" expresion="CLCOD" filtro="" _tag="_CORPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COSTOINS" expresion="CANTIDAD" filtro="" _tag="COSTOIN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COSTOINS" expresion="CCOLOR" filtro="" _tag="COSTOIN002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COSTOINS" expresion="CODIGO" filtro="" _tag="COSTOIN003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COSTOINS" expresion="CODIGO" filtro="" _tag="_019PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COSTOINS" expresion="INSUMO" filtro="" _tag="COSTOIN004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COSTOINS" expresion="LISTACOST" filtro="" _tag="COSTOIN005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COSTOINS" expresion="LISTACOST + Insumo + cColor + Talle + Taller + Proceso + str( Cantidad, 7, 0)" filtro="" _tag="_019CC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COSTOINS" expresion="PROCESO" filtro="" _tag="COSTOIN006" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COSTOINS" expresion="TALLE" filtro="" _tag="COSTOIN007" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COSTOINS" expresion="TALLER" filtro="" _tag="COSTOIN008" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COTIZA" expresion="CODIGO" filtro="" _tag="COTIZA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COTIZAGOP" expresion="CODIGO" filtro="" _tag="COTIZAG001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COTIZAGOP" expresion="Codigo" filtro="" _tag="_CGOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COTIZAGOP" expresion="NUMERO" filtro="" _tag="COTIZAG002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COTIZAGOP" expresion="str( Numero, 12, 0)" filtro="" _tag="_CGOCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COTORDADIC" expresion="COTIZALQAD" filtro="" _tag="COTORDA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COTORDDESC" expresion="COTIZALQDE" filtro="" _tag="COTORDD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COTORDINS" expresion="COTIZALQIN" filtro="" _tag="COTORDI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="COTORDPROD" expresion="COTIZALQPR" filtro="" _tag="COTORDP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CRCOMPDET" expresion="CODIGO" filtro="" _tag="CRCOMPD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CRIMPDET" expresion="CODIGO" filtro="" _tag="CRIMPDE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CRVPRODDET" expresion="CODRELA" filtro="" _tag="CRVPROD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTABAN" expresion="CBCOD" filtro="" _tag="CTABAN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTACTE" expresion="BDALTAFW" filtro="" _tag="CTACTE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTACTE" expresion="CLIENTE" filtro="" _tag="CTACTE002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTACTE" expresion="CODIGO" filtro="" _tag="CTACTE003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTACTE" expresion="FACTSEC" filtro="" _tag="CTACTE004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTACTE" expresion="FECHAVEN" filtro="" _tag="CTACTE005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTACTE" expresion="LETRA" filtro="" _tag="CTACTE006" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTACTE" expresion="NUMERO" filtro="" _tag="CTACTE007" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTACTE" expresion="PTOVTA" filtro="" _tag="CTACTE008" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTACTE" expresion="TIPOCOMP" filtro="" _tag="CTACTE009" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTACTE" expresion="VALOR" filtro="" _tag="CTACTE010" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTALLE" expresion="CODIGO" filtro="" _tag="CTALLE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CTALLE" expresion="Codigo" filtro="" _tag="_CDTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CUPHUER" expresion="CODIGO" filtro="" _tag="CUPHUER001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CUPONES" expresion="CODIGO" filtro="" _tag="CUPONES001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CUPONES" expresion="NROINTERNO" filtro="" _tag="CUPONES002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CUPONES" expresion="PTOVENTA" filtro="" _tag="CUPONES003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CUPPEND" expresion="CODIGO" filtro="" _tag="CUPPEND001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CURVAPROD" expresion="CODIGO" filtro="" _tag="CURVAPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CURVAPROD" expresion="Codigo" filtro="" _tag="_CVPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CajaEsta" expresion="NumCaja" filtro="" _tag="_CAEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CanjeCupones" expresion="Codigo" filtro="" _tag="_CDVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CanjeCupones" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( Numero, 12, 0)" filtro="" _tag="_CDVCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CatCli" expresion="CGCod" filtro="" _tag="_CGCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CategEcom" expresion="Codigo" filtro="" _tag="_CTGPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CategGS" expresion="Codigo" filtro="" _tag="_CGSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CfgArtEcom" expresion="Codigo" filtro="" _tag="_CEDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CheqDisp" expresion="Codigo" filtro="" _tag="_CHDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Chequera" expresion="CqCod" filtro="" _tag="_133PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ClaTarj" expresion="CdTCodigo" filtro="" _tag="_CLAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CodPostal1" expresion="CP" filtro="" _tag="_CP8PK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="CodServ" expresion="Codigo" filtro="" _tag="_COSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComCodSu" expresion="Entidad" filtro="" _tag="_CCSCC" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ComCodSu" expresion="Entidad" filtro="" _tag="_CCSPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="CompAsoc" expresion="Codigo" filtro="" _tag="_CFVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompAsoc" expresion="Codigo" filtro="" _tag="_SCAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRR" expresion="codigo" filtro="" _tag="_CRRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRR" expresion="str( numint, 8, 0)" filtro="" _tag="_CRRCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRRData" expresion="codigo" filtro="" _tag="_DRRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRet" expresion="CODIGO" filtro="TipoImp= 'GANANCIAS'" _tag="_CRGPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRet" expresion="CODIGO" filtro="TipoImp= 'IIBB'" _tag="_CDRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRet" expresion="CODIGO" filtro="TipoImp= 'IVA'" _tag="_CRIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRet" expresion="CODIGO" filtro="TipoImp= 'SUSS'" _tag="_CRSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRet" expresion="str( PtoVenta, 4, 0) + str( Numero, 10, 0) + TipoImp" filtro="TipoImp= 'GANANCIAS'" _tag="_CRGCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRet" expresion="str( PtoVenta, 4, 0) + str( Numero, 10, 0) + TipoImp" filtro="TipoImp= 'IIBB'" _tag="_CDRCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRet" expresion="str( PtoVenta, 4, 0) + str( Numero, 10, 0) + TipoImp" filtro="TipoImp= 'IVA'" _tag="_CRICC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CompRet" expresion="str( PtoVenta, 4, 0) + str( Numero, 10, 0) + TipoImp" filtro="TipoImp= 'SUSS'" _tag="_CRSCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="CODIGO" filtro="FactTipo = 11" _tag="_RMVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="CODIGO" filtro="FactTipo = 12" _tag="_DEVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="CODIGO" filtro="FactTipo = 23" _tag="_PEDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="CODIGO" filtro="FactTipo = 25" _tag="_PR1PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="CODIGO" filtro="FactTipo = 47" _tag="_FMXPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="CODIGO" filtro="FactTipo = 48" _tag="_NCXPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="CODIGO" filtro="FactTipo = 49" _tag="_NDXPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="CODIGO" filtro="FactTipo = 57" _tag="_PRMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 11" _tag="_RMVCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 12" _tag="_DEVCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 23" _tag="_PEDCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 25" _tag="_PR1CC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 47" _tag="_FMXCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 48" _tag="_NCXCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 49" _tag="_NDXCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ComprobanteV" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0) + FACTSEC" filtro="FactTipo = 57" _tag="_PRMCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ConEntFin" expresion="Codigo" filtro="" _tag="_CEFPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ConEntFin" expresion="Concepto + EntFin" filtro="" _tag="_CEFCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ConcCaja" expresion="ccCodigo" filtro="" _tag="_CCJPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Contacto" expresion="CTCOD" filtro="" _tag="_CNTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CtaBan" expresion="CBCod" filtro="" _tag="_132PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CtaCte" expresion="Codigo" filtro="" _tag="_053PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CtaCte" expresion="dtos( fechaven ) + str( TipoComp, 2, 0) + letra + str( ptovta, 4, 0) + str( numero, 8, 0) + Valor + Cliente + factsec + BDAltaFW" filtro="" _tag="_053CC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CupHuer" expresion="Codigo" filtro="" _tag="_CPHPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="CupPend" expresion="Codigo" filtro="" _tag="_CPNPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Cupones" expresion="Codigo" filtro="" _tag="_CUPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Cupones" expresion="str( PtoVenta, 4, 0) + str( NroInterno, 8, 0)" filtro="" _tag="_CUPCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DACCAUT" expresion="CODIGO" filtro="" _tag="DACCAUT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DAPAUTO" expresion="USU" filtro="" _tag="DAPAUTO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DATOSBANC" expresion="CODIGO" filtro="" _tag="DATOSBA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DATOSBANC" expresion="Codigo" filtro="" _tag="_DCBPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DATOSBANCDET" expresion="CODIGO" filtro="" _tag="DATOSBA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DATOSCOBTARJETA" expresion="CODIGO" filtro="" _tag="DATOSCO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DATOSFISCALDET" expresion="CODRELA" filtro="" _tag="DATOSFI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DATOSFISCALES" expresion="CODIGO" filtro="" _tag="DATOSFI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DCCOSTO" expresion="CODIGO" filtro="" _tag="DCCOSTO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DCCOSTO" expresion="Codigo" filtro="" _tag="_DCCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DCTALLE" expresion="CODIGO" filtro="" _tag="DCTALLE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DDCCOSTO" expresion="CODIGO" filtro="" _tag="DDCCOST001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DENOMINA" expresion="CODIGO" filtro="" _tag="DENOMIN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESCARGACHEQUE" expresion="CODIGO" filtro="" _tag="DESCARG001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESCARGACHEQUE" expresion="CODIGO" filtro="" _tag="_DCTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESCARGACHEQUE" expresion="LETRA" filtro="" _tag="DESCARG002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESCARGACHEQUE" expresion="Letra + str( PtoVen, 4, 0) + str( NumComp, 8, 0)" filtro="" _tag="_DCTCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESCARGACHEQUE" expresion="NUMCOMP" filtro="" _tag="DESCARG003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESCARGACHEQUE" expresion="PTOVEN" filtro="" _tag="DESCARG004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESCUENTODET" expresion="CODIGO" filtro="" _tag="DESCUEN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESCUENTOS" expresion="CODIGO" filtro="" _tag="DESCUEN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESPIMP" expresion="DESPACHO" filtro="" _tag="DESPIMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESPIMPDET" expresion="CODIGO" filtro="" _tag="DESPIMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESPSEL" expresion="CODIGO" filtro="" _tag="DESPSEL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESPSELDET" expresion="CODIGO" filtro="" _tag="DESPSEL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESTDESC" expresion="CODIGO" filtro="" _tag="DESTDES001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DESTDESC" expresion="Codigo" filtro="" _tag="_DDCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETAJUCCCLI" expresion="CODIGO" filtro="" _tag="DETAJUC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETAJUCCPRO" expresion="CODIGO" filtro="" _tag="DETAJUC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETALLECAIS" expresion="CODIGO" filtro="" _tag="DETALLE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETARTFINALPROD" expresion="NUMR" filtro="" _tag="DETARTF001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETAUDI" expresion="CODIGO" filtro="" _tag="DETAUDI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETBOLYCAJ" expresion="NUMR" filtro="" _tag="DETBOLY001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETCAMORDPER" expresion="CODIGO" filtro="" _tag="DETCAMO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DETCAMSUBPER" expresion="CODIGO" filtro="" _tag="DETCAMS001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DETCAMTROPER" expresion="CODIGO" filtro="" _tag="DETCAMT001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DETCANSENIA" expresion="CODIGO" filtro="" _tag="DETCANS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETCIELOTE" expresion="COD" filtro="" _tag="DETCIEL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETCOMPPICKING" expresion="CODIGO" filtro="" _tag="DETCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETCOMVEN" expresion="CODIGO" filtro="" _tag="DETCOMV001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETCONPICKING" expresion="CODIGO" filtro="" _tag="DETCONP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETCONVENIO" expresion="CODRELA" filtro="" _tag="DETCONV001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETDATOSTARJ" expresion="CODIGO" filtro="" _tag="DETDATO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETDESCCHEQUE" expresion="CODIGO" filtro="" _tag="DETDESC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETDIFOPICKING" expresion="CODIGO" filtro="" _tag="DETDIFO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETDIFPICKING" expresion="CODIGO" filtro="" _tag="DETDIFP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETENBASEA" expresion="CODIGO" filtro="" _tag="DETENBA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETEQUILINCE" expresion="CODIGO" filtro="" _tag="DETEQUI001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DETERROR" expresion="CODIGO" filtro="" _tag="DETERRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETFILTROPER" expresion="CODIGO" filtro="" _tag="DETFILT001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DETFVLIS" expresion="COD" filtro="" _tag="DETFVLI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETGTIN" expresion="CODIGO" filtro="" _tag="DETGTIN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETMOVBANC" expresion="CODIGO" filtro="" _tag="DETMOVB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETMOVBANCT" expresion="CODIGO" filtro="" _tag="DETMOVB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETMSTOCK" expresion="NUMR" filtro="" _tag="DETMSTO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETMSTOCKAINV" expresion="NUMR" filtro="" _tag="DETMSTO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETMSTOCKAPROD" expresion="NUMR" filtro="" _tag="DETMSTO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETMSTOCKDESDPR" expresion="NUMR" filtro="" _tag="DETMSTO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETMTRANS" expresion="NUMR" filtro="" _tag="DETMTRA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETOKPICKING" expresion="CODIGO" filtro="" _tag="DETOKPI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETPAGOSPERS" expresion="CODIGO" filtro="" _tag="DETPAGO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETPREPMPICKING" expresion="CODIGO" filtro="" _tag="DETPREP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETREGCON" expresion="CODIGO" filtro="" _tag="DETREGC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETREGCONT" expresion="CODIGO" filtro="" _tag="DETREGC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETREMELEC" expresion="CODIGO" filtro="" _tag="DETREME001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DETSALIDASLPER" expresion="CODIGO" filtro="" _tag="DETSALI001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DEUDACH" expresion="CCOD" filtro="" _tag="DEUDACH001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DEUDACH" expresion="cCod" filtro="" _tag="_DCHPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DISAREAS" expresion="ICOD" filtro="" _tag="DISAREA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DISATRIBUTOS" expresion="ICOD" filtro="" _tag="DISATRI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DISCOVER" expresion="CODIGO" filtro="" _tag="DISCOVE001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISCOVER" expresion="Codigo" filtro="" _tag="_DSCPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISENT" expresion="ICOD" filtro="" _tag="DISENT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DISENTMAIL" expresion="ICOD" filtro="" _tag="DISENTM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DISEXPO" expresion="CCOD" filtro="" _tag="DISEXPO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISEXPOAREA" expresion="ICOD" filtro="" _tag="DISEXPO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISEXPOATRI" expresion="ICOD" filtro="" _tag="DISEXPO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISEXPOENT" expresion="ICOD" filtro="" _tag="DISEXPO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISIMP" expresion="CCOD" filtro="" _tag="DISIMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DISIMPO" expresion="CCOD" filtro="" _tag="DISIMPO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISIMPO" expresion="CLASEHOOK" filtro="" _tag="DISIMPO002" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISIMPOAREA" expresion="ICOD" filtro="" _tag="DISIMPO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISIMPOATRI" expresion="ICOD" filtro="" _tag="DISIMPO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISIMPOENT" expresion="ICOD" filtro="" _tag="DISIMPO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISLINCE" expresion="CCOD" filtro="" _tag="DISLINC001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISLINCE" expresion="NUMERO" filtro="" _tag="DISLINC002" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DISLINCEATRI" expresion="ICOD" filtro="" _tag="DISLINC001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DJCP" expresion="CODINT" filtro="" _tag="DJCP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DJCP" expresion="CodInt" filtro="" _tag="_DJCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DJCP" expresion="NUMERO" filtro="" _tag="DJCP002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DJCP" expresion="str( Numero, 8, 0)" filtro="" _tag="_DJCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DJCPDET" expresion="CODIGO" filtro="" _tag="DJCPDET001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DPCOLOR" expresion="CODIGO" filtro="" _tag="DPCOLOR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DatosCobTarjeta" expresion="Codigo" filtro="" _tag="_DP2PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DatosFiscales" expresion="Codigo" filtro="" _tag="_DFIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Descuentos" expresion="codigo" filtro="" _tag="_DESPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DespImp" expresion="Despacho" filtro="" _tag="_DDIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DespSel" expresion="Codigo" filtro="" _tag="_SDDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DisExpo" expresion="cCod" filtro="" _tag="_EXPPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DisImp" expresion="cCod" filtro="" _tag="_IMPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="DisImpo" expresion="cCod" filtro="" _tag="_DIMPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DisImpo" expresion="clasehook" filtro="" _tag="_DIMCC" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DisLince" expresion="cCod" filtro="" _tag="_DTLPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="DisLince" expresion="str( Numero, 10, 0)" filtro="" _tag="_DTLCC" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ECCOMPDET" expresion="NUMERO" filtro="" _tag="ECCOMPD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ECOM" expresion="CODIGO" filtro="" _tag="ECOM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ECOM" expresion="CODIGO" filtro="" _tag="_ECOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ECOMEQUIVAL" expresion="CODIGO" filtro="" _tag="ECOMEQU001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EJERCICIO" expresion="NUMERO" filtro="" _tag="EJERCIC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EJERCICIO" expresion="NUMERO" filtro="" _tag="_EJRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EMP" expresion="EMPCOD" filtro="LEN(TRIM(EMPCOD))&gt;0" _tag="EMP1" ubicacion="puesto" ordentag="0"/>
+	<row tabla="EMP" expresion="EMPCOD" filtro="" _tag="EMP001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="EMP" expresion="EMPCOD" filtro="" _tag="_052PK" ubicacion="puesto" ordentag="99"/>
+	<row tabla="ENBASEA" expresion="CCOD" filtro="" _tag="ENBASEA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTADIC1" expresion="COD" filtro="" _tag="ENTADIC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTADIC2" expresion="COD" filtro="" _tag="ENTADIC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTADIC3" expresion="COD" filtro="" _tag="ENTADIC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTFIN" expresion="EFCOD" filtro="" _tag="ENTFIN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTFIN" expresion="EfCod" filtro="" _tag="_ENFPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTMER" expresion="CODIGO" filtro="" _tag="ENTMER001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTMER" expresion="CODIGO" filtro="" _tag="_EMCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTMER" expresion="NUMERO" filtro="" _tag="ENTMER002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTMER" expresion="str( NUMERO, 8, 0)" filtro="" _tag="_EMCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTMERDET" expresion="CODIGO" filtro="" _tag="ENTMERD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENTONLINE" expresion="CODIGO" filtro="" _tag="ENTONLI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENVCCMAIL" expresion="CODIGO" filtro="" _tag="ENVCCMA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENVCCMAIL" expresion="CODIGO" filtro="" _tag="_ECMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENVMENS" expresion="CODIGO" filtro="" _tag="ENVMENS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENVMENS" expresion="CODIGO" filtro="" _tag="_EMEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENVMENS" expresion="NUMERO" filtro="" _tag="ENVMENS002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ENVMENS" expresion="str( NUMERO, 4, 0)" filtro="" _tag="_EMECC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EQUI" expresion="UPPER( CARTICUL )" filtro="" _tag="ARTUPPER" ubicacion="" ordentag="0"/>
+	<row tabla="EQUI" expresion="UPPER( CARTICUL ) + UPPER( CCOLOR ) + UPPER( CTALLE )" filtro="" _tag="COMBINACIO" ubicacion="" ordentag="0"/>
+	<row tabla="EQUI" expresion="UPPER( CCOLOR )" filtro="" _tag="COLUPPER" ubicacion="" ordentag="0"/>
+	<row tabla="EQUI" expresion="UPPER( CTALLE )" filtro="" _tag="TALLEUPPER" ubicacion="" ordentag="0"/>
+	<row tabla="EQUI" expresion="CCODIGO" filtro="" _tag="EQUI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EQUI" expresion="cCodigo" filtro="" _tag="_CBAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EQUIVALLIN" expresion="CODIGO" filtro="" _tag="EQUIVAL001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="EQUIVALLIN" expresion="Codigo" filtro="" _tag="_EVLPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ERRORCF" expresion="COD" filtro="" _tag="ERRORCF001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ERRORSAP" expresion="CODIGO" filtro="" _tag="ERRORSA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ERRORSAP" expresion="Codigo" filtro="" _tag="_EESPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ESCALAIMP" expresion="CODIGO" filtro="" _tag="ESCALAI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ESTIMP" expresion="CCOD" filtro="" _tag="ESTIMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ESTINTERAC" expresion="CODIGO" filtro="" _tag="ESTINTE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ETIQECOM" expresion="CODIGO" filtro="" _tag="ETIQECO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ETIQECOM" expresion="Codigo" filtro="" _tag="_ETEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EXPLISPER" expresion="COD" filtro="" _tag="EXPLISP001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="EXPLISPER" expresion="COD" filtro="" _tag="_ELPPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="EXPOAGRUP" expresion="CLASEHOOK" filtro="" _tag="EXPOAGR001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="EXPOAGRUP" expresion="CODIGO" filtro="" _tag="EXPOAGR002" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="EXPOAGRUPITEM" expresion="ICOD" filtro="" _tag="EXPOAGR001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="Enbasea" expresion="cCod" filtro="" _tag="_NBAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EntAdic1" expresion="Cod" filtro="" _tag="_EA1PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EntAdic2" expresion="Cod" filtro="" _tag="_EA2PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EntAdic3" expresion="Cod" filtro="" _tag="_EA3PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ErrorCF" expresion="Cod" filtro="" _tag="_140PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EstImp" expresion="cCod" filtro="" _tag="_ESIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="EstInterac" expresion="Codigo" filtro="" _tag="_EDIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ExpoAgrup" expresion="Codigo" filtro="" _tag="_EXAPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ExpoAgrup" expresion="clasehook" filtro="" _tag="_EXACC" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="FACCOMPRA" expresion="CODIGO" filtro="FACTTIPO = 8" _tag="FACCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FACCOMPRA" expresion="FACTTIPO" filtro="FACTTIPO = 8" _tag="FACCOMP002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FACCOMPRA" expresion="NUMINT" filtro="FACTTIPO = 8" _tag="FACCOMP003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FACCOMPRADET" expresion="CODIGO" filtro="" _tag="FACCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FAMILIA" expresion="COD" filtro="" _tag="FAMILIA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FAMILIA" expresion="Cod" filtro="" _tag="_FMLPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FECCAN" expresion="CODIGO" filtro="" _tag="FECCAN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FECCANDET" expresion="CODIGO" filtro="" _tag="FECCAND001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FERIADO" expresion="ANIO" filtro="" _tag="FERIADO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FERIADO" expresion="Anio" filtro="" _tag="_FERPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FERIADO" expresion="str( Anio, 4, 0)" filtro="" _tag="_FERCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FERIADODET" expresion="ANIO" filtro="" _tag="FERIADO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FINALPROD" expresion="CODIGO" filtro="" _tag="FINALPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FINALPROD" expresion="CODIGO" filtro="" _tag="_FPRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FINALPROD" expresion="NUMERO" filtro="" _tag="FINALPR002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FINALPROD" expresion="str( NUMERO, 8, 0)" filtro="" _tag="_FPRCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FISERVTARJETAS" expresion="CODIGO" filtro="" _tag="FISERVT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FORMATOS" expresion="CODIGO" filtro="" _tag="FORMATO001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="FORMULA" expresion="CODIGO" filtro="" _tag="FORMULA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FVLIS" expresion="USU" filtro="" _tag="FVLIS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FVLIS" expresion="USU" filtro="" _tag="_FVXPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FacCompra" expresion="CODIGO" filtro="FactTipo = 8" _tag="_FDCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FacCompra" expresion="str( NumInt, 10, 0) + str( FACTTIPO, 2, 0)" filtro="FactTipo = 8" _tag="_FDCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="FecCan" expresion="Codigo" filtro="" _tag="_FECPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Formula" expresion="Codigo" filtro="" _tag="_FORPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESPCURV" expresion="GESPRODCUR" filtro="" _tag="GESPCUR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESPDESC" expresion="GESPRODDES" filtro="" _tag="GESPDES001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESPIND" expresion="GESPRODIND" filtro="" _tag="GESPIND001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESPINS" expresion="GESPRODINS" filtro="" _tag="GESPINS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESTIONPROD" expresion="CODIGO" filtro="" _tag="GESTION001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESTIONPROD" expresion="CODIGO" filtro="" _tag="_GOPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESTIONPROD" expresion="NUMERO" filtro="" _tag="GESTION002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESTIONPROD" expresion="str( Numero, 12, 0)" filtro="" _tag="_GOPCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESTORDPRO" expresion="CODGESTPRO" filtro="" _tag="GESTORD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESVEN" expresion="CODIGO" filtro="" _tag="GESVEN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GESVEN" expresion="CODIGO" filtro="" _tag="_GDVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GRUPO" expresion="COD" filtro="" _tag="GRUPO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GRUPOVALOR" expresion="CODIGO" filtro="" _tag="GRUPOVA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GRUPOVALOR" expresion="Codigo" filtro="" _tag="_GPVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GTIN" expresion="CODIGO" filtro="" _tag="GTIN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="GTIN" expresion="Codigo" filtro="" _tag="_GTIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Grupo" expresion="Cod" filtro="" _tag="_GRPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="HERPACK" expresion="NUMERO" filtro="" _tag="HERPACK001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="HERPACKDET" expresion="NUMERO" filtro="" _tag="HERPACK001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="HERRCONC" expresion="NUMERO" filtro="" _tag="HERRCON001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="HOST" expresion="HOSCOD" filtro="" _tag="HOST001" ubicacion="puesto" ordentag="1"/>
+	<row tabla="HOST" expresion="HOSCOD" filtro="" _tag="_BUZPK" ubicacion="puesto" ordentag="2"/>
+	<row tabla="HOST" expresion="HOSCOD" filtro="" _tag="HOST001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="HOST" expresion="HOSCOD" filtro="" _tag="_BUZPK" ubicacion="puesto" ordentag="99"/>
+	<row tabla="HerPack" expresion="Numero" filtro="" _tag="_PCKPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="HerrConc" expresion="Numero" filtro="" _tag="_HCBPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IBM4610KC4" expresion="CCOD" filtro="" _tag="IBM4610001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ICARDAUTORIZ" expresion="CODIGO" filtro="" _tag="ICARDAU001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ICARDTARJETAS" expresion="CODIGO" filtro="" _tag="ICARDTA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ICHEQUED" expresion="COD" filtro="" _tag="ICHEQUE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ICUPO" expresion="COD" filtro="" _tag="ICUPO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPCANC" expresion="CCOD" filtro="" _tag="IMPCANC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPCANCOMP" expresion="CODIGO" filtro="" _tag="IMPCANC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRART" expresion="NUMERO" filtro="" _tag="IMPDIRA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRART" expresion="NUMERO" filtro="" _tag="_IDAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCAJ" expresion="NUMERO" filtro="" _tag="IMPDIRC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCAJ" expresion="NUMERO" filtro="" _tag="_IDJPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCCA" expresion="NUMERO" filtro="" _tag="IMPDIRC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCCA" expresion="NUMERO" filtro="" _tag="_IDXPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCCC" expresion="NUMERO" filtro="" _tag="IMPDIRC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCCC" expresion="NUMERO" filtro="" _tag="_IDZPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCLI" expresion="NUMERO" filtro="" _tag="IMPDIRC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCLI" expresion="NUMERO" filtro="" _tag="_IDCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCON" expresion="NUMERO" filtro="" _tag="IMPDIRC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCON" expresion="NUMERO" filtro="" _tag="_IDOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCUE" expresion="NUMERO" filtro="" _tag="IMPDIRC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRCUE" expresion="NUMERO" filtro="" _tag="_IDBPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRDES" expresion="NUMERO" filtro="" _tag="IMPDIRD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRDES" expresion="NUMERO" filtro="" _tag="_IDDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRIMP" expresion="NUMERO" filtro="" _tag="IMPDIRI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRIMP" expresion="NUMERO" filtro="" _tag="_IDIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRLIQ" expresion="NUMERO" filtro="" _tag="IMPDIRL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRLIQ" expresion="NUMERO" filtro="" _tag="_IDQPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRMOT" expresion="NUMERO" filtro="" _tag="IMPDIRM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRMOT" expresion="NUMERO" filtro="" _tag="_IDMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIROPE" expresion="NUMERO" filtro="" _tag="IMPDIRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIROPE" expresion="NUMERO" filtro="" _tag="_IDTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRPRO" expresion="NUMERO" filtro="" _tag="IMPDIRP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRPRO" expresion="NUMERO" filtro="" _tag="_IDPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRVAL" expresion="NUMERO" filtro="" _tag="IMPDIRV001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPDIRVAL" expresion="NUMERO" filtro="" _tag="_IDVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPET" expresion="NUMERO" filtro="" _tag="IMPET001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPETDET" expresion="NUMERO" filtro="" _tag="IMPETDE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPFACC" expresion="CCOD" filtro="" _tag="IMPFACC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPFACCOMP" expresion="CODIGO" filtro="" _tag="IMPFACC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPLIQMEN" expresion="CODIGO" filtro="" _tag="IMPLIQM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPLIQMENCOM" expresion="CCOD" filtro="" _tag="IMPLIQM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPNCC" expresion="CCOD" filtro="" _tag="IMPNCC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPNCCOMP" expresion="CODIGO" filtro="" _tag="IMPNCCO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPNDC" expresion="CCOD" filtro="" _tag="IMPNDC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPNDCOMP" expresion="CODIGO" filtro="" _tag="IMPNDCO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPOAGRUP" expresion="CLASEHOOK" filtro="" _tag="IMPOAGR001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="IMPOAGRUP" expresion="CODIGO" filtro="" _tag="IMPOAGR002" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="IMPOAGRUPITEM" expresion="ICOD" filtro="" _tag="IMPOAGR001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="IMPODP" expresion="CODIGO" filtro="" _tag="IMPODP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPPEDC" expresion="CCOD" filtro="" _tag="IMPPEDC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPPEDCOMP" expresion="CODIGO" filtro="" _tag="IMPPEDC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPPREC" expresion="CCOD" filtro="" _tag="IMPPREC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPPRECOMP" expresion="CODIGO" filtro="" _tag="IMPPREC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPREMC" expresion="CCOD" filtro="" _tag="IMPREMC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPREMCOMP" expresion="CODIGO" filtro="" _tag="IMPREMC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPREQC" expresion="CCOD" filtro="" _tag="IMPREQC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPREQCOMP" expresion="CODIGO" filtro="" _tag="IMPREQC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPSOLC" expresion="CCOD" filtro="" _tag="IMPSOLC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPSOLCOMP" expresion="CODIGO" filtro="" _tag="IMPSOLC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPUESTO" expresion="CODIGO" filtro="" _tag="IMPUEST001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPUESTOSV" expresion="CODIGO" filtro="" _tag="IMPUEST001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPVENTAS" expresion="CCOD" filtro="" _tag="IMPVENT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPVERCC" expresion="NUMERO" filtro="" _tag="IMPVERC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IMPVERCC" expresion="NUMERO" filtro="" _tag="_IVCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INCONSAP" expresion="CODDET" filtro="" _tag="INCONSA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INCONSAP" expresion="CodDet" filtro="" _tag="_INSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INCOT" expresion="COD" filtro="" _tag="INCOT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INDICES" expresion="CODIGO" filtro="" _tag="INDICES001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INDICES" expresion="Codigo" filtro="" _tag="_INDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INDICESDET" expresion="CODIGO" filtro="" _tag="INDICES001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INFADICIONAL" expresion="CODIGO" filtro="" _tag="INFADIC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INFLIST" expresion="CODIGO" filtro="" _tag="INFLIST001" ubicacion="puesto" ordentag="99"/>
+	<row tabla="INFLIST" expresion="Codigo" filtro="" _tag="_IALPK" ubicacion="puesto" ordentag="99"/>
+	<row tabla="INFOVTASLPS" expresion="CODIGO" filtro="" _tag="INFOVTA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INFOVTASLPS" expresion="CODIGO" filtro="" _tag="_IVSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INITAL" expresion="CCOD" filtro="" _tag="INITAL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INITAL" expresion="cCod" filtro="" _tag="_NUMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INS" expresion="INSCOD" filtro="" _tag="INS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INS" expresion="INSCOD" filtro="" _tag="_INPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INSTSCRIPT" expresion="DET_INS" filtro="" _tag="INSTSCR001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="INTORDEN" expresion="CODIGO" filtro="" _tag="INTORDE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INV" expresion="INVCOD" filtro="" _tag="INV001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="INV" expresion="invcod" filtro="" _tag="_INVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ITEMHUER" expresion="CODIGO" filtro="" _tag="ITEMHUE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ITPAIS" expresion="CODIGO" filtro="" _tag="ITPAIS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IVACPCAB" expresion="CODIGO" filtro="" _tag="IVACPCA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IVACPDET" expresion="CODIGO" filtro="" _tag="IVACPDE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ImpEt" expresion="numero" filtro="" _tag="_IETPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ImpoAgrup" expresion="Codigo" filtro="" _tag="_IMAPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ImpoAgrup" expresion="clasehook" filtro="" _tag="_IMACC" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="Impuesto" expresion="codigo" filtro="" _tag="_IMSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="InfAdicional" expresion="Codigo" filtro="" _tag="_049PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="IntOrden" expresion="Codigo" filtro="" _tag="_INOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="JURISDIC" expresion="CODIGO" filtro="" _tag="JURISDI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Jurisdic" expresion="codigo" filtro="" _tag="_JURPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="KITDET" expresion="CODIGO" filtro="" _tag="KITDET001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="KITPARTDET" expresion="CODIGO" filtro="" _tag="KITPART001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LAPOSPLANES" expresion="CODIGO" filtro="" _tag="LAPOSPL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LAPOSTARJETAS" expresion="CODIGO" filtro="" _tag="LAPOSTA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LAPOSTERMINAL" expresion="CODIGO" filtro="" _tag="LAPOSTE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCALCULADA" expresion="LPC_LISTA" filtro="" _tag="LCALCUL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCALCULADA" expresion="LPC_LISTA + LPC_PROV" filtro="" _tag="_LPCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCALCULADA" expresion="LPC_PROV" filtro="" _tag="LCALCUL002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCALCULADA" expresion="NUMERO" filtro="" _tag="LCALCUL003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCALCULADA" expresion="NUMERO" filtro="" _tag="_LPCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCONSUMO" expresion="CODINT" filtro="" _tag="LCONSUM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCONSUMO" expresion="CodInt" filtro="" _tag="_LCNPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCONSUMO" expresion="NUMERO" filtro="" _tag="LCONSUM002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCONSUMO" expresion="str( NUMERO, 8, 0)" filtro="" _tag="_LCNCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCOSTOP" expresion="CODIGO" filtro="" _tag="LCOSTOP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LCOSTOP" expresion="Codigo" filtro="" _tag="_LCPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LINEA" expresion="COD" filtro="" _tag="LINEA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LINKQRETI" expresion="LQRCOD" filtro="" _tag="LINKQRE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LINKQRETI" expresion="LQrCod" filtro="" _tag="_LQRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQCONDIADET" expresion="CODIGO" filtro="" _tag="LIQCOND001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQCONMENLDET" expresion="CODIGO" filtro="" _tag="LIQCONM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQDIARIA" expresion="CODIGO" filtro="" _tag="LIQDIAR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQDIARIADET" expresion="CODIGO" filtro="" _tag="LIQDIAR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQMENSUAL" expresion="CODIGO" filtro="" _tag="LIQMENS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQMENSUAL" expresion="NUMINT" filtro="" _tag="LIQMENS002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQTADIC" expresion="CODIGO" filtro="" _tag="LIQTADI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQTALLER" expresion="CODIGO" filtro="" _tag="LIQTALL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQTALLER" expresion="Codigo" filtro="" _tag="_LTPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQTALLER" expresion="NUMERO" filtro="" _tag="LIQTALL002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQTALLER" expresion="str( Numero, 12, 0)" filtro="" _tag="_LTPCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQTDESC" expresion="CODIGO" filtro="" _tag="LIQTDES001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQTINS" expresion="CODIGO" filtro="" _tag="LIQTINS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LIQTPROD" expresion="CODIGO" filtro="" _tag="LIQTPRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LPRECIO" expresion="LPR_NUMERO" filtro="" _tag="LPRECIO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LPRECIO" expresion="LPR_NUMERO" filtro="" _tag="_LPRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="LSUCUR" expresion="LSCOD" filtro="" _tag="LSUCUR001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="LSUCUR" expresion="LSCOD" filtro="" _tag="_LSUPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="LTDSPERS" expresion="CCOD" filtro="" _tag="LTDSPER001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="LTDSPERS" expresion="cCod" filtro="" _tag="_LPZPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="Linea" expresion="Cod" filtro="" _tag="_LINPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MAIL" expresion="CODIGO" filtro="" _tag="MAIL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MAILARCH" expresion="ARCCOD" filtro="" _tag="MAILARC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MAQDETCONS" expresion="CODCONS" filtro="" _tag="MAQDETC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MAQUINARIA" expresion="CODIGO" filtro="" _tag="MAQUINA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MAQUINARIA" expresion="Codigo" filtro="" _tag="_MQPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MARCAS" expresion="CODIGO" filtro="" _tag="MARCAS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MARCAS" expresion="Codigo" filtro="" _tag="_MARPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MAT" expresion="MATCOD" filtro="" _tag="MAT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MAT" expresion="MATCOD" filtro="" _tag="_003PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MCAEPL" expresion="CODIGO" filtro="" _tag="MCAEPL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MCAEPL" expresion="CODIGO" filtro="" _tag="_MFAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MEM" expresion="CODIGO" filtro="" _tag="MEM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MEM" expresion="TIPO" filtro="" _tag="MEM002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MEM" expresion="USUARIO" filtro="" _tag="MEM003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MINREPO" expresion="CODIGO" filtro="" _tag="MINREPO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MINREPO" expresion="CODIGO" filtro="" _tag="_MINPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MINREPODET" expresion="CODIGO" filtro="" _tag="MINREPO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODCOSTOP" expresion="CODIGO" filtro="" _tag="MODCOST001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODCOSTOP" expresion="Codigo" filtro="" _tag="_MCPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODCOSTOP" expresion="NUMERO" filtro="" _tag="MODCOST002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODCOSTOP" expresion="str( Numero, 12, 0)" filtro="" _tag="_MCPCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODCOSTPROD" expresion="CODIGO" filtro="" _tag="MODCOST001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODELOPROD" expresion="CODIGO" filtro="" _tag="MODELOP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODELOPROD" expresion="Codigo" filtro="" _tag="_MDPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODINS" expresion="CODMODINS" filtro="" _tag="MODINS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODIPRECDET" expresion="CODIGO" filtro="" _tag="MODIPRE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODMAQ" expresion="CODMODMAQ" filtro="" _tag="MODMAQ001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODPRE" expresion="CODIGO" filtro="" _tag="MODPRE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODPRE" expresion="CODIGO" filtro="" _tag="_PREPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODPRE" expresion="NUMERO" filtro="" _tag="MODPRE002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODPRE" expresion="str( Numero, 8, 0)" filtro="" _tag="_PRECC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODPROC" expresion="CODMODPROC" filtro="" _tag="MODPROC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MODSAL" expresion="CODMODSAL" filtro="" _tag="MODSAL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MONEDA" expresion="CODIGO" filtro="" _tag="MONEDA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MONEDA" expresion="Codigo" filtro="" _tag="_MONPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOTADICA" expresion="CODIGO" filtro="" _tag="MOTADIC001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="MOTADICA" expresion="Codigo" filtro="" _tag="_MDAPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="MOTIVO" expresion="MOTCOD" filtro="" _tag="MOTIVO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOTIVO" expresion="MOTCOD" filtro="" _tag="_MOTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOTIVODESCARTE" expresion="CODIGO" filtro="" _tag="MOTIVOD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOTIVODESCARTE" expresion="Codigo" filtro="" _tag="_MDEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOTIVODESCDEV" expresion="CODIGO" filtro="" _tag="MOTIVOD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOTIVODESCDEV" expresion="Codigo" filtro="" _tag="_MDDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="CODIGO" filtro="" _tag="MOVBANC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="CONCEPTO" filtro="" _tag="MOVBANC002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="CTABANC" filtro="" _tag="MOVBANC003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="Codigo" filtro="" _tag="_MBCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="CtaBanc + str( Orden, 5, 0) + dtos( Fecha ) + Hora + Concepto + Refe + str( Numero, 10, 0) + str( Importe, 15, 2)" filtro="" _tag="_MBCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="FECHA" filtro="" _tag="MOVBANC004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="HORA" filtro="" _tag="MOVBANC005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="IMPORTE" filtro="" _tag="MOVBANC006" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="NUMERO" filtro="" _tag="MOVBANC007" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="ORDEN" filtro="" _tag="MOVBANC008" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVBANC" expresion="REFE" filtro="" _tag="MOVBANC009" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVCAJA" expresion="IDMOVI" filtro="" _tag="MOVCAJA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVCAJA" expresion="IdMovi" filtro="" _tag="_MCAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVINTLINCE" expresion="CODIGO" filtro="" _tag="MOVINTL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MOVINTLINCE" expresion="CODIGO" filtro="" _tag="_MITPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCK" expresion="CODIGO" filtro="" _tag="MSTOCK001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCK" expresion="CODIGO" filtro="" _tag="_MDSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCK" expresion="NUMERO" filtro="" _tag="MSTOCK002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCK" expresion="str( NUMERO, 8, 0)" filtro="" _tag="_MDSCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKAINV" expresion="CODIGO" filtro="" _tag="MSTOCKA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKAINV" expresion="CODIGO" filtro="" _tag="_MSIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKAINV" expresion="NUMERO" filtro="" _tag="MSTOCKA002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKAINV" expresion="str( NUMERO, 8, 0)" filtro="" _tag="_MSICC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKAPROD" expresion="CODIGO" filtro="" _tag="MSTOCKA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKAPROD" expresion="CODIGO" filtro="" _tag="_MSPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKAPROD" expresion="NUMERO" filtro="" _tag="MSTOCKA002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKAPROD" expresion="str( NUMERO, 8, 0)" filtro="" _tag="_MSPCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKDESDEPROD" expresion="CODIGO" filtro="" _tag="MSTOCKD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKDESDEPROD" expresion="CODIGO" filtro="" _tag="_MSDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKDESDEPROD" expresion="NUMERO" filtro="" _tag="MSTOCKD002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MSTOCKDESDEPROD" expresion="str( NUMERO, 8, 0)" filtro="" _tag="_MSDCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MTRANS" expresion="CODIGO" filtro="" _tag="MTRANS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MTRANS" expresion="CODIGO" filtro="" _tag="_MTRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MTRANS" expresion="NUMERO" filtro="" _tag="MTRANS002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="MTRANS" expresion="str( NUMERO, 8, 0)" filtro="" _tag="_MTRCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NCCOMPRA" expresion="CODIGO" filtro="FACTTIPO = 10" _tag="NCCOMPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NCCOMPRA" expresion="FACTTIPO" filtro="FACTTIPO = 10" _tag="NCCOMPR002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NCCOMPRA" expresion="NUMINT" filtro="FACTTIPO = 10" _tag="NCCOMPR003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NCCOMPRADET" expresion="CODIGO" filtro="" _tag="NCCOMPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NCPENDPB" expresion="NUMERO" filtro="" _tag="NCPENDP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NCPendPB" expresion="Numero" filtro="" _tag="_PCBPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NDCOMPRA" expresion="CODIGO" filtro="FACTTIPO = 9" _tag="NDCOMPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NDCOMPRA" expresion="FACTTIPO" filtro="FACTTIPO = 9" _tag="NDCOMPR002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NDCOMPRA" expresion="NUMINT" filtro="FACTTIPO = 9" _tag="NDCOMPR003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NDCOMPRADET" expresion="CODIGO" filtro="" _tag="NDCOMPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NMCARBA" expresion="NMCCOD" filtro="" _tag="NMCARBA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NMCARBA" expresion="NMCCOD" filtro="" _tag="_NARPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NOMFANT" expresion="NFCOD" filtro="" _tag="NOMFANT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NUMERACIONES" expresion="TALONARIO" filtro="" _tag="NUMERAC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NUMERACIONES" expresion="Talonario" filtro="" _tag="_TALPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NcCompra" expresion="CODIGO" filtro="FactTipo = 10" _tag="_NCCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NcCompra" expresion="str( NumInt, 10, 0) + str( FACTTIPO, 2, 0)" filtro="FactTipo = 10" _tag="_NCCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NdCompra" expresion="CODIGO" filtro="FactTipo = 9" _tag="_NDCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NdCompra" expresion="str( NumInt, 10, 0) + str( FACTTIPO, 2, 0)" filtro="FactTipo = 9" _tag="_NDCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="NomFant" expresion="NFCOD" filtro="" _tag="_NFAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Numeraciones" expresion="Talonario" filtro="" _tag="_CAIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OBJETIVOSVENTA" expresion="CODIGO" filtro="" _tag="OBJETIV001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="OBJETIVOSVENTA" expresion="codigo" filtro="" _tag="_OBJPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="OPECOM" expresion="CODIGO" filtro="" _tag="OPECOM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPECOM" expresion="CODIGO" filtro="" _tag="_OECPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPECOM" expresion="ECOMMERCE" filtro="" _tag="OPECOM002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPECOM" expresion="NUMERO" filtro="" _tag="OPECOM003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPECOM" expresion="NUMERO + ECOMMERCE" filtro="" _tag="_OECCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPECOMDET" expresion="CODIGO" filtro="" _tag="OPECOMD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPECOMVAL" expresion="JJNUM" filtro="" _tag="OPECOMV001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPEECOENPROC" expresion="CODIGO" filtro="" _tag="OPEECOE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPERAFIP" expresion="TOCOD" filtro="" _tag="OPERAFI001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="OPERAFIP" expresion="TOCOD" filtro="" _tag="_TOAPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="OPETAR" expresion="CODIGO" filtro="" _tag="OPETAR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPETAR" expresion="Codigo" filtro="" _tag="_056PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPETARCON" expresion="CODIGO" filtro="" _tag="OPETARC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OPETARDET" expresion="CDTCODIGO" filtro="" _tag="OPETARD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDAT" expresion="CODIGO" filtro="" _tag="ORDAT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDAT" expresion="CODIGO" filtro="" _tag="_010PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDENPROD" expresion="CODIGO" filtro="" _tag="ORDENPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDENPROD" expresion="Codigo" filtro="" _tag="_OPPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDENPROD" expresion="NUMERO" filtro="" _tag="ORDENPR002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDENPROD" expresion="str( Numero, 12, 0)" filtro="" _tag="_OPPCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDENSERV" expresion="CODIGO" filtro="" _tag="ORDENSE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDPAGO" expresion="CODIGO" filtro="FACTTIPO = 31" _tag="ORDPAGO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDPAGO" expresion="FACTTIPO" filtro="FACTTIPO = 31" _tag="ORDPAGO002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDPAGO" expresion="FLETRA" filtro="FACTTIPO = 31" _tag="ORDPAGO003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDPAGO" expresion="FNUMCOMP" filtro="FACTTIPO = 31" _tag="ORDPAGO004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDPAGO" expresion="FPTOVEN" filtro="FACTTIPO = 31" _tag="ORDPAGO005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDPAGODET" expresion="CODIGO" filtro="" _tag="ORDPAGO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDPCURV" expresion="CODORDEN" filtro="" _tag="ORDPCUR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDPINS" expresion="CODORDEN" filtro="" _tag="ORDPINS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDPPROC" expresion="CODORDEN" filtro="" _tag="ORDPPRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ORDPSAL" expresion="CODORDEN" filtro="" _tag="ORDPSAL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OpeEcoEnProc" expresion="Codigo" filtro="" _tag="_CY3PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OrdPago" expresion="CODIGO" filtro="FactTipo = 31" _tag="_ODPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OrdPago" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 10, 0)" filtro="FactTipo = 31" _tag="_ODPCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="OrdenServ" expresion="Codigo" filtro="" _tag="_ODSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PAGO" expresion="CODIGO" filtro="FACTTIPO = 37" _tag="PAGO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PAGO" expresion="FACTTIPO" filtro="FACTTIPO = 37" _tag="PAGO002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PAGO" expresion="FLETRA" filtro="FACTTIPO = 37" _tag="PAGO003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PAGO" expresion="FNUMCOMP" filtro="FACTTIPO = 37" _tag="PAGO004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PAGO" expresion="FPTOVEN" filtro="FACTTIPO = 37" _tag="PAGO005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PAGODET" expresion="CODIGO" filtro="" _tag="PAGODET001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PAGOIMP" expresion="CODIGO" filtro="" _tag="PAGOIMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PAGOVAL" expresion="JJNUM" filtro="" _tag="PAGOVAL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PAISES" expresion="PCOD" filtro="" _tag="PAISES001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PAISES" expresion="pcod" filtro="" _tag="_PAIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PBPENDET" expresion="CODIGO" filtro="" _tag="PBPENDE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PCOLOR" expresion="CODIGO" filtro="" _tag="PCOLOR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PCOLOR" expresion="Codigo" filtro="" _tag="_PTCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PEDCOMPRA" expresion="CODIGO" filtro="FACTTIPO = 38" _tag="PEDCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PEDCOMPRA" expresion="FACTTIPO" filtro="FACTTIPO = 38" _tag="PEDCOMP002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PEDCOMPRA" expresion="NUMINT" filtro="FACTTIPO = 38" _tag="PEDCOMP003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PEDCOMPRADET" expresion="CODIGO" filtro="" _tag="PEDCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PERCLIDET" expresion="COD" filtro="" _tag="PERCLID001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PERCLIDET" expresion="CODIGO" filtro="" _tag="PERCLID002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PERCLIDET" expresion="JURISDICCI" filtro="" _tag="PERCLID003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PERENT" expresion="CODIGO" filtro="" _tag="PERENT001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="PEREXCLUIDO" expresion="COD" filtro="" _tag="PEREXCL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PERFILESOPERACIONES" expresion="ALLTRIM(UPPER(IDOPE))" filtro="!DELETED()" _tag="IDOPE" ubicacion="seguridad" ordentag="0"/>
+	<row tabla="PERFILESOPERACIONES" expresion="ALLTRIM(UPPER(IDPER))" filtro="!DELETED()" _tag="IDPER" ubicacion="seguridad" ordentag="0"/>
+	<row tabla="PICKING" expresion="CODIGO" filtro="" _tag="PICKING001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PICKING" expresion="NUMERO" filtro="" _tag="PICKING002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PJESTOCK" expresion="CODIGO" filtro="" _tag="PJESTOC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PLANCUENTA" expresion="CTACODIGO" filtro="" _tag="PLANCUE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PLATAF" expresion="NUMERO" filtro="" _tag="PLATAF001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="POINTDISPMOVIL" expresion="CODIGO" filtro="" _tag="POINTDI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="POINTSERIAL" expresion="CODIGO" filtro="" _tag="POINTSE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="POOLDECLASE" expresion="CODIGO" filtro="" _tag="POOLDEC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="POOLDECLASE" expresion="Codigo" filtro="" _tag="_POOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="POS" expresion="CODIGO" filtro="" _tag="POS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="POS" expresion="Codigo" filtro="" _tag="_POSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="POSDETALLETARJ" expresion="CODIGO" filtro="" _tag="POSDETA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="POSMONEDAS" expresion="CODIGO" filtro="" _tag="POSMONE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="POSNETPLANES" expresion="CODIGO" filtro="" _tag="POSNETP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="POSNETTARJETAS" expresion="CODIGO" filtro="" _tag="POSNETT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECARGAETI" expresion="CODIGO" filtro="" _tag="PRECARG001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECARGAETI" expresion="Codigo" filtro="" _tag="_PETPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECIOAR" expresion="PDIRECTO" filtro="" _tag="PDIRECTO1" ubicacion="" ordentag="0"/>
+	<row tabla="PRECIOAR" expresion="UPPER( ARTICULO )" filtro="" _tag="ARTUPPER" ubicacion="" ordentag="0"/>
+	<row tabla="PRECIOAR" expresion="UPPER( CCOLOR )" filtro="" _tag="COLUPPER" ubicacion="" ordentag="0"/>
+	<row tabla="PRECIOAR" expresion="UPPER( TALLE )" filtro="" _tag="TALLEUPPER" ubicacion="" ordentag="0"/>
+	<row tabla="PRECIOAR" expresion="ARTICULO" filtro="" _tag="PRECIOA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECIOAR" expresion="CCOLOR" filtro="" _tag="PRECIOA002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECIOAR" expresion="CODIGO" filtro="" _tag="PRECIOA003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECIOAR" expresion="CODIGO" filtro="" _tag="_018PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECIOAR" expresion="LISTAPRE" filtro="" _tag="PRECIOA004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECIOAR" expresion="TALLE" filtro="" _tag="PRECIOA006" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECIOAR" expresion="TIMESTAMPA" filtro="" _tag="PRECIOA007" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECIOAR" expresion="str( TimestampA, 14, 0) + LISTAPRE + ARTICULO + cColor + Talle" filtro="" _tag="_018CC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECOMPRA" expresion="CODIGO" filtro="FACTTIPO = 30" _tag="PRECOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECOMPRA" expresion="FACTTIPO" filtro="FACTTIPO = 30" _tag="PRECOMP002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECOMPRA" expresion="NUMINT" filtro="FACTTIPO = 30" _tag="PRECOMP003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PRECOMPRADET" expresion="CODIGO" filtro="" _tag="PRECOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROARTDET" expresion="CODIGO" filtro="" _tag="PROARTD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROCPRMAQ" expresion="CODPROCMAQ" filtro="" _tag="PROCPRM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROCPRODUC" expresion="CODIGO" filtro="" _tag="PROCPRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROCPRODUC" expresion="Codigo" filtro="" _tag="_PRPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROMDET" expresion="CODIGO" filtro="" _tag="PROMDET001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROMOS" expresion="CODIGO" filtro="" _tag="PROMOS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROPLIST" expresion="CODIGO" filtro="" _tag="PROPLIS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROPLIST" expresion="Codigo" filtro="" _tag="_PLIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROV" expresion="CLCOD" filtro="" _tag="PROV001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROV" expresion="CLCOD" filtro="" _tag="_PRVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROVINCI" expresion="PRV_COD" filtro="" _tag="PROVINC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PROVINCI" expresion="PRV_COD" filtro="" _tag="_PROPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PTOVTA" expresion="BOCAEXP" filtro="" _tag="PTOVTA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PTOVTA" expresion="COMP" filtro="" _tag="PTOVTA002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PTOVTA" expresion="COMP + LETRA + str( PTO, 4, 0) + str( BOCAEXP, 4, 0)" filtro="" _tag="_PVTCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PTOVTA" expresion="LETRA" filtro="" _tag="PTOVTA003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PTOVTA" expresion="NUM" filtro="" _tag="PTOVTA004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PTOVTA" expresion="NUM" filtro="" _tag="_PVTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PTOVTA" expresion="PTO" filtro="" _tag="PTOVTA005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Pago" expresion="CODIGO" filtro="FactTipo = 37" _tag="_PAGPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Pago" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 10, 0)" filtro="FactTipo = 37" _tag="_PAGCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PedCompra" expresion="CODIGO" filtro="FactTipo = 38" _tag="_PCOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PedCompra" expresion="str( FACTTIPO, 2, 0) + str( NumInt, 10, 0)" filtro="FactTipo = 38" _tag="_PCOCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PerCliDet" expresion="COD + jurisdicci" filtro="" _tag="_IIBCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PerCliDet" expresion="CODIGO" filtro="" _tag="_IIBPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PerEnt" expresion="Codigo" filtro="" _tag="_PENPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="Picking" expresion="Codigo" filtro="" _tag="_PIKPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Picking" expresion="str( Numero, 8, 0)" filtro="" _tag="_PIKCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PjeStock" expresion="CODIGO" filtro="" _tag="_PSTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PjeStock" expresion="str( CODIGO, 8, 0)" filtro="" _tag="_PSTCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PreCompra" expresion="CODIGO" filtro="FactTipo = 30" _tag="_PDCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="PreCompra" expresion="str( FACTTIPO, 2, 0) + str( NumInt, 10, 0)" filtro="FactTipo = 30" _tag="_PDCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Promos" expresion="Codigo" filtro="" _tag="_PR0PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RAZONS" expresion="RZCOD" filtro="" _tag="RAZONS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RAZONS" expresion="RZCOD" filtro="" _tag="_RAZPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RAZSOC" expresion="RZCOD" filtro="" _tag="RAZSOC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RECIBO" expresion="CODIGO" filtro="FACTTIPO = 13" _tag="RECIBO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RECIBO" expresion="FACTTIPO" filtro="FACTTIPO = 13" _tag="RECIBO002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RECIBO" expresion="FLETRA" filtro="FACTTIPO = 13" _tag="RECIBO003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RECIBO" expresion="FNUMCOMP" filtro="FACTTIPO = 13" _tag="RECIBO004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RECIBO" expresion="FPTOVEN" filtro="FACTTIPO = 13" _tag="RECIBO005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RECIBODET" expresion="CODIGO" filtro="" _tag="RECIBOD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RECIRETE" expresion="CODIGO" filtro="" _tag="RECIRET001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REDO" expresion="CODIGO" filtro="" _tag="REDO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REDODETPORCENT" expresion="CODIGO" filtro="" _tag="REDODET001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REDODETPORENT" expresion="CODIGO" filtro="" _tag="REDODET001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REDODETPORTABLA" expresion="CODIGO" filtro="" _tag="REDODET001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REDOPRUEBA" expresion="CODIGO" filtro="" _tag="REDOPRU001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REGACTISYS" expresion="BDALTAFW" filtro="" _tag="REGACTI001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="REGACTISYS" expresion="CCODIGO" filtro="" _tag="REGACTI002" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="REGACTISYS" expresion="CNUMERO" filtro="" _tag="REGACTI003" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="REGACTISYS" expresion="CPTOVENTA" filtro="" _tag="REGACTI004" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="REGACTIV" expresion="CCODIGO" filtro="" _tag="REGACTI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REGACTIVDET" expresion="CCODIGO" filtro="" _tag="REGACTI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REGBAJA" expresion="CODIGO" filtro="" _tag="REGBAJA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REGBAJA" expresion="Codigo" filtro="" _tag="_RBLPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REGCONSIGNACION" expresion="CODIGO" filtro="" _tag="REGCONS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REGCTA" expresion="CODIGO" filtro="" _tag="REGCTA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REGIMP" expresion="CODIGO" filtro="" _tag="REGIMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REGLATRANS" expresion="CCOD" filtro="" _tag="REGLATR001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="REGSALUD" expresion="CCODIGO" filtro="" _tag="REGSALU001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="REMCOMPRA" expresion="CODIGO" filtro="FACTTIPO = 40" _tag="REMCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REMCOMPRA" expresion="FACTTIPO" filtro="FACTTIPO = 40" _tag="REMCOMP002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REMCOMPRA" expresion="NUMINT" filtro="FACTTIPO = 40" _tag="REMCOMP003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REMCOMPRADET" expresion="CODIGO" filtro="" _tag="REMCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REMELEC" expresion="NUMERO" filtro="" _tag="REMELEC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RENUASIENTO" expresion="CODIGO" filtro="" _tag="RENUASI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REPAUDIZ" expresion="CODINT" filtro="" _tag="REPAUDI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REPAUDIZ" expresion="CodInt" filtro="" _tag="_ACZPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REPAUDIZ" expresion="NUMERO" filtro="" _tag="REPAUDI002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REPAUDIZ" expresion="str( Numero, 8, 0)" filtro="" _tag="_ACZCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REPOELEC" expresion="CODINT" filtro="" _tag="REPOELE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REPOELEC" expresion="CodInt" filtro="" _tag="_RPEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REPOELEC" expresion="NUMERO" filtro="" _tag="REPOELE002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REPOELEC" expresion="str( Numero, 8, 0)" filtro="" _tag="_RPECC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REQCOMPRA" expresion="CODIGO" filtro="FACTTIPO = 42" _tag="REQCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REQCOMPRA" expresion="CODIGO" filtro="FactTipo = 42" _tag="_REQPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REQCOMPRA" expresion="FACTTIPO" filtro="FACTTIPO = 42" _tag="REQCOMP002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REQCOMPRA" expresion="FLETRA" filtro="FACTTIPO = 42" _tag="REQCOMP003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REQCOMPRA" expresion="FNUMCOMP" filtro="FACTTIPO = 42" _tag="REQCOMP004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REQCOMPRA" expresion="FPTOVEN" filtro="FACTTIPO = 42" _tag="REQCOMP005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REQCOMPRA" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0)" filtro="FactTipo = 42" _tag="_REQCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="REQCOMPRADET" expresion="CODIGO" filtro="" _tag="REQCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RETEFEC" expresion="CCOD" filtro="" _tag="RETEFEC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RETPRODET" expresion="COD" filtro="" _tag="RETPROD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RUBROPROD" expresion="CODCONS" filtro="" _tag="RUBROPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RUBROPROD" expresion="CodCons" filtro="" _tag="_RBPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RUTALAN" expresion="CODIGO" filtro="" _tag="RUTALAN001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="RUTALAN" expresion="CVERSION" filtro="" _tag="RUTALAN002" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="Recibo" expresion="CODIGO" filtro="FactTipo = 13" _tag="_RECPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Recibo" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0)" filtro="FactTipo = 13" _tag="_RECCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RegActiSys" expresion="cCodigo" filtro="" _tag="_RAMPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="RegActiSys" expresion="str( cPtoventa, 4, 0) + str( cNumero, 8, 0) + BDAltaFW" filtro="" _tag="_RAMCC" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="RegActiv" expresion="cCodigo" filtro="" _tag="_ACTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RegActivDet" expresion="cCodigo" filtro="" _tag="_ACDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RegConsignacion" expresion="Codigo" filtro="" _tag="_RLCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RegCta" expresion="Codigo" filtro="" _tag="_RCTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RegImp" expresion="Codigo" filtro="" _tag="_REGPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RegSalud" expresion="cCodigo" filtro="" _tag="_SQLPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="RemCompra" expresion="CODIGO" filtro="FactTipo = 40" _tag="_RDCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RemCompra" expresion="str( FACTTIPO, 2, 0) + str( NumInt, 10, 0)" filtro="FactTipo = 40" _tag="_RDCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="RetEfec" expresion="cCod" filtro="" _tag="_RDEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SALTODECAMPO" expresion="ATRIBUTO" filtro="" _tag="SALTODE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SALTODECAMPO" expresion="CODIGO" filtro="" _tag="SALTODE002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SALTODECAMPO" expresion="DETALLE" filtro="" _tag="SALTODE003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SALTODECAMPO" expresion="ENTIDAD" filtro="" _tag="SALTODE004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SCRIPT" expresion="CODIGO" filtro="" _tag="SCRIPT001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SCRIPT" expresion="CODIGO" filtro="" _tag="_SCRPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SECOD" expresion="SCOD" filtro="" _tag="SECOD001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SECOD" expresion="SCOD" filtro="" _tag="_SEGPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SECRETREST" expresion="CODIGO" filtro="" _tag="SECRETR001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SECRETREST" expresion="CODIGO" filtro="" _tag="_CPTPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SECRETREST" expresion="Codigo" filtro="" _tag="_PKRPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SELBASES" expresion="CCOD" filtro="" _tag="SELBASE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELCHEINS" expresion="CODIGO" filtro="" _tag="SELCHEI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELCHEINS" expresion="Codigo" filtro="" _tag="_SCHPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELCHEQINSDET" expresion="CODIGO" filtro="" _tag="SELCHEQ001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELCHEQTR" expresion="CODIGO" filtro="" _tag="SELCHEQ001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELCHEQTR" expresion="Codigo" filtro="" _tag="_SCTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELCOMPINS" expresion="CODIGO" filtro="" _tag="SELCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELCOMPINS" expresion="Codigo" filtro="" _tag="_SCIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELCOMPINSDET" expresion="CODIGO" filtro="" _tag="SELCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELDISIMP" expresion="CCOD" filtro="" _tag="SELDISI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELDISIMPO" expresion="CCOD" filtro="" _tag="SELDISI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELECOPECOM" expresion="CODIGO" filtro="" _tag="SELECOP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELECOPECOM" expresion="Codigo" filtro="" _tag="_SOPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELECOS" expresion="CODIGO" filtro="" _tag="SELECOS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELECOSDET" expresion="CODIGO" filtro="" _tag="SELECOS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELECSENIASDET" expresion="CODIGO" filtro="" _tag="SELECSE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELECSENIASPEN" expresion="CODIGO" filtro="" _tag="SELECSE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELECSENIASPEN" expresion="Codigo" filtro="" _tag="_SEPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SELENT" expresion="CCOD" filtro="" _tag="SELENT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SENIA" expresion="CODIGO" filtro="" _tag="SENIA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SENIA" expresion="FACTTIPO" filtro="" _tag="SENIA002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SENIA" expresion="FLETRA" filtro="" _tag="SENIA003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SENIA" expresion="FNUMCOMP" filtro="" _tag="SENIA004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SENIA" expresion="FPTOVEN" filtro="" _tag="SENIA005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SENIADET" expresion="CODIGO" filtro="" _tag="SENIADE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SENIAVDET" expresion="CODIGO" filtro="" _tag="SENIAVD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SERVREST" expresion="CODIGO" filtro="" _tag="SERVRES001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SERVREST" expresion="Codigo" filtro="" _tag="_RSTPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SERVRESTCORS" expresion="CODIGO" filtro="" _tag="SERVRES001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SIPRIBDATADIC" expresion="CODIGO" filtro="" _tag="SIPRIBD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SIPRIBdatadic" expresion="Codigo" filtro="" _tag="_DASPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SITFISCAL" expresion="CODIGO" filtro="" _tag="SITFISC001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SMARTLPLANES" expresion="CODIGO" filtro="" _tag="SMARTLP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SMARTLTARJETAS" expresion="CODIGO" filtro="" _tag="SMARTLT001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SOLCOMPRA" expresion="CODIGO" filtro="FACTTIPO = 39" _tag="SOLCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SOLCOMPRA" expresion="FACTTIPO" filtro="FACTTIPO = 39" _tag="SOLCOMP002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SOLCOMPRA" expresion="FLETRA" filtro="FACTTIPO = 39" _tag="SOLCOMP003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SOLCOMPRA" expresion="FNUMCOMP" filtro="FACTTIPO = 39" _tag="SOLCOMP004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SOLCOMPRA" expresion="FPTOVEN" filtro="FACTTIPO = 39" _tag="SOLCOMP005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SOLCOMPRADET" expresion="CODIGO" filtro="" _tag="SOLCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="STOCKINV" expresion="COART" filtro="" _tag="STOCKIN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="STOCKINV" expresion="COART + COCOL + Talle + NroPartida + Invent" filtro="" _tag="_013CC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="STOCKINV" expresion="COCOD" filtro="" _tag="STOCKIN002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="STOCKINV" expresion="COCOD" filtro="" _tag="_013PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="STOCKINV" expresion="COCOL" filtro="" _tag="STOCKIN003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="STOCKINV" expresion="INVENT" filtro="" _tag="STOCKIN004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="STOCKINV" expresion="NROPARTIDA" filtro="" _tag="STOCKIN005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="STOCKINV" expresion="TALLE" filtro="" _tag="STOCKIN006" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SUC" expresion="CODIGO" filtro="" _tag="SUC001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SUCBAN" expresion="SBCOD" filtro="" _tag="SUCBAN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SaltoDeCampo" expresion="Codigo" filtro="" _tag="_SDCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SaltoDeCampo" expresion="Entidad + Atributo + Detalle" filtro="" _tag="_SDCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SelBases" expresion="cCod" filtro="" _tag="_SBAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SelDisImp" expresion="cCod" filtro="" _tag="_SDIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SelDisImpo" expresion="cCod" filtro="" _tag="_SDOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SelEnt" expresion="cCod" filtro="" _tag="_NCZPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SelEnt" expresion="cCod" filtro="" _tag="_SEIPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SelecOS" expresion="Codigo" filtro="" _tag="_SOSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SitFiscal" expresion="Codigo" filtro="" _tag="_STFPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="SolCompra" expresion="CODIGO" filtro="FactTipo = 39" _tag="_SOCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SolCompra" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0)" filtro="FactTipo = 39" _tag="_SOCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="SucBan" expresion="SbCod" filtro="" _tag="_131PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TALLE" expresion="CODIGO" filtro="" _tag="TALLE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TALLER" expresion="CODIGO" filtro="" _tag="TALLER001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TALLER" expresion="Codigo" filtro="" _tag="_TLLPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TALLERPROC" expresion="CODPROC" filtro="" _tag="TALLERP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TAREAEXP" expresion="CCOD" filtro="" _tag="TAREAEX001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TAREAPROG" expresion="CODIGO" filtro="" _tag="TAREAPR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TARJEACREDET" expresion="COD" filtro="" _tag="TARJEAC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TARJEDET" expresion="COD" filtro="" _tag="TARJEDE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TAreaExp" expresion="cCod" filtro="" _tag="_TAEPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TEMPORADA" expresion="TCOD" filtro="" _tag="TEMPORA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TICKETCAMBIO" expresion="CODIGO" filtro="" _tag="TICKETC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TICKETCAMBIO" expresion="Codigo" filtro="" _tag="_TDCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TICKETCAMBIO" expresion="TCANTART" filtro="" _tag="TICKETC002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TICKETCAMBIO" expresion="TIPOCOMP" filtro="" _tag="TICKETC003" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TICKETCAMBIO" expresion="TLETRA" filtro="" _tag="TICKETC004" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TICKETCAMBIO" expresion="TNROART" filtro="" _tag="TICKETC005" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TICKETCAMBIO" expresion="TNUMERO" filtro="" _tag="TICKETC006" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TICKETCAMBIO" expresion="TPVENTA" filtro="" _tag="TICKETC007" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TICKETCAMBIO" expresion="str( TipoComp, 2, 0) + tLetra + str( tPVenta, 4, 0) + str( tNumero, 8, 0) + tNroArt + tCantArt" filtro="" _tag="_TDCCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TICKETCAMBIODET" expresion="CODIGO" filtro="" _tag="TICKETC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIDIFINV" expresion="CODIGO" filtro="" _tag="TIDIFIN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIDIFINVDET" expresion="CODIGO" filtro="" _tag="TIDIFIN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIDIFINVDET" expresion="NUMERO" filtro="" _tag="TIDIFIN002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIDifInv" expresion="CODIGO" filtro="" _tag="_TINPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIDifInvDet" expresion="CODIGO" filtro="" _tag="_TIDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIDifInvDet" expresion="str( Numero, 9, 0)" filtro="" _tag="_TIDCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIINVCONDET" expresion="CODIGO" filtro="" _tag="TIINVCO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIINVCONT" expresion="CODIGO" filtro="" _tag="TIINVCO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIINVFIS" expresion="CODIGO" filtro="" _tag="TIINVFI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIINVFISDET" expresion="CODIGO" filtro="" _tag="TIINVFI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIINVFISDETTMP" expresion="CODIGO" filtro="" _tag="TIINVFI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIITEMDIFINV" expresion="CODIGO" filtro="" _tag="TIITEMD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIInvConDet" expresion="CODIGO" filtro="" _tag="_ITDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIInvCont" expresion="CODIGO" filtro="" _tag="_TITPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIInvFis" expresion="CODIGO" filtro="" _tag="_TIFPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIInvFisDet" expresion="CODIGO" filtro="" _tag="_FITPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIInvFisDettmp" expresion="CODIGO" filtro="" _tag="_FTTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPARCEXP" expresion="CCOD" filtro="" _tag="TIPARCE001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TIPARCIMP" expresion="CCOD" filtro="" _tag="TIPARCI001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TIPATREXP" expresion="CCOD" filtro="" _tag="TIPATRE001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TIPOAREA" expresion="CCOD" filtro="" _tag="TIPOARE001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOART" expresion="COD" filtro="" _tag="TIPOART001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOART" expresion="Cod" filtro="" _tag="_206PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOATRIBUTO" expresion="CCOD" filtro="" _tag="TIPOATR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOCLI" expresion="TCCOD" filtro="" _tag="TIPOCLI001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOCOMPCOM" expresion="CODIGO" filtro="" _tag="TIPOCOM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPODIR" expresion="TDCOD" filtro="" _tag="TIPODIR001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPODIR" expresion="TDCOD" filtro="" _tag="_TDDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOIMP" expresion="CODIGO" filtro="" _tag="TIPOIMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOOBJ" expresion="CODIGO" filtro="" _tag="TIPOOBJ001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TIPOOBJ" expresion="codigo" filtro="" _tag="_TOBPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TIPOORDEN" expresion="CODIGO" filtro="" _tag="TIPOORD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOPROD1" expresion="CODCONS" filtro="" _tag="TIPOPRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOPROD1" expresion="CodCons" filtro="" _tag="_TP1PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOPROD2" expresion="CODCONS" filtro="" _tag="TIPOPRO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPOPROD2" expresion="CodCons" filtro="" _tag="_TP2PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TIPREGEXP" expresion="CCOD" filtro="" _tag="TIPREGE001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TRA" expresion="TRCOD" filtro="" _tag="TRA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TRA" expresion="TRCOD" filtro="" _tag="_TRAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TRABANC" expresion="COD" filtro="" _tag="TRABANC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TRANCTAS" expresion="CODIGO" filtro="" _tag="TRANCTA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TRATCOMP" expresion="CODINT" filtro="" _tag="TRATCOM001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TRATCOMP" expresion="CodInt" filtro="" _tag="_TCOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TRATCOMP" expresion="NUMERO" filtro="" _tag="TRATCOM002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TRATCOMP" expresion="str( Numero, 8, 0)" filtro="" _tag="_TCOCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TSUCUR" expresion="TCOD" filtro="" _tag="TSUCUR001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TSUCUR" expresion="TCOD" filtro="" _tag="_TSUPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="Talle" expresion="Codigo" filtro="" _tag="_150PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TareaProg" expresion="Codigo" filtro="" _tag="_TPEPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Temporada" expresion="TCOD" filtro="" _tag="_153PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TipArcExp" expresion="cCod" filtro="" _tag="_THEPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TipArcIMP" expresion="cCod" filtro="" _tag="_THIPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TipAtrExp" expresion="cCod" filtro="" _tag="_TBEPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TipRegExp" expresion="cCod" filtro="" _tag="_TREPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="TipoArea" expresion="cCod" filtro="" _tag="_AREPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TipoAtributo" expresion="cCod" filtro="" _tag="_ATRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TipoCli" expresion="TCCOD" filtro="" _tag="_TCLPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TipoCompCom" expresion="Codigo" filtro="" _tag="_TCCPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TipoImp" expresion="Codigo" filtro="" _tag="_TIMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TipoOrden" expresion="Codigo" filtro="" _tag="_TDOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TraBanc" expresion="Cod" filtro="" _tag="_DTBPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="TranCtas" expresion="Codigo" filtro="" _tag="_TECPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="UMARBA" expresion="COD" filtro="" _tag="UMARBA001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="UMARBA" expresion="Cod" filtro="" _tag="_UMAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="UNIAF" expresion="COD" filtro="" _tag="UNIAF001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="UNMED" expresion="COD" filtro="" _tag="UNMED001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="UniAf" expresion="Cod" filtro="" _tag="_EUMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="Unmed" expresion="Cod" filtro="" _tag="_UDMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VAL" expresion="JJNUM" filtro="" _tag="VAL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VALCAMBIO" expresion="CCOD" filtro="" _tag="VALCAMB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VALCAMBIO" expresion="CCOD" filtro="" _tag="_VCBPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VALCAMBIODET" expresion="CODIGO" filtro="" _tag="VALCAMB001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VALCOMPPAGO" expresion="JJNUM" filtro="" _tag="VALCOMP001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VALFACCOMP" expresion="JJNUM" filtro="" _tag="VALFACC001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VALNCCOMP" expresion="JJNUM" filtro="" _tag="VALNCCO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VALNDCOMP" expresion="JJNUM" filtro="" _tag="VALNDCO001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VEHICULODET" expresion="CODIGO" filtro="" _tag="VEHICUL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VEN" expresion="CLCOD" filtro="" _tag="VEN001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VEN" expresion="CLCOD" filtro="" _tag="_VENPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VTRANS" expresion="CODIGO" filtro="" _tag="VTRANS001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VTRANS" expresion="Codigo" filtro="" _tag="_VTRPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VTRANS" expresion="NUMERO" filtro="" _tag="VTRANS002" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VTRANS" expresion="str( Numero, 8, 0)" filtro="" _tag="_VTRCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="VTRANSDET" expresion="CODDETVAL" filtro="" _tag="VTRANSD001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="WHOOK" expresion="CODIGO" filtro="" _tag="WHOOK001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="WHOOK" expresion="Codigo" filtro="" _tag="_WHKPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="WHOOKDET" expresion="CODIGO" filtro="" _tag="WHOOKDE001" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="XVAL" expresion="CLCOD" filtro="" _tag="XVAL001" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="XVAL" expresion="CLCOD" filtro="" _tag="_VALPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ajucccli" expresion="CODIGO" filtro="FactTipo = 43" _tag="_AJUPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ajucccli" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0)" filtro="FactTipo = 43" _tag="_AJUCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ajuccpro" expresion="CODIGO" filtro="FactTipo = 44" _tag="_AJPPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ajuccpro" expresion="FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0)" filtro="FactTipo = 44" _tag="_AJPCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ajuestados" expresion="ajCodigo" filtro="" _tag="_AESPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ajustock" expresion="ajCodigo" filtro="" _tag="_AJSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="cacepv" expresion="numero" filtro="" _tag="_CAVPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="cansenia" expresion="Codigo" filtro="" _tag="_CDSPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="cansenia" expresion="Letra + str( PtoVenta, 4, 0) + str( Numero, 8, 0)" filtro="" _tag="_CDSCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ccCompra" expresion="Codigo" filtro="" _tag="_130PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ccCompra" expresion="dtos( fechaven ) + str( TipoComp, 2, 0) + letra + str( ptovta, 4, 0) + str( numero, 8, 0) + Valor + Provee" filtro="" _tag="_130CC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ccorreo" expresion="codigo" filtro="" _tag="_SMTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="conliqtar" expresion="codigo" filtro="" _tag="_CLTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="conver" expresion="codigo" filtro="" _tag="_CDEPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="converVal" expresion="Conversion + valOrig + basedatos" filtro="" _tag="_VCECC" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="converVal" expresion="codigo" filtro="" _tag="_VCEPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="entOnline" expresion="Codigo" filtro="" _tag="_NEOPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="formatos" expresion="codigo" filtro="" _tag="_FOEPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="ibm4610kc4" expresion="cCod" filtro="" _tag="_KC4PK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="incot" expresion="cod" filtro="" _tag="_INTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="ivacpcab" expresion="codigo" filtro="" _tag="_EICPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="liqMensual" expresion="codigo" filtro="" _tag="_LIQPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="liqMensual" expresion="str( numint, 8, 0)" filtro="" _tag="_LIQCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="liqdiaria" expresion="codigo" filtro="" _tag="_LDTPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="mail" expresion="codigo" filtro="" _tag="_MILPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="mem" expresion="codigo" filtro="" _tag="_MEMPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="mem" expresion="usuario + tipo" filtro="" _tag="_MEMCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="plancuenta" expresion="ctacodigo" filtro="" _tag="_CTAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="redo" expresion="codigo" filtro="" _tag="_REDPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="reglaTrans" expresion="cCod" filtro="" _tag="_RTRPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="remelec" expresion="Numero" filtro="" _tag="_RELPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="renuasiento" expresion="codigo" filtro="" _tag="_RNAPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="rutalan" expresion="CVERSION" filtro="" _tag="_LANCC" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="rutalan" expresion="Codigo" filtro="" _tag="_LANPK" ubicacion="organizacion" ordentag="99"/>
+	<row tabla="senia" expresion="Codigo" filtro="" _tag="_SENPK" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="senia" expresion="str( FACTTIPO, 2, 0) + FLETRA + str( FPTOVEN, 4, 0) + str( FNUMCOMP, 8, 0)" filtro="" _tag="_SENCC" ubicacion="sucursal" ordentag="99"/>
+	<row tabla="suc" expresion="codigo" filtro="" _tag="_SUCPK" ubicacion="organizacion" ordentag="99"/>
+</VFPData>

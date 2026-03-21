@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"INFORMEVENTASLPS","Codigo","INFOVTASLPS","CODIGO",F,"C",38,0,"CODIGO",T,"",F,"",T,""
+"INFORMEVENTASLPS","FechaInforme","INFOVTASLPS","FECINFO",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"INFORMEVENTASLPS","HoraInforme","INFOVTASLPS","HORAINFO",F,"C",5,0,"CARACTER",F,"",F,"",F,""
+"INFORMEVENTASLPS","Estado","INFOVTASLPS","ESTADO",F,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"INFORMEVENTASLPS","Mensaje","INFOVTASLPS","MENSAJE",F,"C",100,0,"CARACTER",F,"",F,"",F,""
+"INFORMEVENTASLPS","Identificador","INFOVTASLPS","INDENTIF",F,"N",15,0,"NUMERICO",F,"",F,"",F,""

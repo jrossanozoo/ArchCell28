@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCOMPROBANTESENBASEA","Codigo","detenbasea","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCOMPROBANTESENBASEA","TimestampComprobante","","tscomp",F,"N",15,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCOMPROBANTESENBASEA","CodigoCompAfe","","Cod_Afe",F,"G",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMCOMPROBANTESENBASEA","Numero","","CPNumero",T,"C",30,0,"CARACTERNUEVOENBASEA",F,"",F,"",T,""
+"ITEMCOMPROBANTESENBASEA","Descripcion","","Descri",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMCOMPROBANTESENBASEA","Fecha","","FechaComp",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""

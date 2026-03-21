@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"WEBHOOK","Codigo","WHOOK","Codigo",T,"C",40,0,"CODIGO",T,"",F,"",T,""
+"WEBHOOK","Descripcion","WHOOK","DESCRI",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"WEBHOOK","Observaciones","WHOOK","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"WEBHOOK","Url","WHOOK","URL",T,"C",150,0,"DESCRIPCION",F,"",F,"",F,""
+"WEBHOOK","HookDetalle","WHOOKDET","Codigo",T,"C",40,0,"DETALLEITEMWEBHOOK",F,"",F,"",F,""
+"WEBHOOK","BaseDeDatos","WHOOK","BaseDatos",T,"C",8,0,"COMBOBASEDEDATOS",F,"",F,"=_screen.zoo.app.cSucursalActiva",F,""

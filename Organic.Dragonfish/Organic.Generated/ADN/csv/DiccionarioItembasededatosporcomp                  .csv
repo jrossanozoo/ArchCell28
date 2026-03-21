@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMBASEDEDATOSPORCOMP","Codigo","AGRUPBDPORCOMP","Codigo",F,"C",61,0,"CODIGO",T,"",F,"",F,""
+"ITEMBASEDEDATOSPORCOMP","Incluye","AGRUPBDPORCOMP","incluye",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMBASEDEDATOSPORCOMP","BaseDeDatos","AGRUPBDPORCOMP","Basededato",T,"C",8,0,"CODIGO",F,"BASEDEDATOS",F,"",T,""
+"ITEMBASEDEDATOSPORCOMP","BaseDeDatosDetalle","AGRUPBDPORCOMP","Ruta",T,"C",250,0,"CARACTER",F,"",F,"",F,"BaseDeDatos.Ruta"

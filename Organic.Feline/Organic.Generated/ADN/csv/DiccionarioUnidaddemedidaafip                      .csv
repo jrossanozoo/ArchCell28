@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"UNIDADDEMEDIDAAFIP","Codigo","UniAf","Cod",T,"N",2,0,"CODIGONUMERICO",T,"",F,"",F,""
+"UNIDADDEMEDIDAAFIP","Descripcion","UniAf","Descrip",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"UNIDADDEMEDIDAAFIP","Obs","UniAf","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

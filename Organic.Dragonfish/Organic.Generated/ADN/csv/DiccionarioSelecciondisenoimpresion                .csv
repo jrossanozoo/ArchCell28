@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"SELECCIONDISENOIMPRESION","Codigo","SelDisImp","cCod",F,"C",1,0,"CODIGO",T,"",F,"",F,""
+"SELECCIONDISENOIMPRESION","Descripcion","","",F,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"SELECCIONDISENOIMPRESION","Diseno","","",T,"C",38,0,"COMBO",F,"",F,"",F,""
+"SELECCIONDISENOIMPRESION","Observacion","","",F,"C",10,0,"OBSERVACION1R",F,"",F,"",F,""
+"SELECCIONDISENOIMPRESION","PrecioConVigenciaDesde","","",T,"D",8,0,"FECHA",F,"",F,"=GOLIBRERIAS.OBTENERFECHA()",F,""

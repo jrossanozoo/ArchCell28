@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Monto Gravado + No Gravado</valor>
+		<cdefault>retorno</cdefault>
+		<orden>1</orden>
+		<ayuda>Base Gravada Imponible sin impuestos</ayuda>
+		<retorno>BGI</retorno>
+	</xml>
+	<xml>
+		<valor>Importe Total</valor>
+		<cdefault>retorno</cdefault>
+		<orden>2</orden>
+		<ayuda>Importe Total del Pago (incluye impuestos)</ayuda>
+		<retorno>TOT</retorno>
+	</xml>
+	<xml>
+		<valor>Porcentaje sobre el Total</valor>
+		<cdefault>retorno</cdefault>
+		<orden>3</orden>
+		<ayuda>Porcentaje sobre el total del pago (incluidos impuestos)</ayuda>
+		<retorno>POR</retorno>
+	</xml>
+	<xml>
+		<valor>Monto Gravado</valor>
+		<cdefault>retorno</cdefault>
+		<orden>4</orden>
+		<ayuda>Monto gravado</ayuda>
+		<retorno>GRA</retorno>
+	</xml>
+	<xml>
+		<valor>Pago acumulado</valor>
+		<cdefault>retorno</cdefault>
+		<orden>5</orden>
+		<ayuda>Total acumulado pagos (sin impuestos)</ayuda>
+		<retorno>PAG</retorno>
+	</xml>
+</VFPData>

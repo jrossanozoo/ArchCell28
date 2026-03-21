@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCAMPOORDENAMIENTO","codigo","DETCAMORDPER","codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCAMPOORDENAMIENTO","Identificador","DETCAMORDPER","Identifica",T,"C",200,0,"CARACTER",F,"",F,"",F,""
+"ITEMCAMPOORDENAMIENTO","idCampo","DETCAMORDPER","idCampo",T,"N",8,0,"NUMERICO",F,"",T,"",F,""
+"ITEMCAMPOORDENAMIENTO","nOrden","DETCAMORDPER","nOrden",T,"N",12,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCAMPOORDENAMIENTO","Activado","DETCAMORDPER","activado",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMCAMPOORDENAMIENTO","Sentido","DETCAMORDPER","Sentido",T,"N",2,0,"NUMERICO",F,"",F,"",F,""

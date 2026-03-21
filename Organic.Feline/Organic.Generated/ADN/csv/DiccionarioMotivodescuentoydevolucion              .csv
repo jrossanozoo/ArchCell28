@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MOTIVODESCUENTOYDEVOLUCION","Codigo","MOTIVODESCDEV","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"MOTIVODESCUENTOYDEVOLUCION","Descripcion","MOTIVODESCDEV","Descrip",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"MOTIVODESCUENTOYDEVOLUCION","Tipo","MOTIVODESCDEV","Tipo",T,"N",1,0,"COMBOXML",F,"",F,"",F,""
+"MOTIVODESCUENTOYDEVOLUCION","Obs","MOTIVODESCDEV","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

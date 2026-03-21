@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DatosAdicionalesSire","Codigo","AFIP4523","Codigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"DatosAdicionalesSire","Motivo","AFIP4523","Motivo",T,"C",30,0,"CARACTER",F,"",F,"",T,""
+"DatosAdicionalesSire","Fecha","AFIP4523","Fecha",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=golibrerias.obtenerfecha()",F,""
+"DatosAdicionalesSire","Certificado","AFIP4523","NroCerti",T,"C",25,0,"CARACTER",F,"",F,"",T,""
+"DatosAdicionalesSire","Importe","AFIP4523","Importe",T,"N",11,2,"NUMERICO",F,"",F,"",T,""
+"DatosAdicionalesSire","MotivoAnulacion","AFIP4523","MotivoAnul",T,"N",1,0,"COMBOXML",F,"",F,"1",F,""
+"DatosAdicionalesSire","CodigoComprobanteOrigen","AFIP4523","CodComp",F,"C",38,0,"CARACTER",F,"",F,"",F,""

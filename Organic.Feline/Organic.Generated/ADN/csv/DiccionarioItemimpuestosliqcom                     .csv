@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMIMPUESTOSLIQCOM","Codigo","ImpLiqMenCom","cCod",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMIMPUESTOSLIQCOM","NroItem","ImpLiqMenCom","NroItem",F,"N",5,0,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSLIQCOM","TipoImpuesto","ImpLiqMenCom","TipoI",F,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOSLIQCOM","CodigoInterno","ImpLiqMenCom","codint",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOSLIQCOM","Porcentaje","ImpLiqMenCom","porcen",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSLIQCOM","MinimoNoImponible","ImpLiqMenCom","minoimp",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSLIQCOM","CodImp","ImpLiqMenCom","CodImp",T,"C",10,0,"CODIGO",F,"IMPUESTO",F,"",T,""
+"ITEMIMPUESTOSLIQCOM","CodImpDetalle","ImpLiqMenCom","Descri",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOSLIQCOM","Monto","ImpLiqMenCom","Monto",T,"N",12,2,"NUMERICO",F,"",F,"",F,""

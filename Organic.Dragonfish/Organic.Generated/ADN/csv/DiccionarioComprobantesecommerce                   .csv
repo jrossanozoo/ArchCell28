@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"COMPROBANTESECOMMERCE","OperacionesPendientes","COMPECOM","PENDIENTE",F,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"COMPROBANTESECOMMERCE","Ecommerce","COMPECOM","ECOMMERCE",T,"C",10,0,"CODIGO",F,"ECOMMERCE",F,"",T,""
+"COMPROBANTESECOMMERCE","Numero","COMPECOM","NUMERO",T,"N",10,0,"CODIGONUMERICO",T,"",F,"",T,""
+"COMPROBANTESECOMMERCE","Fecha","COMPECOM","FECHA",T,"D",8,0,"FECHACALENDARIO",F,"",T,"=goservicios.librerias.obtenerFecha()",T,""
+"COMPROBANTESECOMMERCE","DetalleOperaciones","ECCOMPDET","NUMERO",T,"N",10,0,"DETALLEITEMOPERACIONESECOM",F,"",F,"",F,""
+"COMPROBANTESECOMMERCE","Observacion","COMPECOM","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

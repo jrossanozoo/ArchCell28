@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMPRUEBAREDONDEO","Codigo","redoPrueba","codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMPRUEBAREDONDEO","Precio","redoPrueba","precio",T,"N",15,2,"NUMERICO",F,"",F,"",T,""
+"ITEMPRUEBAREDONDEO","Resultado","redoPrueba","result",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

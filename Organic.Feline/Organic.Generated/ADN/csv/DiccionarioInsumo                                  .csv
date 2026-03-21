@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"INSUMO","Codigo","INS","INSCOD",T,"C",23,0,"CODIGO",T,"",F,"",F,""
+"INSUMO","Descripcion","INS","INSDES",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"INSUMO","DescripcionAdicional","INS","INSDESADIC",T,"C",254,0,"DESCRIPCION",F,"",F,"",F,""
+"INSUMO","Observacion","INS","IObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"INSUMO","Articulo","INS","CodArt",T,"C",13,0,"CODIGO",F,"ARTICULO",F,"",F,""
+"INSUMO","RindeUnidad","INS","UnidadR",T,"C",3,0,"CODIGO",F,"UNIDADDEMEDIDA",F,"",F,""
+"INSUMO","RindeCantidad","INS","CantidadR",T,"N",7,2,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"INSUMO","CondicionIva","INS","condiva",F,"N",1,0,"COMBOCONDICIONIVA",F,"",F,"",F,""
+"INSUMO","PorcentajeIva","INS","poriva",F,"N",5,2,"NUMERICONONEGATIVO",F,"",F,"",F,""

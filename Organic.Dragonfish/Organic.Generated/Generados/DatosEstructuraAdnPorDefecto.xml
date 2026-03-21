@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DatosEstructuraAdnPorDefecto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PrefijoBD>DRAGONFISH</PrefijoBD>
+  <BasesDeDatosPorDefecto>
+    <BaseDeDatosPorDefecto>
+      <Nombre>ADNIMPLANT</Nombre>
+      <LlevaPrefijo>true</LlevaPrefijo>
+      <Ubicaciones>
+        <string>ADNIMPLANT</string>
+      </Ubicaciones>
+      <BaseDeEjemplo>false</BaseDeEjemplo>
+    </BaseDeDatosPorDefecto>
+    <BaseDeDatosPorDefecto>
+      <Nombre>DEMO</Nombre>
+      <LlevaPrefijo>true</LlevaPrefijo>
+      <Ubicaciones>
+        <string>SUCURSAL</string>
+      </Ubicaciones>
+      <BaseDeEjemplo>true</BaseDeEjemplo>
+    </BaseDeDatosPorDefecto>
+    <BaseDeDatosPorDefecto>
+      <Nombre>ZOOLOGICMASTER</Nombre>
+      <LlevaPrefijo>true</LlevaPrefijo>
+      <Ubicaciones>
+        <string>ORGANIZACION</string>
+        <string>PUESTO</string>
+        <string>SEGURIDAD</string>
+      </Ubicaciones>
+      <BaseDeEjemplo>false</BaseDeEjemplo>
+    </BaseDeDatosPorDefecto>
+  </BasesDeDatosPorDefecto>
+</DatosEstructuraAdnPorDefecto>

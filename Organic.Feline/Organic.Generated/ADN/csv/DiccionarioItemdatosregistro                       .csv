@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMDATOSREGISTRO","Codigo","DATOSBANCDET","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMDATOSREGISTRO","Registro","","",F,"C",20,0,"CODIGO",F,"REGISTRODECUENTA",F,"",F,""
+"ITEMDATOSREGISTRO","Valor","","",T,"C",5,0,"CODIGO",F,"VALOR",F,"",T,""
+"ITEMDATOSREGISTRO","ValorDetalle","","",T,"C",30,0,"CARACTER",F,"",F,"",F,"Valor.Descripcion"
+"ITEMDATOSREGISTRO","Importe","","",T,"N",15,2,"NUMERICO",F,"",T,"",F,"Registro.Importe"
+"ITEMDATOSREGISTRO","CuentaBancaria","","",T,"C",5,0,"CODIGO",F,"CUENTABANCARIA",F,"",T,"Registro.CuentaBancaria"
+"ITEMDATOSREGISTRO","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",T,"Registro.Fecha"
+"ITEMDATOSREGISTRO","Hora","","",T,"C",5,0,"HORA",F,"",F,"",F,"Registro.Hora"
+"ITEMDATOSREGISTRO","Identificador","","",T,"C",30,0,"CARACTER",F,"",F,"",F,"Registro.Identificador"
+"ITEMDATOSREGISTRO","CodigoBanco","","",T,"C",30,0,"CARACTER",F,"",F,"",F,"Registro.CodigoBanco"

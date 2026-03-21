@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ORIGENDEDATOS","Codigo","ORDAT","CODIGO",T,"C",8,0,"CODIGO",T,"",F,"",F,""
+"ORIGENDEDATOS","Descripcion","ORDAT","DESCRIP",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"ORIGENDEDATOS","Observacion","ORDAT","oOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

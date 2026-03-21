@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCOMPROBANTEPAGO","Concepto","COMPPAGODET","FCONC",T,"C",15,0,"CODIGO",F,"CONCEPTOPAGO",F,"",T,""
+"ITEMCOMPROBANTEPAGO","Codigo","COMPPAGODET","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCOMPROBANTEPAGO","ConceptoDetalle","COMPPAGODET","FCONCD",T,"C",254,0,"DESCRIPCION",F,"",T,"",F,"Concepto.Descripcion"
+"ITEMCOMPROBANTEPAGO","CentroDeCosto","COMPPAGODET","CCOSTO",T,"C",20,0,"CODIGO",F,"CENTRODECOSTO",F,"",F,""
+"ITEMCOMPROBANTEPAGO","DistribucionCentroDeCosto","COMPPAGODET","DCCOSTO",T,"C",20,0,"CODIGO",F,"DISTRIBUCIONCENTRODECOSTO",F,"",F,""
+"ITEMCOMPROBANTEPAGO","Monto","COMPPAGODET","FMONTO",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

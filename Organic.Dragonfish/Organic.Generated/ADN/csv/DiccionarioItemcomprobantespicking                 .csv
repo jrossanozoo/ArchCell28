@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCOMPROBANTESPICKING","Codigo","DetCompPicking","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCOMPROBANTESPICKING","TimestampComprobante","DetCompPicking","tscomp",F,"N",15,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCOMPROBANTESPICKING","CodigoCompAfe","DetCompPicking","Cod_Afe",F,"G",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMCOMPROBANTESPICKING","Cliente","DetCompPicking","Cliente",F,"C",10,0,"CARACTER",F,"",F,"",F,""
+"ITEMCOMPROBANTESPICKING","EntregaPosterior","DetCompPicking","EntregaPos",F,"N",1,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCOMPROBANTESPICKING","Numero","DetCompPicking","CPNumero",T,"C",30,0,"CARACTERPICKINGCONMASCARA",F,"",F,"",T,""
+"ITEMCOMPROBANTESPICKING","Fecha","DetCompPicking","FechaComp",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"ITEMCOMPROBANTESPICKING","OrigenDestino","DetCompPicking","OriDes",F,"C",8,0,"CODIGO",F,"ORIGENDEDATOS",F,"",F,""
+"ITEMCOMPROBANTESPICKING","Remito","DetCompPicking","REMITO",T,"C",15,0,"CARACTER",F,"",F,"",F,""
+"ITEMCOMPROBANTESPICKING","OrigenDestinoDetalle","DetCompPicking","OriDesDesc",T,"C",185,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMCOMPROBANTESPICKING","Cantidad","DetCompPicking","Cantidad",T,"N",13,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCOMPROBANTESPICKING","IdDeCaja","DetCompPicking","IdCaja",T,"C",250,0,"CARACTER",F,"",T,"",F,""

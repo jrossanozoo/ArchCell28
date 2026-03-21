@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMWEBHOOK","Codigo","WHOOKDET","Codigo",F,"C",40,0,"CODIGO",T,"",F,"",F,""
+"ITEMWEBHOOK","Entidad","WHOOKDET","Entidad",T,"C",40,0,"COMBOENTIDADWH",F,"",F,"",T,""
+"ITEMWEBHOOK","Ingresar","WHOOKDET","Ingresar",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMWEBHOOK","Modificar","WHOOKDET","Modificar",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMWEBHOOK","Eliminar","WHOOKDET","Eliminar",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

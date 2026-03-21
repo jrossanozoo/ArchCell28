@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMDIMENSIONESECOM","Codigo","CfgArtEcomDim","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMDIMENSIONESECOM","Color","CfgArtEcomDim","codColor",T,"C",2,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMDIMENSIONESECOM","ColorDetalle","CfgArtEcomDim","ColorDet",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Color.Descripcion"
+"ITEMDIMENSIONESECOM","Talle","CfgArtEcomDim","Talle",T,"C",5,0,"CARACTER",F,"",F,"",F,""
+"ITEMDIMENSIONESECOM","Peso","CfgArtEcomDim","Peso",T,"N",11,3,"NUMERICO",F,"",F,"",F,""
+"ITEMDIMENSIONESECOM","Largo","CfgArtEcomDim","Largo",T,"N",11,2,"NUMERICO",F,"",F,"",F,""
+"ITEMDIMENSIONESECOM","Ancho","CfgArtEcomDim","Ancho",T,"N",11,2,"NUMERICO",F,"",F,"",F,""
+"ITEMDIMENSIONESECOM","Alto","CfgArtEcomDim","Alto",T,"N",11,2,"NUMERICO",F,"",F,"",F,""

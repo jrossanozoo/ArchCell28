@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ENTIDADADICIONAL2","Codigo","EntAdic2","Cod",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ENTIDADADICIONAL2","Descri","EntAdic2","Descri",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"ENTIDADADICIONAL2","Obs","EntAdic2","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

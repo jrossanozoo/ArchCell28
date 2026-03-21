@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"RETIRODEEFECTIVO","Codigo","RetEfec","cCod",F,"C",1,0,"CODIGO",T,"",T,"",F,""
+"RETIRODEEFECTIVO","MontoAEntregar","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"RETIRODEEFECTIVO","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""

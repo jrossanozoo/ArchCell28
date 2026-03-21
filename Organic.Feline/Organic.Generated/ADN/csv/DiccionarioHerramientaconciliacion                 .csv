@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"HERRAMIENTACONCILIACION","Numero","HerrConc","Numero",F,"N",8,0,"CODIGONUMERICO",T,"",F,"",T,""
+"HERRAMIENTACONCILIACION","CuentaBancaria","","",T,"C",5,0,"CODIGO",F,"CUENTABANCARIA",F,"",T,""
+"HERRAMIENTACONCILIACION","NumeroCuenta","","",T,"C",15,0,"CARACTER",F,"",T,"",F,"CuentaBancaria.Numero"
+"HERRAMIENTACONCILIACION","Moneda","","",T,"C",10,0,"CODIGO",F,"MONEDA",F,"",F,"CuentaBancaria.MonedaCuenta"
+"HERRAMIENTACONCILIACION","FechaDesde","","",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"HERRAMIENTACONCILIACION","FechaHasta","","",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"HERRAMIENTACONCILIACION","Ordenamiento","","",T,"N",1,0,"COMBOXML",F,"",F,"3",F,""
+"HERRAMIENTACONCILIACION","DetalleMovimientos","","",T,"G",38,0,"DETALLEITEMMOVBANCARIOSTOOL",F,"",F,"",F,""
+"HERRAMIENTACONCILIACION","DetalleRegistros","","",T,"G",38,0,"DETALLEITEMREGCONCILIABLESTOOL",F,"",F,"",F,""
+"HERRAMIENTACONCILIACION","Obs","","",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"HERRAMIENTACONCILIACION","Diferencia","","",T,"N",15,2,"TOTALMULTIMONEDA",F,"",F,"",F,""

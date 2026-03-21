@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONDICIONIMPO","Codigo","CONDIMPO","codigo",T,"C",40,0,"CODIGO",T,"",T,"",F,""
+"CONDICIONIMPO","operador","CONDIMPO","operador",T,"C",40,0,"COMBOOPERADORESCONDICION",F,"",F,"",F,""
+"CONDICIONIMPO","vacio","CONDIMPO","vacio",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"CONDICIONIMPO","valor","CONDIMPO","valor",T,"C",100,0,"DESCRIPCION",F,"",F,"",F,""
+"CONDICIONIMPO","observacion","CONDIMPO","obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

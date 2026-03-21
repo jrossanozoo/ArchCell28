@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"STOCKINVENTARIO","Insumo","STOCKINV","COART",T,"C",25,0,"CODIGO",F,"INSUMO",F,"",F,""
+"STOCKINVENTARIO","Color","STOCKINV","COCOL",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"STOCKINVENTARIO","Talle","STOCKINV","Talle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"STOCKINVENTARIO","DescripcionComprobante","","",F,"C",254,0,"CARACTER",F,"",F,"",F,""
+"STOCKINVENTARIO","Inventario","STOCKINV","Invent",T,"C",15,0,"CARACTER",F,"INVENTARIO",F,"",F,""
+"STOCKINVENTARIO","Partida","STOCKINV","NroPartida",T,"C",25,0,"CARACTER",F,"",F,"",F,""
+"STOCKINVENTARIO","Codigo","STOCKINV","COCOD",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"STOCKINVENTARIO","Cantidad","STOCKINV","COCANT",T,"N",17,6,"NUMERICO",F,"",T,"",F,""
+"STOCKINVENTARIO","CantidadOriginal","STOCKINV","CORIG",F,"N",17,6,"NUMERICO",F,"",F,"",F,""

@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"Puntosdeventa","Numero","PTOVTA","NUM",T,"N",10,0,"CODIGONUMERICO",T,"",F,"",T,""
+"Puntosdeventa","Descripcion","PTOVTA","DESCRI",T,"C",50,0,"CARACTER",F,"",T,"",T,""
+"Puntosdeventa","Comprobante","PTOVTA","COMP",T,"C",40,0,"COMBOCOMPROBANTESDIFERPTOVEN",F,"",F,"",T,""
+"Puntosdeventa","Letra","PTOVTA","LETRA",T,"C",1,0,"COMBOXML",F,"",F,"",F,""
+"Puntosdeventa","PuntoDeVenta","PTOVTA","PTO",T,"N",4,0,"NUMERICO",F,"",F,"",T,""
+"Puntosdeventa","PuntoDeVentaSugerido","PTOVTA","PVSUG",T,"L",1,0,"SINOBOOL",F,"",F,"= .T.",F,""
+"Puntosdeventa","BocaDeExpendio","PTOVTA","BOCAEXP",T,"N",4,0,"NUMERICO",F,"",F,"",T,""
+"Puntosdeventa","Observacion","PTOVTA","COBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

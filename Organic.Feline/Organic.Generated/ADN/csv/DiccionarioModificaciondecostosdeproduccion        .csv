@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MODIFICACIONDECOSTOSDEPRODUCCION","Codigo","MODCOSTOP","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"MODIFICACIONDECOSTOSDEPRODUCCION","Descripcion","MODCOSTOP","Descrip",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"MODIFICACIONDECOSTOSDEPRODUCCION","Observ","MODCOSTOP","CObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"MODIFICACIONDECOSTOSDEPRODUCCION","ModCostos","MODCOSTPROD","CODIGO",T,"C",20,0,"DETALLEITEMMODCOSTOPROD",F,"",F,"",F,""

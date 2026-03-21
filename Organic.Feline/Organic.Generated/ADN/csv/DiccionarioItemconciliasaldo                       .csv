@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCONCILIASALDO","codigo","ConcSald","ccCodigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCONCILIASALDO","TipoComprobante","ConcSald","TipoComp",F,"C",3,0,"CARACTER",F,"",F,"",F,""
+"ITEMCONCILIASALDO","DescTipoComprobante","ConcSald","DescTipoC",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMCONCILIASALDO","Valor","ConcSald","Valor",T,"C",5,0,"CODIGO",F,"VALOR",F,"",F,""
+"ITEMCONCILIASALDO","ValorDetalle","ConcSald","ValorDesc",T,"C",30,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMCONCILIASALDO","SaldoAct","ConcSald","SaldoAct",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCONCILIASALDO","SaldoProy","ConcSald","SaldoProy",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCONCILIASALDO","Ajuste","ConcSald","Ajuste",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

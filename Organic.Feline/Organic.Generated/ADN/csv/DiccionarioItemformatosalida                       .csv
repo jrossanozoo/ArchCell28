@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMFORMATOSALIDA","codigo","DETSALIDASLPER","codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMFORMATOSALIDA","Tipo","DETSALIDASLPER","tipo",T,"C",80,0,"CARACTER",F,"",T,"",F,""
+"ITEMFORMATOSALIDA","Extendido","DETSALIDASLPER","Extendido",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMFORMATOSALIDA","Activado","DETSALIDASLPER","activado",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

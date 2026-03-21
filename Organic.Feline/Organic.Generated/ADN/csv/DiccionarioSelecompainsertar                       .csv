@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"SELECOMPAINSERTAR","Codigo","SELCOMPINS","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"SELECOMPAINSERTAR","DetalleComprobantesAInsertar","","",T,"C",10,0,"DETALLEITEMSELECOMPAINSERTAR",F,"",F,"",F,""
+"SELECOMPAINSERTAR","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""

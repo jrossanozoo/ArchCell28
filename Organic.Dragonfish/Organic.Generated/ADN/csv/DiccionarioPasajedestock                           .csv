@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"PASAJEDESTOCK","Obs","PjeStock","Obs",T,"C",200,0,"OBSERVACION",F,"",F,"",F,""
+"PASAJEDESTOCK","Codigo","PjeStock","CODIGO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",F,""
+"PASAJEDESTOCK","Descripcion","PjeStock","Descrip",T,"C",40,0,"CARACTER",F,"",T,"",F,""
+"PASAJEDESTOCK","Fecha","PjeStock","FECHA",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=golibrerias.obtenerfecha()",F,""
+"PASAJEDESTOCK","IDInventarioAControlar","PjeStock","IDInvCont",T,"N",8,0,"CODIGONUMERICO",F,"TIInventarioACont",F,"",T,""
+"PASAJEDESTOCK","Destino","PjeStock","Destino",T,"C",8,0,"COMBOOTRASSUCURSALES",F,"",F,"",T,""
+"PASAJEDESTOCK","MSOrigenDestino","PjeStock","MSORIGDEST",T,"C",8,0,"CODIGO",F,"ORIGENDEDATOS",F,"",T,""
+"PASAJEDESTOCK","MSMotivo","PjeStock","MSMOTIVO",T,"C",3,0,"CODIGO",F,"MOTIVO",F,"",T,""
+"PASAJEDESTOCK","MSFecha","PjeStock","MSFECHA",T,"D",8,0,"FECHACOMPROBANTE",F,"",F,"=golibrerias.obtenerfecha()",T,""

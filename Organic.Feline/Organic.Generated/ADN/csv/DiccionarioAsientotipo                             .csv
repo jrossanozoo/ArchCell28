@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ASIENTOTIPO","Codigo","ATIPO","CODIGO",T,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ASIENTOTIPO","Orden","ATIPO","ORDEN",F,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"ASIENTOTIPO","Descripcion","ATIPO","DESCRIP",T,"C",70,0,"DESCRIPCION",F,"",T,"",F,""
+"ASIENTOTIPO","Leyenda","ATIPO","LEYENDA",T,"N",1,0,"COMBOXML",F,"",F,"",F,""
+"ASIENTOTIPO","LeyendaPropia","ATIPO","LEYPROP",T,"C",100,0,"DESCRIPCION",F,"",F,"",F,""
+"ASIENTOTIPO","AsientosPor","ATIPO","ASIENTOP",T,"N",1,0,"COMBOXML",F,"",F,"",F,""
+"ASIENTOTIPO","DiaDelMes","ATIPO","DIADELMES",T,"N",2,0,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ASIENTOTIPO","PorLetra","ATIPO","PORLETRA",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ASIENTOTIPO","PorTipoComp","ATIPO","PORTIPOC",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ASIENTOTIPO","AsientoTipoDetalle","ATIPODET","CODIGO",T,"C",10,0,"DETALLEITEMASIENTOTIPO",F,"",F,"",F,""
+"ASIENTOTIPO","ListaDeCuentas","","",T,"C",10,0,"COMBO",F,"",F,"",F,""
+"ASIENTOTIPO","Observacion","ATIPO","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMASIENTO","Codigo","ASIENTODET","CODIGO",F,"C",20,0,"CODIGO",T,"",F,"",F,""
+"ITEMASIENTO","PlanDeCuentas","ASIENTODET","PCUENTA",T,"C",30,0,"CODIGO",F,"PLANDECUENTAS",F,"",T,""
+"ITEMASIENTO","PlanDeCuentasDetalle","ASIENTODET","PCUENTAD",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"PLANDECUENTAS.DESCRIPCION"
+"ITEMASIENTO","Leyenda","ASIENTODET","Leyenda",T,"C",150,0,"OBSERVACION",F,"",T,"",F,""
+"ITEMASIENTO","CENTRODECOSTO","ASIENTODET","CODCCOS",T,"C",20,0,"CODIGO",F,"CENTRODECOSTO",F,"",F,""
+"ITEMASIENTO","Debe","ASIENTODET","DEBE",T,"N",16,4,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMASIENTO","Haber","ASIENTODET","HABER",T,"N",16,4,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMASIENTO","Saldo","ASIENTODET","SALDO",F,"N",16,4,"NUMERICO",F,"",F,"",F,""
+"ITEMASIENTO","RequiereCC","","",F,"L",1,0,"SINOBOOL",F,"",F,"",F,"PLANDECUENTAS.REQUIERECDC"

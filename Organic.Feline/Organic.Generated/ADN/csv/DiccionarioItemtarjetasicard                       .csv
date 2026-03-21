@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMTARJETASICARD","Codigo","ICARDTarjetas","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMTARJETASICARD","NumeroEquivalencia","ICARDTarjetas","Equivalen",T,"N",2,0,"NUMERICO",F,"",F,"",T,""
+"ITEMTARJETASICARD","Descripcion","ICARDTarjetas","Descrip",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"ITEMTARJETASICARD","Operadora","ICARDTarjetas","Operadora",T,"C",15,0,"CODIGO",F,"OPERADORADETARJETA",F,"",F,""
+"ITEMTARJETASICARD","Autorizador","ICARDTarjetas","Autoriz",T,"N",2,0,"NUMERICO",F,"",F,"",F,""

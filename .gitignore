@@ -1,0 +1,39 @@
+# Creado por Juan Rossano para proyectos en visual foxpro
+
+### FoxPro ###
+# archivos compilados
+*.fxp
+*.app
+
+### Archivos generados de organic
+din_*.prg
+mock_*.prg
+frm_*.prg
+her_*.prg
+*.listados.*.sql
+
+### Configuracion basica
+*.sdb
+*.szl
+
+# Archivos Log
+*.log
+
+# Archivos de resguardo
+*.bak
+*.tbk
+
+# Archivos de bases de datos y componente
+*.dbf
+*.fpt
+*.cdx
+*.vcx
+*.vct
+*.scx
+*.sct
+
+# Archivos comprimidos #
+*.zip
+*.tar.gz
+*.rar
+*.7z

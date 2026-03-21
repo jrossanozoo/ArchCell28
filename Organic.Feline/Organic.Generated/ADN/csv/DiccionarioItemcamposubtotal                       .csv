@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCAMPOSUBTOTAL","codigo","DETCAMSUBPER","codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCAMPOSUBTOTAL","Identificador","DETCAMSUBPER","Identifica",T,"C",200,0,"CARACTER",F,"",F,"",F,""
+"ITEMCAMPOSUBTOTAL","idCampo","DETCAMSUBPER","idCampo",T,"N",8,0,"NUMERICO",F,"",T,"",F,""
+"ITEMCAMPOSUBTOTAL","lNuevaPaginaAntes","DETCAMSUBPER","lpagenew",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMCAMPOSUBTOTAL","nOrden","DETCAMSUBPER","nOrden",T,"N",12,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCAMPOSUBTOTAL","Activado","DETCAMSUBPER","activado",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMCAMPOSUBTOTAL","nSubTotal","DETCAMSUBPER","nSubtotal",T,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCAMPOSUBTOTAL","Formula","DETCAMSUBPER","Formula",T,"C",200,0,"CARACTER",F,"",F,"",F,""
+"ITEMCAMPOSUBTOTAL","AnchoFormula","DETCAMSUBPER","Ancho",T,"N",4,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCAMPOSUBTOTAL","EtiquetaFormula","DETCAMSUBPER","EtiqF",T,"C",40,0,"CARACTER",F,"",F,"",F,""

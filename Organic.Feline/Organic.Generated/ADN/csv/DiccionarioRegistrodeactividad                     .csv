@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"REGISTRODEACTIVIDAD","Codigo","RegActiv","cCodigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"REGISTRODEACTIVIDAD","Actividad","RegActiv","cActividad",T,"C",240,0,"CARACTER",F,"",F,"",F,""
+"REGISTRODEACTIVIDAD","FechaInicio","RegActiv","cFechaIni",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"REGISTRODEACTIVIDAD","HoraInicio","RegActiv","cHoraIni",T,"C",8,0,"HORA",F,"",F,"",F,""
+"REGISTRODEACTIVIDAD","FechaFin","RegActiv","cFechaFin",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"REGISTRODEACTIVIDAD","HoraFin","RegActiv","cHoraFin",T,"C",8,0,"HORA",F,"",F,"",F,""
+"REGISTRODEACTIVIDAD","BaseDeDatos","RegActiv","BDAltaFW",T,"C",8,0,"CARACTER",F,"",F,"",F,""
+"REGISTRODEACTIVIDAD","TiempoNetoSinInteracciondelUsuario","RegActiv","nNeto",T,"N",13,3,"NUMERICO",F,"",F,"",F,""
+"REGISTRODEACTIVIDAD","Invocador","RegActiv","Invocador",T,"C",100,0,"CARACTER",F,"",F,"",F,""
+"REGISTRODEACTIVIDAD","Observacion","RegActiv","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

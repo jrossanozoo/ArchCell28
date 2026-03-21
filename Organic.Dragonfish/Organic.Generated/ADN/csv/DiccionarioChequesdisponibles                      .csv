@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CHEQUESDISPONIBLES","Codigo","CheqDisp","Codigo",F,"C",5,0,"CODIGO",T,"",F,"",F,""
+"CHEQUESDISPONIBLES","Estado","","",T,"C",5,0,"COMBOSERVICIOCHEQUE",F,"",F,"",F,""
+"CHEQUESDISPONIBLES","Obs","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"CHEQUESDISPONIBLES","Cheques","","",T,"G",38,0,"DETALLEITEMCHEQUEDISPONIBLE",F,"",F,"",F,""

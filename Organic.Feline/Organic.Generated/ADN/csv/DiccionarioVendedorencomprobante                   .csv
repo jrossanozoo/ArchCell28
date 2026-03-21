@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"VENDEDORENCOMPROBANTE","Vendedor","COMPROBANTEV","FVEN",T,"C",5,0,"CODIGOVENDEDOR",F,"VENDEDOR",F,"",F,""
+"VENDEDORENCOMPROBANTE","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"VENDEDORENCOMPROBANTE","Codigo","COMPROBANTEV","CODIGO",F,"G",38,0,"CODIGO",T,"",T,"",T,""

@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMSELECOMPAINSERTAR","Codigo","SELCOMPINSDET","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMSELECOMPAINSERTAR","CodComprobante","","",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMSELECOMPAINSERTAR","Comprobante","","",T,"C",20,0,"CARACTER",F,"",T,"",T,""
+"ITEMSELECOMPAINSERTAR","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMSELECOMPAINSERTAR","Cliente","","",T,"C",10,0,"CARACTER",F,"",F,"",F,""
+"ITEMSELECOMPAINSERTAR","Vendedor","","",T,"C",10,0,"CARACTER",F,"",F,"",F,""
+"ITEMSELECOMPAINSERTAR","Seleccionada","","",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

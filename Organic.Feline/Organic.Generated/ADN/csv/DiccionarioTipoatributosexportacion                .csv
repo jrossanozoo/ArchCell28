@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIPOATRIBUTOSEXPORTACION","Codigo","TipAtrExp","cCod",T,"C",3,0,"CODIGO",T,"",F,"",F,""
+"TIPOATRIBUTOSEXPORTACION","Descripcion","TipAtrExp","cDes",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"TIPOATRIBUTOSEXPORTACION","EsAtributo","TipAtrExp","lAtri",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"TIPOATRIBUTOSEXPORTACION","EsExpresion","TipAtrExp","lExpr",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"TIPOATRIBUTOSEXPORTACION","EsEtiqueta","TipAtrExp","lEtiqueta",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ARQUEODECAJA","Numero","ARQCAJA","Numero",T,"N",10,0,"CLAVEDEBUSQUEDA",F,"",F,"",T,""
+"ARQUEODECAJA","Caja","ARQCAJA","Caja",T,"N",2,0,"CODIGONUMERICO",F,"CAJAESTADO",F,"",T,""
+"ARQUEODECAJA","Vendedor","ARQCAJA","Vendedor",T,"C",5,0,"CODIGO",F,"VENDEDOR",F,"",T,""
+"ARQUEODECAJA","Codigo","ARQCAJA","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",T,""
+"ARQUEODECAJA","FechaAltaFW","ARQCAJA","FAltaFW",T,"D",8,0,"FECHA",F,"",T,"=golibrerias.obtenerfecha()",F,""
+"ARQUEODECAJA","HoraAltaFW","ARQCAJA","HAltaFW",T,"C",8,0,"CARACTER",F,"",F,"=goservicios.librerias.obtenerHora()",F,""
+"ARQUEODECAJA","Observacion","ARQCAJA","AObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"ARQUEODECAJA","DetalleTotalPorGrupo","ARQTOTDET","Codigo",T,"G",38,0,"DETALLEITEMTOTALPORGRUPO",F,"",F,"",F,""
+"ARQUEODECAJA","DetalleRecuentoEfectivo","ARQEFECTDET","Codigo",T,"G",38,0,"DETALLEITEMRECEFECTIVO",F,"",F,"",F,""
+"ARQUEODECAJA","DetalleOtros","ARQOTROSDET","Codigo",T,"G",38,0,"DETALLEITEMARQUEOOTROS",F,"",F,"",F,""

@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CODIGOAUTORIZACIONDJCP","Codigo","DJCP","CodInt",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"CODIGOAUTORIZACIONDJCP","Numero","DJCP","Numero",T,"N",8,0,"CLAVECANDIDATA",F,"",F,"",F,""
+"CODIGOAUTORIZACIONDJCP","Fecha","DJCP","FecAlta",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.Librerias.ObtenerFecha()",T,""
+"CODIGOAUTORIZACIONDJCP","PaisOrigen","DJCP","PaisOrig",T,"C",3,0,"CODIGO",F,"PAISES",F,"",F,""
+"CODIGOAUTORIZACIONDJCP","FechaVigenciaDesde","DJCP","VigDesde",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.Librerias.ObtenerFecha()",F,""
+"CODIGOAUTORIZACIONDJCP","FechaVigenciaHasta","DJCP","VigHasta",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.Librerias.ObtenerFecha() +120",F,""
+"CODIGOAUTORIZACIONDJCP","DetalleAutorizaciones","DJCPDET","Codigo",T,"G",38,0,"DETALLEITEMAUTORIZACIONDJCP",F,"",F,"",F,""
+"CODIGOAUTORIZACIONDJCP","Observacion","DJCP","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

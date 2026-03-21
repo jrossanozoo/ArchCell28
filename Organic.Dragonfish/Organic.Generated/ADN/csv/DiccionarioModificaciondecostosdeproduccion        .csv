@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MODIFICACIONDECOSTOSDEPRODUCCION","Codigo","MODCOSTOP","Codigo",F,"C",20,0,"CODIGO",T,"",F,"",T,""
+"MODIFICACIONDECOSTOSDEPRODUCCION","Fecha","MODCOSTOP","FECHA",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.librerias.ObtenerFecha()",F,""
+"MODIFICACIONDECOSTOSDEPRODUCCION","Numero","MODCOSTOP","Numero",T,"N",12,0,"CLAVEDEBUSQUEDA",F,"",F,"",F,""
+"MODIFICACIONDECOSTOSDEPRODUCCION","Proceso","MODCOSTOP","Proceso",T,"C",15,0,"CODIGO",F,"PROCESOPRODUCCION",F,"",F,""
+"MODIFICACIONDECOSTOSDEPRODUCCION","Taller","MODCOSTOP","Taller",T,"C",15,0,"CODIGO",F,"TALLER",F,"",F,""
+"MODIFICACIONDECOSTOSDEPRODUCCION","Observ","MODCOSTOP","CObs",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"MODIFICACIONDECOSTOSDEPRODUCCION","ModCostos","MODCOSTPROD","CODIGO",T,"C",20,0,"DETALLEITEMMODCOSTOPROD",F,"",F,"",F,""

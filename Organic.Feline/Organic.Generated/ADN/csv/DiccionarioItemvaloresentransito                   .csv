@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMVALORESENTRANSITO","Codigo","VTRANSDET","CodDetVal",F,"C",20,0,"CODIGONUMERICO",T,"",F,"",F,""
+"ITEMVALORESENTRANSITO","Cotiza","VTRANSDET","Cotiza",F,"N",15,5,"NUMERICO",F,"",F,"",F,""
+"ITEMVALORESENTRANSITO","CodigoCheque","VTRANSDET","NroCheque",F,"G",38,0,"CODIGO",F,"CHEQUE",F,"",F,""
+"ITEMVALORESENTRANSITO","Tipo","VTRANSDET","Tipo",F,"N",2,0,"NUMERICO",F,"",F,"",F,"Valor.Tipo"
+"ITEMVALORESENTRANSITO","CodigoChequePropio","VTRANSDET","NroChProp",F,"G",38,0,"CODIGO",F,"CHEQUEPROPIO",F,"",F,""
+"ITEMVALORESENTRANSITO","Valor","VTRANSDET","CodVal",T,"C",5,0,"CODIGO",F,"VALOR",F,"",T,""
+"ITEMVALORESENTRANSITO","ValorDetalle","VTRANSDET","Descrip",T,"C",30,0,"DESCRIPCION",F,"",T,"",F,"Valor.Descripcion"
+"ITEMVALORESENTRANSITO","NumeroInterno","VTRANSDET","NroInterno",T,"C",15,0,"CARACTER",F,"",F,"",F,""
+"ITEMVALORESENTRANSITO","FechaEmision","VTRANSDET","FechaEmi",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"ITEMVALORESENTRANSITO","FechaPago","VTRANSDET","FechaPago",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"ITEMVALORESENTRANSITO","EstadoEnOrigen","VTRANSDET","Estado",T,"C",5,0,"COMBOSERVICIOCHEQUE",F,"",F,"",F,""
+"ITEMVALORESENTRANSITO","Monto","VTRANSDET","monto",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

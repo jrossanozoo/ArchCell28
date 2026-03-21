@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"REGISTRODEBAJA","Codigo","REGBAJA","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"REGISTRODEBAJA","Entidad","REGBAJA","Entidad",F,"C",40,0,"CARACTER",F,"",T,"",F,""
+"REGISTRODEBAJA","IdEntidad","REGBAJA","IdEntidad",F,"C",254,0,"CARACTER",F,"",F,"",F,""
+"REGISTRODEBAJA","IdGlobal","REGBAJA","IdGlobal",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"REGISTRODEBAJA","FechaDeBaja","REGBAJA","FecBaja",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"REGISTRODEBAJA","HoraDeBaja","REGBAJA","HoraBaja",F,"C",8,0,"CARACTER",F,"",F,"",F,""

@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CLASIFICACIONCLIENTE","Codigo","CLASIF","CLACOD",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"CLASIFICACIONCLIENTE","Descripcion","CLASIF","CLADES",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"CLASIFICACIONCLIENTE","RequiereLimiteDeConsumo","CLASIF","CLARLIM",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"CLASIFICACIONCLIENTE","Requiereseguridadmodifcliente","CLASIF","CLARSMC",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"CLASIFICACIONCLIENTE","Obs","CLASIF","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCODBARRAALTER","Codigo","CODBARALTERDET","Codigo",F,"C",3,0,"CODIGO",T,"",F,"",F,""
+"ITEMCODBARRAALTER","Nombre","CODBARALTERDET","Nombre",T,"C",30,0,"CARACTER",F,"",F,"",T,""
+"ITEMCODBARRAALTER","Atributo","CODBARALTERDET","Atributo",T,"C",15,0,"COMBOCODBARRAALTERATRIBUTO",F,"",F,"",F,""
+"ITEMCODBARRAALTER","PosicionInicial","CODBARALTERDET","PosInicial",T,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCODBARRAALTER","CantidadCaracteres","CODBARALTERDET","Cantidad",T,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCODBARRAALTER","CantidadDecimales","CODBARALTERDET","Decimales",T,"N",1,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCODBARRAALTER","ValorBandera","CODBARALTERDET","Bandera",T,"C",3,0,"CARACTER",F,"",F,"",F,""

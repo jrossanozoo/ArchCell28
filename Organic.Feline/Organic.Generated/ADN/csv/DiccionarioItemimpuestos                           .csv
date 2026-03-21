@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMIMPUESTOS","Codigo","ImpuestosV","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMIMPUESTOS","PorcentajeDeIva","ImpuestosV","IVAPorcent",F,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOS","MontoDeIva","ImpuestosV","IVAMonto",F,"N",12,4,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOS","MontoDeIvaSinDescuento","ImpuestosV","IVAMonSD",F,"N",12,4,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOS","MontoNoGravado","ImpuestosV","IVAMonNG",F,"N",12,4,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOS","MontoNoGravadoSinDescuento","ImpuestosV","IVAMNGSD",F,"N",12,4,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOS","MontoDeImpuestoInterno","ImpuestosV","INTMonto",F,"N",17,4,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOS","MontoDeImpuestoInternoSinDescuento","ImpuestosV","INTMonSD",F,"N",17,4,"NUMERICO",F,"",F,"",F,""

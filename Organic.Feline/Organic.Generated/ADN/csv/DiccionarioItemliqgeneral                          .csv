@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMLIQGENERAL","Codigo","liqConMenlDet","codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMLIQGENERAL","Concepto","liqConMenlDet","Concepto",T,"C",50,0,"CODIGO",F,"CONCEPTOLIQUIDACIONTARJETA",F,"",T,""
+"ITEMLIQGENERAL","ConceptoDetalle","liqConMenlDet","Descrip",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Concepto.descripcion"
+"ITEMLIQGENERAL","Monto","liqConMenlDet","monto",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMLIQGENERAL","SubDiarioIva","liqConMenlDet","subiva",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Concepto.CondicionIva"
+"ITEMLIQGENERAL","IdItemComponente","liqConMenlDet","guidComp",F,"C",20,0,"CARACTER",F,"",F,"",F,""

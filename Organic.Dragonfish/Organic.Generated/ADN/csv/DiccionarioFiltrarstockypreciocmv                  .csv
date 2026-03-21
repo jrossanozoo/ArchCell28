@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"FILTRARSTOCKYPRECIOCMV","Codigo","CMVFiltroStPre","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",T,""
+"FILTRARSTOCKYPRECIOCMV","FechaDesde","CMVFiltroStPre","FchDesde",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"FILTRARSTOCKYPRECIOCMV","FechaHasta","CMVFiltroStPre","FchHasta",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"FILTRARSTOCKYPRECIOCMV","Ejercicio","CMVFiltroStPre","Ejercicio",T,"N",8,0,"CODIGONUMERICO",F,"EJERCICIO",F,"",F,""
+"FILTRARSTOCKYPRECIOCMV","BaseDeDatos","CMVFiltroStPre","Base",T,"C",21,0,"COMBOSUCYAGRUCONVACIO",F,"",F,"",F,""
+"FILTRARSTOCKYPRECIOCMV","Obs","CMVFiltroStPre","Obs",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""

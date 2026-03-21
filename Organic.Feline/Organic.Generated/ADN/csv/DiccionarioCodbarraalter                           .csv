@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CODBARRAALTER","Codigo","CODBARALTER","Codigo",T,"C",3,0,"CODIGO",T,"",F,"",F,""
+"CODBARRAALTER","Descripcion","CODBARALTER","CodDesc",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"CODBARRAALTER","Habilitado","CODBARALTER","Habilitado",T,"L",1,0,"SINOBOOL",F,"",F,"=.T.",F,""
+"CODBARRAALTER","UtilizaSecuencial","CODBARALTER","UsaSecuen",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"CODBARRAALTER","ControlaUnicidad","CODBARALTER","CtrlUni",T,"N",1,0,"COMBOXML",F,"",F,"",F,""
+"CODBARRAALTER","Obs","CODBARALTER","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"CODBARRAALTER","CodBarDetalle","CODBARALTERDET","Codigo",T,"C",3,0,"DETALLEITEMCODBARRAALTER",F,"",F,"",F,""

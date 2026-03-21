@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIPODEORDEN","Codigo","TipoOrden","Codigo",T,"C",20,0,"CODIGO",T,"",F,"",F,""
+"TIPODEORDEN","Descripcion","TipoOrden","Descr",T,"C",150,0,"DESCRIPCION",F,"",T,"",F,""
+"TIPODEORDEN","Observacion","TipoOrden","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

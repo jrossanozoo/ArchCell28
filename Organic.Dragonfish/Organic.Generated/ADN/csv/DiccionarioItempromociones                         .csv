@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMPROMOCIONES","Codigo","PromDet","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMPROMOCIONES","PromocionTipo","PromDet","Tipo",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Promocion.Tipo"
+"ITEMPROMOCIONES","Idartsafec","PromDet","idItemAfec",F,"M",0,0,"TEXTO",F,"",F,"",F,""
+"ITEMPROMOCIONES","Promocion","PromDet","Promo",T,"C",15,0,"CLAVEPROMOCION",F,"PROMOCION",F,"",T,""
+"ITEMPROMOCIONES","PromocionDetalle","PromDet","descrip",T,"C",200,0,"DESCRIPCION",F,"",T,"",F,"Promocion.Descripcion"
+"ITEMPROMOCIONES","Cantidad","PromDet","Cantidad",T,"N",8,0,"NUMERICO",F,"",F,"",F,""
+"ITEMPROMOCIONES","Beneficio","PromDet","Beneficio",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMPROMOCIONES","IdItemPromocion","PromDet","IdItem",F,"G",38,0,"CARACTER",F,"",F,"=goServicios.Librerias.ObtenerGuidPk()",F,""

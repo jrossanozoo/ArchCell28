@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"AGRUPALISTADOSPERSONALIZADOS","Nombre","AgrpLtds","Nombre",T,"C",50,0,"CODIGO",T,"",F,"",T,""
+"AGRUPALISTADOSPERSONALIZADOS","Descripcion","AgrpLtds","Descrip",T,"C",250,0,"CARACTER",F,"",T,"",F,""
+"AGRUPALISTADOSPERSONALIZADOS","filtraFecha","AgrpLtds","FiltraFec",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"AGRUPALISTADOSPERSONALIZADOS","Referencias","AgrpLtdsDet","Nombre",T,"C",50,0,"DETALLEITEMREFERENCIAALISTADO",F,"",F,"",F,""
+"AGRUPALISTADOSPERSONALIZADOS","Codigo","AgrpLtds","Codigo",F,"G",38,0,"CARACTER",F,"",F,"=goServicios.Librerias.ObtenerGuidPk()",F,""
+"AGRUPALISTADOSPERSONALIZADOS","Categoria","AgrpLtds","Categoria",F,"N",2,0,"COMBOXML",F,"",F,"",F,""
+"AGRUPALISTADOSPERSONALIZADOS","Favorito","AgrpLtds","Favorito",F,"L",1,0,"SINOBOOL",F,"",F,"=.F.",F,""
+"AGRUPALISTADOSPERSONALIZADOS","Observacion","AgrpLtds","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

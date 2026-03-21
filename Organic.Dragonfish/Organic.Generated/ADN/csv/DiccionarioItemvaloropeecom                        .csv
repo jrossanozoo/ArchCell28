@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMVALOROPEECOM","Codigo","OPECOMVAL","JJNUM",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMVALOROPEECOM","NroItem","OPECOMVAL","NroItem",F,"N",5,0,"NUMERICO",F,"",F,"",F,""
+"ITEMVALOROPEECOM","Valor","OPECOMVAL","JJCO",T,"C",5,0,"CODIGOVALOR",F,"VALOR",F,"",T,""
+"ITEMVALOROPEECOM","ValorDetalle","OPECOMVAL","JJDE",T,"C",40,0,"CARACTER",F,"",F,"",F,"Valor.Descripcion"
+"ITEMVALOROPEECOM","Recibido","OPECOMVAL","JJRecib",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

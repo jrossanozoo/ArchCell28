@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIPOOBJETIVO","Codigo","TIPOOBJ","codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"TIPOOBJETIVO","Descripcion","TIPOOBJ","descri",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"TIPOOBJETIVO","Observacion","TIPOOBJ","obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

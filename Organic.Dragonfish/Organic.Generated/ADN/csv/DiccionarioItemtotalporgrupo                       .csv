@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMTOTALPORGRUPO","Codigo","ARQTOTDET","Codigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMTOTALPORGRUPO","Agrupa","ARQTOTDET","Agrupa",F,"C",5,0,"CARACTER",F,"",F,"",T,""
+"ITEMTOTALPORGRUPO","AgrupaDesc","ARQTOTDET","AgrupaDet",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMTOTALPORGRUPO","TotalGrupo","ARQTOTDET","TotGrupo",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMTOTALPORGRUPO","Arqueado","ARQTOTDET","Arqueado",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMTOTALPORGRUPO","DifGrupo","ARQTOTDET","DifGrupo",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMTOTALPORGRUPO","ArqueadoEfec","ARQTOTDET","ArqEfec",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMTOTALPORGRUPO","ArqueadoOtros","ARQTOTDET","ArqOtros",F,"N",15,2,"NUMERICO",F,"",F,"",F,""

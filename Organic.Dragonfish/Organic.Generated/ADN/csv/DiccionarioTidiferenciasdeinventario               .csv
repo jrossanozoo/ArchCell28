@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIDIFERENCIASDEINVENTARIO","Obs","TIDifInv","MObs",T,"C",200,0,"OBSERVACION",F,"",F,"",F,""
+"TIDIFERENCIASDEINVENTARIO","Codigo","TIDifInv","CODIGO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",F,""
+"TIDIFERENCIASDEINVENTARIO","Descripcion","TIDifInv","Descrip",T,"C",40,0,"CARACTER",F,"",T,"",F,""
+"TIDIFERENCIASDEINVENTARIO","Fecha","TIDifInv","FECHA",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=golibrerias.obtenerfecha()",F,""
+"TIDIFERENCIASDEINVENTARIO","Modo","TIDifInv","MODO",T,"N",1,0,"COMBOXML",F,"",F,"",T,""
+"TIDIFERENCIASDEINVENTARIO","IDInventarioAControlar","TIDifInv","IDInvCont",T,"N",8,0,"CODIGONUMERICO",F,"TIInventarioACont",F,"",T,""
+"TIDIFERENCIASDEINVENTARIO","IDInventarioFisico","TIDifInv","IdInvFis",F,"N",8,0,"CODIGONUMERICO",F,"TIInventarioFisico",F,"",F,""
+"TIDIFERENCIASDEINVENTARIO","InventariosFisicosDetalle","TIItemDifInv","CODIGO",T,"N",8,0,"DETALLEITEMINVENTARIOSFISICO",F,"",F,"",F,""
+"TIDIFERENCIASDEINVENTARIO","MSOrigenDestino","TIDifInv","MSORIGDEST",T,"C",8,0,"CODIGO",F,"ORIGENDEDATOS",F,"",T,""
+"TIDIFERENCIASDEINVENTARIO","MSMotivo","TIDifInv","MSMOTIVO",T,"C",3,0,"CODIGO",F,"MOTIVO",F,"",T,""
+"TIDIFERENCIASDEINVENTARIO","MSFecha","TIDifInv","MSFECHA",T,"D",8,0,"FECHACOMPROBANTE",F,"",F,"=golibrerias.obtenerfecha()",T,""
+"TIDIFERENCIASDEINVENTARIO","MovimientoGenerado","TIDifInv","MovGen",T,"C",20,0,"CARACTER",F,"",F,"",F,""

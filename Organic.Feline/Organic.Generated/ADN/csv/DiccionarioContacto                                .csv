@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONTACTO","Codigo","Contacto","CTCOD",T,"C",10,0,"CODIGO",T,"",F,"",T,""
+"CONTACTO","Nombre","Contacto","CTNOM",T,"C",60,0,"DESCRIPCION",F,"",T,"",T,""
+"CONTACTO","Telefonos","Contacto","CTTEL",T,"C",30,0,"CARACTER",F,"",F,"",F,""
+"CONTACTO","Email","Contacto","CTMAIL",T,"C",60,0,"MAIL",F,"",F,"",F,""
+"CONTACTO","Notas","Contacto","CTNOT",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"CONTACTO","Observacion","Contacto","CTOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

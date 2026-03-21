@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"INCONSISTENCIASAP","Codigo","INCONSAP","CodDet",F,"G",38,0,"CODIGO",T,"",F,"",T,""
+"INCONSISTENCIASAP","BaseDeDatos","INCONSAP","BaseDatos",T,"C",8,0,"CARACTER",F,"",F,"",T,""
+"INCONSISTENCIASAP","Hora","INCONSAP","Hora",T,"C",10,0,"CARACTER",F,"",F,"",F,""
+"INCONSISTENCIASAP","Fecha","INCONSAP","Fecha",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"INCONSISTENCIASAP","Comprobante","INCONSAP","Comp",T,"C",25,0,"CARACTER",F,"",T,"",F,""
+"INCONSISTENCIASAP","HoraComprobante","INCONSAP","HoraComp",T,"C",10,0,"CARACTER",F,"",F,"",F,""
+"INCONSISTENCIASAP","FechaComprobante","INCONSAP","FechaComp",T,"D",10,0,"FECHA",F,"",F,"",F,""
+"INCONSISTENCIASAP","CodigoError","INCONSAP","CodError",T,"C",10,0,"CODIGO",F,"ERRORSAP",F,"",F,""
+"INCONSISTENCIASAP","ErrorInformado","INCONSAP","Problema",T,"C",200,0,"TEXTO",F,"",F,"",F,"CodigoError.ProblemaInformado"
+"INCONSISTENCIASAP","ErrorExplicacion","INCONSAP","Explica",T,"C",200,0,"TEXTO",F,"",F,"",F,"CodigoError.Explicacion"
+"INCONSISTENCIASAP","Observacion","INCONSAP","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

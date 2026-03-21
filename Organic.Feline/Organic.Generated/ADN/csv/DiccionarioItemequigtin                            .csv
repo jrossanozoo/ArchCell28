@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMEQUIGTIN","ClaveForanea","DETGTIN","clavef",F,"C",40,0,"CARACTER",F,"",F,"",F,""
+"ITEMEQUIGTIN","Codigo","DETGTIN","Codigo",F,"C",13,0,"CARACTER",T,"",F,"",F,""
+"ITEMEQUIGTIN","Atributo","DETGTIN","atributo",T,"C",40,0,"COMBOATRIBUTOSFILTROGTIN",F,"",F,"",T,""
+"ITEMEQUIGTIN","Desde","DETGTIN","desde",T,"C",40,0,"CARACTER",F,"",F,"",F,""
+"ITEMEQUIGTIN","Hasta","DETGTIN","hasta",T,"C",40,0,"CARACTER",F,"",F,"",F,""

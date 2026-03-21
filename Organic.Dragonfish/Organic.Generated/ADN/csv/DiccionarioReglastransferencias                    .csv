@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"REGLASTRANSFERENCIAS","codigo","reglaTrans","cCod",T,"C",20,0,"CODIGO",T,"",F,"",T,""
+"REGLASTRANSFERENCIAS","descripcion","reglaTrans","cDes",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"REGLASTRANSFERENCIAS","fechadesde","reglaTrans","dDesde",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",T,""
+"REGLASTRANSFERENCIAS","fechahasta","reglaTrans","dHasta",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",T,""
+"REGLASTRANSFERENCIAS","habilitada","reglaTrans","lHabilit",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"REGLASTRANSFERENCIAS","Obs","reglaTrans","obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"REGLASTRANSFERENCIAS","transferencia","reglaTrans","trans",T,"C",50,0,"COMBOTRANSFERENCIAS",F,"",F,"",T,""
+"REGLASTRANSFERENCIAS","origen","reglaTrans","origen",T,"C",50,0,"COMBOSUCURSALESCONVACIO",F,"",F,"",F,""
+"REGLASTRANSFERENCIAS","OrigenDestino","reglaTrans","OrigDest",T,"C",8,0,"CODIGO",F,"ORIGENDEDATOS",F,"",F,""
+"REGLASTRANSFERENCIAS","motivo","reglaTrans","motivo",T,"C",3,0,"CODIGO",F,"MOTIVO",F,"",F,""
+"REGLASTRANSFERENCIAS","accion","reglaTrans","accion",T,"N",2,0,"COMBOXML",F,"",F,"",T,""
+"REGLASTRANSFERENCIAS","destino","reglaTrans","destino",T,"C",50,0,"COMBOSUCURSALES",F,"",F,"",T,""

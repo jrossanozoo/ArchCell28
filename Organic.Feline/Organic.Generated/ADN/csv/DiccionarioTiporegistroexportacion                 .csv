@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TipoRegistroExportacion","Codigo","TipRegExp","cCod",T,"C",3,0,"CODIGO",T,"",F,"",T,""
+"TipoRegistroExportacion","Descripcion","TipRegExp","cDes",T,"C",30,0,"DESCRIPCION",F,"",T,"",T,""
+"TipoRegistroExportacion","ASCII","TipRegExp","nAscii",T,"N",3,0,"NUMERICO",F,"",F,"",F,""

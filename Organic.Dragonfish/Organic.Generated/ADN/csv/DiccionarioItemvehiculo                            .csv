@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMVEHICULO","Codigo","VehiculoDet","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMVEHICULO","Dominio","VehiculoDet","Dominio",T,"C",10,0,"CARACTER",F,"",T,"",T,""
+"ITEMVEHICULO","TipoVehiculo","VehiculoDet","TipoVehi",T,"N",1,0,"COMBOXML",F,"",F,"",F,""

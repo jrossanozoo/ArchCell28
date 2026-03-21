@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMEXCLUIDOOTRAPERCEP","CodigoCliente","PerExcluido","Cod",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMEXCLUIDOOTRAPERCEP","Codigo","PerExcluido","Codigo",T,"C",10,0,"CODIGO",F,"IMPUESTO",F,"",T,""
+"ITEMEXCLUIDOOTRAPERCEP","Aplicacion","","",T,"C",10,0,"COMBOXMLIMPUESTO",F,"",F,"",F,"Impuesto.Aplicacion"
+"ITEMEXCLUIDOOTRAPERCEP","Tipo","","",T,"C",10,0,"COMBOTABLA",F,"TIPOIMPUESTO",F,"",F,"Impuesto.Tipo"
+"ITEMEXCLUIDOOTRAPERCEP","Porcentaje","","",T,"N",6,2,"NUMERICO",F,"",F,"",F,""
