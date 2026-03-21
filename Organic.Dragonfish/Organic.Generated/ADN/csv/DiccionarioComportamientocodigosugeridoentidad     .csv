@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","Entidad","ComCodSu","Entidad",T,"C",40,0,"COMBOENTIDADESCODIGOSUGERIDO",T,"",F,"",T,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","DescripcionDeLaEntidad","ComCodSu","DesEntidad",F,"C",60,0,"CARACTER",F,"",F,"",F,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","Observacion","ComCodSu","Obs",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","AnchoDisponible","ComCodSu","AnchoDispo",T,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","Sugerir","ComCodSu","Sugerir",T,"L",1,0,"SINOBOOL",F,"",F,"=.T.",F,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","IdGlobal","ComCodSu","IdGlobal",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","AnchoASugerir","ComCodSu","AnchoSuger",T,"N",2,0,"NUMERICO",F,"",F,"",T,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","UsarPrefijoBaseDeDatos","ComCodSu","PrefijoBD",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","PrefijoEntidad","ComCodSu","Prefijo",T,"C",3,0,"CARACTER",F,"",F,"",F,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","BusquedaExtendida","ComCodSu","BusqExtend",T,"L",1,0,"SINOBOOL",F,"",F,"=.T.",F,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","VistaPrevia","ComCodSu","vistaprev",T,"C",30,0,"CARACTER",F,"",F,"",F,""
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","Salta","ComCodSu","Salta",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

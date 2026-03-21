@@ -1,0 +1,3 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMINSTRUCCIONSCRIPT","Codigo","INSTSCRIPT","DET_INS",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMINSTRUCCIONSCRIPT","Instruccion","INSTSCRIPT","INSTRUC",T,"C",254,0,"CARACTER",F,"",F,"",T,""

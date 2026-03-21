@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"AGRUPAMIENTOPUBLICACIONES","Codigo","AgruPub","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"AGRUPAMIENTOPUBLICACIONES","Observaciones","AgruPub","Obs",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"AGRUPAMIENTOPUBLICACIONES","AgruPubliDetalle","AgruPubDet","Codigo",T,"G",38,0,"DETALLEITEMAGRUPAPUBLIC",F,"",F,"",F,""

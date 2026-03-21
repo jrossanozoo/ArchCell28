@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CAJASALDOS","CajaEstado","CajaSald","NumCaja",T,"N",2,0,"CODIGONUMERICO",F,"CAJAESTADO",F,"",F,""
+"CAJASALDOS","Valor","CajaSald","Valor",T,"C",5,0,"CODIGO",F,"VALOR",F,"",T,""
+"CAJASALDOS","Saldo","CajaSald","Saldo",T,"N",16,2,"NUMERICO",F,"",F,"",F,""
+"CAJASALDOS","Id","CajaSald","Codigo",T,"C",50,0,"CODIGO",T,"",F,"",T,""
+"CAJASALDOS","TipoComprobante","CajaSald","TipoComp",T,"C",3,0,"CARACTER",F,"",F,"",F,""
+"CAJASALDOS","Letra","CajaSald","Letra",T,"C",1,0,"CARACTER",F,"",F,"",F,""

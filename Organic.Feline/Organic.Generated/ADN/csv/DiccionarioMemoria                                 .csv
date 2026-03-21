@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MEMORIA","codigo","mem","codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"MEMORIA","usuario","mem","usuario",F,"C",100,0,"CARACTER",F,"",F,"",F,""
+"MEMORIA","tipo","mem","tipo",F,"C",254,0,"CARACTER",F,"",F,"",F,""
+"MEMORIA","xml","mem","xml",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""

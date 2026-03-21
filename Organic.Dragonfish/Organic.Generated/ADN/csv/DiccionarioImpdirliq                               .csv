@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"IMPDIRLIQ","Numero","IMPDIRLIQ","NUMERO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",T,""
+"IMPDIRLIQ","Descripcion","IMPDIRLIQ","Descripcio",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"IMPDIRLIQ","PlanDeCuentas","IMPDIRLIQ","PCUENTA",T,"C",30,0,"CODIGO",F,"PLANDECUENTAS",F,"",T,""
+"IMPDIRLIQ","Importancia","IMPDIRLIQ","Importanci",T,"N",5,0,"NUMERICONONEGATIVO",F,"",F,"",T,""
+"IMPDIRLIQ","f_Concepto_Desde","IMPDIRLIQ","ConDesde",T,"C",50,0,"EtiquetaCaracterDesdeHasta",F,"",F,"",F,""
+"IMPDIRLIQ","f_Concepto_Hasta","IMPDIRLIQ","ConHasta",T,"C",50,0,"EtiquetaCaracterDesdeHasta",F,"",F,"ZZZZZZZZZZZZZZZZZZ",F,""
+"IMPDIRLIQ","f_Sucursal_Desde","IMPDIRLIQ","SucDesde",T,"C",10,0,"EtiquetaCaracterDesdeHastaBusc",F,"SUCURSAL",F,"",F,""
+"IMPDIRLIQ","f_Sucursal_Hasta","IMPDIRLIQ","SucHasta",T,"C",10,0,"EtiquetaCaracterDesdeHastaBusc",F,"SUCURSAL",F,"ZZZZZZZZZZ",F,""
+"IMPDIRLIQ","f_TipoSucursal_Desde","IMPDIRLIQ","TSucDesde",T,"C",10,0,"EtiquetaCaracterDesdeHastaBusc",F,"TIPOSUCURSAL",F,"",F,""
+"IMPDIRLIQ","f_TipoSucursal_Hasta","IMPDIRLIQ","TSucHasta",T,"C",10,0,"EtiquetaCaracterDesdeHastaBusc",F,"TIPOSUCURSAL",F,"ZZZZZZZZZZ",F,""
+"IMPDIRLIQ","BaseDeDatos","IMPDIRLIQ","Base",T,"C",21,0,"COMBOSUCYAGRUCONVACIO",F,"",F,"",F,""
+"IMPDIRLIQ","Observacion","IMPDIRLIQ","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

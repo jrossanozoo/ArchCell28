@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"SELECCIONPARAINSERTAR","Codigo","SelEnt","cCod",F,"C",1,0,"CODIGO",T,"",F,"",F,""
+"SELECCIONPARAINSERTAR","Descripcion","","",F,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"SELECCIONPARAINSERTAR","Entidad","","",T,"C",38,0,"COMBO",F,"",F,"",F,""
+"SELECCIONPARAINSERTAR","Observacion","","",F,"C",10,0,"OBSERVACION1R",F,"",F,"",F,""
+"SELECCIONPARAINSERTAR","Ordenar","","",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

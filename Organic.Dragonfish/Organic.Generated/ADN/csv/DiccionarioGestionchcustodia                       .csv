@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"GESTIONCHCUSTODIA","Codigo","CHCUSTODIA","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",T,""
+"GESTIONCHCUSTODIA","Numero","CHCUSTODIA","Numero",T,"N",8,0,"CLAVEDEBUSQUEDA",F,"",F,"",T,""
+"GESTIONCHCUSTODIA","Fecha","CHCUSTODIA","Fecha",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",T,""
+"GESTIONCHCUSTODIA","FechaDesdeEmi","","",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"GESTIONCHCUSTODIA","FechaHastaEmi","","",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"GESTIONCHCUSTODIA","FechaDesdePago","","",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"GESTIONCHCUSTODIA","FechaHastaPago","","",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"GESTIONCHCUSTODIA","DetalleChCustodia","CHCUSTODIADET","Codigo",T,"G",38,0,"DETALLEITEMCHCUSTODIA",F,"",F,"",F,""
+"GESTIONCHCUSTODIA","Obs","CHCUSTODIA","Obs",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""

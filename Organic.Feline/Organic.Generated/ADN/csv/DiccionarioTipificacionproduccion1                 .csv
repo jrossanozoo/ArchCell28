@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIPIFICACIONPRODUCCION1","Codigo","TIPOPROD1","CodCons",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"TIPIFICACIONPRODUCCION1","Descripcion","TIPOPROD1","Descrip",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"TIPIFICACIONPRODUCCION1","Observ","TIPOPROD1","CObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

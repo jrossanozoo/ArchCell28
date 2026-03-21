@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"SELECCIONDESPACHO","Codigo","DespSel","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"SELECCIONDESPACHO","Relleno","","",F,"C",1,0,"CARACTER",F,"",T,"",F,""
+"SELECCIONDESPACHO","DetalleArticulosDespachos","DespSelDet","Codigo",T,"C",10,0,"DETALLEITEMSELECCIONDESPACHO",F,"",F,"",F,""
+"SELECCIONDESPACHO","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""

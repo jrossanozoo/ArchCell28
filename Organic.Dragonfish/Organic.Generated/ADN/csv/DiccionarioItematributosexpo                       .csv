@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMATRIBUTOSEXPO","Codigo","DisExpoAtri","iCod",F,"C",40,0,"CODIGO",T,"",F,"",F,""
+"ITEMATRIBUTOSEXPO","Area","DisExpoAtri","cArea",T,"C",20,0,"CARACTER",F,"",F,"",T,""
+"ITEMATRIBUTOSEXPO","Tipo","DisExpoAtri","cTipo",T,"C",3,0,"CODIGO",F,"TipoatributosExportacion",F,"="ATR"",F,""
+"ITEMATRIBUTOSEXPO","TipoDetalle","DisExpoAtri","cTipDet",T,"C",100,0,"CARACTER",F,"",T,"="Atributo"",F,"Tipo.Descripcion"
+"ITEMATRIBUTOSEXPO","Atributo","DisExpoAtri","cAtributo",T,"C",100,0,"CARACTER",F,"",F,"",F,""
+"ITEMATRIBUTOSEXPO","Orden","DisExpoAtri","nOrden",T,"N",3,0,"NUMERICO",F,"",F,"",F,""
+"ITEMATRIBUTOSEXPO","Ancho","DisExpoAtri","nLong",T,"N",3,0,"NUMERICO",F,"",F,"",F,""
+"ITEMATRIBUTOSEXPO","Conversion","DisExpoAtri","cConv",T,"C",40,0,"CODIGO",F,"conversion",F,"",F,""
+"ITEMATRIBUTOSEXPO","Formato","DisExpoAtri","cFormato",T,"C",40,0,"CODIGO",F,"FormatoExportacion",F,"",F,""

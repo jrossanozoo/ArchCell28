@@ -1,0 +1,267 @@
+
+<log4net>
+	<appender name="AP_EVENTLOGAPPENDERADVERTENCIAS" type="log4net.Appender.EventLogAppender" >
+		<applicationName value="|@_Screen.Zoo.App.Nombre@|" />
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+		<threshold value="WARN" />
+	</appender>
+	<appender name="AP_IMPORTACION04974" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\IMPORTACION04974.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_KONTROLER" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\operaciones.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_MANAGERTRANSFERENCIAABASEDEDATOS" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\recepciontransferencias.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_MENSAJESMODOSILENCIOSO" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\operaciones.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+<appender name="AP_REMITOELECTRONICO" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\remitoelectronicoarba.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_SMTPAPPENDERADVERTENCIAS" type="log4net.Appender.SmtpAppender">
+		<smtpHost value="|@alltrim( goParametros.Nucleo.Logueos.SMTPHost )@|" />
+		<port value="|@int( goParametros.Nucleo.Logueos.Puerto )@|" />
+		<authentication value="|@alltrim( goParametros.Nucleo.Logueos.ModoAutenticacion )@|" />
+		<userName value="|@alltrim( goParametros.Nucleo.Logueos.Usuario )@|" />
+		<password value="|@alltrim( goParametros.Nucleo.Logueos.Password )@|" />
+		<to value="|@alltrim( goParametros.Nucleo.Logueos.Destinatario )@|" />
+		<from value="|@alltrim( goParametros.Nucleo.Logueos.Remitente )@|" />
+		<subject value="|@alltrim( goParametros.Nucleo.Logueos.Asunto )@|" />
+		<bufferSize value="1" />
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+		<threshold value="WARN" />
+	</appender>
+	<appender name="AP_SEGURIDAD" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\operaciones.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_ENTIDAD" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\operaciones.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_ENTIDADCOMPROBANTEDEVENTA" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\ENTIDADCOMPROBANTEDEVENTA.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_MANAGEREXPORTACIONES" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\operaciones.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_MANAGERTRANSFERENCIAS" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\recepciontransferencias.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_PLANTILLAIMPOEXPO" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\operaciones.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_PREPARACIONIMPOEXPO" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\operaciones.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_PROCESOIMPORTACION" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\operaciones.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_RECEPCIONTRANSFERENCIAS" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\recepciontransferencias.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+	<appender name="AP_ZOOSESSION" type="ZooLogicSA.Core.zooRollingfileappender">
+		<file value=".\LOG\ZOOSESSION.log"/>
+		<appendToFile value="true"/>
+		<maximumFileSize value="2048KB"/>
+		<rollingStyle value="size"/>
+		<maxSizeRollBackups value="10"/>
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline%message%newline"/>
+		</layout>
+	</appender>
+<appender name="AP_LOG.ERR" type="ZooLogicSA.Core.zooRollingfileappender">
+	<file value=".\LOG\log.err"/>
+	<appendToFile value="true"/>
+	<maximumFileSize value="1000KB"/>
+	<rollingStyle value="size"/>
+	<maxSizeRollBackups value="2"/>
+	<lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+	<layout type="log4net.Layout.PatternLayout">
+		<conversionPattern value="%date{dd/MM/yyyy}, Base: %property{BaseDatos}, Usuario: %property{Usuario}, Aplicaci&#243;n: %property{Aplicacion}, Versi&#243;n: %property{Version}, Serie: %property{Serie}%newline	           Estado del sistema: %property{EstadoSistema}, Nombre de la PC: %property{NombrePc}, Usuario de la PC: %property{UsuarioPc}, Origen logueo: %property{OrigenLogueo}%newline %message%newline"/>
+	</layout>
+</appender>
+	<logger name="ENTIDAD">
+		<level value="All"/>
+		<appender-ref ref="AP_ENTIDAD"/>
+	</logger>
+	<logger name="ENTIDADCOMPROBANTEDEVENTA">
+		<level value="All"/>
+		<appender-ref ref="AP_ENTIDADCOMPROBANTEDEVENTA"/>
+	</logger>
+	<logger name="IMPORTACION04974">
+		<level value="All"/>
+		<appender-ref ref="AP_IMPORTACION04974"/>
+	</logger>
+	<logger name="KONTROLER">
+		<level value="All"/>
+		<appender-ref ref="AP_KONTROLER"/>
+	</logger>
+	<logger name="LOG.ERR">
+		<level value="All"/>
+		<appender-ref ref="AP_LOG.ERR"/>
+	</logger>
+	<logger name="MANAGEREXPORTACIONES">
+		<level value="All"/>
+		<appender-ref ref="AP_MANAGEREXPORTACIONES"/>
+	</logger>
+	<logger name="MANAGERLOGUEOARBA">
+		<level value="All"/>
+		<appender-ref ref="AP_REMITOELECTRONICO"/>
+	</logger>
+	<logger name="MANAGERTRANSFERENCIAABASEDEDATOS">
+		<level value="All"/>
+		<appender-ref ref="AP_MANAGERTRANSFERENCIAABASEDEDATOS"/>
+	</logger>
+	<logger name="MANAGERTRANSFERENCIAS">
+		<level value="All"/>
+		<appender-ref ref="AP_MANAGERTRANSFERENCIAS"/>
+	</logger>
+	<logger name="MENSAJESMODOSILENCIOSO">
+		<level value="All"/>
+		<appender-ref ref="AP_MENSAJESMODOSILENCIOSO"/>
+	</logger>
+	<logger name="PLANTILLAIMPOEXPO">
+		<level value="All"/>
+		<appender-ref ref="AP_EVENTLOGAPPENDERADVERTENCIAS"/>
+		<appender-ref ref="AP_SMTPAPPENDERADVERTENCIAS"/>
+		<appender-ref ref="AP_PLANTILLAIMPOEXPO"/>
+	</logger>
+	<logger name="PREPARACIONIMPOEXPO">
+		<level value="All"/>
+		<appender-ref ref="AP_PREPARACIONIMPOEXPO"/>
+	</logger>
+	<logger name="PROCESOIMPORTACION">
+		<level value="All"/>
+		<appender-ref ref="AP_PROCESOIMPORTACION"/>
+	</logger>
+	<logger name="RECEPCIONTRANSFERENCIAS">
+		<level value="All"/>
+		<appender-ref ref="AP_RECEPCIONTRANSFERENCIAS"/>
+	</logger>
+	<logger name="SEGURIDAD">
+		<level value="All"/>
+		<appender-ref ref="AP_SEGURIDAD"/>
+	</logger>
+	<logger name="ZOOSESSION">
+		<level value="All"/>
+		<appender-ref ref="AP_ZOOSESSION"/>
+	</logger>
+</log4net>

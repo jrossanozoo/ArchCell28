@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMDATOSPLANES","Codigo","DetDatosTarj","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMDATOSPLANES","Cuota","","",T,"N",3,0,"NUMERICO",F,"",F,"",F,""
+"ITEMDATOSPLANES","MontoDesde","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMDATOSPLANES","TipoDeMonto","","",T,"C",35,0,"CARACTER",F,"",F,"",F,""
+"ITEMDATOSPLANES","Recargo","","",T,"N",8,4,"NUMERICO",F,"",F,"",F,""
+"ITEMDATOSPLANES","TotalRecargo","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMDATOSPLANES","TotalPorCuota","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMDATOSPLANES","Total","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

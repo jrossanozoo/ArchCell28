@@ -1,0 +1,3 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMENTIDADESMAIL","Codigo","DisEntMAIL","iCod",F,"C",40,0,"CODIGO",T,"",F,"",F,""
+"ITEMENTIDADESMAIL","Entidad","DisEntMAIL","iEnt",T,"C",40,0,"COMBOENTIDADESMENU",F,"",F,"",F,""

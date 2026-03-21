@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAJAUDIARTICULOS","codigo","ajAudiArtdet","ajdCodigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMAJAUDIARTICULOS","Articulo","ajAudiArtdet","ajdArt",T,"C",13,0,"CODIGO",F,"ARTICULO",F,"",F,""
+"ITEMAJAUDIARTICULOS","ArticuloDetalle","ajAudiArtdet","ajdADesc",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,"articulo.descripcion"
+"ITEMAJAUDIARTICULOS","StockAct","ajAudiArtdet","ajdstock",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMAJAUDIARTICULOS","StockProy","ajAudiArtdet","ajdProy",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMAJAUDIARTICULOS","Cantidad","ajAudiArtdet","ajdCant",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

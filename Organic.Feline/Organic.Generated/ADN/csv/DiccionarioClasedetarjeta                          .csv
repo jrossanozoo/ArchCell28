@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CLASEDETARJETA","Codigo","ClaTarj","CdtCodigo",T,"C",5,0,"CODIGO",T,"",F,"",T,""
+"CLASEDETARJETA","Descripcion","ClaTarj","CdTDesc",T,"C",40,0,"DESCRIPCION",F,"",T,"",T,""
+"CLASEDETARJETA","Observacion","ClaTarj","CdTObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

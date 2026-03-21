@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIPODEOPERACIONAFIP","Codigo","OPERAFIP","TOCOD",T,"C",2,0,"CODIGO",T,"",F,"",T,""
+"TIPODEOPERACIONAFIP","Descripcion","OPERAFIP","TODES",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"TIPODEOPERACIONAFIP","Obs","OPERAFIP","TOOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

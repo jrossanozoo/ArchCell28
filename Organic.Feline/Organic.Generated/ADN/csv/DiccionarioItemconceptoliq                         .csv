@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCONCEPTOLIQ","Codigo","liqdiariaDet","codigo",F,"C",24,0,"CODIGO",T,"",F,"",F,""
+"ITEMCONCEPTOLIQ","Concepto","liqdiariaDet","Concepto",T,"C",50,0,"CODIGO",F,"CONCEPTOLIQUIDACIONTARJETA",F,"",T,""
+"ITEMCONCEPTOLIQ","ConceptoDetalle","liqdiariaDet","ConDescri",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Concepto.descripcion"
+"ITEMCONCEPTOLIQ","Monto","liqdiariaDet","monto",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCONCEPTOLIQ","Suma","liqdiariaDet","Suma",F,"L",1,0,"SINOBOOL",F,"",F,"",F,""

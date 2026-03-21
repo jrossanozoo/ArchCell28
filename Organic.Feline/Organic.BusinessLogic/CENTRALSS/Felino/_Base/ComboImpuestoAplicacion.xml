@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Percepción</valor>
+		<cdefault>retorno</cdefault>
+		<orden>1</orden>
+		<retorno>PRC</retorno>
+	</xml>
+	<xml>
+		<valor>Retención</valor>
+		<cdefault>retorno</cdefault>
+		<orden>2</orden>
+		<retorno>RTN</retorno>
+	</xml>
+	<xml>
+		<valor>Otros</valor>
+		<cdefault>retorno</cdefault>
+		<orden>3</orden>
+		<retorno>OTR</retorno>
+	</xml>
+</VFPData>

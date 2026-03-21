@@ -1,0 +1,5763 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<entidades>
+		<entidad>COLOR</entidad>
+		<descripcion>Colores</descripcion>
+		<titulo>Colores</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PAISES</entidad>
+		<descripcion>Países</descripcion>
+		<titulo>Países</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PROVINCIA</entidad>
+		<descripcion>Provincias</descripcion>
+		<titulo>Provincias</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>VENDEDOR</entidad>
+		<descripcion>Vendedores</descripcion>
+		<titulo>Vendedores</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ARTICULO</entidad>
+		<descripcion>Artículos</descripcion>
+		<titulo>Artículos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PROVEEDOR</entidad>
+		<descripcion>Proveedores</descripcion>
+		<titulo>Proveedores</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MONEDA</entidad>
+		<descripcion>Monedas</descripcion>
+		<titulo>Monedas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>VALOR</entidad>
+		<descripcion>Valores</descripcion>
+		<titulo>Valores</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>GRUPOVALOR</entidad>
+		<descripcion>Agrupamiento de valores</descripcion>
+		<titulo>Grupos de valores</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONCEPTOCAJA</entidad>
+		<descripcion>Conceptos</descripcion>
+		<titulo>Conceptos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LISTADEPRECIOS</entidad>
+		<descripcion>Listas de precios</descripcion>
+		<titulo>Listas de precios</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLIENTE</entidad>
+		<descripcion>Clientes</descripcion>
+		<titulo>Clientes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ENTIDADFINANCIERA</entidad>
+		<descripcion>Entidades financieras</descripcion>
+		<titulo>Entidades financieras</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MOTIVO</entidad>
+		<descripcion>Motivos</descripcion>
+		<titulo>Motivos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ORIGENDEDATOS</entidad>
+		<descripcion>Orígenes de datos</descripcion>
+		<titulo>Orígenes de datos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMONEDA</entidad>
+		<descripcion>Item del detalle de moneda</descripcion>
+		<titulo>Línea detalle moneda</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Factura</entidad>
+		<descripcion>Factura manual de venta</descripcion>
+		<titulo>Factura manual de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorytalle_ComprobanteDeVentasConValores</herencia>
+		<kontroler>ComprobanteDeVentasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemvalores</entidad>
+		<descripcion>Items de valores</descripcion>
+		<titulo>Línea detalle valores</titulo>
+		<tipo>I</tipo>
+		<herencia>VALORESVENTA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemimpuestos</entidad>
+		<descripcion>Items de impuestos</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Agrupamiento</entidad>
+		<descripcion>Agrupamientos de bases de datos</descripcion>
+		<titulo>Agrupamientos de bases de datos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itembasededatos</entidad>
+		<descripcion>Item de bases de datos</descripcion>
+		<titulo>Item de bases de datos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemagrupamiento</entidad>
+		<descripcion>Item de agrupamientos</descripcion>
+		<titulo>Item de agrupamientos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>AGRUPAMIENTOPORCOMPANIA</entidad>
+		<descripcion>Agrupamientos de bases de datos por compania</descripcion>
+		<titulo>Agrupamientos de bases de datos por compania</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItembasededatosPorComp</entidad>
+		<descripcion>Item de bases de datos por compania</descripcion>
+		<titulo>Item de bases de datos por compania</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemagrupamientoPorComp</entidad>
+		<descripcion>Item de agrupamientos por compania</descripcion>
+		<titulo>Item de agrupamientos por compania</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Material</entidad>
+		<descripcion>Materiales</descripcion>
+		<titulo>Materiales de artículos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Talonario</entidad>
+		<descripcion>Talonarios</descripcion>
+		<titulo>Talonarios</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Numeraciones</entidad>
+		<descripcion>Numeraciones</descripcion>
+		<titulo>Numeraciones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemtalonario</entidad>
+		<descripcion>Item Talonario</descripcion>
+		<titulo>Item talonario</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMPROBANTEDECAJA</entidad>
+		<descripcion>Comprobantes de caja</descripcion>
+		<titulo>Comprobantes de caja</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeFondos</herencia>
+		<kontroler>ComprobanteDeFondos</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVALORESCAJA</entidad>
+		<descripcion>Items de valores para movimientos de caja</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia>ValoresFondos</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Notadecredito</entidad>
+		<descripcion>Nota de crédito manual de venta</descripcion>
+		<titulo>Nota de crédito manual de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorytalle_ComprobanteDeVentasConValores</herencia>
+		<kontroler>ComprobanteDeVentasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Notadedebito</entidad>
+		<descripcion>Nota de débito manual de venta</descripcion>
+		<titulo>Nota de débito manual de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorytalle_ComprobanteDeVentasConValores</herencia>
+		<kontroler>ComprobanteDeVentasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Ticketfactura</entidad>
+		<descripcion>Factura fiscal de venta</descripcion>
+		<titulo>Factura fiscal de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorytalle_ComprobanteDeVentasConValores</herencia>
+		<kontroler>ComprobanteDeVentasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Ticketnotadecredito</entidad>
+		<descripcion>Nota de crédito fiscal de venta</descripcion>
+		<titulo>Nota de crédito fiscal de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorytalle_ComprobanteDeVentasConValores</herencia>
+		<kontroler>ComprobanteDeVentasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Ticketnotadedebito</entidad>
+		<descripcion>Nota de débito fiscal de venta</descripcion>
+		<titulo>Nota de débito fiscal de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorytalle_ComprobanteDeVentasConValores</herencia>
+		<kontroler>ComprobanteDeVentasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Stockarticulos</entidad>
+		<descripcion>Stock de artículos</descripcion>
+		<titulo>Stock de artículos</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_stock</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Cajaauditoria</entidad>
+		<descripcion>Caja auditoría</descripcion>
+		<titulo>Caja auditoría</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemcajaauditoria</entidad>
+		<descripcion>Valores de la caja de auditoría</descripcion>
+		<titulo>Valores de la caja de auditoría</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Cajaestado</entidad>
+		<descripcion>Caja</descripcion>
+		<titulo>Cajas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Cajasaldos</entidad>
+		<descripcion>Saldos de caja</descripcion>
+		<titulo>Saldos de caja</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Movimientodecaja</entidad>
+		<descripcion>Movimientos de caja</descripcion>
+		<titulo>Movimientos de caja</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Ctacte</entidad>
+		<descripcion>Cuenta corriente</descripcion>
+		<titulo>Cuentas corrientes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Buzon</entidad>
+		<descripcion>Buzones</descripcion>
+		<titulo>Buzones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Informacionadicionalcompvtas</entidad>
+		<descripcion>Información adicional</descripcion>
+		<titulo>Información adicional</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Memoria</entidad>
+		<descripcion>Memoria</descripcion>
+		<titulo>Memoria formulario</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Talle</entidad>
+		<descripcion>Talle</descripcion>
+		<titulo>Talles</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Temporada</entidad>
+		<descripcion>Temporada</descripcion>
+		<titulo>Temporadas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Modificacionprecios</entidad>
+		<descripcion>Modificación de precios</descripcion>
+		<titulo>Modificaciones de precios</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemmodificacionprecios</entidad>
+		<descripcion>Item modificación de precios</descripcion>
+		<titulo>Item modificación de precios</titulo>
+		<tipo>I</tipo>
+		<herencia>MODIFICACIONPRECIOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Movimientodestock</entidad>
+		<descripcion>Movimiento de stock</descripcion>
+		<titulo>Movimiento de stock</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteMovStock</herencia>
+		<kontroler>Comprobante</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemmovstock</entidad>
+		<descripcion>Items de movimiento de stock</descripcion>
+		<titulo>Items de movimiento de stock</titulo>
+		<tipo>I</tipo>
+		<herencia>COLORYTALLE_MovStock</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Preciodearticulo</entidad>
+		<descripcion>Precios de artículos</descripcion>
+		<titulo>Precios de artículos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemarticulosventas</entidad>
+		<descripcion>Items de facturas</descripcion>
+		<titulo>Linea detalle factura</titulo>
+		<tipo>I</tipo>
+		<herencia>COLORYTALLE_ARTICULOSVENTA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Stockcombinacion</entidad>
+		<descripcion>Stock combinación</descripcion>
+		<titulo>Stock combinación</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_stock</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLASIFICACIONCLIENTE</entidad>
+		<descripcion>Clasificaciones de clientes</descripcion>
+		<titulo>Clasificaciones de clientes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Disenoimpresion</entidad>
+		<descripcion>Diseño de salida</descripcion>
+		<titulo>Diseños de salida</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemareasimpresion</entidad>
+		<descripcion>Item areas impresión</descripcion>
+		<titulo>Item areas impresión</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itematributosimpresion</entidad>
+		<descripcion>Item atributos impresión</descripcion>
+		<titulo>Item atributos impresión</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Tipoareaimpresion</entidad>
+		<descripcion>Tipo de área de impresión</descripcion>
+		<titulo>Tipos de áreas de impresión</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Estiloimpresion</entidad>
+		<descripcion>Fuentes</descripcion>
+		<titulo>Fuentes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Tipoatributoimpresion</entidad>
+		<descripcion>Tipo de atributo de impresión</descripcion>
+		<titulo>Tipos de atributos de impresión</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemcomprobante</entidad>
+		<descripcion>Detalle de comprobantes</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>EQUIVALENCIA</entidad>
+		<descripcion>Equivalencia</descripcion>
+		<titulo>Equivalencias</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>RedondeoDePrecios</entidad>
+		<descripcion>Redondeos</descripcion>
+		<titulo>Redondeos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemRedondeoTabla</entidad>
+		<descripcion>Item de redondeos por tabla</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemRedondeoCentavos</entidad>
+		<descripcion>Item de redondeos por centavos</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemRedondeoEnteros</entidad>
+		<descripcion>Item de redondeos por enteros</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemPruebaRedondeo</entidad>
+		<descripcion>Item de prueba para redondeos</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DisenoImpo</entidad>
+		<descripcion>Diseño de importación</descripcion>
+		<titulo>Diseños de importación</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ImpoExpo</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemAtributosImpo</entidad>
+		<descripcion>Item atributos importación</descripcion>
+		<titulo>Item atributos importación</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemAreasImpo</entidad>
+		<descripcion>Item areas importación</descripcion>
+		<titulo>Item areas importación</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DisenoExpo</entidad>
+		<descripcion>Diseño de exportación</descripcion>
+		<titulo>Diseños de exportación</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImpoExpo</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemAtributosExpo</entidad>
+		<descripcion>Item atributos exportación</descripcion>
+		<titulo>Item atributos exportación</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemAreasExpo</entidad>
+		<descripcion>Item areas exportación</descripcion>
+		<titulo>Item areas exportación</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONDICIONIMPO</entidad>
+		<descripcion>Condiciones de exclusión</descripcion>
+		<titulo>Condiciones de exclusión</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FormatoExportacion</entidad>
+		<descripcion>Formatos para exportación/importación</descripcion>
+		<titulo>Formatos para exportaciones/importaciones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TipoAreaExportacion</entidad>
+		<descripcion>Tipos de área para exportación/importación</descripcion>
+		<titulo>Tipos de área para exportación/importación</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TipoAtributosExportacion</entidad>
+		<descripcion>Tipo de atributo para exportación/importación</descripcion>
+		<titulo>Tipos de atributos para exportación/importación</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TipoArchivoExportacion</entidad>
+		<descripcion>Tipo de archivo de exportación</descripcion>
+		<titulo>Tipos de archivos de exportación</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TipoRegistroExportacion</entidad>
+		<descripcion>Tipo de registro de exportación/importación</descripcion>
+		<titulo>Tipos de registros de exportación/importación</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Conversion</entidad>
+		<descripcion>Conversión de datos</descripcion>
+		<titulo>Conversiones de datos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ConversionValores</entidad>
+		<descripcion>Valores de conversión</descripcion>
+		<titulo>Valores de conversión</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ImpoAgrupadas</entidad>
+		<descripcion>Configuración de importaciones agrupadas</descripcion>
+		<titulo>Configuración de importaciones agrupadas</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_impoexpoagrupadas</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemImpoAgrupadas</entidad>
+		<descripcion>Item diseños de importación agrupados</descripcion>
+		<titulo>Item diseños de importación agrupados</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ExpoAgrupadas</entidad>
+		<descripcion>Configuración de exportaciones agrupadas</descripcion>
+		<titulo>Configuración de exportaciones agrupadas</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_impoexpoagrupadas</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemExpoAgrupadas</entidad>
+		<descripcion>Item diseños de exportación agrupados</descripcion>
+		<titulo>Item diseños de exportación agrupados</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TipoArchivoImportacion</entidad>
+		<descripcion>Tipo de archivo de importación</descripcion>
+		<titulo>Tipos de archivos de importación</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DatosFiscales</entidad>
+		<descripcion>Esquema de datos fiscales</descripcion>
+		<titulo>Esquemas de datos fiscales</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemDatosFiscales</entidad>
+		<descripcion>Item datos fiscales</descripcion>
+		<titulo>Item datos fiscales</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Jurisdiccion</entidad>
+		<descripcion>Jurisdicciones</descripcion>
+		<titulo>Jurisdicciones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemImpuestoVentas</entidad>
+		<descripcion>Item impuestos de venta</descripcion>
+		<titulo>Item impuestos de venta</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIInventarioACont</entidad>
+		<descripcion>Inventario a controlar</descripcion>
+		<titulo>Inventarios a controlar</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIInventarioAContDetalle</entidad>
+		<descripcion>Inventario a controlar detalle</descripcion>
+		<titulo>Inventarios a controlar detalle</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIInventarioFisico</entidad>
+		<descripcion>Inventario físico</descripcion>
+		<titulo>Inventarios físicos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIInventarioFisicoDetalle</entidad>
+		<descripcion>Detalle de inventario físico</descripcion>
+		<titulo>Detalles de inventarios físicos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIDiferenciasDeInventario</entidad>
+		<descripcion>Diferencia de inventarios</descripcion>
+		<titulo>Diferencias de inventarios</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIDiferenciasDeInventarioDetalle</entidad>
+		<descripcion>Detalle de diferencia de inventarios</descripcion>
+		<titulo>Detalles de diferencias de inventarios</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemPercepciones</entidad>
+		<descripcion>Item percepciones cliente</descripcion>
+		<titulo>Percepciones I.I.B.B. cliente</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MercaderiaEnTransito</entidad>
+		<descripcion>Mercadería en tránsito</descripcion>
+		<titulo>Mercadería en tránsito</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteMovStock</herencia>
+		<kontroler>Comprobante</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemMercEnTransito</entidad>
+		<descripcion>Items de mercadería en tránsito</descripcion>
+		<titulo>Items de mercadería en tránsito</titulo>
+		<tipo>I</tipo>
+		<herencia>MovStock</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PADRONIIBB</entidad>
+		<descripcion>Padron IIBB</descripcion>
+		<titulo>Padrón I.I.B.B.</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemCAI</entidad>
+		<descripcion>Item CAI</descripcion>
+		<titulo>Item CAI</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CAI</entidad>
+		<descripcion>Códigos de autorización de impresión - CAI</descripcion>
+		<titulo>Códigos de autorización de impresión - CAI</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REMITO</entidad>
+		<descripcion>Remito de venta</descripcion>
+		<titulo>Remito de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColoryTalle_ComprobanteDeVentasSinValores</herencia>
+		<kontroler>ComprobanteDeVentasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Script</entidad>
+		<descripcion>Scripts de ejecución</descripcion>
+		<titulo>Scripts de ejecución</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemInstruccionScript</entidad>
+		<descripcion>Item de instrucciones de scripts</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Selecciondisenoimpresion</entidad>
+		<descripcion>Selección de diseño de salida</descripcion>
+		<titulo>Selección de diseño de salida</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_virtual</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ConsumoCliente</entidad>
+		<descripcion>Consumo de cliente</descripcion>
+		<titulo>Consumos de clientes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ValeDeCambio</entidad>
+		<descripcion>Vale de cambio - GiftCard</descripcion>
+		<titulo>Vale de cambio - GiftCard</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LIMITECONSUMO</entidad>
+		<descripcion>Límites de consumos</descripcion>
+		<titulo>Límites de consumos de clientes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DESCUENTO</entidad>
+		<descripcion>Descuentos y recargos</descripcion>
+		<titulo>Descuentos y recargos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REGLASTRANSFERENCIAS</entidad>
+		<descripcion>Reglas de paquetes de datos</descripcion>
+		<titulo>Reglas de paquetes de datos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Codigopostal</entidad>
+		<descripcion>Código postal</descripcion>
+		<titulo>Códigos postales</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Accionesautomaticas</entidad>
+		<descripcion>Comportamiento de entidades</descripcion>
+		<titulo>Comportamiento de entidades</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemaccionesautomaticas</entidad>
+		<descripcion>Item acciones automáticas</descripcion>
+		<titulo>Item acciones automáticas</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>UnidadDeMedida</entidad>
+		<descripcion>Unidad de medida</descripcion>
+		<titulo>Unidades de medidas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FAMILIA</entidad>
+		<descripcion>Familias</descripcion>
+		<titulo>Familias de artículos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LINEA</entidad>
+		<descripcion>Líneas</descripcion>
+		<titulo>Líneas de artículos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>GRUPO</entidad>
+		<descripcion>Grupos</descripcion>
+		<titulo>Grupos de artículos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CATEGORIADEARTICULO</entidad>
+		<descripcion>Categorías de artículos</descripcion>
+		<titulo>Categorías de artículos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLASIFICACIONARTICULO</entidad>
+		<descripcion>Clasificaciones de artículos</descripcion>
+		<titulo>Clasificaciones de artículos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPODEARTICULO</entidad>
+		<descripcion>Tipos de artículos</descripcion>
+		<titulo>Tipos de artículos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DEVOLUCION</entidad>
+		<descripcion>Cancelación de venta</descripcion>
+		<titulo>Cancelación de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColoryTalle_ComprobanteDeVentasSinValores</herencia>
+		<kontroler>ComprobanteDeVentasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLASIFICACIONPROVEEDOR</entidad>
+		<descripcion>Clasificaciones de proveedores</descripcion>
+		<titulo>Clasificaciones de proveedores</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLASIFICACIONVENDEDOR</entidad>
+		<descripcion>Clasificaciones de vendedores</descripcion>
+		<titulo>Clasificaciones de vendedores</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>RECIBO</entidad>
+		<descripcion>Recibo</descripcion>
+		<titulo>Recibo</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorytalle_ComprobanteDeVentasConValores</herencia>
+		<kontroler>ComprobanteDeVentasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMRECIBO</entidad>
+		<descripcion>Detalle de comprobante de recibos</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>AJUSTEDESTOCK</entidad>
+		<descripcion>Stock según seguimiento contra stock</descripcion>
+		<titulo>Stock según seguimiento contra stock</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJUSTEDESTOCK</entidad>
+		<descripcion>Items de ajuste de stock</descripcion>
+		<titulo>Items de ajuste de stock</titulo>
+		<tipo>I</tipo>
+		<herencia>AjusteCombinacion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJSTOCKART</entidad>
+		<descripcion>Item ajuste de stock por articulos</descripcion>
+		<titulo>ajuste stock por articulo</titulo>
+		<tipo>I</tipo>
+		<herencia>AjusteArticulos</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJAUDICOMBINACION</entidad>
+		<descripcion>Item ajuste de stock por auditoría de combinaciones</descripcion>
+		<titulo>ajuste stock por auditoría stock combinación</titulo>
+		<tipo>I</tipo>
+		<herencia>AjusteCombinacion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJAUDIARTICULOS</entidad>
+		<descripcion>Item ajuste de stock por auditoría de artículos</descripcion>
+		<titulo>ajuste stock por auditoría stock artículos</titulo>
+		<tipo>I</tipo>
+		<herencia>AjusteArticulos</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ImpresionDeEtiqueta</entidad>
+		<descripcion>Impresión de etiquetas</descripcion>
+		<titulo>Impresión de etiquetas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPETIQUETA</entidad>
+		<descripcion>Item impresión de etiquetas</descripcion>
+		<titulo>Item Impresión de etiquetas</titulo>
+		<tipo>I</tipo>
+		<herencia>ColorYTalle_Impetiqueta</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SENIAPENDIENTE</entidad>
+		<descripcion>Señas pendientes</descripcion>
+		<titulo>Seleccione señas pendientes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMSENIAPENDIENTE</entidad>
+		<descripcion>Item de seña pendiente</descripcion>
+		<titulo>Seña pendiente</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SENIA</entidad>
+		<descripcion>Seña</descripcion>
+		<titulo>Seña</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSSENIADOS</entidad>
+		<descripcion>Items de señas</descripcion>
+		<titulo>Detalle de señas</titulo>
+		<tipo>I</tipo>
+		<herencia>COLORYTALLE_ARTICULOSSENIADOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMSENIAS</entidad>
+		<descripcion>Items de la entidad seña</descripcion>
+		<titulo>Detalle de seña</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Cheque</entidad>
+		<descripcion>Cheque de tercero</descripcion>
+		<titulo>Cheques de terceros</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_CarteraDeCheques</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DISENOTRANSFORMACIONLINCE</entidad>
+		<descripcion>Asociaciones de campos Dragonfish - Lince Indumentaria</descripcion>
+		<titulo>Asociaciones de campos Dragonfish - Lince Indumentaria</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMATRIBUTOSLINCE</entidad>
+		<descripcion>Item diseño de transformación Lince</descripcion>
+		<titulo>Item diseño de transformación Lince</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PEDIDO</entidad>
+		<descripcion>Pedido de venta</descripcion>
+		<titulo>Pedido de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColoryTalle_ComprobanteDeVentasSinValores</herencia>
+		<kontroler>ComprobanteDeVentasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PRESUPUESTO</entidad>
+		<descripcion>Presupuesto de venta</descripcion>
+		<titulo>Presupuesto de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColoryTalle_ComprobanteDeVentasSinValores</herencia>
+		<kontroler>ComprobanteDeVentasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TRANSPORTISTA</entidad>
+		<descripcion>Transportistas</descripcion>
+		<titulo>Transportistas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSCOMPRA</entidad>
+		<descripcion>Items de facturas de compra</descripcion>
+		<titulo>Linea detalle factura de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>COLORYTALLE_ARTICULOSCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemImpuestoCompra</entidad>
+		<descripcion>Item impuestos de compra</descripcion>
+		<titulo>Item impuestos de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOSCOMPRAS</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FACTURADECOMPRA</entidad>
+		<descripcion>Factura de compra</descripcion>
+		<titulo>Factura de compra</titulo>
+		<tipo>E</tipo>
+		<herencia>ENTCOLORYTALLE_COMPROBANTEDECOMPRASCONVALORES</herencia>
+		<kontroler>ComprobanteDeComprasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVALORESCOMPRA</entidad>
+		<descripcion>Items de valores de compra</descripcion>
+		<titulo>Linea detalle valores de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>VALORESCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSC</entidad>
+		<descripcion>Items de impuestos de compra</descripcion>
+		<titulo>Items de impuestos de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPOIMPUESTO</entidad>
+		<descripcion>Tipos de impuesto</descripcion>
+		<titulo>Tipos de impuestos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONDICIONDEPAGO</entidad>
+		<descripcion>Condiciones de pago</descripcion>
+		<titulo>Condiciones de pago</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPUESTO</entidad>
+		<descripcion>Impuestos</descripcion>
+		<titulo>Impuestos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CALCULODEPRECIOS</entidad>
+		<descripcion>Modificación masiva de precios</descripcion>
+		<titulo>Modificación masiva de precios</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCALCULODEPRECIOS</entidad>
+		<descripcion>Item cálculo de precios</descripcion>
+		<titulo>Item cálculo de precios</titulo>
+		<tipo>I</tipo>
+		<herencia>CALCULODEPRECIOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>OPERADORADETARJETA</entidad>
+		<descripcion>Operadoras de tarjetas</descripcion>
+		<titulo>Operadoras de tarjetas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CIERREDELOTE</entidad>
+		<descripcion>Cierre de lote</descripcion>
+		<titulo>Cierre de lote</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>POS</entidad>
+		<descripcion>Dispositivos POS</descripcion>
+		<titulo>Dispositivos POS</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CUPON</entidad>
+		<descripcion>Cupones</descripcion>
+		<titulo>Cupones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DATOSTARJETA</entidad>
+		<descripcion>Datos de cobros con tarjetas</descripcion>
+		<titulo>Ingrese los datos para el cobro con tarjeta</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPLANDECUOTA</entidad>
+		<descripcion>Item de recargos y descuentos de planes de cuotas</descripcion>
+		<titulo>Item de recargos y descuentos de planes de cuotas</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMLOTE</entidad>
+		<descripcion>Item lote</descripcion>
+		<titulo>Item lote</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMOPERADORASDETARJETA</entidad>
+		<descripcion>Items de operadoras de tarjetas</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMDATOSPLANES</entidad>
+		<descripcion>Items datos planes</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TRATAMIENTOCOMPROBANTES</entidad>
+		<descripcion>Tratamiento de comprobantes fiscales</descripcion>
+		<titulo>Tratamiento de comprobantes fiscales</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CAE</entidad>
+		<descripcion>CAE</descripcion>
+		<titulo>CAE</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>EQUIVALORLINCE</entidad>
+		<descripcion>Equivalencia de valores Lince</descripcion>
+		<titulo>Equivalencia de valores Lince</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVALOREQUILINCE</entidad>
+		<descripcion>Item valores equivalencias Lince</descripcion>
+		<titulo>Item valores equivalencias Lince</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FACTURAELECTRONICA</entidad>
+		<descripcion>Factura electrónica de venta</descripcion>
+		<titulo>Factura electrónica de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorYTalle_ComprobanteElectronicoNacional</herencia>
+		<kontroler>ComprobanteElectronico</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADECREDITOELECTRONICA</entidad>
+		<descripcion>Nota de crédito electrónica de venta</descripcion>
+		<titulo>Nota de crédito electrónica de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorYTalle_ComprobanteElectronicoNacional</herencia>
+		<kontroler>ComprobanteElectronico</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADEDEBITOELECTRONICA</entidad>
+		<descripcion>Nota de débito electrónica de venta</descripcion>
+		<titulo>Nota de débito electrónica de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorYTalle_ComprobanteElectronicoNacional</herencia>
+		<kontroler>ComprobanteElectronico</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMFAVORITOSLISTADOS</entidad>
+		<descripcion>Detalle de listados favoritos</descripcion>
+		<titulo>Detalle de listados favoritos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FAVORITOLISTADOS</entidad>
+		<descripcion>Listados favoritos</descripcion>
+		<titulo>Listados favoritos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CAEPORLOTE</entidad>
+		<descripcion>Obtención de CAE por Lote</descripcion>
+		<titulo>Obtención de CAE por Lote</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ZUDESCARGALAN</entidad>
+		<descripcion>Actualizaciones para servidor de red</descripcion>
+		<titulo>Actualizaciones para servidor de red</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>INFORMACIONLISTADOS</entidad>
+		<descripcion>Información adicional de listados</descripcion>
+		<titulo>Información adicional de listados</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>BASEDEDATOS</entidad>
+		<descripcion>Base de datos</descripcion>
+		<titulo>Base de datos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CTACTECOMPRA</entidad>
+		<descripcion>Cuenta corriente de compra</descripcion>
+		<titulo>Cuenta corriente de compra</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ORDENDEPAGO</entidad>
+		<descripcion>Orden de pago</descripcion>
+		<titulo>Orden de pago</titulo>
+		<tipo>E</tipo>
+		<herencia>ENTCOLORYTALLE_COMPROBANTEDECOMPRASCONVALORES</herencia>
+		<kontroler>ComprobanteDeComprasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMORDENDEPAGO</entidad>
+		<descripcion>Item orden de pago</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMPORTAMIENTOCODIGOSUGERIDOENTIDAD</entidad>
+		<descripcion>Comportamiento de códigos</descripcion>
+		<titulo>Comportamiento de códigos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADEDEBITOCOMPRA</entidad>
+		<descripcion>Nota de débito de compra</descripcion>
+		<titulo>Nota de débito de compra</titulo>
+		<tipo>E</tipo>
+		<herencia>ENTCOLORYTALLE_COMPROBANTEDECOMPRASCONVALORES</herencia>
+		<kontroler>ComprobanteDeComprasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVALORESNDCOMPRA</entidad>
+		<descripcion>Items de valores de nota de débito de compra</descripcion>
+		<titulo>Linea detalle valores de nota de débito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>VALORESCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSNDCOMPRA</entidad>
+		<descripcion>Items de nota de débito de compra</descripcion>
+		<titulo>Linea detalle nota de débito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>COLORYTALLE_ARTICULOSCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSNDC</entidad>
+		<descripcion>Items de impuestos de nota de débito de compra</descripcion>
+		<titulo>Items de impuestos de nota de débito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTONDCOMPRA</entidad>
+		<descripcion>Item impuestos nota de débito de compra</descripcion>
+		<titulo>Item impuestos nota de débito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOSCOMPRAS</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADECREDITOCOMPRA</entidad>
+		<descripcion>Nota de crédito de compra</descripcion>
+		<titulo>Nota de crédito de compra</titulo>
+		<tipo>E</tipo>
+		<herencia>ENTCOLORYTALLE_COMPROBANTEDECOMPRASCONVALORES</herencia>
+		<kontroler>ComprobanteDeComprasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSNCCOMPRA</entidad>
+		<descripcion>Items de nota de crédito de compra</descripcion>
+		<titulo>Línea detalle nota de crédito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>COLORYTALLE_ARTICULOSCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVALORESNCCOMPRA</entidad>
+		<descripcion>Items de valores de nota de crédito de compra</descripcion>
+		<titulo>Linea detalle valores de nota de crédito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>VALORESCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSNCC</entidad>
+		<descripcion>Items de impuestos de nota de crédito de compra</descripcion>
+		<titulo>Items de impuestos de nota de crédito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTONCCOMPRA</entidad>
+		<descripcion>Item impuestos nota de crédito de compra</descripcion>
+		<titulo>Item impuestos nota de crédito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOSCOMPRAS</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SUCURSALBANCARIA</entidad>
+		<descripcion>Sucursal bancaria</descripcion>
+		<titulo>Sucursales bancarias</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CUENTABANCARIA</entidad>
+		<descripcion>Cuenta bancaria</descripcion>
+		<titulo>Cuentas bancarias</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CHEQUERA</entidad>
+		<descripcion>Chequera</descripcion>
+		<titulo>Chequeras</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CHEQUEPROPIO</entidad>
+		<descripcion>Cheque propio</descripcion>
+		<titulo>Cheques propios</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_CarteraDeCheques</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ESTADOCONTROLADORFISCAL</entidad>
+		<descripcion>Estado de los controladores fiscales</descripcion>
+		<titulo>Estado de los controladores fiscales</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CORREDOR</entidad>
+		<descripcion>Corredores</descripcion>
+		<titulo>Corredores</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MOVIMIENTOSINTERNOSLINCE</entidad>
+		<descripcion>Movimientos internos Lince</descripcion>
+		<titulo>Movimientos Internos Lince</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CUPONESPENDIENTES</entidad>
+		<descripcion>Detalle de cupones</descripcion>
+		<titulo>Detalle de cupones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCUPON</entidad>
+		<descripcion>Item cupón</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia>Cupon</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CANJEDECUPONES</entidad>
+		<descripcion>Canje de valores</descripcion>
+		<titulo>Canje de valores</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeFondos</herencia>
+		<kontroler>ComprobanteDeFondos</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCANJECUPONES</entidad>
+		<descripcion>Item canje de cupones</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia>ValoresFondos</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FACTURAELECTRONICAEXPORTACION</entidad>
+		<descripcion>Factura electrónica exportación de venta</descripcion>
+		<titulo>Factura electrónica exportación de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteElectronicoExportacion</herencia>
+		<kontroler>ComprobanteElectronicoExportacion</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>INCOTERMS</entidad>
+		<descripcion>Incoterms</descripcion>
+		<titulo>Incoterms</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>UNIDADDEMEDIDAAFIP</entidad>
+		<descripcion>Unidad de medida AFIP</descripcion>
+		<titulo>Unidades de medida AFIP</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPAIS</entidad>
+		<descripcion>Item de paises</descripcion>
+		<titulo>Item de paises</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PAISAFIP</entidad>
+		<descripcion>Pais AFIP</descripcion>
+		<titulo>Pais AFIP</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MONEDAAFIP</entidad>
+		<descripcion>Moneda AFIP</descripcion>
+		<titulo>Moneda AFIP</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADECREDITOELECTRONICAEXPORTACION</entidad>
+		<descripcion>Nota de crédito electrónica exportación de venta</descripcion>
+		<titulo>Nota de crédito electrónica exportación de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteElectronicoExportacion</herencia>
+		<kontroler>ComprobanteElectronicoExportacion</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADEDEBITOELECTRONICAEXPORTACION</entidad>
+		<descripcion>Nota de débito electrónica exportación de venta</descripcion>
+		<titulo>Nota de débito electrónica exportación de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteElectronicoExportacion</herencia>
+		<kontroler>ComprobanteElectronicoExportacion</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>AGRUPAMIENTODEBUZONES</entidad>
+		<descripcion>Agrupamientos de buzones</descripcion>
+		<titulo>Agrupamientos de buzones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAGRUPAMIENTOBUZONES</entidad>
+		<descripcion>Item de agrupamientos de bases de datos</descripcion>
+		<titulo>Item agrupamientos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMBUZONES</entidad>
+		<descripcion>Item de agrupamientos de bases de datos</descripcion>
+		<titulo>Item agrupamientos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPRIMIRCOMPROBANTEPORLOTE</entidad>
+		<descripcion>Imprimir comprobante por Lote</descripcion>
+		<titulo>Imprimir comprobante por Lote</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMACREDITACIONDEPLAN</entidad>
+		<descripcion>Item acreditación de plan de cuotas</descripcion>
+		<titulo>Item acreditación de plan de cuotas</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PALETADECOLORES</entidad>
+		<descripcion>Paleta de colores</descripcion>
+		<titulo>Paletas de colores</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CURVADETALLES</entidad>
+		<descripcion>Curva de talles</descripcion>
+		<titulo>Curvas de talles</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMTALLES</entidad>
+		<descripcion>Item de curva de talles</descripcion>
+		<titulo>Item de curva de talles</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCOLORES</entidad>
+		<descripcion>Item de paleta de colores</descripcion>
+		<titulo>Item de paleta de colores</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FORMULA</entidad>
+		<descripcion>Fórmulas de modificación de precios</descripcion>
+		<titulo>Fórmulas de modificación de precios</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Saltodecampo</entidad>
+		<descripcion>Comportamiento de atributos</descripcion>
+		<titulo>Comportamiento de atributos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMISION</entidad>
+		<descripcion>Comisiones por ventas</descripcion>
+		<titulo>Comisiones por ventas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SUCURSAL</entidad>
+		<descripcion>Sucursal</descripcion>
+		<titulo>Sucursales</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPOSUCURSAL</entidad>
+		<descripcion>Tipo de sucursal</descripcion>
+		<titulo>Tipos de sucursales</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LINEASUCURSAL</entidad>
+		<descripcion>Línea de sucursal</descripcion>
+		<titulo>Líneas de sucursales</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SEGMENTACION</entidad>
+		<descripcion>Segmentación de sucursal</descripcion>
+		<titulo>Segmentaciones de sucursales</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLASEDETARJETA</entidad>
+		<descripcion>Clases de tarjetas</descripcion>
+		<titulo>Clases de tarjetas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCLASEDETARJETA</entidad>
+		<descripcion>Items de operadora de tarjeta</descripcion>
+		<titulo>Linea detalle clases de tarjeta</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMINVENTARIOSFISICO</entidad>
+		<descripcion>Item de inventarios físicos</descripcion>
+		<titulo>Item de inventarios físicos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIInventarioFisicoDetalleTmp</entidad>
+		<descripcion>Detalle de inventario físico temporal</descripcion>
+		<titulo>Detalles de inventarios físicos temporal</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Picking</entidad>
+		<descripcion>Picking</descripcion>
+		<titulo>Picking</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemcomprobantespicking</entidad>
+		<descripcion>Item comprobantes picking</descripcion>
+		<titulo>Picking</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemdiferenciaspicking</entidad>
+		<descripcion>Item diferencias picking</descripcion>
+		<titulo>Diferencias picking</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemokpicking</entidad>
+		<descripcion>Item OK picking</descripcion>
+		<titulo>OK picking</titulo>
+		<tipo>I</tipo>
+		<herencia>ColoryTalle_ItemPickingControlados</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemCoincidenciaPicking</entidad>
+		<descripcion>Item coincidencias picking</descripcion>
+		<titulo>Coincidencias picking</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemDifOriginalPicking</entidad>
+		<descripcion>Item diferencias originales</descripcion>
+		<titulo>Item diferencias originales</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>OBJETIVOSVENTA</entidad>
+		<descripcion>Objetivos de venta</descripcion>
+		<titulo>Objetivos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPOOBJETIVO</entidad>
+		<descripcion>Tipos de objetivo</descripcion>
+		<titulo>Tipos de objetivo</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MINIMOREPOSICION</entidad>
+		<descripcion>Modificación de mínimo y máximo de stock</descripcion>
+		<titulo>Modificación de mínimo y máximo de stock</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMINIMOREPOSICION</entidad>
+		<descripcion>Item mínimo de reposición</descripcion>
+		<titulo>Item mínimo de reposición</titulo>
+		<tipo>I</tipo>
+		<herencia>colorytalle_MINIMOREPOSICIONMINREPO</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMENTIDADES</entidad>
+		<descripcion>Item entidades</descripcion>
+		<titulo>Item entidades</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMENTIDADESIMPO</entidad>
+		<descripcion>Item entidades Importación</descripcion>
+		<titulo>Item entidades importación</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMENTIDADESEXPO</entidad>
+		<descripcion>Item entidades Exportación</descripcion>
+		<titulo>Item entidades exportación</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LISTADOSPERSONALIZADOS</entidad>
+		<descripcion>Listados personalizados</descripcion>
+		<titulo>Listados personalizados</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMFILTROPERSONALIZADO</entidad>
+		<descripcion>Item para almacenar los filtros perzonalizados personales</descripcion>
+		<titulo>Filtros perzonalizados personales</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCAMPOPERSONALIZADO</entidad>
+		<descripcion>Item para almacenar los campos perzonalizados personales</descripcion>
+		<titulo>Campos perzonalizados personales</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCAMPOSUBTOTAL</entidad>
+		<descripcion>Item para almacenar los campos subtotales personales</descripcion>
+		<titulo>Campos subtotales personales</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMFORMATOSALIDA</entidad>
+		<descripcion>Item para almacenar los formatos de salida personales</descripcion>
+		<titulo>Formatos de salida personales</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REGISTRODEMANTENIMIENTO</entidad>
+		<descripcion>Registro de mantenimiento del sistema</descripcion>
+		<titulo>Registro de mantenimiento del sistema</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PROMOCION</entidad>
+		<descripcion>Promociones</descripcion>
+		<titulo>Promociones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SELECCIONPARAINSERTAR</entidad>
+		<descripcion>Selecciones de entidades</descripcion>
+		<titulo>Selección de entidades</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_virtual</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSSENIADOSEX</entidad>
+		<descripcion>Items de señas exportación</descripcion>
+		<titulo>Detalle de señas exportación</titulo>
+		<tipo>I</tipo>
+		<herencia>COLORYTALLE_ARTICULOSSENIADOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPROMOCIONES</entidad>
+		<descripcion>Item para almacenar las promociones aplicadas</descripcion>
+		<titulo>Item para almacenar las promociones aplicadas</titulo>
+		<tipo>I</tipo>
+		<herencia>Promociones</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPROMOARTICULOS</entidad>
+		<descripcion>Item relación articulos- promos</descripcion>
+		<titulo>Item relación articulos- promos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PAGO</entidad>
+		<descripcion>Pago</descripcion>
+		<titulo>Pago</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPAGO</entidad>
+		<descripcion>Item de pago</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPAGOVALORES</entidad>
+		<descripcion>Items de valores pago</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>AJUSTEDEESTADOS</entidad>
+		<descripcion>Ajuste de situaciones de estado según comprobantes</descripcion>
+		<titulo>Ajuste de situaciones de estado según comprobantes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJUSTEDEESTADOS</entidad>
+		<descripcion>Items de ajuste de estados</descripcion>
+		<titulo>Items de ajuste de estados</titulo>
+		<tipo>I</tipo>
+		<herencia>AjusteCombinacionEstados</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJESTADOSAUDCOMB</entidad>
+		<descripcion>Item ajuste de estados por auditoría de combinaciones</descripcion>
+		<titulo>Ajuste de estados por auditoría de combinaciones</titulo>
+		<tipo>I</tipo>
+		<herencia>AjusteCombinacionEstados</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJUSTECOMPROBANTES</entidad>
+		<descripcion>Item comprobantes a modificar</descripcion>
+		<titulo>Item comprobantes a modificar</titulo>
+		<tipo>I</tipo>
+		<herencia>AjusteCombinacionEstados</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ItemRetenciones</entidad>
+		<descripcion>Item retenciones proveedor</descripcion>
+		<titulo>Retenciones proveedor</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOORDENDEPAGO</entidad>
+		<descripcion>Item impuestos orden de pago</descripcion>
+		<titulo>Item impuestos orden de pago</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOPAGO</entidad>
+		<descripcion>Item impuestos pago</descripcion>
+		<titulo>Item impuestos pago</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMPROBANTEDERETENCIONES</entidad>
+		<descripcion>Comprobante de retención de ingresos brutos</descripcion>
+		<titulo>Comprobante de retención de ingresos brutos</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeRetencionesBase</herencia>
+		<kontroler>ComprobanteDeRetencionesBase</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCDRCOMPROBANTES</entidad>
+		<descripcion>Items comprobantes del comprobante de recepciones</descripcion>
+		<titulo>Items comprobantes del comprobante de recepciones</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCDRIMPUESTOS</entidad>
+		<descripcion>Items impuestos del comprobante de recepciones</descripcion>
+		<titulo>Items impuestos del comprobante de recepciones</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONVENIOMULTILATERAL</entidad>
+		<descripcion>Convenio multilateral</descripcion>
+		<titulo>Convenio multilateral</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCONVENIO</entidad>
+		<descripcion>Item convenio</descripcion>
+		<titulo>Item convenio</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PRESUPUESTODECOMPRA</entidad>
+		<descripcion>Presupuesto de compra</descripcion>
+		<titulo>Presupuesto de compra</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeComprasSinValores</herencia>
+		<kontroler>ComprobanteDeComprasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSPRECOMPRA</entidad>
+		<descripcion>Items de presupuestos de compra</descripcion>
+		<titulo>Línea detalle presupuesto de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>ARTICULOSCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSPREC</entidad>
+		<descripcion>Items de impuestos de presupuesto de compra</descripcion>
+		<titulo>Items de impuestos de presupuesto de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOPRECOMPRA</entidad>
+		<descripcion>Item impuestos presupuesto de compra</descripcion>
+		<titulo>Item impuestos presupuesto de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOSCOMPRAS</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PEDIDODECOMPRA</entidad>
+		<descripcion>Pedido de compra</descripcion>
+		<titulo>Pedido de compra</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeComprasSinValores</herencia>
+		<kontroler>ComprobanteDeComprasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSPEDCOMPRA</entidad>
+		<descripcion>Items de pedido de compra</descripcion>
+		<titulo>Línea detalle pedido de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>ARTICULOSCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSPEDC</entidad>
+		<descripcion>Items de impuestos de pedido de compra</descripcion>
+		<titulo>Items de impuestos de pedido de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOPEDCOMPRA</entidad>
+		<descripcion>Item impuestos pedido de compra</descripcion>
+		<titulo>Item impuestos pedido de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOSCOMPRAS</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSSOLCOMPRA</entidad>
+		<descripcion>Items de solicitud de compra</descripcion>
+		<titulo>Linea detalle solicitud de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>ARTICULOSCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSSOLC</entidad>
+		<descripcion>Items de impuestos de solicitud de compra</descripcion>
+		<titulo>Items de impuestos de solicitud de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSOLCOMPRA</entidad>
+		<descripcion>Item impuestos pedido de compra</descripcion>
+		<titulo>Item impuestos pedido de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOSCOMPRAS</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SOLICITUDDECOMPRA</entidad>
+		<descripcion>Solicitud de compra</descripcion>
+		<titulo>Solicitud de compra</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeComprasSinValores</herencia>
+		<kontroler>ComprobanteDeComprasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REMITODECOMPRA</entidad>
+		<descripcion>Remito de compra</descripcion>
+		<titulo>Remito de compra</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeComprasSinValores</herencia>
+		<kontroler>ComprobanteDeComprasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSREMCOMPRA</entidad>
+		<descripcion>Items de remito de compra</descripcion>
+		<titulo>Linea detalle remito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>ARTICULOSCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSREMC</entidad>
+		<descripcion>Items de impuestos de remito de compra</descripcion>
+		<titulo>Items de impuestos de remito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOREMCOMPRA</entidad>
+		<descripcion>Item impuestos remito de compra</descripcion>
+		<titulo>Item impuestos remito de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOSCOMPRAS</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CANCELACIONDECOMPRA</entidad>
+		<descripcion>Cancelación de compra</descripcion>
+		<titulo>Cancelación de compra</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeComprasSinValores</herencia>
+		<kontroler>ComprobanteDeComprasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSCANCOMPRA</entidad>
+		<descripcion>Items de cancelación de compra</descripcion>
+		<titulo>Linea detalle cancelación de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>ARTICULOSCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSCANC</entidad>
+		<descripcion>Items de impuestos de cancelación de compra</descripcion>
+		<titulo>Items de impuestos de cancelación de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOCANCOMPRA</entidad>
+		<descripcion>Item impuestos cancelación de compra</descripcion>
+		<titulo>Item impuestos cancelación de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOSCOMPRAS</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSREQCOMPRA</entidad>
+		<descripcion>Items de requerimiento de compra</descripcion>
+		<titulo>Linea detalle requerimiento de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>ARTICULOSCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSREQC</entidad>
+		<descripcion>Items de impuestos de requerimiento de compra</descripcion>
+		<titulo>Items de impuestos de requerimiento de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOS</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOREQCOMPRA</entidad>
+		<descripcion>Item impuestos requerimiento de compra</descripcion>
+		<titulo>Item impuestos requerimiento de compra</titulo>
+		<tipo>I</tipo>
+		<herencia>IMPUESTOSCOMPRAS</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REQUERIMIENTODECOMPRA</entidad>
+		<descripcion>Requerimiento de compra</descripcion>
+		<titulo>Requerimiento de compra</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeComprasSinValores</herencia>
+		<kontroler>ComprobanteDeComprasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PROPIEDADESLISTADOS</entidad>
+		<descripcion>Propiedades avanzadas en listados</descripcion>
+		<titulo>Propiedades avanzadas en listados</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>AJUSTEDECUPON</entidad>
+		<descripcion>Ajuste de cupón</descripcion>
+		<titulo>Ajuste de cupón</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ErroresCFibm4610kc4</entidad>
+		<descripcion>Controlador fiscal IBM 4610 KC4</descripcion>
+		<titulo>Controlador fiscal IBM 4610 KC4</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>BOLSASYCAJAS</entidad>
+		<descripcion>Bolsas y cajas</descripcion>
+		<titulo>Bolsas y cajas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMBOLSASYCAJAS</entidad>
+		<descripcion>Item de bolsas y cajas</descripcion>
+		<titulo>Item de bolsas y cajas</titulo>
+		<tipo>I</tipo>
+		<herencia>BolsasYCajas</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>AJUSTECCCLIENTE</entidad>
+		<descripcion>Ajuste de cuenta corriente de clientes</descripcion>
+		<titulo>Ajuste de cuenta corriente de clientes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJUSTECCCLIENTE</entidad>
+		<descripcion>Item de ajuste de cuenta corriente de clientes</descripcion>
+		<titulo>Item de ajuste de cuenta corriente de clientes</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJUSTECCPROVEEDOR</entidad>
+		<descripcion>Item de ajuste de cuenta corriente de proveedores</descripcion>
+		<titulo>Item de ajuste de cuenta corriente de proveedores</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>AJUSTECCPROVEEDOR</entidad>
+		<descripcion>Ajuste de cuenta corriente de proveedores</descripcion>
+		<titulo>Ajuste de cuenta corriente de proveedores</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CANCELACIONDESENIAS</entidad>
+		<descripcion>Cancelación de señas</descripcion>
+		<titulo>Cancelación de señas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCANCELACIONDESENIAS</entidad>
+		<descripcion>Item de cancelación de señas</descripcion>
+		<titulo>Item de cancelación de señas</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>GTIN</entidad>
+		<descripcion>Códigos RG 2904/10</descripcion>
+		<titulo>Códigos RG 2904/10</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMEQUIGTIN</entidad>
+		<descripcion>Item de códigos RG 2904/10</descripcion>
+		<titulo>Item de Códigos RG 2904/10</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SITUACIONFISCAL</entidad>
+		<descripcion>Situación fiscal</descripcion>
+		<titulo>Situación fiscal</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PASAJEDESTOCK</entidad>
+		<descripcion>Pasaje de stock</descripcion>
+		<titulo>Pasaje de stock</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SELECCIONBASESARCHIVADAS</entidad>
+		<descripcion>Selecciones de bases de datos archivadas</descripcion>
+		<titulo>Selecciones de bases de datos archivadas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Precargaetiart</entidad>
+		<descripcion>Pre-carga de combinaciones para impresión de etiquetas</descripcion>
+		<titulo>Pre-carga de combinaciones para impresión de etiquetas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NUEVOENBASEA</entidad>
+		<descripcion>Nuevo en base a</descripcion>
+		<titulo>Nuevo en base a</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_virtual</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCOMPROBANTESENBASEA</entidad>
+		<descripcion>Item comprobantes</descripcion>
+		<titulo>Item comprobantes</titulo>
+		<tipo>I</tipo>
+		<herencia>ComprobantesEnBasea</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REGISTRODEACTIVIDAD</entidad>
+		<descripcion>Registros de actividad</descripcion>
+		<titulo>Registros de actividad</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONCILIACIONDECAJA</entidad>
+		<descripcion>Ajuste de movimientos y saldos de caja según comprobantes</descripcion>
+		<titulo>Ajuste de movimientos y saldos de caja según comprobantes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCONCILIAMOVIMIENTO</entidad>
+		<descripcion>Items de conciliacion de movimientos de caja</descripcion>
+		<titulo>Items de conciliacion de movimientos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCONCILIASALDO</entidad>
+		<descripcion>Items de conciliacion de saldos de caja</descripcion>
+		<titulo>Items de conciliacion de saldos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>POOLDECLASE</entidad>
+		<descripcion>Pool de clase</descripcion>
+		<titulo>Pool de clase</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ACCESOAOBJETO</entidad>
+		<descripcion>Acceso a objeto</descripcion>
+		<titulo>Acceso a objeto</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMONEDASDETARJETA</entidad>
+		<descripcion>Items de monedas de tarjetas</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LISTADEPRECIOSCALCULADA</entidad>
+		<descripcion>Asignación de fórmula a lista de precios</descripcion>
+		<titulo>Asignación de fórmula a lista de precios</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>EXPRESIONLISTADOPERSONALIZADO</entidad>
+		<descripcion>Expresión de listados personalizados</descripcion>
+		<titulo>Expresión de listados personalizados</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCOMISIONVENDEDOR</entidad>
+		<descripcion>Items de comisión de vendedores</descripcion>
+		<titulo>Items de comisión de vendedores</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Cuponeshuerfanos</entidad>
+		<descripcion>Cupones huérfanos</descripcion>
+		<titulo>Cupones huérfanos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCUPONHUERFANO</entidad>
+		<descripcion>Item cupón huérfano</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia>Cupon</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOMENCLADORARBA</entidad>
+		<descripcion>Nomenclador ARBA</descripcion>
+		<titulo>Nomenclador ARBA</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>UnidadDeMedidaARBA</entidad>
+		<descripcion>Unidad de medida ARBA</descripcion>
+		<titulo>Unidades de medidas ARBA</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVEHICULO</entidad>
+		<descripcion>Item vehículo</descripcion>
+		<titulo>Items de vehículo</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REMITOELECTRONICO</entidad>
+		<descripcion>Remito electrónico</descripcion>
+		<titulo>Remito electrónico</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMREMITOELEC</entidad>
+		<descripcion>Item remito electrónico</descripcion>
+		<titulo>Items del remito electrónico</titulo>
+		<tipo>I</tipo>
+		<herencia>remitoelec</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Destinodescargacheques</entidad>
+		<descripcion>Destinos de descarga de cheques de terceros</descripcion>
+		<titulo>Destinos de descarga de cheques de terceros</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Descargadecheques</entidad>
+		<descripcion>Descarga de cheques de terceros</descripcion>
+		<titulo>Descarga de cheques de terceros de tipo discontinuado</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemdescargacheque</entidad>
+		<descripcion>Item descarga de cheques</descripcion>
+		<titulo>Item descarga de cheques</titulo>
+		<tipo>I</tipo>
+		<herencia>DESCARGACHEQUE</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FACTURADEEXPORTACION</entidad>
+		<descripcion>Factura de exportación de venta</descripcion>
+		<titulo>Factura de exportación de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteExportacion</herencia>
+		<kontroler>ComprobanteDeVentasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADECREDITODEEXPORTACION</entidad>
+		<descripcion>Nota de crédito de exportación de venta</descripcion>
+		<titulo>Nota de crédito de exportación de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteExportacion</herencia>
+		<kontroler>ComprobanteDeVentasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADEDEBITODEEXPORTACION</entidad>
+		<descripcion>Nota de débito de exportación de venta</descripcion>
+		<titulo>Nota de débito de exportación de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteExportacion</herencia>
+		<kontroler>ComprobanteDeVentasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>EDICIONIMPUESTOIVACOMPRAS</entidad>
+		<descripcion>IVA compras</descripcion>
+		<titulo>IVA Compras</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIVACOMPRAS</entidad>
+		<descripcion>Item impuesto iva compras</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOMBREDEFANTASIA</entidad>
+		<descripcion>Nombre de fantasía</descripcion>
+		<titulo>Nombres de fantasía</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMRAZONSOCIAL</entidad>
+		<descripcion>Razones sociales asociadas al nombre de fantasía</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPODEDIRECCION</entidad>
+		<descripcion>Tipos de dirección</descripcion>
+		<titulo>Tipos de dirección</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONTACTO</entidad>
+		<descripcion>Contactos</descripcion>
+		<titulo>Contactos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCONTACTO</entidad>
+		<descripcion>Contactos del cliente</descripcion>
+		<titulo>Contactos del cliente</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMOTRASDIRECCIONES</entidad>
+		<descripcion>Otras direcciones del cliente</descripcion>
+		<titulo>Otras direcciones del cliente</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPOCLIENTE</entidad>
+		<descripcion>Tipos de clientes</descripcion>
+		<titulo>Tipos de clientes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CATEGORIACLIENTE</entidad>
+		<descripcion>Categorías de clientes</descripcion>
+		<titulo>Categorías de clientes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REGISTRODEBAJA</entidad>
+		<descripcion>Registro de Baja</descripcion>
+		<titulo>Registro de baja</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DISCOVER</entidad>
+		<descripcion>Discover</descripcion>
+		<titulo>Discover</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CRITERIOSVALORES</entidad>
+		<descripcion>Criterios comerciales para la aceptación de valores</descripcion>
+		<titulo>Criterios de aplicación de valores en factura y nota de débito de ventas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVALORESAENT</entidad>
+		<descripcion>Item valores a entregar</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia>ValoresAEnt</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DESPACHODEIMPORTACION</entidad>
+		<descripcion>Despacho de importación</descripcion>
+		<titulo>Despacho de importación</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICULOSDESPACHO</entidad>
+		<descripcion>Item de artículos del despacho</descripcion>
+		<titulo>Artículos del despacho</titulo>
+		<tipo>I</tipo>
+		<herencia>ARTICULODESPACHO</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SELECCIONDESPACHO</entidad>
+		<descripcion>Selección de despacho de importación</descripcion>
+		<titulo>Selección de despacho de importación</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMSELECCIONDESPACHO</entidad>
+		<descripcion>Item selección de despacho</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REGISTRODESALUDSERVIDORDEDATOS</entidad>
+		<descripcion>Registros de salud del servidor de base de datos</descripcion>
+		<titulo>Registros de salud del servidor de base de datos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REGIMENIMPOSITIVO</entidad>
+		<descripcion>Régimen impositivo</descripcion>
+		<titulo>Regímenes impositivos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMESCALA</entidad>
+		<descripcion>Escalas para calculo en impuestos</descripcion>
+		<titulo>Item para escalas de aplicación en impuestos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLASIFICACIONCONCEPTOPAGO</entidad>
+		<descripcion>Clasificaciones de conceptos de otros pagos</descripcion>
+		<titulo>Clasificaciones de conceptos de otros pagos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONCEPTOPAGO</entidad>
+		<descripcion>Conceptos de otros pagos</descripcion>
+		<titulo>Conceptos de otros pagos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMPROBANTEPAGO</entidad>
+		<descripcion>Otros pagos</descripcion>
+		<titulo>Otros pagos</titulo>
+		<tipo>E</tipo>
+		<herencia>ENTCOLORYTALLE_COMPROBANTEDECOMPRASCONVALORES</herencia>
+		<kontroler>ComprobanteDeComprasConValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCOMPROBANTEPAGO</entidad>
+		<descripcion>Items de comprobantes de pago</descripcion>
+		<titulo>Linea detalle comprobantes de pago</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVALORESCOMPROPAGO</entidad>
+		<descripcion>Items de comprobantes de pago</descripcion>
+		<titulo>Linea detalle valores de comprobantes de pago</titulo>
+		<tipo>I</tipo>
+		<herencia>VALORESCOMPRA</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMPROBANTEDERETENCIONESIVA</entidad>
+		<descripcion>Comprobante de retención de IVA</descripcion>
+		<titulo>Comprobante de retención de IVA</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeRetencionesBase</herencia>
+		<kontroler>ComprobanteDeRetencionesBase</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMPROBANTEDERETENCIONESGANANCIAS</entidad>
+		<descripcion>Comprobante de retención de ganancias</descripcion>
+		<titulo>Comprobante de retención de ganancias</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeRetencionesBase</herencia>
+		<kontroler>ComprobanteDeRetencionesBase</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMPROBANTEDERETENCIONESSUSS</entidad>
+		<descripcion>Comprobante de retención de SUSS</descripcion>
+		<titulo>Comprobante de retención de SUSS</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteDeRetencionesBase</herencia>
+		<kontroler>ComprobanteDeRetencionesBase</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPAGOSPERSONALIZADOS</entidad>
+		<descripcion>Items de pagos personalizados</descripcion>
+		<titulo>Items de pagos personalizados</titulo>
+		<tipo>I</tipo>
+		<herencia>pagospersonalizados</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPODEOPERACIONAFIP</entidad>
+		<descripcion>Tipos de operación</descripcion>
+		<titulo>Tipos de operaciones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ASOCIACIONARTICULOSOPERACIONESAFIP</entidad>
+		<descripcion>Asociaciones de artículos y tipos de operaciones</descripcion>
+		<titulo>Asociaciones de artículos y tipos de operaciones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FERIADO</entidad>
+		<descripcion>Feriados</descripcion>
+		<titulo>Feriados</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMFERIADO</entidad>
+		<descripcion>Feriados</descripcion>
+		<titulo>Feriados</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLASIFICACIONCONCEPTOCAJA</entidad>
+		<descripcion>Clasificaciones de conceptos</descripcion>
+		<titulo>Clasificaciones de conceptos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REGISTRODEACTIVIDADDET</entidad>
+		<descripcion>Detalle de contexto del registros de actividad</descripcion>
+		<titulo>Detalle de contexto del registros de actividad</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DatosAdicionalesComprobantesA</entidad>
+		<descripcion>AFIP R.G. 4520/19 - Datos adicionales en comprobantes A</descripcion>
+		<titulo>AFIP RG 4520/19 - Datos adicionales en comprobantes A</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCAMPOORDENAMIENTO</entidad>
+		<descripcion>Item para almacenar los campos de ordenamiento personales</descripcion>
+		<titulo>Campos ordenamientos personales</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MOTIVODATOSADICIONALESCOMPROBANTESA</entidad>
+		<descripcion>Motivo en datos adicionales de comprobantes A</descripcion>
+		<titulo>Motivo en datos adicionales de comprobantes A</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>AGRUPAMIENTOPUBLICACIONES</entidad>
+		<descripcion>Agrupamientos para publicaciones</descripcion>
+		<titulo>Agrupamientos para publicaciones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAGRUPAPUBLIC</entidad>
+		<descripcion>Items de agrupamientos centralizados</descripcion>
+		<titulo>Items de agrupamientos centralizados</titulo>
+		<tipo>I</tipo>
+		<herencia>AgruPubliDetalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MAILPORLOTE</entidad>
+		<descripcion>Envío de e-mail por lote</descripcion>
+		<titulo>Envío de e-mail por lote</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>EMAIL</entidad>
+		<descripcion>Emails</descripcion>
+		<titulo>Emails</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CUENTACORREO</entidad>
+		<descripcion>Cuentas de correo</descripcion>
+		<titulo>Cuentas de e-mail</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARCHIVOSMAIL</entidad>
+		<descripcion>Item archivos mail</descripcion>
+		<titulo>Item archivos mail</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMENTIDADESMAIL</entidad>
+		<descripcion>Item entidades mail</descripcion>
+		<titulo>Item Entidades mail</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCONTACTOPROV</entidad>
+		<descripcion>Contactos del proveedor</descripcion>
+		<titulo>Contactos del proveedor</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONCEPTOLIQUIDACIONTARJETA</entidad>
+		<descripcion>Conceptos de liquidación de tarjetas</descripcion>
+		<titulo>Conceptos de liquidación de tarjetas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCONCEPTOS</entidad>
+		<descripcion>Item de conceptos de liquidación de tarjeta</descripcion>
+		<titulo>Item de conceptos de liquidación de tarjeta</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LIQUIDACIONDIARIA</entidad>
+		<descripcion>Liquidación diaria</descripcion>
+		<titulo>Liquidación diaria</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCONCEPTOLIQ</entidad>
+		<descripcion>Item concepto de liquidación</descripcion>
+		<titulo>Item concepto de liquidación</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LIQUIDACIONMENSUAL</entidad>
+		<descripcion>Liquidación mensual</descripcion>
+		<titulo>Liquidación mensual</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMLIQDIARIA</entidad>
+		<descripcion>Item de liquidación diaria en liquidación mensual</descripcion>
+		<titulo>Item de liquidación diaria en liquidación mensual</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMLIQGENERAL</entidad>
+		<descripcion>Item de liquidación mensual</descripcion>
+		<titulo>Item de liquidación mensual</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSLIQ</entidad>
+		<descripcion>Item impuesto liquidación mensual</descripcion>
+		<titulo>Item impuesto liquidación mensual</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMIMPUESTOSLIQCOM</entidad>
+		<descripcion>Item otros impuestos liquidación mensual</descripcion>
+		<titulo>Item otros impuestos liquidación mensual</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PLANDECUENTAS</entidad>
+		<descripcion>Plan de cuentas</descripcion>
+		<titulo>Plan de cuentas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Comprobantederetencionrecibido</entidad>
+		<descripcion>Comprobante de retención recibido</descripcion>
+		<titulo>Comprobante de retención recibido</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemretencionrecibo</entidad>
+		<descripcion>Items retenciones de impuestos recibidos en el recibo</descripcion>
+		<titulo>Items retenciones recibidas</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Itemretencionrecibida</entidad>
+		<descripcion>Items impuestos del comprobante de retenciones recibidos</descripcion>
+		<titulo>Items de impuestos del comprobante de retenciones recibidos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Datosretencionrecibido</entidad>
+		<descripcion>Comprobante de retención recibido</descripcion>
+		<titulo>Comprobante de retención recibido</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REPORTEELECTRONICO</entidad>
+		<descripcion>Descarga de reportes electrónicos R.G. 3561/13</descripcion>
+		<titulo>Descarga de reportes electrónicos RG 3561/13</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLIENTERECOMENDANTE</entidad>
+		<descripcion>Cliente recomendante</descripcion>
+		<titulo>Cliente recomendante</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMPLETARDESDEVENTAS</entidad>
+		<descripcion>Completar pedido de ventas desde registro de ventas</descripcion>
+		<titulo>Completar desde ventas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CENTRODECOSTO</entidad>
+		<descripcion>Centro de costos</descripcion>
+		<titulo>Centro de costos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DISTRIBUCIONCENTRODECOSTO</entidad>
+		<descripcion>Distribución por centro de costos</descripcion>
+		<titulo>Distribución por centro de costos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCCOSTO</entidad>
+		<descripcion>Item de distribucion de centro de costo</descripcion>
+		<titulo>Item de distribución de centro de costo</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ASIENTO</entidad>
+		<descripcion>Asientos</descripcion>
+		<titulo>Asientos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMASIENTO</entidad>
+		<descripcion>Item de asientos contables</descripcion>
+		<titulo>Item de asientos contables</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>RAZONSOCIAL</entidad>
+		<descripcion>Razón social</descripcion>
+		<titulo>Razón social</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>EJERCICIO</entidad>
+		<descripcion>Ejercicio</descripcion>
+		<titulo>Ejercicio</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ASIGNARZBD</entidad>
+		<descripcion>Asignación de razón social a base de datos</descripcion>
+		<titulo>Asignación de razón social a base de datos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRVAL</entidad>
+		<descripcion>Imputación de valores a cuenta contable</descripcion>
+		<titulo>Imputación de valores a cuenta contable</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRART</entidad>
+		<descripcion>Imputación de artículo a cuenta contable</descripcion>
+		<titulo>Imputación de artículo a cuenta contable</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRCLI</entidad>
+		<descripcion>Imputación de cliente a cuenta contable</descripcion>
+		<titulo>Imputación de cliente a cuenta contable</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRPRO</entidad>
+		<descripcion>Imputación de proveedor a cuenta contable</descripcion>
+		<titulo>Imputación de proveedor a cuenta contable</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRIMP</entidad>
+		<descripcion>Imputación de impuesto a cuenta contable</descripcion>
+		<titulo>Imputación de impuesto a cuenta contable</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRCAJ</entidad>
+		<descripcion>Imputación de concepto a cuenta contable</descripcion>
+		<titulo>Imputación de concepto a cuenta contable</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRCON</entidad>
+		<descripcion>Imputación de concepto de otros pagos a cuenta contable</descripcion>
+		<titulo>Imputación de concepto de otros pagos a cuenta contable</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRDES</entidad>
+		<descripcion>Imputación de destino de descarga de cheques de terceros</descripcion>
+		<titulo>Imputación de destino de descarga de cheques de terceros</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIROPE</entidad>
+		<descripcion>Imputación de operadoras de tarjetas</descripcion>
+		<titulo>Imputación de operadoras de tarjetas</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRLIQ</entidad>
+		<descripcion>Imputación de concepto de liquidación de tarjetas</descripcion>
+		<titulo>Imputación de concepto de liquidación de tarjetas</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPVERCC</entidad>
+		<descripcion>Imputación vertical a centro de costos</descripcion>
+		<titulo>Imputación vertical a centro de costos</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONTABILIZACION</entidad>
+		<descripcion>Contabilización de asientos tipo</descripcion>
+		<titulo>Proceso de contabilización</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ASIENTOTIPO</entidad>
+		<descripcion>Asiento tipo</descripcion>
+		<titulo>Asiento tipo</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMASIENTOTIPO</entidad>
+		<descripcion>Item de configuracion de asientos tipo</descripcion>
+		<titulo>Item de configuracion de asientos tipo</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CIERREEJERCICIO</entidad>
+		<descripcion>Cierre de ejercicio</descripcion>
+		<titulo>Cierre de ejercicio</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRCCA</entidad>
+		<descripcion>Imputación de artículo a centro de costos en compras</descripcion>
+		<titulo>Imputación de artículo a centro de costos en compras</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRCCC</entidad>
+		<descripcion>Imputación de concepto de otros pagos a centro de costos</descripcion>
+		<titulo>Imputación de concepto de otros pagos a centro de costos</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>APERTURAEJERCICIO</entidad>
+		<descripcion>Apertura de ejercicio</descripcion>
+		<titulo>Apertura de ejercicio</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ASIENTOSPERIODICOS</entidad>
+		<descripcion>Asientos periódicos</descripcion>
+		<titulo>Asientos periódicos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMTARJETASICARD</entidad>
+		<descripcion>Items de tarjetas para dispositivo ICard</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAUTORIZICARD</entidad>
+		<descripcion>Items de autorizadores para dispositivo ICard</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ENTREGADEMERCADERIAS</entidad>
+		<descripcion>Entrega de mercaderías</descripcion>
+		<titulo>Entrega de mercaderías</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMREMITOS</entidad>
+		<descripcion>Item de remitos</descripcion>
+		<titulo>Item de remitos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMTARJETASLAPOS</entidad>
+		<descripcion>Items de tarjetas para dispositivo LaPos</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPLANESLAPOS</entidad>
+		<descripcion>Items de planes para dispositivo LaPos</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLIENTEECOMMERCE</entidad>
+		<descripcion>Clientes ecommerce</descripcion>
+		<titulo>Clientes ecommerce</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMPROBANTESECOMMERCE</entidad>
+		<descripcion>Herramienta de generación de comprobantes ecommerce</descripcion>
+		<titulo>Herramienta de generación de comprobantes ecommerce</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ECOMMERCE</entidad>
+		<descripcion>Plataformas de ecommerce</descripcion>
+		<titulo>Plataformas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>OPERACIONECOMMERCE</entidad>
+		<descripcion>Operaciones ecommerce</descripcion>
+		<titulo>Operaciones ecommerce</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler>Comprobante</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMOPERACIONESECOM</entidad>
+		<descripcion>Item de operación ecommerce</descripcion>
+		<titulo>Item de operación ecommerce</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPUBLICACIONECOM</entidad>
+		<descripcion>Item de publicaciones ecommerce</descripcion>
+		<titulo>Item de publicaciones ecommerce</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PUNTOSDEVENTA</entidad>
+		<descripcion>Diferenciación de puntos de venta por comprobante</descripcion>
+		<titulo>Diferenciación de puntos de venta por comprobante</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SERVICIOREST</entidad>
+		<descripcion>Servicio REST API</descripcion>
+		<titulo>Servicio REST API</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLAVESECRETAREST</entidad>
+		<descripcion>Cliente REST API</descripcion>
+		<titulo>Cliente REST API</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMDOMINIOSCORS</entidad>
+		<descripcion>Dominios a habilitar CORS en servicios</descripcion>
+		<titulo>Dominios a habilitar CORS en servicios</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DatosAdicionalesSIPRIB</entidad>
+		<descripcion>IIBB Santa Fe SIPRIB - Datos adicionales</descripcion>
+		<titulo>IIBB Santa Fe SIPRIB - Datos adicionales</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ARTICULOINCISODATOSADICIONALESSIPRIB</entidad>
+		<descripcion>Articulo inciso datos adicionales SIPRIB</descripcion>
+		<titulo>Articulo inciso datos adicionales SIPRIB</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMDISPMOVILPOINT</entidad>
+		<descripcion>Items de dispositivos móviles</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMSERIALPOINT</entidad>
+		<descripcion>Items de números de series de lectores</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>AGRUPALISTADOSPERSONALIZADOS</entidad>
+		<descripcion>Agrupamiento de listados personalizados</descripcion>
+		<titulo>Agrupamiento de listados personalizados</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMREFERENCIAALISTADO</entidad>
+		<descripcion>Referencia a listados perzonalizados</descripcion>
+		<titulo>Referencia a listados personalizados</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REPORTEAUDITORIACIERREZ</entidad>
+		<descripcion>Reporte de auditoría de cierre  Z</descripcion>
+		<titulo>Reporte de auditoría de cierre Z</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MOTIVODESCUENTOYDEVOLUCION</entidad>
+		<descripcion>Motivos de descuento y devolución</descripcion>
+		<titulo>Motivos de descuento y devolución</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CODIGOAUTORIZACIONDJCP</entidad>
+		<descripcion>Código de autorización de DJCP</descripcion>
+		<titulo>Códigos de autorización de DJCP MECON Resolución 404 E/2016</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAUTORIZACIONDJCP</entidad>
+		<descripcion>Valores de autorización de DJCP</descripcion>
+		<titulo>Valores de códigos de autorización de DJCP</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMDENOMINACIONES</entidad>
+		<descripcion>Item de denominaciones de monedas</descripcion>
+		<titulo>Item de denominaciones de monedas</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ARQUEODECAJA</entidad>
+		<descripcion>Arqueo de caja</descripcion>
+		<titulo>Arqueo de caja</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler>Comprobante</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMTOTALPORGRUPO</entidad>
+		<descripcion>Item total por grupo del arqueo de caja</descripcion>
+		<titulo>Item total por grupo del arqueo de caja</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMRECEFECTIVO</entidad>
+		<descripcion>Item arqueo efectivo por denominacion</descripcion>
+		<titulo>Item arqueo efectivo por denominacion</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARQUEOOTROS</entidad>
+		<descripcion>Item arqueo de otros</descripcion>
+		<titulo>Item arqueo de otros</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMDESCUENTO</entidad>
+		<descripcion>Item de descuento</descripcion>
+		<titulo>Item de descuentos</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CODIGODESERVICIO</entidad>
+		<descripcion>Código de servicio</descripcion>
+		<titulo>Código de servicio</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPODEORDEN</entidad>
+		<descripcion>Tipo de orden</descripcion>
+		<titulo>Tipo de orden</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ESTADOSDEINTERACCION</entidad>
+		<descripcion>Estados de interacción</descripcion>
+		<titulo>Estados de interacción</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>INTERACCIONDEORDEN</entidad>
+		<descripcion>Interacción de orden de servicio</descripcion>
+		<titulo>Interacción de orden de servicio</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ENTIDADADICIONAL1</entidad>
+		<descripcion>Entidad adicional 1</descripcion>
+		<titulo>Entidad adicional 1</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ENTIDADADICIONAL2</entidad>
+		<descripcion>Entidad adicional 2</descripcion>
+		<titulo>Entidad adicional 2</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ENTIDADADICIONAL3</entidad>
+		<descripcion>Entidad adicional 3</descripcion>
+		<titulo>Entidad adicional 3</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ORDENDESERVICIO</entidad>
+		<descripcion>Orden de servicio</descripcion>
+		<titulo>Orden de servicio</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCODSERV</entidad>
+		<descripcion>Item de código de servicio</descripcion>
+		<titulo>Item de código de servicio</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMINTERACCION</entidad>
+		<descripcion>Item de interacción</descripcion>
+		<titulo>Item de interacción</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SELECCIONORDENDESERVICIO</entidad>
+		<descripcion>Seleccion de órdenes de servicio</descripcion>
+		<titulo>Seleccion de órdenes de servicio</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMORDENDESERVICIO</entidad>
+		<descripcion>Item de órdenes de servicio</descripcion>
+		<titulo>Item de órdenes de servicio</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ERRORSAP</entidad>
+		<descripcion>Equivalencia - errores de Interfaz Sap</descripcion>
+		<titulo>Equivalencia - errores de Interfaz Sap</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>INCONSISTENCIASAP</entidad>
+		<descripcion>Inconsistencias en comprobantes - Interfaz SAP</descripcion>
+		<titulo>Inconsistencias en comprobantes - Interfaz SAP</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SELECCIONOPERACIONECOMMERCE</entidad>
+		<descripcion>Nuevo filtrado</descripcion>
+		<titulo>Nuevo filtrado</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>GESTIONVENDEDOR</entidad>
+		<descripcion>Asignación de vendedor a base de datos</descripcion>
+		<titulo>Asignación de vendedor a base de datos</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FILTRARCOMPROBANTESACONTROLAR</entidad>
+		<descripcion>Comprobantes a controlar</descripcion>
+		<titulo>Comprobantes a controlar</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPREPMPICKING</entidad>
+		<descripcion>Item preparación de mercadería</descripcion>
+		<titulo>Item preparación de mercadería</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COTIZACION</entidad>
+		<descripcion>Carga de nueva cotización</descripcion>
+		<titulo>Nueva cotización</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_virtual</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>EMAILENCOMPROBANTE</entidad>
+		<descripcion>Email</descripcion>
+		<titulo>Email</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SELECCIONCOMPROBANTEASOCIADO</entidad>
+		<descripcion>Selección comprobante asociado</descripcion>
+		<titulo>Selección comprobante asociado</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FACTURAELECTRONICADECREDITO</entidad>
+		<descripcion>Factura de crédito electrónica MiPyME de venta</descripcion>
+		<titulo>Factura de crédito electrónica MiPyME de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorYTalle_ComprobanteElectronicoNacional</herencia>
+		<kontroler>ComprobanteElectronico</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADECREDITOELECTRONICADECREDITO</entidad>
+		<descripcion>Nota de crédito electrónica MiPyME de venta</descripcion>
+		<titulo>Nota de crédito electrónica MiPyME de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorYTalle_ComprobanteElectronicoNacional</herencia>
+		<kontroler>ComprobanteElectronico</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADEDEBITOELECTRONICADECREDITO</entidad>
+		<descripcion>Nota de débito electrónica MiPyME de venta</descripcion>
+		<titulo>Nota de débito electrónica MiPyME de venta</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColorYTalle_ComprobanteElectronicoNacional</herencia>
+		<kontroler>ComprobanteElectronico</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONFIRMACIONFECHAVTOMIPYME</entidad>
+		<descripcion>Confirmar fecha de vencimiento MiPyME</descripcion>
+		<titulo>Confirmar fecha de vencimiento MiPyME</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NUEVOENTREGAONLINE</entidad>
+		<descripcion>Nuevo Remito de venta en base a Pendientes de entrega</descripcion>
+		<titulo>Nuevo Remito de venta en base a Pendientes de entrega</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>Selecciondisenoimportacion</entidad>
+		<descripcion>Selección de diseño de importación</descripcion>
+		<titulo>Selección de diseño de importación</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_virtual</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>EnvioDeMensajeria</entidad>
+		<descripcion>Envío de mensajería a eCommerce</descripcion>
+		<titulo>Envío de mensajería a eCommerce</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DATOSTAREAPROGRAMADAECOMMERCE</entidad>
+		<descripcion>Parámetros tarea programada ecommerce</descripcion>
+		<titulo>Tarea programada diaria ecommerce</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPLATAFORMAS</entidad>
+		<descripcion>Item de operación ecommerce</descripcion>
+		<titulo>Item de operación ecommerce</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPARTICIPANTES</entidad>
+		<descripcion>Item de participantes de un kit</descripcion>
+		<titulo>Item de participantes de un kit</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMKITS</entidad>
+		<descripcion>Item de kits</descripcion>
+		<titulo>Item de kits</titulo>
+		<tipo>I</tipo>
+		<herencia>Kits</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCHEQUEHISTORIAL</entidad>
+		<descripcion>Item de historial de interacciones de cheques</descripcion>
+		<titulo>Item de historial de interacciones de cheques</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>VALORESENTRANSITO</entidad>
+		<descripcion>Valores en tránsito</descripcion>
+		<titulo>Valores en tránsito</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVALORESENTRANSITO</entidad>
+		<descripcion>Items de valores para movimientos de caja</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONFIRMACIONVALORESENTRANSITO</entidad>
+		<descripcion>Confirmar acción para valores en tránsito</descripcion>
+		<titulo>Confirmar acción para valores en tránsito</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DATOSTRANSACCIONBANCARIA</entidad>
+		<descripcion>Datos de transacción bancaria</descripcion>
+		<titulo>Datos de transacción bancaria</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REGISTRODECUENTA</entidad>
+		<descripcion>Registros conciliables</descripcion>
+		<titulo>Registros conciliables</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TRANSFERENCIAENTRECUENTAS</entidad>
+		<descripcion>Transferencia entre cuentas bancarias</descripcion>
+		<titulo>Transferencia entre cuentas bancarias</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COMPLETARDATOSREGISTRO</entidad>
+		<descripcion>Completar datos de cuentas bancarias</descripcion>
+		<titulo>Completar datos de cuentas bancarias</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMDATOSREGISTRO</entidad>
+		<descripcion>Item de datos de cuenta bancaria</descripcion>
+		<titulo>Item de datos de cuenta bancaria</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONCEPTOENTIDADFINANCIERA</entidad>
+		<descripcion>Concepto de entidades financieras</descripcion>
+		<titulo>Concepto de entidades financieras</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MOVIMIENTOBANCARIO</entidad>
+		<descripcion>Movimientos bancarios</descripcion>
+		<titulo>Movimientos bancarios</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONCILIACIONES</entidad>
+		<descripcion>Conciliaciones bancarias</descripcion>
+		<titulo>Conciliaciones bancarias</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMOVBANCARIOS</entidad>
+		<descripcion>Item de movimientos bancarios</descripcion>
+		<titulo>Item de movimientos bancarios</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMREGCONCILIABLES</entidad>
+		<descripcion>Item de registros conciliables</descripcion>
+		<titulo>Item de registros conciliables</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>HERRAMIENTACONCILIACION</entidad>
+		<descripcion>Herramienta de conciliación bancaria</descripcion>
+		<titulo>Herramienta de conciliación bancaria</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMOVBANCARIOSTOOL</entidad>
+		<descripcion>Item de movimientos bancarios</descripcion>
+		<titulo>Item de movimientos bancarios</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMREGCONCILIABLESTOOL</entidad>
+		<descripcion>Item de registros conciliables</descripcion>
+		<titulo>Item de registros conciliables</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PreparacionDeMercaderia</entidad>
+		<descripcion>Preparación de mercadería</descripcion>
+		<titulo>Preparación de mercadería</titulo>
+		<tipo>E</tipo>
+		<herencia>EntColoryTalle_ComprobanteDeVentasSinValores</herencia>
+		<kontroler>ComprobanteDeVentasSinValores</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FACTURAAGRUPADA</entidad>
+		<descripcion>Factura</descripcion>
+		<titulo>Factura</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteAgrupado</herencia>
+		<kontroler>ComprobanteAgrupado</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPODECOMPROBANTEDECOMPRA</entidad>
+		<descripcion>Tipo de comprobante de compra</descripcion>
+		<titulo>Tipo de comprobante</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DEUDADECHEQUES</entidad>
+		<descripcion>Deuda de cheques</descripcion>
+		<titulo>Deuda de cheques</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CHEQUESDISPONIBLES</entidad>
+		<descripcion>Detalle de cheques disponibles</descripcion>
+		<titulo>Detalle de cheques</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCHEQUEDISPONIBLE</entidad>
+		<descripcion>Item cheque disponible</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CODBARRAALTER</entidad>
+		<descripcion>Código de barra alternativo</descripcion>
+		<titulo>Código de barra alternativo</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCODBARRAALTER</entidad>
+		<descripcion>Item código de barra alternativo</descripcion>
+		<titulo>Item código de barra alternativo</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRCUE</entidad>
+		<descripcion>Imputación de cuentas bancarias</descripcion>
+		<titulo>Imputación de cuentas bancarias a cuenta contable</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADECREDITOAGRUPADA</entidad>
+		<descripcion>Nota de crédito</descripcion>
+		<titulo>Nota de crédito</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteAgrupado</herencia>
+		<kontroler>ComprobanteAgrupado</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>NOTADEDEBITOAGRUPADA</entidad>
+		<descripcion>Nota de débito</descripcion>
+		<titulo>Nota de débito</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteAgrupado</herencia>
+		<kontroler>ComprobanteAgrupado</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMEXCLUIDOOTRAPERCEP</entidad>
+		<descripcion>Item percepciones excluidas</descripcion>
+		<titulo>Percepciones excluidas</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMTARJETASFISERV</entidad>
+		<descripcion>Items de tarjetas para dispositivos FiServ</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMERRORESECOMMERCE</entidad>
+		<descripcion>Items de operaciones con errores</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ENVIODECUENTACORRIENTEPORMAIL</entidad>
+		<descripcion>Envío de cuenta corriente por mail</descripcion>
+		<titulo>Envío de cuenta corriente por mail</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DATOSADICIONALESSIRE</entidad>
+		<descripcion>AFIP R.G. 4523/19 - SIRE</descripcion>
+		<titulo>AFIP RG 4523/19 - SIRE</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>INDICESINFLACION</entidad>
+		<descripcion>Indices de inflacion</descripcion>
+		<titulo>Indices</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMINDICESINFLACION</entidad>
+		<descripcion>Item de indices de inflacion</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>HERRAMIENTAAGRUPADORADEPACKS</entidad>
+		<descripcion>Agrupar/Desagrupar Pack</descripcion>
+		<titulo>Agrupar/Desagrupar Pack</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAGRUPADORDEPACK</entidad>
+		<descripcion>Item Agrupar desagrupar pack</descripcion>
+		<titulo>Item Agrupar desagrupar pack</titulo>
+		<tipo>I</tipo>
+		<herencia>AgrupadorDePack</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCHEQUEPROPIOHIST</entidad>
+		<descripcion>Item de historial de interacciones de cheques propios</descripcion>
+		<titulo>Item de historial de interacciones de cheques propios</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LINKQRENETIQUETA</entidad>
+		<descripcion>Link para impresión de código QR en etiquetas</descripcion>
+		<titulo>Link para impresión de código QR en etiquetas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>WEBHOOK</entidad>
+		<descripcion>Servicio Webhook</descripcion>
+		<titulo>Servicio Webhook</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMWEBHOOK</entidad>
+		<descripcion>Item webhook</descripcion>
+		<titulo>Item de WebHook</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIQUETDECAMBIO</entidad>
+		<descripcion>Comprobante para cambio</descripcion>
+		<titulo>Comprobante para cambio</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMTIQUETDECAMBIO</entidad>
+		<descripcion>Item comprobante para cambio</descripcion>
+		<titulo>Item comprobante para cambio</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMTERMINALESLAPOS</entidad>
+		<descripcion>Items de terminales smart LaPos</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMTARJETASSMARTLAPOS</entidad>
+		<descripcion>Items de tarjetas para dispositivo smart LaPos</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PERSONALIZACIONDEENTIDADES</entidad>
+		<descripcion>Personalización de entidades</descripcion>
+		<titulo>Personalización de entidades</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>IMPDIRMOT</entidad>
+		<descripcion>Imputación de motivo a cuenta contable</descripcion>
+		<titulo>Imputacion de motivo a cuenta contable</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_ImputacionDirectaBase</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>RENUMERAASIENTOS</entidad>
+		<descripcion>Herramienta de renumeración de asientos contables</descripcion>
+		<titulo>Herramienta de renumeración de asientos contables</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>DIRECCIONENTREGAENCOMPROBANTE</entidad>
+		<descripcion>Establecer domicilio de entrega</descripcion>
+		<titulo>Establecer domicilio de entrega</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REGISTROLIQUIDACIONCONSIGNACIONES</entidad>
+		<descripcion>Registros de liquidación de consignaciones</descripcion>
+		<titulo>Registros de liquidación de consignaciones</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJUSTOCKENTRANSITO</entidad>
+		<descripcion>Items de ajuste de stock en tránsito</descripcion>
+		<titulo>Ajuste de stock en tránsito</titulo>
+		<tipo>I</tipo>
+		<herencia>AjusteCombinacion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAJAUDIENTRANSITO</entidad>
+		<descripcion>Item ajuste de stock por auditoría en tránsito</descripcion>
+		<titulo>Ajuste stock por auditoría en tránsito</titulo>
+		<tipo>I</tipo>
+		<herencia>AjusteCombinacion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FECHACANCELACION</entidad>
+		<descripcion>Fecha de cancelación del artículo</descripcion>
+		<titulo>Fecha de cancelación del artículo</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMFECHACANCELACION</entidad>
+		<descripcion>Item fecha cancelación</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPLANESSMARTLAPOS</entidad>
+		<descripcion>Items de planes para dispositivo smart LaPos</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MARCA</entidad>
+		<descripcion>Marcas de artículos</descripcion>
+		<titulo>Marcas</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ETIQUETASECOMMERCE</entidad>
+		<descripcion>Etiquetas ecommerce</descripcion>
+		<titulo>Etiquetas ecommerce</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CATEGORIASECOMMERCE</entidad>
+		<descripcion>Categorías ecommerce</descripcion>
+		<titulo>Categorías ecommerce</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONFIGURACIONARTICULOECOMMERCE</entidad>
+		<descripcion>Categorías, etiquetas y dimensiones ecommerce</descripcion>
+		<titulo>Categorías etiquetas y dimensiones ecommerce</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCATEGORIASECOM</entidad>
+		<descripcion>Item de categorías ecommerce</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMETIQUETASECOM</entidad>
+		<descripcion>Item de etiquetas ecommerce</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMDIMENSIONESECOM</entidad>
+		<descripcion>Item de dimensiones ecommerce</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CATEGORIASGOOGLESHOPPING</entidad>
+		<descripcion>Categorías de Google Shoping</descripcion>
+		<titulo>Categorías de Google Shoping</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>APERTURAAUTOMATICAENTIDADES</entidad>
+		<descripcion>Apertura automática de entidades</descripcion>
+		<titulo>Apertura automática de entidades</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMAPERAUTOMATICAS</entidad>
+		<descripcion>-</descripcion>
+		<titulo>-</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>OPEECOMENPROCESO</entidad>
+		<descripcion>Operaciones eCommerce en proceso</descripcion>
+		<titulo/>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CAEA</entidad>
+		<descripcion>CAEA</descripcion>
+		<titulo>Obtención de CAEA</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CAEAINFORMA</entidad>
+		<descripcion>Informar Movimientos CAEA</descripcion>
+		<titulo>Información de movimientos CAEA</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCAEAINFORMA</entidad>
+		<descripcion>items Informar Movimientos CAEA</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>VENDEDORENCOMPROBANTE</entidad>
+		<descripcion>Vendedor</descripcion>
+		<titulo>Vendedor</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONDICIONDEPAGOENCOMPROBANTE</entidad>
+		<descripcion>Condición de pago</descripcion>
+		<titulo>Condición de pago</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>INVENTARIO</entidad>
+		<descripcion>Inventarios de producción</descripcion>
+		<titulo>Inventarios de producción</titulo>
+		<tipo>E</tipo>
+		<herencia>EntidadDeProduccion</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>INSUMO</entidad>
+		<descripcion>Insumos</descripcion>
+		<titulo>Insumos</titulo>
+		<tipo>E</tipo>
+		<herencia>EntidadDeProduccion</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MOTIVODESCARTE</entidad>
+		<descripcion>Motivos de descarte</descripcion>
+		<titulo>Motivos de descarte</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CONSUMOPRODUCCION</entidad>
+		<descripcion>Consumos de producción</descripcion>
+		<titulo>Consumos de producción</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MAQUINARIA</entidad>
+		<descripcion>Maquinarias y mano de obra</descripcion>
+		<titulo>Maquinarias y mano de obra</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMAQUINARIACONSUMO</entidad>
+		<descripcion>Item consumos de producción</descripcion>
+		<titulo>Item consumos de producción</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CLASIFICACIONPRODUCCION</entidad>
+		<descripcion>Clasificación de producción</descripcion>
+		<titulo>Clasificación de producción</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>RUBROPRODUCCION</entidad>
+		<descripcion>Rubro de producción</descripcion>
+		<titulo>Rubro de producción</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PROCESOPRODUCCION</entidad>
+		<descripcion>Procesos de producción</descripcion>
+		<titulo>Procesos de producción</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPROCESOMAQUINA</entidad>
+		<descripcion>Item maquinaria de producción</descripcion>
+		<titulo>Item maquinaria de producción</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPIFICACIONPRODUCCION1</entidad>
+		<descripcion>Tipificación de producción 1</descripcion>
+		<titulo>Tipificación de producción 1</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TIPIFICACIONPRODUCCION2</entidad>
+		<descripcion>Tipificación de producción 2</descripcion>
+		<titulo>Tipificación de producción 2</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>CURVADEPRODUCCION</entidad>
+		<descripcion>Curva de producción</descripcion>
+		<titulo>Curvas de producción</titulo>
+		<tipo>E</tipo>
+		<herencia>EntidadDeProduccion</herencia>
+		<kontroler>FormularioDeProduccion</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCURVADEPRODUCCION</entidad>
+		<descripcion>Item curva de producción</descripcion>
+		<titulo>Item curva de producción</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>TALLER</entidad>
+		<descripcion>Talleres de producción</descripcion>
+		<titulo>Talleres</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMTALLERPROCESO</entidad>
+		<descripcion>Item procesos del taller de producción</descripcion>
+		<titulo>Item proceso de producción</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MODELODEPRODUCCION</entidad>
+		<descripcion>Modelo de producción</descripcion>
+		<titulo>Modelo de producción</titulo>
+		<tipo>E</tipo>
+		<herencia>EntidadDeProduccion</herencia>
+		<kontroler>FormularioDeProduccion</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMODELOPROCESO</entidad>
+		<descripcion>Item procesos del modelo de producción</descripcion>
+		<titulo>Item proceso de producción</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMODELOMAQUINA</entidad>
+		<descripcion>Item maquinaria del modelo de producción</descripcion>
+		<titulo>Item maquinaria del modelo de producción</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMODELOINSUMO</entidad>
+		<descripcion>Item insumo del modelo de producción</descripcion>
+		<titulo>Item insumo del modelo de producción</titulo>
+		<tipo>I</tipo>
+		<herencia>ProduccionColorYTalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMODELOSALIDA</entidad>
+		<descripcion>Item salida del modelo de producción</descripcion>
+		<titulo>Item salida del modelo de producción</titulo>
+		<tipo>I</tipo>
+		<herencia>ProduccionColorYTalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ORDENDEPRODUCCION</entidad>
+		<descripcion>Orden de producción</descripcion>
+		<titulo>Orden de producción</titulo>
+		<tipo>E</tipo>
+		<herencia>EntidadDeProduccion</herencia>
+		<kontroler>FormularioDeProduccion</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMORDENCURVA</entidad>
+		<descripcion>Item curva de orden de produccón</descripcion>
+		<titulo>Item curva orden de produccón</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMORDENINSUMO</entidad>
+		<descripcion>Item insumo orden de produccón</descripcion>
+		<titulo>Item insumo orden de produccón</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMORDENPROCESO</entidad>
+		<descripcion>Item procesos orden de produccón</descripcion>
+		<titulo>Item proceso orden de produccón</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>GESTIONDEPRODUCCION</entidad>
+		<descripcion>Gestión de orden de producción</descripcion>
+		<titulo>Gestión de orden de producción</titulo>
+		<tipo>E</tipo>
+		<herencia>EntidadDeProduccion</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMGESTIONPROCESO</entidad>
+		<descripcion>Item para de la orden de producción</descripcion>
+		<titulo>Item para gestión de orden de producción</titulo>
+		<tipo>I</tipo>
+		<herencia>EntidadDeProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MOVIMIENTOSTOCKAPRODUCC</entidad>
+		<descripcion>Movimiento de insumos a producción</descripcion>
+		<titulo>Movimiento de insumos a producción</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteMovInsumos</herencia>
+		<kontroler>Comprobante</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMSTOCKAPROD</entidad>
+		<descripcion>Items de movimiento de insumos</descripcion>
+		<titulo>Items de movimiento de insumos</titulo>
+		<tipo>I</tipo>
+		<herencia>ArticulosProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>STOCKINVENTARIO</entidad>
+		<descripcion>Stock inventario</descripcion>
+		<titulo>Stock inventario</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_stockproduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MOVIMIENTOSTOCKAINVENT</entidad>
+		<descripcion>Movimiento de insumos entre inventarios</descripcion>
+		<titulo>Movimiento de insumos entre inventarios</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteMovInsumos</herencia>
+		<kontroler>Comprobante</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMSTOCKAINV</entidad>
+		<descripcion>Items de movimiento de insumos entre inventarios</descripcion>
+		<titulo>Items de movimiento de insumos entre inventarios</titulo>
+		<tipo>I</tipo>
+		<herencia>ArticulosProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MOVIMIENTOSTOCKDESDEPRODUCC</entidad>
+		<descripcion>Movimiento de insumos desde producción</descripcion>
+		<titulo>Movimiento de insumos desde producción</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteMovInsumos</herencia>
+		<kontroler>Comprobante</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMSTOCKDESDEPROD</entidad>
+		<descripcion>Items de movimiento de insumos desde producción</descripcion>
+		<titulo>Items de movimiento de insumos desde producción</titulo>
+		<tipo>I</tipo>
+		<herencia>ArticulosProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMGESTIONCURVA</entidad>
+		<descripcion>Item curva de gestión de produccón</descripcion>
+		<titulo>Item curva de gestión de produccón</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMORDENSALIDA</entidad>
+		<descripcion>Item salida del la orden de producción</descripcion>
+		<titulo>Item salida de la orden de producción</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMGESTIONINSUMO</entidad>
+		<descripcion>Item insumo de gestión de produccón</descripcion>
+		<titulo>Item insumo de gestión de produccón</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMGESTIONDESCARTE</entidad>
+		<descripcion>Item descarte de gestión de produccón</descripcion>
+		<titulo>Item descarte de gestión de produccón</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMGESTIONINSDESC</entidad>
+		<descripcion>Item insumos por descarte de gestión de produccón</descripcion>
+		<titulo>Item insumos por descarte de gestión de produccón</titulo>
+		<tipo>I</tipo>
+		<herencia>BaseProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FINALDEPRODUCCION</entidad>
+		<descripcion>Finalización de producción</descripcion>
+		<titulo>Finalización de producción</titulo>
+		<tipo>E</tipo>
+		<herencia>Ent_ComprobanteMovInsumos</herencia>
+		<kontroler>Comprobante</kontroler>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMARTICFINALDEPROD</entidad>
+		<descripcion>Items de artículos de final de producción</descripcion>
+		<titulo>Items de artículos de final de producción</titulo>
+		<tipo>I</tipo>
+		<herencia>ArticulosProduccion</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVALEDECAMBIO</entidad>
+		<descripcion>Item de vale de cambio</descripcion>
+		<titulo>Item de vale de cambio</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FILTRARCOMPROBANTESAINSERTAR</entidad>
+		<descripcion>Comprobantes a insertar</descripcion>
+		<titulo>Comprobantes a insertar</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SELECOMPAINSERTAR</entidad>
+		<descripcion>Selección de comprobantes</descripcion>
+		<titulo>Selección de comprobantes</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMSELECOMPAINSERTAR</entidad>
+		<descripcion>Item de selección de comprobantes</descripcion>
+		<titulo>Item de selección de comprobantes</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>INFORMEVENTASLPS</entidad>
+		<descripcion>Informe de ventas a Las Piedras Shopping</descripcion>
+		<titulo>Informe de ventas a Las Piedras Shopping</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SELECCHEQUETERCEROS</entidad>
+		<descripcion>Filtros para selección múltiple de cheques de terceros</descripcion>
+		<titulo>Filtros para selección múltiple de cheques de terceros</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>SELECHEQUEAINSERTAR</entidad>
+		<descripcion>Selección de cheques</descripcion>
+		<titulo>Selección de cheques</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMSELECHEQUEAINSERTAR</entidad>
+		<descripcion>Item de selección de cheques</descripcion>
+		<titulo>Item de selección de cheques</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMTARJETASPOSNET</entidad>
+		<descripcion>Items de tarjetas para dispositivo Posnet</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMPLANESPOSNET</entidad>
+		<descripcion>Items de planes para dispositivo Posnet</descripcion>
+		<titulo/>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>RETIRODEEFECTIVO</entidad>
+		<descripcion>Retiro de efectivo en caja</descripcion>
+		<titulo>Retiro de efectivo</titulo>
+		<tipo>E</tipo>
+		<herencia>ent_virtual</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>AJUSTECHEQUERECHAZADO</entidad>
+		<descripcion>Ajustes de cheques de terceros rechazados</descripcion>
+		<titulo>Ajustes de cheques de terceros rechazados</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>GESTIONCHCUSTODIA</entidad>
+		<descripcion>Depósito de cheques en custodia</descripcion>
+		<titulo>Depósito de cheques en custodia</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCHCUSTODIA</entidad>
+		<descripcion>Item de cheques en custodia</descripcion>
+		<titulo>Item de cheques en custodia</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>GENERADORTOKEN</entidad>
+		<descripcion>Generador token API Rest</descripcion>
+		<titulo>Token API Rest</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LISTADECOSTOSDEPRODUCCION</entidad>
+		<descripcion>Listas de costos de producción</descripcion>
+		<titulo>Listas de costos de producción</titulo>
+		<tipo>E</tipo>
+		<herencia>LiquidacionEnProduccion</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>MODIFICACIONDECOSTOSDEPRODUCCION</entidad>
+		<descripcion>Modificación de costos de producción</descripcion>
+		<titulo>Modificación de costos de producción</titulo>
+		<tipo>E</tipo>
+		<herencia>LiquidacionEnProduccion</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COTIZACIONPRODUCCION</entidad>
+		<descripcion>Cotización gestión de orden de producción</descripcion>
+		<titulo>Cotización gestión de orden de producción</titulo>
+		<tipo>E</tipo>
+		<herencia>LiquidacionEnProduccion</herencia>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>LIQUIDACIONDETALLER</entidad>
+		<descripcion>Liquidación de talleres</descripcion>
+		<titulo>Liquidación de talleres</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMLIQTALLERPRODUCCION</entidad>
+		<descripcion>Item producción de liquidación de taller</descripcion>
+		<titulo>Item producción de liquidación de taller</titulo>
+		<tipo>I</tipo>
+		<herencia>ProduccionColorYTalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMLIQTALLERDESCARTE</entidad>
+		<descripcion>Item descarte de liquidación de taller</descripcion>
+		<titulo>Item descarte de liquidación de taller</titulo>
+		<tipo>I</tipo>
+		<herencia>ProduccionColorYTalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMLIQTALLERINSUMOS</entidad>
+		<descripcion>Item insumos de liquidación de taller</descripcion>
+		<titulo>Item insumos de liquidación de taller</titulo>
+		<tipo>I</tipo>
+		<herencia>ProduccionColorYTalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMLIQTALLERADICIONAL</entidad>
+		<descripcion>Item adicional de liquidación de taller</descripcion>
+		<titulo>Item adicional de liquidación de taller</titulo>
+		<tipo>I</tipo>
+		<herencia>ProduccionColorYTalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMMODCOSTOPROD</entidad>
+		<descripcion>Item modificación del costo de producción</descripcion>
+		<titulo>Item modificación del costo de producción</titulo>
+		<tipo>I</tipo>
+		<herencia>ModificacionDeCostos</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCOTIZAORDENPRODUCC</entidad>
+		<descripcion>Item producción de cotización de orden</descripcion>
+		<titulo>Item producción de cotización de orden</titulo>
+		<tipo>I</tipo>
+		<herencia>ProduccionColorYTalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCOTIZAORDENDESCARTE</entidad>
+		<descripcion>Item descarte de cotización de orden</descripcion>
+		<titulo>Item descarte de cotización de orden</titulo>
+		<tipo>I</tipo>
+		<herencia>ProduccionColorYTalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCOTIZAORDENINSUMOS</entidad>
+		<descripcion>Item insumos de cotización de orden</descripcion>
+		<titulo>Item insumos de cotización de orden</titulo>
+		<tipo>I</tipo>
+		<herencia>ProduccionColorYTalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMCOTIZAORDENADICION</entidad>
+		<descripcion>Item adicional de cotización de orden</descripcion>
+		<titulo>Item adicional de cotización de orden</titulo>
+		<tipo>I</tipo>
+		<herencia>ProduccionColorYTalle</herencia>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>COSTODEINSUMO</entidad>
+		<descripcion>Costos de Insumos y semielaborados</descripcion>
+		<titulo>Costos de Insumos y semielaborados</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMEQUIVALORES</entidad>
+		<descripcion>Item equivalencia de valores</descripcion>
+		<titulo>Item equivalencia de valores</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMVALOROPEECOM</entidad>
+		<descripcion>Item valores operación ecommerce</descripcion>
+		<titulo>Item valores operación ecommerce</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>PROCESARNCPENDIENTEPROMOBANCO</entidad>
+		<descripcion>Herramienta de generación de NC por promociones bancarias</descripcion>
+		<titulo>Herramienta de generación de notas de crédito pendientes por promociones bancarias</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMNCPENDIENTEPROMOB</entidad>
+		<descripcion>Item NC pendientes por promo bancaria</descripcion>
+		<titulo>Item modificación del costo de producción</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ALIVIODECAJA</entidad>
+		<descripcion>Alivio de caja</descripcion>
+		<titulo>Alivio de caja</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>ITEMALIVIO</entidad>
+		<descripcion>Item Alivio de caja</descripcion>
+		<titulo>Item alivio de caja</titulo>
+		<tipo>I</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>false</formulario>
+	</entidades>
+	<entidades>
+		<entidad>REGISTRODECOSTOS</entidad>
+		<descripcion>Registro de costos de mercadería</descripcion>
+		<titulo>Registro de costos de mercadería</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+	<entidades>
+		<entidad>FILTRARSTOCKYPRECIOCMV</entidad>
+		<descripcion>Filtros para procesar stock y precios para CMV</descripcion>
+		<titulo>Filtros para procesar stock y precios para CMV</titulo>
+		<tipo>E</tipo>
+		<herencia/>
+		<kontroler/>
+		<formulario>true</formulario>
+	</entidades>
+</VFPData>

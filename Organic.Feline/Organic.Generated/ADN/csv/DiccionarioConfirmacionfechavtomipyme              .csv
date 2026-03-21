@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONFIRMACIONFECHAVTOMIPYME","Codigo","CompAsoc","Codigo",F,"G",38,0,"CARACTER",T,"",F,"",F,""
+"CONFIRMACIONFECHAVTOMIPYME","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"CONFIRMACIONFECHAVTOMIPYME","FechaVencimientoMiPyME","","",T,"D",8,0,"FECHACOMPROBANTE",F,"",T,"",T,""
+"CONFIRMACIONFECHAVTOMIPYME","OpcionTransmisionMipyme","","",T,"C",3,0,"COMBOXML",F,"",F,"",T,""

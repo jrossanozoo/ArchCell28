@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMBOLSASYCAJAS","Codigo","DETBOLYCAJ","NUMR",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMBOLSASYCAJAS","CodigoDeBarras","","",F,"C",40,0,"CARACTER",F,"",F,"",F,""
+"ITEMBOLSASYCAJAS","Equivalencia","DETBOLYCAJ","Equiv",F,"C",20,0,"DESCRIPCION",F,"Equivalencia",F,"",F,""
+"ITEMBOLSASYCAJAS","NoProcesarStock","DETBOLYCAJ","ProcStock",F,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMBOLSASYCAJAS","Comportamiento","DETBOLYCAJ","COMP",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMBOLSASYCAJAS","Articulo","DETBOLYCAJ","MART",T,"C",15,0,"CONSOPORTEPREPANTALLA",F,"ARTICULO",F,"",T,""
+"ITEMBOLSASYCAJAS","ArticuloDetalle","DETBOLYCAJ","DESCRIP",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"Articulo.Descripcion"
+"ITEMBOLSASYCAJAS","Color","DETBOLYCAJ","cColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMBOLSASYCAJAS","ColorDetalle","DETBOLYCAJ","ColTXT",T,"C",50,0,"DESCRIPCION",F,"",F,"",F,"Color.Descripcion"
+"ITEMBOLSASYCAJAS","Talle","DETBOLYCAJ","Talle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"ITEMBOLSASYCAJAS","TalleDetalle","DETBOLYCAJ","TallTXT",F,"C",50,0,"DESCRIPCION",F,"",F,"",F,"Talle.Descripcion"
+"ITEMBOLSASYCAJAS","Cantidad","DETBOLYCAJ","CANTI",T,"N",10,2,"NUMERICODECIMALPARAMETRIZADO",F,"",F,"",F,""

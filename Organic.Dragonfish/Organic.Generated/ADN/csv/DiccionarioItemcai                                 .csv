@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCAI","Codigo","detallecais","Codigo",F,"C",35,0,"CODIGO",T,"",F,"",F,""
+"ITEMCAI","NumeroCAI","detallecais","NCAI",T,"N",14,0,"NUMERICO",F,"",F,"",T,""
+"ITEMCAI","NumeroDesde","detallecais","ndesde",T,"N",10,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCAI","NumeroHasta","detallecais","nhasta",T,"N",10,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCAI","FechaVencimiento","detallecais","FechaVto",T,"D",8,0,"FECHA",F,"",F,"",F,""

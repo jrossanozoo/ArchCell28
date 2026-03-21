@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"UNIDADDEMEDIDA","Codigo","Unmed","Cod",T,"C",3,0,"CODIGO",T,"",F,"",F,""
+"UNIDADDEMEDIDA","Descripcion","Unmed","Descrip",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"UNIDADDEMEDIDA","EquivalenciaAfip","Unmed","Afip",T,"N",2,0,"CODIGONUMERICO",F,"UNIDADDEMEDIDAAFIP",F,"",F,""
+"UNIDADDEMEDIDA","EquivalenciaArba","Unmed","Arba",T,"C",10,0,"COMBOTABLA",F,"UNIDADDEMEDIDAARBA",F,"",F,""
+"UNIDADDEMEDIDA","Obs","Unmed","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

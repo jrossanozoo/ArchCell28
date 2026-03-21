@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"EQUIVALORLINCE","Codigo","EQUIVALLIN","Codigo",F,"N",1,0,"CODIGONUMERICO",T,"",F,"",F,""
+"EQUIVALORLINCE","Obs","","",F,"C",10,0,"OBSERVACION",F,"",F,"",F,""
+"EQUIVALORLINCE","Descripcion","","",F,"C",10,0,"CARACTER",F,"",T,"",F,""
+"EQUIVALORLINCE","ValoresDetalle","DETEQUILINCE","Codigo",T,"N",1,0,"DETALLEITEMVALOREQUILINCE",F,"",F,"",F,""

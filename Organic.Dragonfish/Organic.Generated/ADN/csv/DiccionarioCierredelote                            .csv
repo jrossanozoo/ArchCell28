@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CIERREDELOTE","Codigo","CIELOTE","Cod",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"CIERREDELOTE","NumeroC","CIELOTE","numeroC",T,"N",8,0,"CLAVECANDIDATA",F,"",F,"",F,""
+"CIERREDELOTE","FECHAALTA","CIELOTE","FALTA",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.Librerias.ObtenerFecha()",F,""
+"CIERREDELOTE","HORAALTA","CIELOTE","HALTA",T,"C",8,0,"HORA",F,"",F,"=goServicios.Librerias.ObtenerHora()",F,""
+"CIERREDELOTE","SerieOrigen","CIELOTE","Serie",T,"C",10,0,"CARACTER",F,"",F,"=_screen.zoo.app.cSerie",F,""
+"CIERREDELOTE","FechaCierreDeLote","CIELOTE","FCieLote",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.Librerias.ObtenerFecha()",F,""
+"CIERREDELOTE","HoraCierreDeLote","CIELOTE","HCieLote",T,"C",5,0,"HORA",F,"",F,"",F,""
+"CIERREDELOTE","EquipoPOS","CIELOTE","EquipoPOS",T,"C",10,0,"CODIGO",F,"POS",F,"@OBTENERPOSDEFAULT()",F,""
+"CIERREDELOTE","TicketICard","CIELOTE","txticard",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"CIERREDELOTE","Observacion","CIELOTE","Obs",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"CIERREDELOTE","Detalle","DETCIELOTE","Cod",T,"G",38,0,"DETALLEITEMLOTE",F,"",F,"",F,""

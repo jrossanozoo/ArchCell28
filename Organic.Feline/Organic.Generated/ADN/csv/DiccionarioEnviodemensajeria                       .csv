@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"EnvioDeMensajeria","Codigo","ENVMENS","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"EnvioDeMensajeria","Numero","ENVMENS","NUMERO",T,"N",4,0,"CLAVEDEBUSQUEDA",F,"",F,"",F,""
+"EnvioDeMensajeria","Ecommerce","ENVMENS","Ecommerce",T,"C",10,0,"CODIGO",F,"ECOMMERCE",F,"",F,""
+"EnvioDeMensajeria","Entidad","ENVMENS","ENTIDAD",T,"C",40,0,"COMBOXML",F,"",F,"",F,""
+"EnvioDeMensajeria","Diseno","ENVMENS","DIS",T,"C",40,0,"CODIGO",F,"DISENOIMPRESION",F,"",F,""
+"EnvioDeMensajeria","Imagen","ENVMENS","IMAGEN",T,"C",180,0,"IMAGENCONRUTADINAMICA",F,"",F,"",F,""
+"EnvioDeMensajeria","MotivoParaComunicarse","ENVMENS","MotivoMens",T,"C",180,0,"CARACTER",F,"",F,"",F,""
+"EnvioDeMensajeria","Template","ENVMENS","Template",T,"C",180,0,"CARACTER",F,"",F,"",F,""
+"EnvioDeMensajeria","MLEnvioUno","ENVMENS","MLENVUNO",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"EnvioDeMensajeria","MLEnvioDos","ENVMENS","MLENVDOS",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"EnvioDeMensajeria","MLAcordar","ENVMENS","MLAcordar",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"EnvioDeMensajeria","Mensaje","ENVMENS","MENSAJE",T,"M",0,0,"OBSERVACION10R",F,"",T,"",F,""

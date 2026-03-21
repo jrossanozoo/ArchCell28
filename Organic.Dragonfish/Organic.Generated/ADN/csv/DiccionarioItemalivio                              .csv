@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMALIVIO","Codigo","AlivioDet","Codigo",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMALIVIO","Caja","AlivioDet","Caja",T,"N",2,0,"NUMERICO",F,"",F,"",T,""
+"ITEMALIVIO","CajaDetalle","AlivioDet","CajaDesc",T,"C",40,0,"CARACTER",F,"",F,"",F,""
+"ITEMALIVIO","Valor","AlivioDet","Valor",T,"C",5,0,"CODIGO",F,"VALOR",F,"",F,""
+"ITEMALIVIO","ValorDetalle","AlivioDet","ValorDesc",T,"C",40,0,"CARACTER",F,"",F,"",F,""
+"ITEMALIVIO","MontoAdvertencia","AlivioDet","MontoAdv",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMALIVIO","MontoMaximo","AlivioDet","MontoMax",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

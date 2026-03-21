@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TALLER","Codigo","TALLER","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",T,""
+"TALLER","Descripcion","TALLER","Descrip",T,"C",254,0,"CARACTER",F,"",T,"",F,""
+"TALLER","Proveedor","TALLER","Proveedor",T,"C",5,0,"CODIGO",F,"PROVEEDOR",F,"",F,""
+"TALLER","Inventario","TALLER","Inventario",T,"C",15,0,"CODIGO",F,"INVENTARIO",F,"",F,""
+"TALLER","Obs","TALLER","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

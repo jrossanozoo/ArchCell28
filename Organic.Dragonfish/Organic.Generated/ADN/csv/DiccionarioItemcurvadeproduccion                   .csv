@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCURVADEPRODUCCION","Codigo","CRVPRODDET","CodRela",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMCURVADEPRODUCCION","Color","CRVPRODDET","CodColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMCURVADEPRODUCCION","ColorDetalle","CRVPRODDET","FCOLTXT",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Color.Descripcion"
+"ITEMCURVADEPRODUCCION","Talle","CRVPRODDET","CodTalle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"ITEMCURVADEPRODUCCION","TalleDetalle","CRVPRODDET","FTALTXT",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Talle.Descripcion"
+"ITEMCURVADEPRODUCCION","Cantidad","CRVPRODDET","Cantidad",T,"N",8,2,"NUMERICONONEGATIVO",F,"",F,"",F,""

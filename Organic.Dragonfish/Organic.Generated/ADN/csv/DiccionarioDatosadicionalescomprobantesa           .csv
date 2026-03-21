@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DatosAdicionalesComprobantesA","Codigo","AFIP3668","Codigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"DatosAdicionalesComprobantesA","Suscribe","AFIP3668","Suscribe",T,"N",2,0,"COMBOXML",F,"",F,"",T,""
+"DatosAdicionalesComprobantesA","TipoDocumento","AFIP3668","Tipodoc",T,"C",2,0,"DOCUMENTO",F,"",F,"",T,""
+"DatosAdicionalesComprobantesA","NroDocumento","AFIP3668","NroDoc",T,"C",10,0,"DOCUMENTO",F,"",F,"",T,""
+"DatosAdicionalesComprobantesA","Motivo","AFIP3668","Motivo",T,"N",2,0,"COMBOTABLA",F,"MOTIVODATOSADICIONALESCOMPROBANTESA",F,"",T,""
+"DatosAdicionalesComprobantesA","CodigoComprobanteOrigen","AFIP3668","CodComp",F,"C",38,0,"CARACTER",F,"",F,"",F,""

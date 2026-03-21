@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"Tipoareaimpresion","Codigo","TipoArea","cCod",T,"C",20,0,"CODIGO",T,"",F,"",F,""
+"Tipoareaimpresion","Descripcion","TipoArea","cDes",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"Tipoareaimpresion","Detalle","TipoArea","cDetalle",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

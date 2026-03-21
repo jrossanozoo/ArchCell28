@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"COTIZACION","Codigo","SelEnt","cCod",F,"C",1,0,"CODIGO",T,"",F,"",F,""
+"COTIZACION","Moneda","","",T,"C",10,0,"CODIGO",F,"MONEDA",F,"",T,""
+"COTIZACION","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"COTIZACION","UltimaFecha","","",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"COTIZACION","UltimaHora","","",T,"C",5,0,"HORA",F,"",F,"",F,""
+"COTIZACION","UltimaCotizacion","","",T,"N",15,5,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"COTIZACION","NuevaFecha","","",T,"D",8,0,"FECHA",F,"",F,"",T,""
+"COTIZACION","NuevaHora","","",T,"C",5,0,"HORA",F,"",F,"",F,""
+"COTIZACION","NuevaCotizacion","","",T,"N",15,5,"NUMERICONONEGATIVO",F,"",F,"",T,""

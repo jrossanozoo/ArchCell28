@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMNCPENDIENTEPROMOB","Codigo","pbpendet","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",T,""
+"ITEMNCPENDIENTEPROMOB","IdFactura","","",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMNCPENDIENTEPROMOB","IdCupon","","",F,"C",38,0,"CARACTER",F,"",F,"",T,""
+"ITEMNCPENDIENTEPROMOB","Caja","","",T,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"ITEMNCPENDIENTEPROMOB","FactTipo","","",T,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"ITEMNCPENDIENTEPROMOB","IdCliente","","",T,"C",5,0,"CODIGO",F,"CLIENTE",F,"",F,""
+"ITEMNCPENDIENTEPROMOB","ClienteDescripcion","","",T,"C",185,0,"CARACTER",F,"",F,"",F,"Cliente.Nombre"
+"ITEMNCPENDIENTEPROMOB","TipoNotaDeCredito","","",T,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"ITEMNCPENDIENTEPROMOB","MontoAjuste","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

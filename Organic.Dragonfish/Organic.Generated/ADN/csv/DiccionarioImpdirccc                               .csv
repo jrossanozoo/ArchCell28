@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"IMPDIRCCC","Numero","IMPDIRCCC","NUMERO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",T,""
+"IMPDIRCCC","Descripcion","IMPDIRCCC","Descripcio",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"IMPDIRCCC","CentroDeCosto","IMPDIRCCC","CCosto",T,"C",20,0,"CODIGO",F,"CENTRODECOSTO",F,"",F,""
+"IMPDIRCCC","DistribucionPorCentroDeCosto","IMPDIRCCC","Dccosto",T,"C",20,0,"CODIGO",F,"DISTRIBUCIONCENTRODECOSTO",F,"",F,""
+"IMPDIRCCC","Importancia","IMPDIRCCC","Importanci",T,"N",5,0,"NUMERICONONEGATIVO",F,"",F,"",T,""
+"IMPDIRCCC","f_Concepto_Desde","IMPDIRCCC","ConDesde",T,"C",15,0,"EtiquetaCaracterDesdeHastaBusc",F,"CONCEPTOPAGO",F,"",F,""
+"IMPDIRCCC","f_Concepto_Hasta","IMPDIRCCC","ConHasta",T,"C",15,0,"EtiquetaCaracterDesdeHastaBusc",F,"CONCEPTOPAGO",F,"ZZZZZZZZZZZZZZZ",F,""
+"IMPDIRCCC","f_Clasificacion_Desde","IMPDIRCCC","ClaDesde",T,"C",15,0,"EtiquetaCaracterDesdeHastaBusc",F,"CLASIFICACIONCONCEPTOPAGO",F,"",F,""
+"IMPDIRCCC","f_Clasificacion_Hasta","IMPDIRCCC","ClaHasta",T,"C",15,0,"EtiquetaCaracterDesdeHastaBusc",F,"CLASIFICACIONCONCEPTOPAGO",F,"ZZZZZZZZZZZZZZZ",F,""
+"IMPDIRCCC","Observacion","IMPDIRCCC","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

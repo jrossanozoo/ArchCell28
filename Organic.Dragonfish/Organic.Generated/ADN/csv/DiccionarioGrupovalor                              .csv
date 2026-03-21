@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"GRUPOVALOR","Codigo","GRUPOVALOR","Codigo",T,"C",5,0,"CODIGO",T,"",F,"",T,""
+"GRUPOVALOR","Descripcion","GRUPOVALOR","GRUNOM",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"GRUPOVALOR","Observ","GRUPOVALOR","GObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

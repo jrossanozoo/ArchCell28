@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MODELODEPRODUCCION","Codigo","MODELOPROD","Codigo",T,"C",15,0,"CODIGO",T,"",F,"",T,""
+"MODELODEPRODUCCION","Descripcion","MODELOPROD","Descrip",T,"C",100,0,"CARACTER",F,"",T,"",F,""
+"MODELODEPRODUCCION","ProductoFinal","MODELOPROD","Producto",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",F,""
+"MODELODEPRODUCCION","Familia","MODELOPROD","Familia",F,"C",10,0,"CODIGO",F,"FAMILIA",F,"",F,""
+"MODELODEPRODUCCION","Material","MODELOPROD","Material",F,"C",10,0,"CODIGO",F,"MATERIAL",F,"",F,""
+"MODELODEPRODUCCION","Grupo","MODELOPROD","Grupo",F,"C",10,0,"CODIGO",F,"GRUPO",F,"",F,""
+"MODELODEPRODUCCION","CurvaDeProduccion","MODELOPROD","CurvaProd",T,"C",15,0,"CODIGO",F,"CURVADEPRODUCCION",F,"",F,""
+"MODELODEPRODUCCION","ModeloProcesos","MODPROC","CodModProc",T,"C",15,0,"DETALLEITEMMODELOPROCESO",F,"",F,"",F,""
+"MODELODEPRODUCCION","Obs","MODELOPROD","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"MODELODEPRODUCCION","ModeloInsumos","MODINS","CodModIns",T,"C",15,0,"DETALLEITEMMODELOINSUMO",F,"",F,"",F,""
+"MODELODEPRODUCCION","ModeloSalidas","MODSAL","CodModSal",T,"C",15,0,"DETALLEITEMMODELOSALIDA",F,"",F,"",F,""
+"MODELODEPRODUCCION","ModeloMaquinas","MODMAQ","CodModMaq",T,"C",15,0,"DETALLEITEMMODELOMAQUINA",F,"",F,"",F,""

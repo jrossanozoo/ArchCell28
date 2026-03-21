@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCANCELACIONDESENIAS","Codigo","detcansenia","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCANCELACIONDESENIAS","IdSeniaCancelada","detcansenia","IdSenia",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMCANCELACIONDESENIAS","Cliente","detcansenia","cliente",T,"C",10,0,"CODIGO",F,"CLIENTE",F,"",F,""
+"ITEMCANCELACIONDESENIAS","ClienteDetalle","detcansenia","cliedesc",T,"C",185,0,"CARACTER",F,"",T,"",F,"cliente.nombre"
+"ITEMCANCELACIONDESENIAS","Comprobante","detcansenia","Comprob",T,"C",20,0,"CARACTER",F,"",F,"",T,""
+"ITEMCANCELACIONDESENIAS","FechaAlta","detcansenia","FechaAlta",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMCANCELACIONDESENIAS","FechaVto","detcansenia","FechaVto",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMCANCELACIONDESENIAS","Importe","detcansenia","Importe",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCANCELACIONDESENIAS","Seleccionada","detcansenia","Seleccion",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

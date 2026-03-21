@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMPROMOARTICULOS","Codigo","ProArtDet","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMPROMOARTICULOS","idItemArticulo","ProArtDet","IdArti",F,"G",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMPROMOARTICULOS","idItemPromo","ProArtDet","IdPromo",F,"G",38,0,"CARACTER",F,"",F,"",T,""
+"ITEMPROMOARTICULOS","AtributoCabecera","ProArtDet","AtrCabever",F,"C",40,0,"CARACTER",F,"",F,"",F,""
+"ITEMPROMOARTICULOS","idItemValor","ProArtDet","IdValor",F,"G",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMPROMOARTICULOS","MontoBeneficio","ProArtDet","Monto",F,"N",15,2,"NUMERICO",F,"",F,"",F,""

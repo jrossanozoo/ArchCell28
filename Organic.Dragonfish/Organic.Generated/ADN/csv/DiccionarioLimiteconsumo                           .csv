@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"LIMITECONSUMO","CodInt","LCONSUMO","CodInt",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"LIMITECONSUMO","Numero","LCONSUMO","NUMERO",T,"N",8,0,"CLAVECANDIDATA",F,"",F,"",F,""
+"LIMITECONSUMO","Cliente","LCONSUMO","Cliente",T,"C",10,0,"CODIGO",F,"CLIENTE",F,"",T,""
+"LIMITECONSUMO","Clasificacion","LCONSUMO","Clasif",T,"C",10,0,"CODIGO",F,"CLASIFICACIONCLIENTE",F,"",F,"CLIENTE.CLASIFICACION"
+"LIMITECONSUMO","FechaDesde","LCONSUMO","FechaDesde",T,"D",8,0,"FECHA",F,"",F,"=goServicios.librerias.ObtenerFecha()",T,""
+"LIMITECONSUMO","FechaHasta","LCONSUMO","FechaHasta",T,"D",8,0,"FECHA",F,"",F,"=gomonth(goServicios.librerias.ObtenerFecha(),1)",T,""
+"LIMITECONSUMO","Monto","LCONSUMO","Monto",T,"N",15,2,"NUMERICO",F,"",T,"",T,""
+"LIMITECONSUMO","MontoUtilizado","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"LIMITECONSUMO","Observacion","LCONSUMO","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

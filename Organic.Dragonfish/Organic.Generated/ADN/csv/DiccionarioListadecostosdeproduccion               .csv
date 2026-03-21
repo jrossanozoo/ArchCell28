@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"LISTADECOSTOSDEPRODUCCION","Codigo","LCOSTOP","Codigo",T,"C",6,0,"CODIGO",T,"",F,"",T,""
+"LISTADECOSTOSDEPRODUCCION","Descripcion","LCOSTOP","Descrip",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"LISTADECOSTOSDEPRODUCCION","FechaHasta","LCOSTOP","fechahasta",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"LISTADECOSTOSDEPRODUCCION","CondicionIva","LCOSTOP","lcp_condiv",T,"N",1,0,"COMBOXML",F,"",F,"",T,""
+"LISTADECOSTOSDEPRODUCCION","Moneda","LCOSTOP","lcp_moneda",T,"C",10,0,"CODIGO",F,"MONEDA",F,"=goParametros.Felino.Generales.CodigoValorUtilizadoParaLiquidacionDeTalleres",T,""
+"LISTADECOSTOSDEPRODUCCION","Observ","LCOSTOP","CObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

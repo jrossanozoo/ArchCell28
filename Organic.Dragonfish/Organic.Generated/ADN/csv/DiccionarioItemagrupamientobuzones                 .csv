@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAGRUPAMIENTOBUZONES","Codigo","AgrupAGB","Codigo",F,"C",8,0,"CODIGO",T,"",F,"",F,""
+"ITEMAGRUPAMIENTOBUZONES","Incluye","AgrupAGB","incluye",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMAGRUPAMIENTOBUZONES","AgrupamientoBuzones","AgrupAGB","Agrup",T,"C",8,0,"CODIGO",F,"AGRUPAMIENTODEBUZONES",F,"",T,""
+"ITEMAGRUPAMIENTOBUZONES","AgrupamientoBuzonesDetalle","AgrupAGB","Descrip",T,"C",40,0,"CARACTER",F,"",T,"",F,"AgrupamientoBuzones.Descripcion"

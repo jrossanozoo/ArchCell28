@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CAEA","NumeroInterno","CAEA","NInterno",T,"N",15,0,"CODIGONUMERICO",T,"",F,"@ObtenerSiguienteNumerico()",F,""
+"CAEA","PtoVenta","CAEA","PtoVta",T,"N",5,0,"NUMERICO",F,"",F,"=goparametros.felino.gestiondeventas.facturacionelectronica.nacional.puntodeventacaea",F,""
+"CAEA","PeriodoCAEA","CAEA","Periodo",T,"C",7,0,"CARACTER",F,"",F,"=this.SugerirFechaPeriodo()",F,""
+"CAEA","Quincena","CAEA","Quincena",T,"N",1,0,"COMBOXML",F,"",F,"=this.Periodo()",F,""
+"CAEA","NumeroCAEA","CAEA","NCAEA",T,"C",20,0,"CARACTER",F,"",T,"",F,""
+"CAEA","FechaVigenciaDesde","CAEA","VigenciaD",T,"D",8,0,"EtiquetaFechaDesHasIZ",F,"",F,"",F,""
+"CAEA","FechaVigenciaHasta","CAEA","VigenciaH",T,"D",8,0,"EtiquetaFechaDesHasIZ",F,"",F,"",F,""
+"CAEA","FechaTope","CAEA","FechaTope",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"CAEA","FechaDeProceso","CAEA","FechaProc",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"CAEA","ComentariosAFIP","CAEA","ObsAfip",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"CAEA","Observacion","CAEA","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

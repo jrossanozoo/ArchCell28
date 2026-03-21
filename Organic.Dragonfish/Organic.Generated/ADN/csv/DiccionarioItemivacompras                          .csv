@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMIVACOMPRAS","Codigo","ivacpdet","codigo",F,"C",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMIVACOMPRAS","MontoDeIvaSinDescuento","","",F,"N",12,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIVACOMPRAS","MontoNoGravadoSinDescuento","","",F,"N",12,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIVACOMPRAS","MontoNoGravado","","",T,"N",12,2,"NUMERICO",F,"",F,"",T,""
+"ITEMIVACOMPRAS","PorcentajeDeIva","","",T,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIVACOMPRAS","MontoDeIva","","",T,"N",12,2,"NUMERICONONEGATIVO",F,"",F,"",F,""

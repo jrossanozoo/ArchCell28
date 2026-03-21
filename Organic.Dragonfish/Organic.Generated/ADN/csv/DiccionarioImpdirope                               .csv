@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"IMPDIROPE","Numero","IMPDIROPE","NUMERO",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",T,""
+"IMPDIROPE","Descripcion","IMPDIROPE","Descripcio",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"IMPDIROPE","PlanDeCuentas","IMPDIROPE","PCUENTA",T,"C",30,0,"CODIGO",F,"PLANDECUENTAS",F,"",T,""
+"IMPDIROPE","Importancia","IMPDIROPE","Importanci",T,"N",5,0,"NUMERICONONEGATIVO",F,"",F,"",T,""
+"IMPDIROPE","f_Operadora_Desde","IMPDIROPE","OpeDesde",T,"C",15,0,"EtiquetaCaracterDesdeHastaBusc",F,"OPERADORADETARJETA",F,"",F,""
+"IMPDIROPE","f_Operadora_Hasta","IMPDIROPE","OpeHasta",T,"C",15,0,"EtiquetaCaracterDesdeHastaBusc",F,"OPERADORADETARJETA",F,"ZZZZZZZZZZZZZZZ",F,""
+"IMPDIROPE","f_Sucursal_Desde","IMPDIROPE","SucDesde",T,"C",10,0,"EtiquetaCaracterDesdeHastaBusc",F,"SUCURSAL",F,"",F,""
+"IMPDIROPE","f_Sucursal_Hasta","IMPDIROPE","SucHasta",T,"C",10,0,"EtiquetaCaracterDesdeHastaBusc",F,"SUCURSAL",F,"ZZZZZZZZZZ",F,""
+"IMPDIROPE","f_TipoSucursal_Desde","IMPDIROPE","TSucDesde",T,"C",10,0,"EtiquetaCaracterDesdeHastaBusc",F,"TIPOSUCURSAL",F,"",F,""
+"IMPDIROPE","f_TipoSucursal_Hasta","IMPDIROPE","TSucHasta",T,"C",10,0,"EtiquetaCaracterDesdeHastaBusc",F,"TIPOSUCURSAL",F,"ZZZZZZZZZZ",F,""
+"IMPDIROPE","BaseDeDatos","IMPDIROPE","Base",T,"C",21,0,"COMBOSUCYAGRUCONVACIO",F,"",F,"",F,""
+"IMPDIROPE","Observacion","IMPDIROPE","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

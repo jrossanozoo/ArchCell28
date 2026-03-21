@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"COSTODEINSUMO","Codigo","COSTOINS","CODIGO",T,"C",79,0,"CODIGO",T,"",T,"",F,""
+"COSTODEINSUMO","CostoOriginal","COSTOINS","CDIRORI",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"COSTODEINSUMO","Insumo","COSTOINS","Insumo",T,"C",25,0,"CODIGO",F,"INSUMO",F,"",T,""
+"COSTODEINSUMO","Color","COSTOINS","cColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"COSTODEINSUMO","Talle","COSTOINS","Talle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"COSTODEINSUMO","ListaDeCosto","COSTOINS","LISTACOST",T,"C",6,0,"CODIGO",F,"LISTADECOSTOSDEPRODUCCION",F,"",T,""
+"COSTODEINSUMO","CostoDirecto","COSTOINS","CDIRECTO",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"COSTODEINSUMO","Proceso","COSTOINS","Proceso",T,"C",15,0,"CODIGO",F,"PROCESOPRODUCCION",F,"",F,""
+"COSTODEINSUMO","Taller","COSTOINS","Taller",T,"C",15,0,"CODIGO",F,"TALLER",F,"",F,""
+"COSTODEINSUMO","DesdeCantidad","COSTOINS","Cantidad",T,"N",7,0,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"COSTODEINSUMO","Obs","COSTOINS","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

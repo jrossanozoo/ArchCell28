@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMMINIMOREPOSICION","Codigo","MINREPODET","CODIGO",F,"C",20,0,"CODIGONUMERICO",T,"",F,"",F,""
+"ITEMMINIMOREPOSICION","Comportamiento","MINREPODET","COMP",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMMINIMOREPOSICION","Articulo","MINREPODET","CodArt",T,"C",13,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"ITEMMINIMOREPOSICION","ArticuloDetalle","MINREPODET","DescArt",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,"articulo.descripcion"
+"ITEMMINIMOREPOSICION","Color","MINREPODET","CodCol",T,"C",2,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMMINIMOREPOSICION","ColorDetalle","MINREPODET","DescCol",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"color.descripcion"
+"ITEMMINIMOREPOSICION","Talle","MINREPODET","CodTal",T,"C",3,0,"CARACTER",F,"",F,"",F,""
+"ITEMMINIMOREPOSICION","CantidadActual","MINREPODET","CantActual",T,"N",8,0,"NUMERICO",F,"",F,"",F,""
+"ITEMMINIMOREPOSICION","Cantidad","MINREPODET","Cantidad",T,"N",8,2,"NUMERICO",F,"",F,"",F,""
+"ITEMMINIMOREPOSICION","MaxActual","MINREPODET","MaxActual",T,"N",10,2,"NUMERICO",F,"",F,"",F,""
+"ITEMMINIMOREPOSICION","MaxNuevo","MINREPODET","MaxNuevo",T,"N",10,2,"NUMERICO",F,"",F,"",F,""

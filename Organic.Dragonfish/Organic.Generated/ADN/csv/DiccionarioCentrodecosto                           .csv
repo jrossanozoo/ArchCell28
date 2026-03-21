@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CENTRODECOSTO","Codigo","CCOSTO","COSCOD",T,"C",20,0,"CODIGO",T,"",F,"",F,""
+"CENTRODECOSTO","Descripcion","CCOSTO","COSDES",T,"C",150,0,"DESCRIPCION",F,"",T,"",F,""
+"CENTRODECOSTO","Observaciones","CCOSTO","COSOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"APERTURAEJERCICIO","Numero","APEREJER","Numero",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",T,""
+"APERTURAEJERCICIO","Descripcion","APEREJER","Descr",T,"C",60,0,"DESCRIPCION",F,"",T,"",F,""
+"APERTURAEJERCICIO","Asiento","APEREJER","Asiento",T,"C",20,0,"CODIGO",F,"ASIENTO",F,"",T,""
+"APERTURAEJERCICIO","Ejercicio","APEREJER","Ejercicio",T,"N",8,0,"CODIGONUMERICO",F,"EJERCICIO",F,"",T,""
+"APERTURAEJERCICIO","FechaApertura","APEREJER","FechaAper",T,"D",8,0,"FECHA",F,"",F,"",T,""
+"APERTURAEJERCICIO","Observacion","APEREJER","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

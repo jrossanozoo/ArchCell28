@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMMONEDA","Codigo","COTIZA","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMMONEDA","Fecha","COTIZA","Fecha",T,"D",8,0,"FECHA",F,"",F,"=goServicios.Librerias.ObtenerFecha()",T,""
+"ITEMMONEDA","Cotizacion","COTIZA","Cotiz",T,"N",16,5,"NUMERICONONEGATIVO",F,"",F,"=1",F,""
+"ITEMMONEDA","Hora","COTIZA","Hora",T,"C",5,0,"HORA",F,"",F,"=strtran(substr(goServicios.Librerias.ObtenerHora(),1,5),":")",F,""

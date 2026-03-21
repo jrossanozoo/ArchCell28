@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMIMPUESTOSOLCOMPRA","Codigo","ImpSolC","cCod",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMIMPUESTOSOLCOMPRA","NroItem","ImpSolC","NroItem",F,"N",5,0,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSOLCOMPRA","TipoImpuesto","ImpSolC","TipoI",F,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOSOLCOMPRA","CodigoInterno","ImpSolC","codint",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOSOLCOMPRA","Porcentaje","ImpSolC","porcen",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSOLCOMPRA","MinimoNoImponible","ImpSolC","minoimp",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSOLCOMPRA","CodImp","ImpSolC","CodImp",T,"C",10,0,"CODIGO",F,"IMPUESTO",F,"",T,""
+"ITEMIMPUESTOSOLCOMPRA","CodImpDetalle","ImpSolC","Descri",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOSOLCOMPRA","Monto","ImpSolC","Monto",T,"N",12,2,"NUMERICO",F,"",F,"",F,""

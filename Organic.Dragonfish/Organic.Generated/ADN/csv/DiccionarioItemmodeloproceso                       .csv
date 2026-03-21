@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMMODELOPROCESO","Codigo","MODPROC","CodModProc",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMMODELOPROCESO","Proceso","MODPROC","Codigo",T,"C",15,0,"CODIGO",F,"PROCESOPRODUCCION",F,"",T,""
+"ITEMMODELOPROCESO","ProcesoDetalle","MODPROC","ProcDet",T,"C",250,0,"DESCRIPCION",F,"",T,"",F,"Proceso.Descripcion"
+"ITEMMODELOPROCESO","Orden","MODPROC","Orden",T,"N",3,0,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMMODELOPROCESO","Taller","MODPROC","Taller",T,"C",15,0,"CODIGO",F,"TALLER",F,"",F,""
+"ITEMMODELOPROCESO","CantidadDeSalida","MODPROC","Cantidad",F,"N",14,6,"NUMERICODECIMALPARAMETRIZADOPR",F,"",F,"",F,""

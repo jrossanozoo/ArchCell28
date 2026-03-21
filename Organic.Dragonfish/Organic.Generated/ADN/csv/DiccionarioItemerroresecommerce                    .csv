@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMERRORESECOMMERCE","Codigo","DETERROR","Codigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMERRORESECOMMERCE","OpeError","DETERROR","OpeError",T,"N",15,0,"NUMERICO",F,"",F,"",F,""
+"ITEMERRORESECOMMERCE","StoreOrderID","DETERROR","STOREORDER",F,"C",20,0,"CARACTER",F,"",F,"",F,""

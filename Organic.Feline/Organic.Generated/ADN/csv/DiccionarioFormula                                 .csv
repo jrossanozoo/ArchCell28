@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"FORMULA","Codigo","Formula","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"FORMULA","ExprSql","Formula","ExprSql",F,"M",0,0,"EXPRESION",F,"",F,"",F,""
+"FORMULA","Descripcion","Formula","Descrip",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"FORMULA","Expresion","Formula","Expresion",T,"M",0,0,"EXPRESION",F,"",F,"",T,""
+"FORMULA","Obs","Formula","Obs",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""

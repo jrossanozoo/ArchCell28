@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CHEQUERA","Codigo","Chequera","CqCod",T,"C",5,0,"CODIGO",T,"",F,"",T,""
+"CHEQUERA","Descripcion","Chequera","CqDes",T,"C",30,0,"DESCRIPCION",F,"",T,"",F,""
+"CHEQUERA","Observacion","Chequera","CqObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"CHEQUERA","CuentaBancaria","Chequera","CqCtaBan",T,"C",5,0,"CODIGO",F,"CUENTABANCARIA",F,"",T,""
+"CHEQUERA","ChequeraElectronica","Chequera","CqElectro",T,"L",1,0,"SINOBOOL",F,"",F,"= .F.",F,""
+"CHEQUERA","NumeroInicial","Chequera","CqNroIni",T,"N",10,0,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"CHEQUERA","CantidadCheques","Chequera","CqCant",T,"N",3,0,"CANTIDADCHEQUESPERSONALIZADA",F,"",F,"=25",F,""
+"CHEQUERA","CantidadPersonalizada","Chequera","CqCantPers",T,"N",5,0,"CANTIDADCHEQUESPERSONALIZADA",F,"",F,"",F,""
+"CHEQUERA","Diferido","Chequera","CqDif",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"CHEQUERA","FechaRecepcion","Chequera","CqFecRec",T,"D",8,0,"FECHA",F,"",F,"",F,""

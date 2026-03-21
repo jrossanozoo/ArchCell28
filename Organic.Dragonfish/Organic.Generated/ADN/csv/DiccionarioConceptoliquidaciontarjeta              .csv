@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONCEPTOLIQUIDACIONTARJETA","Codigo","conliqtar","codigo",T,"C",50,0,"CODIGO",T,"",F,"",T,""
+"CONCEPTOLIQUIDACIONTARJETA","Descripcion","conliqtar","descrip",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"CONCEPTOLIQUIDACIONTARJETA","Comportamiento","conliqtar","Comporta",T,"N",1,0,"COMBOXML",F,"",F,"",T,""
+"CONCEPTOLIQUIDACIONTARJETA","CondicionIva","conliqtar","CONDIVA",T,"N",1,0,"COMBOCONDICIONIVACONVACIO",F,"",F,"1",F,""
+"CONCEPTOLIQUIDACIONTARJETA","PorcentajeIva","conliqtar","PORCIVA",T,"N",5,2,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"CONCEPTOLIQUIDACIONTARJETA","Impuesto","conliqtar","CodImp",T,"C",10,0,"CODIGO",F,"IMPUESTO",F,"",F,""
+"CONCEPTOLIQUIDACIONTARJETA","Obs","conliqtar","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

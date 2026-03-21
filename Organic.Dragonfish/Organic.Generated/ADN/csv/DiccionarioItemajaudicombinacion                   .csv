@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAJAUDICOMBINACION","codigo","ajAudiCombDet","ajdCodigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMAJAUDICOMBINACION","Comportamiento","ajAudiCombDet","COMP",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMAJAUDICOMBINACION","Articulo","ajAudiCombDet","ajdart",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",F,""
+"ITEMAJAUDICOMBINACION","ArticuloDetalle","ajAudiCombDet","ajdADesc",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"articulo.descripcion"
+"ITEMAJAUDICOMBINACION","Color","ajAudiCombDet","ajdColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMAJAUDICOMBINACION","ColorDetalle","ajAudiCombDet","ajdCDesc",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Color.descripcion"
+"ITEMAJAUDICOMBINACION","Talle","ajAudiCombDet","ajdTalle",T,"C",5,0,"CODIGO",F,"Talle",F,"",F,""
+"ITEMAJAUDICOMBINACION","StockAct","ajAudiCombDet","ajdstock",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMAJAUDICOMBINACION","StockProy","ajAudiCombDet","ajdstocksi",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMAJAUDICOMBINACION","Cantidad","ajAudiCombDet","ajdCant",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

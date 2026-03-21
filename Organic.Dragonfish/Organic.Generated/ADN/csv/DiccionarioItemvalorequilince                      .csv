@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMVALOREQUILINCE","Codigo","DETEQUILINCE","Codigo",F,"N",1,0,"CODIGONUMERICO",T,"",F,"",F,""
+"ITEMVALOREQUILINCE","ValorLince","DETEQUILINCE","vallince",T,"C",5,0,"CARACTER",F,"",F,"",T,""
+"ITEMVALOREQUILINCE","Descripción","DETEQUILINCE","Descrip",T,"C",60,0,"CARACTER",F,"",F,"",F,""
+"ITEMVALOREQUILINCE","ValorOrganic","DETEQUILINCE","valorganic",T,"C",5,0,"CARACTER",F,"",F,"",F,""
+"ITEMVALOREQUILINCE","TipoValor","DETEQUILINCE","tipovalor",T,"N",2,0,"COMBOXML",F,"",F,"",F,""
+"ITEMVALOREQUILINCE","TarjetaMadre","DETEQUILINCE","TarMadre",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMVALOREQUILINCE","Cuotas","DETEQUILINCE","cuotas",T,"N",3,0,"NUMERICO",F,"",F,"",F,""

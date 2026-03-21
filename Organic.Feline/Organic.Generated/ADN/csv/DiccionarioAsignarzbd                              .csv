@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ASIGNARZBD","NUMERO","ARZBD","numero",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",T,""
+"ASIGNARZBD","BaseDeDatos","ARZBD","Basededato",T,"C",8,0,"CODIGO",F,"BASEDEDATOS",F,"",T,""
+"ASIGNARZBD","RazonSocial","ARZBD","Razons",T,"C",10,0,"CODIGO",F,"RAZONSOCIAL",F,"",T,""
+"ASIGNARZBD","Observacion","ARZBD","AObs",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""

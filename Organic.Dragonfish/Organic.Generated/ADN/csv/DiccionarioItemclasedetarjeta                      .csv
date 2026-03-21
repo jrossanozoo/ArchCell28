@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCLASEDETARJETA","Codigo","OPETARDET","CdTCodigo",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMCLASEDETARJETA","ClaseDeTarjeta","OPETARDET","ClTarj",T,"C",5,0,"CODIGO",F,"CLASEDETARJETA",F,"",T,""
+"ITEMCLASEDETARJETA","ClaseDeTarjetaDetalle","OPETARDET","Descrip",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,"ClaseDeTarjeta.Descripcion"
+"ITEMCLASEDETARJETA","EntidadFinanciera","OPETARDET","EntFin",T,"C",5,0,"CODIGO",F,"EntidadFinanciera",F,"",F,""
+"ITEMCLASEDETARJETA","Descripcion","OPETARDET","EntFinDesc",T,"C",40,0,"DESCRIPCION",F,"",F,"",F,"EntidadFinanciera.Descripcion"

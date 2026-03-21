@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DISCOVER","Codigo","DISCOVER","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"DISCOVER","Usuario","DISCOVER","C1",F,"C",150,0,"CARACTER",F,"",T,"",F,""
+"DISCOVER","Contrasenia","DISCOVER","C2",F,"C",150,0,"CARACTER",F,"",F,"",F,""
+"DISCOVER","IdServidor","DISCOVER","C3",F,"C",150,0,"CARACTER",F,"",F,"",F,""

@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ZUDESCARGALAN","Codigo","rutalan","Codigo",T,"N",9,0,"CODIGONUMERICO",T,"",F,"@ObtenerSiguienteNumerico()",F,""
+"ZUDESCARGALAN","version","rutalan","CVERSION",T,"C",13,0,"CARACTER",F,"",T,"=_screen.zoo.app.ObtenerVersion()",F,""
+"ZUDESCARGALAN","Fecha","rutalan","fecha",T,"D",8,0,"FECHA",F,"",F,"=goServicios.librerias.ObtenerFecha()",F,""
+"ZUDESCARGALAN","ArchivoEntrada","rutalan","Archivo",T,"C",254,0,"ARCHIVO",F,"",F,"",T,""
+"ZUDESCARGALAN","Publicada","rutalan","publicada",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ZUDESCARGALAN","Usuario","rutalan","usuario",F,"C",100,0,"CARACTER",F,"",F,"=goServicios.Seguridad.cUsuarioLogueado",F,""
+"ZUDESCARGALAN","Serie","rutalan","Serie",F,"C",7,0,"CARACTER",F,"",F,"=_Screen.Zoo.App.cSerie",F,""
+"ZUDESCARGALAN","Observacion","rutalan","CLOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CATEGORIASECOMMERCE","CodigosRama","CategEcom","CodRama",F,"C",254,0,"CARACTER",F,"",F,"",F,""
+"CATEGORIASECOMMERCE","Codigo","CategEcom","Codigo",T,"C",15,0,"CODIGO",T,"",F,"",T,""
+"CATEGORIASECOMMERCE","Categoria","CategEcom","Categ",T,"C",100,0,"DESCRIPCION",F,"",T,"",T,""
+"CATEGORIASECOMMERCE","EsSubcategoriaDe","CategEcom","SubcatDe",T,"C",15,0,"CODIGO",F,"CATEGORIASECOMMERCE",F,"",F,""
+"CATEGORIASECOMMERCE","Orden","CategEcom","Orden",T,"N",3,0,"NUMERICO",F,"",F,"",F,""
+"CATEGORIASECOMMERCE","Rama","CategEcom","Rama",T,"C",254,0,"CARACTER",F,"",F,"",F,""
+"CATEGORIASECOMMERCE","CategoriaGS","CategEcom","CatGS",T,"C",15,0,"CODIGO",F,"CATEGORIASGOOGLESHOPPING",F,"",F,""
+"CATEGORIASECOMMERCE","TituloSEO","CategEcom","TituloSEO",T,"C",100,0,"CARACTER",F,"",F,"",F,""
+"CATEGORIASECOMMERCE","DescripcionSEO","CategEcom","DescSEO",T,"C",100,0,"CARACTER",F,"",F,"",F,""
+"CATEGORIASECOMMERCE","URL","CategEcom","URL",T,"C",250,0,"CARACTER",F,"",F,"",F,""
+"CATEGORIASECOMMERCE","ArbolCategorias","","",T,"C",10,0,"COMBO",F,"",F,"",F,""
+"CATEGORIASECOMMERCE","Observacion","CategEcom","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

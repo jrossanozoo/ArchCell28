@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"PROCESARNCPENDIENTEPROMOBANCO","Numero","NCPendPB","Numero",F,"N",8,0,"CODIGONUMERICO",T,"",F,"",T,""
+"PROCESARNCPENDIENTEPROMOBANCO","Caja","","",F,"N",2,0,"NUMERICO",F,"",F,"",F,""
+"PROCESARNCPENDIENTEPROMOBANCO","FechaDesde","","",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.librerias.ObtenerFecha() -6",T,""
+"PROCESARNCPENDIENTEPROMOBANCO","FechaHasta","","",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.librerias.ObtenerFecha()",T,""
+"PROCESARNCPENDIENTEPROMOBANCO","CuponesPendientes","","",T,"G",38,0,"DETALLEITEMNCPENDIENTEPROMOB",F,"",F,"",F,""
+"PROCESARNCPENDIENTEPROMOBANCO","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""

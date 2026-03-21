@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMREGCONCILIABLES","Codigo","DETREGCON","Codigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMREGCONCILIABLES","Registro","DETREGCON","Reg",T,"C",20,0,"CODIGO",F,"REGISTRODECUENTA",F,"",T,""
+"ITEMREGCONCILIABLES","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",F,"Registro.Fecha"
+"ITEMREGCONCILIABLES","Comprobante","","",T,"C",250,0,"CARACTER",F,"",F,"",F,"Registro.Comprobante"
+"ITEMREGCONCILIABLES","FechaDeOperacion","","",T,"D",8,0,"FECHA",F,"",F,"",F,"Registro.FechaCargaOperacion"
+"ITEMREGCONCILIABLES","TipoValor","","",T,"N",2,0,"NUMERICO",F,"",F,"",F,"Registro.TipoValor"
+"ITEMREGCONCILIABLES","Importe","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,"Registro.Importe"

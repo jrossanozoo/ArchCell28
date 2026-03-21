@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMFERIADO","Fecha","FERIADODET","fecha",T,"D",8,0,"FECHADIAMES",F,"",F,"",T,""
+"ITEMFERIADO","Descripcion","FERIADODET","descrip",T,"C",254,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMFERIADO","Codigo","FERIADODET","Anio",F,"N",4,0,"CODIGO",T,"",F,"",F,""

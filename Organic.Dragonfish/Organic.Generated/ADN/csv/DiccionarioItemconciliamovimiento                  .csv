@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCONCILIAMOVIMIENTO","codigo","ConcMovi","ccCodigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCONCILIAMOVIMIENTO","TipoComprobante","ConcMovi","TipoComp",F,"C",3,0,"CARACTER",F,"",F,"",F,""
+"ITEMCONCILIAMOVIMIENTO","DescTipoComprobante","ConcMovi","DescTipoC",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMCONCILIAMOVIMIENTO","Valor","ConcMovi","idValor",T,"C",5,0,"CODIGO",F,"VALOR",F,"",F,""
+"ITEMCONCILIAMOVIMIENTO","ValorDetalle","ConcMovi","ValorDesc",T,"C",40,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMCONCILIAMOVIMIENTO","SaldoAct","ConcMovi","SaldoAct",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCONCILIAMOVIMIENTO","SaldoProy","ConcMovi","SaldoProy",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCONCILIAMOVIMIENTO","Ajuste","ConcMovi","Ajuste",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCONCILIAMOVIMIENTO","Descripcion","ConcMovi","Descrip",F,"C",50,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMCONCILIAMOVIMIENTO","Accion","ConcMovi","Accion",F,"C",1,0,"CARACTER",F,"",F,"",F,""

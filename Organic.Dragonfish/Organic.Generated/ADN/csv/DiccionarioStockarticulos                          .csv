@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"STOCKARTICULOS","GeneraStock","ART","ASTOCK",T,"N",1,0,"SINOGENERICO",F,"",F,"1",F,""
+"STOCKARTICULOS","DescripcionComprobante","","",F,"C",254,0,"CARACTER",F,"",F,"",F,""
+"STOCKARTICULOS","Cantidad","ART","ACANT",T,"N",15,2,"NUMERICO",F,"",F,"0",F,""
+"STOCKARTICULOS","MinReposicion","ART","ACANTMIN",T,"N",10,0,"NUMERICO",F,"",F,"0",F,""
+"STOCKARTICULOS","Codigo","ART","ARTCOD",T,"C",15,0,"CODIGO",T,"",F,"",F,""
+"STOCKARTICULOS","CantidadOriginal","ART","CORIG",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"IMPOAGRUPADAS","clasehook","ImpoAgrup","clasehook",F,"C",100,0,"DESCRIPCION",F,"",F,"",T,""
+"IMPOAGRUPADAS","Codigo","ImpoAgrup","Codigo",T,"C",20,0,"CODIGO",T,"",T,"",F,""
+"IMPOAGRUPADAS","Descripcion","ImpoAgrup","cDes",T,"C",100,0,"DESCRIPCION",F,"",F,"",T,""
+"IMPOAGRUPADAS","Obs","ImpoAgrup","cObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"IMPOAGRUPADAS","Disenos","ImpoAgrupItem","iCod",T,"C",20,0,"DETALLEITEMIMPOAGRUPADAS",F,"",F,"",F,""

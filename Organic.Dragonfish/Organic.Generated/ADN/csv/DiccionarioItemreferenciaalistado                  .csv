@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMREFERENCIAALISTADO","Nombre","AgrpLtdsDet","Nombre",F,"C",50,0,"CODIGO",T,"",F,"",F,""
+"ITEMREFERENCIAALISTADO","IDListado","AgrpLtdsDet","IDListado",F,"C",60,0,"CARACTER",F,"",F,"",F,""
+"ITEMREFERENCIAALISTADO","Personalizacion","AgrpLtdsDet","IDPerso",F,"G",38,0,"CODIGO",F,"LISTADOSPERSONALIZADOS",F,"",F,""
+"ITEMREFERENCIAALISTADO","EsDefault","AgrpLtdsDet","EsDefault",F,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMREFERENCIAALISTADO","NombreDelAccesoDirecto","AgrpLtdsDet","NomADirect",F,"C",120,0,"CARACTER",F,"",F,"",F,""
+"ITEMREFERENCIAALISTADO","OrdenVisual","AgrpLtdsDet","Orden",T,"N",3,0,"NUMERICO",F,"",F,"",T,""
+"ITEMREFERENCIAALISTADO","AccesoDirecto","AgrpLtdsDet","AccDirecto",T,"C",254,0,"ACCESODIRECTO",F,"",F,"",F,""
+"ITEMREFERENCIAALISTADO","NombreListado","AgrpLtdsDet","NomListado",T,"C",150,0,"CARACTER",F,"",F,"",F,""
+"ITEMREFERENCIAALISTADO","NombrePersonalizacion","AgrpLtdsDet","NomPerso",T,"C",150,0,"CARACTER",F,"",F,"",F,""
+"ITEMREFERENCIAALISTADO","AtributoFecha","AgrpLtdsDet","AtrFecha",T,"C",30,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMREFERENCIAALISTADO","Activado","AgrpLtdsDet","Activado",F,"L",1,0,"SINOBOOL",F,"",F,"=.T.",F,""

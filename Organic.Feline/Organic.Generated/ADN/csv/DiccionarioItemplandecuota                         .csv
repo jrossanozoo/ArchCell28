@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMPLANDECUOTA","Codigo","TARJEDET","Cod",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMPLANDECUOTA","Cuotas","TARJEDET","cuotas",T,"N",3,0,"NUMERICONONEGATIVO",F,"",F,"",T,""
+"ITEMPLANDECUOTA","MontoDesde","TARJEDET","MontoDesde",T,"N",15,2,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMPLANDECUOTA","TipoDeMonto","TARJEDET","TipoMonto",T,"C",35,0,"COMBOXML",F,"",F,"="1"",T,""
+"ITEMPLANDECUOTA","Recargo","TARJEDET","recargo",T,"N",8,4,"NUMERICO",F,"",F,"",F,""
+"ITEMPLANDECUOTA","Descuento","TARJEDET","descuento",F,"N",8,4,"NUMERICO",F,"",F,"",F,""
+"ITEMPLANDECUOTA","CantidadDeDias","TARJEDET","canttiempo",F,"N",5,2,"NUMERICO",F,"",F,"",F,""
+"ITEMPLANDECUOTA","Modo","TARJEDET","modotiempo",F,"C",8,0,"COMBOXML",F,"",F,"",F,""

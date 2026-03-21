@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMMOVBANCARIOSTOOL","Codigo","DETMOVBANCT","Codigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMMOVBANCARIOSTOOL","Movimiento","","",T,"C",20,0,"CODIGO",F,"MOVIMIENTOBANCARIO",F,"",T,""
+"ITEMMOVBANCARIOSTOOL","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",F,"Movimiento.Fecha"
+"ITEMMOVBANCARIOSTOOL","ConceptoCodigo","","",T,"C",10,0,"CARACTER",F,"",F,"",F,"Concepto.Codigo"
+"ITEMMOVBANCARIOSTOOL","Concepto","","",T,"C",100,0,"CARACTER",F,"",F,"",F,"Concepto.Concepto"
+"ITEMMOVBANCARIOSTOOL","ConceptoDetalle","","",T,"C",100,0,"CARACTER",F,"",F,"",F,"Concepto.Descripcion"
+"ITEMMOVBANCARIOSTOOL","Numero","","",T,"N",10,0,"NUMERICO",F,"",F,"",F,"Movimiento.Numero"
+"ITEMMOVBANCARIOSTOOL","Importe","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,"Movimiento.Importe"
+"ITEMMOVBANCARIOSTOOL","Seleccion","","",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

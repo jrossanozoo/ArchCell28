@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAGRUPADORDEPACK","CodigoDeBarras","","",F,"C",40,0,"CARACTER",F,"",F,"",F,""
+"ITEMAGRUPADORDEPACK","Comportamiento","HerPackDet","COMP",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMAGRUPADORDEPACK","NoProcesarStock","HerPackDet","ProcStock",F,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMAGRUPADORDEPACK","Numero","HerPackDet","NUMERO",F,"C",10,0,"CODIGONUMERICO",T,"",F,"",F,""
+"ITEMAGRUPADORDEPACK","Equivalencia","HerPackDet","EQUIV",F,"C",20,0,"CODIGO",F,"Equivalencia",F,"",F,""
+"ITEMAGRUPADORDEPACK","Articulo","HerPackDet","PACKS",T,"C",15,0,"CONSOPORTEPREPANTALLA",F,"ARTICULO",F,"",T,""
+"ITEMAGRUPADORDEPACK","ArticuloDetalle","HerPackDet","PACKSDET",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"Articulo.Descripcion"
+"ITEMAGRUPADORDEPACK","Color","HerPackDet","CODCOL",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMAGRUPADORDEPACK","ColorDetalle","HerPackDet","COLDET",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Color.Descripcion"
+"ITEMAGRUPADORDEPACK","Talle","HerPackDet","TALLE",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"ITEMAGRUPADORDEPACK","Cantidad","HerPackDet","CANT",T,"N",10,2,"NUMERICODECIMALPARAMETRIZADO",F,"",F,"goParametros.Felino.Sugerencias.CantidadSugeridaParaArticulosEnMovimientoDeStock",F,""

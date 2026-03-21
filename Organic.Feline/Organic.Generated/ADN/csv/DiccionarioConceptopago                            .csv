@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONCEPTOPAGO","Codigo","CONCEPAGO","Codigo",T,"C",15,0,"CODIGO",T,"",F,"",T,""
+"CONCEPTOPAGO","Descripcion","CONCEPAGO","Descrip",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"CONCEPTOPAGO","Clasificacion","CONCEPAGO","Clasif",T,"C",15,0,"CODIGO",F,"CLASIFICACIONCONCEPTOPAGO",F,"",F,""
+"CONCEPTOPAGO","Observ","CONCEPAGO","CObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

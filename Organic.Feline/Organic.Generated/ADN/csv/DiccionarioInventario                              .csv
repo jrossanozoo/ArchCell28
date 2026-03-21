@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"INVENTARIO","Codigo","inv","invcod",T,"C",15,0,"CODIGO",T,"",F,"",F,""
+"INVENTARIO","Descripcion","inv","invdes",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"INVENTARIO","ControlaStock","inv","ContrStock",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"INVENTARIO","Observaciones","inv","invobs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMSENIAPENDIENTE","Codigo","SENIASPENDET","Codigo",F,"C",5,0,"CODIGO",T,"",F,"",F,""
+"ITEMSENIAPENDIENTE","IdSenia","","",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMSENIAPENDIENTE","Comprobante","","",T,"C",20,0,"CARACTER",F,"",T,"",T,""
+"ITEMSENIAPENDIENTE","FechaAlta","","",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMSENIAPENDIENTE","FechaVto","","",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMSENIAPENDIENTE","Importe","","",T,"N",10,2,"NUMERICO",F,"",F,"",F,""
+"ITEMSENIAPENDIENTE","Moneda","","",T,"C",10,0,"CARACTER",F,"",F,"",F,""
+"ITEMSENIAPENDIENTE","Seleccionada","","",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

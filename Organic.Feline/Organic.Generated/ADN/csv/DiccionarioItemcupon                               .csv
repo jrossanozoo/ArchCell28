@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCUPON","Codigo","icupo","cod",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCUPON","CodigoCupon","","",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMCUPON","Numero","","",T,"N",12,0,"NUMERICOREADONLY",F,"",F,"",F,""
+"ITEMCUPON","Interno","","",T,"C",15,0,"CARACTER",F,"",F,"",F,""
+"ITEMCUPON","TipoCupon","","",T,"C",20,0,"CARACTER",F,"",F,"",F,""
+"ITEMCUPON","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMCUPON","Hora","","",T,"C",5,0,"HORA",F,"",F,"",F,""
+"ITEMCUPON","Cuotas","","",T,"N",3,0,"NUMERICO",F,"",F,"",F,""
+"ITEMCUPON","Monto","","",T,"N",10,2,"NUMERICO",F,"",F,"",T,""
+"ITEMCUPON","Comprobante","","",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMCUPON","Incluido","","",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

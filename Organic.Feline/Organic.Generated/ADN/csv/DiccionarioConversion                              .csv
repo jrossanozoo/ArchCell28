@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"conversion","Codigo","conver","codigo",T,"C",40,0,"CODIGO",T,"",F,"",F,""
+"conversion","Descripcion","conver","descrip",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"conversion","accion","conver","accion",T,"C",40,0,"COMBOACCIONCONVERSION",F,"",F,"="ORIGINAL"",T,""
+"conversion","valorDefault","conver","valorDef",T,"C",100,0,"DESCRIPCION",F,"",F,"",F,""
+"conversion","Obs","conver","cObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

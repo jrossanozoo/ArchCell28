@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"EXPRESIONLISTADOPERSONALIZADO","Codigo","EXPLISPER","COD",T,"G",38,0,"CODIGO",T,"",F,"",F,""
+"EXPRESIONLISTADOPERSONALIZADO","Fecha","EXPLISPER","Fecha",T,"D",8,0,"FECHA",F,"",T,"=goServicios.librerias.ObtenerFecha()",F,""
+"EXPRESIONLISTADOPERSONALIZADO","Expresion","EXPLISPER","Expr",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

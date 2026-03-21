@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCOTIZAORDENADICION","Codigo","COTORDADIC","Cotizalqad",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCOTIZAORDENADICION","Comportamiento","COTORDADIC","Comp",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMCOTIZAORDENADICION","IdItemArticulo","COTORDADIC","IdItem",F,"G",38,0,"CARACTER",F,"",F,"=goServicios.Librerias.ObtenerGuidPk()",F,""
+"ITEMCOTIZAORDENADICION","Articulo","COTORDADIC","ArtLiq",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"ITEMCOTIZAORDENADICION","ArticuloDetalle","COTORDADIC","ArtDesc",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"Articulo.Descripcion"
+"ITEMCOTIZAORDENADICION","Color","COTORDADIC","codColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMCOTIZAORDENADICION","ColorDetalle","COTORDADIC","ColorDeta",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Color.Descripcion"
+"ITEMCOTIZAORDENADICION","Talle","COTORDADIC","codTalle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"ITEMCOTIZAORDENADICION","TalleDetalle","COTORDADIC","TalleDeta",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Talle.Descripcion"
+"ITEMCOTIZAORDENADICION","Cantidad","COTORDADIC","Cantidad",T,"N",14,6,"NUMERICODECIMALPARAMETRIZADOPR",F,"",F,"0",F,""
+"ITEMCOTIZAORDENADICION","Costo","COTORDADIC","Costo",T,"N",12,4,"NUMERICODECIMALPARAMETRIZADOPR",F,"",F,"0",F,""
+"ITEMCOTIZAORDENADICION","Monto","COTORDADIC","Monto",T,"N",15,4,"NUMERICODECIMALPARAMETRIZADOPR",F,"",F,"0",F,""

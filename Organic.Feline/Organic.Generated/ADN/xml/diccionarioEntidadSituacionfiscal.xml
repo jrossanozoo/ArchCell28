@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<diccionarioentidad>
+		<entidad>SITUACIONFISCAL</entidad>
+		<atributo>Codigo</atributo>
+		<tabla>SitFiscal</tabla>
+		<campo>Codigo</campo>
+		<alta>true</alta>
+		<tipodato>N</tipodato>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<dominio>CODIGONUMERICO</dominio>
+		<claveprimaria>true</claveprimaria>
+		<claveforanea/>
+		<muestrarelacion>false</muestrarelacion>
+		<valorsugerido/>
+		<obligatorio>false</obligatorio>
+		<atributoforaneo/>
+	</diccionarioentidad>
+	<diccionarioentidad>
+		<entidad>SITUACIONFISCAL</entidad>
+		<atributo>Descripcion</atributo>
+		<tabla>SitFiscal</tabla>
+		<campo>Descrip</campo>
+		<alta>true</alta>
+		<tipodato>C</tipodato>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<dominio>DESCRIPCION</dominio>
+		<claveprimaria>false</claveprimaria>
+		<claveforanea/>
+		<muestrarelacion>true</muestrarelacion>
+		<valorsugerido/>
+		<obligatorio>false</obligatorio>
+		<atributoforaneo/>
+	</diccionarioentidad>
+</VFPData>

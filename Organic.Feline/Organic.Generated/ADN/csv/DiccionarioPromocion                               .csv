@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"PROMOCION","Codigo","Promos","Codigo",T,"C",15,0,"CODIGO",T,"",F,"",F,""
+"PROMOCION","Tipo","Promos","Tipo",F,"N",1,0,"NUMERICO",F,"",F,"",F,""
+"PROMOCION","Descripcion","Promos","Descrip",T,"C",100,0,"DESCRIPCION",F,"",T,"",T,""
+"PROMOCION","Redondeo","Promos","Redondeo",T,"C",10,0,"CODIGO",F,"REDONDEODEPRECIOS",F,"",F,""
+"PROMOCION","Configuracion","Promos","Config",T,"M",0,0,"PROMOCIONES",F,"",F,"",F,""
+"PROMOCION","Observaciones","Promos","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"PROMOCION","FechaDesde","Promos","FecDesde",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"PROMOCION","FechaHasta","Promos","FecHasta",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"PROMOCION","HoraDesde","Promos","HoraDesde",F,"C",8,0,"CARACTER",F,"",F,"",F,""
+"PROMOCION","HoraHasta","Promos","HoraHasta",F,"C",8,0,"CARACTER",F,"",F,"",F,""

@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONCILIACIONDECAJA","CajaAuditoria","ConcCaja","IdCajaAudi",F,"N",10,0,"NUMERICO",F,"",F,"",F,""
+"CONCILIACIONDECAJA","Codigo","ConcCaja","ccCodigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"CONCILIACIONDECAJA","Numero","ConcCaja","ccNumero",T,"N",10,0,"NUMERICO",F,"",F,"",F,""
+"CONCILIACIONDECAJA","Fecha","ConcCaja","ccfecha",T,"D",8,0,"FECHA",F,"",F,"=goServicios.Librerias.ObtenerFecha()",F,""
+"CONCILIACIONDECAJA","Caja","ConcCaja","cccaja",T,"N",2,0,"CODIGONUMERICO",F,"CAJAESTADO",F,"=goParametros.Felino.GestionDeVentas.NumeroDeCaja",F,""
+"CONCILIACIONDECAJA","VerificarHistoricos","ConcCaja","verifhist",T,"L",1,0,"SINOBOOL",F,"",F,"=.F.",F,""
+"CONCILIACIONDECAJA","Obs","ConcCaja","ccObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"CONCILIACIONDECAJA","ConciliaSaldo","ConcSald","ccCodigo",T,"G",38,0,"DETALLEITEMCONCILIASALDO",F,"",F,"",F,""
+"CONCILIACIONDECAJA","ConciliaMovimiento","ConcMovi","ccCodigo",T,"G",38,0,"DETALLEITEMCONCILIAMOVIMIENTO",F,"",F,"",F,""

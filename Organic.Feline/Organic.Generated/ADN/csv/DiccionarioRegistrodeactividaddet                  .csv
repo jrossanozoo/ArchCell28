@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"REGISTRODEACTIVIDADDET","Codigo","RegActivDet","cCodigo",T,"G",38,0,"CODIGO",T,"",F,"",F,""
+"REGISTRODEACTIVIDADDET","cContex","RegActivDet","cContexto",T,"C",250,0,"CARACTER",F,"",F,"",F,""
+"REGISTRODEACTIVIDADDET","CodigoContexto","RegActivDet","cCodigoCon",T,"C",6,0,"CARACTER",F,"",F,"",F,""
+"REGISTRODEACTIVIDADDET","CodigoActividad","RegActivDet","cCodigoAvc",T,"G",38,0,"CARACTER",F,"",F,"",F,""
+"REGISTRODEACTIVIDADDET","Obs","RegActivDet","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

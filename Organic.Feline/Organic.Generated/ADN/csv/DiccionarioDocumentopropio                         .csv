@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DOCUMENTOPROPIO","Codigo","DOCP","CLCOD",T,"C",5,0,"CODIGO",T,"",F,"",F,""
+"DOCUMENTOPROPIO","TipoInterno","DOCP","CLTPO",F,"N",1,0,"NUMERICO",F,"",F,"3",F,""
+"DOCUMENTOPROPIO","Descripcion","DOCP","CLNOM",T,"C",60,0,"DESCRIPCION",F,"",T,"",F,""
+"DOCUMENTOPROPIO","TipoInterno2","DOCP","CLCFI",F,"N",1,0,"SINOGENERICO",F,"",F,"4",F,""
+"DOCUMENTOPROPIO","FechaDeAlta","","",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"DOCUMENTOPROPIO","FechaUltimaModificacion","","",F,"D",8,0,"FECHA",F,"",F,"",F,""

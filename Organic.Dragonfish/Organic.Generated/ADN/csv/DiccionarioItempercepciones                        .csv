@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ItemPercepciones","codigo","PerCliDet","Cod",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ItemPercepciones","Jurisdiccion","PerCliDet","jurisdicci",T,"C",8,0,"CODIGO",F,"JURISDICCION",F,"",T,""
+"ITEMPERCEPCIONES","CodigoPadronIIBB","PerCliDet","CODIGO",F,"G",38,0,"CARACTER",F,"",F,"=goServicios.Librerias.ObtenerGuidPk()",F,""
+"ItemPercepciones","JurisdiccionDetalle","PerCliDet","DesJur",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Jurisdiccion.Descripcion"
+"ItemPercepciones","Resolucion","PerCliDet","Resol",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ItemPercepciones","Porcentaje","PerCliDet","porcen",T,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"ItemPercepciones","FechaExpiracion","PerCliDet","FecExp",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMPERCEPCIONES","Excluido","PerCliDet","Excluido",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""

@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"JURISDICCION","Codigo","Jurisdic","codigo",T,"C",8,0,"CODIGO",T,"",F,"",T,""
+"JURISDICCION","Descripcion","Jurisdic","descri",T,"C",50,0,"CARACTER",F,"",T,"",F,""
+"JURISDICCION","Provincia","Jurisdic","Prov",T,"C",2,0,"CODIGO",F,"PROVINCIA",F,"",T,""
+"JURISDICCION","observacion","Jurisdic","obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

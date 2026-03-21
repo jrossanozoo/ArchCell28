@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DISTRIBUCIONCENTRODECOSTO","Codigo","DCCOSTO","Codigo",T,"C",20,0,"CODIGO",T,"",F,"",F,""
+"DISTRIBUCIONCENTRODECOSTO","Descripcion","DCCOSTO","Descrip",T,"C",150,0,"DESCRIPCION",F,"",T,"",F,""
+"DISTRIBUCIONCENTRODECOSTO","DetalleCentrodecosto","DDCCOSTO","Codigo",T,"C",20,0,"DETALLEITEMCCOSTO",F,"",F,"",F,""
+"DISTRIBUCIONCENTRODECOSTO","Observacion","DCCOSTO","MObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

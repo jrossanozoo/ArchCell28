@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DISENOTRANSFORMACIONLINCE","Codigo","DisLince","cCod",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"DISENOTRANSFORMACIONLINCE","Numero","DisLince","Numero",T,"N",10,0,"CLAVECANDIDATA",F,"",F,"",F,""
+"DISENOTRANSFORMACIONLINCE","Entidad","DisLince","cEntidad",T,"C",40,0,"COMBOENTIDADESLINCE",F,"",T,"",T,""
+"DISENOTRANSFORMACIONLINCE","Habilitado","DisLince","lHabilitad",T,"L",1,0,"SINOBOOL",F,"",F,"= .T.",F,""
+"DISENOTRANSFORMACIONLINCE","DefaultDiseno","DisLince","lDefault",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"DISENOTRANSFORMACIONLINCE","Atributos","DisLinceAtri","iCod",T,"G",38,0,"DETALLEITEMATRIBUTOSLINCE",F,"",F,"",F,""
+"DISENOTRANSFORMACIONLINCE","Obs","DisLince","cObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"SELECCIONBASESARCHIVADAS","Codigo","SelBases","cCod",F,"C",1,0,"CODIGO",T,"",F,"",F,""
+"SELECCIONBASESARCHIVADAS","Descripcion","","",F,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"SELECCIONBASESARCHIVADAS","Bases","","",T,"C",100,0,"COMBO",F,"",F,"",F,""
+"SELECCIONBASESARCHIVADAS","Observacion","","",F,"C",10,0,"OBSERVACION1R",F,"",F,"",F,""

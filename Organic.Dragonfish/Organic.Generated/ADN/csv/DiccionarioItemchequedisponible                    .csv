@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCHEQUEDISPONIBLE","Codigo","ichequed","cod",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCHEQUEDISPONIBLE","CodigoCheque","","",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMCHEQUEDISPONIBLE","Interno","","",T,"C",15,0,"CARACTER",F,"",F,"",F,""
+"ITEMCHEQUEDISPONIBLE","Numero","","",T,"N",8,0,"NUMERICOREADONLY",F,"",F,"",F,""
+"ITEMCHEQUEDISPONIBLE","Monto","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMCHEQUEDISPONIBLE","Seleccionado","","",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMCHEQUEDISPONIBLE","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMCHEQUEDISPONIBLE","Estado","","",T,"C",5,0,"COMBOSERVICIOCHEQUE",F,"",F,"",F,""
+"ITEMCHEQUEDISPONIBLE","EntidadFinanciera","","",T,"C",5,0,"CODIGO",F,"ENTIDADFINANCIERA",F,"",F,""
+"ITEMCHEQUEDISPONIBLE","EntidadFinancieraDetalle","","",T,"C",40,0,"CARACTER",F,"",T,"",F,"EntidadFinanciera.Descripcion"

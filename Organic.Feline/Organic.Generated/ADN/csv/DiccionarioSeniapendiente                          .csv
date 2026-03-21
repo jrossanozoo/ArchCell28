@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"SENIAPENDIENTE","Cliente","SELECSENIASPEN","Codigo",F,"C",5,0,"CODIGO",T,"",F,"",F,""
+"SENIAPENDIENTE","DetalleSeniasPendientes","","",T,"C",5,0,"DETALLEITEMSENIAPENDIENTE",F,"",F,"",F,""
+"SENIAPENDIENTE","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""

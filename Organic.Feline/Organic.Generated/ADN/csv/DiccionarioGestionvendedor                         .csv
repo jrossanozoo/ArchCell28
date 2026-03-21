@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"GESTIONVENDEDOR","Codigo","GESVEN","CODIGO",T,"C",20,0,"CODIGO",T,"",F,"",T,""
+"GESTIONVENDEDOR","Vendedor","GESVEN","VEN",T,"C",5,0,"CODIGO",F,"VENDEDOR",F,"",T,""
+"GESTIONVENDEDOR","Fecha","GESVEN","FCH",T,"D",8,0,"FECHACOMPROBANTE",F,"",F,"=goServicios.Librerias.ObtenerFecha()",T,""
+"GESTIONVENDEDOR","FechaDesde","GESVEN","FCHDES",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.Librerias.ObtenerFecha()",T,""
+"GESTIONVENDEDOR","FechaHasta","GESVEN","FCHHAS",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.Librerias.ObtenerFecha() + 30",F,""
+"GESTIONVENDEDOR","BaseDeDatos","GESVEN","BASE",T,"C",8,0,"COMBOSUCURSALESCONVACIO",F,"",F,"",F,""
+"GESTIONVENDEDOR","Sucursal","GESVEN","SUCUR",T,"C",5,0,"CODIGO",F,"SUCURSAL",F,"",F,"BASEDEDATOS.SUCURSAL"
+"GESTIONVENDEDOR","Observacion","GESVEN","Obs",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""

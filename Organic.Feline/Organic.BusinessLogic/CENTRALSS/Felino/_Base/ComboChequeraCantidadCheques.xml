@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>25</valor>
+		<cdefault>Retorno</cdefault>
+		<orden>1</orden>
+		<retorno>25</retorno>
+	</xml>
+	<xml>
+		<valor>50</valor>
+		<cdefault>Retorno</cdefault>
+		<orden>2</orden>
+		<retorno>50</retorno>
+	</xml>
+	<xml>
+		<valor>100</valor>
+		<cdefault>Retorno</cdefault>
+		<orden>3</orden>
+		<retorno>100</retorno>
+	</xml>
+	<xml>
+		<valor>Personalizada</valor>
+		<cdefault>Retorno</cdefault>
+		<orden>4</orden>
+		<retorno>1</retorno>
+	</xml>
+</VFPData>

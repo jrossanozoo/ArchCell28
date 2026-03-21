@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMIMPUESTOCANCOMPRA","Codigo","ImpCanC","cCod",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMIMPUESTOCANCOMPRA","NroItem","ImpCanC","NroItem",F,"N",5,0,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOCANCOMPRA","TipoImpuesto","ImpCanC","TipoI",F,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOCANCOMPRA","CodigoInterno","ImpCanC","codint",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOCANCOMPRA","Porcentaje","ImpCanC","porcen",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOCANCOMPRA","MinimoNoImponible","ImpCanC","minoimp",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOCANCOMPRA","CodImp","ImpCanC","CodImp",T,"C",10,0,"CODIGO",F,"IMPUESTO",F,"",T,""
+"ITEMIMPUESTOCANCOMPRA","CodImpDetalle","ImpCanC","Descri",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOCANCOMPRA","Monto","ImpCanC","Monto",T,"N",12,2,"NUMERICO",F,"",F,"",F,""

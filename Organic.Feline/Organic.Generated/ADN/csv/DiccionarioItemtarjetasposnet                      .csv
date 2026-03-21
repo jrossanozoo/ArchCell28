@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMTARJETASPOSNET","Codigo","POSNETTarjetas","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMTARJETASPOSNET","CodigoEquivalencia","POSNETTarjetas","Equivalen",T,"C",10,0,"CARACTER",F,"",F,"",T,""
+"ITEMTARJETASPOSNET","Descripcion","POSNETTarjetas","Descrip",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"ITEMTARJETASPOSNET","Operadora","POSNETTarjetas","Operadora",T,"C",15,0,"CODIGO",F,"OPERADORADETARJETA",F,"",F,""

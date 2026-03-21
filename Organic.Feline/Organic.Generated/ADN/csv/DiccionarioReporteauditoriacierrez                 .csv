@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"REPORTEAUDITORIACIERREZ","Numero","REPAUDIZ","Numero",T,"N",8,0,"CLAVECANDIDATA",F,"",F,"",F,""
+"REPORTEAUDITORIACIERREZ","CodInt","REPAUDIZ","CodInt",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"REPORTEAUDITORIACIERREZ","Observacion","REPAUDIZ","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"REPORTEAUDITORIACIERREZ","TipoAuditoria","REPAUDIZ","TipoAudi",T,"N",1,0,"COMBOXML",F,"",F,"",T,""
+"REPORTEAUDITORIACIERREZ","FechaDesde","REPAUDIZ","FecDesde",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.librerias.obtenerFecha() - 15",F,""
+"REPORTEAUDITORIACIERREZ","FechaHasta","REPAUDIZ","FecHasta",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.librerias.obtenerFecha()",F,""
+"REPORTEAUDITORIACIERREZ","NumeroDesde","REPAUDIZ","NroDesde",T,"N",5,0,"NUMERICO",F,"",F,"",F,""
+"REPORTEAUDITORIACIERREZ","NumeroHasta","REPAUDIZ","NroHasta",T,"N",5,0,"NUMERICO",F,"",F,"",F,""
+"REPORTEAUDITORIACIERREZ","Resumida","REPAUDIZ","Resumida",T,"L",1,0,"SINOBOOL",F,"",F,"=.F.",F,""

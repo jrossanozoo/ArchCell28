@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCCOSTO","Codigo","DDCCOSTO","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMCCOSTO","CENTRODECOSTO","DDCCOSTO","CODCCOS",T,"C",20,0,"CODIGO",F,"CENTRODECOSTO",F,"",T,""
+"ITEMCCOSTO","CENTRODECOSTODETALLE","DDCCOSTO","Descrip",T,"C",150,0,"DESCRIPCION",F,"",T,"",F,"Centrodecosto.Descripcion"
+"ITEMCCOSTO","Porcentaje","DDCCOSTO","Porcenta",T,"N",6,2,"NUMERICO",F,"",F,"=Max( 0, 100 - This.Sum_Porcentaje )",F,""

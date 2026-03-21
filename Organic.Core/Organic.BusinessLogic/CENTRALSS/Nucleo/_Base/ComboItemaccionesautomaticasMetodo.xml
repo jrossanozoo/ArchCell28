@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor> </valor>
+		<cdefault>VALOR</cdefault>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>AntesDeGrabar</valor>
+		<cdefault>VALOR</cdefault>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>DespuesDeGrabar</valor>
+		<cdefault>VALOR</cdefault>
+		<orden>3</orden>
+	</xml>
+	<xml>
+		<valor>AntesDeAnular</valor>
+		<cdefault>VALOR</cdefault>
+		<orden>4</orden>
+	</xml>
+	<xml>
+		<valor>DespuesDeAnular</valor>
+		<cdefault>VALOR</cdefault>
+		<orden>5</orden>
+	</xml>
+</VFPData>

@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"EQUIVALENCIA","Codigo","EQUI","cCodigo",T,"C",20,0,"CLAVECONCUALQUIERCARACTER",T,"",T,"",T,""
+"EQUIVALENCIA","Articulo","EQUI","cArticul",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"EQUIVALENCIA","Color","EQUI","cColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"EQUIVALENCIA","Talle","EQUI","cTalle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"EQUIVALENCIA","Cantidad","EQUI","nCantidad",T,"N",8,2,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"EQUIVALENCIA","EsGTIN","EQUI","lEsGtin",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"EQUIVALENCIA","Observacion","EQUI","cObserva",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

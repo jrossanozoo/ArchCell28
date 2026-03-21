@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"NOMENCLADORARBA","Codigo","NMCARBA","NMCCOD",T,"C",6,0,"CODIGO",T,"",F,"",F,""
+"NOMENCLADORARBA","Descripcion","NMCARBA","NMCDES",T,"C",150,0,"DESCRIPCION",F,"",T,"",F,""
+"NOMENCLADORARBA","UnidadDeMedida","NMCARBA","NMCUM",T,"C",10,0,"COMBOTABLA",F,"UNIDADDEMEDIDAARBA",F,"",F,""
+"NOMENCLADORARBA","Observacion","NMCARBA","NMCOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

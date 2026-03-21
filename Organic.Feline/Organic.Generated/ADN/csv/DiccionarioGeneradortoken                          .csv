@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"GENERADORTOKEN","Usuario","","",T,"C",50,0,"COMBOUSUARIO",F,"",T,"",T,""
+"GENERADORTOKEN","FechaExpiracion","","",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",T,""
+"GENERADORTOKEN","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"GENERADORTOKEN","Codigo","SECRETREST","CODIGO",F,"C",40,0,"CODIGO",T,"",F,"",T,""

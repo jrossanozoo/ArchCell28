@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"REGISTRODESALUDSERVIDORDEDATOS","Codigo","RegSalud","cCodigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"REGISTRODESALUDSERVIDORDEDATOS","Momento","RegSalud","Momento",T,"C",100,0,"CARACTER",F,"",F,"",F,""
+"REGISTRODESALUDSERVIDORDEDATOS","DiagnosticoProcesado","RegSalud","diagno",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"REGISTRODESALUDSERVIDORDEDATOS","AdvertenciaMalApagado","RegSalud","Advertt",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"REGISTRODESALUDSERVIDORDEDATOS","Observacion","RegSalud","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

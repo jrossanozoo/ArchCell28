@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"FAVORITOLISTADOS","Usuario","FVLIS","USU",T,"C",100,0,"CODIGO",T,"",F,"",T,""
+"FAVORITOLISTADOS","Descripcion","FVLIS","DESCRI",T,"C",30,0,"CARACTER",F,"",T,"",F,""
+"FAVORITOLISTADOS","ListadosDetalle","DETFVLIS","Cod",T,"C",10,0,"DETALLEITEMFAVORITOSLISTADOS",F,"",F,"",F,""

@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMEQUIVALORES","Codigo","ECOMEQUIVAL","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMEQUIVALORES","ValorEcommerce","ECOMEQUIVAL","ValEcom",T,"C",30,0,"CARACTER",F,"",F,"",T,""
+"ITEMEQUIVALORES","TipoValorEcommerce","ECOMEQUIVAL","TipoValEco",T,"C",30,0,"CARACTER",F,"",F,"",F,""
+"ITEMEQUIVALORES","ValorDragonfish","ECOMEQUIVAL","ValDragon",T,"C",5,0,"CODIGOVALOR",F,"VALOR",F,"",F,""
+"ITEMEQUIVALORES","ValorDescripcion","ECOMEQUIVAL","ValDesc",T,"C",40,0,"CARACTER",F,"",F,"",F,"ValorDragonfish.Descripcion"
+"ITEMEQUIVALORES","TipoValorDragon","ECOMEQUIVAL","TipoValDf",T,"C",30,0,"CARACTER",F,"",F,"",F,""

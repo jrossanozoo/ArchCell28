@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONVENIOMULTILATERAL","Codigo","CONVENIO","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",T,""
+"CONVENIOMULTILATERAL","Fecha","CONVENIO","Fecha",T,"D",8,0,"FECHACALENDARIO",F,"",T,"=this.AsignarFechaNueva()",T,""
+"CONVENIOMULTILATERAL","Obs","CONVENIO","obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"CONVENIOMULTILATERAL","ImpuestosConvenio","DetConvenio","CodRela",T,"C",10,0,"DETALLEITEMCONVENIO",F,"",F,"",F,""

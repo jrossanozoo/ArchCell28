@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"AGRUPAMIENTOPORCOMPANIA","Codigo","AGRUPAMIENTOCOM","Codigo",T,"C",61,0,"CODIGOCONALTASCENTRALIZADAS",T,"",F,"",T,""
+"AGRUPAMIENTOPORCOMPANIA","Descripcion","AGRUPAMIENTOCOM","Descrip",T,"C",254,0,"CARACTER",F,"",T,"",F,""
+"AGRUPAMIENTOPORCOMPANIA","Obs","AGRUPAMIENTOCOM","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"AGRUPAMIENTOPORCOMPANIA","AgrupamientoDetalle","AGRUPAGPORCOMP","Codigo",T,"C",61,0,"DETALLEITEMAGRUPAMIENTOPORCOMP",F,"",F,"",F,""
+"AGRUPAMIENTOPORCOMPANIA","BaseDeDatosDetalle","AGRUPBDPORCOMP","Codigo",T,"C",61,0,"DETALLEITEMBASEDEDATOSPORCOMP",F,"",F,"",F,""

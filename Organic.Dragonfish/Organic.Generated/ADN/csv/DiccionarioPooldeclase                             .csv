@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"POOLDECLASE","Codigo","POOLDECLASE","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"POOLDECLASE","Nombre","POOLDECLASE","Nombre",F,"C",254,0,"CARACTER",F,"",T,"",F,""
+"POOLDECLASE","CantidadDeObjetosAAlmacenar","POOLDECLASE","CantObj",F,"N",15,0,"NUMERICO",F,"",F,"",F,""
+"POOLDECLASE","Prioridad","POOLDECLASE","Prioridad",F,"N",15,0,"NUMERICO",F,"",F,"",F,""
+"POOLDECLASE","UltimaFechaDeUso","POOLDECLASE","UltFecUso",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"POOLDECLASE","Modo","POOLDECLASE","Modo",F,"C",50,0,"CARACTER",F,"",F,"",F,""

@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMPAGOSPERSONALIZADOS","Codigo","DETPAGOSPERS","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMPAGOSPERSONALIZADOS","Valor","DETPAGOSPERS","valor",T,"C",5,0,"CODIGO",F,"VALOR",F,"",T,""
+"ITEMPAGOSPERSONALIZADOS","ValorDetalle","DETPAGOSPERS","valdet",T,"C",40,0,"CARACTER",F,"",T,"",F,"Valor.Descripcion"
+"ITEMPAGOSPERSONALIZADOS","TipoValorDescripcion","","",T,"C",30,0,"CARACTER",F,"",F,"",F,""
+"ITEMPAGOSPERSONALIZADOS","Descuento","DETPAGOSPERS","descuento",T,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"ITEMPAGOSPERSONALIZADOS","Recargo","DETPAGOSPERS","recargo",T,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"ITEMPAGOSPERSONALIZADOS","DiasAPartirDeFechaComprobante","DETPAGOSPERS","diascomp",T,"N",3,0,"NUMERICO",F,"",F,"",F,""
+"ITEMPAGOSPERSONALIZADOS","PorcentajeDelComprobante","DETPAGOSPERS","porccomp",T,"N",6,2,"NUMERICONONEGATIVO",F,"",F,"",F,""

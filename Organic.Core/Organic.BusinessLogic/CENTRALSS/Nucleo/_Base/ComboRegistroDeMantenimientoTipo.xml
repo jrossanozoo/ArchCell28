@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>	
+		<valor> </valor>
+		<cdefault>posicion</cdefault>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Backup automático</valor>
+		<cdefault>posicion</cdefault>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>Mantenimiento de bases de datos</valor>
+		<cdefault>posicion</cdefault>
+		<orden>3</orden>
+    </xml>	
+		<xml>
+		<valor>Recalculo estadisticas</valor>
+		<cdefault>posicion</cdefault>
+		<orden>4</orden>
+	</xml>		
+	<xml>
+		<valor>ADN Implant</valor>
+		<cdefault>posicion</cdefault>
+		<orden>5</orden>
+	</xml>		
+	<xml>
+		<valor>Validacion collation base de datos</valor>
+		<cdefault>posicion</cdefault>
+		<orden>6</orden>
+	</xml>		
+	<xml>
+		<valor>Backup/Restore interactivo</valor>
+		<cdefault>posicion</cdefault>
+		<orden>7</orden>
+	</xml>		
+	
+</VFPData>

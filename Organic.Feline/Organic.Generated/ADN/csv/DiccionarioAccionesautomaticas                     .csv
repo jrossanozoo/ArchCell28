@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ACCIONESAUTOMATICAS","Codigo","ACCAUT","Codigo",T,"C",40,0,"CODIGO",T,"",F,"",F,""
+"ACCIONESAUTOMATICAS","Entidad","ACCAUT","Entidad",T,"C",40,0,"COMBOENTIDADESVISIBLES",F,"",T,"",T,""
+"ACCIONESAUTOMATICAS","Observacion","ACCAUT","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"ACCIONESAUTOMATICAS","NuevoDespuesDeGrabar","ACCAUT","NuevoDG",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ACCIONESAUTOMATICAS","ValorDeCierre","ACCAUT","ValoCier",T,"C",5,0,"CODIGO",F,"VALOR",F,"",F,""
+"ACCIONESAUTOMATICAS","RestringirPicking","ACCAUT","RestPick",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ACCIONESAUTOMATICAS","AccionesDetalle","DACCAUT","Codigo",T,"C",40,0,"DETALLEITEMACCIONESAUTOMATICAS",F,"",F,"",F,""

@@ -1,0 +1,316 @@
+<?xml version = "1.0" encoding="utf-8" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="row" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:attribute name="entidad" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="40"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="descripcion" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="60"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="funcionalidades" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="2147483647"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<row entidad="COLOR" descripcion="Colores" funcionalidades="&lt;LINCE&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;BAJALOGICA&gt;&lt;PUBLICA&gt;&lt;PERSONALIZA&gt;"/>
+	<row entidad="PAISES" descripcion="Países" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="PROVINCIA" descripcion="Provincias" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="VENDEDOR" descripcion="Vendedores" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;LINCE&gt;&lt;CODIGOSUGERIDO:.T.&gt;&lt;TRANSFERALTAS&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:SIQH&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="ARTICULO" descripcion="Artículos" funcionalidades="&lt;LINCE&gt;&lt;BLOQUEARREGISTRO&gt;&lt;GUARDARCOMO&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;CODIGOSUGERIDO&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:SIQH&gt;&lt;LISTARTODOSSUSATRIBUTOS&gt;&lt;WEBHOOK&gt;&lt;BAJALOGICA&gt;&lt;PUBLICA&gt;&lt;PAQRECURSIVO&gt;&lt;IMPOBULKCONVALIDACIONES&gt;"/>
+	<row entidad="PROVEEDOR" descripcion="Proveedores" funcionalidades="&lt;LINCE&gt;&lt;WEBHOOK&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO:.T.&gt;&lt;TRANSFERALTAS&gt;&lt;LISTARTODOSSUSATRIBUTOS&gt;&lt;PUBLICA&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:SIQH&gt;"/>
+	<row entidad="MONEDA" descripcion="Monedas" funcionalidades="&lt;TRANSFERALTAS&gt;&lt;BAJALOGICA&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="VALOR" descripcion="Valores" funcionalidades="&lt;LINCE&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="GRUPOVALOR" descripcion="Agrupamiento de valores" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;BAJALOGICA&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CONCEPTOCAJA" descripcion="Conceptos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;LINCE&gt;&lt;LISTARTODOSSUSATRIBUTOS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="LISTADEPRECIOS" descripcion="Listas de precios" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;BAJALOGICA&gt;&lt;PUBLICA&gt;&lt;REALTIME&gt;"/>
+	<row entidad="CLIENTE" descripcion="Clientes" funcionalidades="&lt;AUDITORIA&lt;MODULOSLISTADO:PQDHJ&gt;&lt;LINCE&gt;&lt;CODIGOSUGERIDO:.T.&gt;&lt;WEBHOOK&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;LISTARTODOSSUSATRIBUTOS&gt;&lt;BAJALOGICA&gt;&lt;DESACTIVABLE&gt;&lt;BUSCAENALTAS&gt;"/>
+	<row entidad="ENTIDADFINANCIERA" descripcion="Entidades financieras" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="MOTIVO" descripcion="Motivos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;LINCE&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="ORIGENDEDATOS" descripcion="Orígenes de datos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;LINCE&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="FACTURA" descripcion="Factura manual de venta" funcionalidades="&lt;ANULABLE&gt;&lt;CAI&gt;&lt;VENTAS&gt;&lt;WEBHOOK&gt;&lt;FISCAL&gt;&lt;CONVALORES&gt;&lt;PROMO_PRINCIPAL&gt;&lt;PICKING&gt;&lt;INTERVINIENTE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;VALIDACENTRALIZADOR&gt;&lt;VALORCIERRE&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="AGRUPAMIENTO" descripcion="Agrupamientos de bases de datos" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="MATERIAL" descripcion="Materiales" funcionalidades="&lt;LINCE&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="TALONARIO" descripcion="Talonarios" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="NUMERACIONES" descripcion="Numeraciones" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="COMPROBANTEDECAJA" descripcion="Comprobantes de caja" funcionalidades="&lt;TRANSMODOSEGURODB&gt;&lt;NOIMPO&gt;&lt;FRMMODAL&gt;&lt;CODIGOSUGERIDO&gt;&lt;INFOADICIONAL&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="NOTADECREDITO" descripcion="Nota de crédito manual de venta" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;CAI&gt;&lt;VENTAS&gt;&lt;FISCAL&gt;&lt;CONVALORES&gt;&lt;NOLISTAGENERICO&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOTADEDEBITO" descripcion="Nota de débito manual de venta" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;CAI&gt;&lt;VENTAS&gt;&lt;FISCAL&gt;&lt;CONVALORES&gt;&lt;NOLISTAGENERICO&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="TICKETFACTURA" descripcion="Factura fiscal de venta" funcionalidades="&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;FISCAL&gt;&lt;CONVALORES&gt;&lt;CF&gt;&lt;PROMO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;PICKING&gt;&lt;INTERVINIENTE&gt;&lt;VALIDACENTRALIZADOR&gt;&lt;VALORCIERRE&gt;&lt;LISTARMODIFICACION&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;"/>
+	<row entidad="TICKETNOTADECREDITO" descripcion="Nota de crédito fiscal de venta" funcionalidades="&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;FISCAL&gt;&lt;CONVALORES&gt;&lt;CF&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="TICKETNOTADEDEBITO" descripcion="Nota de débito fiscal de venta" funcionalidades="&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;FISCAL&gt;&lt;CONVALORES&gt;&lt;CF&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="CAJAESTADO" descripcion="Caja" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="BUZON" descripcion="Buzones" funcionalidades="&lt;NOEXPO&gt;"/>
+	<row entidad="TALLE" descripcion="Talle" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;&lt;PERSONALIZA&gt;"/>
+	<row entidad="TEMPORADA" descripcion="Temporada" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="MODIFICACIONPRECIOS" descripcion="Modificación de precios" funcionalidades="&lt;FRMMODAL&gt;&lt;ANULABLE&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSMODOSEGURODB&gt;"/>
+	<row entidad="MOVIMIENTODESTOCK" descripcion="Movimiento de stock" funcionalidades="&lt;TRANSMODOSEGURODB&gt;&lt;ANULABLE&gt;&lt;PICKING&gt;&lt;INFOADICIONAL&gt;&lt;IMPOSEGURACONCORTE&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="CLASIFICACIONCLIENTE" descripcion="Clasificaciones de clientes" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;"/>
+	<row entidad="DISENOIMPRESION" descripcion="Diseño de salida" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;GUARDARCOMO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;EDICIONPARCIAL&gt;"/>
+	<row entidad="ESTILOIMPRESION" descripcion="Fuentes" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;EXPOGENERICA&gt;&lt;NOSALTODECAMPO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;"/>
+	<row entidad="EQUIVALENCIA" descripcion="Equivalencia" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;&lt;IMPOBULKCONVALIDACIONES&gt;"/>
+	<row entidad="REDONDEODEPRECIOS" descripcion="Redondeos" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="DISENOIMPO" descripcion="Diseño de importación" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;GUARDARCOMO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;EDICIONPARCIAL&gt;"/>
+	<row entidad="DISENOEXPO" descripcion="Diseño de exportación" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;GUARDARCOMO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;EDICIONPARCIAL&gt;&lt;OCULTARNODOEXPO&gt;"/>
+	<row entidad="CONDICIONIMPO" descripcion="Condiciones de exclusión" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="FORMATOEXPORTACION" descripcion="Formatos para exportación/importación" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;HABILITARIMPOINSEGURA&gt;"/>
+	<row entidad="CONVERSION" descripcion="Conversión de datos" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;HABILITARIMPOINSEGURA&gt;&lt;NOLISTAGENERICO&gt;&lt;EDICIONPARCIAL&gt;"/>
+	<row entidad="CONVERSIONVALORES" descripcion="Valores de conversión" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;HABILITARIMPOINSEGURA&gt;&lt;EDICIONPARCIAL&gt;"/>
+	<row entidad="IMPOAGRUPADAS" descripcion="Configuración de importaciones agrupadas" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="EXPOAGRUPADAS" descripcion="Configuración de exportaciones agrupadas" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;EDICIONPARCIAL&gt;"/>
+	<row entidad="DATOSFISCALES" descripcion="Esquema de datos fiscales" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;TRANSMODOSEGURODB&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="TIINVENTARIOACONT" descripcion="Inventario a controlar" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="TIINVENTARIOFISICO" descripcion="Inventario físico" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="TIINVENTARIOFISICODETALLE" descripcion="Detalle de inventario físico" funcionalidades="&lt;NOEXPO&gt;&lt;IMPOBULKCONVALIDACIONES&gt;"/>
+	<row entidad="TIDIFERENCIASDEINVENTARIO" descripcion="Diferencia de inventarios" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="TIDIFERENCIASDEINVENTARIODETALLE" descripcion="Detalle de diferencia de inventarios" funcionalidades=""/>
+	<row entidad="MERCADERIAENTRANSITO" descripcion="Mercadería en tránsito" funcionalidades="&lt;TRANSMODOSEGURODB&gt;&lt;PICKING&gt;&lt;ANULABLE&gt;&lt;NOIMPO&gt;&lt;PICKING&gt;&lt;INFOADICIONAL&gt;"/>
+	<row entidad="CAI" descripcion="Códigos de autorización de impresión - CAI" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="REMITO" descripcion="Remito de venta" funcionalidades="&lt;DESCUENTOAUTOMATICO&gt;&lt;WEBHOOK&gt;&lt;TRANSMODOSEGURODB&gt;&lt;ANULABLE&gt;&lt;CAI&gt;&lt;VENTAS&gt;&lt;FISCAL&gt;&lt;PICKING&gt;&lt;INTERVINIENTE&gt;&lt;IMPOSEGURACONCORTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="SCRIPT" descripcion="Scripts de ejecución" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;GUARDARCOMO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="VALEDECAMBIO" descripcion="Vale de cambio - GiftCard" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CONTROLARFECHAHORAENRECEPCION&gt;&lt;CODIGOSUGERIDO&gt;"/>
+	<row entidad="LIMITECONSUMO" descripcion="Límites de consumos" funcionalidades="&lt;AUDITORIA&lt;MODULOSLISTADO:PQDHJ&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="DESCUENTO" descripcion="Descuentos y recargos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;NOLISTAGENERICO&gt;&lt;PUBLICA&gt;&lt;LINCE&gt;&lt;PUBLICA&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&lt;MODULOSLISTADO:P&gt;&lt;GUARDARCOMO&gt;"/>
+	<row entidad="REGLASTRANSFERENCIAS" descripcion="Reglas de paquetes de datos" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ACCIONESAUTOMATICAS" descripcion="Comportamiento de entidades" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="UNIDADDEMEDIDA" descripcion="Unidad de medida" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;BAJALOGICA&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="FAMILIA" descripcion="Familias" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="LINEA" descripcion="Líneas" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;BAJALOGICA&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="GRUPO" descripcion="Grupos" funcionalidades="&lt;LINCE&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CATEGORIADEARTICULO" descripcion="Categorías de artículos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CLASIFICACIONARTICULO" descripcion="Clasificaciones de artículos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="TIPODEARTICULO" descripcion="Tipos de artículos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="DEVOLUCION" descripcion="Cancelación de venta" funcionalidades="&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;LISTARMODIFICACION&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="CLASIFICACIONPROVEEDOR" descripcion="Clasificaciones de proveedores" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;"/>
+	<row entidad="CLASIFICACIONVENDEDOR" descripcion="Clasificaciones de vendedores" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="RECIBO" descripcion="Recibo" funcionalidades="&lt;ANULABLE&gt;&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;VENTAS&gt;&lt;WEBHOOK&gt;&lt;FISCAL&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;LISTARMODIFICACION&gt;&lt;VALORCIERRE&gt;"/>
+	<row entidad="AJUSTEDESTOCK" descripcion="Stock según seguimiento contra stock" funcionalidades="&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;NOLISTAGENERICO&gt;&lt;NOSALTODECAMPO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="IMPRESIONDEETIQUETA" descripcion="Impresión de etiquetas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="SENIA" descripcion="Seña" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;ANULABLE&gt;&lt;NOEXPO&gt;&lt;VENTAS&gt;"/>
+	<row entidad="CHEQUE" descripcion="Cheque de tercero" funcionalidades="&lt;NOEXPO&gt;&lt;CONTROLARFECHAHORAENRECEPCION&gt;"/>
+	<row entidad="DISENOTRANSFORMACIONLINCE" descripcion="Asociaciones de campos Dragonfish - Lince Indumentaria" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;GUARDARCOMO&gt;&lt;NOSALTODECAMPO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="PEDIDO" descripcion="Pedido de venta" funcionalidades="&lt;DESCUENTOAUTOMATICO&gt;&lt;WEBHOOK&gt;&lt;TRANSMODOSEGURODB&gt;&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;PICKING&gt;&lt;IMPOSEGURACONCORTE&gt;&lt;COMPLETADESDEVENTAS&gt;&lt;FILTROESPECIFICO&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="PRESUPUESTO" descripcion="Presupuesto de venta" funcionalidades="&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;LISTARMODIFICACION&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="TRANSPORTISTA" descripcion="Transportistas" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO:.T.&gt;&lt;TRANSFERALTAS&gt;"/>
+	<row entidad="FACTURADECOMPRA" descripcion="Factura de compra" funcionalidades="&lt;ANULABLE&gt;&lt;COMPRAS&gt;&lt;WEBHOOK&gt;&lt;FISCAL&gt;&lt;CONVALORES&gt;&lt;PICKING&gt;&lt;INTERVINIENTE&gt;&lt;FRMMODAL&gt;&lt;VALIDACENTRALIZADOR&gt;&lt;VALORCIERRE&gt;&lt;LISTARMODIFICACION&gt;&lt;LISTARCON:NOTADECREDITOCOMPRA;NOTADEDEBITOCOMPRA&gt;"/>
+	<row entidad="TIPOIMPUESTO" descripcion="Tipos de impuesto" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOEXPO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CONDICIONDEPAGO" descripcion="Condiciones de pago" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;NOLISTAGENERICO&gt;&lt;LINCE&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="IMPUESTO" descripcion="Impuestos" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOEXPO&gt;&lt;GUARDARCOMO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CALCULODEPRECIOS" descripcion="Modificación masiva de precios" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;ANULABLE&gt;"/>
+	<row entidad="OPERADORADETARJETA" descripcion="Operadoras de tarjetas" funcionalidades="&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CIERREDELOTE" descripcion="Cierre de lote" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="POS" descripcion="Dispositivos POS" funcionalidades=""/>
+	<row entidad="CUPON" descripcion="Cupones" funcionalidades="&lt;NOIMPO&gt;&lt;NOSALTODECAMPO&gt;"/>
+	<row entidad="DATOSTARJETA" descripcion="Datos de cobros con tarjetas" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TRATAMIENTOCOMPROBANTES" descripcion="Tratamiento de comprobantes fiscales" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="EQUIVALORLINCE" descripcion="Equivalencia de valores Lince" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="FACTURAELECTRONICA" descripcion="Factura electrónica de venta" funcionalidades="&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;WEBHOOK&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;CE&gt;&lt;PROMO&gt;&lt;NOLISTAGENERICO&gt;&lt;PICKING&gt;&lt;INTERVINIENTE&gt;&lt;VALIDACENTRALIZADOR&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;MIPYME:54&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOTADECREDITOELECTRONICA" descripcion="Nota de crédito electrónica de venta" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;CE&gt;&lt;NOLISTAGENERICO&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;MIPYME:55&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOTADEDEBITOELECTRONICA" descripcion="Nota de débito electrónica de venta" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;CE&gt;&lt;NOLISTAGENERICO&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;MIPYME:56&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="CAEPORLOTE" descripcion="Obtención de CAE por Lote" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZUDESCARGALAN" descripcion="Actualizaciones para servidor de red" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="BASEDEDATOS" descripcion="Base de datos" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NORECEPCIONABLE&gt;&lt;GUARDARCOMO&gt;"/>
+	<row entidad="ORDENDEPAGO" descripcion="Orden de pago" funcionalidades="&lt;ANULABLE&gt;&lt;COMPRAS&gt;&lt;FISCAL&gt;&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;VALORCIERRE&gt;&lt;WEBHOOK&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="COMPORTAMIENTOCODIGOSUGERIDOENTIDAD" descripcion="Comportamiento de códigos" funcionalidades="&lt;TRANSMODOSEGURODB&gt;&lt;NOSALTODECAMPO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;BLOQUEARREGISTRO&gt;"/>
+	<row entidad="NOTADEDEBITOCOMPRA" descripcion="Nota de débito de compra" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;COMPRAS&gt;&lt;FISCAL&gt;&lt;CONVALORES&gt;&lt;NOLISTAGENERICO&gt;&lt;VALORCIERRE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOTADECREDITOCOMPRA" descripcion="Nota de crédito de compra" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;COMPRAS&gt;&lt;FISCAL&gt;&lt;CONVALORES&gt;&lt;NOLISTAGENERICO&gt;&lt;VALORCIERRE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="SUCURSALBANCARIA" descripcion="Sucursal bancaria" funcionalidades="&lt;NOEXPO&gt;&lt;BAJALOGICA&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CUENTABANCARIA" descripcion="Cuenta bancaria" funcionalidades="&lt;NOEXPO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CHEQUERA" descripcion="Chequera" funcionalidades="&lt;NOEXPO&gt;"/>
+	<row entidad="CHEQUEPROPIO" descripcion="Cheque propio" funcionalidades="&lt;NOEXPO&gt;&lt;ANULABLE&gt;&lt;CONTROLARFECHAHORAENRECEPCION&gt;"/>
+	<row entidad="CANJEDECUPONES" descripcion="Canje de valores" funcionalidades="&lt;ANULABLE&gt;&lt;COMPR_CAJA&gt;&lt;FRMMODAL&gt;&lt;NOIMPO&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="FACTURAELECTRONICAEXPORTACION" descripcion="Factura electrónica exportación de venta" funcionalidades="&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;WEBHOOK&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;CE&gt;&lt;NOLISTAGENERICO&gt;&lt;PICKING&gt;&lt;INTERVINIENTE&gt;&lt;VALIDACENTRALIZADOR&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOTADECREDITOELECTRONICAEXPORTACION" descripcion="Nota de crédito electrónica exportación de venta" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;CE&gt;&lt;NOLISTAGENERICO&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOTADEDEBITOELECTRONICAEXPORTACION" descripcion="Nota de débito electrónica exportación de venta" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;CE&gt;&lt;NOLISTAGENERICO&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="AGRUPAMIENTODEBUZONES" descripcion="Agrupamientos de buzones" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="IMPRIMIRCOMPROBANTEPORLOTE" descripcion="Imprimir comprobante por Lote" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="PALETADECOLORES" descripcion="Paleta de colores" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;&lt;PERSONALIZA&gt;"/>
+	<row entidad="CURVADETALLES" descripcion="Curva de talles" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;&lt;PERSONALIZA&gt;"/>
+	<row entidad="FORMULA" descripcion="Fórmulas de modificación de precios" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;GUARDARCOMO&gt;&lt;CODIGOSUGERIDO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="SALTODECAMPO" descripcion="Comportamiento de atributos" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="COMISION" descripcion="Comisiones por ventas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="SUCURSAL" descripcion="Sucursal" funcionalidades="&lt;NOEXPO&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="TIPOSUCURSAL" descripcion="Tipo de sucursal" funcionalidades="&lt;NOEXPO&gt;"/>
+	<row entidad="LINEASUCURSAL" descripcion="Línea de sucursal" funcionalidades="&lt;NOEXPO&gt;"/>
+	<row entidad="SEGMENTACION" descripcion="Segmentación de sucursal" funcionalidades="&lt;NOEXPO&gt;"/>
+	<row entidad="CLASEDETARJETA" descripcion="Clases de tarjetas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="PICKING" descripcion="Picking" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;RELAENTIDAD&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="OBJETIVOSVENTA" descripcion="Objetivos de venta" funcionalidades="&lt;NOEXPO&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="TIPOOBJETIVO" descripcion="Tipos de objetivo" funcionalidades="&lt;NOEXPO&gt;"/>
+	<row entidad="MINIMOREPOSICION" descripcion="Modificación de mínimo y máximo de stock" funcionalidades="&lt;PUBLICA&gt;&lt;CODIGOSUGERIDO&gt;"/>
+	<row entidad="REGISTRODEMANTENIMIENTO" descripcion="Registro de mantenimiento del sistema" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="PROMOCION" descripcion="Promociones" funcionalidades="&lt;TRANSFERALTAS&gt;&lt;NOEXPO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="PAGO" descripcion="Pago" funcionalidades="&lt;ANULABLE&gt;&lt;COMPRAS&gt;&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;LISTARMODIFICACION&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="AJUSTEDEESTADOS" descripcion="Ajuste de situaciones de estado según comprobantes" funcionalidades="&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;NOLISTAGENERICO&gt;&lt;NOSALTODECAMPO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="COMPROBANTEDERETENCIONES" descripcion="Comprobante de retención de ingresos brutos" funcionalidades="&lt;ANULABLE&gt;&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;NOIMPO&gt;"/>
+	<row entidad="PRESUPUESTODECOMPRA" descripcion="Presupuesto de compra" funcionalidades="&lt;ANULABLE&gt;&lt;COMPRAS&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="PEDIDODECOMPRA" descripcion="Pedido de compra" funcionalidades="&lt;ANULABLE&gt;&lt;COMPRAS&gt;&lt;PICKING&gt;&lt;TRANSMODOSEGURODB&gt;&lt;LISTARMODIFICACION&gt;&lt;COMPLETADESDEVENTAS&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="SOLICITUDDECOMPRA" descripcion="Solicitud de compra" funcionalidades="&lt;ANULABLE&gt;&lt;COMPRAS&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="REMITODECOMPRA" descripcion="Remito de compra" funcionalidades="&lt;ANULABLE&gt;&lt;COMPRAS&gt;&lt;PICKING&gt;&lt;INTERVINIENTE&gt;&lt;LISTARMODIFICACION&gt;&lt;FRMMODAL&gt;&lt;IMPOGENERICA&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="CANCELACIONDECOMPRA" descripcion="Cancelación de compra" funcionalidades="&lt;ANULABLE&gt;&lt;COMPRAS&gt;&lt;CANCOMPRA&gt;&lt;LISTARMODIFICACION&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="REQUERIMIENTODECOMPRA" descripcion="Requerimiento de compra" funcionalidades="&lt;ANULABLE&gt;&lt;COMPRAS&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="BOLSASYCAJAS" descripcion="Bolsas y cajas" funcionalidades="&lt;ANULABLE&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="AJUSTECCCLIENTE" descripcion="Ajuste de cuenta corriente de clientes" funcionalidades="&lt;ANULABLE&gt;&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;VENTAS&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="AJUSTECCPROVEEDOR" descripcion="Ajuste de cuenta corriente de proveedores" funcionalidades="&lt;ANULABLE&gt;&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;COMPRAS&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="CANCELACIONDESENIAS" descripcion="Cancelación de señas" funcionalidades="&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="GTIN" descripcion="Códigos RG 2904/10" funcionalidades="&lt;TRANSMODOSEGURODB&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="PASAJEDESTOCK" descripcion="Pasaje de stock" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="CONCILIACIONDECAJA" descripcion="Ajuste de movimientos y saldos de caja según comprobantes" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="LISTADEPRECIOSCALCULADA" descripcion="Asignación de fórmula a lista de precios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="NOMENCLADORARBA" descripcion="Nomenclador ARBA" funcionalidades="&lt;BLOQUEARREGISTRO&gt;"/>
+	<row entidad="UNIDADDEMEDIDAARBA" descripcion="Unidad de medida ARBA" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="REMITOELECTRONICO" descripcion="Remito electrónico" funcionalidades="&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="DESTINODESCARGACHEQUES" descripcion="Destinos de descarga de cheques de terceros" funcionalidades="&lt;NOEXPO&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="DESCARGADECHEQUES" descripcion="Descarga de cheques de terceros" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;VENTAS&gt;&lt;ANULABLE&gt;"/>
+	<row entidad="FACTURADEEXPORTACION" descripcion="Factura de exportación de venta" funcionalidades="&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;WEBHOOK&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;PICKING&gt;&lt;INTERVINIENTE&gt;&lt;VALIDACENTRALIZADOR&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOTADECREDITODEEXPORTACION" descripcion="Nota de crédito de exportación de venta" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOTADEDEBITODEEXPORTACION" descripcion="Nota de débito de exportación de venta" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOMBREDEFANTASIA" descripcion="Nombre de fantasía" funcionalidades="&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;&lt;TRANSFERALTAS&gt;"/>
+	<row entidad="TIPODEDIRECCION" descripcion="Tipos de dirección" funcionalidades="&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="TIPOCLIENTE" descripcion="Tipos de clientes" funcionalidades="&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;&lt;TRANSFERALTAS&gt;"/>
+	<row entidad="CATEGORIACLIENTE" descripcion="Categorías de clientes" funcionalidades="&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;&lt;TRANSFERALTAS&gt;"/>
+	<row entidad="CRITERIOSVALORES" descripcion="Criterios comerciales para la aceptación de valores" funcionalidades="&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="DESPACHODEIMPORTACION" descripcion="Despacho de importación" funcionalidades=""/>
+	<row entidad="REGIMENIMPOSITIVO" descripcion="Régimen impositivo" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOEXPO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CLASIFICACIONCONCEPTOPAGO" descripcion="Clasificaciones de conceptos de otros pagos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;LISTARTODOSSUSATRIBUTOS&gt;"/>
+	<row entidad="CONCEPTOPAGO" descripcion="Conceptos de otros pagos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;LISTARTODOSSUSATRIBUTOS&gt;"/>
+	<row entidad="COMPROBANTEPAGO" descripcion="Otros pagos" funcionalidades="&lt;ANULABLE&gt;&lt;CONVALORES&gt;&lt;COMPRAS&gt;&lt;VALORCIERRE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="COMPROBANTEDERETENCIONESIVA" descripcion="Comprobante de retención de IVA" funcionalidades="&lt;ANULABLE&gt;&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;NOIMPO&gt;"/>
+	<row entidad="COMPROBANTEDERETENCIONESGANANCIAS" descripcion="Comprobante de retención de ganancias" funcionalidades="&lt;ANULABLE&gt;&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;NOIMPO&gt;"/>
+	<row entidad="COMPROBANTEDERETENCIONESSUSS" descripcion="Comprobante de retención de SUSS" funcionalidades="&lt;ANULABLE&gt;&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;NOIMPO&gt;"/>
+	<row entidad="TIPODEOPERACIONAFIP" descripcion="Tipos de operación" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;BLOQUEARREGISTRO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ASOCIACIONARTICULOSOPERACIONESAFIP" descripcion="Asociaciones de artículos y tipos de operaciones" funcionalidades="&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="FERIADO" descripcion="Feriados" funcionalidades="&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CLASIFICACIONCONCEPTOCAJA" descripcion="Clasificaciones de conceptos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;"/>
+	<row entidad="MAILPORLOTE" descripcion="Envío de e-mail por lote" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;GUARDARCOMO&gt;"/>
+	<row entidad="EMAIL" descripcion="Emails" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOEXPO&gt;&lt;GUARDARCOMO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CUENTACORREO" descripcion="Cuentas de correo" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOEXPO&gt;&lt;GUARDARCOMO&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CONCEPTOLIQUIDACIONTARJETA" descripcion="Conceptos de liquidación de tarjetas" funcionalidades="&lt;PUBLICA&gt;"/>
+	<row entidad="LIQUIDACIONDIARIA" descripcion="Liquidación diaria" funcionalidades=""/>
+	<row entidad="LIQUIDACIONMENSUAL" descripcion="Liquidación mensual" funcionalidades=""/>
+	<row entidad="PLANDECUENTAS" descripcion="Plan de cuentas" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;NOSALTODECAMPO&gt;"/>
+	<row entidad="COMPROBANTEDERETENCIONRECIBIDO" descripcion="Comprobante de retención recibido" funcionalidades="&lt;TRANSMODOSEGUROCEN&gt;&lt;TRANSMODOSEGURODB&gt;&lt;NOIMPO&gt;"/>
+	<row entidad="REPORTEELECTRONICO" descripcion="Descarga de reportes electrónicos R.G. 3561/13" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="CENTRODECOSTO" descripcion="Centro de costos" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;"/>
+	<row entidad="DISTRIBUCIONCENTRODECOSTO" descripcion="Distribución por centro de costos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;"/>
+	<row entidad="ASIENTO" descripcion="Asientos" funcionalidades="&lt;GUARDARCOMO&gt;&lt;CODIGOSUGERIDO&gt;"/>
+	<row entidad="RAZONSOCIAL" descripcion="Razón social" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;"/>
+	<row entidad="EJERCICIO" descripcion="Ejercicio" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;"/>
+	<row entidad="ASIGNARZBD" descripcion="Asignación de razón social a base de datos" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;"/>
+	<row entidad="IMPDIRVAL" descripcion="Imputación de valores a cuenta contable" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPDIRART" descripcion="Imputación de artículo a cuenta contable" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPDIRCLI" descripcion="Imputación de cliente a cuenta contable" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPDIRPRO" descripcion="Imputación de proveedor a cuenta contable" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPDIRIMP" descripcion="Imputación de impuesto a cuenta contable" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPDIRCAJ" descripcion="Imputación de concepto a cuenta contable" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPDIRCON" descripcion="Imputación de concepto de otros pagos a cuenta contable" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPDIRDES" descripcion="Imputación de destino de descarga de cheques de terceros" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPDIROPE" descripcion="Imputación de operadoras de tarjetas" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPDIRLIQ" descripcion="Imputación de concepto de liquidación de tarjetas" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPVERCC" descripcion="Imputación vertical a centro de costos" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="CONTABILIZACION" descripcion="Contabilización de asientos tipo" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="ASIENTOTIPO" descripcion="Asiento tipo" funcionalidades=""/>
+	<row entidad="CIERREEJERCICIO" descripcion="Cierre de ejercicio" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;"/>
+	<row entidad="IMPDIRCCA" descripcion="Imputación de artículo a centro de costos en compras" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="IMPDIRCCC" descripcion="Imputación de concepto de otros pagos a centro de costos" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="APERTURAEJERCICIO" descripcion="Apertura de ejercicio" funcionalidades=""/>
+	<row entidad="ENTREGADEMERCADERIAS" descripcion="Entrega de mercaderías" funcionalidades="&lt;WEBHOOK&gt;"/>
+	<row entidad="CLIENTEECOMMERCE" descripcion="Clientes ecommerce" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;IMPOGENERICA&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="COMPROBANTESECOMMERCE" descripcion="Herramienta de generación de comprobantes ecommerce" funcionalidades=""/>
+	<row entidad="ECOMMERCE" descripcion="Plataformas de ecommerce" funcionalidades="&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="OPERACIONECOMMERCE" descripcion="Operaciones ecommerce" funcionalidades="&lt;INFOADICIONAL&gt;&lt;WEBHOOK&gt;"/>
+	<row entidad="PUNTOSDEVENTA" descripcion="Diferenciación de puntos de venta por comprobante" funcionalidades=""/>
+	<row entidad="SERVICIOREST" descripcion="Servicio REST API" funcionalidades="&lt;CODIGOSUGERIDO&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="CLAVESECRETAREST" descripcion="Cliente REST API" funcionalidades="&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="AGRUPALISTADOSPERSONALIZADOS" descripcion="Agrupamiento de listados personalizados" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOLISTAGENERICO&gt;&lt;NOLOGUEAR&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="REPORTEAUDITORIACIERREZ" descripcion="Reporte de auditoría de cierre  Z" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="MOTIVODESCUENTOYDEVOLUCION" descripcion="Motivos de descuento y devolución" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;LINCE&gt;&lt;LISTARTODOSSUSATRIBUTOS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="CODIGOAUTORIZACIONDJCP" descripcion="Código de autorización de DJCP" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="ARQUEODECAJA" descripcion="Arqueo de caja" funcionalidades="&lt;INFOADICIONAL&gt;"/>
+	<row entidad="CODIGODESERVICIO" descripcion="Código de servicio" funcionalidades="&lt;PUBLICA&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;"/>
+	<row entidad="TIPODEORDEN" descripcion="Tipo de orden" funcionalidades="&lt;PUBLICA&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;"/>
+	<row entidad="ESTADOSDEINTERACCION" descripcion="Estados de interacción" funcionalidades="&lt;PUBLICA&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;BLOQUEARREGISTRO&gt;"/>
+	<row entidad="INTERACCIONDEORDEN" descripcion="Interacción de orden de servicio" funcionalidades="&lt;PUBLICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;ANULABLE&gt;&lt;HABILITARIMPOINSEGURA&gt;"/>
+	<row entidad="ENTIDADADICIONAL1" descripcion="Entidad adicional 1" funcionalidades="&lt;PUBLICA&gt;"/>
+	<row entidad="ENTIDADADICIONAL2" descripcion="Entidad adicional 2" funcionalidades="&lt;PUBLICA&gt;"/>
+	<row entidad="ENTIDADADICIONAL3" descripcion="Entidad adicional 3" funcionalidades="&lt;PUBLICA&gt;"/>
+	<row entidad="ORDENDESERVICIO" descripcion="Orden de servicio" funcionalidades="&lt;PUBLICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;ANULABLE&gt;"/>
+	<row entidad="ERRORSAP" descripcion="Equivalencia - errores de Interfaz Sap" funcionalidades=""/>
+	<row entidad="GESTIONVENDEDOR" descripcion="Asignación de vendedor a base de datos" funcionalidades="&lt;PUBLICA&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;CODIGOSUGERIDO&gt;"/>
+	<row entidad="COTIZACION" descripcion="Carga de nueva cotización" funcionalidades="&lt;SINTOOLBAR&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="FACTURAELECTRONICADECREDITO" descripcion="Factura de crédito electrónica MiPyME de venta" funcionalidades="&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;WEBHOOK&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;CE&gt;&lt;PROMO&gt;&lt;NOLISTAGENERICO&gt;&lt;PICKING&gt;&lt;INTERVINIENTE&gt;&lt;VALIDACENTRALIZADOR&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOTADECREDITOELECTRONICADECREDITO" descripcion="Nota de crédito electrónica MiPyME de venta" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;CE&gt;&lt;NOLISTAGENERICO&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="NOTADEDEBITOELECTRONICADECREDITO" descripcion="Nota de débito electrónica MiPyME de venta" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;CE&gt;&lt;NOLISTAGENERICO&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;LISTARMODIFICACION&gt;"/>
+	<row entidad="ENVIODEMENSAJERIA" descripcion="Envío de mensajería a eCommerce" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="VALORESENTRANSITO" descripcion="Valores en tránsito" funcionalidades="&lt;TRANSMODOSEGURODB&gt;&lt;INFOADICIONAL&gt;&lt;CODIGOSUGERIDO&gt;"/>
+	<row entidad="REGISTRODECUENTA" descripcion="Registros conciliables" funcionalidades="&lt;CODIGOSUGERIDO&gt;&lt;NOSALTODECAMPO&gt;"/>
+	<row entidad="TRANSFERENCIAENTRECUENTAS" descripcion="Transferencia entre cuentas bancarias" funcionalidades=""/>
+	<row entidad="CONCEPTOENTIDADFINANCIERA" descripcion="Concepto de entidades financieras" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;"/>
+	<row entidad="MOVIMIENTOBANCARIO" descripcion="Movimientos bancarios" funcionalidades="&lt;CODIGOSUGERIDO&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;IMPOBULKCONVALIDACIONES&gt;"/>
+	<row entidad="CONCILIACIONES" descripcion="Conciliaciones bancarias" funcionalidades=""/>
+	<row entidad="HERRAMIENTACONCILIACION" descripcion="Herramienta de conciliación bancaria" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PREPARACIONDEMERCADERIA" descripcion="Preparación de mercadería" funcionalidades="&lt;DESCUENTOAUTOMATICO&gt;&lt;WEBHOOK&gt;&lt;TRANSMODOSEGURODB&gt;&lt;ANULABLE&gt;&lt;VENTAS&gt;&lt;PICKING&gt;&lt;IMPOSEGURACONCORTE&gt;&lt;INTERVINIENTE&gt;&lt;COMPLETADESDEVENTAS&gt;&lt;FILTROESPECIFICO&gt;"/>
+	<row entidad="FACTURAAGRUPADA" descripcion="Factura" funcionalidades="&lt;ANULABLE&gt;&lt;CAI&gt;&lt;WEBHOOK&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;PROMO&gt;&lt;NOLISTAGENERICO&gt;&lt;PICKING&gt;&lt;INTERVINIENTE&gt;&lt;VALIDACENTRALIZADOR&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;MIPYME:54&gt;&lt;AGRUPACOMPROBANTES:1;2;27&gt;&lt;MIPYMEORIGINAL:27&gt;&lt;CF&gt;"/>
+	<row entidad="CODBARRAALTER" descripcion="Código de barra alternativo" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;"/>
+	<row entidad="IMPDIRCUE" descripcion="Imputación de cuentas bancarias" funcionalidades="&lt;HABILITARIMPOINSEGURA&gt;&lt;IMPOGENERICA&gt;&lt;EXPOGENERICA&gt;"/>
+	<row entidad="NOTADECREDITOAGRUPADA" descripcion="Nota de crédito" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;CAI&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;NOLISTAGENERICO&gt;&lt;VALIDACENTRALIZADOR&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;MIPYME:55&gt;&lt;AGRUPACOMPROBANTES:3;5;28&gt;&lt;MIPYMEORIGINAL:28&gt;&lt;CF&gt;"/>
+	<row entidad="NOTADEDEBITOAGRUPADA" descripcion="Nota de débito" funcionalidades="&lt;ANULABLE&gt;&lt;WEBHOOK&gt;&lt;CAI&gt;&lt;VENTAS&gt;&lt;CONVALORES&gt;&lt;FISCAL&gt;&lt;NOLISTAGENERICO&gt;&lt;VALIDACENTRALIZADOR&gt;&lt;VALORCIERRE&gt;&lt;DESCUENTOAUTOMATICO&gt;&lt;ACTUALIZAEMAILCLIENTE&gt;&lt;MIPYME:56&gt;&lt;AGRUPACOMPROBANTES:4;6;29&gt;&lt;MIPYMEORIGINAL:29&gt;&lt;CF&gt;"/>
+	<row entidad="ENVIODECUENTACORRIENTEPORMAIL" descripcion="Envío de cuenta corriente por mail" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="INDICESINFLACION" descripcion="Indices de inflacion" funcionalidades="&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="HERRAMIENTAAGRUPADORADEPACKS" descripcion="Agrupar/Desagrupar Pack" funcionalidades=""/>
+	<row entidad="LINKQRENETIQUETA" descripcion="Link para impresión de código QR en etiquetas" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="WEBHOOK" descripcion="Servicio Webhook" funcionalidades="&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="RENUMERAASIENTOS" descripcion="Herramienta de renumeración de asientos contables" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOSALTODECAMPO&gt;"/>
+	<row entidad="MARCA" descripcion="Marcas de artículos" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;&lt;TRANSFERALTAS&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="ETIQUETASECOMMERCE" descripcion="Etiquetas ecommerce" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;"/>
+	<row entidad="CATEGORIASECOMMERCE" descripcion="Categorías ecommerce" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;"/>
+	<row entidad="CONFIGURACIONARTICULOECOMMERCE" descripcion="Categorías, etiquetas y dimensiones ecommerce" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;"/>
+	<row entidad="CATEGORIASGOOGLESHOPPING" descripcion="Categorías de Google Shoping" funcionalidades="&lt;NOIMPO&gt;&lt;BLOQUEARREGISTRO&gt;"/>
+	<row entidad="APERTURAAUTOMATICAENTIDADES" descripcion="Apertura automática de entidades" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="CAEA" descripcion="CAEA" funcionalidades=""/>
+	<row entidad="CAEAINFORMA" descripcion="Informar Movimientos CAEA" funcionalidades=""/>
+	<row entidad="INVENTARIO" descripcion="Inventarios de producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INSUMO" descripcion="Insumos" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MOTIVODESCARTE" descripcion="Motivos de descarte" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MAQUINARIA" descripcion="Maquinarias y mano de obra" funcionalidades="&lt;NOREST&gt;"/>
+	<row entidad="PROCESOPRODUCCION" descripcion="Procesos de producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CURVADEPRODUCCION" descripcion="Curva de producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TALLER" descripcion="Talleres de producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MODELODEPRODUCCION" descripcion="Modelo de producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;&lt;GUARDARCOMO&gt;"/>
+	<row entidad="ORDENDEPRODUCCION" descripcion="Orden de producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="GESTIONDEPRODUCCION" descripcion="Gestión de orden de producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="MOVIMIENTOSTOCKAPRODUCC" descripcion="Movimiento de insumos a producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="MOVIMIENTOSTOCKAINVENT" descripcion="Movimiento de insumos entre inventarios" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;&lt;INFOADICIONAL&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="MOVIMIENTOSTOCKDESDEPRODUCC" descripcion="Movimiento de insumos desde producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;&lt;INFOADICIONAL&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="FINALDEPRODUCCION" descripcion="Finalización de producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;&lt;INFOADICIONAL&gt;"/>
+	<row entidad="AJUSTECHEQUERECHAZADO" descripcion="Ajustes de cheques de terceros rechazados" funcionalidades="&lt;CODIGOSUGERIDO&gt;&lt;PUBLICA&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="GESTIONCHCUSTODIA" descripcion="Depósito de cheques en custodia" funcionalidades=""/>
+	<row entidad="LISTADECOSTOSDEPRODUCCION" descripcion="Listas de costos de producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="MODIFICACIONDECOSTOSDEPRODUCCION" descripcion="Modificación de costos de producción" funcionalidades="&lt;FRMMODAL&gt;&lt;CODIGOSUGERIDO&gt;&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="COTIZACIONPRODUCCION" descripcion="Cotización gestión de orden de producción" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="LIQUIDACIONDETALLER" descripcion="Liquidación de talleres" funcionalidades="&lt;NOSALTODECAMPO&gt;&lt;NOREST&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="PROCESARNCPENDIENTEPROMOBANCO" descripcion="Herramienta de generación de NC por promociones bancarias" funcionalidades="&lt;NOLOGUEAR&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ALIVIODECAJA" descripcion="Alivio de caja" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;PUBLICA&gt;"/>
+	<row entidad="REGISTRODECOSTOS" descripcion="Registro de costos de mercadería" funcionalidades="&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;CODIGOSUGERIDO&gt;"/>
+</VFPData>

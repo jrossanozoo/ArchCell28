@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ACCESOAOBJETO","Codigo","AccesoAOBJ","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ACCESOAOBJETO","Clase","AccesoAOBJ","Clase",F,"C",254,0,"CARACTER",F,"",T,"",F,""
+"ACCESOAOBJETO","SeObtuvoDesdeElPool","AccesoAOBJ","DesdePool",F,"L",1,0,"SINOBOOL",F,"",F,"",F,""

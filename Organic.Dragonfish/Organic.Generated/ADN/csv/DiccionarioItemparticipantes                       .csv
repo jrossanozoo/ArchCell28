@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMPARTICIPANTES","Codigo","KitPartDet","CODIGO",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMPARTICIPANTES","Comportamiento","KitPartDet","COMP",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMPARTICIPANTES","Articulo","KitPartDet","IPPART",T,"C",15,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"ITEMPARTICIPANTES","ArticuloDetalle","KitPartDet","ARTDET",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"Articulo.Descripcion"
+"ITEMPARTICIPANTES","Color","KitPartDet","IPCOLOR",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMPARTICIPANTES","ColorDetalle","KitPartDet","COLDET",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Color.Descripcion"
+"ITEMPARTICIPANTES","Talle","KitPartDet","IPTALLE",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"ITEMPARTICIPANTES","Cantidad","KitPartDet","CANT",T,"N",13,2,"NUMERICODECIMALPARAMETRIZADO",F,"",F,"",F,""

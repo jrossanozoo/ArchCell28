@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMPLANESSMARTLAPOS","Codigo","SMARTLPlanes","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMPLANESSMARTLAPOS","CodigoPlan","SMARTLPlanes","CodigoPlan",T,"C",10,0,"CARACTER",F,"",F,"",T,""
+"ITEMPLANESSMARTLAPOS","Descripcion","SMARTLPlanes","Descrip",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"ITEMPLANESSMARTLAPOS","Operadora","SMARTLPlanes","Operadora",T,"C",15,0,"CODIGO",F,"OPERADORADETARJETA",F,"",F,""

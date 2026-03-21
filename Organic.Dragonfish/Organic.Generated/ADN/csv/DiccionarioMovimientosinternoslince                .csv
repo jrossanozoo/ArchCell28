@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MOVIMIENTOSINTERNOSLINCE","Codigo","MOVINTLINCE","CODIGO",T,"G",38,0,"CODIGO",T,"",F,"",T,""
+"MOVIMIENTOSINTERNOSLINCE","Fecha","MOVINTLINCE","FECHA",T,"D",8,0,"FECHACALENDARIO",F,"",F,"",F,""
+"MOVIMIENTOSINTERNOSLINCE","Hora","MOVINTLINCE","HORA",T,"C",6,0,"CARACTER",F,"",F,"",F,""
+"MOVIMIENTOSINTERNOSLINCE","Lugar","MOVINTLINCE","LUGAR",T,"C",60,0,"CARACTER",F,"",F,"",F,""
+"MOVIMIENTOSINTERNOSLINCE","Accion","MOVINTLINCE","ACCION",F,"C",160,0,"CARACTER",F,"",T,"",F,""
+"MOVIMIENTOSINTERNOSLINCE","Serie","MOVINTLINCE","SERIE",F,"C",7,0,"CARACTER",F,"",F,"",F,""
+"MOVIMIENTOSINTERNOSLINCE","Obs","MOVINTLINCE","CLOBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"Padroniibb","CODIGO","PerCliDet","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"Padroniibb","JURISDICCION","PerCliDet","JURISDICCI",F,"C",8,0,"CARACTER",F,"JURISDICCION",F,"",F,""
+"Padroniibb","CUIT","PerCliDet","CUIT",F,"C",11,0,"CARACTER",F,"",F,"",F,""
+"Padroniibb","PORCENTAJE","PerCliDet","PORCEN",F,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"Padroniibb","FECHAEXPIRACION","PerCliDet","FECEXP",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"Padroniibb","CODIGOCLIENTE","PerCliDet","COD",F,"C",5,0,"CARACTER",F,"",F,"",F,""
+"Padroniibb","DESCRIPCION","PerCliDet","DesJur",F,"C",50,0,"CARACTER",F,"",F,"",F,""
+"Padroniibb","NROITEM","PerCliDet","NroItem",F,"N",5,0,"NUMERICO",F,"",F,"0",F,""

@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ItemExpoAgrupadas","Codigo","ExpoAgrupItem","iCod",F,"C",20,0,"CODIGO",T,"",F,"",F,""
+"ItemExpoAgrupadas","Diseno","ExpoAgrupItem","diseno",T,"C",40,0,"CODIGO",F,"DISENOEXPO",F,"",T,""
+"ItemExpoAgrupadas","DisenoDetalle","ExpoAgrupItem","disDet",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,"Diseno.Descripcion"
+"ItemExpoAgrupadas","atributoFecha","ExpoAgrupItem","atrFecha",T,"C",40,0,"DESCRIPCION",F,"",F,"",F,""

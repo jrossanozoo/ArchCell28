@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CODIGODESERVICIO","Codigo","CodServ","Codigo",T,"C",20,0,"CODIGO",T,"",F,"",F,""
+"CODIGODESERVICIO","Descripcion","CodServ","Descr",T,"C",250,0,"DESCRIPCION",F,"",T,"",F,""
+"CODIGODESERVICIO","TipoDeOrden","CodServ","TipoOrden",T,"C",20,0,"CODIGO",F,"TIPODEORDEN",F,"",T,""
+"CODIGODESERVICIO","Proveedor","CodServ","Proveedor",T,"C",10,0,"CODIGO",F,"PROVEEDOR",F,"",F,""
+"CODIGODESERVICIO","Observacion","CodServ","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

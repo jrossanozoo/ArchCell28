@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"PERCEPCION","Codigo","Percepcion","Codigo",T,"C",5,0,"CODIGO",T,"",F,"",T,""
+"PERCEPCION","Descripcion","Percepcion","Descrip",T,"C",30,0,"CARACTER",F,"",T,"",T,""
+"PERCEPCION","porcentaje","Percepcion","Porcent",T,"N",6,2,"NUMERICO",F,"",F,"",T,""
+"PERCEPCION","minimoimponible","Percepcion","MinImpo",T,"N",8,2,"NUMERICO",F,"",F,"",T,""
+"PERCEPCION","Tipo","Percepcion","TipoPerc",T,"N",2,0,"COMBOTIPOPERCEPCION",F,"",F,"",T,""
+"PERCEPCION","Provincia","Percepcion","Prov",T,"C",2,0,"CODIGO",F,"PROVINCIA",F,"",F,""
+"PERCEPCION","Jurisdiccion","Percepcion","Jurid",T,"C",3,0,"CARACTER",F,"",F,"",F,"PROVINCIA.JURISDICCION"
+"PERCEPCION","Obs","Percepcion","pobs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

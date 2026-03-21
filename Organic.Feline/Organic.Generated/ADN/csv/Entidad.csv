@@ -1,0 +1,569 @@
+entidad,descripcion,titulo,tipo,herencia,kontroler,formulario
+"ARTICULO","Artículos","Artículos","E","","",T
+"PROVEEDOR","Proveedores","Proveedores","E","","",T
+"MATERIAL","Materiales","Materiales","E","","",F
+"COLOR","Colores","Colores","E","","",T
+"LISTADEPRECIOS","Listas de precios","Lista de precios","E","","",T
+"VALOR","Valores","Valores","E","","",T
+"VENDEDOR","Vendedores","Vendedores","E","","",T
+"CLIENTE","Clientes","Clientes","E","","",T
+"FACTURA","Factura manual de venta","Factura","E","Ent_ComprobanteDeVentasConValores","ComprobanteDeVentasConValores",T
+"STOCKCOMBINACION","Stock combinacion","Stock combinacion","E","Ent_stock","",F
+"PROVINCIA","Provincias","Provincias","E","","",T
+"CORREDOR","Corredores","Corredores","E","","",F
+"BANCO","Bancos","Bancos","E","","",F
+"SUCURSAL","Sucursales","Sucursales","E","","",T
+"DOCUMENTOPROPIO","Documentos propios","Documentos propios","E","","",F
+"ITEMARTICULOSVENTAS","Items de facturas","Linea detalle factura","I","ARTICULOSVENTA","",F
+"ITEMVALORES","Items de valores","Linea detalle valores","I","VALORESVENTA","",F
+"PRECIODEARTICULO","Precios de artículos","Precio de articulo","E","","",F
+"TICKETFACTURA","Factura fiscal de venta","Comprobante fiscal factura","E","Ent_ComprobanteDeVentasConValores","ComprobanteDeVentasConValores",T
+"NOTADECREDITO","Nota de crédito manual de venta","Nota de crédito","E","Ent_ComprobanteDeVentasConValores","ComprobanteDeVentasConValores",T
+"NOTADEDEBITO","Nota de débito manual de venta","Nota de débito","E","Ent_ComprobanteDeVentasConValores","ComprobanteDeVentasConValores",T
+"TICKETNOTADECREDITO","Nota de crédito fiscal de venta","Comprobante fiscal nota de crédito","E","Ent_ComprobanteDeVentasConValores","ComprobanteDeVentasConValores",T
+"TICKETNOTADEDEBITO","Nota de débito fiscal de venta","Comprobante fiscal nota de débito","E","Ent_ComprobanteDeVentasConValores","ComprobanteDeVentasConValores",T
+"STOCKARTICULOS","Stock de artículos","Stock de artículos","E","Ent_stock","",F
+"MONEDA","Moneda","Moneda","E","","",T
+"ITEMCONDICIONDEPAGO","Item del detalle de la condición de pago","Linea detalle condición de pago","I","","",F
+"ITEMMONEDA","Item del detalle de moneda","Linea detalle moneda","I","","",F
+"ORIGENDEDATOS","Origenes de datos","Origenes de datos","E","","",T
+"ENTIDADFINANCIERA","Entidad financiera","Entidad financiera","E","","",T
+"MOTIVO","Tipo de motivos","Motivo","E","","",T
+"REMITO","Remito de venta","Remito","E","Ent_ComprobanteDeVentasSinValores","ComprobanteDeVentasSinValores",T
+"CAJAAUDITORIA","Caja auditoria","Caja auditoria","E","","",F
+"CAJAESTADO","Caja","Caja","E","","",T
+"CAJASALDOS","Saldos de caja","Saldos de caja","E","","",F
+"ITEMCAJAAUDITORIA","Valores de la caja de auditoría","Valores de la caja de auditoría","I","","",F
+"MOVIMIENTODECAJA","Movimientos de caja","Movimientos de caja","E","","",F
+"ITEMIMPUESTOS","Items de impuestos","","I","IMPUESTOS","",F
+"ITEMVALORESCAJA","Items de valores para movimientos de caja","","I","ValoresFondos","",F
+"CONCEPTOCAJA","Conceptos","Conceptos","E","","",T
+"COMPROBANTEDECAJA","Comprobante de movimientos de caja","Comprobante de movimientos de caja","E","Ent_ComprobanteDeFondos","ComprobanteDeFondos",T
+"GRUPOVALOR","Agrupamiento de valores","Grupo de valores","E","","",T
+"MODIFICACIONPRECIOS","Modificación de precios","Modificación de precios","E","","",T
+"ITEMMODIFICACIONPRECIOS","Item modificación de precios","Item modificación de precios","I","","",F
+"MOVIMIENTODESTOCK","Movimiento de stock","Movimiento de stock","E","Ent_ComprobanteMovStock","Comprobante",T
+"ITEMMOVSTOCK","Items de movimiento de stock","Items de movimiento de stock","I","MovStock","",F
+"BUZON","Buzón para transferencias","Buzón para transferencias","E","","",T
+"PAISES","Paises","Paises","E","","",T
+"Talonario","Talonario","Talonario","E","","",T
+"Numeraciones","Numeraciones","Numeraciones","E","","",T
+"Itemtalonario","Item talonario","Item talonario","I","","",F
+"Devolucion","Cancelación de venta","Devolución","E","Ent_ComprobanteDeVentasSinValores","ComprobanteDeVentasSinValores",T
+"InformacionAdicionalCompVtas","Informacion adicional","Informacion adicional","E","","",T
+"PERCEPCION","Percepciones","Percepciones","E","","",T
+"AJUSTEDESTOCK","Stock según seguimiento contra stock","Stock según seguimiento contra stock","E","","",T
+"ITEMAJUSTEDESTOCK","Items de ajuste de stock","Items de ajuste de stock","I","AjusteCombinacion","",F
+"AGRUPAMIENTO","Agrupamientos de Bases de Datos","Agrupamientos","E","","",T
+"ITEMAGRUPAMIENTO","Item de agrupamientos de bases de datos","Item agrupamientos","I","","",F
+"ITEMBASEDEDATOS","Item de agrupamientos de bases de datos","Item agrupamientos","I","","",F
+"BASEDEDATOS","Base de datos","Base de datos","E","","",T
+"CTACTE","Cuenta corriente","Cuenta corriente","E","","",F
+"RECIBO","Recibo","Recibo","E","Ent_ComprobanteDeVentasConValores","ComprobanteDeVentasConValores",T
+"ITEMRECIBO","Detalle de comprobante de recibos","","I","","",F
+"Memoria","Memoria","Memoria Formulario","E","","",F
+"ITEMCOMPROBANTE","Detalle de comprobantes","","I","","",F
+"Disenoimpresion","Diseño de salida","Diseño de salida","E","","",T
+"Itemareasimpresion","Item areas impresión","Item areas impresión","I","","",F
+"Itematributosimpresion","Item atributos impresión","Item atributos impresión","I","","",F
+"Tipoareaimpresion","Tipo de área de impresión","Tipo de área de impresión","E","","",F
+"Estiloimpresion","Estilo de impresión","Estilo de impresión","E","","",T
+"Tipoatributoimpresion","Tipo de atributo de impresión","Tipo de atributo de impresión","E","","",F
+"Selecciondisenoimpresion","Selección diseño de salida","Selección diseño de salida","E","","",T
+"DisenoExpo","Diseño de exportación","Diseño de exportación","E","ent_ImpoExpo","",T
+"ItemAtributosExpo","Item atributos exportación","Item atributos exportación","I","","",F
+"DESCUENTO","Descuentos y recargos","Descuentos y recargos","E","","",T
+"FormatoExportacion","Formatos para exportación/importación","Formatos para exportación/importación","E","","",T
+"TipoAreaExportacion","Tipos de área para exportación/importación","Tipos de área para exportación/importación","E","","",F
+"TipoAtributosExportacion","Tipo de atributo para exportación/importación","Tipo de atributo para exportación/importación","E","","",F
+"ItemAreasExpo","Item areas exportación","Item areas exportación","I","","",F
+"TipoArchivoExportacion","Tipo de archivo de exportación","Tipo de archivo de exportación","E","","",F
+"TipoRegistroExportacion","Tipo de registro de exportación/importación","Tipo de registro de exportación/importación","E","","",F
+"Conversion","Conversión de datos","Conversiones de datos","E","","",T
+"ConversionValores","Valores de conversión","Valores de conversión","E","","",T
+"ExpoAgrupadas","Configuración de exportaciones agrupadas","Configuración de exportaciones agrupadas","E","ent_impoexpoagrupadas","",T
+"ItemExpoAgrupadas","Item diseños de exportación agrupados","Item diseños de exportación agrupados","I","","",F
+"ItemAtributosImpo","Item atributos importación","Item atributos importación","I","","",F
+"ItemAreasImpo","Item areas importación","Item areas importación","I","","",F
+"TipoArchivoImportacion","Tipo de archivo de importación","Tipo de archivo de importación","E","","",F
+"ImpoAgrupadas","Configuración de importaciones agrupadas","Configuración de importaciones agrupadas","E","ent_impoexpoagrupadas","",T
+"ItemImpoAgrupadas","Item diseños de importación agrupados","Item diseños de importación agrupados","I","","",F
+"TIInventarioACont","Inventario a controlar","Inventario a controlar","E","","",T
+"TIInventarioAContDetalle","Detalle de inventario a controlar","Inventario a controlar detalle","E","","",F
+"TIInventarioFisico","Inventario físico","Inventario físico","E","","",T
+"TIInventarioFisicoDetalle","Detalle de inventario físico","Inventario físico detalle","E","","",T
+"TIDiferenciasDeInventario","Diferencias de inventario","Diferencia de inventario","E","","",T
+"TIDiferenciasDeInventarioDetalle","Detalle de diferencias de inventario","Detalle de diferencias de inventario","E","","",T
+"EQUIVALENCIA","Equivalencias","Equivalencias","E","","",T
+"RedondeoDePrecios","Redondeo de precios","Redondeo de precios","E","","",T
+"ItemRedondeoTabla","Item de redondeos por tabla","","I","","",F
+"ItemRedondeoCentavos","Item de redondeos por centavos","","I","","",F
+"ItemRedondeoEnteros","Item de redondeos por enteros","","I","","",F
+"ItemPruebaRedondeo","Item de prueba para redondeos","","I","","",F
+"CONDICIONIMPO","Condiciones de exclusión","Condiciones de exclusión","E","","",T
+"DisenoImpo","Diseño de importación","Diseño de importación","E","Ent_ImpoExpo","",T
+"Picking","Picking","Picking","E","","",T
+"ItemComprobantesPicking","Item comprobantes picking","Picking","I","","",F
+"ItemDiferenciasPicking","Item diferencias picking","Diferencias picking","I","","",F
+"ItemOkPicking","Item OK Picking","OK Picking","I","PickingControlados","",F
+"ItemImpuestoVentas","Item impuestos de venta","Item impuestos de venta","I","","",F
+"DatosFiscales","Esquema de datos fiscales","Esquema de datos fiscales","E","","",T
+"ItemDatosFiscales","Item datos fiscales","Item datos fiscales","I","","",F
+"Jurisdiccion","Jurisdicciones","Jurisdicciones","E","","",T
+"ItemPercepciones","Item percepciones cliente","Percepciones cliente","I","","",F
+"ItemCAI","Item CAI","Item CAI","I","","",F
+"CAI","Código de autorización de autoimpresión","Código de autorización de autoimpresión","E","","",T
+"Script","Scripts de ejecución","Scripts de ejecución","E","","",T
+"ItemInstruccionScript","Item de instrucciones de scripts","","I","","",F
+"ValeDeCambio","Vale de cambio - GiftCard","Vale de cambio - GiftCard","E","","",T
+"ConsumoCliente","Consumo de cliente","Consumo de clientes","E","","",T
+"LIMITECONSUMO","Límite de consumos","Límite de consumos","E","","",T
+"REGLASTRANSFERENCIAS","Reglas para la recepción de transferencias","Reglas de transferencias","E","","",T
+"ErroresCFibm4610kc4","Controlador fiscal IBM 4610 KC4","Controlador fiscal IBM 4610 KC4","E","","",F
+"CodigoPostal","Código postal","Códigos postales","E","","",F
+"Accionesautomaticas","Acciones automáticas","Acciones automáticas","E","","",T
+"Itemaccionesautomaticas","Item acciones automaticas","Item acciones automaticas","I","","",F
+"SENIA","Seña","Seña","E","","",T
+"PEDIDO","Pedido de venta","Pedido","E","Ent_ComprobanteDeVentasSinValores","ComprobanteDeVentasSinValores",T
+"ITEMAJSTOCKART","Item ajuste de stock por articulos","ajuste stock por articulo","I","AjusteArticulos","",F
+"ITEMAJAUDICOMBINACION","Item ajuste de stock por auditoria de combinaciones","ajuste stock por auditoria stock combinación","I","AjusteCombinacion","",F
+"ITEMAJAUDIARTICULOS","Item ajuste de stock por auditoria de artículos","ajuste stock por auditoria stock artículos","I","AjusteArticulos","",F
+"ITEMARTICULOSSENIADOS","Items de señas","Detalle de señas","I","ARTICULOSSENIADOS","",F
+"ITEMSENIAS","Items de la entidad seña","Detalle de seña","I","","",F
+"ImpresionDeEtiqueta","Impresión de etiquetas","Impresión de etiquetas","E","","",T
+"ITEMIMPETIQUETA","Item impresión de etiquetas","Item impresión de etiquetas","I","ImpEtiqueta","",F
+"CLASIFICACIONCLIENTE","Clasificación","Clasificaciones de clientes","E","","",T
+"SENIAPENDIENTE","Seña pendiente","Seleccione señas pendientes","E","","",T
+"ITEMSENIAPENDIENTE","Item de seña pendiente","Seña pendiente","I","","",F
+"CHEQUE","Cheques","Cheques","E","Ent_CarteraDeCheques","",T
+"IMPUESTO","Impuestos","Impuestos","E","","",T
+"ITEMARTICULOSCOMPRA","Items de facturas de compra","Linea detalle factura de compra","I","ARTICULOSCOMPRA","",F
+"ItemImpuestoCompra","Item impuestos compra","Item impuestos compra","I","IMPUESTOSCOMPRAS","",T
+"FACTURADECOMPRA","Factura de compra","Factura de compra","E","ENT_COMPROBANTEDECOMPRASCONVALORES","ComprobanteDeComprasConValores",T
+"ITEMVALORESCOMPRA","Items de valores de compra","Linea detalle valores de compra","I","VALORESCOMPRA","",F
+"ITEMIMPUESTOSC","Items de impuestos de compra","","I","IMPUESTOS","",F
+"OPERADORADETARJETA","Operadoras de tarjetas","Operadoras de tarjetas","E","","",T
+"ITEMPLANDECUOTA","Item de recargos y descuentos de planes de cuotas","Item de recargos y descuentos de planes de cuotas","I","","",F
+"CIERREDELOTE","Cierre de lote","Cierre de lote","E","","",T
+"ITEMLOTE","Item lote","Item lote","I","","",F
+"POS","Dispositivos POS","Dispositivos POS","E","","",T
+"CUPON","Cupones","Cupones","E","","",T
+"ITEMOPERADORASDETARJETA","Items de operadoras de tarjetas","","I","","",F
+"PRESUPUESTO","Presupuesto de venta","Presupuesto","E","Ent_ComprobanteDeVentasSinValores","ComprobanteDeVentasSinValores",T
+"TIPOIMPUESTO","Tipos de impuesto","Tipos de impuesto","E","","",T
+"TRANSPORTISTA","Transportistas","Transportistas","E","","",T
+"DATOSTARJETA","Datos de cobro con tarjeta","Ingrese los datos para el cobro con tarjeta","E","","",T
+"ITEMDATOSPLANES","Items datos planes","","I","","",T
+"CALCULODEPRECIOS","Modificación masiva de precios","Modificación masiva de precios","E","","",T
+"ITEMCALCULODEPRECIOS","Item cálculo de precios","Item cálculo de precios","I","CALCULODEPRECIOS","",F
+"TRATAMIENTOCOMPROBANTES","Tratamiento de comprobantes fiscales","Tratamiento de comprobantes fiscales","E","","",T
+"FACTURAELECTRONICA","Factura electrónica de venta","Factura electrónica nacional","E","Ent_ComprobanteElectronicoNacional","ComprobanteElectronico",T
+"NOTADECREDITOELECTRONICA","Nota de crédito electrónica de venta","Nota de crédito electrónica nacional","E","Ent_ComprobanteElectronicoNacional","ComprobanteElectronico",T
+"NOTADEDEBITOELECTRONICA","Nota de débito electrónica de venta","Nota de débito electrónica nacional","E","Ent_ComprobanteElectronicoNacional","ComprobanteElectronico",T
+"CAE","CAE","CAE","E","","",F
+"FAVORITOLISTADOS","Listados favoritos","Listados favoritos","E","","",F
+"ITEMFAVORITOSLISTADOS","Detalle de listados favoritos","Detalle de listados favoritos","I","","",F
+"CAEPORLOTE","Obtención de CAE por lote","Obtención de CAE por lote","E","","",T
+"COMPORTAMIENTOCODIGOSUGERIDOENTIDAD","Comportamiento de códigos","Comportamiento de códigos","E","","",T
+"ZUDESCARGALAN","Actualizaciones para servidor de red","Actualizaciones para servidor de red","E","","",T
+"INFORMACIONLISTADOS","Informacion adicional de listados","Informacion adicional de listados","E","","",F
+"CTACTECOMPRA","Cuenta corriente de compra","Cuenta corriente de compra","E","","",F
+"ORDENDEPAGO","Orden de pago","Orden de pago","E","ENT_COMPROBANTEDECOMPRASCONVALORES","ComprobanteDeComprasConValores",T
+"ITEMORDENDEPAGO","Item orden de pago","","I","","",F
+"NOTADEDEBITOCOMPRA","Nota de débito de compra","Nota de débito de compra","E","Ent_ComprobanteDeComprasConValores","ComprobanteDeComprasConValores",T
+"ITEMARTICULOSNDCOMPRA","Items de nota de débito de compra","Linea detalle nota de débito de compra","I","ARTICULOSCOMPRA","",F
+"ITEMVALORESNDCOMPRA","Items de valores de nota débito compra","Linea detalle valores de nota débito de compra","I","VALORESCOMPRA","",F
+"ITEMIMPUESTOSNDC","Items de impuestos de nota débito de compra","","I","IMPUESTOS","",F
+"ITEMIMPUESTONDCOMPRA","Item impuestos nota débito de compra","Item impuestos nota débito de compra","I","IMPUESTOSCOMPRAS","",T
+"NOTADECREDITOCOMPRA","Nota de crédito de compra","Nota de crédito de compra","E","Ent_ComprobanteDeComprasConValores","ComprobanteDeComprasConValores",T
+"ITEMARTICULOSNCCOMPRA","Items de nota de crédito de compra","Linea detalle nota de crédito de compra","I","ARTICULOSCOMPRA","",F
+"ITEMVALORESNCCOMPRA","Items de valores de nota crédito de compra","Linea detalle valores de nota crédito de compra","I","VALORESCOMPRA","",F
+"ITEMIMPUESTOSNCC","Items de impuestos de nota crédito de compra","","I","IMPUESTOS","",F
+"ITEMIMPUESTONCCOMPRA","Item impuestos nota crédito de compra","Item impuestos nota crédito de compra","I","IMPUESTOSCOMPRAS","",T
+"SUCURSALBANCARIA","Sucursal bancaria","Sucursal bancaria","E","","",T
+"CUENTABANCARIA","Cuenta bancaria","Cuenta bancaria","E","","",T
+"CHEQUERA","Chequera","Chequera","E","","",T
+"CHEQUEPROPIO","Cheques propios","Cheques propios","E","Ent_CarteraDeCheques","",T
+"ESTADOCONTROLADORFISCAL","Estado de los controladores fiscales","Estado de los controladores fiscales","E","","",F
+"CANJEDECUPONES","Canje de valores","Canje de valores","E","Ent_ComprobanteDeFondos","ComprobanteDeFondos",T
+"ITEMCANJECUPONES","Item canje de cupones","","I","ValoresFondos","",T
+"ITEMCUPON","Item cupon","","I","Cupon","",F
+"CUPONESPENDIENTES","Detalle de cupones","Detalle de cupones","E","","",T
+"FACTURAELECTRONICAEXPORTACION","Factura electrónica exportación de venta","Factura electrónica exportación","E","Ent_ComprobanteElectronicoExportacion","ComprobanteElectronicoExportacion",T
+"INCOTERMS","Incoterms","Incoterms","E","","",T
+"UnidadDeMedida","Unidad de medida","Unidades de medida","E","","",T
+"UNIDADDEMEDIDAAFIP","Unidad de medida AFIP","Unidades de medida AFIP","E","","",T
+"ITEMPAIS","Item de paises","Item de paises","I","","",F
+"PAISAFIP","Pais AFIP","Pais AFIP","E","","",T
+"MONEDAAFIP","Moneda AFIP","Moneda AFIP","E","","",T
+"NOTADECREDITOELECTRONICAEXPORTACION","Nota de crédito electrónica exportación de venta","Nota de crédito electrónica exportación","E","Ent_ComprobanteElectronicoExportacion","ComprobanteElectronicoExportacion",T
+"NOTADEDEBITOELECTRONICAEXPORTACION","Nota de débito electrónica exportación de venta","Nota de débito electrónica exportación","E","Ent_ComprobanteElectronicoExportacion","ComprobanteElectronicoExportacion",T
+"AGRUPAMIENTODEBUZONES","Agrupamientos de buzones","Agrupamientos de buzones","E","","",T
+"ITEMAGRUPAMIENTOBUZONES","Item de agrupamientos de bases de datos","Item agrupamientos","I","","",F
+"ITEMBUZONES","Item de agrupamientos de bases de datos","Item agrupamientos","I","","",F
+"IMPRIMIRCOMPROBANTEPORLOTE","Imprimir comprobante por lote","Imprimir comprobante por lote","E","","",T
+"ITEMACREDITACIONDEPLAN","Item acreditación de plan de cuotas","Item acreditación de plan de cuotas","I","","",F
+"FORMULA","Fórmulas de modificación de precios","Fórmulas de modificación de precios","E","","",T
+"SALTODECAMPO","Comportamiento de atributos","Comportamiento de atributos","E","","",T
+"COMISION","Comisiones por venta","Comisiones por ventas","E","","",T
+"CLASEDETARJETA","Clases de tarjetas","Clases de tarjetas","E","","",T
+"ITEMCLASEDETARJETA","Items de operadora de tarjeta","Linea detalle clases de tarjeta","I","","",F
+"ITEMINVENTARIOSFISICO","Item de inventarios físicos","Item de inventarios físicos","I","","",F
+"TIInventarioFisicoDetalleTmp","Detalle de inventario físico temporal","Detalles de inventarios físicos temporal","E","","",F
+"Mercaderiaentransito","Mercadería en tránsito","Mercadería en tránsito","E","Ent_ComprobanteMovStock","Comprobante",T
+"Itemmercentransito","Items de mercadería en tránsito","Items de mercadería en tránsito","I","MovStock","",F
+"ItemCoincidenciaPicking","Item coincidencias picking","Coincidencias picking","I","","",F
+"ItemDifOriginalPicking","Item diferencias originales","Item diferencias originales","I","","",F
+"MINIMOREPOSICION","Mínimo de reposición","Mínimo de reposición","E","","",T
+"ITEMMINIMOREPOSICION","Item mínimo de reposición","Item mínimo de reposición","I","","",F
+"ITEMENTIDADES","Item entidades","Item entidades","I","","",F
+"ITEMENTIDADESIMPO","Item entidades importación","Item entidades importación","I","","",F
+"ITEMENTIDADESEXPO","Item entidades exportación","Item entidades exportación","I","","",F
+"LISTADOSPERSONALIZADOS","Listados personalizados por el usuario","Listados personalizados","E","","",F
+"ITEMFILTROPERSONALIZADO","Item para almacenar los filtros perzonalizados personales","Filtros perzonalizados personales","I","","",F
+"ITEMCAMPOPERSONALIZADO","Item para almacenar los campos perzonalizados personales","Campos perzonalizados personales","I","","",F
+"ITEMCAMPOSUBTOTAL","Item para almacenar los campos subtotales personales","Campos subtotales personales","I","","",F
+"ITEMFORMATOSALIDA","Item para almacenar los formatos de salida personales","Formatos de salida personales","I","","",F
+"REGISTRODEMANTENIMIENTO","Registro de mantenimiento del sistema","Registro de mantenimiento del sistema","E","","",T
+"PROMOCION","Promociones","Promociones","E","","",T
+"SELECCIONPARAINSERTAR","Selecciones de entidades","Selección de entidades","E","ent_virtual","",T
+"ITEMPROMOCIONES","Item para almacenar las promociones aplicadas","Item para almacenar las promociones aplicadas","I","Promociones","",F
+"ITEMPROMOARTICULOS","Item relacion articulos- promos","Item relacion articulos- promos","I","","",F
+"PAGO","Pago","Pago","E","","",T
+"ITEMPAGO","Item de pago","","I","","",F
+"ITEMPAGOVALORES","Items de valores pago","","I","","",F
+"AJUSTEDEESTADOS","Ajuste de situaciones de estado según comprobantes","Ajuste de situaciones de estado según comprobantes","E","","",T
+"ITEMAJUSTEDEESTADOS","Items de ajuste de estados","Items de ajuste de estados","I","AjusteCombinacionEstados","",F
+"ITEMAJESTADOSAUDCOMB","Item ajuste de estados por auditoria de combinaciones","Ajuste de estados por auditoria de combinaciones","I","AjusteCombinacionEstados","",F
+"ITEMAJUSTECOMPROBANTES","Item comprobantes a modificar","Item comprobantes a modificar","I","AjusteCombinacionEstados","",F
+"ItemRetenciones","Item retenciones proveedor","Retenciones proveedor","I","","",F
+"ITEMIMPUESTOORDENDEPAGO","Item impuestos orden de pago","Item impuestos orden de pago","I","","",F
+"ITEMIMPUESTOPAGO","Item impuestos pago","Item impuestos pago","I","","",F
+"COMPROBANTEDERETENCIONES","Comprobante de retención de ingresos brutos","Comprobante de retención de ingresos brutos","E","Ent_ComprobanteDeRetencionesBase","ComprobanteDeRetencionesBase",T
+"ITEMCDRCOMPROBANTES","Items comprombates del comprobante de recepciones","Items comprombates del comprobante de recepciones","I","","",F
+"ITEMCDRIMPUESTOS","Items impuestos de comprobante de retención","Items impuestos de comprobante de retención","I","","",F
+"CONVENIOMULTILATERAL","Convenio multilateral","Convenio multilateral","E","","",T
+"ITEMCONVENIO","Item convenio","Item convenio","I","","",F
+"ITEMARTICULOSPRECOMPRA","Items de presupuestos de compra","Linea detalle presupuesto de compra","I","ARTICULOSCOMPRA","",F
+"ITEMIMPUESTOSPREC","Items de impuestos de presupuesto de compra","","I","IMPUESTOS","",F
+"ITEMIMPUESTOPRECOMPRA","Item impuestos presupuesto compra","Item impuestos presupuesto compra","I","IMPUESTOSCOMPRAS","",T
+"PRESUPUESTODECOMPRA","Presupuesto de compra","Presupuesto de compra","E","Ent_ComprobanteDeComprasSinValores","ComprobanteDeComprasSinValores",T
+"ITEMARTICULOSPEDCOMPRA","Items de pedido de compra","Linea detalle pedido de compra","I","ARTICULOSCOMPRA","",F
+"ITEMIMPUESTOSPEDC","Items de impuestos de pedido de compra","","I","IMPUESTOS","",F
+"ITEMIMPUESTOPEDCOMPRA","Item impuestos pedido de compra","Item impuestos pedido de compra","I","IMPUESTOSCOMPRAS","",T
+"PEDIDODECOMPRA","Pedido de compra","Pedido de compra","E","Ent_ComprobanteDeComprasSinValores","ComprobanteDeComprasSinValores",T
+"ITEMARTICULOSSOLCOMPRA","Items de pedido de compra","Linea detalle pedido de compra","I","ARTICULOSCOMPRA","",F
+"ITEMIMPUESTOSSOLC","Items de impuestos de pedido de compra","","I","IMPUESTOS","",F
+"ITEMIMPUESTOSOLCOMPRA","Item impuestos pedido de compra","Item impuestos pedido de compra","I","IMPUESTOSCOMPRAS","",T
+"SOLICITUDDECOMPRA","Solicitud de compra","Solicitud de compra","E","Ent_ComprobanteDeComprasSinValores","ComprobanteDeComprasSinValores",T
+"REQUERIMIENTODECOMPRA","Requerimiento de compra","Requerimiento de compra","E","Ent_ComprobanteDeComprasSinValores","ComprobanteDeComprasSinValores",T
+"ITEMARTICULOSREQCOMPRA","Items de requerimiento de compra","Linea detalle requerimiento de compra","I","ARTICULOSCOMPRA","",F
+"ITEMIMPUESTOSREQC","Items de impuestos de requerimiento de compra","","I","IMPUESTOS","",F
+"ITEMIMPUESTOREQCOMPRA","Item impuestos requerimiento de compra","Item impuestos requerimiento de compra","I","IMPUESTOSCOMPRAS","",T
+"REMITODECOMPRA","Remito de compra","Remito de compra","E","Ent_ComprobanteDeComprasSinValores","ComprobanteDeComprasSinValores",T
+"CANCELACIONDECOMPRA","Cancelación de compra","Cancelación de compra","E","Ent_ComprobanteDeComprasSinValores","ComprobanteDeComprasSinValores",T
+"ITEMARTICULOSREMCOMPRA","Items de remito de compra","Linea detalle remito de compra","I","ARTICULOSCOMPRA","",F
+"ITEMARTICULOSCANCOMPRA","Items de cancelación de compra","Linea detalle cancelación de compra","I","ARTICULOSCOMPRA","",F
+"ITEMIMPUESTOREMCOMPRA","Item impuestos remito de compra","Item impuestos remito de compra","I","IMPUESTOSCOMPRAS","",T
+"ITEMIMPUESTOCANCOMPRA","Item impuestos cancelación de compra","Item impuestos cancelación de compra","I","IMPUESTOSCOMPRAS","",T
+"ITEMIMPUESTOSREMC","Items de impuestos de remito de compra","","I","IMPUESTOS","",F
+"ITEMIMPUESTOSCANC","Items de impuestos de cancelación de compra","","I","IMPUESTOS","",F
+"PROPIEDADESLISTADOS","Propiedades listados","Propiedades avanzadas en listados","E","","",T
+"AJUSTEDECUPON","Ajuste de cupón","Ajuste de cupón","E","","",F
+"BOLSASYCAJAS","Bolsas y cajas","Bolsas y cajas","E","","",T
+"ITEMBOLSASYCAJAS","Item bolsas y cajas","Item bolsas y cajas","I","","",F
+"AJUSTECCCLIENTE","Ajuste de cuenta corriente de clientes","Ajuste de cuenta corriente de clientes","E","","",T
+"ITEMAJUSTECCCLIENTE","Item de ajuste de cuenta corriente de clientes","Item de ajuste de cuenta corriente de clientes","I","","",F
+"ITEMAJUSTECCPROVEEDOR","Item de ajuste de cuenta corriente de proveedores","Item de ajuste de cuenta corriente de proveedores","I","","",F
+"AJUSTECCPROVEEDOR","Ajuste de cuenta corriente de proveedores","Ajuste de cuenta corriente de proveedores","E","","",T
+"CANCELACIONDESENIAS","Cancelación de señas","Cancelación de señas","E","","",T
+"ITEMCANCELACIONDESENIAS","Item de cancelación de señas","Item de cancelación de señas","I","","",F
+"GTIN","Gtin","Códigos RG 2904/10","E","","",T
+"ITEMEQUIGTIN","Item de equivalencia GTIN","Item de equivalencia GTIN","I","","",F
+"SITUACIONFISCAL","Situación fiscal","Situación fiscal","E","","",F
+"PASAJEDESTOCK","Pasaje de stock","Pasaje de stock","E","","",T
+"SELECCIONBASESARCHIVADAS","Selecciones de bases de datos archivadas","Selecciones de bases de datos archivadas","E","","",T
+"Precargaetiart","Pre-carga para impresión de etiquetas de artículos","Pre-carga para impresión de etiquetas de artículos","E","","",T
+"NUEVOENBASEA","Nuevo en base a","Nuevo en base a","E","ent_virtual","",T
+"ITEMCOMPROBANTESENBASEA","Item comprobantes","Item comprobantes","I","ComprobantesEnBasea","",T
+"LISTADEPRECIOSCALCULADA","Listas de precios definidas por fórmulas","Listas de precios definidas por fórmulas","E","","",T
+"Padroniibb","Padron IIBB","Padrón I.I.B.B.","E","","",F
+"REGISTRODEACTIVIDAD","Registros de actividad","Registros de actividad","E","","",F
+"CONCILIACIONDECAJA","Ajuste de movimientos y saldos de caja según comprobantes","Ajuste de movimientos y saldos de caja según comprobantes","E","","",T
+"ITEMCONCILIAMOVIMIENTO","Items de conciliacion de movimientos de caja","Items de conciliacion de movimientos","I","","",F
+"ITEMCONCILIASALDO","Items de conciliacion de saldos de caja","Items de conciliacion de saldos","I","","",F
+"POOLDECLASE","Pool de clase","Pool de clase","E","","",F
+"ACCESOAOBJETO","Acceso a objeto","Acceso a objeto","E","","",F
+"ITEMMONEDASDETARJETA","Items de monedas de tarjetas","","I","","",F
+"EXPRESIONLISTADOPERSONALIZADO","Expresión listado personalizado","Expresión listado personalizado","E","","",F
+"ITEMCOMISIONVENDEDOR","Items de comisión de vendedores","Items de comisión de vendedores","I","","",F
+"Cuponeshuerfanos","Cupones huérfanos","Cupones huérfanos","E","","",T
+"ITEMCUPONHUERFANO","Item cupón huerfano","","I","Cupon","",F
+"NOMENCLADORARBA","Nomenclador ARBA","Nomenclador ARBA","E","","",T
+"GRUPO","Grupo","Grupos de artículos","E","","",T
+"CLASIFICACIONARTICULO","Clasificaciones de artículos","Clasificaciones de artículos","E","","",T
+"UnidadDeMedidaARBA","Unidad de medida ARBA","Unidades de medida ARBA","E","","",T
+"ITEMVEHICULO","Item vehículo","Items de vehículo","I","","",T
+"REMITOELECTRONICO","Remito electrónico","Remito electrónico","E","","",T
+"ITEMREMITOELEC","Item remito electrónico","Items del remito electrónico","I","remitoelec","",T
+"DESTINODESCARGACHEQUES","Destino de descarga de cheques","Destino de descarga de cheques","E","","",T
+"DescargaDecheques","Descarga de cheques de terceros","Descarga de cheques de terceros","E","","",T
+"Itemdescargacheque","Item descarga de cheques","Item descarga de cheques","I","DESCARGACHEQUE","",F
+"FACTURADEEXPORTACION","Factura de exportación de venta","Factura de exportación","E","Ent_ComprobanteExportacion","ComprobanteDeVentasConValores",T
+"NOTADECREDITODEEXPORTACION","Nota de crédito de exportación de venta","Nota de crédito de exportación","E","Ent_ComprobanteExportacion","ComprobanteDeVentasConValores",T
+"NOTADEDEBITODEEXPORTACION","Nota de débito de exportación de venta","Nota de débito de exportación","E","Ent_ComprobanteExportacion","ComprobanteDeVentasConValores",T
+"EDICIONIMPUESTOIVACOMPRAS","IVA compras","IVA compras","E","","",T
+"ITEMIVACOMPRAS","Item impuesto iva compras","","I","","",F
+"REGISTRODEBAJA","Registro de baja","Registro de baja","E","","",F
+"NOMBREDEFANTASIA","Nombre de fantasía","Nombres de fantasía","E","","",T
+"ITEMRAZONSOCIAL","Razones sociales asociadas al nombre de fantasía","","I","","",F
+"TIPODEDIRECCION","Tipos de dirección","Tipos de dirección","E","","",T
+"CONTACTO","Contactos","Contactos","E","","",T
+"ITEMCONTACTO","Contactos del cliente","Contactos del cliente","I","","",F
+"ITEMOTRASDIRECCIONES","Otras direcciones del cliente","Otras direcciones del cliente","I","","",F
+"TIPOCLIENTE","Tipos de clientes","Tipos de clientes","E","","",T
+"CATEGORIACLIENTE","Categorías de clientes","Categorías de clientes","E","","",T
+"DISCOVER","Discover","Discover","E","","",F
+"CRITERIOSVALORES","Criterios de aceptacion valores","Criterios de aceptacion valores","E","","",T
+"ITEMVALORESAENT","Item valores a entregar","","I","ValoresAEnt","",F
+"DESPACHODEIMPORTACION","Despacho de importación","Despacho de importación","E","","",T
+"ITEMARTICULOSDESPACHO","Item de artículos del despacho","Artículos del despacho","I","ARTICULODESPACHO","",F
+"SELECCIONDESPACHO","Selección de despacho de importación","Selección de despacho de importación","E","","",T
+"ITEMSELECCIONDESPACHO","Item selección de despacho","","I","","",F
+"REGISTRODESALUDSERVIDORDEDATOS","Registros de salud del servidor de base de datos","Registros de salud del servidor de base de datos","E","","",F
+"REGIMENIMPOSITIVO","Régimen impositivo","Régimen impositivo","E","","",T
+"ITEMESCALA","Escalas para calculo en impuestos","Item para escalas de aplicación en impuestos","I","","",F
+"CLASIFICACIONCONCEPTOPAGO","Clasificaciones de conceptos de otros pagos","Clasificaciones de conceptos de otros pagos","E","","",T
+"CONCEPTOPAGO","Conceptos de otros pagos","Conceptos de otros pagos","E","","",T
+"COMPROBANTEPAGO","Otros pagos","Otros pagos","E","ENT_COMPROBANTEDECOMPRASCONVALORES","ComprobanteDeComprasConValores",T
+"ITEMCOMPROBANTEPAGO","Items de comprobantes de pago","Linea detalle comprobantes de pago","I","","",F
+"ITEMVALORESCOMPROPAGO","Items de comprobantes de pago","Linea detalle valores de comprobantes de pago","I","VALORESCOMPRA","",F
+"COMPROBANTEDERETENCIONESIVA","Comprobante de retención de IVA","Comprobante de retención de IVA","E","Ent_ComprobanteDeRetencionesBase","ComprobanteDeRetencionesBase",T
+"COMPROBANTEDERETENCIONESGANANCIAS","Comprobante de retención de ganancias","Comprobante de retención de ganancias","E","Ent_ComprobanteDeRetencionesBase","ComprobanteDeRetencionesBase",T
+"COMPROBANTEDERETENCIONESSUSS","Comprobante de retención de seguridad social","Comprobante de retención de SUSS","E","Ent_ComprobanteDeRetencionesBase","ComprobanteDeRetencionesBase",T
+"Condiciondepago","Condiciones de pago","Condiciones de pago","E","","",T
+"Itempagospersonalizados","Items de pagos personalizados","Items de pagos personalizados","I","pagospersonalizados","",F
+"TIPODEOPERACIONAFIP","Tipos de operación","Tipos de operación","E","","",T
+"ASOCIACIONARTICULOSOPERACIONESAFIP","AFIP - Asociación de artículos y tipos de operación","AFIP - Asociación de artículos y tipos de operación","E","","",T
+"FERIADO","Feriados","Feriados","E","","",T
+"ITEMFERIADO","Feriados","Feriados","I","","",T
+"REGISTRODEACTIVIDADDET","Detalle de contexto del registros de actividad","Detalle de contexto del registros de actividad","E","","",F
+"ITEMCAMPOORDENAMIENTO","Item para almacenar los campos de ordenamiento personales","Campos ordenamientos personales","I","","",F
+"DatosAdicionalesComprobantesA","AFIP R.G. 4520/19 - Datos adicionales en comprobantes A","AFIP RG 4520/19 - Datos adicionales en comprobantes A","E","","",T
+"MOTIVODATOSADICIONALESCOMPROBANTESA","Motivo en datos adicionales d comprobantes A","Motivo en datos adicionales d comprobantes A","E","","",F
+"AGRUPAMIENTOPUBLICACIONES","Agrupamientos para publicaciones","Agrupamientos para publicaciones","E","","",T
+"ITEMAGRUPAPUBLIC","Items de agrupamientos centralizados","Items de agrupamientos centralizados","I","AgruPubliDetalle","",F
+"CONCEPTOLIQUIDACIONTARJETA","Conceptos de liquidación de tarjetas","Conceptos de liquidación de tarjetas","E","","",T
+"ITEMCONCEPTOS","Item de conceptos de liquidación de tarjeta","Item de conceptos de liquidación de tarjeta","I","","",F
+"LIQUIDACIONDIARIA","Liquidación diaria","Liquidación diaria","E","","",T
+"ITEMCONCEPTOLIQ","Item concepto de liquidación","Item concepto de liquidación","I","","",F
+"LIQUIDACIONMENSUAL","Liquidación mensual","Liquidación mensual","E","","",T
+"ITEMLIQDIARIA","Item de liquidación diaria en liquidación mensual","Item de liquidación diaria en liquidación mensual","I","","",F
+"ITEMLIQGENERAL","Item de liquidación mensual","Item de liquidación mensual","I","","",F
+"ITEMIMPUESTOSLIQ","Item impuesto liquidación mensual","Item impuesto liquidación mensual","I","","",F
+"ITEMIMPUESTOSLIQCOM","Item otros impuestos liquidación mensual","Item otros impuestos liquidación mensual","I","","",F
+"PLANDECUENTAS","Plan de cuentas contables","Plan de cuentas","E","","",T
+"MAILPORLOTE","Envío de comprobantes por email","Envío de comprobantes por email","E","","",T
+"EMAIL","Emails","Emails","E","","",T
+"CUENTACORREO","Cuenta de correo","Cuenta de e-mail","E","","",T
+"ITEMARCHIVOSMAIL","Item archivos mail","Item archivos mail","I","","",T
+"ITEMENTIDADESMAIL","Item entidades mail","Item entidades mail","I","","",F
+"COMPROBANTEDERETENCIONRECIBIDO","Comprobante de retención recibido","Comprobante de retención recibido","E","","",T
+"ITEMRETENCIONRECIBIDA","Items impuestos del comprobante de retenciones recibidos","Items de impuestos del comprobante de retenciones recibidos","I","","",F
+"ITEMRETENCIONRECIBO","Items retenciones de impuestos recibidos en el recibo","Items retenciones recibidas","I","","",F
+"DATOSRETENCIONRECIBIDO","Comprobante de retención recibido","Comprobante de retención recibido","E","","",T
+"REPORTEELECTRONICO","Descarga de reportes electrónicos R.G. 3561/13","Descarga de reportes electrónicos RG 3561/13","E","","",T
+"COMPLETARDESDEVENTAS","Completa pedido de venta desde registro de ventas","Completar desde ventas","E","","",T
+"CENTRODECOSTO","Centro de costos","Centro de costos","E","","",T
+"DISTRIBUCIONCENTRODECOSTO","Distribución por centro de costos","Distribución por centro de costos","E","","",T
+"ITEMCCOSTO","Item de distribucion de centro de costo","Item de distribución de centro de costo","I","","",F
+"ASIENTO","Asientos contables","Asiento","E","","",T
+"ITEMASIENTO","Item de asientos contables","Item de asientos contables","I","","",F
+"RAZONSOCIAL","Razón social","Razón social","E","","",T
+"EJERCICIO","Ejercicio","Ejercicio","E","","",T
+"ASIGNARZBD","Asignación de razón social a base de datos","Asignación de razón social a base de datos","E","","",T
+"IMPDIRVAL","Imputación de valores a cuenta contable","Imputación de valores a cuenta contable","E","ent_ImputacionDirectaBase","",T
+"IMPDIRART","Imputación de articulo a cuenta contable","Imputación de articulo a cuenta contable","E","ent_ImputacionDirectaBase","",T
+"IMPDIRCLI","Imputación de cliente a cuenta contable","Imputación de cliente a cuenta contable","E","ent_ImputacionDirectaBase","",T
+"IMPDIRPRO","Imputación de proveedor a cuenta contable","Imputación de proveedor a cuenta contable","E","ent_ImputacionDirectaBase","",T
+"IMPDIRIMP","Imputación de impuesto a cuenta contable","Imputación de impuesto a cuenta contable","E","ent_ImputacionDirectaBase","",T
+"IMPDIRCAJ","Imputación de concepto de caja chica a cuenta contable","Imputación de concepto de caja chica a cuenta contable","E","ent_ImputacionDirectaBase","",T
+"IMPDIRCON","Imputación de concepto de otros pagos a cuenta contable","Imputación de concepto de otros pagos a cuenta contable","E","ent_ImputacionDirectaBase","",T
+"IMPDIRDES","Imputación de destino de descarga de cheques de terceros","Imputación de destino de descarga de cheques de terceros","E","ent_ImputacionDirectaBase","",T
+"IMPDIROPE","Imputación de operadoras de tarjetas","Imputación de operadoras de tarjetas","E","ent_ImputacionDirectaBase","",T
+"IMPDIRLIQ","Imputación de concepto de liquidación de tarjetas","Imputación de concepto de liquidación de tarjetas","E","ent_ImputacionDirectaBase","",T
+"IMPVERCC","Imputación vertical a centro de costos","Imputación vertical a centro de costos","E","ent_ImputacionDirectaBase","",T
+"IMPDIRCCA","Imputación de artículo a centro de costos en compras","Imputación de artículo a centro de costos en compras","E","ent_ImputacionDirectaBase","",T
+"IMPDIRCCC","Imputación de concepto de otros pagos a centro de costos","Imputación de concepto de otros pagos a centro de costos","E","ent_ImputacionDirectaBase","",T
+"ASIENTOSPERIODICOS","Asientos periódicos","Asientos periódicos","E","","",T
+"APERTURAEJERCICIO","Apertura de ejercicio","Apertura de ejercicio","E","","",T
+"CONTABILIZACION","Contabilización de asientos tipo","Proceso de contabilización","E","","",T
+"ASIENTOTIPO","Asiento tipo","Asiento tipo","E","","",T
+"ITEMASIENTOTIPO","Item de configuración de asientos tipo","Item de configuración de asientos tipo","I","","",F
+"CIERREEJERCICIO","Cierre de ejercicio","Cierre de ejercicio","E","","",T
+"ITEMTARJETASICARD","Items de tarjetas para dispositivo ICard","","I","","",F
+"ITEMAUTORIZICARD","Items de autorizadores para dispositivo ICard","","I","","",F
+"ENTREGADEMERCADERIAS","Entrega de mercaderías","Entrega de mercaderías","E","","",T
+"ITEMREMITOS","Item de remitos","Item de remitos","I","","",T
+"ITEMTARJETASLAPOS","Items de tarjetas para dispositivo LaPos","","I","","",F
+"ITEMPLANESLAPOS","Items de planes para dispositivo LaPos","","I","","",F
+"Ecommerce","Plataformas de ecommerce","Plataformas","E","","",T
+"Clienteecommerce","Clientes ecommerce","Clientes ecommerce","E","","",T
+"Operacionecommerce","Operaciones ecommerce","Operaciones ecommerce","E","","Comprobante",T
+"Itempublicacionecom","Item de publicaciones ecommerce","Item de publicaciones ecommerce","I","","",F
+"Comprobantesecommerce","Herramienta de generación de comprobantes ecommerce","Herramienta de generación de comprobantes ecommerce","E","","",T
+"Itemoperacionesecom","Item de operación ecommerce","Item de operación ecommerce","I","","",F
+"Puntosdeventa","Puntos de venta para los comprobantes manuales","Diferenciación de puntos de venta por comprobante","E","","",T
+"DatosAdicionalesSIPRIB","IIBB Santa Fe SIPRIB - Datos adicionales","IIBB Santa Fe SIPRIB - Datos adicionales","E","","",T
+"ARTICULOINCISODATOSADICIONALESSIPRIB","Articulo inciso datos adicionales SIPRIB","Articulo inciso datos adicionales SIPRIB","E","","",F
+"SERVICIOREST","Servicio REST","Servicio REST","E","","",T
+"CLAVESECRETAREST","Cliente REST","Cliente REST","E","","",T
+"ITEMDOMINIOSCORS","Dominios a habilitar CORS en servicios","Dominios a habilitar CORS en servicios","I","","",F
+"ITEMDISPMOVILPOINT","Items de dispositivos móviles","","I","","",F
+"ITEMSERIALPOINT","Items de números de series de lectores","","I","","",F
+"AGRUPALISTADOSPERSONALIZADOS","Agrupamiento de listados personalizados","Agrupa listados personalizados","E","","",T
+"ITEMREFERENCIAALISTADO","Referencia a listados perzonalizados","Referencia a listados personalizados","I","","",F
+"REPORTEAUDITORIACIERREZ","Reporte de auditoría de cierre  Z","Reporte de auditoría de cierre Z","E","","",T
+"MOTIVODESCUENTOYDEVOLUCION","Motivos de descuento y devolución","Motivos de descuento y devolución","E","","",T
+"CODIGOAUTORIZACIONDJCP","Código de autorización de DJCP","Código de autorización de DJCP MECON Resolución 404 E/2016","E","","",T
+"ITEMAUTORIZACIONDJCP","Valores de autorización de DJCP","Valores de códigos de autorización de DJCP","I","","",F
+"ARQUEODECAJA","Arqueo de caja","Arqueo de caja","E","","Comprobante",T
+"ITEMTOTALPORGRUPO","Item total por grupo del arqueo de caja","Item total por grupo del arqueo de caja","I","","",F
+"ITEMRECEFECTIVO","Item arqueo efectivo por denominacion","Item arqueo efectivo por denominacion","I","","",F
+"ITEMARQUEOOTROS","Item arqueo de otros","Item arqueo de otros","I","","",F
+"ITEMDENOMINACIONES","Item de denominaciones de monedas","Item de denominaciones de monedas","I","","",F
+"ITEMDESCUENTO","Item de descuento","Item de descuentos","I","","",F
+"CODIGODESERVICIO","Código de servicio","Código de servicio","E","","",T
+"TIPODEORDEN","Tipo de orden","Tipo de orden","E","","",T
+"ESTADOSDEINTERACCION","Estados de interacción","Estados de interacción","E","","",T
+"INTERACCIONDEORDEN","Interacción de orden","Interacción de orden","E","","",T
+"ENTIDADADICIONAL1","Entidad adicional 1","Entidad adicional 1","E","","",T
+"ENTIDADADICIONAL2","Entidad adicional 2","Entidad adicional 2","E","","",T
+"ENTIDADADICIONAL3","Entidad adicional 3","Entidad adicional 3","E","","",T
+"ORDENDESERVICIO","Orden de servicio","Orden de servicio","E","","",T
+"ITEMCODSERV","Item de código de servicio","Item de código de servicio","I","","",F
+"ITEMINTERACCION","Item de interacción","Item de interacción","I","","",F
+"SELECCIONORDENDESERVICIO","Seleccion de órdenes de servicio","Seleccion de órdenes de servicio","E","","",T
+"ITEMORDENDESERVICIO","Item de órdenes de servicio","Item de órdenes de servicio","I","","",F
+"SELECCIONOPERACIONECOMMERCE","Selección de operaciones ecommerce","Selección de operaciones ecommerce","E","","",T
+"GESTIONVENDEDOR","Asignación de vendedor a base de datos","Asignación de vendedor a base de datos","E","","",T
+"FILTRARCOMPROBANTESACONTROLAR","Comprobantes a controlar","Comprobantes a controlar","E","","",T
+"ITEMPREPMPICKING","Item preparación de mercadería","Item preparación de mercadería","i","","",F
+"COTIZACION","Carga de nueva cotización","Nueva cotización","E","ent_virtual","",T
+"EMAILENCOMPROBANTE","Email","Email","E","","",T
+"SELECCIONCOMPROBANTEASOCIADO","Selección comprobante asociado","Selección comprobante asociado","E","","",T
+"FACTURAELECTRONICADECREDITO","Factura de crédito electrónica MiPyME de venta","Factura de crédito electrónica MiPyME de venta","E","Ent_ComprobanteElectronicoNacional","ComprobanteElectronico",T
+"NOTADECREDITOELECTRONICADECREDITO","Nota de crédito electrónica MiPyME de venta","Nota de crédito electrónica MiPyME de venta","E","Ent_ComprobanteElectronicoNacional","ComprobanteElectronico",T
+"NOTADEDEBITOELECTRONICADECREDITO","Nota de débito electrónica MiPyME de venta","Nota de débito electrónica MiPyME de venta","E","Ent_ComprobanteElectronicoNacional","ComprobanteElectronico",T
+"CONFIRMACIONFECHAVTOMIPYME","Confirmar fecha de vencimiento MiPyME","Confirmar fecha de vencimiento MiPyME","E","","",T
+"NUEVOENTREGAONLINE","Nuevo Remito de venta en base a Pendientes de entrega","Nuevo Remito de venta en base a Pendientes de entrega","E","","",T
+"Selecciondisenoimportacion","Selección de diseño de importación","Selección de diseño de importación","E","ent_virtual","",T
+"EnvioDeMensajeria","Envío de mensajería a eCommerce","Envío de mensajería a eCommerce","E","","",T
+"DATOSTAREAPROGRAMADAECOMMERCE","Parámetros tarea programada ecommerce","Parámetros tarea programada ecommerce","E","","",T
+"ITEMPLATAFORMAS","Item de operación ecommerce","Item de operación ecommerce","I","","",F
+"ITEMPARTICIPANTES","Item de participantes de un kit","Item de participantes de un kit","I","","",F
+"ITEMKITS","Item de kits","Item de kits","I","Kits","",F
+"ITEMCHEQUEHISTORIAL","Item de historial de interacciones de cheques","Item de historial de interacciones de cheques","I","","",F
+"VALORESENTRANSITO","Valores en tránsito","Valores en tránsito","E","","",T
+"ITEMVALORESENTRANSITO","Items de valores para movimientos de caja","","I","","",F
+"CONFIRMACIONVALORESENTRANSITO","Confirmar acción para valores en tránsito","Confirmar acción para valores en tránsito","E","","",T
+"DATOSTRANSACCIONBANCARIA","Datos de transacción bancaria","Datos de transacción bancaria","E","","",T
+"REGISTRODECUENTA","Registro conciliables","Registro conciliables","E","","",T
+"TRANSFERENCIAENTRECUENTAS","Transferencia entre cuentas bancarias","Transferencia entre cuentas bancarias","E","","",T
+"COMPLETARDATOSREGISTRO","Completar datos de cuentas bancartias","Completar datos de cuentas bancartias","E","","",T
+"ITEMDATOSREGISTRO","Item de datos de cuenta bancaria","Item de datos de cuenta bancaria","I","","",F
+"CONCEPTOENTIDADFINANCIERA","Concepto de entidades financieras","Concepto de entidades financieras","E","","",T
+"MOVIMIENTOBANCARIO","Movimiento bancario","Movimiento bancario","E","","",T
+"CONCILIACIONES","Conciliaciones","Conciliaciones","E","","",T
+"ITEMMOVBANCARIOS","Item de movimientos bancarios","Item de movimientos bancarios","I","","",F
+"ITEMREGCONCILIABLES","Item de registros conciliables","Item de registros conciliables","I","","",F
+"HERRAMIENTACONCILIACION","Conciliación bancaria","Conciliación bancaria","E","","",T
+"ITEMMOVBANCARIOSTOOL","Item de movimientos bancarios","Item de movimientos bancarios","I","","",F
+"ITEMREGCONCILIABLESTOOL","Item de registros conciliables","Item de registros conciliables","I","","",F
+"TIPODECOMPROBANTEDECOMPRA","Tipo de comprobante de compra","Tipo de comprobante","E","","",T
+"DEUDADECHEQUES","Deuda de cheques","Deuda de cheques","E","","",F
+"CHEQUESDISPONIBLES","Detalle de cheques disponible","Detalle de cheques","E","","",T
+"ITEMCHEQUEDISPONIBLE","Item cheque","","I","","",F
+"CODBARRAALTER","Código de barra alternativo","Código de barra alternativo","E","","",T
+"ITEMCODBARRAALTER","Item código de barra alternativo","Item código de barra alternativo","I","","",F
+"ITEMEXCLUIDOOTRAPERCEP","Item percepciones excluidas","Percepciones excluidas","I","","",F
+"ITEMTARJETASFISERV","Items de tarjetas para dispositivos FiServ","","I","","",F
+"PreparacionDeMercaderia","Preparación de mercadería","Preparación de mercadería","E","Ent_ComprobanteDeVentasSinValores","ComprobanteDeVentasSinValores",T
+"FACTURAAGRUPADA","Factura","Factura","E","Ent_ComprobanteAgrupado","ComprobanteAgrupado",T
+"NOTADECREDITOAGRUPADA","Nota de crédito","Nota de crédito","E","Ent_ComprobanteAgrupado","ComprobanteAgrupado",T
+"NOTADEDEBITOAGRUPADA","Nota de débito","Nota de débito","E","Ent_ComprobanteAgrupado","ComprobanteAgrupado",T
+"ITEMERRORESECOMMERCE","Items de operaciones con errores","","I","","",F
+"DATOSADICIONALESSIRE","AFIP R.G. 4523/19 - SIRE","AFIP RG 4523/19 - SIRE","E","","",T
+"HERRAMIENTAAGRUPADORADEPACKS","Herramienta Agrupar/Desagrupar Pack","Herramienta Agrupar/Desagrupar Pack","E","","",T
+"ITEMAGRUPADORDEPACK","Item Agrupar desagrupar pack","Item Agrupar desagrupar pack","I","AgrupadorDePack","",F
+"ITEMCHEQUEPROPIOHIST","Item de historial de interacciones de cheques propios","Item de historial de interacciones de cheques propios","I","","",F
+"LINKQRENETIQUETA","Link para impresión de código QR en etiquetas","Código QR en etiquetas","E","","",T
+"WEBHOOK","Servicio Webhook","Servicio Webhook","E","","",T
+"ITEMWEBHOOK","Item webhook","Item de WebHook","I","","",F
+"TIQUETDECAMBIO","Comprobante para cambio","Comprobante para cambio","E","","",F
+"ITEMTIQUETDECAMBIO","Item comprobante para cambio","Item comprobante para cambio","I","","",F
+"ITEMTERMINALESLAPOS","Items de terminales smart LaPos","","I","","",F
+"ITEMTARJETASSMARTLAPOS","Items de tarjetas para dispositivo smart LaPos","","I","","",F
+"PERSONALIZACIONDEENTIDADES","Personalización de entidades","Personalización de entidades","E","","",T
+"DIRECCIONENTREGAENCOMPROBANTE","Establecer domicilio de entrega","Establecer domicilio de entrega","E","","",T
+"REGISTROLIQUIDACIONCONSIGNACIONES","Registros de liquidación de consignaciones","Registros de liquidación de consignaciones","E","","",F
+"ITEMAJUSTOCKENTRANSITO","Items de ajuste de stock en tránsito","Items de ajuste de stock en tránsito","I","AjusteCombinacion","",F
+"ITEMAJAUDIENTRANSITO","Item ajuste de stock por auditoría en tránsito","Ajuste stock por auditoría en tránsito","I","AjusteCombinacion","",F
+"FECHACANCELACION","Fecha de cancelación del artículo","Fecha de cancelación del artículo","E","","",T
+"ITEMFECHACANCELACION","Item fecha cancelación","","I","","",F
+"ITEMPLANESSMARTLAPOS","Items de planes para dispositivo smart LaPos","","I","","",F
+"MARCA","Marcas de artículos","Marcas","E","","",T
+"ETIQUETASECOMMERCE","Etiquetas ecommerce","Etiquetas ecommerce","E","","",T
+"CATEGORIASECOMMERCE","Categorías ecommerce","Categorías ecommerce","E","","",T
+"CONFIGURACIONARTICULOECOMMERCE","Categorías, etiquetas y dimensiones ecommerce","Categorías etiquetas y dimensiones ecommerce","E","","",T
+"ITEMCATEGORIASECOM","Item de categorías ecommerce","","I","","",F
+"ITEMETIQUETASECOM","Item de etiquetas ecommerce","","I","","",F
+"ITEMDIMENSIONESECOM","Item de dimensiones ecommerce","","I","","",F
+"CATEGORIASGOOGLESHOPPING","Categorías de Google Shoping","Categorías de Google Shoping","E","","",T
+"APERTURAAUTOMATICAENTIDADES","Apertura automática de entidades","Apertura automática de entidades","E","","",T
+"ITEMAPERAUTOMATICAS","-","-","I","","",T
+"OPEECOMENPROCESO","Operaciones eCommerce en proceso","","E","","",F
+"CAEA","CAEA","Obtención de CAEA","E","","",T
+"CAEAINFORMA","Informar Movimientos CAEA","Información de movimientos CAEA","E","","",T
+"ITEMCAEAINFORMA","items Informar Movimientos CAEA","","I","","",F
+"MAQUINARIA","Maquinaria y mano de obra","Maquinaria y mano de obra","E","","",T
+"CONSUMOPRODUCCION","Consumos de producción","Consumos de producción","E","","",T
+"ITEMMAQUINARIACONSUMO","Item consumos de producción","Item consumos de producción","I","","",F
+"CLASIFICACIONPRODUCCION","Clasificación de producción","Clasificación de producción","E","","",T
+"RUBROPRODUCCION","Rubro de producción","Rubro de producción","E","","",T
+"TIPIFICACIONPRODUCCION1","Tipificación de producción 1","Tipificación de producción 1","E","","",T
+"TIPIFICACIONPRODUCCION2","Tipificación de producción 2","Tipificación de producción 2","E","","",T
+"VENDEDORENCOMPROBANTE","Vendedor","Vendedor","E","","",T
+"CONDICIONDEPAGOENCOMPROBANTE","Condición de pago","Condición de pago","E","","",T
+"INVENTARIO","Inventario","Inventarios","E","EntidadDeProduccion","",T
+"INSUMO","Insumos","Insumos","E","EntidadDeProduccion","",T
+"CURVADEPRODUCCION","Curva de producción","Curvas de producción","E","EntidadDeProduccion","FormularioDeProduccion",T
+"MOTIVODESCARTE","Motivo de descarte","Motivo de descarte","E","","",T
+"TALLER","Talleres de producción","Talleres","E","","",T
+"PROCESOPRODUCCION","Procesos de producción","Procesos de producción","E","","",T
+"ITEMVALEDECAMBIO","Item de vale de cambio","Item de vale de cambio","I","","",F
+"FILTRARCOMPROBANTESAINSERTAR","Comprobantes a insertar","Comprobantes a insertar","E","","",T
+"SELECOMPAINSERTAR","Selección de comprobantes","Selección de comprobantes","E","","",T
+"ITEMSELECOMPAINSERTAR","Item de selección de comprobantes","Item de selección de comprobantes","I","","",F
+"INFORMEVENTASLPS","Informe de ventas a Las Piedras Shopping","Informe de ventas a Las Piedras Shopping","E","","",F
+"SELECCHEQUETERCEROS","Filtros para selección múltiple de cheques de terceros","Filtros para selección múltiple de cheques de terceros","E","","",T
+"SELECHEQUEAINSERTAR","Selección de cheques","Selección de cheques","E","","",T
+"ITEMSELECHEQUEAINSERTAR","Item de selección de cheques","Item de selección de cheques","I","","",F
+"ITEMTARJETASPOSNET","Items de tarjetas para dispositivo Posnet","","I","","",F
+"ITEMPLANESPOSNET","Items de planes para dispositivo Posnet","","I","","",F
+"RETIRODEEFECTIVO","Retiro de efectivo en caja","Retiro de efectivo","E","ent_virtual","",T
+"GESTIONCHCUSTODIA","Depósito de cheques en custodia","Depósito de cheques en custodia","E","","",T
+"ITEMCHCUSTODIA","Item de cheques en custodia","Item de cheques en custodia","I","","",F
+"GENERADORTOKEN","Generador token API Rest","Token API Rest","E","","",T
+"LISTADECOSTOSDEPRODUCCION","Listas de costos de producción","Listas de costos de producción","E","","",T
+"MODIFICACIONDECOSTOSDEPRODUCCION","Modificación de costos de producción","Modificación de costos de producción","E","","",T
+"COTIZACIONGESTIONDEORDENDEPRODUCCION","Cotización gestión de orden de producción","Cotización gestión de orden de producción","E","","",T
+"LIQUIDACIONDETALLER","Liquidación de talleres","Liquidación de talleres","E","","",T
+"COSTODEINSUMO","Costos de insumos y semielaborados","Costos de insumos","E","","",F
+"ITEMMODCOSTOPROD","Items de modificación de costos de insumos en producción","Items de modificación de costos de insumos en producción","I","","",F
+"ITEMEQUIVALORES","Item equivalencia de valores","Item equivalencia de valores","I","","",F
+"ITEMVALOROPEECOM","Item valores operación ecommerce","Item valores operación ecommerce","I","","",F
+"PROCESARNCPENDIENTEPROMOBANCO","Herramienta de generación de NC por promociones bancarias","Herramienta de generación de notas de crédito pendientes por promociones bancarias","E","","",T
+"ITEMNCPENDIENTEPROMOB","Item NC pendientes por promo bancaria","Item modificación del costo de producción","I","","",F
+"ALIVIODECAJA","Alivio de caja","Alivio de caja","E","","",T
+"ITEMALIVIO","Item Alivio de caja","Item alivio de caja","I","","",F

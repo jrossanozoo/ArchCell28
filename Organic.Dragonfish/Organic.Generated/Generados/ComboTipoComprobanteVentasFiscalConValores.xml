@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+  <xml>
+    <valor>Todos</valor>
+    <cdefault>retorno</cdefault>
+    <orden>0</orden>
+    <retorno>-1</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Factura</valor>
+    <cdefault>
+    </cdefault>
+    <orden>1</orden>
+    <retorno>51</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de crédito</valor>
+    <cdefault>
+    </cdefault>
+    <orden>2</orden>
+    <retorno>52</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de débito</valor>
+    <cdefault>
+    </cdefault>
+    <orden>3</orden>
+    <retorno>53</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Factura fiscal de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>5</orden>
+    <retorno>2</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de crédito fiscal de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>10</orden>
+    <retorno>5</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de débito fiscal de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>15</orden>
+    <retorno>6</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Factura electrónica de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>20</orden>
+    <retorno>27</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de crédito electrónica de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>25</orden>
+    <retorno>28</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de débito electrónica de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>30</orden>
+    <retorno>29</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Factura manual de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>35</orden>
+    <retorno>1</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de crédito manual de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>40</orden>
+    <retorno>3</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de débito manual de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>45</orden>
+    <retorno>4</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Factura electrónica exportación de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>10</orden>
+    <retorno>33</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de crédito electrónica exportación de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>20</orden>
+    <retorno>35</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de débito electrónica exportación de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>30</orden>
+    <retorno>36</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Factura de exportación de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>40</orden>
+    <retorno>47</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de crédito de exportación de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>50</orden>
+    <retorno>48</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de débito de exportación de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>60</orden>
+    <retorno>49</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Factura de crédito electrónica MiPyME de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>99</orden>
+    <retorno>54</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de crédito electrónica MiPyME de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>99</orden>
+    <retorno>55</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de débito electrónica MiPyME de venta</valor>
+    <cdefault>
+    </cdefault>
+    <orden>99</orden>
+    <retorno>56</retorno>
+    <pais>
+    </pais>
+  </xml>
+</VFPData>

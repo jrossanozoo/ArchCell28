@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"LIQUIDACIONDIARIA","Codigo","liqdiaria","codigo",T,"C",24,0,"CODIGO",T,"",F,"",T,""
+"LIQUIDACIONDIARIA","Fecha","liqdiaria","fecha",T,"D",8,0,"FECHACALENDARIO",F,"",T,"=goServicios.Librerias.ObtenerFecha()",T,""
+"LIQUIDACIONDIARIA","Operadora","liqdiaria","operadora",T,"C",15,0,"CODIGO",F,"OPERADORADETARJETA",F,"",T,""
+"LIQUIDACIONDIARIA","Monto","liqdiaria","monto",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"LIQUIDACIONDIARIA","Conceptos","liqdiariaDet","codigo",T,"C",24,0,"DETALLEITEMCONCEPTOLIQ",F,"",F,"",F,""
+"LIQUIDACIONDIARIA","Total","liqdiaria","Totalliq",T,"N",15,2,"TOTALMULTIMONEDA",F,"",F,"",F,""
+"LIQUIDACIONDIARIA","Obs","liqdiaria","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"LIQUIDACIONDIARIA","Descuentos","liqdiaria","Descuentos",F,"N",15,2,"NUMERICO",F,"",F,"",F,""

@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MONEDA","Codigo","MONEDA","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"MONEDA","Descripcion","MONEDA","Descrip",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"MONEDA","Simbolo","MONEDA","Simbolo",T,"C",3,0,"CARACTER",F,"",F,"",F,""
+"MONEDA","EquivalenciaAfip","MONEDA","Eafip",T,"C",3,0,"CODIGO",F,"MONEDAAFIP",F,"",F,""
+"MONEDA","EquivalenciaDGI","MONEDA","Edgi",T,"C",3,0,"CARACTER",F,"",F,"",F,""
+"MONEDA","MonedaCotizacionAFIP","MONEDA","MCotAfip",T,"C",10,0,"CODIGO",F,"MONEDA",F,"",F,""
+"MONEDA","CargaObligatoria","MONEDA","COblig",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"MONEDA","Cotizaciones","COTIZA","Codigo",T,"C",10,0,"DETALLEITEMMONEDA",F,"",F,"",F,""
+"MONEDA","Observacion","MONEDA","MObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"MONEDA","ToleranciaPositiva","MONEDA","TolPos",T,"N",7,2,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"MONEDA","ToleranciaNegativa","MONEDA","TolNeg",T,"N",7,2,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"MONEDA","Denominaciones","DENOMINA","Codigo",T,"C",10,0,"DETALLEITEMDENOMINACIONES",F,"",F,"",F,""

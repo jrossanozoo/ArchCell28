@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCOINCIDENCIAPICKING","Codigo","DetConPicking","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMCOINCIDENCIAPICKING","Articulo","DetConPicking","CPArticulo",F,"C",13,0,"CLAVECONLECTURACB",F,"ARTICULO",F,"",T,""
+"ITEMCOINCIDENCIAPICKING","Equivalencia","DetConPicking","CPEquiv",F,"C",14,0,"CODIGO",F,"Equivalencia",F,"",F,""
+"ITEMCOINCIDENCIAPICKING","Color","DetConPicking","CPColor",F,"C",2,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMCOINCIDENCIAPICKING","Talle","DetConPicking","CPTalle",F,"C",3,0,"DESCRIPCION",F,"",F,"",F,""
+"ITEMCOINCIDENCIAPICKING","Cantidad","DetConPicking","CPCantidad",F,"N",8,2,"NUMERICO",F,"",F,"",F,""

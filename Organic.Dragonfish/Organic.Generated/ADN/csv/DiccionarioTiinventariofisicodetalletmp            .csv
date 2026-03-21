@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"TIINVENTARIOFISICODETALLETMP","CodigoDiferencia","TIInvFisDettmp","CodDif",F,"N",8,0,"CODIGONUMERICO",F,"TIINVENTARIOFISICODETALLE",F,"",F,""
+"TIINVENTARIOFISICODETALLETMP","Codigo","TIInvFisDettmp","CODIGO",F,"N",8,0,"CODIGONUMERICO",T,"",F,"",F,""
+"TIINVENTARIOFISICODETALLETMP","IDCabecera","TIInvFisDettmp","IDCABECERA",F,"N",8,0,"CODIGONUMERICO",F,"TIInventarioFisico",F,"",T,""
+"TIINVENTARIOFISICODETALLETMP","Obs","TIInvFisDettmp","MOBS",F,"C",100,0,"OBSERVACION",F,"",T,"",F,""
+"TIINVENTARIOFISICODETALLETMP","Articulo","TIInvFisDettmp","ART",F,"C",15,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"TIINVENTARIOFISICODETALLETMP","Color","TIInvFisDettmp","cColor",F,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"TIINVENTARIOFISICODETALLETMP","Talle","TIInvFisDettmp","Talle",F,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"TIINVENTARIOFISICODETALLETMP","Cantidad","TIInvFisDettmp","CANTI",F,"N",15,2,"NUMERICO",F,"",F,"",F,""

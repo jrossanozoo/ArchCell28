@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"AJUSTEDEESTADOS","tipo","ajuestados","tipocomp",F,"N",1,0,"NUMERICO",F,"",F,"3",F,""
+"AJUSTEDEESTADOS","Obs","ajuestados","ajObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"AJUSTEDEESTADOS","Numero","ajuestados","ajnumero",T,"N",10,0,"NUMERICO",F,"",F,"",F,""
+"AJUSTEDEESTADOS","Codigo","ajuestados","ajCodigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"AJUSTEDEESTADOS","Fecha","ajuestados","ajfecha",T,"D",8,0,"FECHA",F,"",F,"=goServicios.Librerias.ObtenerFecha()",F,""
+"AJUSTEDEESTADOS","StockAfectado","ajuestadosDet","ajdCodigo",T,"G",38,0,"DETALLEITEMAJUSTEDEESTADOS",F,"",F,"",F,""
+"AJUSTEDEESTADOS","StockAfectadoAuditoriaComb","ajEstAudCombDet","ajdCodigo",T,"G",38,0,"DETALLEITEMAJESTADOSAUDCOMB",F,"",F,"",F,""
+"AJUSTEDEESTADOS","ComprobantesModificados","ajCompDet","ajCompCod",T,"G",38,0,"DETALLEITEMAJUSTECOMPROBANTES",F,"",F,"",F,""

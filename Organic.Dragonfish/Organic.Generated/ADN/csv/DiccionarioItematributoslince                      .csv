@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMATRIBUTOSLINCE","Codigo","DisLinceAtri","iCod",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMATRIBUTOSLINCE","Atributo","DisLinceAtri","cAtributo",T,"C",100,0,"CARACTER",F,"",F,"",T,""
+"ITEMATRIBUTOSLINCE","Etiqueta","DisLinceAtri","cEtiqueta",T,"C",100,0,"CARACTER",F,"",F,"",F,""
+"ITEMATRIBUTOSLINCE","Conversion","DisLinceAtri","cConv",T,"C",40,0,"CODIGO",F,"CONVERSION",F,"",F,""

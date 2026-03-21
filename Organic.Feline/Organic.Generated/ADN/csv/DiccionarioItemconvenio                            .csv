@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCONVENIO","Codigo","DetConvenio","CodRela",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMCONVENIO","Impuesto","DetConvenio","Impuesto",T,"C",10,0,"CODIGO",F,"IMPUESTO",F,"",T,""
+"ITEMCONVENIO","Aplicacion","DetConvenio","aplicacion",T,"C",10,0,"COMBOXMLIMPUESTO",F,"",F,"",F,"Impuesto.Aplicacion"
+"ITEMCONVENIO","Tipo","DetConvenio","tipo",T,"C",10,0,"COMBOTABLA",F,"TIPOIMPUESTO",F,"",F,"Impuesto.Tipo"
+"ITEMCONVENIO","Jurisdiccion","DetConvenio","Jurisdicci",T,"C",8,0,"CODIGO",F,"JURISDICCION",F,"",F,"Impuesto.Jurisdiccion"
+"ITEMCONVENIO","JurisdiccionDetalle","DetConvenio","JurDet",T,"C",50,0,"CARACTER",F,"",T,"",F,"Jurisdiccion.Descripcion"
+"ITEMCONVENIO","Resolucion","DetConvenio","Resolu",T,"C",60,0,"DESCRIPCION",F,"",F,"",F,"Impuesto.Resolucion"
+"ITEMCONVENIO","Porcentaje","DetConvenio","Porcen",T,"N",6,2,"NUMERICONONEGATIVO",F,"",F,"=Max( 0, 100 - This.Sum_Porcentaje )",F,""
+"ITEMCONVENIO","Regimen","DetConvenio","Regimen",F,"C",50,0,"DESCRIPCION",F,"",T,"",F,"Impuesto.Regimen"

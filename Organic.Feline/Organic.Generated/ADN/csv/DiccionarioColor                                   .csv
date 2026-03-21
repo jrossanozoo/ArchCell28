@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"COLOR","Codigo","COL","COLCOD",T,"C",2,0,"CODIGO",T,"",F,"",F,""
+"COLOR","Descripcion","COL","COLDES",T,"C",50,0,"DESCRIPCION",F,"",T,"",F,""
+"COLOR","EsComodinEnProduccion","COL","COMODIN",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"COLOR","Observacion","COL","CObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"COLOR","Imagen","COL","COLIMAGEN",T,"C",180,0,"IMAGENCONRUTADINAMICA",F,"",F,"",F,""
+"COLOR","FechaDeAlta","","",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"COLOR","FechaUltimaModificacion","","",F,"D",8,0,"FECHA",F,"",F,"",F,""

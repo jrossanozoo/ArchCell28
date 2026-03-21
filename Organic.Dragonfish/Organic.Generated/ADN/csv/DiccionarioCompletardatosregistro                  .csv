@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"COMPLETARDATOSREGISTRO","Codigo","DATOSBANC","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"COMPLETARDATOSREGISTRO","DetalleDatosRegistros","","",T,"C",10,0,"DETALLEITEMDATOSREGISTRO",F,"",F,"",F,""
+"COMPLETARDATOSREGISTRO","Observacion","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""

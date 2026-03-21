@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMINTERACCION","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMINTERACCION","Numero","","",T,"C",20,0,"CARACTER",F,"",F,"",F,""
+"ITEMINTERACCION","Descri","","",T,"C",250,0,"CARACTER",F,"",F,"",F,""
+"ITEMINTERACCION","Vendedor","","",T,"C",10,0,"CARACTER",F,"",F,"",F,""
+"ITEMINTERACCION","Estado","","",T,"C",60,0,"CARACTER",F,"",F,"",F,""
+"ITEMINTERACCION","TipoDescuento","","",T,"C",10,0,"CARACTER",F,"",F,"",F,""
+"ITEMINTERACCION","Valor","","",T,"N",10,0,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMINTERACCION","Codigo","","",F,"G",38,0,"CARACTER",T,"",F,"",F,""
+"ITEMINTERACCION","Hora","","",F,"C",8,0,"HORA",F,"",F,"",F,""

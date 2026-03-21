@@ -1,0 +1,12 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMIMPUESTOCOMPRA","Codigo","ImpFacc","cCod",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMIMPUESTOCOMPRA","NroItem","ImpFacc","NroItem",F,"N",5,0,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOCOMPRA","TipoImpuesto","ImpFacc","TipoI",F,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOCOMPRA","CodigoInterno","ImpFacc","codint",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOCOMPRA","Porcentaje","ImpFacc","porcen",F,"N",8,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOCOMPRA","MinimoNoImponible","ImpFacc","minoimp",F,"N",8,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOCOMPRA","CodImp","ImpFacc","CodImp",T,"C",10,0,"CODIGO",F,"IMPUESTO",F,"",T,""
+"ITEMIMPUESTOCOMPRA","CodImpDetalle","ImpFacc","Descri",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOCOMPRA","Monto","ImpFacc","Monto",T,"N",12,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOCOMPRA","RG5329AplicaPorArticulo","ImpFacc","ArtPerce",F,"L",1,0,"SINOBOOL",F,"",F,"",F,"Impuesto.RG5329AplicaPorArticulo"
+"ITEMIMPUESTOCOMPRA","RG5329Porcentaje","ImpFacc","ArtPercep",F,"N",6,2,"NUMERICONONEGATIVO",F,"",F,"",F,"Impuesto.RG5329Porcentaje"

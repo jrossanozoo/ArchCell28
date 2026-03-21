@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONFIGURACIONARTICULOECOMMERCE","Codigo","CfgArtEcom","Codigo",T,"G",38,0,"CODIGO",T,"",T,"",T,""
+"CONFIGURACIONARTICULOECOMMERCE","Articulo","CfgArtEcom","Artic",T,"C",13,0,"CODIGO",F,"ARTICULO",F,"",T,""
+"CONFIGURACIONARTICULOECOMMERCE","CategoriasEcom","CfgArtEcomCat","Codigo",T,"G",38,0,"DETALLEITEMCATEGORIASECOM",F,"",F,"",F,""
+"CONFIGURACIONARTICULOECOMMERCE","EtiquetasEcom","CfgArtEcomEti","Codigo",T,"G",38,0,"DETALLEITEMETIQUETASECOM",F,"",F,"",F,""
+"CONFIGURACIONARTICULOECOMMERCE","DimensionesEcom","CfgArtEcomDim","Codigo",T,"G",38,0,"DETALLEITEMDIMENSIONESECOM",F,"",F,"",F,""
+"CONFIGURACIONARTICULOECOMMERCE","Obs","CfgArtEcom","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

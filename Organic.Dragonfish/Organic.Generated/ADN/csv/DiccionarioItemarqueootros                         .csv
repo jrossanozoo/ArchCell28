@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMARQUEOOTROS","Codigo","ARQOTROSDET","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMARQUEOOTROS","Valor","ARQOTROSDET","Valor",T,"C",5,0,"CODIGO",F,"VALOR",F,"",T,""
+"ITEMARQUEOOTROS","ValorDetalle","ARQOTROSDET","ValorDet",T,"C",40,0,"CARACTER",F,"",F,"",F,""
+"ITEMARQUEOOTROS","ValorGrupo","ARQOTROSDET","ValorGrupo",F,"C",5,0,"CODIGO",F,"GRUPOVALOR",F,"",F,"Valor.Grupo"
+"ITEMARQUEOOTROS","Moneda","ARQOTROSDET","Moneda",T,"C",10,0,"CODIGO",F,"MONEDA",F,"",F,"Valor.SimboloMonetario"
+"ITEMARQUEOOTROS","TotalArqueo","ARQOTROSDET","TotArqueo",T,"N",15,2,"NUMERICONONEGATIVO",F,"",F,"",F,""

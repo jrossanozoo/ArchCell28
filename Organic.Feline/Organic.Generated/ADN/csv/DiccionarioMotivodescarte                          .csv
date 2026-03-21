@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MOTIVODESCARTE","Codigo","MOTIVODESCARTE","Codigo",T,"C",15,0,"CODIGO",T,"",F,"",T,""
+"MOTIVODESCARTE","Descripcion","MOTIVODESCARTE","Descrip",T,"C",254,0,"CARACTER",F,"",T,"",F,""
+"MOTIVODESCARTE","Inventario","MOTIVODESCARTE","Inventario",T,"C",15,0,"CODIGO",F,"INVENTARIO",F,"",F,""
+"MOTIVODESCARTE","Obs","MOTIVODESCARTE","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"PERSONALIZACIONDEENTIDADES","Codigo","PerEnt","Codigo",T,"C",40,0,"CODIGO",T,"",F,"",F,""
+"PERSONALIZACIONDEENTIDADES","Entidad","PerEnt","Ent",T,"C",40,0,"COMBOENTIDADESPERSONALIZABLES",F,"",T,"",T,""
+"PERSONALIZACIONDEENTIDADES","Ocultar","PerEnt","Ocultar",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"PERSONALIZACIONDEENTIDADES","Observacion","PerEnt","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"PERSONALIZACIONDEENTIDADES","DenominacionSingular","PerEnt","DenPlu",T,"C",40,0,"CARACTER",F,"",F,"",F,""
+"PERSONALIZACIONDEENTIDADES","DenominacionPlural","PerEnt","DenSin",T,"C",40,0,"CARACTER",F,"",F,"",F,""
+"PERSONALIZACIONDEENTIDADES","DenominacionCorta","PerEnt","DenCor",T,"C",10,0,"CARACTER",F,"",F,"",F,""

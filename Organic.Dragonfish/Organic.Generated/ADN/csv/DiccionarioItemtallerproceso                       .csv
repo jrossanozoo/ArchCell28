@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMTALLERPROCESO","Codigo","TALLERPROC","CodProc",F,"C",15,0,"CODIGO",T,"",F,"",F,""
+"ITEMTALLERPROCESO","Proceso","TALLERPROC","Proceso",T,"C",15,0,"CODIGO",F,"PROCESOPRODUCCION",F,"",T,""
+"ITEMTALLERPROCESO","ProcesoDescripcion","TALLERPROC","ProcDet",T,"C",250,0,"DESCRIPCION",F,"",T,"",F,"Proceso.Descripcion"
+"ITEMTALLERPROCESO","InventarioEntrada","TALLERPROC","InvEnt",T,"C",15,0,"CODIGO",F,"INVENTARIO",F,"",F,""
+"ITEMTALLERPROCESO","InventarioSalida","TALLERPROC","InvSal",T,"C",15,0,"CODIGO",F,"INVENTARIO",F,"",F,""
+"ITEMTALLERPROCESO","ListaDeCosto","TALLERPROC","LCosto",T,"C",6,0,"CODIGO",F,"LISTADECOSTOSDEPRODUCCION",F,"",F,""
+"ITEMTALLERPROCESO","InsumoEnLiquidacion","TALLERPROC","Insumos",T,"N",2,0,"COMBOSERVICIOPRODUCCION",F,"",F,"",F,""
+"ITEMTALLERPROCESO","DescarteEnLiquidacion","TALLERPROC","Descartes",T,"N",2,0,"COMBOSERVICIOPRODUCCION",F,"",F,"",F,""

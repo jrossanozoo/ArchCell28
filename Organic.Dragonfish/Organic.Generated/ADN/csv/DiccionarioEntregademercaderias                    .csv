@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ENTREGADEMERCADERIAS","Cliente","ENTMER","CLIENTE",T,"C",10,0,"CODIGO",F,"CLIENTE",F,"",F,""
+"ENTREGADEMERCADERIAS","Transportista","ENTMER","TRANSP",T,"C",15,0,"CODIGO",F,"TRANSPORTISTA",F,"",F,""
+"ENTREGADEMERCADERIAS","Bultos","ENTMER","BULTOS",T,"N",10,0,"NUMERICO",F,"",F,"",F,""
+"ENTREGADEMERCADERIAS","Codigo","ENTMER","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",T,""
+"ENTREGADEMERCADERIAS","Numero","ENTMER","NUMERO",T,"N",8,0,"CLAVECANDIDATA",F,"",F,"",F,""
+"ENTREGADEMERCADERIAS","Fecha","ENTMER","FECHA",T,"D",8,0,"FECHACALENDARIO",F,"",T,"=goServicios.Librerias.ObtenerFecha()",T,""
+"ENTREGADEMERCADERIAS","Hora","ENTMER","HORA",T,"C",5,0,"HORA",F,"",F,"=left( goservicios.libreRIAS.obtenerhora() , 5)",F,""
+"ENTREGADEMERCADERIAS","Obs","ENTMER","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"ENTREGADEMERCADERIAS","RemitoDetalle","ENTMERDET","CODIGO",T,"G",38,0,"DETALLEITEMREMITOS",F,"",F,"",F,""

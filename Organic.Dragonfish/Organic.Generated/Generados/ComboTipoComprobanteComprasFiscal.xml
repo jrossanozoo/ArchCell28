@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+  <xml>
+    <valor>Todos</valor>
+    <cdefault>retorno</cdefault>
+    <orden>0</orden>
+    <retorno>-1</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Factura de compra</valor>
+    <cdefault>
+    </cdefault>
+    <orden>10</orden>
+    <retorno>8</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de crédito de compra</valor>
+    <cdefault>
+    </cdefault>
+    <orden>20</orden>
+    <retorno>10</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Nota de débito de compra</valor>
+    <cdefault>
+    </cdefault>
+    <orden>30</orden>
+    <retorno>9</retorno>
+    <pais>
+    </pais>
+  </xml>
+  <xml>
+    <valor>Orden de pago</valor>
+    <cdefault>
+    </cdefault>
+    <orden>88</orden>
+    <retorno>31</retorno>
+    <pais>
+    </pais>
+  </xml>
+</VFPData>

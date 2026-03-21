@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ESTADOSDEINTERACCION","Codigo","EstInterac","Codigo",T,"C",30,0,"CODIGO",T,"",F,"",T,""
+"ESTADOSDEINTERACCION","Descripcion","EstInterac","Descri",T,"C",60,0,"DESCRIPCION",F,"",T,"",T,""
+"ESTADOSDEINTERACCION","TipoDeOrden","EstInterac","TipoOrden",T,"C",20,0,"CODIGO",F,"TIPODEORDEN",F,"",F,""
+"ESTADOSDEINTERACCION","ReglaEstado","EstInterac","ReglaEst",T,"N",1,0,"COMBOXML",F,"",F,"",F,""
+"ESTADOSDEINTERACCION","ReglaFacturacion","EstInterac","ReglaFac",T,"N",1,0,"COMBOXML",F,"",F,"",F,""
+"ESTADOSDEINTERACCION","Obs","EstInterac","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

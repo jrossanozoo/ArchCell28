@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"SCRIPT","Codigo","SCRIPT","CODIGO",T,"C",20,0,"CODIGO",T,"",F,"",F,""
+"SCRIPT","Descripcion","SCRIPT","DESCRIP",T,"C",100,0,"DESCRIPCION",F,"",T,"",F,""
+"SCRIPT","Observaciones","SCRIPT","OBS",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"SCRIPT","Usuario","SCRIPT","USUARIO",T,"C",100,0,"CARACTER",F,"",F,"",T,""
+"SCRIPT","BaseDeDatos","SCRIPT","SUCURSAL",T,"C",8,0,"CARACTER",F,"",F,"",T,""
+"SCRIPT","VisualizarMensajes","SCRIPT","VERMENS",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"SCRIPT","RutaDestino","SCRIPT","RUTADES",T,"C",254,0,"DIRECTORIO",F,"",F,"",F,""
+"SCRIPT","NombreArchivo","SCRIPT","ARCHIVO",T,"C",100,0,"CARACTER",F,"",F,"",F,""
+"SCRIPT","Instrucciones","INSTSCRIPT","DET_INS",T,"G",38,0,"DETALLEITEMINSTRUCCIONSCRIPT",F,"",F,"",F,""

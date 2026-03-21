@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAGRUPAMIENTO","Codigo","AGRUPAG","Codigo",F,"C",21,0,"CODIGO",T,"",F,"",F,""
+"ITEMAGRUPAMIENTO","Incluye","AGRUPAG","incluye",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"ITEMAGRUPAMIENTO","Agrupamiento","AGRUPAG","Agrup",T,"C",21,0,"CODIGO",F,"AGRUPAMIENTO",F,"",T,""
+"ITEMAGRUPAMIENTO","AgrupamientoDetalle","AGRUPAG","Descrip",T,"C",254,0,"CARACTER",F,"",T,"",F,"Agrupamiento.Descripcion"

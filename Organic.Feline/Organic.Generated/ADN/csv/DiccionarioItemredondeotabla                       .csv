@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMREDONDEOTABLA","codigo","redoDetPorTabla","codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMREDONDEOTABLA","RedondearEn","redoDetPorTabla","RedEn",T,"N",16,2,"NUMERICO",F,"",F,"",T,""
+"ITEMREDONDEOTABLA","DesdePrecio","redoDetPorTabla","DesdePre",T,"N",16,2,"NUMERICO",F,"",F,"",F,""
+"ITEMREDONDEOTABLA","HastaPrecio","redoDetPorTabla","HastaPre",T,"N",16,2,"NUMERICO",F,"",F,"",F,""

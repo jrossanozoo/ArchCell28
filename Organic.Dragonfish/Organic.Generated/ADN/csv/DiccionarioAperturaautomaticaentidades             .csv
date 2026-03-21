@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"APERTURAAUTOMATICAENTIDADES","Usuario","ApAutoEnt","Usu",T,"C",100,0,"CODIGO",T,"",T,"=goServicios.Seguridad.ObtenerUltimoUsuarioLogueado()",T,""
+"APERTURAAUTOMATICAENTIDADES","Observacion","ApAutoEnt","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"APERTURAAUTOMATICAENTIDADES","AccionesDetalle","DApAuto","Usu",T,"C",100,0,"DETALLEITEMAPERAUTOMATICAS",F,"",F,"",F,""

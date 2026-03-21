@@ -1,0 +1,11 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMAJUSTECCCLIENTE","Tipo","","",F,"N",2,0,"NUMERICO",F,"",F,"=6",F,""
+"ITEMAJUSTECCCLIENTE","Cliente","detajucccli","FPerson",T,"C",10,0,"CODIGO",F,"CLIENTE",F,"",T,""
+"ITEMAJUSTECCCLIENTE","ClienteDetalle","detajucccli","FCLIENTE",T,"C",185,0,"CARACTER",F,"",T,"",F,"Cliente.Nombre"
+"ITEMAJUSTECCCLIENTE","FechaVencimiento","detajucccli","FechaVto",T,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMAJUSTECCCLIENTE","Descripcion","detajucccli","Descrip",T,"C",120,0,"CARACTER",F,"",T,"",F,""
+"ITEMAJUSTECCCLIENTE","Monto","detajucccli","RMonto",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMAJUSTECCCLIENTE","Valor","","",F,"C",5,0,"CODIGO",F,"VALOR",F,"",F,""
+"ITEMAJUSTECCCLIENTE","Moneda","","",F,"C",10,0,"CODIGO",F,"MONEDA",F,"",F,"Valor.SimboloMonetario"
+"ITEMAJUSTECCCLIENTE","Fecha","","",F,"D",8,0,"FECHA",F,"",F,"",F,""
+"ITEMAJUSTECCCLIENTE","Codigo","detajucccli","CODIGO",F,"G",38,0,"CODIGO",T,"",F,"",F,""

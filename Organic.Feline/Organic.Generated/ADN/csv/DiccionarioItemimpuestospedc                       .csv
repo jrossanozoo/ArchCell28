@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMIMPUESTOSPEDC","Codigo","ImpPedComp","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMIMPUESTOSPEDC","PorcentajeDeIva","ImpPedComp","IVAPorcent",F,"N",6,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSPEDC","MontoDeIva","ImpPedComp","IVAMonto",F,"N",12,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSPEDC","MontoDeIvaSinDescuento","ImpPedComp","IVAMonSD",F,"N",12,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSPEDC","MontoNoGravado","ImpPedComp","IVAMonNG",F,"N",12,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOSPEDC","MontoNoGravadoSinDescuento","ImpPedComp","IVAMNGSD",F,"N",12,2,"NUMERICO",F,"",F,"",F,""

@@ -1,0 +1,2762 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPDataSet xml:space="preserve">
+	<xsd:schema id="VFPDataSet" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPDataSet" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="c_Estructura" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="entidad" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="atributo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="claveprimaria" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="muestrarelacion" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="claveforanea" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="dominio" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="30"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tabla" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="15"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="campo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="10"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tipodato" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="10"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="longitud" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:decimal">
+											<xsd:totalDigits value="3"/>
+											<xsd:fractionDigits value="0"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="decimales" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:decimal">
+											<xsd:totalDigits value="2"/>
+											<xsd:fractionDigits value="0"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="ordenreglanegocio" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:decimal">
+											<xsd:totalDigits value="3"/>
+											<xsd:fractionDigits value="0"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="obligatorio" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="mantenerenrecepcion" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="genhabilitar" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="clavecandidata" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:decimal">
+											<xsd:totalDigits value="2"/>
+											<xsd:fractionDigits value="0"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="etiquetacorta" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="60"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="etiqueta" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="160"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="visible" type="xsd:boolean"/>
+								<xsd:element name="filtro" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="80"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tipoatributo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="versionminimaderecepcion" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="20"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="espk" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="escc" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="esquema" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="50"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="esfk" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="esvirtual" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="forzarfiltro" type="xsd:boolean" minOccurs="0"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<c_Estructura>
+		<entidad>ITEMPRUEBAREDONDEO                      </entidad>
+		<atributo>Codigo                                  </atributo>
+		<claveprimaria>true</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CODIGO                        </dominio>
+		<tabla>redoPrueba     </tabla>
+		<campo>codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>                                                            </etiquetacorta>
+		<etiqueta>                                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMPRUEBAREDONDEO                      </entidad>
+		<atributo>NROITEM                                 </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoPrueba     </tabla>
+		<campo>NROITEM   </campo>
+		<tipodato>N         </tipodato>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Nro. Item                                                   </etiquetacorta>
+		<etiqueta>Nro. Item                                                                                                                                                       </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMPRUEBAREDONDEO                      </entidad>
+		<atributo>Precio                                  </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoPrueba     </tabla>
+		<campo>precio    </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>2</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>true</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Prec.                                                       </etiquetacorta>
+		<etiqueta>Monto                                                                                                                                                           </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMPRUEBAREDONDEO                      </entidad>
+		<atributo>Resultado                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoPrueba     </tabla>
+		<campo>result    </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>2</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Result.                                                     </etiquetacorta>
+		<etiqueta>Resultado                                                                                                                                                       </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOCENTAVOS                    </entidad>
+		<atributo>Codigo                                  </atributo>
+		<claveprimaria>true</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CODIGO                        </dominio>
+		<tabla>redoDetPorCent </tabla>
+		<campo>codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>                                                            </etiquetacorta>
+		<etiqueta>                                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOCENTAVOS                    </entidad>
+		<atributo>Desde                                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorCent </tabla>
+		<campo>desde     </campo>
+		<tipodato>N         </tipodato>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Desde                                                       </etiquetacorta>
+		<etiqueta>Desde                                                                                                                                                           </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOCENTAVOS                    </entidad>
+		<atributo>DesdePrecio                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorCent </tabla>
+		<campo>desdepre  </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>2</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>D. Monto                                                    </etiquetacorta>
+		<etiqueta>Desde Monto                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOCENTAVOS                    </entidad>
+		<atributo>Hasta                                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorCent </tabla>
+		<campo>hasta     </campo>
+		<tipodato>N         </tipodato>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hasta                                                       </etiquetacorta>
+		<etiqueta>Hasta                                                                                                                                                           </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOCENTAVOS                    </entidad>
+		<atributo>HastaPrecio                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorCent </tabla>
+		<campo>hastapre  </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>2</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>H. Monto                                                    </etiquetacorta>
+		<etiqueta>Hasta Monto                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOCENTAVOS                    </entidad>
+		<atributo>NROITEM                                 </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorCent </tabla>
+		<campo>NROITEM   </campo>
+		<tipodato>N         </tipodato>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Nro. Item                                                   </etiquetacorta>
+		<etiqueta>Nro. Item                                                                                                                                                       </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOCENTAVOS                    </entidad>
+		<atributo>Terminacion                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorCent </tabla>
+		<campo>termi     </campo>
+		<tipodato>N         </tipodato>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Termin.                                                     </etiquetacorta>
+		<etiqueta>Terminación                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOCENTAVOS                    </entidad>
+		<atributo>TerminacionCaracter                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redoDetPorCent </tabla>
+		<campo>termialfa </campo>
+		<tipodato>C         </tipodato>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>true</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Termin.                                                     </etiquetacorta>
+		<etiqueta>Terminación                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOENTEROS                     </entidad>
+		<atributo>Codigo                                  </atributo>
+		<claveprimaria>true</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CODIGO                        </dominio>
+		<tabla>redoDetPorEnt  </tabla>
+		<campo>codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>                                                            </etiquetacorta>
+		<etiqueta>                                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOENTEROS                     </entidad>
+		<atributo>Desde                                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorEnt  </tabla>
+		<campo>desde     </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Desde                                                       </etiquetacorta>
+		<etiqueta>Desde                                                                                                                                                           </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOENTEROS                     </entidad>
+		<atributo>DesdePrecio                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorEnt  </tabla>
+		<campo>desdepre  </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>2</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>D. Monto                                                    </etiquetacorta>
+		<etiqueta>Desde Monto                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOENTEROS                     </entidad>
+		<atributo>Hasta                                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorEnt  </tabla>
+		<campo>hasta     </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hasta                                                       </etiquetacorta>
+		<etiqueta>Hasta                                                                                                                                                           </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOENTEROS                     </entidad>
+		<atributo>HastaPrecio                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorEnt  </tabla>
+		<campo>hastapre  </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>2</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>H. Monto                                                    </etiquetacorta>
+		<etiqueta>Hasta Monto                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOENTEROS                     </entidad>
+		<atributo>NROITEM                                 </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorEnt  </tabla>
+		<campo>NROITEM   </campo>
+		<tipodato>N         </tipodato>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Nro. Item                                                   </etiquetacorta>
+		<etiqueta>Nro. Item                                                                                                                                                       </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOENTEROS                     </entidad>
+		<atributo>Terminacion                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorEnt  </tabla>
+		<campo>termi     </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Termin.                                                     </etiquetacorta>
+		<etiqueta>Terminación                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOENTEROS                     </entidad>
+		<atributo>TerminacionCaracter                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redoDetPorEnt  </tabla>
+		<campo>termialfa </campo>
+		<tipodato>C         </tipodato>
+		<longitud>16</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>true</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Termin.                                                     </etiquetacorta>
+		<etiqueta>Terminación                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOTABLA                       </entidad>
+		<atributo>DesdePrecio                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorTabla</tabla>
+		<campo>DesdePre  </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>2</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>D. Monto                                                    </etiquetacorta>
+		<etiqueta>Desde Monto                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOTABLA                       </entidad>
+		<atributo>HastaPrecio                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorTabla</tabla>
+		<campo>HastaPre  </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>2</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>H. Monto                                                    </etiquetacorta>
+		<etiqueta>Hasta Monto                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOTABLA                       </entidad>
+		<atributo>NROITEM                                 </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorTabla</tabla>
+		<campo>NROITEM   </campo>
+		<tipodato>N         </tipodato>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Nro. Item                                                   </etiquetacorta>
+		<etiqueta>Nro. Item                                                                                                                                                       </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOTABLA                       </entidad>
+		<atributo>RedondearEn                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>redoDetPorTabla</tabla>
+		<campo>RedEn     </campo>
+		<tipodato>N         </tipodato>
+		<longitud>16</longitud>
+		<decimales>2</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>true</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Redond.                                                     </etiquetacorta>
+		<etiqueta>Redondear En                                                                                                                                                    </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>ITEMREDONDEOTABLA                       </entidad>
+		<atributo>codigo                                  </atributo>
+		<claveprimaria>true</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CODIGO                        </dominio>
+		<tabla>redoDetPorTabla</tabla>
+		<campo>codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>                                                            </etiquetacorta>
+		<etiqueta>                                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>I</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>BASEDEDATOSALTAFW                       </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>BDALTAFW  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Base alta                                                   </etiquetacorta>
+		<etiqueta>Base de datos alta                                                                                                                                              </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>BASEDEDATOSMODIFICACIONFW               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>BDMODIFW  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Base modif.                                                 </etiquetacorta>
+		<etiqueta>Base de datos modificación                                                                                                                                      </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>Codigo                                  </atributo>
+		<claveprimaria>true</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CODIGO                        </dominio>
+		<tabla>Promos         </tabla>
+		<campo>Codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>15</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Cód.                                                        </etiquetacorta>
+		<etiqueta>Código                                                                                                                                                          </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>true</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>Configuracion                           </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>PROMOCIONES                   </dominio>
+		<tabla>Promos         </tabla>
+		<campo>Config    </campo>
+		<tipodato>M         </tipodato>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Conf.                                                       </etiquetacorta>
+		<etiqueta>Configuración                                                                                                                                                   </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>Descripcion                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>true</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>DESCRIPCION                   </dominio>
+		<tabla>Promos         </tabla>
+		<campo>Descrip   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>true</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Descripción                                                 </etiquetacorta>
+		<etiqueta>Descripción                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>ESTADOTRANSFERENCIA                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>ESTTRANS  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>20</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Est. Transf.                                                </etiquetacorta>
+		<etiqueta>Estado transferencia                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>FECHAALTAFW                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>Promos         </tabla>
+		<campo>FALTAFW   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Alta                                                   </etiquetacorta>
+		<etiqueta>Fecha alta                                                                                                                                                      </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>FECHAEXPO                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>Promos         </tabla>
+		<campo>FECEXPO   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Expo.                                                  </etiquetacorta>
+		<etiqueta>Fecha exportación                                                                                                                                               </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>FECHAIMPO                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>Promos         </tabla>
+		<campo>FECIMPO   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Impo.                                                  </etiquetacorta>
+		<etiqueta>Fecha importación                                                                                                                                               </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>FECHAMODIFICACIONFW                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>Promos         </tabla>
+		<campo>FMODIFW   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Modif.                                                 </etiquetacorta>
+		<etiqueta>Fecha modificación                                                                                                                                              </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>FECHATRANSFERENCIA                      </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>Promos         </tabla>
+		<campo>FECTRANS  </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Transf.                                                </etiquetacorta>
+		<etiqueta>Fecha transferencia                                                                                                                                             </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>FechaDesde                              </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>Promos         </tabla>
+		<campo>FecDesde  </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Vigencia desde                                              </etiquetacorta>
+		<etiqueta>Vigencia desde                                                                                                                                                  </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>FechaHasta                              </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>Promos         </tabla>
+		<campo>FecHasta  </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Vigencia hasta                                              </etiquetacorta>
+		<etiqueta>Vigencia hasta                                                                                                                                                  </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>HORAALTAFW                              </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>HALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora alta                                                   </etiquetacorta>
+		<etiqueta>Hora alta                                                                                                                                                       </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>HORAEXPO                                </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>HORAEXPO  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora expo.                                                  </etiquetacorta>
+		<etiqueta>Hora exportación                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>HORAIMPO                                </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>HORAIMPO  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora Impo.                                                  </etiquetacorta>
+		<etiqueta>Hora importación                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>HORAMODIFICACIONFW                      </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>HMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora modif.                                                 </etiquetacorta>
+		<etiqueta>Hora modificación                                                                                                                                               </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>HoraDesde                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>HoraDesde </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Rango horario desde                                         </etiquetacorta>
+		<etiqueta>Rango horario desde                                                                                                                                             </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>HoraHasta                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>HoraHasta </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Rango horario hasta                                         </etiquetacorta>
+		<etiqueta>Rango horario hasta                                                                                                                                             </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>Observaciones                           </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>OBSERVACION                   </dominio>
+		<tabla>Promos         </tabla>
+		<campo>Obs       </campo>
+		<tipodato>M         </tipodato>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Obs.                                                        </etiquetacorta>
+		<etiqueta>Observaciones                                                                                                                                                   </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>Redondeo                                </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>REDONDEODEPRECIOS                       </claveforanea>
+		<dominio>CODIGO                        </dominio>
+		<tabla>Promos         </tabla>
+		<campo>Redondeo  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Redondeo                                                    </etiquetacorta>
+		<etiqueta>Redondeo                                                                                                                                                        </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>true</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>SERIEALTAFW                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>SALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>7</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Seria alta                                                  </etiquetacorta>
+		<etiqueta>Serie alta                                                                                                                                                      </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>SERIEMODIFICACIONFW                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>SMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>7</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Serie modif.                                                </etiquetacorta>
+		<etiqueta>Serie modificación                                                                                                                                              </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>Tipo                                    </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>Tipo      </campo>
+		<tipodato>N         </tipodato>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Tipo                                                        </etiquetacorta>
+		<etiqueta>Tipo                                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>USUARIOALTAFW                           </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>UALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Usuario alta                                                </etiquetacorta>
+		<etiqueta>Usuario alta                                                                                                                                                    </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>USUARIOMODIFICACIONFW                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>UMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Usuario modif.                                              </etiquetacorta>
+		<etiqueta>Usuario modificación                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>VERSIONALTAFW                           </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>VALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>13</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Versión alta                                                </etiquetacorta>
+		<etiqueta>Versión alta                                                                                                                                                    </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>VERSIONMODIFICACIONFW                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>VMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>13</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Versión modif.                                              </etiquetacorta>
+		<etiqueta>Versión modificación                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>PROMOCION                               </entidad>
+		<atributo>ZADSFW                                  </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>Promos         </tabla>
+		<campo>ZADSFW    </campo>
+		<tipodato>M         </tipodato>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Acciones del sistema                                        </etiquetacorta>
+		<etiqueta>Acciones del sistema                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>BASEDEDATOSALTAFW                       </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>BDALTAFW  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Base alta                                                   </etiquetacorta>
+		<etiqueta>Base de datos alta                                                                                                                                              </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>BASEDEDATOSMODIFICACIONFW               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>BDMODIFW  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Base modif.                                                 </etiquetacorta>
+		<etiqueta>Base de datos modificación                                                                                                                                      </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>DetRedondeoPorCentavo                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>DETALLEITEMREDONDEOCENTAVOS   </dominio>
+		<tabla>redoDetPorCent </tabla>
+		<campo>codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>true</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Redondear terminación de centavos                           </etiquetacorta>
+		<etiqueta>Detalle                                                                                                                                                         </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>DetRedondeoPorEntero                    </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>DETALLEITEMREDONDEOENTEROS    </dominio>
+		<tabla>redoDetPorEnt  </tabla>
+		<campo>codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>true</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Det.                                                        </etiquetacorta>
+		<etiqueta>Detalle                                                                                                                                                         </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>DetRedondeoPorTabla                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>DETALLEITEMREDONDEOTABLA      </dominio>
+		<tabla>redoDetPorTabla</tabla>
+		<campo>codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>true</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Det.                                                        </etiquetacorta>
+		<etiqueta>Detalle                                                                                                                                                         </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>ESTADOTRANSFERENCIA                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>ESTTRANS  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>20</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Est. Transf.                                                </etiquetacorta>
+		<etiqueta>Estado transferencia                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>FECHAALTAFW                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>redo           </tabla>
+		<campo>FALTAFW   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Alta                                                   </etiquetacorta>
+		<etiqueta>Fecha alta                                                                                                                                                      </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>FECHAEXPO                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>redo           </tabla>
+		<campo>FECEXPO   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Expo.                                                  </etiquetacorta>
+		<etiqueta>Fecha exportación                                                                                                                                               </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>FECHAIMPO                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>redo           </tabla>
+		<campo>FECIMPO   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Impo.                                                  </etiquetacorta>
+		<etiqueta>Fecha importación                                                                                                                                               </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>FECHAMODIFICACIONFW                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>redo           </tabla>
+		<campo>FMODIFW   </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Modif.                                                 </etiquetacorta>
+		<etiqueta>Fecha modificación                                                                                                                                              </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>FECHATRANSFERENCIA                      </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>FECHA                         </dominio>
+		<tabla>redo           </tabla>
+		<campo>FECTRANS  </campo>
+		<tipodato>D         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Fec. Transf.                                                </etiquetacorta>
+		<etiqueta>Fecha transferencia                                                                                                                                             </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>HORAALTAFW                              </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>HALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora alta                                                   </etiquetacorta>
+		<etiqueta>Hora alta                                                                                                                                                       </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>HORAEXPO                                </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>HORAEXPO  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora expo.                                                  </etiquetacorta>
+		<etiqueta>Hora exportación                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>HORAIMPO                                </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>HORAIMPO  </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora Impo.                                                  </etiquetacorta>
+		<etiqueta>Hora importación                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>HORAMODIFICACIONFW                      </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>HMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Hora modif.                                                 </etiquetacorta>
+		<etiqueta>Hora modificación                                                                                                                                               </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>HabilitaRedondearNormal                 </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>SINOBOOL                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>redoent   </campo>
+		<tipodato>L         </tipodato>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Aplicar                                                     </etiquetacorta>
+		<etiqueta>Aplicar                                                                                                                                                         </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>HabilitaRedondearTermCentavos           </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>SINOBOOL                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>redotCent </campo>
+		<tipodato>L         </tipodato>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Aplicar                                                     </etiquetacorta>
+		<etiqueta>Aplicar                                                                                                                                                         </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>HabilitaRedondearTermEnteros            </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>SINOBOOL                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>redotEnt  </campo>
+		<tipodato>L         </tipodato>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Aplicar                                                     </etiquetacorta>
+		<etiqueta>Aplicar                                                                                                                                                         </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>HabilitaRedonearPrecios                 </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>SINOBOOL                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>redopre   </campo>
+		<tipodato>L         </tipodato>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Redondear según rango de montos                             </etiquetacorta>
+		<etiqueta>Aplicar                                                                                                                                                         </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>Observacion                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>OBSERVACION                   </dominio>
+		<tabla>redo           </tabla>
+		<campo>robs      </campo>
+		<tipodato>M         </tipodato>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Obs.                                                        </etiquetacorta>
+		<etiqueta>Observaciones                                                                                                                                                   </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>SERIEALTAFW                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>SALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>7</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Seria alta                                                  </etiquetacorta>
+		<etiqueta>Serie alta                                                                                                                                                      </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>SERIEMODIFICACIONFW                     </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>SMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>7</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Serie modif.                                                </etiquetacorta>
+		<etiqueta>Serie modificación                                                                                                                                              </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>TIMESTAMP                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>NUMERICO                      </dominio>
+		<tabla>REDO           </tabla>
+		<campo>TIMESTAMP </campo>
+		<tipodato>N         </tipodato>
+		<longitud>20</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>                                                            </etiquetacorta>
+		<etiqueta>                                                                                                                                                                </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>USUARIOALTAFW                           </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>UALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Usuario alta                                                </etiquetacorta>
+		<etiqueta>Usuario alta                                                                                                                                                    </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>USUARIOMODIFICACIONFW                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>UMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Usuario modif.                                              </etiquetacorta>
+		<etiqueta>Usuario modificación                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>VERSIONALTAFW                           </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>VALTAFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>13</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Versión alta                                                </etiquetacorta>
+		<etiqueta>Versión alta                                                                                                                                                    </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>VERSIONMODIFICACIONFW                   </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>VMODIFW   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>13</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Versión modif.                                              </etiquetacorta>
+		<etiqueta>Versión modificación                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>ZADSFW                                  </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CARACTER                      </dominio>
+		<tabla>redo           </tabla>
+		<campo>ZADSFW    </campo>
+		<tipodato>M         </tipodato>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Acciones del sistema                                        </etiquetacorta>
+		<etiqueta>Acciones del sistema                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>codigo                                  </atributo>
+		<claveprimaria>true</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>CODIGO                        </dominio>
+		<tabla>redo           </tabla>
+		<campo>codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>true</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Cód.                                                        </etiquetacorta>
+		<etiqueta>Código                                                                                                                                                          </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>true</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>descripcion                             </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>true</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>DESCRIPCION                   </dominio>
+		<tabla>redo           </tabla>
+		<campo>descrip   </campo>
+		<tipodato>C         </tipodato>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>true</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Desc.                                                       </etiquetacorta>
+		<etiqueta>Descripción                                                                                                                                                     </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>detPrueba                               </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>DETALLEITEMPRUEBAREDONDEO     </dominio>
+		<tabla>redoPrueba     </tabla>
+		<campo>codigo    </campo>
+		<tipodato>C         </tipodato>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>false</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Det.                                                        </etiquetacorta>
+		<etiqueta>Detalle                                                                                                                                                         </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>redondeonormal                          </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>COMBO                         </dominio>
+		<tabla>redo           </tabla>
+		<campo>rnormal   </campo>
+		<tipodato>N         </tipodato>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>true</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Tipo                                                        </etiquetacorta>
+		<etiqueta>Tipo                                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+	<c_Estructura>
+		<entidad>REDONDEODEPRECIOS                       </entidad>
+		<atributo>redondeoportabla                        </atributo>
+		<claveprimaria>false</claveprimaria>
+		<muestrarelacion>false</muestrarelacion>
+		<claveforanea>                                        </claveforanea>
+		<dominio>COMBO                         </dominio>
+		<tabla>redo           </tabla>
+		<campo>rtabla    </campo>
+		<tipodato>N         </tipodato>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<ordenreglanegocio>0</ordenreglanegocio>
+		<obligatorio>false</obligatorio>
+		<mantenerenrecepcion>false</mantenerenrecepcion>
+		<genhabilitar>true</genhabilitar>
+		<clavecandidata>0</clavecandidata>
+		<etiquetacorta>Tipo                                                        </etiquetacorta>
+		<etiqueta>Tipo                                                                                                                                                            </etiqueta>
+		<visible>true</visible>
+		<filtro>                                                                                </filtro>
+		<tipoatributo>E</tipoatributo>
+		<versionminimaderecepcion>                    </versionminimaderecepcion>
+		<espk>false</espk>
+		<escc>false</escc>
+		<esquema>ZooLogic                                          </esquema>
+		<esfk>false</esfk>
+		<esvirtual>false</esvirtual>
+		<forzarfiltro>false</forzarfiltro>
+	</c_Estructura>
+</VFPDataSet>

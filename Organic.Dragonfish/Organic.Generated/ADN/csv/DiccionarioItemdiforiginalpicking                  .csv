@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMDIFORIGINALPICKING","Codigo","DetDifOPicking","Codigo",F,"G",38,0,"CODIGO",T,"",F,"",F,""
+"ITEMDIFORIGINALPICKING","Articulo","DetDifOPicking","Articulo",T,"C",15,0,"CLAVECONLECTURACB",F,"ARTICULO",F,"",F,""
+"ITEMDIFORIGINALPICKING","Equivalencia","DetDifOPicking","Equivalenc",F,"C",20,0,"CODIGO",F,"Equivalencia",F,"",F,""
+"ITEMDIFORIGINALPICKING","Comportamiento","DetDifOPicking","COMP",F,"N",1,0,"NUMERICO",F,"",F,"",F,"Articulo.Comportamiento"
+"ITEMDIFORIGINALPICKING","Color","DetDifOPicking","cColor",T,"C",6,0,"CODIGO",F,"COLOR",F,"",F,""
+"ITEMDIFORIGINALPICKING","Talle","DetDifOPicking","Talle",T,"C",5,0,"CODIGO",F,"TALLE",F,"",F,""
+"ITEMDIFORIGINALPICKING","Cantidad","DetDifOPicking","Cantidad",T,"N",8,2,"NUMERICO",F,"",F,"",F,""

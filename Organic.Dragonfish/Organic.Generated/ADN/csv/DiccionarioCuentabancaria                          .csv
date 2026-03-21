@@ -1,0 +1,13 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CUENTABANCARIA","Codigo","CtaBan","CBCod",T,"C",5,0,"CODIGO",T,"",F,"",T,""
+"CUENTABANCARIA","Descripcion","CtaBan","CBDes",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,""
+"CUENTABANCARIA","Observacion","CtaBan","CBObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"CUENTABANCARIA","SucursalBancaria","CtaBan","CBSucBan",T,"C",5,0,"CODIGO",F,"SUCURSALBANCARIA",F,"",T,""
+"CUENTABANCARIA","Numero","CtaBan","CBNum",T,"C",18,0,"CARACTER",F,"",F,"",F,""
+"CUENTABANCARIA","CBU","CtaBan","CBCBU",T,"C",25,0,"CARACTER",F,"",F,"",F,""
+"CUENTABANCARIA","MonedaCuenta","CtaBan","CBMoneda",T,"C",10,0,"CODIGO",F,"MONEDA",F,"",T,""
+"CUENTABANCARIA","Acuerdo","CtaBan","CBAcuerdo",T,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"CUENTABANCARIA","CodigoTributarioLibrador","CtaBan","CBCuit",T,"C",15,0,"CUIT",F,"",F,"",F,""
+"CUENTABANCARIA","RazonSocialLibrador","CtaBan","CBRazSoc",T,"C",30,0,"CARACTER",F,"",F,"",F,""
+"CUENTABANCARIA","Direccion","CtaBan","CBDir",T,"C",70,0,"TEXTO",F,"",F,"",F,""
+"CUENTABANCARIA","Firmantes","CtaBan","CBFirma",T,"C",70,0,"TEXTO",F,"",F,"",F,""

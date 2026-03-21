@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CUPONESPENDIENTES","Codigo","CupPend","Codigo",F,"C",5,0,"CODIGO",T,"",F,"",F,""
+"CUPONESPENDIENTES","Valor","","",T,"C",5,0,"CODIGO",F,"VALOR",F,"",F,""
+"CUPONESPENDIENTES","Moneda","","",T,"C",10,0,"CODIGO",F,"MONEDA",F,"",F,"Valor.SimboloMonetario"
+"CUPONESPENDIENTES","DispositivoPos","","",T,"C",10,0,"CODIGO",F,"POS",F,"",F,""
+"CUPONESPENDIENTES","Obs","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"CUPONESPENDIENTES","Cupones","","",T,"G",38,0,"DETALLEITEMCUPON",F,"",F,"",F,""

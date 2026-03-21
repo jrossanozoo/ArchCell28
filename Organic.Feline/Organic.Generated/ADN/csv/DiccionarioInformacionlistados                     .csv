@@ -1,0 +1,7 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"INFORMACIONLISTADOS","IdListado","INFLIST","Codigo",T,"N",8,0,"CODIGONUMERICO",T,"",F,"",F,""
+"INFORMACIONLISTADOS","Descripcion","INFLIST","Descrip",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"INFORMACIONLISTADOS","UltimoUsuario","INFLIST","UlUsu",T,"C",100,0,"DESCRIPCION",F,"",F,"",F,""
+"INFORMACIONLISTADOS","UltimaUtilizacion","INFLIST","UlUso",T,"C",30,0,"CARACTER",F,"",F,"",F,""
+"INFORMACIONLISTADOS","CantidadDeEjecuciones","INFLIST","CantEje",T,"N",8,0,"NUMERICO",F,"",F,"",F,""
+"INFORMACIONLISTADOS","Base","INFLIST","Base",T,"C",30,0,"CARACTER",F,"",F,"",F,""

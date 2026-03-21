@@ -1,0 +1,5 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"DATOSTAREAPROGRAMADAECOMMERCE","Codigo","TareaProg","Codigo",F,"G",38,0,"CODIGO",T,"",F,"=goServicios.Librerias.ObtenerGuidPk()",F,""
+"DATOSTAREAPROGRAMADAECOMMERCE","Periodicidad","TareaProg","period",T,"N",1,0,"COMBOTIEMPOS",F,"",F,"",F,""
+"DATOSTAREAPROGRAMADAECOMMERCE","Observacion","","",T,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"DATOSTAREAPROGRAMADAECOMMERCE","Plataforma","Plataf","platafDet",T,"N",10,0,"DETALLEITEMPLATAFORMAS",F,"",F,"",F,""

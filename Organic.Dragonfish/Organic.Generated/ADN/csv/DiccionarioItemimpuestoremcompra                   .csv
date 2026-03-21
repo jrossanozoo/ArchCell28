@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMIMPUESTOREMCOMPRA","Codigo","ImpRemC","cCod",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMIMPUESTOREMCOMPRA","NroItem","ImpRemC","NroItem",F,"N",5,0,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOREMCOMPRA","TipoImpuesto","ImpRemC","TipoI",F,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOREMCOMPRA","CodigoInterno","ImpRemC","codint",F,"C",38,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOREMCOMPRA","Porcentaje","ImpRemC","porcen",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOREMCOMPRA","MinimoNoImponible","ImpRemC","minoimp",F,"N",15,2,"NUMERICO",F,"",F,"",F,""
+"ITEMIMPUESTOREMCOMPRA","CodImp","ImpRemC","CodImp",T,"C",10,0,"CODIGO",F,"IMPUESTO",F,"",T,""
+"ITEMIMPUESTOREMCOMPRA","CodImpDetalle","ImpRemC","Descri",T,"C",50,0,"CARACTER",F,"",F,"",F,""
+"ITEMIMPUESTOREMCOMPRA","Monto","ImpRemC","Monto",T,"N",12,2,"NUMERICO",F,"",F,"",F,""

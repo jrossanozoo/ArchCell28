@@ -1,0 +1,10 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMCOMISIONVENDEDOR","Codigo","DetComVen","Codigo",F,"C",10,0,"CODIGO",T,"",F,"",F,""
+"ITEMCOMISIONVENDEDOR","Comision","DetComVen","Comision",T,"C",10,0,"CODIGO",F,"COMISION",F,"",T,""
+"ITEMCOMISIONVENDEDOR","ComisionDetalle","","",T,"C",40,0,"DESCRIPCION",F,"",T,"",F,"Comision.Descripcion"
+"ITEMCOMISIONVENDEDOR","FechaModificacion","","",T,"D",8,0,"FECHA",F,"",F,"",F,"Comision.FechaModificacionFW"
+"ITEMCOMISIONVENDEDOR","HoraModificacion","","",T,"C",8,0,"CARACTER",F,"",F,"",F,"Comision.HoraModificacionFW"
+"ITEMCOMISIONVENDEDOR","VigenciaDesde","","",T,"D",8,0,"FECHA",F,"",F,"",F,"Comision.FechaVigenciaDesde"
+"ITEMCOMISIONVENDEDOR","VigenciaHasta","","",T,"D",8,0,"FECHA",F,"",F,"",F,"Comision.FechaVigenciaHasta"
+"ITEMCOMISIONVENDEDOR","Porcentaje","","",T,"N",7,2,"NUMERICO",F,"",F,"",F,"Comision.Porcentaje"
+"ITEMCOMISIONVENDEDOR","MontoFijo","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,"Comision.MontoFijo"

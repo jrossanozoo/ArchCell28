@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"MODIFICACIONPRECIOS","Codigo","MODIPREC","CODIGO",T,"C",20,0,"CODIGO",T,"",F,"",F,""
+"MODIFICACIONPRECIOS","Numero","MODIPREC","Numero",T,"N",8,0,"NUMERICO",F,"",F,"",F,""
+"MODIFICACIONPRECIOS","Anulado","MODIPREC","Anulado",F,"L",1,0,"SINOBOOL",F,"",F,"",F,""
+"MODIFICACIONPRECIOS","Fecha","MODIPREC","FECHA",T,"D",8,0,"FECHACALENDARIO",F,"",T,"=goServicios.Librerias.ObtenerFecha()",F,""
+"MODIFICACIONPRECIOS","FechaBase","MODIPREC","Fechabase",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.librerias.ObtenerFecha()",T,""
+"MODIFICACIONPRECIOS","FechaVigencia","MODIPREC","FECHAVIG",T,"D",8,0,"FECHACALENDARIO",F,"",F,"=goServicios.librerias.ObtenerFecha() +1",T,""
+"MODIFICACIONPRECIOS","Observacion","MODIPREC","MObs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""
+"MODIFICACIONPRECIOS","ModPrecios","MODIPRECDET","CODIGO",T,"C",20,0,"DETALLEITEMMODIFICACIONPRECIOS",F,"",F,"",F,""

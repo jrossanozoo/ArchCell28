@@ -1,0 +1,4 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"EDICIONIMPUESTOIVACOMPRAS","Obs","","",F,"M",0,0,"OBSERVACION",F,"",T,"",F,""
+"EDICIONIMPUESTOIVACOMPRAS","Codigo","ivacpcab","codigo",F,"C",5,0,"CODIGO",T,"",F,"",F,""
+"EDICIONIMPUESTOIVACOMPRAS","detalleimpuestoivac","","",T,"G",38,0,"DETALLEITEMIVACOMPRAS",F,"",F,"",F,""

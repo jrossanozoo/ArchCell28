@@ -1,0 +1,6 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"CONCEPTOENTIDADFINANCIERA","Codigo","ConEntFin","Codigo",T,"C",10,0,"CODIGO",T,"",F,"",F,""
+"CONCEPTOENTIDADFINANCIERA","Concepto","ConEntFin","Concepto",T,"C",100,0,"CARACTER",F,"",T,"",F,""
+"CONCEPTOENTIDADFINANCIERA","Descripcion","ConEntFin","Descri",T,"C",100,0,"CARACTER",F,"",F,"",F,""
+"CONCEPTOENTIDADFINANCIERA","EntidadFinanciera","ConEntFin","EntFin",T,"C",5,0,"CODIGO",F,"ENTIDADFINANCIERA",F,"",F,""
+"CONCEPTOENTIDADFINANCIERA","Observacion","ConEntFin","Obs",T,"M",0,0,"OBSERVACION",F,"",F,"",F,""

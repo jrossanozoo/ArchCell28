@@ -1,0 +1,8 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMRECEFECTIVO","Codigo","ARQEFECTDET","Codigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMRECEFECTIVO","MonedaDenom","ARQEFECTDET","MonedaDen",T,"C",10,0,"CARACTER",F,"",F,"",T,""
+"ITEMRECEFECTIVO","Descri","ARQEFECTDET","Descri",T,"C",30,0,"CARACTER",F,"",F,"",F,""
+"ITEMRECEFECTIVO","Tipo","ARQEFECTDET","Tipo",T,"C",10,0,"CARACTER",F,"",F,"",F,""
+"ITEMRECEFECTIVO","ValorDenom","ARQEFECTDET","ValorDen",T,"N",10,2,"NUMERICO",F,"",F,"",F,""
+"ITEMRECEFECTIVO","Cantidad","ARQEFECTDET","Cant",T,"N",10,0,"NUMERICONONEGATIVO",F,"",F,"",F,""
+"ITEMRECEFECTIVO","Total","ARQEFECTDET","Tot",T,"N",15,2,"NUMERICO",F,"",F,"",F,""

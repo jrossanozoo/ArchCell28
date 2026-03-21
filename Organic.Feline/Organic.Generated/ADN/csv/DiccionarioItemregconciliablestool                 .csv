@@ -1,0 +1,9 @@
+entidad,atributo,tabla,campo,alta,tipodato,longitud,decimales,dominio,claveprimaria,claveforanea,muestrarelacion,valorsugerido,obligatorio,atributoforaneo
+"ITEMREGCONCILIABLESTOOL","Codigo","DETREGCONT","Codigo",F,"G",38,0,"CODIGO",T,"",T,"",F,""
+"ITEMREGCONCILIABLESTOOL","Registro","","",T,"C",20,0,"CODIGO",F,"REGISTRODECUENTA",F,"",F,""
+"ITEMREGCONCILIABLESTOOL","Fecha","","",T,"D",8,0,"FECHA",F,"",F,"",F,"Registro.Fecha"
+"ITEMREGCONCILIABLESTOOL","Comprobante","","",T,"C",250,0,"CARACTER",F,"",F,"",F,"Registro.Comprobante"
+"ITEMREGCONCILIABLESTOOL","FechaDeOperacion","","",T,"D",8,0,"FECHA",F,"",F,"",F,"Registro.FechaCargaOperacion"
+"ITEMREGCONCILIABLESTOOL","TipoValor","","",T,"N",2,0,"COMBOTIPODEVALORES",F,"",F,"",F,"Registro.TipoValor"
+"ITEMREGCONCILIABLESTOOL","Importe","","",T,"N",15,2,"NUMERICO",F,"",F,"",F,"Registro.Importe"
+"ITEMREGCONCILIABLESTOOL","Seleccion","","",T,"L",1,0,"SINOBOOL",F,"",F,"",F,""
