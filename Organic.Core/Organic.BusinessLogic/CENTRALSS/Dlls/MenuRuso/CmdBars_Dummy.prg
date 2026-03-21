@@ -1,0 +1,17 @@
+Function ACB_AddSite
+Function ACB_InstallClientPanel
+Function ACB_GetSiteCount
+Function ACB_RemoveSite
+Function ACB_RemoveAllSites
+Function ACB_AddCommandBar
+Function ACB_AddControl
+Function ACB_ControlStateChanged
+Function ACB_ShowPopupMenu
+Function ACB_CreateIcon
+Function ACB_CopyBitmap
+Function ACB_RefreshSite
+Function ACB_PMHelper
+Function ACB_GetObjectPtr
+Function ACB_CreateGradientBitmap
+Function ACB_LoadPictureFile
+Function ACB_DoEvents

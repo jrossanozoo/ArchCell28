@@ -1,0 +1,211 @@
+---
+applyTo: "**/*.prg,**/*.vcx,**/*.vct,**/*.scx,**/*.sct,**/*.frx,**/*.frt,**/*.h"
+description: "Instrucciones para desarrollo de código Visual FoxPro 9 en este proyecto"
+---
+
+# Instrucciones de Desarrollo VFP
+
+## Contexto
+
+EstÃ¡s trabajando en el proyecto **Organic.Drawing**, una soluciÃ³n Visual FoxPro 9 que se desarrolla en VS Code con DOVFP como compilador.
+
+---
+
+## Estructura de cÃ³digo
+
+### Proyectos
+
+- **Organic.BusinessLogic**: CÃ³digo de negocio principal (CENTRALSS/)
+- **Organic.Generated**: CÃ³digo generado automÃ¡ticamente (NO EDITAR MANUALMENTE)
+- **Organic.Tests**: Tests unitarios y funcionales
+
+### Convenciones
+
+#### Nomenclatura
+```foxpro
+* ParÃ¡metros: tc=text char, tn=numeric, tl=logical, to=object, ta=array
+PROCEDURE MiProcedimiento(tcNombre, tnEdad, tlActivo)
+
+* Variables locales: mismo prefijo con 'l'
+LOCAL lcVariable, lnContador, llFlag, loObjeto
+
+* Propiedades de clase
+THIS.cPropiedad = ""   && character
+THIS.nPropiedad = 0    && numeric
+THIS.lPropiedad = .F.  && logical
+THIS.oPropiedad = NULL && object
+```
+
+#### Formato de clases
+```foxpro
+DEFINE CLASS MiClase AS ParentClass
+    * Propiedades primero
+    cNombre = ""
+    nEdad = 0
+    
+    * Constructor
+    PROCEDURE Init(tcNombre, tnEdad)
+        THIS.cNombre = tcNombre
+        THIS.nEdad = tnEdad
+        RETURN DODEFAULT()
+    ENDPROC
+    
+    * MÃ©todos pÃºblicos
+    PROCEDURE MetodoPublico()
+        * LÃ³gica
+    ENDPROC
+    
+    * MÃ©todos protegidos (por convenciÃ³n)
+    PROTECTED PROCEDURE MetodoInterno()
+        * LÃ³gica interna
+    ENDPROC
+    
+    * Destructor al final
+    PROCEDURE Destroy()
+        THIS.LiberarRecursos()
+        RETURN DODEFAULT()
+    ENDPROC
+ENDDEFINE
+```
+
+---
+
+## Mejores prÃ¡cticas
+
+### 1. Manejo de errores
+```foxpro
+PROCEDURE MiProcedimiento()
+    LOCAL llExito
+    llExito = .F.
+    
+    TRY
+        * LÃ³gica principal
+        llExito = .T.
+        
+    CATCH TO loError
+        * Logging
+        THIS.LogError("MiProcedimiento", loError)
+        
+    FINALLY
+        * Siempre liberar recursos
+        THIS.LiberarRecursos()
+    ENDTRY
+    
+    RETURN llExito
+ENDPROC
+```
+
+### 2. Acceso a datos
+```foxpro
+* âœ… PREFERIR: SQL
+SELECT SUM(Total) FROM Ventas WHERE Fecha > DATE() - 30 INTO CURSOR csrTotal
+
+* âŒ EVITAR: SCAN (lento)
+SCAN FOR Fecha > DATE() - 30
+    lnTotal = lnTotal + Total
+ENDSCAN
+```
+
+### 3. LiberaciÃ³n de recursos
+```foxpro
+PROCEDURE Destroy()
+    * Liberar objetos
+    THIS.oObjeto = NULL
+    
+    * Cerrar cursores/tablas
+    IF USED("MiCursor")
+        USE IN MiCursor
+    ENDIF
+    
+    RETURN DODEFAULT()
+ENDPROC
+```
+
+### 4. Modularidad
+- Funciones/mÃ©todos <50 lÃ­neas
+- Una responsabilidad por funciÃ³n
+- ReutilizaciÃ³n sobre duplicaciÃ³n
+
+---
+
+## Debugging
+
+### Breakpoints
+Los breakpoints de VS Code se exportan automÃ¡ticamente cuando presionas F5.
+
+### Ejecutar proyecto
+```bash
+# Compilar y ejecutar
+dovfp build
+dovfp run
+
+# Con argumentos
+dovfp run -run_args "'parametro1', 123, .T."
+```
+
+### Logging
+```foxpro
+* Usar logger centralizado (si existe)
+THIS.Logger.Info("Mensaje", "Contexto")
+THIS.Logger.Error("Error", loError, "Contexto")
+```
+
+---
+
+## Testing
+
+### Crear test
+```foxpro
+DEFINE CLASS Test_MiClase AS TestCase
+    
+    PROCEDURE Test_MetodoDebeFuncionar()
+        * Arrange
+        LOCAL loObjeto, lcEsperado
+        loObjeto = CREATEOBJECT("MiClase")
+        lcEsperado = "ResultadoEsperado"
+        
+        * Act
+        LOCAL lcResultado
+        lcResultado = loObjeto.MiMetodo()
+        
+        * Assert
+        THIS.AssertEquals(lcEsperado, lcResultado)
+    ENDPROC
+    
+ENDDEFINE
+```
+
+### Ejecutar tests
+```bash
+dovfp test Organic.Tests/Organic.Tests.vfpproj
+```
+
+---
+
+## No hacer
+
+- âŒ NO editar archivos en `Organic.Generated/Generados/` (son generados)
+- âŒ NO usar variables globales (PUBLIC/PRIVATE)
+- âŒ NO hardcodear rutas absolutas
+- âŒ NO dejar cÃ³digo comentado (usar Git)
+- âŒ NO usar magic numbers (crear constantes)
+
+---
+
+## Recursos
+
+- **Agente VFP**: `/Organic.BusinessLogic/AGENTS.md`
+- **Prompts Ãºtiles**: `.github/prompts/dev/`
+- **Ejemplos de cÃ³digo**: Ver tests en `Organic.Tests/`
+
+---
+
+## Ayuda rÃ¡pida
+
+```
+@workspace MuÃ©strame ejemplos de cÃ³digo segÃºn las convenciones del proyecto
+
+@workspace #file:miarchivo.prg Revisa este cÃ³digo segÃºn las instrucciones VFP
+
+@workspace Â¿CÃ³mo debo estructurar una nueva clase siguiendo los estÃ¡ndares?
+```

@@ -1,0 +1,891 @@
+trigger:
+ branches:
+   include:
+     - master
+
+pool:
+  vmImage: 'windows-2022'
+
+variables:
+  - group: keyvault-reader
+  - name: vfpAppName
+    value: 'DRAGONFISH_CORE'
+  - name: appPath
+    value: '$(Build.SourcesDirectory)/Organic.BusinessLogic/bin/Exe'
+  - name: objPath
+    value: '$(Build.SourcesDirectory)/Organic.BusinessLogic/obj/app'
+  - name: netCoreVersion
+    value: '9.0.203'
+  - name: nugetPackageName
+    value: 'DRAGONFISH_CORE_SFX'
+  - name: FeedOrganic
+    value: '8d6d83c7-4dd5-4cff-909c-34ba0397d18f'
+  - name: StorageAccount
+    value: 'storganic'
+  - name: Blob
+    value: 'organic'
+  - name: productCounter
+    value: $[ counter('OrganicDragonfish-version', 10000) ]
+  - name: codeSignKeyVaultName
+    value: 'codesigningzoologic'
+
+resources:
+   repositories:
+   - repository: templates
+     type: git
+     name: Dev-Ops/PipelineTemplates
+     ref: refs/heads/master
+
+steps:
+
+- task: UseDotNet@2
+  # Instalamos NetCore para poder ejecutar mas adelante doVFP.exe
+  displayName: Install NetCore SDK
+  inputs:
+    packageType: 'sdk'
+    version: '$(netCoreVersion)'
+
+- template: FirmaDigital/CodeSign-Setup.yml@templates
+  parameters:
+    keyVaultName: $(codeSignKeyVaultName)
+    azureSubscription: 'IntegracionesAzureServices'
+    azureSignToolVersion: '5.0.0'
+
+- pwsh: |
+    $ErrorActionPreference = 'Stop'
+
+    # Parte 1: (YY - 10), 2 dígitos (2025 -> 15)
+    $yy  = [int](Get-Date -Format 'yy')
+    $p1  = '{0:00}' -f ($yy - 10)
+
+    # Parte 2: mes en 4 dígitos (septiembre -> 0009)
+    $p2  = (Get-Date).Month.ToString('0000')
+
+    # Parte 3: autoincremental de 5 dígitos (persistente entre ejecuciones)
+    $ctr = [int]$env:PRODUCTCOUNTER
+    $p3  = '{0:00000}' -f $ctr
+
+    $ver = "$p1.$p2.$p3"
+    Write-Host "Versión calculada: $ver"
+    Write-Host "##vso[task.setvariable variable=ProductVersion]$ver"
+    Write-Host "##vso[task.setvariable variable=BuildId]$p3"
+  env:
+    PRODUCTCOUNTER: $(productCounter)
+  displayName: 'Calcular versión de producto'
+
+- template: Organic/Get_Buildh_Positions.yml@templates
+  parameters:
+    serviceConnectionName: 'IntegracionesAzureServices'
+    productBuildNum: '$(BuildId)'
+
+- task: PowerShell@2
+  # Creamos archivo de configuracion nuget para poder acceder al feed donde esta doVFP para luego bajarlo/instalarlo.
+  displayName: 'Create customnugetDoVFP.config'
+  inputs:
+    targetType: 'inline'
+    pwsh: true
+    script: |
+      $nugetConfig = @"
+      <?xml version="1.0" encoding="utf-8"?>
+      <configuration>
+        <packageSources>
+          <add key="doVFP" value="https://pkgs.dev.azure.com/zoologicnet/_packaging/doVFP/nuget/v3/index.json" />
+        </packageSources>
+        <packageSourceCredentials>
+          <doVFP>
+            <add key="Username" value="AzureDevOps" />
+            <add key="ClearTextPassword" value="$env:SYSTEM_ACCESSTOKEN" />
+          </doVFP>
+        </packageSourceCredentials>
+      </configuration>
+      "@
+
+      $nugetConfig | Out-File -FilePath "$(Build.SourcesDirectory)/customnugetDoVFP.config" -Encoding utf8
+  env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+- task: PowerShell@2
+  # Creamos archivo de configuracion nuget para poder acceder al feed donde estan los instaladores de Visual FoxPro 9 para luego instalarlos.
+  displayName: 'Create customnugetVisualFoxPro9.config'
+  inputs:
+    targetType: 'inline'
+    pwsh: true
+    script: |
+      $nugetConfig = @"
+      <?xml version="1.0" encoding="utf-8"?>
+      <configuration>
+        <packageSources>
+          <add key="VisualFoxPro9" value="https://pkgs.dev.azure.com/zoologicnet/_packaging/VisualFoxPro9/nuget/v3/index.json" />
+        </packageSources>
+        <packageSourceCredentials>
+          <VisualFoxPro9>
+            <add key="Username" value="AzureDevOps" />
+            <add key="ClearTextPassword" value="$env:SYSTEM_ACCESSTOKEN" />
+          </VisualFoxPro9>
+        </packageSourceCredentials>
+      </configuration>
+      "@
+
+      $nugetConfig | Out-File -FilePath "$(Build.SourcesDirectory)/customnugetVisualFoxPro9.config" -Encoding utf8
+  env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+- task: PowerShell@2
+  # Instalamos doVFP
+  displayName: 'Install doVFP using customnugetDoVFP.config'
+  inputs:
+    targetType: 'inline'
+    pwsh: true
+    script: |
+      dotnet new tool-manifest --force
+      dotnet tool install dovfp --global --configfile "$(Build.SourcesDirectory)/customnugetDoVFP.config"
+
+- task: PowerShell@2
+  # Recuparamos los instaladores de Visual FoxPro 9 que estan almacenados como paquetes nuget. El comando install ya los deja descomprimidos en disco en una carpeta con igual nombre que el paquete.
+  displayName: Nuget Restore VisualFoxPro installer
+  inputs:
+    targetType: 'inline'
+    script: |
+      Set-Location '$(System.DefaultWorkingDirectory)' 
+      & nuget.exe install 'VisualFoxPro9Setup' -Verbosity detailed -Version 9.0.0 -ConfigFile "$(Build.SourcesDirectory)/customnugetVisualFoxPro9.config" -NonInteractive -OutputDirectory 'C:\CustomNugets'
+      & nuget.exe install 'VisualFoxPro9SP1' -Verbosity detailed -Version 1.0.0 -ConfigFile "$(Build.SourcesDirectory)/customnugetVisualFoxPro9.config" -NonInteractive -OutputDirectory 'C:\CustomNugets'
+    failOnStderr: true
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: Install VFP9 Runtime Files
+  inputs:
+    targetType: 'inline'
+    script: |
+      $msiPath = "C:\CustomNugets\VisualFoxPro9Setup.9.0.0\Visual FoxPro 9\WCU\bootstrap.msi"
+      $arguments = "/i `"$msiPath`" /quiet /norestart"
+
+      $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+      $startInfo.FileName = "msiexec.exe"
+      $startInfo.Arguments = $arguments
+      $startInfo.UseShellExecute = $false
+      $startInfo.RedirectStandardOutput = $true
+      $startInfo.RedirectStandardError = $true
+      $startInfo.CreateNoWindow = $true
+
+      $process = New-Object System.Diagnostics.Process
+      $process.StartInfo = $startInfo
+      $process.Start() | Out-Null
+      $process.WaitForExit()
+
+      $stdout = $process.StandardOutput.ReadToEnd()
+      $stderr = $process.StandardError.ReadToEnd()
+
+      Write-Host "STDOUT:"
+      Write-Host $stdout
+
+      Write-Host "STDERR:"
+      Write-Host $stderr
+
+      if ($process.ExitCode -eq 0)
+      {
+          Write-Host "Instalación finalizada correctamente."
+      }
+      else
+      {
+          Write-Error "Error durante la instalación. Código: $($process.ExitCode)"
+      }
+    failOnStderr: true
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: Install VFP9 Prerequisite [MDAC 2.8]
+  inputs:
+    targetType: 'inline'
+    script: |
+      $execFile = "C:\CustomNugets\VisualFoxPro9Setup.9.0.0\Visual FoxPro 9\WCU\mdac28\mdac_typ.exe"
+      $params = "/q"
+
+      $psi = [System.Diagnostics.ProcessStartInfo]::new($execFile, $params)
+      $psi.WorkingDirectory = "C:\CustomNugets\VisualFoxPro9Setup.9.0.0\Visual FoxPro 9\WCU\mdac28"
+      $psi.UseShellExecute = $false
+      $psi.RedirectStandardOutput = $true
+      $p = [System.Diagnostics.Process]::Start($psi)
+      $output = $p.StandardOutput.ReadToEnd()
+      $p.WaitForExit()
+    failOnStderr: true
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: 'Install VFP9 Prerequisite [Windows Installer]'
+  inputs:
+    targetType: 'inline'
+    script: |
+      $execFile = "C:\CustomNugets\VisualFoxPro9Setup.9.0.0\Visual FoxPro 9\WCU\windowsinstaller\winnt\instmsiw.exe"
+      $params = "/q"
+
+      $psi = [System.Diagnostics.ProcessStartInfo]::new($execFile, $params)
+      $psi.WorkingDirectory = "C:\CustomNugets\VisualFoxPro9Setup.9.0.0\Visual FoxPro 9\WCU\windowsinstaller\winnt"
+      $psi.UseShellExecute = $false
+      $psi.RedirectStandardOutput = $true
+      $p = [System.Diagnostics.Process]::Start($psi)
+      $output = $p.StandardOutput.ReadToEnd()
+      $p.WaitForExit()
+    failOnStderr: true
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: 'Install Visual FoxPro 9'
+  inputs:
+    targetType: 'inline'
+    script: |
+      $execFile = "C:\CustomNugets\VisualFoxPro9Setup.9.0.0\Visual FoxPro 9\Setup\setup.exe"
+      $params = "/unattendfile C:\CustomNugets\VisualFoxPro9Setup.9.0.0\foxpro.ini"
+
+      $psi = [System.Diagnostics.ProcessStartInfo]::new($execFile, $params)
+      $psi.WorkingDirectory = "C:\CustomNugets\VisualFoxPro9Setup.9.0.0\Visual FoxPro 9\Setup"
+      $psi.UseShellExecute = $false
+      $psi.RedirectStandardOutput = $true
+      $psi.RedirectStandardError = $true
+      $p = [System.Diagnostics.Process]::Start($psi)
+      $p.WaitForExit()
+
+      $stdout = $p.StandardOutput.ReadToEnd()
+      $stderr = $p.StandardError.ReadToEnd()
+
+      Write-Host "STDOUT:"
+      Write-Host $stdout
+
+      Write-Host "STDERR:"
+      Write-Host $stderr
+
+      # Dejar esto porque el instalador de VFP manda instalar y retorna (queda instalando en background).
+      Start-Sleep -Seconds 60
+    failOnStderr: true
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: 'Install Visual FoxPro 9 SP1'
+  inputs:
+    targetType: 'inline'
+    script: |
+      $execFile = "C:\CustomNugets\VisualFoxPro9SP1.1.0.0\VFP9SP1.exe"
+      $params = "/q"
+
+      $psi = [System.Diagnostics.ProcessStartInfo]::new($execFile, $params)
+      $psi.WorkingDirectory = "C:\CustomNugets\VisualFoxPro9SP1.1.0.0\"
+      $psi.UseShellExecute = $false
+      $psi.RedirectStandardOutput = $true
+      $psi.RedirectStandardError = $true
+      $p = [System.Diagnostics.Process]::Start($psi)
+      $p.WaitForExit()
+
+      $stdout = $p.StandardOutput.ReadToEnd()
+      $stderr = $p.StandardError.ReadToEnd()
+
+      Write-Host "STDOUT:"
+      Write-Host $stdout
+
+      Write-Host "STDERR:"
+      Write-Host $stderr
+    failOnStderr: true
+    pwsh: true
+
+- task: PowerShell@2
+  # Creamos archivo config.fpw para que al instanciar VFP ya tenga algunos seteos por defecto (por ejemplo que no ejecute Task Pane Manager al abrir VFP)
+  displayName: 'Create config.fpw'
+  inputs:
+    targetType: 'inline'
+    script: |
+      $VFPConfig = @"
+      _STARTUP=
+      PROGCACHE=0
+      "@
+
+      $VFPConfig | Out-File -FilePath "C:\Program Files (x86)\Microsoft Visual FoxPro 9\config.fpw" -Encoding utf8
+    failOnStderr: true
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: 'Switch dataconfig to LocalDB in vfpproj'
+  inputs:
+    targetType: 'inline'
+    pwsh: true
+    script: |
+      $vfpproj = "$(Build.SourcesDirectory)/Organic.BusinessLogic/Organic.Dragonfish.vfpproj"
+      $content = Get-Content $vfpproj -Raw
+      $oldValue = 'dataconfig.sqlexpress.ini'
+      $newValue = 'dataconfig.localdb.ini'
+      
+      if ($content -notmatch [regex]::Escape($oldValue)) {
+          Write-Error "ERROR: No se encontró '$oldValue' en $vfpproj"
+          exit 1
+      }
+      
+      $newContent = $content -replace [regex]::Escape($oldValue), $newValue
+      Set-Content -Path $vfpproj -Value $newContent -NoNewline
+      Write-Host "Cambiado '$oldValue' -> '$newValue' en Organic.Dragonfish.vfpproj"
+
+
+- task: AzurePowerShell@5
+  # Aqui ejecutamos doVFP. Las variables de entorno que utiliza esta tarea es para poder autenticar en Azure y poder obtener un secreto almacenado en Key Vault.
+  # Las variables corresponden a la app creada en Azure llamada 'keyvault-reader' que es la que permite acceder a KeyVault.
+  displayName: 'Run DoVFP'
+  inputs:
+    workingDirectory: '$(Agent.BuildDirectory)'
+    azureSubscription: 'IntegracionesAzureServices'
+    ScriptType: 'InlineScript'
+    azurePowerShellVersion: LatestVersion
+    pwsh: true
+    Inline: |
+      Set-StrictMode -Version Latest
+      $ErrorActionPreference = 'Stop'
+
+      function FreeGB($d){ try{ [math]::Round((Get-PSDrive $d.TrimEnd(':')).Free/1GB,2) }catch{0} }
+
+      $freeC = FreeGB 'C:'; $freeD = FreeGB 'D:'
+      $offDrive = if ($freeC -ge $freeD) { 'C:' } else { 'D:' }
+      Write-Host "Espacio libre -> C: $freeC GB | D: $freeD GB | Offload: $offDrive"
+
+      $ws   = $env:BUILD_SOURCESDIRECTORY   # p.ej. D:\a\1\s
+      $offBase = Join-Path $offDrive "\azp-offload\$(Get-Date -f yyyyMMddHHmmss)"
+      New-Item -ItemType Directory -Force -Path $offBase | Out-Null
+
+      # Caches/Temp a la unidad con más espacio
+      $env:NUGET_PACKAGES        = Join-Path $offBase "nuget\packages"
+      $env:NUGET_HTTP_CACHE_PATH = Join-Path $offBase "nuget\v3-cache"
+      $env:DOTNET_CLI_HOME       = Join-Path $offBase "dotnet"
+      $env:TEMP = $env:TMP       = Join-Path $offBase "tmp"
+      New-Item -ItemType Directory -Force -Path $env:NUGET_PACKAGES,$env:NUGET_HTTP_CACHE_PATH,$env:DOTNET_CLI_HOME,$env:TEMP | Out-Null
+
+      # Reubicar workspace si conviene
+      $mirror = Join-Path $offBase "repo"
+      $wsDrive = [System.IO.Path]::GetPathRoot($ws)
+      $delta = [math]::Round([double]$freeC - [double]$freeD,2)
+      $shouldReRoot = ($wsDrive -eq 'D:\') -and ($freeC -gt 8) -and ($delta -gt 5)
+
+      if ($shouldReRoot)
+      {
+        Write-Host "Reubicando workspace a $mirror y dejando junction en $ws ..."
+        New-Item -ItemType Directory -Force -Path $mirror | Out-Null
+
+        # 1) Copiar el repo
+        & robocopy $ws $mirror /E /COPY:DAT /R:1 /W:1 /NFL /NDL /NP | Out-Null
+
+        # 2) Cambiar ubicación actual para no bloquear $ws
+        Set-Location $offBase
+
+        # 3) Quitar atributos y eliminar contenido de $ws
+        & attrib -r -s -h "$ws" /s /d | Out-Null
+        Get-ChildItem -LiteralPath $ws -Force | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
+
+        # 4) Intentar quitar la carpeta raíz; si no se deja, renombrar
+        Remove-Item -LiteralPath $ws -Force -Recurse -ErrorAction SilentlyContinue
+        if (Test-Path $ws)
+        {
+          $bak = "$ws._bak"
+          if (Test-Path $bak) { Remove-Item -LiteralPath $bak -Force -Recurse -EA SilentlyContinue }
+          Rename-Item -LiteralPath $ws -NewName (Split-Path $bak -Leaf)
+        }
+
+        # 5) Crear la junction en la ruta original
+        if (-not (Test-Path $ws))
+        {
+          cmd /c "mklink /J `"$ws`" `"$mirror`"" | Out-Null
+        }
+        else
+        {
+          # si quedó renombrada a _bak, creamos la junction y luego borramos _bak al final
+          cmd /c "mklink /J `"$ws`" `"$mirror`"" | Out-Null
+        }
+      }
+      else
+      {
+        Write-Host "No se reubica el workspace (no hace falta o no conviene)."
+      }
+
+      # (Opcional) comprimir caches para exprimir espacio
+      cmd /c "compact /c /s:`"$($env:NUGET_PACKAGES)`" /i" | Out-Null
+      cmd /c "compact /c /s:`"$($env:NUGET_HTTP_CACHE_PATH)`" /i" | Out-Null
+      cmd /c "compact /c /s:`"$($env:TEMP)`" /i" | Out-Null
+
+      Write-Host "Antes de ejecutar -> C: $(FreeGB 'C:') GB | D: $(FreeGB 'D:') GB"
+
+      # ===== Ejecutá DOVFP =====
+      Write-Host "`Setting default working folder to: $(Build.SourcesDirectory)"
+      Set-Location "$(Build.SourcesDirectory)"
+
+      $env:AZURE_CLIENT_ID = "${env:AZURE_CLIENT_ID}"
+      $env:AZURE_TENANT_ID = "${env:AZURE_TENANT_ID}"
+      $env:AZURE_CLIENT_SECRET = "${env:AZURE_CLIENT_SECRET}"
+  
+      $mainExe = "dovfp.exe"
+      $mainExeArgs = @("rebuild", "-build_debug 2", "-logdebug 1", "-build_force 1", "-build_show_errors 1", "-project_version $(ProductVersion)", "-cache_nuget_only 1")
+      $cmdDisplay = "$mainExe " + ($mainExeArgs -join ' ')
+
+      # Log del comando ejecutado
+      Write-Host ">> $cmdDisplay`r`n"
+
+      # Ejecución de dovfp
+      $p = Start-Process -FilePath $mainExe -ArgumentList $mainExeArgs -NoNewWindow -Wait -PassThru
+
+      # Capturamos el exitcode y mostramos aviso según el valor del mismo.
+      $ExitCode = $p.ExitCode
+
+      if ($ExitCode -eq 0)
+      {
+        Write-Host "La ejecución fue exitosa."
+      }
+      else
+      {
+        throw "La ejecución de doVFP falló con código de retorno: $ExitCode"
+      }
+
+      Write-Host "Después -> C: $(FreeGB 'C:') GB | D: $(FreeGB 'D:') GB"
+  env:
+    AZURE_CLIENT_ID: $(AZURE_CLIENT_ID)
+    AZURE_TENANT_ID: $(AZURE_TENANT_ID)
+    AZURE_CLIENT_SECRET: $(AZURE_CLIENT_SECRET)
+    PBD1: $(PBD1)
+    PBD2: $(PBD2)
+    PBD3: $(PBD3)
+    PBD4: $(PBD4)
+    S1: $(S1)
+    S2: $(S2)
+    S31: $(S31)
+    S41: $(S41)
+
+- task: PowerShell@2
+  displayName: 'Show ERR file content'
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "`Setting default working folder to: $(Build.SourcesDirectory)"
+      Set-Location "$(Build.SourcesDirectory)"
+
+      $pathToErr = '$(objPath)'
+      if (Test-Path $pathToErr)
+      {
+        $errFiles = Get-ChildItem -Path $pathToErr -Filter "*.err"
+
+        foreach($file in $errFiles)
+        {
+          Write-Host "Contenido de $($file)..."
+          $content = Get-Content -Path $file -Raw
+          Write-Host $content
+        }
+      }
+      else
+      {
+        Write-Host "No existe la ruta donde se almacenan los archivos ERR." -ForegroundColor Yellow
+      }
+    failOnStderr: true
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: 'Start SQL LocalDB'
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "========================================" -ForegroundColor Cyan
+      Write-Host "  Iniciando SQL LocalDB" -ForegroundColor Cyan
+      Write-Host "========================================" -ForegroundColor Cyan
+      
+      # Verificar si LocalDB está instalado
+      $localdbPath = Get-Command sqllocaldb -ErrorAction SilentlyContinue
+      if (-not $localdbPath) {
+          throw "ERROR: sqllocaldb no está instalado en el agente"
+      }
+      
+      # Iniciar la instancia
+      Write-Host "Iniciando instancia MSSQLLocalDB..."
+      sqllocaldb start MSSQLLocalDB
+      
+      if ($LASTEXITCODE -ne 0) {
+          Write-Host "Instancia no existe, creándola..."
+          sqllocaldb create MSSQLLocalDB
+          sqllocaldb start MSSQLLocalDB
+      }
+      
+      # Mostrar info
+      Write-Host ""
+      Write-Host "Estado de LocalDB:" -ForegroundColor Green
+      sqllocaldb info MSSQLLocalDB
+      
+      # Verificar conexión
+      Write-Host ""
+      Write-Host "Verificando conexión..."
+      sqlcmd -S "(localdb)\MSSQLLocalDB" -Q "SELECT @@VERSION" -b
+      
+      if ($LASTEXITCODE -ne 0) {
+          throw "ERROR: No se pudo conectar a LocalDB"
+      }
+      
+      Write-Host ""
+      Write-Host "✓ LocalDB iniciado y verificado correctamente" -ForegroundColor Green
+    failOnStderr: false
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: 'Run ADN Implant'
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "========================================" -ForegroundColor Cyan
+      Write-Host "  Ejecutando ADN Implant" -ForegroundColor Cyan
+      Write-Host "========================================" -ForegroundColor Cyan
+      
+      Set-Location "$(Build.SourcesDirectory)"
+      
+      # Verificar que dataconfig.ini tiene LocalDB configurado
+      $dataconfigPath = "Organic.BusinessLogic/bin/EXE/dataconfig.ini"
+      Write-Host "Contenido de dataconfig.ini:"
+      Get-Content $dataconfigPath
+      
+      # Ejecutar ADN Implant
+      Write-Host ""
+      Write-Host "Ejecutando run-adnImplant.ps1..."
+      .\run-adnImplant.ps1
+      
+      $ExitCode = $LASTEXITCODE
+      
+      if ($ExitCode -ne 0) {
+          throw "ERROR: ADN Implant falló con código: $ExitCode"
+      }
+      
+      # Verificar bases de datos creadas
+      Write-Host ""
+      Write-Host "Bases de datos creadas:" -ForegroundColor Green
+      sqlcmd -S "(localdb)\MSSQLLocalDB" -Q "SELECT name FROM sys.databases WHERE name LIKE '%NUCLEO%' ORDER BY name" -b
+      
+      if ($LASTEXITCODE -ne 0) {
+          throw "ERROR: No se pudieron verificar las bases de datos"
+      }
+      
+      Write-Host ""
+      Write-Host "✓ ADN Implant ejecutado correctamente" -ForegroundColor Green
+    failOnStderr: false
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: 'Show ADN Implant Logs'
+  condition: always()
+  inputs:
+    targetType: 'inline'
+    script: |
+      $logPath = "$(Build.SourcesDirectory)/Organic.BusinessLogic/bin/EXE/Log"
+      
+      if (Test-Path $logPath) {
+          Write-Host "========================================" -ForegroundColor Cyan
+          Write-Host "  Logs de ADN Implant" -ForegroundColor Cyan
+          Write-Host "========================================" -ForegroundColor Cyan
+          
+          Get-ChildItem -Path $logPath -Filter "*.log" | ForEach-Object {
+              Write-Host ""
+              Write-Host "=== $($_.Name) ===" -ForegroundColor Yellow
+              Get-Content $_.FullName -Tail 100
+          }
+      } else {
+          Write-Host "No se encontró carpeta de logs: $logPath" -ForegroundColor Yellow
+      }
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: 'Run Tests'
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "========================================" -ForegroundColor Cyan
+      Write-Host "  Ejecutando Tests" -ForegroundColor Cyan
+      Write-Host "========================================" -ForegroundColor Cyan
+      
+      Set-Location "$(Build.SourcesDirectory)"
+      
+      # Crear carpeta TestResults si no existe
+      $testResultsPath = "$(Build.SourcesDirectory)/Organic.Tests/TestResults"
+      if (-not (Test-Path $testResultsPath)) {
+          New-Item -ItemType Directory -Path $testResultsPath -Force | Out-Null
+      }
+      
+      Write-Host "Ejecutando dovfp test..."
+      & "dovfp.exe" test -test_path Tests -test_format junit -test_parallel 0 -test_verbose 1 -test_timeout 10
+      
+      $ExitCode = $LASTEXITCODE
+      
+      # Listar archivos de resultados generados
+      Write-Host ""
+      Write-Host "Archivos de resultados generados:"
+      Get-ChildItem -Path "$(Build.SourcesDirectory)" -Filter "*.xml" -Recurse | Where-Object { $_.DirectoryName -like "*TestResults*" } | ForEach-Object { Write-Host $_.FullName }
+      
+      if ($ExitCode -ne 0) {
+          Write-Host "##vso[task.logissue type=error]Tests fallaron con código: $ExitCode"
+          throw "ERROR: Tests fallaron con código de retorno: $ExitCode"
+      }
+      
+      Write-Host ""
+      Write-Host "✓ Tests ejecutados correctamente" -ForegroundColor Green
+    failOnStderr: false
+    pwsh: true
+
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results'
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TestResults/**/*.xml'
+    searchFolder: '$(Build.SourcesDirectory)'
+    mergeTestResults: true
+    failTaskOnFailedTests: true
+    testRunTitle: 'Organic.Dragonfish Tests - $(Build.BuildNumber)'
+    publishRunAttachments: true
+  condition: always()
+
+# ============================================
+# FIN DE TESTS - EMPAQUETADO
+# ============================================
+
+- task: PowerShell@2
+  displayName: 'Verify Source Files for NSIS Installer'
+  inputs:
+    targetType: 'inline'
+    pwsh: true
+    script: |
+      $sourcePath = "$(Build.SourcesDirectory)/Organic.BusinessLogic/bin/Exe"
+      
+      Write-Host "═══════════════════════════════════════════════════════════════════" -ForegroundColor Cyan
+      Write-Host " VERIFICACIÓN DE ARCHIVOS FUENTE PARA INSTALADOR NSIS" -ForegroundColor White
+      Write-Host "═══════════════════════════════════════════════════════════════════" -ForegroundColor Cyan
+      Write-Host ""
+      Write-Host "Ruta de origen configurada: $sourcePath" -ForegroundColor White
+      Write-Host ""
+      
+      if (Test-Path $sourcePath) {
+          $files = Get-ChildItem -Path $sourcePath -Recurse -File
+          $totalSize = ($files | Measure-Object -Property Length -Sum).Sum
+          $totalSizeMB = [math]::Round($totalSize / 1MB, 2)
+          
+          Write-Host "✓ Directorio encontrado" -ForegroundColor Green
+          Write-Host "  Total de archivos: $($files.Count)" -ForegroundColor Cyan
+          Write-Host "  Tamaño total: $totalSizeMB MB" -ForegroundColor Cyan
+          Write-Host ""
+          
+          # Mostrar algunos archivos clave
+          $keyFiles = @("*.exe", "*.dll", "*.config")
+          foreach ($pattern in $keyFiles) {
+              $matching = $files | Where-Object { $_.Name -like $pattern } | Select-Object -First 5
+              if ($matching) {
+                  Write-Host "  Archivos $pattern encontrados:" -ForegroundColor Yellow
+                  foreach ($file in $matching) {
+                      Write-Host "    - $($file.Name)" -ForegroundColor DarkGray
+                  }
+              }
+          }
+      } else {
+          Write-Host "✗ ERROR: No se encontró el directorio de origen" -ForegroundColor Red
+          Write-Host "  Ruta esperada: $sourcePath" -ForegroundColor Yellow
+          exit 1
+      }
+      
+      Write-Host ""
+      Write-Host "La compilación de NSIS usará esta ruta como origen de archivos." -ForegroundColor Cyan
+
+- task: nsis@3
+  displayName: 'Compile NSIS Installer'
+  inputs:
+    scriptFile: 'Organic.Installer/InstaladorDragonFish.nsi'
+    arguments: '/DVERSION=$(ProductVersion) /DRUTA_PRODUCTO_ORIGEN_PIPELINE=$(Build.SourcesDirectory)/Organic.BusinessLogic/bin/Exe /DRUTA_PRODUCTO_DESTINO_PIPELINE=$(Build.ArtifactStagingDirectory)'
+    justInclude: 'no'
+
+- task: PowerShell@2
+  displayName: 'Verify NSIS Installer Output'
+  inputs:
+    targetType: 'inline'
+    pwsh: true
+    script: |
+      # Se cambia para que en pipeline, NSIS genere el instalador en la misma ruta de destino que pasamos como parámetro
+      $outputDir = "$(Build.ArtifactStagingDirectory)"
+      
+      Write-Host "═══════════════════════════════════════════════════════════════════" -ForegroundColor Cyan
+      Write-Host " VERIFICACIÓN DE INSTALADOR NSIS GENERADO" -ForegroundColor White
+      Write-Host "═══════════════════════════════════════════════════════════════════" -ForegroundColor Cyan
+      Write-Host ""
+      Write-Host "Directorio de salida: $outputDir" -ForegroundColor White
+      Write-Host "Versión del producto: $(ProductVersion)" -ForegroundColor White
+      Write-Host ""
+      
+      if (Test-Path $outputDir) {
+          # Buscar archivos de instalador (que contengan "Install" en el nombre)
+          $installers = Get-ChildItem "$outputDir\*.exe" -ErrorAction SilentlyContinue | Where-Object { $_.Name -like "*Install*" }
+          
+          if ($installers) {
+              Write-Host "✓ Instalador(es) generado(s) exitosamente:" -ForegroundColor Green
+              Write-Host ""
+              
+              foreach ($installer in $installers) {
+                  $sizeMB = [math]::Round($installer.Length / 1MB, 2)
+                  Write-Host "  📦 $($installer.Name)" -ForegroundColor White
+                  Write-Host "     Tamaño: $sizeMB MB" -ForegroundColor Cyan
+                  Write-Host "     Ruta: $($installer.FullName)" -ForegroundColor DarkGray
+                  Write-Host "     Creado: $($installer.CreationTime)" -ForegroundColor DarkGray
+                  
+                  # Verificar que el nombre contiene la versión esperada
+                  if ($installer.Name -like "*$(ProductVersion)*") {
+                      Write-Host "     ✓ Versión correcta en nombre de archivo" -ForegroundColor Green
+                  } else {
+                      Write-Host "     ⚠︝ La versión $(ProductVersion) no aparece en el nombre" -ForegroundColor Yellow
+                  }
+                  Write-Host ""
+              }
+              
+              # Guardar información del instalador principal para pasos posteriores
+              $mainInstaller = $installers | Select-Object -First 1
+              Write-Host "##vso[task.setvariable variable=NSISInstallerPath]$($mainInstaller.FullName)"
+              Write-Host "##vso[task.setvariable variable=NSISInstallerName]$($mainInstaller.Name)"
+              Write-Host "##vso[task.setvariable variable=NSISOutputDir]$outputDir"
+              
+          } else {
+              Write-Host "✗ ERROR: No se encontraron instaladores NSIS" -ForegroundColor Red
+              Write-Host ""
+              
+              # Mostrar todos los archivos .exe para debug
+              $allExes = Get-ChildItem "$outputDir\*.exe" -ErrorAction SilentlyContinue
+              if ($allExes) {
+                  Write-Host "Archivos .exe encontrados (pero sin 'Install' en el nombre):" -ForegroundColor Yellow
+                  foreach ($file in $allExes) {
+                      Write-Host "  - $($file.Name) ($([math]::Round($file.Length/1KB,1)) KB)" -ForegroundColor Yellow
+                  }
+                  Write-Host ""
+                  Write-Host "Nota: Se esperaba encontrar archivos con 'Install' en el nombre" -ForegroundColor Cyan
+              } else {
+                  Write-Host "No se encontraron archivos .exe en: $outputDir" -ForegroundColor Yellow
+                  
+                  # Mostrar contenido del directorio
+                  $allFiles = Get-ChildItem $outputDir -ErrorAction SilentlyContinue
+                  if ($allFiles) {
+                      Write-Host ""
+                      Write-Host "Contenido del directorio:" -ForegroundColor Yellow
+                      foreach ($file in $allFiles | Select-Object -First 10) {
+                          Write-Host "  - $($file.Name)" -ForegroundColor Yellow
+                      }
+                      if ($allFiles.Count -gt 10) {
+                          Write-Host "  ... y $($allFiles.Count - 10) archivos más" -ForegroundColor Yellow
+                      }
+                  }
+              }
+              
+              exit 1
+          }
+      } else {
+          Write-Host "✗ ERROR: El directorio de salida no existe: $outputDir" -ForegroundColor Red
+          exit 1
+      }
+
+- task: PowerShell@2
+  displayName: 'Create SFX EXE'
+  inputs:
+    targetType: 'inline'
+    script: |
+      try
+      {
+        $origen = '$(appPath)'
+        $nuevaCarpeta = "$(vfpAppName)"
+        $padre = Split-Path $origen -Parent
+        $destino = Join-Path $padre $nuevaCarpeta
+
+        Write-Host "Origen: $($origen)"
+        Write-Host "Nueva Carpeta: $($nuevaCarpeta)"
+
+        Rename-Item -Path $origen -NewName $nuevaCarpeta -ErrorAction Stop
+
+        Write-Host "Carpeta [$($origen)] renombrada a ["$($nuevaCarpeta)"]"
+      }
+      catch
+      {
+        Write-Host "Error al renombrar carpeta: $($_.Exception.Message)"
+        exit 1
+      }
+
+      $sourceFolder = $padre # "$(Build.SourcesDirectory)\bin"
+      $sfxBaseName = "$(nugetPackageName)"
+      $outputPath = "$(Build.ArtifactStagingDirectory)"
+      $sfxExe = "$outputPath/$sfxBaseName.exe"
+      $7ZipPath = "C:\Program Files\7-Zip\7z.exe"
+      
+      & "$7ZipPath" a -t7z -sfx "$sfxExe" "$sourceFolder/*"
+
+      Write-Host "EXE autoextraíble creado: $sfxExe"
+    pwsh: true
+    failOnStderr: true
+
+- template: FirmaDigital/CodeSign-Sign.yml@templates
+  parameters:
+    fileName: $(Build.ArtifactStagingDirectory)/$(nugetPackageName).exe
+    tenantId: $(TenantId)
+    keyVaultURL: $(KeyVaultURL)
+    applicationId: $(ApplicationId)
+    clientSecret: $(ClientSecret)
+    certificateName: $(CertificateName)
+    timeStampServer: $(TimestampServer)
+    keyVaultName: $(codeSignKeyVaultName)
+    azureSubscription: 'IntegracionesAzureServices'
+
+- task: AzureCLI@2
+  displayName: 'Delete Previous NSIS Installers from Blob Storage'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  inputs:
+    azureSubscription: 'IntegracionesAzureServices'
+    scriptType: 'pscore'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      # Listar y eliminar instaladores anteriores con patrón Dragonfish_Install_*.exe
+      $blobs = az storage blob list `
+        --account-name $(StorageAccount) `
+        --container-name $(Blob) `
+        --prefix "dragonfish/Dragonfish_Install_" `
+        --query "[?ends_with(name, '.exe')].name" `
+        --output tsv `
+        --auth-mode login
+
+      if ($blobs) {
+        Write-Host "Eliminando instaladores anteriores:" -ForegroundColor Yellow
+        foreach ($blob in $blobs -split "`n") {
+          if ($blob.Trim()) {
+            Write-Host "  - $blob" -ForegroundColor DarkGray
+            az storage blob delete `
+              --account-name $(StorageAccount) `
+              --container-name $(Blob) `
+              --name $blob `
+              --auth-mode login
+          }
+        }
+        Write-Host "✓ Instaladores anteriores eliminados" -ForegroundColor Green
+      } else {
+        Write-Host "No se encontraron instaladores anteriores para eliminar" -ForegroundColor Cyan
+      }
+
+- task: AzureCLI@2
+  displayName: 'Upload SFX EXE to Azure Blob Storage'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  inputs:
+    azureSubscription: 'IntegracionesAzureServices'
+    scriptType: 'pscore'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az storage blob upload `
+        --account-name $(StorageAccount) `
+        --container-name $(Blob) `
+        --file "$(Build.ArtifactStagingDirectory)/$(nugetPackageName).exe" `
+        --name dragonfish/$(nugetPackageName).exe `
+        --overwrite true `
+        --auth-mode login
+
+- task: AzureCLI@2
+  displayName: 'Upload NSIS Installer to Azure Blob Storage'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  inputs:
+    azureSubscription: 'IntegracionesAzureServices'
+    scriptType: 'pscore'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az storage blob upload `
+        --account-name $(StorageAccount) `
+        --container-name $(Blob) `
+        --file "$(NSISInstallerPath)" `
+        --name dragonfish/$(NSISInstallerName) `
+        --overwrite true `
+        --auth-mode login
+
