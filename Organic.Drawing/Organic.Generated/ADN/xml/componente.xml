@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<migrar2028>
+		<componente>DisenoImpresion</componente>
+		<descripcion>Componente diseno de impresion</descripcion>
+		<graba>true</graba>
+		<entidad>DisenoImpresion</entidad>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<orden>1</orden>
+		<combinacion/>
+		<componentesrelacionados/>
+		<herencia/>
+	</migrar2028>
+</VFPData>
