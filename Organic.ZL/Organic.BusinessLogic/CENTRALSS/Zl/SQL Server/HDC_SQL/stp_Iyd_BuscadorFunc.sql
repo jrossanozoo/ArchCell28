@@ -1,0 +1,71 @@
+USE [ZL]
+GO
+
+/****** Object:  StoredProcedure [ZL].[stp_IyD_BuscadorFunc]    Script Date: 03/12/2013 12:23:39 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[ZL].[stp_IyD_BuscadorFunc]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [ZL].[stp_IyD_BuscadorFunc]
+GO
+
+USE [ZL]
+GO
+
+/****** 
+  Object:  StoredProcedure [ZL].[stp_IyD_BuscadorFunc]    
+  Script Date: 03/12/2013 12:23:39 
+  by: Daniel Correa
+******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [ZL].[stp_IyD_BuscadorFunc]
+  @Texto varchar(500)
+  , @TipoBusqueda smallint
+
+AS
+BEGIN
+
+DECLARE @SQLFINAL VARCHAR(MAX);
+DECLARE @BUSQUEDA NVARCHAR(500);
+SET @SQLFINAL = ''; /*QUERY A ARMAR*/
+SET @BUSQUEDA = @Texto; /*TRANSFORMAMOS EL PARAMETRO TEXTO A NVARCHAR*/
+SET @BUSQUEDA = REPLACE(LTRIM(RTRIM(@BUSQUEDA)),'  ',' '); /*REEMPLAZAMOS ESPACIOS MULTIPLES POR UNO SOLO*/
+
+IF @BUSQUEDA <> '' /*TEXTO LLENO DE ESPACIOS*/
+  BEGIN
+    /*SETEAMOS EL CATALOGO A USAR*/
+    
+    IF @TipoBusqueda = 1
+      /*DEBE CONTENER TODAS LA PALABRAS*/
+      BEGIN
+        SET @BUSQUEDA = REPLACE(@BUSQUEDA, ' ', ' AND ')
+      END
+    ELSE
+      BEGIN
+        IF @TipoBusqueda = 0
+          /*DEBE CONTENER AL MENOS UNA PALABRA*/
+          BEGIN
+            SET @BUSQUEDA = REPLACE(@BUSQUEDA, ' ', ' OR ')
+          END
+          ELSE 
+          /*PARAMETRO ERRONEO NI 1 NI 0 SE TOMA 1 POR DEFAULT*/
+          BEGIN
+            SET @BUSQUEDA = REPLACE(@BUSQUEDA, ' ', ' AND ')
+          END
+      END  
+    /*CONSTRUIMOS EL QUERY FINAL*/
+    SET @SQLFINAL = 'SELECT ''FUNCIONALIDAD'' AS REGISTRO, F.CODIGO, F.NOMBRE, F.DESCRIP, F.OBS, KEY_TBL.RANK FROM ZL.FCOMER AS F '
+    SET @SQLFINAL = @SQLFINAL + 'INNER JOIN CONTAINSTABLE(ZL.FCOMER, *, ''' + @BUSQUEDA + ''') AS KEY_TBL '
+    SET @SQLFINAL = @SQLFINAL + 'ON F.CODIGO = KEY_TBL.[KEY] ORDER BY KEY_TBL.[RANK] DESC'
+
+    --SELECT @SQLFINAL;
+    /*LO EJECUTAMOS Y DEVOLVEMOS EL RECORDSET LOGRADO*/
+    EXEC (@SQLFINAL)
+  END
+END
+	
+GO
+
+

@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Alta</valor>
+		<cdefault>Posicion</cdefault>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Media</valor>
+		<cdefault></cdefault>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>Baja</valor>
+		<cdefault></cdefault>
+		<orden>3</orden>
+	</xml>
+
+</VFPData>

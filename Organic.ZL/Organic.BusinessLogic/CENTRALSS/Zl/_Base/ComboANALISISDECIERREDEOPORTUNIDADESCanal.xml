@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Directo</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>Directo</retorno>		
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Indirecto</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>Indirecto</retorno>		
+		<orden>2</orden>
+	</xml>
+
+
+</VFPData>

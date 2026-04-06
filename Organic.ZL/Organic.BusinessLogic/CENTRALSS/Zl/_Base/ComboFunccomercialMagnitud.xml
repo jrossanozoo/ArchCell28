@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Muy chico</valor>
+		<cdefault>Posicion</cdefault>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Chico</valor>
+		<cdefault></cdefault>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>Mediano</valor>
+		<cdefault></cdefault>
+		<orden>3</orden>
+	</xml>
+	<xml>
+		<valor>Grande</valor>
+		<cdefault></cdefault>
+		<orden>4</orden>
+	</xml>
+	<xml>
+		<valor>Muy grande</valor>
+		<cdefault></cdefault>
+		<orden>5</orden>
+	</xml>	
+</VFPData>

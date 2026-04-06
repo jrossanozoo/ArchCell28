@@ -1,0 +1,638 @@
+<?xml version = "1.0" encoding="utf-8" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="row" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:attribute name="entidad" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="40"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="descripcion" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="60"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="funcionalidades" use="optional">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="2147483647"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<row entidad="HALLAZGO" descripcion="Hallazgo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOHALLAZGO" descripcion="Tipo de acción" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ESTADOHALLAZGO" descripcion="Estado Hallazgo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCAULA" descripcion="Aulas del Centro de Entrenamiento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCCARGOS" descripcion="DyC - Cargos Tipificádos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCHORARIOS" descripcion="DyC - Horarios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCCAPACITACIONES" descripcion="Cursos y Capacitaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCCALENDARIO" descripcion="Evento calendario" funcionalidades="&lt;TRANSFERALTAS&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="LEGAJO" descripcion="Legajo de Personal" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SECTOR" descripcion="Sectores de Zoo Logic" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="TIPIFICACIONV2" descripcion="Tipificación de incidentes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ESTADOV2" descripcion="Estados" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="CONTRATOV2" descripcion="Condiciones de contratación" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="USOV2" descripcion="Usos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CLASIFICACIONV2" descripcion="Clasificaciones" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="PUESTORRHH" descripcion="Puestos en Sectores de Zoo Logic" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="AFJP" descripcion="AFJP" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="OSOCIAL" descripcion="Obra Social ó Prepaga" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="ECIVIL" descripcion="Estado Civil" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="NACIONALIDAD" descripcion="Paises" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="ESCOLARIDAD" descripcion="Escolaridad" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="ESTADOFORMACION" descripcion="Estado de Formación" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="TITULOSFORMACION" descripcion="Títulos de Formación" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="LEGAJOOPS" descripcion="Usuarios del Sistema ZL" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHAUTONO" descripcion="Autonomía de Tarea" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="RRHHCOMPL" descripcion="Complejidad de Tarea" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="RRHHCONDLAB" descripcion="Condición Laboral" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="TAREA" descripcion="Tareas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="OPORTUNIDAD" descripcion="Oportunidades Comerciales" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="REQUISITORRHH" descripcion="Requisitos para el Puesto de la Organización" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="RUBROS" descripcion="Rubros" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="PRESUPUESTOS" descripcion="Presupuestos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;GUARDARCOMO&gt;"/>
+	<row entidad="LISTADEPRECIOS" descripcion="COM - Listas de precios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DIRECCIONES" descripcion="Direcciones" funcionalidades="&lt;AUDITORIA&gt;&lt;CODIGOSUGERIDO:.T.&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="CONTACTOS" descripcion="Contactos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;AUDITORIA&gt;&lt;CODIGOSUGERIDO:.T.&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="ROLES" descripcion="Cargos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="AREASCLIENTE" descripcion="Areas Cliente" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="TIPODIRECCIONES" descripcion="Tipo de Direcciones" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOTELEFONO" descripcion="Tipo de Teléfonos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="UBICACION" descripcion="Ubicaciones" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPSMARCAS" descripcion="Marcas" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="PROVEEDOR" descripcion="Proveedores" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="REGEVALPROV" descripcion="SGC - Registro de Evaluación de Proveedores" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="EVALPROVTIPOINC" descripcion="SGC - Tipo de Incidentes en la Evaluación de Proveedores" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPORTUNIDADTIPOS" descripcion="Tipos de Oportunidades" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="OPORTUNIDADORIGENES" descripcion="Origenes de las Oportunidades" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ESCALASSALARIO" descripcion="Escalas Salariales" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="TITULOS" descripcion="Títulos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="OPORTUNIDADASIGN" descripcion="Asignación de Oportunidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MOTAUSENCIA" descripcion="Motivos de justificaciones y compensaciones" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="RENDICIONGASTOS" descripcion="Rendición de Gastos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CLASIFICACIONGASTO" descripcion="ADM - Clasificación de Gastos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;CODIGOSUGERIDO:.T.&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;NOREST&gt;"/>
+	<row entidad="SUBTIPIFICACIONV2" descripcion="Sub Tipificación de casos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="BUSQUEDARRHH" descripcion="Formulario de Busquedas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOCOMPROBANTE" descripcion="ADM - Tipos de Comprobantes" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="AUTORIZACIONGASTOS" descripcion="Autorización de Gastos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PAGOGASTOS" descripcion="ADM - Pago de Gastos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="AUTORIZACIONES" descripcion="Autorizaciones de Registros" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMACCIONES" descripcion="ADM - Acciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOMAIL" descripcion="Tipo de Mail" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="HOJADESERVICIO" descripcion="Programacion de Hoja de Servicio" funcionalidades="&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;FRMMODAL&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDATIPACCION" descripcion="MDA - Tipos de Acciones" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDAACCIONES" descripcion="MDA - Acciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="OTTAREA" descripcion="MDA - Tareas de Servicios" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="SERVICIOOT" descripcion="Servicios" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="HORAS" descripcion="Horas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MINUTOS" descripcion="Minutos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="TOLERANCIAHS" descripcion="MDA - Tolerancia de Horario de Visita Hoja de Servicio" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="HSERVICIOCONTROL" descripcion="Control de Hoja de Servicio" funcionalidades="&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MEDIOSDEPAGOVTA" descripcion="Medios de Pago de Venta" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCDENUNCIA" descripcion="Formulario de registro de hallazgos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCTIPODENUNCIA" descripcion="Tipo de hallazgo" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCACCIONES" descripcion="SGC - Actividades de las Acciones del SGC" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCTIPACC" descripcion="SGC - Tipo de Acciones" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCACCIONESSGC" descripcion="SGC - Acciones del Sistema de Gestión de la Calidad" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDAINCMDA" descripcion="Incidentes" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="MDATAREASMDA" descripcion="Tareas de Zoo Logic" funcionalidades="&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDATIPOINTERACCION" descripcion="Tipo de interacción con el cliente" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="MDACOMPCIERRETAREAS" descripcion="Comprobantes de Cierre de Tareas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="RRHHTIPOASIGVACACIONES" descripcion="Tipo de Asignaciones Vacaciones" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="ANNOS" descripcion="Período" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHREGVACACIONES" descripcion="Registro de Vacaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TALONARIO" descripcion="Talonario" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMTIPODETAREA" descripcion="Tipo de tareas" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMEVENTOSCOM" descripcion="Eventos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="COMTIPOEVENTO" descripcion="Tipo de Evento" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="MDAMSGSERIE" descripcion="MDA - Mensajes Serie" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDAMSGCLIENTE" descripcion="MDA - Mensajes Cliente" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCTURNO" descripcion="DyC - Turnos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMFORMULARIOADHESION" descripcion="COM - Registro de Formularios de Adhesión" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPSTIPOBIEN" descripcion="Tipo de bien" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPSBIENESZL" descripcion="Bienes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPSTIPODOCUMENTOPLANPC" descripcion="Tipo Documento" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPSINVENTARIO" descripcion="Conjunto de bienes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPSASIGNACIONBIENESZL" descripcion="Asignación de bienes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCCAUSAACCION" descripcion="SGC - Causas de los Incidentes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="PRODUCTOZL" descripcion="Productos Zoo Logic" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="VERSIONPRODUCTOSZL" descripcion="Versión de Productos ZL" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDTAREASIYD" descripcion="IyD - Tareas de Zoo Logic" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPSDOCUMENTOSCOMPRA" descripcion="Documentos de Compra" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPSTAREAS" descripcion="Tareas de Zoo Logic" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPSFAMILIABIEN" descripcion="Familia de Bienes" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="BASEDEDATOS" descripcion="Base de Datos" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IMPIMPLEMENTACION" descripcion="IMP - Implementaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IMPTIPOIMP" descripcion="IMP - Tipo de implementacion" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IMPTAREA" descripcion="Tareas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IMPTIPOTAREA" descripcion="IMP - Tipo de Tareas" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLRUTEOCOLASATENCION" descripcion="Asignación de Colas de Atención" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLCOLASATENCION" descripcion="Colas de Atención" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MAILDELOGDESERIE" descripcion="Seguimiento de E-Host" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDADERIVACIONESTADOS" descripcion="MDA - Derivación de Estados" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMAUTORIZAATENCIONMDA" descripcion="Permisos de Atención y Códigos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCACCIONESACTIVIDADES" descripcion="SGC - Acciones del Sistema de Gestión de la Calidad" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLCLIENTES" descripcion="Clientes" funcionalidades="&lt;AUDITORIA&gt;&lt;CODIGOSUGERIDO:.T.&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZLRAZONSOCIALES" descripcion="Razones sociales" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZLITEMSSERVICIOS" descripcion="Items de Servicios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZLISMODULO" descripcion="Módulos de los productos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLISARTICULOS" descripcion="Artículos del Servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLSERIES" descripcion="Series" funcionalidades="&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZLASIGESTADOSRZADM" descripcion="Asignacion de Estados a la RZ ADM" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLASIGESQUECOMISIO" descripcion="Asignación de esquemas de comisiones a razones sociales" funcionalidades="&lt;NOREST&gt;"/>
+	<row entidad="SGCINCIDENTESYQSR" descripcion="Análisis de QSR" funcionalidades="&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CONACCIONCONEX" descripcion="COM - Acciones de Conexión" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLSITUACIONFISCAL" descripcion="Situaciones Fiscales" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="AGENTEERA" descripcion="Participantes de otros canales" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMPRESUPITEMS" descripcion="Observaciones de Presupuesto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLOBJETIVOSORGANIZACION" descripcion="Objetivos de la Organización" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDAREGISTROTELEFONICOGUARDIAS" descripcion="Registro telefónico de guardias" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="MDAREGACCGUARDIA" descripcion="Registro de acciones de guardias" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDATIPACCIONREGGUARDIA" descripcion="Tipo de Acciones" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="REGIMENCOMISIONES" descripcion="Regimen de Comisiones" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMISIONISTA" descripcion="Comisionistas" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ESQUEMACOMISIONAL" descripcion="Esquema de Comisiones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLCODIGOMODULO" descripcion="Asignación de posiciones de módulos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;GUARDARCOMO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DISENOIMPRESION" descripcion="Diseño de salida" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;GUARDARCOMO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;EDICIONPARCIAL&gt;&lt;NOREST&gt;"/>
+	<row entidad="MODIFICACIONPRECIOS" descripcion="Modificación de precios" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;FRMMODAL&gt;&lt;ANULABLE&gt;&lt;NOREST&gt;"/>
+	<row entidad="PROVINCIA" descripcion="Provincias" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="NUMERACIONES" descripcion="Numeraciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RELACIONTIIS" descripcion="Asociación entre Item de servicio y serie del TI" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMMOTIVOPERDIDA" descripcion="Motivo de Cierre de Oportunidad" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCREGISTROASISTENTES" descripcion="Registro de Asistentes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLSERVICIOSLOTE" descripcion="Alta de Items de Servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZLPLANEVFORH" descripcion="Actividades de formación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLREGISTASISTENCIACAP" descripcion="Registro de asistencia a capacitaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDAREGISTROESCUCHAS" descripcion="Registro de monitoreo de calidad" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDAITEMEVALESCTEL" descripcion="Item de monitoreo de calidad" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMCIERREOPORTUNIDADES" descripcion="Cierre de Oportunidad" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLTIPOUSUARIOZL" descripcion="Tipo de Usuario ZL" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDADESCUENTOHS" descripcion="Hoja de Servicio Descuentos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHASIGESCLEG" descripcion="Asignación Escalas a Legajos de RRHH" funcionalidades="&lt;NOREST&gt;"/>
+	<row entidad="COMCIERREOPORTUNIDADESATC" descripcion="Aprobación de cierre de oportunidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLSERVICIOSLOTEBAJA" descripcion="Baja de Items de Servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZLEVALCAPPLANFORM" descripcion="Registro de evaluación de capacitaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLSERIESTI" descripcion="SeriesTI" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="COMESTADOSOPORTUNIDADEECC" descripcion="Estados sugeridos de las Oportunidades" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMTAREASEECC" descripcion="Tareas comerciales" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMASIGITEMSERESQCOM" descripcion="Asignación de esquemas de comisiones a ítems de servicios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="DIRECCIONESDEDESCARGA" descripcion="Direcciones de descarga" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PUBLSERVIDORESCOMUNICACIONES" descripcion="Publicación de configuracion de serv de comunicacion" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SERVIDORESZLZ" descripcion="Servidores de alojamiento de Zoologic_zoo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CONFSERVIDORESCOMUNICACIONES" descripcion="Configuracion de servidores comunicaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SERVIDORESCOMUNICACIONES" descripcion="Servidores de comunicaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDALEGUSUARIOTECNOVOZ" descripcion="Asociación Usuario ZL y Plataforma de atención" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDAGRUPOEVALESCTEL" descripcion="Grupos de monitoreos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MISIONVISIONVALORES" descripcion="Misión - Visión - Valores" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCSTATUSOBJETIVO" descripcion="SGC - Status del Objetivo" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="KPIZOOLOGIC" descripcion="KPI" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLALTAGRUPOCOM" descripcion="Alta de grupo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="GRUPOCOMUNICACION" descripcion="Grupo de comunicación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFSOLICITIDSERVICIO" descripcion="INF - Solicitud de Servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOSOLICITUDSERVICIO" descripcion="INF - Tipo Solicitud de Servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLASIGCHECKLINE" descripcion="Asignación de Serie a Contacto para CheckLine" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFINCIDENTE" descripcion="INF - Gestión de Incidentes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFSUBTIPOINCIINFRA" descripcion="INF - Sub Tipo de Incidente" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFTIPOINCIINFRA" descripcion="INF - Tipo de Incidente" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="HSERTIPODESCUEN" descripcion="Tipo descuento de Hoja de Servicio" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOARTICULOITEMSERVICIO" descripcion="Tipo de Artículo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOMODULOS" descripcion="Tipo de Módulos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="ZLBAJAGRUPOCOM" descripcion="Baja de grupo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMCENTROCOSTOCPA" descripcion="ADM - Centros de Costos de Compras" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMRUBROCPA" descripcion="ADM - Rubros de Compras" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMCATEGORIASCPA" descripcion="ADM - Categorías de Compras" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMTIPOSCPA" descripcion="ADM - Tipos de Compras" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMIVASCPA" descripcion="ADM - Tipos de IVA" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMARTICPA" descripcion="ADM - Artículos de Compra" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDSWMULTI" descripcion="ScrumWorks - Multiplicador de Proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDACOMPRECEPMATERIALES" descripcion="Comprobante de Recepción de Materiales" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDATIPOMATERIALES" descripcion="MDA - Tipo de Materiales" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DISENOIMPO" descripcion="Diseño de Importación" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="DISENOEXPO" descripcion="Diseño de exportación" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;EDICIONPARCIAL&gt;&lt;OCULTARNODOEXPO&gt;"/>
+	<row entidad="CONDICIONIMPO" descripcion="Condiciones de exclusión" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="FORMATOEXPORTACION" descripcion="Formatos para Exportación/Importación" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;HABILITARIMPOINSEGURA&gt;"/>
+	<row entidad="CONVERSION" descripcion="Conversión de datos" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;HABILITARIMPOINSEGURA&gt;"/>
+	<row entidad="CONVERSIONVALORES" descripcion="Valores de conversión" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;EXPOGENERICA&gt;&lt;IMPOGENERICA&gt;&lt;HABILITARIMPOINSEGURA&gt;"/>
+	<row entidad="IMPOAGRUPADAS" descripcion="Configuración de importaciones agrupadas" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="EXPOAGRUPADAS" descripcion="Configuración de exportaciones agrupadas" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;EDICIONPARCIAL&gt;"/>
+	<row entidad="TIPCOMPIMPUTA" descripcion="Tipo Comprobante de Imputación" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DISTRIBUCIONESRRII" descripcion="Tipos de Comunicaciones para Contactos Zoo Logic" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="LISTANEGRADISTRIBU" descripcion="Lista de Exclusión para el Envío de Comunicaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLREGDEVBANCO" descripcion="Registro de Procesos Bancarios" funcionalidades="&lt;NOIMPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="REGBCOMOTIVOS" descripcion="Motivos de Transacciones Bancarias" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLFOTOPRESENTACIONES" descripcion="Foto de Presentaciones Bancarias" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMCOMPROBBONIFICA" descripcion="Comprobante de Bonificación de Gastos de Rechazos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMTIPCOMPBONIRECH" descripcion="Tipo de Comprobante de Bonificación de Gastos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLAMBITOSSERIE" descripcion="Ambito del Serie" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLVINCULACIONITEMS" descripcion="Vinculación de Items de Servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZLCOMPREDMESESTEMP" descripcion="Comprobante de Reducción de Meses Temporarios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLIMPACTARESTADORZENZOO" descripcion="Impactar Rechazos Bancarios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SCRIPT" descripcion="Scripts de ejecución" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZLUSUARIOSIVRWEB" descripcion="Usuarios IVR" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRIIREGISTROASISTENTES" descripcion="CYM - Registro de Asistentes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLFRANJAENTRADAS" descripcion="Franjas de Entradas" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMEECCASIGCATE" descripcion="COM - Ejecutivos de Cuenta" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CAMBIODERAZONSOCIAL" descripcion="Movimientos de Items de servicios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZLRECTIFICACIONDEBAJASIS" descripcion="Rectificación de baja de servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMMOTIVOBAJA" descripcion="Motivos de Baja" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="ZLMIGRARCLIENTESALINCE" descripcion="Migrar Clientes a Lince/Zoo Logic" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHPLANESFORMACION" descripcion="Planes de Formación" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="COMAUTORIZACAMBIOHW" descripcion="Com - Autorización de Cambios de HW" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFPLANMANTENIMIENTO" descripcion="INF - Plan de Mantenimiento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFREGISTROMANTENIMIENTO" descripcion="INF - Registros de Mantenimiento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CODIGOPOSTAL" descripcion="Código Postal" funcionalidades="&lt;BLOQUEARREGISTRO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="ACCIONESAUTOMATICAS" descripcion="Acciones automáticas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IDRESTORE" descripcion="Comprobante de Restauración de Claves" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CONTCODIGOS" descripcion="Comprobante de Contingencia de Códigos de Desactivación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLCMPCLASCLIENTE" descripcion="Modificación de clasificaciones en clientes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCCSAT" descripcion="DyC - Calidad de Servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCCSATITEMSEVALUAR" descripcion="DyC - Items a evaluar en Encuestas a Clientes" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLASIGESQUECOMISIOSERIE" descripcion="Asignación de esquemas de comisiones a series" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMASIGNACIONINDICE" descripcion="Coeficientes para cálculo del Indice de Oportunidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLRZINCOBRABLE" descripcion="Registro de Razones Sociales Incobrables" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLRZINCOBRABLEAPROB" descripcion="Comprobante de Aprobación de Razones Sociales Incobrables" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLAUTORIZACAMBIOSERIE" descripcion="Autorización de cambio de Serie" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DEPOSITOSCLIENTES" descripcion="Depósitos de Clientes" funcionalidades="&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGNACIONRZDEPOSITOSCLIENTES" descripcion="Asignación de Razón Social a Depósitos de Clientes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ATCREGISTROESCUCHAS" descripcion="AC - Registro de Escuchas de Monitoreo de Calidad" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDOS" descripcion="IyD - Sistemas Operativos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDEDICIONOS" descripcion="IyD - Edición de Sistemas Operativos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDPLATFORMOS" descripcion="IyD - Plataforma de Sistemas Operativos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDPLANESVYV" descripcion="IyD - Plan de Validación y Verificación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDCALENDARIOVYV" descripcion="IyD - Calendario de Validación y Verificación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRIIREQUERIMIENTO" descripcion="Requerimientos de CyM" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRIIREQUERIMIENTOGESTION" descripcion="Gestión de Requerimientos de CyM" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MONITOREOSCLIENTES" descripcion="Registro de Monitoreo de Clientes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MONITOREOSCLIENTESITEMS" descripcion="Items de Evaluación de Monitoreos de Clientes" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MONITOREOCLIENTESTIPOS" descripcion="Tipos de Monitoreos de Clientes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ATCENVIOS" descripcion="Registro de Envíos Postales" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOENVIOSPOSTALES" descripcion="Tipos de Envíos Postales" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MEDIOENVIOSPOSTALES" descripcion="Medios de Envíos Postales" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRIIREQUERIMIENTOCATEGORIAS" descripcion="Categorías de Requerimientos de CyM" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCMEDICIONCALIDADTIPO" descripcion="DyC - Tipo de Medición de Calidad de Servicio" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCCSATCALGRUPOS" descripcion="DyC - Grupos de Items a Evaluar de Calidad de Servicio" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHTIPOEGRESO" descripcion="Forma de desvinculación" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLCITAS" descripcion="Citas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="PNCEREQUERIMIENTOS" descripcion="Requerimientos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SALENCUESTA" descripcion="SAL - Acciones sobre Encuestas de Satisfacción" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="AREA" descripcion="Areas de Sectores" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="ZONAS" descripcion="Zonas de Gestión" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="ZLITEMSERIEALTA" descripcion="Fecha de Alta de Series según Items" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMCUENTASCONTABLES" descripcion="ADM - Cuentas Contables" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGRESPCUENTACLIENTE" descripcion="Asignación de Agente de Cuenta a Cliente" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGIMPLDORCLIENTE" descripcion="Asignación de Implementador a Cliente" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="LIBERACIONDEVERSIONES" descripcion="Publicación de Versiones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDREGISTROISSUES" descripcion="IyD - Registro de Issues" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDEQUIPOSQ" descripcion="IyD - Equipos VyV IyD" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ISSUESEVERIDAD" descripcion="Severidad issue / bug" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ISSUEOCURREN" descripcion="Ocurrencia issue / bug" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHEVALDESEMPENO" descripcion="Evaluación de Desempeño" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHENTREVISTA" descripcion="Entrevista" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHCANDIDATO" descripcion="Candidato" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHBUSQUEDAGSTN" descripcion="Gestión de Búsquedas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHEVALDESEMPPUNTAJE" descripcion="Escala de Evaluación" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHEVALITEMSTIPO" descripcion="Tipos de Items a Evaluar" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHEVALITEMSEV" descripcion="Items a Evaluar" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MONITCLIMOTIVOSNO" descripcion="Motivos de Monitoreo de Clientes sin realizar" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MONITCLIOPERADORES" descripcion="Asignación de Operadores a Monitoreos de Clientes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZUDESCARGALAN" descripcion="Publicaciones para actualización LAN" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="REGISTROCOBRANZAS" descripcion="Registro de Depósitos Asignados" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLESTADOSVERSION" descripcion="Estados de Versiones de Productos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLASIGNARESTADOSVERSION" descripcion="Asignar Estado a Versión de Producto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLASIGNARCLIENTESINCLUVERSION" descripcion="Clientes a Incluir en Versión" funcionalidades="&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLASIGNARCLIENTESEXCLUVERSION" descripcion="Clientes a Excluir en Versión" funcionalidades="&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLASIGNARSERIEINCLUVERSION" descripcion="Series a Incluir en Versión" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLASIGNARSERIEIEEXCLUVERSION" descripcion="Series a Excluir en Versión" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMPORTAMIENTOCODIGOSUGERIDOENTIDAD" descripcion="Comportamientos" funcionalidades="&lt;TRANSMODOSEGURODB&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="CLASIH" descripcion="Clasificación de horas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="HISTORIAPIVOTAL" descripcion="Workitem" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="FUNCCOMERCIAL" descripcion="Funcionalidad" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TEMAS" descripcion="Temas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="CATEGORIAS" descripcion="Categorias" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="EPICA" descripcion="Epicas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PROYECTO" descripcion="Equipos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="FUNCESTADO" descripcion="Estados" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLISARTICULOSSAL" descripcion="Artículos del Servicio de SAL" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="PREANALISIS" descripcion="Análisis de requerimientos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="FACTIBILIDAD" descripcion="Factibilidad de funcionalidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ANALISIS" descripcion="Análisis funcional" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMPRESUP" descripcion="Presupuestos internos" funcionalidades="&lt;NOREST&gt;"/>
+	<row entidad="TIPOFUNCCOMERCIAL" descripcion="IyD - Tipo de Funcionalidad" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="REUNIONPRIORIZACION" descripcion="Priorización de funcionalidades y proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="HISTORIASAPUBLICAR" descripcion="Listos para publicar" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLFACTURACIONLINCE" descripcion="Generación de facturas en Lince ProForma" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDBUG" descripcion="Bugs" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDEVALUACIONBUGS" descripcion="Evaluación de Bugs" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDFUNCPREESTIMADAS" descripcion="Funcionalidades Pre-Estimadas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDPRESUPUESTOS" descripcion="IyD - Presupuestos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDPRESUPASIGNESTADO" descripcion="IyD - Asignar Estado a Presupuesto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDPRESUPESTADO" descripcion="Estado de Presupuesto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGPROYAFUNC" descripcion="Asignación de Equipos a Funcionalidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="GENARCHIVOCUENTASSERIES" descripcion="Genera archivo de series para dar de alta cuentas FTP/SMTP" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SALOPERADORESDIASHHSSLABORAL" descripcion="Esquemas de Jornada laboral" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGESTADOAFUNCCOMER" descripcion="Asignación de Estados a Funcionalidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SALEXCEPJORNADALABORAL" descripcion="Registro de excepciones de Jornada Laboral" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;FRMMODAL&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="IYDREUNIONDEMOS" descripcion="IyD - Demos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDREUNIONDEMOSMINUTA" descripcion="IyD - Minuta de Demos" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RECBAJAGRUPOSCOM" descripcion="Rectificación de baja de grupo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGCOLPROY" descripcion="Asignación de Colaboradores a Equipos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDROLES" descripcion="Roles IyD" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGPROYBUG" descripcion="Asignación de Equipos a Bugs" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGESTBUG" descripcion="Asignación de estados a bugs" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGVERAFUNYBUG" descripcion="Asignación de Versión a Funcionalidades y Bugs" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDCARGAHORAS" descripcion="Horas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="IYDEVALUACIONISSUES" descripcion="Evaluación de Issues" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SALTODECAMPO" descripcion="Comportamiento de atributos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ESTADOSDEDOCU" descripcion="DyC - Estados de Documentación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCASIGESTFUNCBUG" descripcion="DyC - Asignación de Estados y Notas de Doc. a Func. y Bugs" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DOCFUNCIONAL" descripcion="Documento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="APROBDOCFUN" descripcion="Aprobación de Documentos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CONVENIO" descripcion="Convenio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="SENIORITY" descripcion="Seniority" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="MDACOMPENTREMATERIALES" descripcion="Comprobante de Entrega de Materiales" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLFERIADOS" descripcion="Feriados" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="REUNIONMHELP" descripcion="Reunión de Masterhelp" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PROYECTODESARROLLO" descripcion="Proyectos LdS" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGPROYDESBUG" descripcion="Asignación de Proyectos LdS a Bugs" funcionalidades="&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGPROYDESFUNC" descripcion="Asignación de Proyectos LdS a Funcionalidades" funcionalidades="&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="FUNCYBUGSTESTEADOS" descripcion="IyD - Funcionalidades y Bugs Testeados" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCREQUERIMIENTOS" descripcion="DyC - Requerimientos" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCCATEGORIAS" descripcion="DyC - Categorías" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCREQUERIMIENTOGESTION" descripcion="DyC - Gestión de Requerimientos" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MAIL" descripcion="Mails" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="COMASIGLISPREARS" descripcion="COM - Asignación de lista de precios a razón social" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ACCIONESDEMAIL" descripcion="Acciones de Mail" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGACCRAZMAIL" descripcion="Asignación de Acciones de Mail" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="COMAPROBASIGITEMSERESQCOMAD" descripcion="Aprobación de Asignación de Esquema de Comisión Adic." funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="LDSRUBROS" descripcion="Rubros LdS" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="LDSACTIVIDAD931" descripcion="Actividad 931" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="LDSACTIVIDADES" descripcion="Actividades LdS" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="TIPODOCUMENTO" descripcion="Tipo de Documento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="REQDEDOCUMENTO" descripcion="Requerimiento de Documento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGDOCAREQDOC" descripcion="Asignación de Documento a Requerimiento de Documento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLSERVICIOSLOTEBAJAPORSERIE" descripcion="Baja de Items de Servicio por Serie" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DYCGRUPOSACURSOS" descripcion="Gupos a Cursos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGCURSOYGRUPOSAPUNTOS" descripcion="Asignación de Puntos a Cursos y Grupos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ETAPAFUNC" descripcion="Etapas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGETAPAAFUNC" descripcion="Asignación de Etapas a Funcionalidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SOLICITUDAPROBACIONDOCUMENTOS" descripcion="Solicitud de Aprobación de Documentos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCTIPOSDESOPORTESDEREGISTROS" descripcion="Tipos de Soportes de Registros" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCEMISORESYDEPOSITARIOSDEREGISTROS" descripcion="Emisores y Depositarios de Registros" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCUBICACIONDEREGISTROS" descripcion="Ubicación - Disposición del Registro" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCTIEMPOSDEARCHIVOSDEREGISTROS" descripcion="Tiempos de Archivos de Registros" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCGUIADEREGISTROSDELSGC" descripcion="Guia de Registros del SGC" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CURSOSENCAMPUS" descripcion="Cursos Realizados en el Campus Virtual" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DIASDEPERMISO" descripcion="Días de Permisos de Atención y Códigos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PRUEBASDEVERSION" descripcion="Prueba de Versión de Workitems" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ESTADOSDEPRUEBADEVERSION" descripcion="Estado de Prueba de Versión de Workitems" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="RESULTADOPRUEBASDEVERSION" descripcion="Resultado de Prueba de Versión de Workitems" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLFILTROSOBJETIVOS" descripcion="Filtros de Objetivos por puesto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="OBJETIVOS" descripcion="Objetivos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;&lt;GUARDARCOMO&gt;"/>
+	<row entidad="ZLOBJETIVOSINDIVIDUALESVALORES" descripcion="Objetivos Individuales - Valores" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLTIPOSOBJETIVOS" descripcion="Tipos de Objetivos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLOBJETIVOSPORPUESTO" descripcion="Objetivos por Puesto" funcionalidades="&lt;GUARDARCOMO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZNFICHAJE" descripcion="Fichaje" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="GESTIONDEINCUMPLIMIENTOS" descripcion="Justificaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHCALCULOOBJETIVOS" descripcion="Cálculo de objetivos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHMOTIVONDEFICHAJE" descripcion="Motivo de fichajes en nombre de" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHFICHARENNOMBREDE" descripcion="Fichar en nombre de" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZNPUESTODECONTROL" descripcion="Puesto de control" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZNMETODODEVALIDACION" descripcion="Método de validación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZNESTADOCONEXION" descripcion="Estado de conexión" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGNACIONESQUEMAJORNADALABORAL" descripcion="Asignación de esquema de jornada laboral a legajo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGNACIONESQUEMAJORNLABPUESTO" descripcion="Asignación de esquema de jornada laboral a puesto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZNPARAMETRO" descripcion="Parámetros" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZNNODO" descripcion="Nodos de parámetros" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZNUNIDAD" descripcion="Unidad de parámetros" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MINUTADEREUNION" descripcion="Minuta de reunión" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGNACIONMINUTAS" descripcion="Asignación de minutas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PROYECTOZOOLOGIC" descripcion="Proyecto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGNACIONRZDEPOSITOSCLIENTES2" descripcion="Asignación de Razón Social a Depósitos de Clientes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOPROYECTOZOOLOGIC" descripcion="Tipo de proyectos Zoo Logic" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGNACIONPROYECTOS" descripcion="Asignación de proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOMINUTAS" descripcion="Clasificación de minutas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="GESTIONCOMPENSACION" descripcion="Compensaciones programadas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="EQUIVALENCIAHORASRELOJYLABORALES" descripcion="Equivalencias entre horas reloj y horas laborables" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="APROBACIONDEGASTOS" descripcion="Comprobante de aprobación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RENDICIONDEGASTOS" descripcion="Rendición de anticipos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ANTICIPODEGASTOS" descripcion="Anticipo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="REINTEGROGASTO" descripcion="Reintegro" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGTAREADOCFUN" descripcion="Asignación de tarea a documento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RECEPCIONDECOMPROBANTESDEGASTOS" descripcion="Recepción de comprobantes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MOTIVODEANULACIONANTICIPOREINTEGRO" descripcion="Motivo de anulación de anticipos y reintegros vencidos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMAPROBPRESUP" descripcion="Comprobante de aprobación de presupuestos internos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDPROYECTO" descripcion="Proyecto de IyD" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASALCIYDPROYECTO" descripcion="Asignación de alcance a proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASESTIYDPROYECTO" descripcion="Asignación de estados a proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDPROYECTOPREEST" descripcion="Pre-estimación de proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGMASIVFUNCAPROY" descripcion="Asignación masiva de funcionalidades a proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGFUNCAPROY" descripcion="Asignación de proyectos a funcionalidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGETAPAAPROY" descripcion="Asignación de etapas a proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGESTADOAREQ" descripcion="Asignación de estados a Requerimientos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGINCIDAREQ" descripcion="Asignación de requerimientos a incidentes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGINCIDENTEABUG" descripcion="Asignación de bugs a incidentes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="EVALUACIONDEPROYECTOS" descripcion="Evaluación de proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ISSUECLASIFICACIONBUGS" descripcion="Clasificación de bugs" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="CONTRATOSRRHH" descripcion="Modalidad de contratación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="TIPOCONTRATO" descripcion="Tipos de Contrato" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="INSTITUCIONESACADEMICAS" descripcion="Instituciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="NIVELACADEMICO" descripcion="Nivel educativo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="SISTEMASINFORMATICOS" descripcion="Sistemas informáticos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="ZOOMANTENIMIENTO" descripcion="Código de generación ZooMantenimiento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGVARIASAFUNC" descripcion="Asignaciones varias a funcionalidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGVARIASABUGS" descripcion="Asignaciones varias a bugs" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGVARIASAPROYECTO" descripcion="Asignaciones varias a proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MDAASIGTECAACOMP" descripcion="Asignación de técnicos a acompañantes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MONITOREOSCLIENTESTAREAS" descripcion="Registro de monitoreo de clientes por tarea" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TAREASGC" descripcion="Tareas de SGC" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGACCIONESSGC" descripcion="Asignaciones varias a Acciones de SGC" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ACCIONESDELSGC" descripcion="Acciones del SGC" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SOLICITUDDEVACACIONES" descripcion="Solicitud de vacaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="AUTORIZVACACIONESSECTOR" descripcion="Autorización de vacaciones en el sector" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="AUTORIZVACACIONESRRHH" descripcion="Autorización de vacaciones desde RRHH" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="AJUSTEDEVACACIONES" descripcion="Ajustes de días de vacaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="FUNCIONALIDADESTESTEADAS" descripcion="Funcionalidades testeadas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="BUGSTESTEADOS" descripcion="Bugs testeados" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MOTIVORECHAZODOCU" descripcion="Motivo de rechazo de documentos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHBUSQUEDAESTADO" descripcion="Estados de búsquedas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHBUSQUEDAETAPA" descripcion="Etapas de búsquedas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHBUSQUEDACONCEPTO" descripcion="Conceptos de entrevistas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHCANDIDATURA" descripcion="Candidatura" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHBUSQUEDAENTREVISTA" descripcion="Evento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHBUSQUEDAAPROBACION" descripcion="Aprobación de búsquedas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHASIGETAPACANDITATURA" descripcion="Asignación de etapa a candidatura" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHASIGESTADOCANDITATURA" descripcion="Asignación de estado a candidatura" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHZLCITAS" descripcion="Citas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="MATVISITTECNIC" descripcion="Materiales de visitas técnicas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ENTMATVISITTECNIC" descripcion="Entrega de materiales de visitas técnicas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RENDMATVISITTECNIC" descripcion="Rendición de materiales de visitas técnicas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFORMACIONDECIERREDEBUGS" descripcion="Información de cierre de bugs" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOHORASLABORALES" descripcion="Tipificación de horas para extras y adicionales" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="HORASEXTRASYADICIONALES" descripcion="Horas extras y adicionales" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="AUTORIZAHORASEXTRASYADICIONALES" descripcion="Aprobación de horas extras y adicionales" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="EMAIL" descripcion="Emails" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;GUARDARCOMO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CUENTACORREO" descripcion="Cuenta de correo" funcionalidades="&lt;NOLISTAGENERICO&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;GUARDARCOMO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPODEORIGENDEOPORTUNIDADES" descripcion="Tipo de origen de oportunidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="UBICACIONINFRAESTRUCTURA" descripcion="Ubicación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFASIGTIPOSDEBIENAPUESTO" descripcion="Solicitud de tipo de bien a puesto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFAPROBTIPOSDEBIENAPUESTO" descripcion="Aprobación de tipo de bien a puesto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFSOLICTIPOSDEBIENAUSUARIO" descripcion="Solicitud de tipo de bien a usuario ZL" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFAPROBSOLICTIPOSDEBIENAUSUARIO" descripcion="Aprobación de tipo de bien a usuario ZL" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGNACIONBIENACONJUNTOS" descripcion="Asignación de bienes a conjunto de bienes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MOTIVOBAJABIENES" descripcion="Motivo de baja de bienes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="BAJADEBIENESYCONJUNTOS" descripcion="Baja de bienes y conjunto de bienes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPODEVENTO" descripcion="Tipo de evento" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="BONIFICACIONIISS" descripcion="Bonificaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="APROBACIONBONIFICACIONIISS" descripcion="Aprobación de bonificaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="OBTENERPASSWORDZIP" descripcion="Obtener password de BackUp" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOMONITOREO" descripcion="Tipo de monitoreo" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DESCRIPCIONESNC" descripcion="Tipo de Bonificaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMCIERREOPORTUNIDADESSLR" descripcion="Cierre de Oportunidad RLS" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="OPORTUNIDADSLR" descripcion="Oportunidades comerciales RLS" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLFACTURACIONLINCEPERCEP" descripcion="Facturación Lince/Zoo Logic con percepciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SITUACIONOIMPOSITIVAFRENTEAIIBB" descripcion="Comprobante de situación impositiva frente a II.BB." funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGMODAENTLISTEXP" descripcion="Asignación de módulos a entidades listados y exportaciones" funcionalidades="&lt;NOREST&gt;"/>
+	<row entidad="ENTLISTEXPPRODUCTOS" descripcion="ELEI de productos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHMOTIVODESVINCULACION" descripcion="Motivo de desvinculación" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPODECURSO" descripcion="Tipo de curso" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="FORMULARIOAPERTURADECUENTA" descripcion="Formulario apertura de cuenta" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ORDENFUNCIONALIDADES" descripcion="Orden de funcionalidades en proyecto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ANALISISDECIERREDEOPORTUNIDADES" descripcion="Herramienta de aprobación de cierre de oportunidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CATEGORIAAGENTEERA" descripcion="Categorías Agentes ERA" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="INTERACCIONCONCLIENTE" descripcion="Interacción con el cliente" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INTERACCIONCONCLIENTERLS" descripcion="Interacción con el cliente RLS" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DESCUENTOSPRESUPUESTOS" descripcion="Descuentos en presupuestos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFBAJATIPOSDEBIENAPUESTO" descripcion="Baja de tipo de bien a puesto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFBAJATIPOSDEBIENAUSUARIO" descripcion="Baja de tipo de bien a usuario ZL" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGETAPAADOCUM" descripcion="Asignación de Etapas a Documentos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGESTADOADOCUM" descripcion="Asignación de Estados a Documentos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGPROYADOCUM" descripcion="Asignación de Equipos a Documentos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGVARIASADOCUMENTO" descripcion="Asignaciones varias a documentos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PRIORIZACIONDOCUMENTOS" descripcion="Priorización de documentos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMPONENTESDEPRODUCTOS" descripcion="Componentes de producto" funcionalidades="&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPODEPRODUCTO" descripcion="Tipo de producto" funcionalidades="&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="REQUISITODEPRODUCTO" descripcion="Requisitos de producto" funcionalidades="&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOMOTIVOBAJA" descripcion="Tipos de motivos de baja" funcionalidades="&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="BONIFICACIONMODELOFRANQUICIA" descripcion="Bonificación de modelos de franquicias" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="APROBACIONBONIFICACIONMODELOFRANQUICIA" descripcion="Aprobación de bonificación de modelos de franquicias" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SERVICIOREST" descripcion="Servicio REST" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;CODIGOSUGERIDO&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="CLAVESECRETAREST" descripcion="Cliente REST" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOLISTAGENERICO&gt;"/>
+	<row entidad="APROBACIONPRESUPUESTO" descripcion="Aprobación de presupuestos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CIERREDEDOCUMENTACIONDEINCIDENTE" descripcion="Cierre de documentación de incidentes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PRESUPASIGNESTADO" descripcion="Asignación de Estados a Presupuestos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MOTIVOSDENUNCIAS" descripcion="Motivos de hallazgos" funcionalidades="&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="RRHHFORZARSINCROFICHAJE" descripcion="Sincronización forzada de fichajes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLASIGESQUECOMISIOCLI" descripcion="Asignación de esquemas de comisiones a clientes" funcionalidades="&lt;NOREST&gt;"/>
+	<row entidad="ENCUESTAS" descripcion="Encuestas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOGASTOS" descripcion="Clasificación de gastos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMTAREASEECCRLS" descripcion="Tareas comerciales RLS" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CANCELACIONBUSQUEDARRHH" descripcion="Cancelación de búsquedas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGNACIONDEREPONSABLEPRODUCTO" descripcion="Asignación de usuario responsable a producto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDASIGETAPAABUG" descripcion="Asignación de Etapas a Bugs" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PORCENTAJEDECOMISIONGENERALESRDS" descripcion="Porcentajes de comisión generales - Reserva de series (RDS)" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="EXCEPCIONPORCENTAJEDECOMISIONRDS" descripcion="Excepciones de porcentajes de comisiones (RDS)" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="APROBEXCEPCIONPORCENTAJEDECOMISIONRDS" descripcion="Aprobación de Excepciones de porcentajes de comisiones (RDS)" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLMIGRARCLIENTESADRAGON" descripcion="Migrar Clientes a Dragonfish/Zoo Logic" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="GRADODEAVANCE" descripcion="Grado de avance" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="FECHAESTIMADAFINALIZACIONPROYECTO" descripcion="Fecha estimada de finalización de proyecto" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLCLIENTESRLS" descripcion="Clientes RLS" funcionalidades="&lt;AUDITORIA&gt;&lt;CODIGOSUGERIDO:.T.&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SEGUIMIENTODEPROYECTOS" descripcion="Seguimiento de proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CIERREDEPROYECTOS" descripcion="Cierre de proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PRIORIZACIONDEPROYECTOS" descripcion="Priorización de proyectos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLSERVICIOSLOTEBAJARECTIFICARMOTIVO" descripcion="Rectificación de motivo de baja" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SOLICITUDBAJAITEMSERVZNUBE" descripcion="Solicitud de bajas Items de servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="CONFIRMARBAJAITEMSERVZNUBE" descripcion="Confirmación de bajas ítems de servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="MAILSACONFIRMAR" descripcion="Mails a confirmar" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="COMPETENCIAPARACIERREDEOP" descripcion="Competencias para cierre de oportunidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="TERMINOSYCONDICIONES" descripcion="Términos y condiciones" funcionalidades="&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="HERCONFIRMARBAJAITEMSERVZNUBE" descripcion="Herramienta de confirmación de bajas ítems de servicio" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="FODA" descripcion="FODA" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="DESVINCULAFUNCIONALIDADREQUE" descripcion="Desvinculación de requerimientos a funcionalidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CAMBIODERAZONSOCIALXSERIE" descripcion="Cambio de razón social por serie" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ASIGSERIESSERVCOMUNICACIONES" descripcion="Asignación de series a config. de serv. de comunicaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="DOMINIOSEXCCLIENTESDUP" descripcion="Dominios excluídos para clientes duplicados" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ASIGSERIESZNUBEAPRESUP" descripcion="Asignación de series de zNube a presupuestos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="APROBASIGSERIESZNUBEAPRESUP" descripcion="Aprobación de asignación de series de zNube a presupuestos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ADMINISTRADORTEMPORALCOMPANYZNUBE" descripcion="Administradores temporales de company de zNube" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLFACTURACIONLINCEMIPYME" descripcion="Facturación Lince/Zoo Logic MiPyME" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SALASPARACITAS" descripcion="Salas para citas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLALTARECIBOSDRAGON" descripcion="Generación de recibos en Dragonfish/Zoo Logic" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLRAZONSOCIALES2" descripcion="Razones sociales reducida" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ZLALTAFACTURASDRAGON" descripcion="Generación de facturas en Dragonfish/Zoo Logic" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLFACPROFORMALINCE" descripcion="Actualizar datos Factura Proforma" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMPETENCIAS" descripcion="Competencias" funcionalidades="&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="CUENTASBANCARIAS" descripcion="Cuentas bancarias" funcionalidades="&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="AVISODEPAGO" descripcion="Aviso de pago" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="HERASIGOPORTUNIDADES" descripcion="Herramienta de asignación de oportunidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="HERASIGSERIESZNUBEP" descripcion="Herramienta de asignación de series de zNube a presupuestos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="HERAPROBASIGSERIESZNUBEP" descripcion="Herramienta de aprob. de asig. de series de zNube a presup." funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="USUARIOSDRAGONFISHCLOUD" descripcion="Usuarios de Dragonfish Cloud" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="ASIGNACIONGRUPOCOMUNICACIONESASERIES" descripcion="Herramienta de asignación de grupo de comunicaciones a serie" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="PRESUPUESTOSRLS" descripcion="Presupuestos RLS" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;GUARDARCOMO&gt;"/>
+	<row entidad="IYDREUNION" descripcion="Reunión de IyD" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="TIPODEIYDREUNION" descripcion="Tipo de reunión de IyD" funcionalidades="&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="HERCOMASIGLISPREARS" descripcion="Herramienta de asignación de lista de precios a razón social" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOATRIBUTOSDESERVICIOS" descripcion="Tipo de atributo de los servicios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ATRIBUTOSDESERVICIOS" descripcion="Atributos de los servicios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="EVENTOSDELSISTEMA" descripcion="Eventos del sistema" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="AMBITODEUSODEBIEN" descripcion="Ámbito de uso de bienes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="ACCESOTEMPORALADATOSDFCLOUD" descripcion="Acceso temporal a datos de Dragonfish Cloud" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="INFHERSOLICTIPOSDEBIEN" descripcion="Herramienta de solicitud de tipos de bienes" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMREFERENCIA" descripcion="Referencia de Pantera" funcionalidades="&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="USUARIOSPANTERA" descripcion="Usuarios Pantera" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="N2PRELACIONSERIETELEFONO" descripcion="Registro de relaciones series teléfonos" funcionalidades="&lt;CODIGOSUGERIDO:.T.&gt;&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="SOLICITUDMANDATOSREPLICA" descripcion="Solicitud de mandatos de réplica" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="MEDIODEPAGO" descripcion="Medios de pago" funcionalidades=""/>
+	<row entidad="HERGESTIONMASIVADETAREAS" descripcion="Herramienta de gestión masiva de tareas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="IYDREVISIONFUNCIONALIDADES" descripcion="Revisión de funcionalidades en proceso" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMCONGELALISTAPRECIOS" descripcion="Congelamiento temporal de listas de precios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMAPROCONGELALISTAPRECIO" descripcion="Aprobación de congelamiento temporal de listas de precios" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="HERAPROBCONGELALPRECIOS" descripcion="Herramienta de aprob. de congelamiento temp. de listas de pr" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="APERTURAAUTOMATICAENTIDADES" descripcion="Apertura automática de entidades" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SOLICUSOINTPANTERA" descripcion="Solicitud de uso interno de Pantera" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="APROBSOLICUSOINTPANTERA" descripcion="Aprobación de uso interno de Pantera" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="HERAPROBACIONBONIFICACIONIISS" descripcion="Herramienta masiva de aprobación de bonificaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="GRUPOESTADOSRESULTADOS" descripcion="Grupos de estados de resultados" funcionalidades=""/>
+	<row entidad="CONCEPTOSESTADOSRESULTADOS" descripcion="Conceptos de estados de resultados" funcionalidades=""/>
+	<row entidad="CONTACTOSRLS" descripcion="Contactos RLS" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;AUDITORIA&gt;&lt;CODIGOSUGERIDO:.T.&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="ESTIMACIONES" descripcion="Estimaciones" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCINDICADORES" descripcion="Indicadores" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="SGCINICIATIVAS" descripcion="Iniciativas" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="PREFIJOSTELEFONICOS" descripcion="Prefijos telefónicos" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="TENANTSDEPANTERA" descripcion="Tenants de Pantera" funcionalidades=""/>
+	<row entidad="INCPRIORIDAD" descripcion="Prioridad de Incidentes" funcionalidades=""/>
+	<row entidad="TIPOPARAMETRO" descripcion="Tipo de parámetro" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="PARAMSVARIABLESSQL" descripcion="Parámetros y variables de SQL Server" funcionalidades="&lt;GUARDARCOMO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMPROBANTESDERETENCION" descripcion="Comprobantes de retención" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="REGISTROCHATGUARDIA" descripcion="Registro de chats de guardias" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="TIPODECHAT" descripcion="Tipo de chat" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="HERELIMINAREMAILSGENERADOS" descripcion="Herramienta de eliminación de eMails generados" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="HERMODFICACIONESPORBASE" descripcion="Herramienta Modificaciones por base" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="BAJADETENANT" descripcion="Baja de Tenant" funcionalidades=""/>
+	<row entidad="COMCANALESQUEMACOMISIONES" descripcion="Canal" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="SERIESDEPANTERA" descripcion="Series de Pantera" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="ZLASIGESQUECOMISIOSERIEPANTERA" descripcion="Asignación de esquemas de comisiones a series de Pantera" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="APASIGESQUECOMISIOSERIEPANTERA" descripcion="Aprobación de asignación de esquemas a series de Pantera" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="TIPOESQUEMASCOMISION" descripcion="Tipo de esquemas de comisión" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;&lt;NOREST&gt;"/>
+	<row entidad="HERASIGESQUESERIEPANTERA" descripcion="Herramienta de asignación de esquemas a series de Pantera" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="HERAPROBASIGESQUESERIEPANTERA" descripcion="Herramienta de aprob. de asig. de esq. a series de Pantera" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;NOREST&gt;"/>
+	<row entidad="COMRECUPERODECLIENTES" descripcion="Client Care" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="COMCIERRERECUPERODECLIENTES" descripcion="Cierre de actividad de Client Care" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;"/>
+	<row entidad="TIPOCLIENTCARE" descripcion="Tipo de actividad de Client Care" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+	<row entidad="MOTIVOCIERRECLIENTCARE" descripcion="Motivo de cierre de Client Care" funcionalidades="&lt;NOIMPO&gt;&lt;NOEXPO&gt;&lt;DESACTIVABLE&gt;&lt;AUDITORIA&gt;&lt;MODULOSLISTADO:B&gt;"/>
+</VFPData>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-16"?>
+ <Project Sdk="">
+  <PropertyGroup>
+    <OutputType>PRG</OutputType>
+    <StartupObject>main.prg</StartupObject>
+    <AssemblyName></AssemblyName>
+    <Company>Zoo Logic S.A.</Company>
+    <NoWarn>DVFP0001,DVFP0002,DVFP0003,DVFP0004</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup Label="VFP_Files">
+    <Content Include="generados/**/*.prg" />
+    <Content Include="generados/**/*.vcx" />
+    <Content Include="generados/**/*.scx" />
+    <Content Include="generados/**/*.h" />
+    <Content Include="generados/**/*.mpr" />
+    <Content Include="generados/**/*.bmp" />
+    <Content Include="generados/**/*.ico" />
+    <Content Include="generados/**/*.jpg" />
+    <Content Include="generados/**/*.gif" />
+    <Content Include="generados/**/*.cur" />
+    <Content Include="generados/**/*.fll" />
+    <Content Include="generados/**/*.png" />
+    <Content Include="generados/**/*.txt" />
+    <Content Include="generados/**/*.xml" />
+    <Content Include="generados/**/*.app" />
+    <Content Include="generados/**/*.dll" />
+    <Content Include="generados/**/*.sql" />
+    <Content Include="generados/**/*.sdb" />
+    <Content Include="generados/**/*.szl" />
+    <Content Remove="@(bin;obj;Debug;Release)/**/*" /><!-- Excluir archivos: @(bin;obj;Debug;Release)/**/* -->
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Entidades</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>EN</retorno>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Listados</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>LI</retorno>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>Exportaciones</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>EX</retorno>
+		<orden>3</orden>
+	</xml>
+	<xml>
+		<valor>Importaciones</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>IM</retorno>
+		<orden>4</orden>
+	</xml>
+	<xml>
+		<valor>Menús</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>ME</retorno>
+		<orden>5</orden>
+	</xml>
+</VFPData>

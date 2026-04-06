@@ -1,0 +1,3 @@
+define class KontrolerENCUESTAS as din_KontrolerENCUESTAS of din_KontrolerENCUESTAS.prg
+
+enddefine

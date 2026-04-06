@@ -1,0 +1,63 @@
+USE [ZL]
+GO
+
+/****** Object:  StoredProcedure [Objetivos].[sp_CalculodeObjetivosxPuesto]    Script Date: 05/09/2013 14:03:41 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[Objetivos].[sp_CalculodeObjetivosxPuesto]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [Objetivos].[sp_CalculodeObjetivosxPuesto]
+GO
+
+USE [ZL]
+GO
+
+/****** Object:  StoredProcedure [Objetivos].[sp_CalculodeObjetivosxPuesto]    Script Date: 05/09/2013 14:03:41 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE PROCEDURE [Objetivos].[sp_CalculodeObjetivosxPuesto]
+	@FECHA DATETIME = GETDATE
+	, @PUESTO VARCHAR(4)
+AS
+BEGIN
+	SET NOCOUNT ON;
+	DECLARE 
+		@LEGAJO AS VARCHAR(4);
+	
+	DECLARE LEGAJOS CURSOR FOR
+		SELECT
+			RESULTADO.CLEGAJO
+		FROM
+			(SELECT 
+				J.CCOD AS CLEGAJO
+				, C.CPUESTO
+			FROM ZL.ZL.CARRZL C
+				INNER JOIN ZL.ZL.LEGOPS AS L ON L.CLEGAJO = C.CCOD
+				INNER JOIN ZL.ZL.LEGAJO J ON J.CCOD = C.CCOD      
+			WHERE J.FEGRESO = '19000101'
+				AND (( C.FFIN >= CASE @FECHA WHEN '' THEN GETDATE() ELSE CONVERT(DATETIME, @FECHA, 112) END ) OR C.FFIN = '19000101' )
+				AND LTRIM(RTRIM(C.CPUESTO)) <> '') AS RESULTADO
+		WHERE
+			RESULTADO.CPUESTO = @PUESTO;
+			
+	OPEN LEGAJOS;
+	FETCH NEXT FROM LEGAJOS INTO @LEGAJO;
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		EXEC [Objetivos].[sp_CalculodeObjetivosxLegajo] @FECHA, @LEGAJO;
+		FETCH NEXT FROM LEGAJOS INTO @LEGAJO;
+	END
+	CLOSE LEGAJOS;
+	DEALLOCATE LEGAJOS;
+
+END
+
+GO
+
+--DECLARE @FECHA DATETIME, @PUESTO VARCHAR(4);
+--SET @FECHA = GETDATE(); SET @PUESTO = '0054';
+--EXEC ZL.[Objetivos].sp_CalculodeObjetivosxPuesto @FECHA, @PUESTO;
+

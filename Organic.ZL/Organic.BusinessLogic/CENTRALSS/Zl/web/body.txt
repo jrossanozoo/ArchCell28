@@ -1,0 +1,161 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta name=Generator content="Microsoft Word 14 (filtered medium)"><!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Texto de globo Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.TextodegloboCar
+	{mso-style-name:"Texto de globo Car";
+	mso-style-priority:99;
+	mso-style-link:"Texto de globo";
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-language:ES-AR;}
+p.encabezado, li.encabezado, div.encabezado
+	{mso-style-name:encabezado;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";}
+p.style1, li.style1, div.style1
+	{mso-style-name:style1;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";}
+p.zoologic, li.zoologic, div.zoologic
+	{mso-style-name:zoologic;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";
+	color:#009933;
+	font-weight:bold;}
+p.concepto, li.concepto, div.concepto
+	{mso-style-name:concepto;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	background:#009933;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	color:white;
+	font-weight:bold;}
+p.nrofactura, li.nrofactura, div.nrofactura
+	{mso-style-name:nrofactura;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Verdana","sans-serif";}
+span.encabezado1
+	{mso-style-name:encabezado1;
+	font-family:"Verdana","sans-serif";}
+span.zoologic1
+	{mso-style-name:zoologic1;
+	font-family:"Verdana","sans-serif";
+	color:#009933;
+	font-weight:bold;}
+span.style11
+	{mso-style-name:style11;
+	font-family:"Verdana","sans-serif";}
+span.EstiloCorreo27
+	{mso-style-type:personal;
+	font-family:"Verdana","sans-serif";
+	color:windowtext;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+span.EstiloCorreo28
+	{mso-style-type:personal;
+	font-family:"Verdana","sans-serif";
+	color:black;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+span.EstiloCorreo29
+	{mso-style-type:personal;
+	font-family:"Verdana","sans-serif";
+	color:windowtext;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+span.EstiloCorreo30
+	{mso-style-type:personal;
+	font-family:"Verdana","sans-serif";
+	color:black;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+span.EstiloCorreo31
+	{mso-style-type:personal;
+	font-family:"Verdana","sans-serif";
+	color:windowtext;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+span.EstiloCorreo32
+	{mso-style-type:personal;
+	font-family:"Verdana","sans-serif";
+	color:black;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+span.EstiloCorreo33
+	{mso-style-type:personal-reply;
+	font-family:"Verdana","sans-serif";
+	color:windowtext;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]--></head><body lang=ES-AR link=blue vlink=purple><div class=WordSection1><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><div><p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img width=565 height=121 id="_x0000_i1032" src="cid:image007.jpg@01CDE390.6A783130" alt="Descripción: flicciardi"><o:p></o:p></span></p></div><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><div><div style='border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm 0cm 0cm'><p class=MsoNormal><b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'>De:</span></b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Ignacio Legarreta <br><b>Enviado el:</b> miércoles, 26 de diciembre de 2012 05:52 p.m.<br><b>Para:</b> Fernando Licciardi<br><b>CC:</b> Fernando Frenkel<br><b>Asunto:</b> RV: Cuerpo de Mail <o:p></o:p></span></p></div></div><p class=MsoNormal><o:p>&nbsp;</o:p></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'>Va el texto:<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal style='margin-bottom:12.0pt'><span class=encabezado1><span style='font-size:9.0pt'>Srta. Natalia Karamanukian</span></span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><br><span class=encabezado1>Micci (00003)</span><br><span class=encabezado1>Agopian Arturo (00003)</span></span><o:p></o:p></p><p class=style1>Estimado Cliente,<o:p></o:p></p><p class=style1>Nos ponemos en contacto con Usted para comunicarle que hemos recibido una solicitud de restauración de clave para el serie nº <b>111111 </b>a través de la página web de <span class=zoologic1>Zoo Logic</span>. Para proceder a la restauración, debe abrir Lince Indumentaria registrado con el número de serie indicado. Seleccione una sucursal y acceda al menú “Herramientas”, “V &nbsp;Cambiar Clave”. En el espacio “Ingrese clave anterior:”, introduzca la siguiente clave:<span class=encabezado1><b> 111111JL</b>. Luego siga las indicaciones en pantalla.</span><o:p></o:p></p><p class=style1>En caso de no haber solicitado Ud. esta restauración, simplemente ignore este mensaje. <o:p></o:p></p><p class=style1>Si necesita asistencia adicional, comuníquese con nosotros telefónicamente al (011) 4896-3111 o vía e-mail a <a href="mailto:mesadeayuda@zoologic.com.ar">mesadeayuda@zoologic.com.ar</a>.<o:p></o:p></p><p class=style1>Atentamente,<span lang=ES><o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'>(Firma MAIL de MDA)<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><div><p class=MsoNormal><a href="http://www.zoologic.com.ar/"><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black;text-decoration:none'><img border=0 width=565 height=121 id="_x0000_i1025" src="cid:image006.jpg@01CDE390.6A783130" alt="Descripción: ilegarreta"></span></a><span lang=ES style='font-size:10.0pt;font-family:"Verdana","sans-serif";color:black'><o:p></o:p></span></p></div><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><div><div style='border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm 0cm 0cm'><p class=MsoNormal><b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'>De:</span></b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Diego Gerola <br><b>Enviado el:</b> miércoles, 26 de diciembre de 2012 05:43 p.m.<br><b>Para:</b> Ignacio Legarreta; Juan Andres Luraschi<br><b>Asunto:</b> RE: Cuerpo de Mail <o:p></o:p></span></p></div></div><p class=MsoNormal><o:p>&nbsp;</o:p></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>Te paso el texto con 2 cambios:<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>- abrir el Lince x abrir Lince Indumentaria<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>- &nbsp;ingrese en el espacio “ingrese clave anterior” x En el espacio “ingrese clave anterior:”, introduzca la siguiente clave.<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>Te lo paso con las correcciones:<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><div><p class=MsoNormal style='margin-bottom:12.0pt'><span class=encabezado1><span style='font-size:9.0pt'>Srta. Natalia Karamanukian</span></span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><br><span class=encabezado1>Micci (00003)</span><br><span class=encabezado1>Agopian Arturo (00003)</span></span><o:p></o:p></p><p class=style1>Estimado Cliente,<o:p></o:p></p><p class=style1>Nos ponemos en contacto con Usted para comunicarle que hemos recibido una solicitud de restauración de clave para el serie nº <b>111111 </b>a través de la página web de <span class=zoologic1>Zoo Logic</span>. Para proceder a la restauración, debe abrir Lince Indumentaria registrado con el número de serie indicado. Seleccione una sucursal y acceda al menú “Herramientas”, “V &nbsp;Cambiar Clave”. En el espacio “Ingrese clave anterior:”, introduzca la siguiente clave:<span class=encabezado1><b> 111111JL</b>. Luego siga las indicaciones en pantalla.</span><o:p></o:p></p><p class=style1>En caso de no haber solicitado Ud. esta restauración, simplemente ignore este mensaje. <o:p></o:p></p><p class=style1>Si necesita asistencia adicional, comuníquese con nosotros telefónicamente al (011) 4896-3111 o vía e-mail a <a href="mailto:mesadeayuda@zoologic.com.ar">mesadeayuda@zoologic.com.ar</a>.<o:p></o:p></p><p class=style1>Atentamente,<span lang=ES><o:p></o:p></span></p><p class=MsoNormal><span lang=ES style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img border=0 width=565 height=121 id="_x0000_i1026" src="cid:image004.jpg@01CDE390.6A783130" alt="Descripción: http://www.zoologic.com.ar/firmas/dgerola.jpg"></span><span lang=ES style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p></div><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><div><div style='border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm 0cm 0cm'><p class=MsoNormal><b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'>De:</span></b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Ignacio Legarreta <br><b>Enviado el:</b> miércoles, 26 de diciembre de 2012 05:34 p.m.<br><b>Para:</b> Diego Gerola; Juan Andres Luraschi<br><b>Asunto:</b> RV: Cuerpo de Mail <o:p></o:p></span></p></div></div><p class=MsoNormal><o:p>&nbsp;</o:p></p><p class=MsoNormal><i><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:red'>Esta es la propuesta para el caso:<o:p></o:p></span></i></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal style='margin-bottom:12.0pt'><span class=encabezado1><span style='font-size:9.0pt'>Srta. Natalia Karamanukian</span></span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><br><span class=encabezado1>Micci (00003)</span><br><span class=encabezado1>Agopian Arturo (00003)</span></span><o:p></o:p></p><p class=style1>Estimado Cliente,<o:p></o:p></p><p class=style1>Nos ponemos en contacto con Usted para comunicarle que hemos recibido a través de la página web de <span class=zoologic1>Zoo Logic,</span> una solicitud de restauración de clave para el serie nº <b>111111</b>. Para proceder a la restauración, debe abrir el Lince registrado con el número de serie indicado. Seleccione una sucursal y acceda al menú “Herramientas”, “V &nbsp;Cambiar Clave”. Ingrese en el espacio “Ingrese clave anterior:”, la siguiente clave:<span class=encabezado1><b> 111111JL</b>. A partir de allí, siga las indicaciones en pantalla.</span><o:p></o:p></p><p class=style1>En caso de no haber solicitado Ud. esta restauración, simplemente ignore este mensaje. <o:p></o:p></p><p class=style1>Si necesita asistencia adicional, comuníquese con nosotros telefónicamente al (011) 4896-3111 o vía e-mail a <a href="mailto:mesadeayuda@zoologic.com.ar">mesadeayuda@zoologic.com.ar</a>.<o:p></o:p></p><p class=style1>Atentamente,<o:p></o:p></p><p class=MsoNormal><img border=0 width=565 height=121 id="_x0000_i1027" src="cid:image005.jpg@01CDE390.6A783130" alt="Descripción: Firma"><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'>Me avisan cualquier cambio? Gracias.<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><div><p class=MsoNormal><a href="http://www.zoologic.com.ar/"><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black;text-decoration:none'><img border=0 width=565 height=121 id="_x0000_i1028" src="cid:image006.jpg@01CDE390.6A783130" alt="Descripción: ilegarreta"></span></a><span lang=ES style='font-size:10.0pt;font-family:"Verdana","sans-serif";color:black'><o:p></o:p></span></p></div><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><div><div style='border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm 0cm 0cm'><p class=MsoNormal><b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'>De:</span></b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Fernando Licciardi <br><b>Enviado el:</b> miércoles, 26 de diciembre de 2012 02:36 p.m.<br><b>Para:</b> Ignacio Legarreta<br><b>Asunto:</b> RE: Cuerpo de Mail <o:p></o:p></span></p></div></div><p class=MsoNormal><o:p>&nbsp;</o:p></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>Ignacio, tenes alguna novedad con respecto a este tema?<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><div><p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img border=0 width=565 height=121 id="_x0000_i1029" src="cid:image007.jpg@01CDE390.6A783130" alt="Descripción: flicciardi"><o:p></o:p></span></p></div><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><div><div style='border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm 0cm 0cm'><p class=MsoNormal><b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'>De:</span></b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Ignacio Legarreta <br><b>Enviado el:</b> lunes, 10 de diciembre de 2012 05:17 p.m.<br><b>Para:</b> Fernando Licciardi; Andrea Anica<br><b>CC:</b> Fernando Frenkel<br><b>Asunto:</b> RE: Cuerpo de Mail <o:p></o:p></span></p></div></div><p class=MsoNormal><o:p>&nbsp;</o:p></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'>Ok, lo vemos. Gracias.<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><div><p class=MsoNormal><a href="http://www.zoologic.com.ar/"><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black;text-decoration:none'><img border=0 width=565 height=121 id="_x0000_i1030" src="cid:image006.jpg@01CDE390.6A783130" alt="Descripción: ilegarreta"></span></a><span lang=ES style='font-size:10.0pt;font-family:"Verdana","sans-serif";color:black'><o:p></o:p></span></p></div><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";color:black'><o:p>&nbsp;</o:p></span></p><div><div style='border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm 0cm 0cm'><p class=MsoNormal><b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'>De:</span></b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Fernando Licciardi <br><b>Enviado el:</b> lunes, 10 de diciembre de 2012 05:16 p.m.<br><b>Para:</b> Ignacio Legarreta; Andrea Anica<br><b>CC:</b> Fernando Frenkel<br><b>Asunto:</b> Cuerpo de Mail <o:p></o:p></span></p></div></div><p class=MsoNormal><o:p>&nbsp;</o:p></p><p class=style1>Estimados/as,<o:p></o:p></p><p class=style1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Estamos desarrollando una nueva funcionalidad para que los clientes soliciten la r<span style='color:black'>estauración de clave</span> de Lince a través de la página web y se le envíe un mail con la información necesaria para realizar la operación.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lo que estamos necesitando es definir el cuerpo del mensaje a enviar.<o:p></o:p></p><p class=style1>Un simple ejemplo.<br>---------------------------------------------------------------------------------------------------------------------------------------------------<o:p></o:p></p><p class=style1>Estimado/a Gilda Delbono (Nombre Cliente)<o:p></o:p></p><p class=MsoNormal style='text-indent:35.4pt'><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>Ha solicitado la restauración de clave para el serie nº 111111, para ello deberá utilizar los siguientes datos.<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal style='text-indent:35.4pt'><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>Clave: <span class=encabezado1><b>111111JL</b></span><o:p></o:p></span></p><p class=style1>Atentamente,<o:p></o:p></p><p class=style1><span style='color:black'>El equipo de Mesa de Ayuda</span><o:p></o:p></p><p class=MsoNormal>---------------------------------------------------------------------------------------------------------------------------------------------------<span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><p class=style1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cualquier duda lo hablamos.<o:p></o:p></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gracias<o:p></o:p></span></p><p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img border=0 width=565 height=121 id="Imagen_x0020_1" src="cid:image007.jpg@01CDE390.6A783130" alt="Descripción: flicciardi"></span><o:p></o:p></p></div></body></html>

@@ -1,0 +1,3 @@
+Define Class KontrolerCONTACTOS As Din_KontrolerCONTACTOS Of Din_KontrolerCONTACTOS.prg
+
+Enddefine

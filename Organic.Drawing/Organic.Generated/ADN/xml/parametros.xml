@@ -1,0 +1,348 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<migrar2028>
+		<id>1</id>
+		<idnodo>1</idnodo>
+		<parametro>Estilo</parametro>
+		<tipodato>N</tipodato>
+		<default>2</default>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Estilos</ayuda>
+		<version_exe>7.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Estilo</paramint>
+		<paramusu>Estilo</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Clásico,Organic</opciones>
+		<idunico>14DB664D5184DB147D61AC1917928061229551</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>2</id>
+		<idnodo>1</idnodo>
+		<parametro>Modo Avanzado</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Modo avanzado del sistema</ayuda>
+		<version_exe>7.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ModoAvanzado</paramint>
+		<paramusu>Modo Avanzado</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1679FED461417714DCF1AC7812539085161411</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>4</id>
+		<idnodo>1</idnodo>
+		<parametro>Utiliza Identificador de Sucursal en Codigo de Cliente</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Usa el Indicador de Sucursal de Transferencias para componer los tres primeros digitos del Codigo de Cliente</ayuda>
+		<version_exe>7.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaIdentificadordeSucursalenCodigodeCliente</paramint>
+		<paramusu>Utiliza Identificador de Sucursal en Codigo de Cliente</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1FAB0939D1420014FFF18D5515749593922911</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>5</id>
+		<idnodo>1</idnodo>
+		<parametro>Permite nombre de cliente repetido</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Permite repetir el nombre de cliente</ayuda>
+		<version_exe>7.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PermiteNombreDeClienteRepetido</paramint>
+		<paramusu>Permite ingresar un cliente con nombre de uno existente</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>9</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1AD1D2BC5106611484E196B218518533531851</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>6</id>
+		<idnodo>1</idnodo>
+		<parametro>Imagen Default de la Empresa</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Imagen default de la Empresa</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ImagenDefaultDeLaEmpresa</paramint>
+		<paramusu>Imagen Default De La Empresa</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1C484FF7B1B4A814767182CE10251127872451</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9</id>
+		<idnodo>1</idnodo>
+		<parametro>Advertir Inexistencia De Subentidad</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>indica en pantalla, a través de un color de la etiqueta, la inexistencia de una subentidad</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>AdvertirInexistenciaDeSubentidad</paramint>
+		<paramusu>Advertir Inexistencia De Subentidad</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>16EE2CFC0126AB147E71ABD412243720060991</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>10</id>
+		<idnodo>1</idnodo>
+		<parametro>Desde Año</parametro>
+		<tipodato>N</tipodato>
+		<default>1940</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Indica el año a partir del cual se van a calcular las fechas ingresadas con 2 digitos.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>DesdeAno</paramint>
+		<paramusu>Desde Año</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>16609F2DF10A66144831AB1115870746430261</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>11</id>
+		<idnodo>1</idnodo>
+		<parametro>Modelo Báscula</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Modelo a instanciar de la bascula.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ModeloBascula</paramint>
+		<paramusu>Modelo Báscula</paramusu>
+		<exe>true</exe>
+		<longitud>20</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>99999</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>,Systel Nexa 120,Moretti,Di Pasquo L-PES</opciones>
+		<idunico>1CEE36A441CB881464C1AF1917340119015001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>12</id>
+		<idnodo>1</idnodo>
+		<parametro>Ruta origen de la importacion de datos</parametro>
+		<tipodato>C</tipodato>
+		<default>c:\</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Ruta desde la que se levantan los archivos a importar.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RutaOrigenDeLaImportacionDeDatos</paramint>
+		<paramusu>Ruta origen de la importación de datos</paramusu>
+		<exe>false</exe>
+		<longitud>200</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>30</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>11767CD90154AF147741AFD611222883344111</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>16</id>
+		<idnodo>1</idnodo>
+		<parametro>Permitir modificar el precio comprobantes</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Permitir modificar el precio en comprobantes cuando es distinto de 0.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Permitiringresoprecioencomprobantes</paramint>
+		<paramusu>Permitir modificar precio en comprobantes</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>3</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1AA3EFD7212A1214E461825410719763061001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>18</id>
+		<idnodo>1</idnodo>
+		<parametro>FormatoParaFecha</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Formato para fecha</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>FormatoParaFecha</paramint>
+		<paramusu>Formato para fecha</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>19</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>dd/mm/aa,dd/mm/aaaa</opciones>
+		<idunico>1C8C7B15B10599143291B34C14206538211351</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>19</id>
+		<idnodo>1</idnodo>
+		<parametro>Mostrar separador de miles</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Habilita la vista o no del separador de miles</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>MostrarSeparadorDeMiles</paramint>
+		<paramusu>Mostrar separador de miles</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1801B901D1C4D114C0C1907810252125645201</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>20</id>
+		<idnodo>1</idnodo>
+		<parametro>Permite DNI/CUIT de cliente repetido</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite repetir el DNI/CUIT del cliente.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PermiteDniCuitDeClienteRepetido</paramint>
+		<paramusu>Permite ingresar un cliente con DNI/CUIT de uno existente</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>9</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Si,No,Preguntar (Sugerir SI),Preguntar (Sugerir NO)</opciones>
+		<idunico>196F4AB5C1C40714F821BD7210476013899001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>21</id>
+		<idnodo>1</idnodo>
+		<parametro>Permite DNI/CUIT de proveedor repetido</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite ingresar un proveedor con el mismo CUIT de otro proveedor existente.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PermiteDniCuitDeProveedorRepetido</paramint>
+		<paramusu>Permite ingresar un proveedor con CUIT de uno existente</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>9</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Si,No,Preguntar (Sugerir SI),Preguntar (Sugerir NO)</opciones>
+		<idunico>1045B30FB159FF14DF71910712668038896701</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>22</id>
+		<idnodo>1</idnodo>
+		<parametro>Permite MAIL de cliente repetido</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite repetir el mail del cliente</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PermiteMailDeClienteRepetido</paramint>
+		<paramusu>Permite ingresar un cliente con mail de uno existente</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>9</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Si,No,Preguntar (Sugerir SI),Preguntar (Sugerir NO)</opciones>
+		<idunico>1209F66911FD29145081A6AA17009613721181</idunico>
+	</migrar2028>
+</VFPData>

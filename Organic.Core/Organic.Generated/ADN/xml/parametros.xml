@@ -1,0 +1,2326 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<migrar2028>
+		<id>6</id>
+		<idnodo>1</idnodo>
+		<parametro>Origen de Datos Preferente</parametro>
+		<tipodato>C</tipodato>
+		<default>PAISES</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Base de datos preferente para ingresar al sistema</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>OrigenDeDatosPreferente</paramint>
+		<paramusu>Base de Datos Preferente</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio>COMBOSUCURSALESSINREPLICA</dominio>
+		<opciones/>
+		<idunico>1AE325F1D14C0B14DA31A35F12995564156701</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>10</id>
+		<idnodo>1</idnodo>
+		<parametro>Permite Codigos En Minusculas</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite ingresar minusculas en los campos del tipo codigo</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PermiteCodigosEnMinusculas</paramint>
+		<paramusu>Permite Códigos En Minúsculas</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1C2BD126B1803814CA518DB811377994759571</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>43</id>
+		<idnodo>1</idnodo>
+		<parametro>Habilitar Autoimpresor</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>2</organizacion>
+		<puesto>3</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Indica si se imprimen comprobantes como Autoimpresor</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitarAutoimpresor</paramint>
+		<paramusu>Habilitar Autoimpresor</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>2</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>152BA9FE31C99214C651988816797332473111</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>76</id>
+		<idnodo>1</idnodo>
+		<parametro>PrefijoBaseDeDatos</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Prefijo para identificar la base de datos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PrefijoBaseDeDatos</paramint>
+		<paramusu>Prefijo de base de datos</paramusu>
+		<exe>true</exe>
+		<longitud>3</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>9</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1B62042571553C147F11882A16814731787011</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>96</id>
+		<idnodo>1</idnodo>
+		<parametro>Sucursal</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>3</organizacion>
+		<puesto>2</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Sucursal a la cual pertenece la base de datos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Sucursal</paramint>
+		<paramusu>Sucursal</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio>COMBOSUCURSAL</dominio>
+		<opciones/>
+		<idunico>1C2D17A2C1F31514C5C1A25410222710684731</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>98</id>
+		<idnodo>1</idnodo>
+		<parametro>AgrupamientoParaConsultaDeStock</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Agrupamiento para consulta y control de stock</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>AgrupamientoParaConsultaDeStock</paramint>
+		<paramusu>Agrupamiento para consulta y control de stock</paramusu>
+		<exe>false</exe>
+		<longitud>8</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio>COMBOTABLAAGRUPA</dominio>
+		<opciones/>
+		<idunico>108F088F41A82414F321ADBB18525443512301</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>106</id>
+		<idnodo>1</idnodo>
+		<parametro>Avisar al cancelar una entidad mediante la tecla &lt;ESC&gt;</parametro>
+		<tipodato>N</tipodato>
+		<default>3</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Indicar si se prefiere confirmar el cierre de la entidad, al seleccionar la tecla &lt;ESC&gt;</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>AvisarAlCancelarUnaEntidadMedianteLaTeclaEsc</paramint>
+		<paramusu>Avisar al cancelar una entidad mediante la tecla &lt;ESC&gt;</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Preguntar (Sugerir SI),Preguntar (Sugerir NO),No preguntar</opciones>
+		<idunico>1EE5942B31C9F61469719F0111675742753801</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>125</id>
+		<idnodo>1</idnodo>
+		<parametro>Modo de parametros de puesto</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Este parámetro especifica si los puestos van a ser identificados por el nombre de equipo (PC) o nombre de usuario del sistema operativo</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ModoDeParametrosDePuesto</paramint>
+		<paramusu>Modo de parámetros de puesto</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Por nombre de equipo, Por nombre de usuario</opciones>
+		<idunico>141455BAC189DB140D019EDB14236474416341</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>5</id>
+		<idnodo>2</idnodo>
+		<parametro>Sugerir Ultimo Usuario Logueado</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Sugiere que ya este ingresado en el nombre de usuario el ultimo usuario que ingreso al sistema</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>SugerirUltimoUsuarioLogueado</paramint>
+		<paramusu>Sugerir Ultimo Usuario Logueado</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>196EF79431D0B7143CA1916E18917101278101</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9</id>
+		<idnodo>2</idnodo>
+		<parametro>Numero de Usuarios Mostrados en Login</parametro>
+		<tipodato>N</tipodato>
+		<default>4</default>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Nº de Usuarios Mostrados en el Combo del Login</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NumeroDeUsuariosMostradosEnLogin</paramint>
+		<paramusu>Numero de Usuarios Mostrados en Login</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1879E380110966147361BFAA17686754568431</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>34</id>
+		<idnodo>2</idnodo>
+		<parametro>Activar la Seguridad al Salir</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>1</organizacion>
+		<puesto>2</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Activa la seguridad del sistema al cerrar la aplicación</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ActivarlaSeguridadalSalir</paramint>
+		<paramusu>Activar la Seguridad al Salir</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>11A5904081FA5614406186C319762297673331</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>38</id>
+		<idnodo>2</idnodo>
+		<parametro>Recordar usuario</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Recuerda el usuario logueado.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RecordarUsuario</paramint>
+		<paramusu>Recordar usuario</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15403C5DA19D3314D7518AC815002623293661</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>39</id>
+		<idnodo>2</idnodo>
+		<parametro>Utilizar base de datos preferente</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza la base de datos preferente al momento de loguearse</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizarBaseDeDatosPreferente</paramint>
+		<paramusu>Utilizar base de datos preferente</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>12F91597E15EE014A551960E13776741593001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>7</id>
+		<idnodo>3</idnodo>
+		<parametro>Mostrar Formulario de imágenes en el buscador</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Muestra la imágen asociada en un formulario</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>MostrarFormularioDeImagenesEnElBuscador</paramint>
+		<paramusu>Mostrar Formulario de imágenes en el buscador</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>101</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1C4E0BE811C5DB146431A35111832464869561</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>69</id>
+		<idnodo>3</idnodo>
+		<parametro>Cantidad máxima de resultados en el buscador</parametro>
+		<tipodato>N</tipodato>
+		<default>1000</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Límite de resultados a mostrar en el buscador</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CantidadMaximaDeResultadosEnElBuscador</paramint>
+		<paramusu>Cantidad máxima de resultados en el buscador</paramusu>
+		<exe>true</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>101</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1033A2F5A19DD1148361A5E318740527372611</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>70</id>
+		<idnodo>3</idnodo>
+		<parametro>Realizar busqueda inicial</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>El buscador realizará una busqueda inicial al abrirse.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RealizarBusquedaInicial</paramint>
+		<paramusu>Realizar busqueda inicial</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>101</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10295BF1A1F90B14F581AA5513175565628251</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>101</id>
+		<idnodo>3</idnodo>
+		<parametro>Resultados que se muestran según cantidad máxima seleccionada</parametro>
+		<tipodato>C</tipodato>
+		<default>Últimos</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Resultados que se muestran según cantidad máxima seleccionada</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ResultadosQueSeMuestranSegunCantidadMaximaSeleccionada</paramint>
+		<paramusu>Resultados que se muestran según cantidad máxima seleccionada</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>101</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Primeros,Últimos</opciones>
+		<idunico>13F582A401EE2514E1E1879D15003360388001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>133</id>
+		<idnodo>3</idnodo>
+		<parametro>Cantidad máxima de resultados en las consultas de stock y precios entre locales</parametro>
+		<tipodato>N</tipodato>
+		<default>1000</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Límite de resultados a mostrar en la consulta de stock y precios entre locales</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CantidadMaximaDeResultadosEnLasConsultas</paramint>
+		<paramusu>Cantidad máxima de resultados en las consultas de stock y precios entre locales</paramusu>
+		<exe>true</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>101</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>13B53CA3E155701434B1BF8810144459219631</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>16</id>
+		<idnodo>4</idnodo>
+		<parametro>Password</parametro>
+		<tipodato>C</tipodato>
+		<default>1234</default>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Password del Zip</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Password</paramint>
+		<paramusu>Password</paramusu>
+		<exe>false</exe>
+		<longitud>50</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>16</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>165C9846514BB914CED1AAD417508322428281</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>18</id>
+		<idnodo>4</idnodo>
+		<parametro>RutaRecepcion</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Ruta sugerida para la recepción de paquetes de datos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Rutarecepcion</paramint>
+		<paramusu>Ruta de recepción</paramusu>
+		<exe>false</exe>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>16</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>17E9E3E7E1958A14C6B1A99817796822731601</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>23</id>
+		<idnodo>4</idnodo>
+		<parametro>Ruta de envío</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Ruta default para el envío de transferencias</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RutaDeEnvio</paramint>
+		<paramusu>Ruta de Envío</paramusu>
+		<exe>true</exe>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>16</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1629456DF1CE25145541A1D911957324776961</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>24</id>
+		<idnodo>4</idnodo>
+		<parametro>Actualizar Subentidades A lRecibir</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>2</organizacion>
+		<puesto>3</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Este parámetro debe estar activado en aquellas sucursales que operen como espejos.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ActualizarSubentidadesALrecibir</paramint>
+		<paramusu>Actualizar Altas Relacionadas Al Recibir</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>16</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10BA9249619C08140871969419581095150231</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>25</id>
+		<idnodo>4</idnodo>
+		<parametro>Codigo Origen De Sucursal</parametro>
+		<tipodato>C</tipodato>
+		<default>DEMO</default>
+		<organizacion>3</organizacion>
+		<puesto>2</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Código unico de sucursal de origen del paquete de datos.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CodigoOrigenDeSucursal</paramint>
+		<paramusu>Identificador de origen para paquetes de datos en comprobantes de venta y stock</paramusu>
+		<exe>true</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>16</idnodocliente>
+		<dominio>COMBOORIGENDESTINO</dominio>
+		<opciones/>
+		<idunico>1DFD5DC5E1780F1434F1B47F10349217292131</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>41</id>
+		<idnodo>4</idnodo>
+		<parametro>DiasATransferirPorDefecto</parametro>
+		<tipodato>N</tipodato>
+		<default>3</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Días  por defecto a incluir en paquetes de datos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Diasatransferirpordefecto</paramint>
+		<paramusu>Días  por defecto a incluir en paquetes de datos</paramusu>
+		<exe>true</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>16</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1B18348991640B14EC1188FD19984126140691</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>93</id>
+		<idnodo>4</idnodo>
+		<parametro>EnviarElProcesoDeEmpaquetadoAlAgenteDeAccionesOrganic</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>El empaquetado de datos se realiza en segundo plano por medio del Agente de Acciones Organic.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Enviarelprocesodeempaquetadoalagentedeaccionesorganic</paramint>
+		<paramusu>Envíar el proceso de empaquetado al Agente de Acciones Organic</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>16</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1A542CFD31935714B101807713834217794881</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>107</id>
+		<idnodo>4</idnodo>
+		<parametro>Procesar paquetes provenientes de usuarios sin acceso a la base de datos</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Activar para permitir que en la base de datos actual se procesen paquetes que fueron originados de manera directa a base de datos por usuarios sin permiso de acceso al destino.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ProcesarPaquetesProvenientesDeUsuariosSinAccesoALaBaseDeDatos</paramint>
+		<paramusu>Procesar paquetes provenientes de usuarios sin acceso a la base de datos</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>16</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>14BB7F97A12B5814C751A62215528438417101</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>19</id>
+		<idnodo>5</idnodo>
+		<parametro>Fuente</parametro>
+		<tipodato>C</tipodato>
+		<default>TAHOMA</default>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Nombre de la fuente utilizada en los listados</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Fuente</paramint>
+		<paramusu>Fuente</paramusu>
+		<exe>false</exe>
+		<longitud>20</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1238C1FEE10DF8148941BADB15582004935871</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>20</id>
+		<idnodo>5</idnodo>
+		<parametro>Tamaño de la fuente</parametro>
+		<tipodato>N</tipodato>
+		<default>9</default>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Tamaño de la fuente utilizada en los listados</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>TamanoDeLaFuente</paramint>
+		<paramusu>Tamaño de la fuente</paramusu>
+		<exe>false</exe>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1960E76791BF3C14D2D19CEB10112992171001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>31</id>
+		<idnodo>5</idnodo>
+		<parametro>Ocultar valores CERO en listados</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Ocultar los valores que aparecen vacíos en las columnas numéricas</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>OcultarValoresCeroEnListados</paramint>
+		<paramusu>Ocultar los valores en CERO</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1915FC69913F9C14A1419AA312422184628551</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>32</id>
+		<idnodo>5</idnodo>
+		<parametro>Zoom</parametro>
+		<tipodato>N</tipodato>
+		<default>122</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Zoom utilizado para la visualización de los reportes</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Zoom</paramint>
+		<paramusu>Zoom</paramusu>
+		<exe>true</exe>
+		<longitud>3</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1FDB87F621748F1453F1986C18469616012611</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>61</id>
+		<idnodo>5</idnodo>
+		<parametro>Ruta sugerida al guardar en disco</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Ruta sugerida al guardar en disco</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RutaSugeridaAlGuardarEnDisco</paramint>
+		<paramusu>Ruta sugerida al guardar en disco</paramusu>
+		<exe>true</exe>
+		<longitud>254</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>18E37C5611AB7B141721BC5814239847532581</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>102</id>
+		<idnodo>5</idnodo>
+		<parametro>Usar separador de miles</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Determina si todos los listados del producto utilizan separadores de mil.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UsarSeparadorDeMiles</paramint>
+		<paramusu>Usar separador de miles</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1F80BD2BA1E127140731BAF317851387768801</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>103</id>
+		<idnodo>5</idnodo>
+		<parametro>Separador de miles</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Indica el carácter utilizado por el sistema como separador de miles, si está vacío se utiliza la configuración del Sistema Operativo.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>SeparadorDeMiles</paramint>
+		<paramusu>Separador de miles</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15C093E731A0D4143DA191E213992506648891</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>104</id>
+		<idnodo>5</idnodo>
+		<parametro>Separador decimal</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Indica el carácter utilizado por el sistema como separador de decimales, si está vacío se utiliza la configuración del Sistema Operativo.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>SeparadorDecimal</paramint>
+		<paramusu>Separador decimal</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1571619511E1E0144CD194AD19401862947731</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>105</id>
+		<idnodo>5</idnodo>
+		<parametro>NegativosEnColorRojo</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Indica si los números negativos se van a ver en color rojo en todos los listados del sistema</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Negativosencolorrojo</paramint>
+		<paramusu>Negativos en color rojo</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>108F82D661FD8014D1B1B81616827822422221</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>108</id>
+		<idnodo>5</idnodo>
+		<parametro>Permitir acceso a más detalle</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite configurar campos, filtros, subtotales, ordenamiento y salida del listado</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PermitirAccesoAMasDetalle</paramint>
+		<paramusu>Permitir acceso a más detalle</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10D9613D61E95714C501BB1113565072532611</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>109</id>
+		<idnodo>5</idnodo>
+		<parametro>Habilitar formatos de salida a tabla para listados tipo comprobante</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Habilitar los formatos de salida a tabla para listados tipo comprobante (Cabecera-Detalle)</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitarFormatosDeSalidaATablaParaListadosTipoComprobante</paramint>
+		<paramusu>Habilitar formatos de salida a tabla para listados tipo comprobante</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>32</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>176923B2D19AB014D821B19216785128852121</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>26</id>
+		<idnodo>7</idnodo>
+		<parametro>Nombre de la Empresa</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Nombre de la Empresa</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NombreDeLaEmpresa</paramint>
+		<paramusu>Nombre</paramusu>
+		<exe>true</exe>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1E6E500851001F14C5A19F3E19317974023421</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>27</id>
+		<idnodo>7</idnodo>
+		<parametro>Razón Social de la Empresa</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Razón Social de la Empresa</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RazonSocialDeLaEmpresa</paramint>
+		<paramusu>Razón Social</paramusu>
+		<exe>true</exe>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1C045CB6013988141D619F0412130000772231</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>28</id>
+		<idnodo>7</idnodo>
+		<parametro>Logo de la Empresa</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Logo de la Empresa</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>LogoDeLaEmpresa</paramint>
+		<paramusu>Logo</paramusu>
+		<exe>true</exe>
+		<longitud>254</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1C4B76D0812BE9149C41959711709193592251</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>29</id>
+		<idnodo>7</idnodo>
+		<parametro>Teléfono de la Empresa</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Teléfono de la Empresa</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>TelefonoDeLaEmpresa</paramint>
+		<paramusu>Teléfono</paramusu>
+		<exe>true</exe>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10965C82C1995E14F0F1A8D013307093002731</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>30</id>
+		<idnodo>7</idnodo>
+		<parametro>Dirección de la Empresa</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Dirección de la Empresa</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>DireccionDeLaEmpresa</paramint>
+		<paramusu>Dirección</paramusu>
+		<exe>true</exe>
+		<longitud>254</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1B710B18F195EA14D75187EE12334688936941</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>54</id>
+		<idnodo>7</idnodo>
+		<parametro>País</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>1</organizacion>
+		<puesto>3</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>País de la Empresa</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>País</paramint>
+		<paramusu>País</paramusu>
+		<exe>true</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio>COMBOXML</dominio>
+		<opciones/>
+		<idunico>1AF2931FC160A4140471992614241549045171</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>55</id>
+		<idnodo>7</idnodo>
+		<parametro>Localidad De La Empresa</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Localidad de la empresa.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>LocalidadDeLaEmpresa</paramint>
+		<paramusu>Localidad</paramusu>
+		<exe>true</exe>
+		<longitud>50</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1AECECDCC1EC7F14F1E1898112914840819561</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>56</id>
+		<idnodo>7</idnodo>
+		<parametro>Código postal de la empresa</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Código postal de la empresa</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CodigoPostalDeLaEmpresa</paramint>
+		<paramusu>Código postal</paramusu>
+		<exe>true</exe>
+		<longitud>15</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1D6D49FA518BA61469C18ACA13056840011851</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>57</id>
+		<idnodo>7</idnodo>
+		<parametro>Provincia de la empresa</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Provincia de la empresa</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ProvinciaDeLaEmpresa</paramint>
+		<paramusu>Provincia</paramusu>
+		<exe>true</exe>
+		<longitud>150</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>197D289BA14D1D14614197DD16470992614251</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>68</id>
+		<idnodo>7</idnodo>
+		<parametro>Inicio de actividades</parametro>
+		<tipodato>D</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Fecha de inicio de actividades de la empresa</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>InicioDeActividades</paramint>
+		<paramusu>Inicio de actividades</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1B364386B1319314A5D1BBD914266088447511</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>71</id>
+		<idnodo>7</idnodo>
+		<parametro>E-Mail</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>E-Mail</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EMail</paramint>
+		<paramusu>E-Mail</paramusu>
+		<exe>false</exe>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>16E52FA381B4B4140F3190EB19226774037301</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>97</id>
+		<idnodo>7</idnodo>
+		<parametro>Página Web</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Página Web</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PaginaWeb</paramint>
+		<paramusu>Página Web</paramusu>
+		<exe>false</exe>
+		<longitud>50</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>17</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1526D076A1641C149B318F0816535396510701</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>100</id>
+		<idnodo>7</idnodo>
+		<parametro>Nombre del sitio</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>El sitio es el lugar físico donde opera el sistema. Por ejemplo: "Cabildo y Juramento", "Unicenter", "Avellaneda"</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NombreDelSitio</paramint>
+		<paramusu>Nombre del sitio</paramusu>
+		<exe>true</exe>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10FDC35541374214E531A40011655153107111</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>37</id>
+		<idnodo>8</idnodo>
+		<parametro>Tipo de Log</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Modo en que se realiza el log de las importaciones</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>TipoDeLog</paramint>
+		<paramusu>Tipo de Log</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>30</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Completo,Errores,Minimo</opciones>
+		<idunico>1B931869311BA214FB21B6F713139513218691</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>45</id>
+		<idnodo>10</idnodo>
+		<parametro>SMTP Host</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Servidor SMTP para el envío de logueos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>SmtpHost</paramint>
+		<paramusu>SMTP Host</paramusu>
+		<exe>true</exe>
+		<longitud>50</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>47</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15EAA59C91F6B414FCA1949B12651930023701</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>46</id>
+		<idnodo>10</idnodo>
+		<parametro>Puerto</parametro>
+		<tipodato>N</tipodato>
+		<default>25</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Puerto en el cual el servidor de mail está escuchando</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Puerto</paramint>
+		<paramusu>Puerto</paramusu>
+		<exe>true</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>47</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1ACAAB51F1CDCB142DD1834D14909375479891</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>47</id>
+		<idnodo>10</idnodo>
+		<parametro>Modo Autenticacion</parametro>
+		<tipodato>C</tipodato>
+		<default>Basic</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Modo de Autenticación de su servidor de mail SMTP. Usar Ntlm o Basic (Ntlm usa credenciales del usuario de windows)</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ModoAutenticacion</paramint>
+		<paramusu>Modo de Autenticación</paramusu>
+		<exe>true</exe>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>47</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1D2E739031A3AE143F81856111847365783621</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>48</id>
+		<idnodo>10</idnodo>
+		<parametro>Usuario</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Usuario para autentificar el servidor de mail SMTP</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Usuario</paramint>
+		<paramusu>Usuario</paramusu>
+		<exe>true</exe>
+		<longitud>50</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>47</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>17C4F91E811DF114B121A90214429215955061</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>49</id>
+		<idnodo>10</idnodo>
+		<parametro>Password</parametro>
+		<tipodato>C</tipodato>
+		<default>1234</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Contraseña del usuario para autentificar en el servidor de mail SMTP</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Password</paramint>
+		<paramusu>Contraseña</paramusu>
+		<exe>true</exe>
+		<longitud>50</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>47</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>17174646716385141EA1836312272205116991</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>50</id>
+		<idnodo>10</idnodo>
+		<parametro>Remitente</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Indica la dirección de mail de donde se va a mandar el mensaje</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Remitente</paramint>
+		<paramusu>Remitente</paramusu>
+		<exe>true</exe>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>47</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1D7FC30B81560E147731BCAB19675871119801</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>51</id>
+		<idnodo>10</idnodo>
+		<parametro>Destinatario</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Indica las direcciones de mail a la que se va a mandar los logs (Utilizar ";" para agregar mas direcciones)</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Destinatario</paramint>
+		<paramusu>Destinatario</paramusu>
+		<exe>true</exe>
+		<longitud>254</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>47</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>181A85E5212B8D140661A16710835061842001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>52</id>
+		<idnodo>10</idnodo>
+		<parametro>Asunto</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Indica el asunto del mail que se manda</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Asunto</paramint>
+		<paramusu>Asunto</paramusu>
+		<exe>true</exe>
+		<longitud>100</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>47</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1027E429F10C57140AA1B15D11604366618161</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>53</id>
+		<idnodo>10</idnodo>
+		<parametro>HabilitarLogueoInterno</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Especifica si esta habilitado o no el log interno de logueos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitarLogueoInterno</paramint>
+		<paramusu>Habilitar logueo interno</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>46</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>16A9E944F1FD5914FB21B07318913384317261</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>64</id>
+		<idnodo>11</idnodo>
+		<parametro>Origen de descarga</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Indica si busca actualizaciones en servidor web o en servidor local</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>OrigendeDescarga</paramint>
+		<paramusu>Buscar actualizaciones en :</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>60</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Web,Servidor de red</opciones>
+		<idunico>18DB922AA1359014ABA1818311289455393611</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>65</id>
+		<idnodo>11</idnodo>
+		<parametro>Ruta</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Indica la ruta de descarga desde una LAN.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RutaDeDescarga</paramint>
+		<paramusu>Repositorio en el servidor propio</paramusu>
+		<exe>true</exe>
+		<longitud>250</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>60</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>177919D4B1D5AC14D561B90C14646613539471</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>66</id>
+		<idnodo>11</idnodo>
+		<parametro>Descargar las actualizaciones de la web para publicarlas en el servidor propio</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Descargar actualizaciones de la web para publicarlas en el servidor propio.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>DescargarLasActualizacionesDeLaWebParaPublicarlasEnElServidorPropio</paramint>
+		<paramusu>Descargar actualizaciones de la web para publicarlas en el servidor propio</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>60</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>195FC62581472914A7A1824811854325842231</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>72</id>
+		<idnodo>11</idnodo>
+		<parametro>Publicar automáticamente las nuevas actualizaciones</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Publicar automáticamente las nuevas actualizaciones</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PublicarAutomáticamenteLasNuevasActualizaciones</paramint>
+		<paramusu>Publicar automáticamente las nuevas actualizaciones</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>60</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15E5E1B721262314C1619EE516841717976451</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>73</id>
+		<idnodo>11</idnodo>
+		<parametro>Notificarme de actualizaciones que estén pendientes de publicar</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Notificarme de actualizaciones que estén pendientes de publicar</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NotificarmeDeActualizacionesQueEsténPendientesDePublicar</paramint>
+		<paramusu>Notificarme de actualizaciones que estén pendientes de publicar</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>60</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15985A2941B6D514B931B01B11952677800701</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>74</id>
+		<idnodo>11</idnodo>
+		<parametro>Buscar actualizaciones al inicio</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Habilita la búsqueda de actualizaciones al iniciar la aplicación.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>BuscarActualizacionesAlIniciar</paramint>
+		<paramusu>Buscar actualizaciones al iniciar la aplicación</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>60</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15449F571149FA14A50190CC13697739652531</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>75</id>
+		<idnodo>11</idnodo>
+		<parametro>Descargar automáticamente</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Al iniciar descargara automáticamente las actualizaciones disponibles.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>DescargarAutomaticamenteActualizacionesAlIniciar</paramint>
+		<paramusu>Iniciar la descarga de las actualizaciones automáticamente</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>60</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1D116798F1549714AC519B1316347731868811</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>67</id>
+		<idnodo>13</idnodo>
+		<parametro>Reproducir sonidos</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Activa/Desactiva los eventos sonoros en la aplicación</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ReproducirSonidos</paramint>
+		<paramusu>Reproducir sonidos</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>66</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1A52C9E81139201472A1BA5913714515041501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>111</id>
+		<idnodo>13</idnodo>
+		<parametro>Avisar por falta de configuracion de los siguientes parametros</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Notifica la falta de configuración de cualquiera de los parámentros que se encuentran de bajo de este.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>AvisarPorFaltaDeConfiguracionDeLosSiguientesParametros</paramint>
+		<paramusu>Avisar por falta de configuración de los siguientes parámetros</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>66</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1B5E28EC61B49414FC01808A11784687978001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>112</id>
+		<idnodo>13</idnodo>
+		<parametro>Cuenta de envio de mails ante problemas de ejecuciones desatendidas</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Código de cuenta de envío de mail por defecto desde donde se enviaran los problemas surgidos en la ejecución de la herramienta de generación de comprobantes ecommerce.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CuentaDeEnvioDeMailsAnteProblemasDeEjecucionesDesatendidas</paramint>
+		<paramusu>Cuenta de envío de mails ante problemas en la herramienta de generación de comprobantes ecommerce</paramusu>
+		<exe>true</exe>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>66</idnodocliente>
+		<dominio>COMBOCUENTACORREO</dominio>
+		<opciones/>
+		<idunico>1DB56621618B1214AC21A63D16988864487511</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>113</id>
+		<idnodo>13</idnodo>
+		<parametro>Mails de destino ante problemas de ejecuciones desatendidas</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Mails de destinos separados por punto y coma a los que se le notificarán los problemas surgidos en la ejecución de la herramienta de generación de comprobantes ecommerce.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>MailsDeDestinoAnteProblemasDeEjecucionesDesatendidas</paramint>
+		<paramusu>Mails de destino ante problemas en la herramienta de generación de comprobantes ecommerce</paramusu>
+		<exe>true</exe>
+		<longitud>250</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>66</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1DBA94BD51A83F148841BC8714135134933321</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>114</id>
+		<idnodo>13</idnodo>
+		<parametro>Envio de mails ante problemas en la herramienta de generacion de comprobantes ecommerce</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Envia mail a las direcciones ingresadas ante problemas surgidos en la ejecución de la herramienta de generación de comprobantes ecommerce.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EnvioDeMailsAnteProblemasEnLaHerramientaDeGeneracionDeComprobantesEcommerce</paramint>
+		<paramusu>Envío de mails ante problemas en la herramienta de generación de comprobantes ecommerce</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>66</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>14B4AA9951E9831427B1808112215257403341</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>115</id>
+		<idnodo>13</idnodo>
+		<parametro>Envio de mails ante problemas en la obtencion de CAE</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Enviar mail a las direcciones ingresadas ante problemas en la obtención de CAE durante la ejecución de la herramienta de generación de comprobantes ecommerce.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EnvioDeMailsAnteProblemasEnLaObtencionDeCae</paramint>
+		<paramusu>Envío de mails ante problemas en la obtención de CAE en la herramienta de generación de comprobantes ecommerce</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>66</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1527550AE1634614FBD19CBE11882633711241</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>116</id>
+		<idnodo>13</idnodo>
+		<parametro>Envio de mails ante problemas en el envio de PDF de comprobantes</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Enviar mail a las direcciones ingresadas ante problemas durante el envío de PDF de comprobantes durante la ejecución de la herramienta de generación de comprobantes ecommerce.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EnvioDeMailsAnteProblemasEnElEnvioDePdfDeComprobantes</paramint>
+		<paramusu>Envío de mails ante problemas en el envio de PDF en la herramienta de generación de comprobantes ecommerce</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>66</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>179AF11FE166E2145DD196EA11456345024001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>134</id>
+		<idnodo>13</idnodo>
+		<parametro>Cuenta de envío de mails para centros de distribución</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Código de cuenta de envío de mail por defecto desde donde se enviarán los movimientos de stock generados por centros de distribución</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CuentaDeEnvioDeMailsParaCentrosDeDistribucion</paramint>
+		<paramusu>Cuenta de envío de mails de movimientos de stock generados por centros de distribución</paramusu>
+		<exe>true</exe>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>66</idnodocliente>
+		<dominio>COMBOCUENTACORREO</dominio>
+		<opciones/>
+		<idunico>13F0758CA1776714A5F189F518743606841081</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>87</id>
+		<idnodo>15</idnodo>
+		<parametro>Enviar, recibir y procesar automáticamente</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Se realizan de forma automática las tareas de enviar, recibir y procesar paquete de datos.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EnviarRecibirYProcesarAutomaticamente</paramint>
+		<paramusu>Enviar, recibir y procesar automáticamente</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>76</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>12352AC2D14747145A71880015357712084221</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>88</id>
+		<idnodo>15</idnodo>
+		<parametro>Frecuencia (en minutos)</parametro>
+		<tipodato>N</tipodato>
+		<default>20</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Frencuencia de ejecución de un ciclo completo de empaquetado, envío y recepción de datos.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>FrecuenciaEnMinutos</paramint>
+		<paramusu>Frecuencia (en minutos)</paramusu>
+		<exe>true</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>76</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1EEFD43FD143DF14A9A1ABF717554902784451</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>89</id>
+		<idnodo>15</idnodo>
+		<parametro>Procesar paquetes del tipo "A Bases de datos" en la base de datos</parametro>
+		<tipodato>C</tipodato>
+		<default>[PREF]</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Base de datos en la que se procesan los paquetes del tipo "A Bases de datos".</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ProcesarPaquetesDelTipoABaseDeDatosEnLaBaseDeDatos</paramint>
+		<paramusu>Procesar paquetes del tipo "A Bases de datos" en la base de datos</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>76</idnodocliente>
+		<dominio>COMBOBASEDEDATOSNOREPLICA</dominio>
+		<opciones/>
+		<idunico>14D62E6EC112441400C1B61614225923742061</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>90</id>
+		<idnodo>15</idnodo>
+		<parametro>Empaquetar "Resumen del día" al cerrar la caja</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Al cerrar la caja se realiza el empaquetado del "Resumen del día".</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EmpaquetarResumenDelDiaAlCerrarLaCaja</paramint>
+		<paramusu>Empaquetar "Resumen del día" al cerrar la caja</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>76</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1371CC25116360145FD1B2CC15864208728401</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>91</id>
+		<idnodo>15</idnodo>
+		<parametro>Enviar y recibir paquetes de datos luego de empaquetar "Resumen del día" al cerrar la caja.</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Al cerrar la caja se realiza la comunicación luego del empaquetado del "Resumen del día".</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EnviarYRecibirPaquetesDeDatosLuegoDeEmpaquetarResumenDelDiaAlCerrarLaCaja</paramint>
+		<paramusu>Enviar y recibir paquetes de datos luego de empaquetar "Resumen del día" al cerrar la caja.</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>76</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15B26A51117AE5149D01B34313569433783301</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>92</id>
+		<idnodo>15</idnodo>
+		<parametro>Enviar a los buzones</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Buzones a los que se enviará el paquete de "Resumen del día" generado al cerrar la caja. Separar buzones con coma.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EnviarALosBuzones</paramint>
+		<paramusu>Enviar a los buzones</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>76</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>197B7C5851336514EFC186AF11754023177301</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>110</id>
+		<idnodo>15</idnodo>
+		<parametro>Preguntar respecto de la automatización del empaquetado del "Resumen del día"</parametro>
+		<tipodato>N</tipodato>
+		<default>2</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Establece si el sistema consulta respecto de la posibilidad de automatizar el empaquetado y envió del "Resumen del día"</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PreguntarRespectoDeLaAutomatizaciónDelEmpaquetadoDelResumenDelDia</paramint>
+		<paramusu>Preguntar respecto de la automatización del empaquetado del "Resumen del día"</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>76</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Si,No</opciones>
+		<idunico>1ADC713B31FCEA14D9E1ABDA10452534013481</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>94</id>
+		<idnodo>16</idnodo>
+		<parametro>CarpetaImagenes</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Directorio raíz donde se centralizan las imágenes del sistema</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Carpetaimagenes</paramint>
+		<paramusu>Ruta de la carpeta donde se almacenan</paramusu>
+		<exe>true</exe>
+		<longitud>230</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>49</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>11ADABF9B125A214DCA1AABF12512111809141</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>95</id>
+		<idnodo>16</idnodo>
+		<parametro>PermiteUtilizarDirectorioDistintoARutaCarpetaImagenes</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite utilizar un directorio distinto al definido en la ruta de la carpeta donde se almacena</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PermiteUtilizarDirectorioDistintoARutaCarpetaImagenes</paramint>
+		<paramusu>Permitir utilizar una carpeta distinta</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>49</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>13A33436D10B9F14ABF1A20515396468001341</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>117</id>
+		<idnodo>17</idnodo>
+		<parametro>Activar notificaciones</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Activa las notificaciones que aparecerán en el centro de notificaciones de Windows.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ActivarNotificaciones</paramint>
+		<paramusu>Habilitar notificaciones</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>14DE8182310971146E71A96212854477358601</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>118</id>
+		<idnodo>17</idnodo>
+		<parametro>Mostrar banner de notificaciones</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Muestra un aviso emergente en la barra de tareas.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>MostrarBannerDeNotificaciones</paramint>
+		<paramusu>Mostrar banner de notificaciones</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>142EB4BCA1059F14B03197AF17521471762471</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>119</id>
+		<idnodo>17</idnodo>
+		<parametro>Duración del banner de notificaciones</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Tiempo que permanecerá la visualización del banner de las notificaciones. Normal 5s, prolongado 20s.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>DuracionDelBannerDeNotificaciones</paramint>
+		<paramusu>Duración del banner de notificaciones</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio>COMBOTIEMPOBANNER</dominio>
+		<opciones/>
+		<idunico>1E8DDC4DD15B4E14B141BE8912123757541761</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>120</id>
+		<idnodo>17</idnodo>
+		<parametro>Notificaciones ante problemas en envío de e-mails</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Se enviará un aviso a través de las notificaciones de Windows si falla el envío de e-mails.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NotificacionesAnteProblemasEnEnvioDeEMails</paramint>
+		<paramusu>Notificaciones ante problemas en envío de e-mails</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>164DCC4341B443147551AECF10069273153501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>121</id>
+		<idnodo>17</idnodo>
+		<parametro>Notificaciones ante problemas en recepción de transferencias</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Se enviará un aviso a través de las notificaciones de Windows si falla el procesamiento de paquetes de datos.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NotificacionesAnteProblemasEnRecepcionDeTransferencias</paramint>
+		<paramusu>Notificaciones ante problemas al procesar paquetes de datos</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1824385641DC5F147AA1A0CA16452373483821</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>122</id>
+		<idnodo>17</idnodo>
+		<parametro>Notificaciones ante problemas en obtención de CAE</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Se enviará un aviso a través de las notificaciones de Windows si falla la obtención de CAE.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NotificacionesAnteProblemasEnObtencionDeCae</paramint>
+		<paramusu>Notificaciones ante problemas en obtención de CAE</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1FE76F9621598C14E8F1B23B19331855052751</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>123</id>
+		<idnodo>17</idnodo>
+		<parametro>Notificaciones ante problemas en envío de comprobante a Mercado Libre</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Se enviará un aviso a través de las notificaciones de Windows si no se puede adjuntar el comprobante en Mercado Libre.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NotificacionesAnteProblemasEnEnvioDeComprobanteAMercadoLibre</paramint>
+		<paramusu>Notificaciones ante problemas en envío de comprobante a Mercado Libre</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15229BD9410543146291893012955647951501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>126</id>
+		<idnodo>17</idnodo>
+		<parametro>Notificaciones al procesar paquetes de datos de precios de articulos</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Emite mensaje en el centro de notificaciones de Windows al procesar paquetes de datos de precios de artículos.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NotificacionesAlProcesarPaquetesDeDatosDePreciosDeArticulos</paramint>
+		<paramusu>Notificaciones al procesar paquetes de datos de precios de articulos</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>18448EF8E12566148991B63817186530730701</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>128</id>
+		<idnodo>17</idnodo>
+		<parametro>Notificaciones ante problemas en presentación de comprobantes CAEA</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Se enviará un aviso a través de las notificaciones de Windows si falla la presentación de comprobantes con CAEA.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NotificacionesAnteProblemasEnPresentacionDeComprobantesCaea</paramint>
+		<paramusu>Notificaciones ante problemas en presentación de comprobantes CAEA</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>129F29BC61CB34142A41AA7118380741061131</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>129</id>
+		<idnodo>17</idnodo>
+		<parametro>Notificaciones ante problemas al enviar informe de venta a Las Piedras Shopping</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Se enviará un aviso a través de las notificaciones de Windows si falla el informe de la venta al shopping.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NotificacionesAnteProblemasAlEnviarInformeDeVentaALasPiedrasShopping</paramint>
+		<paramusu>Notificaciones ante problemas al enviar informe de venta a Las Piedras Shopping</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1CAE83FD11BF3F145EC1A3B017752959348581</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>130</id>
+		<idnodo>17</idnodo>
+		<parametro>Días de aviso por CAI próximo a vencer</parametro>
+		<tipodato>N</tipodato>
+		<default>10</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Si se completa el campo, se enviará un aviso a través de las notificaciones de Windows en caso de haber CAIs próximos a vencer.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RangoVencimientoCAIs</paramint>
+		<paramusu>Días de aviso por CAI próximo a vencer</paramusu>
+		<exe>true</exe>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10A5EE03613BC314F8118D5212642340073001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>135</id>
+		<idnodo>17</idnodo>
+		<parametro>Notificaciones al procesar paquetes de datos de movimiento de stock CD</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Emite mensaje en el centro de notificaciones de Windows al procesar paquetes de datos de movimientos de stock provenientes de centros de distribución.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>NotificacionesAlProcesarPaquetesDeDatosDeMovimientoDeStockCd</paramint>
+		<paramusu>Notificaciones al procesar paquetes de datos de movimiento de stock provenientes por C.D.</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10F38B29B147E5141E618A5916674522439901</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>137</id>
+		<idnodo>17</idnodo>
+		<parametro>NotificacionesAnteProblemasAlEnviarInformeDeVentaATresCrucesShopping</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Se enviará un aviso a través de las notificaciones de Windows si falla el informe de la venta al shopping</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Notificacionesanteproblemasalenviarinformedeventaatrescrucesshopping</paramint>
+		<paramusu>Notificaciones ante problemas al enviar informe de venta a Tres Cruces Shopping</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>166</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1B450AD991B01714E331816116051779151201</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>124</id>
+		<idnodo>18</idnodo>
+		<parametro>Ejecución de procesos en segundo plano con baja prioridad</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Se recomienda activar para mejorar la usabilidad de la aplicación en equipos con recursos inferiores a los mínimos requeridos.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EjecucionDeProcesosEnSegundoPlanoConBajaPrioridad</paramint>
+		<paramusu>Ejecución de procesos en segundo plano con baja prioridad</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1F760F96313F5B1436F1B32115722751825861</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>127</id>
+		<idnodo>18</idnodo>
+		<parametro>Agrega al usuario logueado el último usuario que invoca la seguridad</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Indica que al momento de guardar el usuario logueado le agregue el último usuario que invoca la seguridad</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>AgregaAlUsuarioLogueadoElUltimoUsuarioQueInvocaLaSeguridad</paramint>
+		<paramusu>Agrega al usuario logueado el último usuario que invoca la seguridad</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>16BBE3FEE12C1014E541938610553961447511</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>131</id>
+		<idnodo>18</idnodo>
+		<parametro>TenantID</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Identificador de directorio (Tenant)</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Tenantid</paramint>
+		<paramusu>Id. de directorio (Tenant)</paramusu>
+		<exe>true</exe>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>260</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1724FE3841ADF4143321A06019821054082701</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>132</id>
+		<idnodo>18</idnodo>
+		<parametro>ApplicationID</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Identificador de aplicación (Cliente)</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Applicationid</paramint>
+		<paramusu>Id. de aplicación (Cliente)</paramusu>
+		<exe>true</exe>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>260</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1495F9DB510161141E81BAA218202926076821</idunico>
+	</migrar2028>
+</VFPData>

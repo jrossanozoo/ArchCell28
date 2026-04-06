@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Lunes</valor>		
+		<cdefault>retorno</cdefault>
+		<retorno>1</retorno>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Martes</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>2</retorno>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>Miércoles</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>3</retorno>
+		<orden>3</orden>
+	</xml>
+	<xml>
+		<valor>Jueves</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>4</retorno>
+		<orden>4</orden>
+	</xml>
+	<xml>
+		<valor>Viernes</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>5</retorno>
+		<orden>5</orden>
+	</xml>
+	<xml>
+		<valor>Sábado</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>6</retorno>
+		<orden>6</orden>
+	</xml>
+	<xml>
+		<valor>Domingo</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>7</retorno>
+		<orden>7</orden>
+	</xml>		
+</VFPData>

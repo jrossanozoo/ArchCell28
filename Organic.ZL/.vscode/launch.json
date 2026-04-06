@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Visual FoxPro",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "Run VFP Program",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}

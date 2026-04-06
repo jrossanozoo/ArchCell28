@@ -1,0 +1,76 @@
+﻿<logger name="LOGDEFAULT">
+  <level value="All"/>
+  <appender-ref ref="AP_LOGDEFAULT"/>
+</logger>
+<logger name="ADNIMPLANT">
+  <level value="All"/>
+  <appender-ref ref="AP_ADNIMPLANT"/>
+</logger>
+<logger name="ADNIMPLANTSINCABECERA">
+  <level value="All"/>
+  <appender-ref ref="AP_ADNIMPLANTSINCABECERA"/>
+</logger>
+<logger name="ADNIMPLANT_ERRORES">
+  <level value="All"/>
+  <appender-ref ref="AP_ADNIMPLANT_ERRORES"/>
+</logger>
+<logger name="ADNIMPLANT_ERRORESSINCABECERA">
+  <level value="All"/>
+  <appender-ref ref="AP_ADNIMPLANT_ERRORESSINCABECERA"/>
+</logger>
+<logger name="MIGRADORLINCE">
+  <level value="All"/>
+  <appender-ref ref="AP_MIGRADORLINCE"/>
+</logger>
+<logger name="MIGRADORLINCESINCABECERA">
+  <level value="All"/>
+  <appender-ref ref="AP_MIGRADORLINCESINCABECERA"/>
+</logger><logger name="OPERACIONES">
+  <level value="All"/>
+  <appender-ref ref="AP_OPERACIONES"/>
+</logger>
+<logger name="OPERACIONESSINCABECERA">
+  <level value="All"/>
+  <appender-ref ref="AP_OPERACIONESSINCABECERA"/>
+</logger>
+<logger name="FIXES">
+  <level value="All"/>
+  <appender-ref ref="AP_FIXES"/>
+</logger>
+<logger name="FIXESSINCABECERA">
+  <level value="All"/>
+  <appender-ref ref="AP_FIXESSINCABECERA"/>
+</logger>
+<logger name="ADNIMPLANTSP">
+  <level value="All"/>
+  <appender-ref ref="AP_ADNIMPLANTSP"/>
+</logger>
+<logger name="ADNIMPLANTSPSINCABECERA">
+  <level value="All"/>
+  <appender-ref ref="AP_ADNIMPLANTSPSINCABECERA"/>
+</logger>
+<logger name="ADNIMPLANTCONFIGURACIONBASICA">
+  <level value="All"/>
+  <appender-ref ref="AP_ADNIMPLANTCONFIGURACIONBASICA"/>
+</logger>
+<logger name="ADNIMPLANTCONFIGURACIONBASICASINCABECERA">
+  <level value="All"/>
+  <appender-ref ref="AP_ADNIMPLANTCONFIGURACIONBASICASINCABECERA"/>
+</logger>
+<logger name="ZOOBKP">
+  <level value="All"/>
+  <appender-ref ref="AP_ZOOBKP"/>
+</logger>
+<logger name="ZOOBKP_SQL">
+  <level value="All"/>
+  <appender-ref ref="LOG_SQLSERVER" />
+</logger>
+<logger name="MANTENIMIENTOREPLICA">
+  <level value="All"/>
+  <appender-ref ref="AP_MANTENIMIENTOREPLICA"/>
+</logger>
+<logger name="MANTENIMIENTOREPLICASINCABECERA">
+  <level value="All"/>
+  <appender-ref ref="AP_MANTENIMIENTOREPLICASINCABECERA"/>
+</logger>
+

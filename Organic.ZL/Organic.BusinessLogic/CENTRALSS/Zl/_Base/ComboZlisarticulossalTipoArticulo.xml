@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>HardWare</valor>		
+		<cdefault>retorno</cdefault>
+		<retorno>HW</retorno>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Manuales del Sistema</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>MA</retorno>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>Servicios Adicionales</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>SA</retorno>
+		<orden>3</orden>
+	</xml>
+	<xml>
+		<valor>Servicios de Capacitación</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>SC</retorno>
+		<orden>4</orden>
+	</xml>
+	<xml>
+		<valor>Servicios de Implementación</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>SI</retorno>
+		<orden>5</orden>
+	</xml>
+	<xml>
+		<valor>Servicios Técnicos</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>ST</retorno>
+		<orden>6</orden>
+	</xml>	
+</VFPData>

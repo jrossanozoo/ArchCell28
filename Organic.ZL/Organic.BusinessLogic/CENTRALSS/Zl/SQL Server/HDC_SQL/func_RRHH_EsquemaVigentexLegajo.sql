@@ -1,0 +1,178 @@
+USE [ZL]
+GO
+
+/****** Object:  UserDefinedFunction [Objetivos].[func_RRHH_EsquemaVigentexLegajo]    Script Date: 08/07/2013 14:39:20 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[Objetivos].[func_RRHH_EsquemaVigentexLegajo]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION [Objetivos].[func_RRHH_EsquemaVigentexLegajo]
+GO
+
+USE [ZL]
+GO
+
+/****** Object:  UserDefinedFunction [Objetivos].[func_RRHH_EsquemaVigentexLegajo]    Script Date: 08/07/2013 14:39:20 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+--(SELECT TOP 1 C.PUESTO, P.AREA, P.SECTOR, c.CLegajo  FROM [OBJETIVOS].[LEGAJOACTIVO]( '0043' , '20130801' )  C INNER JOIN ZL.PUESTOSRH P ON C.PUESTO = P.COD )
+
+--select * from [Objetivos].[func_RRHH_EsquemaVigentexLegajo]('0043' , '20130801')
+
+
+
+-- ====================================================================
+-- Author:		Daniel Correa
+-- Create date: 15/07/2013
+-- DEVUELVE EL NUMERO DE ESQUEMA, NUMERO DE COMPROBANTE, TIPO ASIGNADO 
+-- Y TOLERANCIA EN MINUTOS DE JORNADA LABORAL POR LEGAJO Y/O POR PUESTO 
+-- VIGENTE. VACIO PARA CUANDO NO EXISTA O ESTE VENCIDO PARA EL LEGAJO 
+-- ====================================================================
+CREATE FUNCTION [Objetivos].[func_RRHH_EsquemaVigentexLegajo]
+(	
+	@Legajo VARCHAR(4)
+	, @Fecha DATETIME
+)
+RETURNS TABLE 
+AS
+RETURN 
+(
+	SELECT
+		TOP 1
+		ESQUEMAS.*
+		, @Legajo AS [LEGAJO]
+	FROM
+	(
+		SELECT
+			ZL.ASIGESQJLAB.NUMERO
+			, 'XLEGAJO' AS 'ESQUEMA'
+			, ZL.ASIGESQJLAB.ESQLAB
+			, ISNULL(ESQUEMAS.TMaxLlegTJ, 0) AS 'TOLERANCIA'
+			, 2 AS TIPO
+			, P.PUESTO AS CODPUESTO
+			, P.AREA
+			, P.SECTOR
+		FROM
+			ZL.ASIGESQJLAB
+			INNER JOIN (SELECT
+							DISTINCT
+							COMPROBANTES.NUMERO
+							, ZL.ASIGESQJLAB.LEG
+						FROM
+							ZL.ASIGESQJLAB
+							INNER JOIN (SELECT 
+											MAX(NUMERO) AS NUMERO
+											, LEG 
+										FROM ZL.ASIGESQJLAB GROUP BY LEG) AS COMPROBANTES ON COMPROBANTES.LEG = ZL.ASIGESQJLAB.LEG
+						WHERE
+							@Fecha BETWEEN ZL.ASIGESQJLAB.FECDESDE AND	CASE ZL.ASIGESQJLAB.FECHASTA
+																				WHEN 0 THEN GETDATE()
+																				ELSE ZL.ASIGESQJLAB.FECHASTA
+																			END) AS COMPROBANTE ON COMPROBANTE.NUMERO = ZL.ASIGESQJLAB.NUMERO
+			INNER JOIN (SELECT 
+							--TOP 1 
+							C.PUESTO
+							, P.AREA
+							, P.SECTOR
+							, C.CLEGAJO AS LEGAJO  
+						FROM 
+							[OBJETIVOS].[LEGAJOACTIVO]( @LEGAJO, @FECHA ) C 
+							INNER JOIN ZL.PUESTOSRH P ON C.PUESTO = P.COD) AS P ON P.LEGAJO = @LEGAJO 
+			LEFT JOIN ZL.SalRgDH AS ESQUEMAS ON ESQUEMAS.CODIN = ZL.ASIGESQJLAB.ESQLAB
+		WHERE
+			@Fecha BETWEEN ZL.ASIGESQJLAB.FECDESDE AND	CASE ZL.ASIGESQJLAB.FECHASTA
+															WHEN 0 THEN GETDATE()
+															WHEN NULL THEN GETDATE()
+															ELSE ZL.ASIGESQJLAB.FECHASTA
+														END
+			AND ZL.ASIGESQJLAB.LEG = @Legajo
+
+		UNION
+
+		SELECT
+			ZL.ASIGESQJLAP.NUMERO AS NUMERO
+			, 'XPUESTO' AS [ESQUEMA]
+			, ZL.ASIGESQJLAP.ESQLAB
+			, ISNULL(ESQUEMAS.TMaxLlegTJ, 0) AS 'TOLERANCIA'
+			, 1 AS TIPO
+			, ZL.ASIGESQJLAP.PUESTO AS CODPUESTO
+			, COMPROBANTE.AREA
+			, COMPROBANTE.SECTOR
+		FROM 
+			ZL.ASIGESQJLAP
+			INNER JOIN (SELECT
+							DISTINCT
+							COMPROBANTES.NUMERO
+							, ZL.ASIGESQJLAP.PUESTO
+							, COMPROBANTES.AREA
+							, ZL.ASIGESQJLAP.SECTOR
+						FROM
+							ZL.ASIGESQJLAP
+							INNER JOIN (SELECT 
+											MAX(NUMERO) AS NUMERO
+											, PUESTO
+											, AREA
+										FROM 
+											ZL.ASIGESQJLAP 
+										GROUP BY 
+											PUESTO
+											, AREA) AS COMPROBANTES ON COMPROBANTES.PUESTO = ZL.ASIGESQJLAP.PUESTO
+						WHERE
+							@Fecha BETWEEN ZL.ASIGESQJLAP.FECDESDE AND	CASE ZL.ASIGESQJLAP.FECHASTA
+																			WHEN 0 THEN GETDATE()
+																			WHEN NULL THEN GETDATE()
+																			ELSE ZL.ASIGESQJLAP.FECHASTA
+																		END) AS COMPROBANTE ON COMPROBANTE.NUMERO = ZL.ASIGESQJLAP.NUMERO
+			LEFT JOIN ZL.SalRgDH AS ESQUEMAS ON ESQUEMAS.CODIN = ZL.ASIGESQJLAP.ESQLAB
+			INNER JOIN (	SELECT 
+							TOP 1 
+							C.PUESTO
+							, P.AREA
+							, P.SECTOR
+							, C.CLEGAJO AS LEGAJO  
+						FROM 
+							[OBJETIVOS].[LEGAJOACTIVO]( @LEGAJO, @FECHA ) C 
+							INNER JOIN ZL.PUESTOSRH P ON C.PUESTO = P.COD ) AS P ON P.LEGAJO = @LEGAJO 
+		WHERE
+			@Fecha BETWEEN ZL.ASIGESQJLAP.FECDESDE AND	CASE ZL.ASIGESQJLAP.FECHASTA
+															WHEN 0 THEN GETDATE()
+															WHEN NULL THEN GETDATE()
+															ELSE ZL.ASIGESQJLAP.FECHASTA
+														END
+			AND ZL.ASIGESQJLAP.PUESTO IN (	SELECT 
+												[Cpuesto]
+											FROM 
+												[ZL].[Carrzl]
+											WHERE
+												1 =	CASE 
+														WHEN [ZL].[Carrzl].FFIN >= @Fecha THEN 1
+														WHEN [ZL].[Carrzl].FFIN = 0 THEN 1
+														WHEN [ZL].[Carrzl].FFIN IS NULL THEN 1
+														ELSE 0
+													END
+												AND CPUESTO <> ''
+												AND [Ccod] = @Legajo
+											)
+			) AS ESQUEMAS
+	ORDER BY
+		ESQUEMAS.TIPO 
+	DESC
+	
+)
+
+
+
+
+
+
+
+
+
+
+
+GO
+
+
