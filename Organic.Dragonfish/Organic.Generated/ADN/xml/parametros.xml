@@ -1,0 +1,3154 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<migrar2028>
+		<id>9753</id>
+		<idnodo>1</idnodo>
+		<parametro>Controlar el ingreso de colores y talles asociados a paletas y curvas</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Sólo permite ingresar, para una combinación, colores y talles que pertenezcan a la paleta de colores y/o curva de talles asociada.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ControlarElIngresoDeColoresYTallesAsociadosAPaletasYCurvas</paramint>
+		<paramusu>Controlar el ingreso de colores y talles asociados a paletas y curvas.</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Deshabilitar,Habilitar,Sólo advertir</opciones>
+		<idunico>1F2918E201D7A0141421B85015276383916501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9795</id>
+		<idnodo>1</idnodo>
+		<parametro>ModoComercial</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Define el modo edición de Dragonfish</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Modocomercial</paramint>
+		<paramusu>Edición del sistema</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>1</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Color y Talle, Pymes</opciones>
+		<idunico>1F6134A161DF4014D121854414873048536191</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9463</id>
+		<idnodo>3</idnodo>
+		<parametro>Generar archivo1 en transferencia de artículos y movimientos de mercadería</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Generar archivo en envío de paquetes de datos de artículos y movimientos de mercadería</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>GenerarArchivoEnTransferenciaDeArticulosYMovimientosDeMercaderia</paramint>
+		<paramusu>Generar archivo en envío de paquetes de datos de artículos y movimientos de mercadería</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>19AC132AC136E414B92199E214774342753701</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9465</id>
+		<idnodo>5</idnodo>
+		<parametro>Generar Archivo en Transferencia de Articulos y Movimientos de Mercaderia</parametro>
+		<tipodato>C</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Crea un archivo especial para trabajar con sucursales en las cuales esté instalado Discovery</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>GenerarArchivoEnTransferenciaDeArticulosYMovimientosDeMercaderia</paramint>
+		<paramusu>Generar Archivo en envío de Paquetes de datos de Articulos y Movimientos de Mercaderia</paramusu>
+		<exe>false</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>173C333E31CCC3148421B50419849153921491</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9466</id>
+		<idnodo>6</idnodo>
+		<parametro>Habilitar la Interfase</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Habilita la Interfase con BAS Modulares</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitarLaInterfase</paramint>
+		<paramusu>Habilitar la Interfase</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>16EFE9D43120BA145A51A86517851608941061</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9467</id>
+		<idnodo>7</idnodo>
+		<parametro>Habilitar Interfase Plataforma</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Habilitar Interfase Plataforma</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitarInterfasePlataforma</paramint>
+		<paramusu>Habilitar Interfase Plataforma</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>101728F1C1FA7214248197B615785697694151</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9468</id>
+		<idnodo>8</idnodo>
+		<parametro>Recepcion de datos al Transmitir</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Recepcion de lo que recibe al Transmitir</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RecepcionDeDatosAlTransmitir</paramint>
+		<paramusu>Recepcion de datos al Transmitir</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>11C41B8E11109F144801B6D311124281538261</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9471</id>
+		<idnodo>10</idnodo>
+		<parametro>Habilitar Interfase</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Habilitar Interfase NorDelta</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitarInterfase</paramint>
+		<paramusu>Habilitar Interfase</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>14AC711561C7DA14D7A1912817925300727001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9470</id>
+		<idnodo>11</idnodo>
+		<parametro>Habilitar Interfase</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Habilitar Interfase con Solar de la Abadía 2005</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitarInterfase</paramint>
+		<paramusu>Habilitar Interfase</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1C6DA9EDD1C8A2145F61B0F417960292775001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9472</id>
+		<idnodo>12</idnodo>
+		<parametro>Habilitar Interfase</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Habilitar Interfase Shopping Córdoba</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitarInterfase</paramint>
+		<paramusu>Habilitar Interfase</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1FC930FEF1A04D148411BC2214936664772361</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9473</id>
+		<idnodo>13</idnodo>
+		<parametro>Pedir datos para RG1547 en ventas y compras</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Pedir datos para RG1547 en ventas y compras</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PedirDatosParaRg1547EnVentasYCompras</paramint>
+		<paramusu>Pedir datos para RG1547 en ventas y compras</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>12D828DD31498814F581AA7A18541705838341</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9474</id>
+		<idnodo>13</idnodo>
+		<parametro>Utilizar duplicados electronicos</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Habilita la herramienta que genera el archivo de duplicados electrónicos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizarDuplicadosElectronicos</paramint>
+		<paramusu>Utilizar duplicados electronicos</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>14C9D65A41E40E14F691A1DA11091049778331</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9475</id>
+		<idnodo>13</idnodo>
+		<parametro>Habilita Exportacion Al Sistema Arciba</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Habilita Exportacion Al Sistema Arciba</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitaExportacionAlSistemaArciba</paramint>
+		<paramusu>Habilita Exportacion Al Sistema Arciba</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1B74B87171EA9C146FE190DE12636515297201</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9476</id>
+		<idnodo>13</idnodo>
+		<parametro>Habilita Exportacion al Sistema Arba</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Habilita Exportacion al Sistema Arba</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitaExportacionAlSistemaArba</paramint>
+		<paramusu>Habilita Exportacion al Sistema Arba</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>145CE4276194D314E9D1A8E817034042658241</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9405</id>
+		<idnodo>14</idnodo>
+		<parametro>Incorporar el stock de pedidos de compra al disponible</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Incorpora al cálculo del stock disponible los artículos solicitados en los pedidos de compra.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>IncorporaElStockDePedidosDeCompraAlDisponible</paramint>
+		<paramusu>Incorporar el stock de pedidos de compra al disponible</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>18F69BB5F138B614B1E1B44E13345135323251</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9406</id>
+		<idnodo>14</idnodo>
+		<parametro>Habilita stock señado</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Permite incorporar al control de stock los artículos señados</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitaStockSeniado</paramint>
+		<paramusu>Incorporar el stock señado al disponible</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>131596DD31D99514CF2194DB15285238793381</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9407</id>
+		<idnodo>14</idnodo>
+		<parametro>Incorporar control de stock en facturas con entrega posterior</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Permite incorporar control de stock en facturas con entrega posterior</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>IncorporarControlDeStockEnFacturasConEntregaPosterior</paramint>
+		<paramusu>Incorporar control de stock en facturas de venta con entrega posterior</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>190BE2E2B1A6E6141BE19EA517415431089501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9408</id>
+		<idnodo>14</idnodo>
+		<parametro>Habilita stock señado en pantalla de pre-carga</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Permite mostrar el stock señado en la pantalla de pre-carga de colores y talles</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitaStockSeniadoEnPantallaDePreCarga</paramint>
+		<paramusu>Habilita stock señado en pantalla de pre-carga</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1BE68F68B1477B14974181C114669514936401</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9560</id>
+		<idnodo>14</idnodo>
+		<parametro>Habilita stock disponible y comprometido en pantalla de pre-carga</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Habilita las columnas informativas de stock disponible y stock comprometido en la pre-carga de todos los comprobantes que la utilicen.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitaColumnaStockDisponibleYComprometido</paramint>
+		<paramusu>Habilita stock disponible y comprometido en pantalla de pre-carga</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>11D95BC5E1E27E148A51A6B019682667126731</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9561</id>
+		<idnodo>14</idnodo>
+		<parametro>Habilita stock disponible y pendiente de entrega en pantalla de pre-carga</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Habilita las columnas informativas de stock disponible y stock pendiente de entrega en la pre-carga de todos los comprobantes que la utilicen.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitaColumnaStockDisponibleYPendiente</paramint>
+		<paramusu>Habilita stock disponible y pendiente de entrega ventas en pantalla de pre-carga</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>187F2E38A1F41C1458B1BCA710186604709211</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9575</id>
+		<idnodo>14</idnodo>
+		<parametro>Control de stock disponible en facturación de venta</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Determina si se controla la carga de facturas, notas de crédito o notas de débito de venta, de cualquier tipo, según el stock disponible.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ControlStockDisponibleFacturacion</paramint>
+		<paramusu>Control de stock disponible en facturación de venta</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>No controlar,Controlar,Advertir</opciones>
+		<idunico>1B6EC315718F6A14A0219ABE10606146932181</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9576</id>
+		<idnodo>14</idnodo>
+		<parametro>Control de stock disponible en remitos de venta</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Determina si se controla la carga de remitos de venta según el stock disponible.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ControlStockDisponibleRemitos</paramint>
+		<paramusu>Control de stock disponible en remitos de venta</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>No controlar,Controlar,Advertir</opciones>
+		<idunico>1A85E73DB18DA1143311BC9613074414985201</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9577</id>
+		<idnodo>14</idnodo>
+		<parametro>Control de stock disponible en pedidos de venta</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Determina si se controla la carga de pedidos de venta y preparaciones de mercadería según el stock disponible.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ControlStockDisponiblePedidos</paramint>
+		<paramusu>Control de stock disponible en pedidos de venta/preparación de mercadería</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>No controlar,Controlar,Advertir</opciones>
+		<idunico>1E1E814E81D449143A51A65517351144146381</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9578</id>
+		<idnodo>14</idnodo>
+		<parametro>Control de stock disponible en movimientos de stock</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Determina si se controla la carga de movimientos de stock según el stock disponible.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ControlDeStockDisponibleEnMovimientosDeStock</paramint>
+		<paramusu>Control de stock disponible en movimientos de stock</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>No controlar,Controlar,Advertir</opciones>
+		<idunico>1CE3E1D6A15B5614599193F315579156437421</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9775</id>
+		<idnodo>14</idnodo>
+		<parametro>Control de stock disponible mediante mínimos de stock en pedidos de venta</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Establece el comportamiento de los pedidos de venta teniendo en cuenta el stock disponibley los mínimos de stock establecidos.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ControlDeStockDisponibleMedianteMinimosDeStockEnPedidosDeVenta</paramint>
+		<paramusu>Control de stock disponible mediante mínimos de stock en pedidos de venta</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>No controlar,Controlar,Advertir</opciones>
+		<idunico>1BD1FC39E1468514D1C1BA2313863295808571</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9802</id>
+		<idnodo>14</idnodo>
+		<parametro>Incorporar control de stock en facturas de compra con entrega posterior</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Permite incorporar control de stock en facturas de compra con entrega posterior</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>IncorporarControlDeStockEnFacturasDeCompraConEntregaPosterior</paramint>
+		<paramusu>Incorporar control de stock en facturas de compra con entrega posterior</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>109EC33301A11B1418F1A45818202416326591</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9803</id>
+		<idnodo>14</idnodo>
+		<parametro>Incorporar el stock de facturas de compra con entrega posterior al disponible</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Permite incorporar el stock de facturas de compra con entrega posterior al disponible</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>IncorporarElStockDeFacturasDeCompraConEntregaPosteriorAlDisponible</paramint>
+		<paramusu>Incorporar el stock de facturas de compra con entrega posterior al disponible</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>11B3FB3681553914FEC1984A19868203247731</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9804</id>
+		<idnodo>14</idnodo>
+		<parametro>Habilita stock disponible y pendiente de entrega compras en pantalla de pre-carga</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Permite habilitar las columnas de stock disponible y pendiente de entrega compras en pantalla de precarga</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitaStockDisponibleYPendienteDeEntregaComprasEnPantallaDePrecarga</paramint>
+		<paramusu>Habilita stock disponible y pendiente de entrega compras en pantalla de pre-carga</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1A16B307713C9C14F2E1BFC917627474670261</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9805</id>
+		<idnodo>14</idnodo>
+		<parametro>Habilita stock disponible y de pedido de compra en pantalla de pre-carga:</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Permite habilitar las columnas de stock disponible y de pedido de compra en pantalla de pre-carga:</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitaStockDisponibleYDePedidoDeCompraEnPantallaDePreCarga</paramint>
+		<paramusu>Habilita stock disponible y de pedido de compra en pantalla de pre-carga:</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>250</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>120B3F0701B036145A61AB0012353423216071</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9482</id>
+		<idnodo>15</idnodo>
+		<parametro>Utiliza curva de talles en Facturas</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza curva de talles en Facturas</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaCurvaDeTallesEnFacturas</paramint>
+		<paramusu>Utiliza curva de talles en Facturas</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1F307EE941EB481410F1B46914924674621181</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9479</id>
+		<idnodo>16</idnodo>
+		<parametro>Utiliza curva de talles en Devoluciones</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza curva de talles en Devoluciones</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaCurvaDeTallesEnDevoluciones</paramint>
+		<paramusu>Utiliza curva de talles en Devoluciones</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1B48E52F11D6D214DA219CAB12168488253801</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9480</id>
+		<idnodo>16</idnodo>
+		<parametro>Utiliza curva de talles en Anulaciones</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza curva de talles en Anulaciones</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaCurvaDeTallesEnAnulaciones</paramint>
+		<paramusu>Utiliza curva de talles en Anulaciones</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>18A48F05913B9614BAD1A43A19389852709571</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9478</id>
+		<idnodo>18</idnodo>
+		<parametro>Utiliza curva de talles en Pedidos</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza curva de talles en Pedidos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaCurvaDeTallesEnPedidos</paramint>
+		<paramusu>Utiliza curva de talles en Pedidos</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15F0F912619F811492419DF416762992938831</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9477</id>
+		<idnodo>19</idnodo>
+		<parametro>Utiliza curva de talles en Remitos</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza curva de talles en Remitos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaCurvaDeTallesEnRemitos</paramint>
+		<paramusu>Utiliza curva de talles en Remitos</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10B5A25AF15CAB14EED1844813434312824221</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9483</id>
+		<idnodo>20</idnodo>
+		<parametro>Utiliza curva de talles en Movimientos de Mercaderia</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza curva de talles en Movimientos de Mercaderia</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaCurvaDeTallesEnMovimientosDeMercaderia</paramint>
+		<paramusu>Utiliza curva de talles en Movimientos de Mercaderia</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>12C676417121E914B521973517503535231441</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9484</id>
+		<idnodo>20</idnodo>
+		<parametro>Habilita Modificacion de Estado de Recepcion</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Habilita Modificacion de Estado de Recepcion</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitaModificacionDeEstadoDeRecepcion</paramint>
+		<paramusu>Habilita Modificacion de Estado de Recepcion</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1DCDCD58F1C0B01486D1A5DB11484982814191</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9494</id>
+		<idnodo>22</idnodo>
+		<parametro>Utiliza retencion de IVA en Compras</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Permite indicar si utiliza retencion de IVA en Compras</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaRetencionDeIvaEnCompras</paramint>
+		<paramusu>Utiliza retencion de IVA en Compras</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>17646A72E11087148C61B7E717139504989211</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9495</id>
+		<idnodo>22</idnodo>
+		<parametro>Utiliza retencion de Ganancias en Compras</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Permite indicar si utiliza retencion de Ganancias en Compras</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaRetencionDeGananciasEnCompras</paramint>
+		<paramusu>Utiliza retencion de Ganancias en Compras</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>19414062B12FE314C511A49314543271472201</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9496</id>
+		<idnodo>22</idnodo>
+		<parametro>Utiliza retencion de Ingresos Brutos en Compras</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Permite indicar si utiliza retencion de Ingresos Brutos en Compras</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaRetencionDeIngresosBrutosEnCompras</paramint>
+		<paramusu>Utiliza retencion de Ingresos Brutos en Compras</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>134A6640614665143F91AECB15237036023461</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9498</id>
+		<idnodo>22</idnodo>
+		<parametro>Utiliza Percepciones de Ingresos Brutos en Ventas</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza Percepciones de Ingresos Brutos en Ventas</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaPercepcionesDeIngresosBrutosEnVentas</paramint>
+		<paramusu>Utiliza Percepciones de Ingresos Brutos en Ventas</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>11E5051D7131361402E19C2618147816887431</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9499</id>
+		<idnodo>22</idnodo>
+		<parametro>Utiliza retención de IVA en Ventas</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza retención de IVA en Ventas</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaRetencionDeIvaEnVentas</paramint>
+		<paramusu>Utiliza retención de IVA en Ventas</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1C0D75B7719BA2143291938517917997075071</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9500</id>
+		<idnodo>22</idnodo>
+		<parametro>Utiliza retención de Ganancias en Ventas</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza retención de Ganancias en Ventas</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaRetencionDeGananciasEnVentas</paramint>
+		<paramusu>Utiliza retención de Ganancias en Ventas</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1B174170C174CE14F68193EC12940495231521</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9501</id>
+		<idnodo>22</idnodo>
+		<parametro>Utiliza retención de Ingresos Brutos en Ventas</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza retención de Ingresos Brutos en Ventas</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaRetencionDeIngresosBrutosEnVentas</paramint>
+		<paramusu>Utiliza retención de Ingresos Brutos en Ventas</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15D53138319A6814D8D1903110415717871361</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9502</id>
+		<idnodo>22</idnodo>
+		<parametro>Utiliza retención de Seguridad Social en Ventas</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Utiliza retención de Seguridad Social en Ventas</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>UtilizaRetencionDeSeguridadSocialEnVentas</paramint>
+		<paramusu>Utiliza retención de Seguridad Social en Ventas</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>19D34C62A19F3F14CEE1AACC15530798532081</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9512</id>
+		<idnodo>24</idnodo>
+		<parametro>Rango Codigos de Clientes</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda/>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RangoCodigosDeClientes</paramint>
+		<paramusu>Rango Codigos de Clientes</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1F39DA986191CD147E31BF0511446966837211</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9505</id>
+		<idnodo>25</idnodo>
+		<parametro>Habilitar rubro crédito fiscal</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>3</organizacion>
+		<puesto>1</puesto>
+		<sucursal>2</sucursal>
+		<ayuda>Habilita la posibilidad de indicar cual es el rubro de crédito fiscal del grupo.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>HabilitarRubroCreditoFiscal</paramint>
+		<paramusu>Habilitar rubro crédito fiscal</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>132BF82D411E8714FED1BED512034023682621</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9506</id>
+		<idnodo>26</idnodo>
+		<parametro>PermitirCargaAutomaticaDeArticulosConCaracterAdicional</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>1</organizacion>
+		<puesto>2</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Permitir Carga Automatica De Articulos Con Caracter Adicional</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Permitircargaautomaticadearticulosconcaracteradicional</paramint>
+		<paramusu>Permitir Carga Automatica De Articulos Con Caracter Adicional</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>18FE3F57D1B2011409D1ABEE11728988606501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9507</id>
+		<idnodo>26</idnodo>
+		<parametro>SugerirDatosDeLaCargaAnterior</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>1</organizacion>
+		<puesto>2</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Sugerir Datos De La Carga Anterior En Altas De Articulos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Sugerirdatosdelacargaanterior</paramint>
+		<paramusu>Sugerir Datos De La Carga Anterior</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1C88F9F6D149B314B6918DA417331114537061</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9508</id>
+		<idnodo>26</idnodo>
+		<parametro>PermitirUtilizarOpcionDevolucion</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>1</organizacion>
+		<puesto>2</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Permitir Utilizar Opcion Devolucion en Altas de Articulos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Permitirutilizaropciondevolucion</paramint>
+		<paramusu>Permitir Utilizar Opcion Devolucion</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>170C036431901D144BF1A69213950030582401</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9509</id>
+		<idnodo>26</idnodo>
+		<parametro>DeshabilitarDetalleDeCombinacionesDeColorYTalle</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>1</organizacion>
+		<puesto>2</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Deshabilitar Detalle De Combinaciones De Color y Talle En Altas de Articulos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Deshabilitardetalledecombinacionesdecolorytalle</paramint>
+		<paramusu>Deshabilitar Detalle De Combinaciones De Color Y Talle</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1077FCA3D1D2D4141141ABF515411745407001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9510</id>
+		<idnodo>27</idnodo>
+		<parametro>Codigo</parametro>
+		<tipodato>N</tipodato>
+		<default>0</default>
+		<organizacion>2</organizacion>
+		<puesto>1</puesto>
+		<sucursal>3</sucursal>
+		<ayuda>Código de controlador fiscal</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Codigo</paramint>
+		<paramusu>Codigo</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>999999</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>168C9FD4E1405F1484618F8B11313926161921</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9523</id>
+		<idnodo>31</idnodo>
+		<parametro>Lista de Precios 1</parametro>
+		<tipodato>C</tipodato>
+		<default>LISTA1</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Es la relación de la lista de precios 1 de Lince con alguna lista de precios de Dragonfish</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ListaDePrecios1</paramint>
+		<paramusu>Lista de Precios 1</paramusu>
+		<exe>true</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>1E131E6751CFCD14B4D1AEBD13257332263501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9524</id>
+		<idnodo>31</idnodo>
+		<parametro>Lista de Precios 2</parametro>
+		<tipodato>C</tipodato>
+		<default>LISTA2</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Es la relación de la lista de precios 2 de Lince con alguna lista de precios de Dragonfish</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ListaDePrecios2</paramint>
+		<paramusu>Lista de Precios 2</paramusu>
+		<exe>true</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>1628F1F531247C14EF518CD312040281418221</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9525</id>
+		<idnodo>31</idnodo>
+		<parametro>Lista de Precios 3</parametro>
+		<tipodato>C</tipodato>
+		<default>LISTA3</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Es la relación de la lista de precios 3 de Lince con alguna lista de precios de Dragonfish</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ListaDePrecios3</paramint>
+		<paramusu>Lista de Precios 3</paramusu>
+		<exe>true</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>1C363CD6512C4714B1918CC911612410450031</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9526</id>
+		<idnodo>31</idnodo>
+		<parametro>Lista de Precios 4</parametro>
+		<tipodato>C</tipodato>
+		<default>LISTA4</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Es la relación de la lista de precios 4 de Lince con alguna lista de precios de Dragonfish</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ListaDePrecios4</paramint>
+		<paramusu>Lista de Precios 4</paramusu>
+		<exe>true</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>1B058761814758146191BE6B18145377614081</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9527</id>
+		<idnodo>31</idnodo>
+		<parametro>Lista de Precios 5</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Es la relación de la lista de precios 5 de Lince con alguna lista de precios de Dragonfish</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ListaDePrecios5</paramint>
+		<paramusu>Lista de Precios 5</paramusu>
+		<exe>true</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>1AE1FE3A316E0114B471B55914102143795001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9528</id>
+		<idnodo>31</idnodo>
+		<parametro>Lista de Precios de Compras</parametro>
+		<tipodato>C</tipodato>
+		<default>LISTA0</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Es la relación de la lista de precios de compras de Lince con alguna lista de precios de Dragonfish</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ListaDePreciosDeCompras</paramint>
+		<paramusu>Lista de Precios de Compras</paramusu>
+		<exe>true</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>154DCFC451D87814A1F19E0B15522995530951</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9529</id>
+		<idnodo>31</idnodo>
+		<parametro>Actualizar articulos al recibir</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Indica si se actualizan los artículos existentes con los provenientes de los paquetes de datos o solo ingresan las altas</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ActualizarArticulosAlRecibir</paramint>
+		<paramusu>Actualizar artículos al recibir</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>149A489101766D1408D1BC3314366459187801</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9557</id>
+		<idnodo>31</idnodo>
+		<parametro>RecibirMovimientoDeStockComo</parametro>
+		<tipodato>C</tipodato>
+		<default>Mercadería en tránsito</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Indica cómo se reciben los movimientos de mercadería de Lince</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Recibirmovimientodestockcomo</paramint>
+		<paramusu>Recibir Movimiento de mercadería como</paramusu>
+		<exe>false</exe>
+		<longitud>20</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Mercadería en tránsito, Movimiento de stock</opciones>
+		<idunico>13B10960C17BF214DAE1AA6416324597026901</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9559</id>
+		<idnodo>31</idnodo>
+		<parametro>Código de redondeo a utilizar en la recepción de precios.</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Código de redondeo a utilizar en la recepción de precios.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CodigoDeRedondeoAUtilizarEnLaRecepcionDePrecios</paramint>
+		<paramusu>Código de redondeo a utilizar en la recepción de precios.</paramusu>
+		<exe>false</exe>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1A873A50D12B2F141E918CA813499128304681</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9563</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantes</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantes</paramint>
+		<paramusu>Boca de expendio para comprobantes</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10ED825F411051148741929F11754119470401</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9564</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes C.Fiscal/Electrónicos Talonario 0</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantesfiscalestalonario0</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantesfiscalestalonario0</paramint>
+		<paramusu>Boca de expendio para comprobantes C.Fiscal / Electrónicos Talonario 0</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15017D10A135B014985192B911182584489501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9566</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes C.Fiscal/Electrónicos Talonario 1</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantesfiscalestalonario1</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantesfiscalestalonario1</paramint>
+		<paramusu>Boca de expendio para comprobantes C.Fiscal / Electrónicos Talonario 1</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1BFFD5E2819FB81446D19BDF11181016083201</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9568</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes C.Fiscal/Electrónicos Talonario 2</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantesfiscalestalonario2</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantesfiscalestalonario2</paramint>
+		<paramusu>Boca de expendio para comprobantes C.Fiscal / Electrónicos Talonario 2</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>19119DEF112D20141EE1A07615451681909661</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9570</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes C.Fiscal/Electrónicos Talonario 3</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantesfiscalestalonario3</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantesfiscalestalonario3</paramint>
+		<paramusu>Boca de expendio para comprobantes C.Fiscal / Electrónicos Talonario 3</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1A6F8BBEA1663614DEA1B2CD17720621253271</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9572</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes C.Fiscal/Electrónicos Talonario 4</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantesfiscalestalonario4</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantesfiscalestalonario4</paramint>
+		<paramusu>Boca de expendio para comprobantes C.Fiscal / Electrónicos Talonario 4</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>118D8E1851DC161497F185D515726814553461</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9586</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes C.Fiscal/Electrónicos Talonario 5</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantesfiscalestalonario5</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantesfiscalestalonario5</paramint>
+		<paramusu>Boca de expendio para comprobantes C.Fiscal / Electrónicos Talonario 5</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10DE25BD4136CE14D3F1A7D715031598117391</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9588</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes C.Fiscal/Electrónicos Talonario 6</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantesfiscalestalonario6</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantesfiscalestalonario6</paramint>
+		<paramusu>Boca de expendio para comprobantes C.Fiscal / Electrónicos Talonario 6</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1DF806DE61F53C140D81894414292980212031</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9590</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes C.Fiscal/Electrónicos Talonario 7</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantesfiscalestalonario7</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantesfiscalestalonario7</paramint>
+		<paramusu>Boca de expendio para comprobantes C.Fiscal / Electrónicos Talonario 7</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1CAE15F471FF261449F188DF13935683384461</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9592</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes C.Fiscal/Electrónicos Talonario 8</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantesfiscalestalonario8</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantesfiscalestalonario8</paramint>
+		<paramusu>Boca de expendio para comprobantes C.Fiscal / Electrónicos Talonario 8</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1E079105714EDB145F218CF114526272501781</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9594</id>
+		<idnodo>31</idnodo>
+		<parametro>Boca de expendio para comprobantes C.Fiscal/Electrónicos Talonario 9</parametro>
+		<tipodato>N</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Bocadeexpendioparacomprobantesfiscalestalonario9</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Bocadeexpendioparacomprobantesfiscalestalonario9</paramint>
+		<paramusu>Boca de expendio para comprobantes C.Fiscal / Electrónicos Talonario 9</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1D3120E8D195311457318BD311969318742141</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9762</id>
+		<idnodo>31</idnodo>
+		<parametro>Temporada para la estación verano</parametro>
+		<tipodato>C</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Es la relación de la estación verano de Lince con alguna temporada de Dragonfish.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>TemporadaParaLaEstacionVerano</paramint>
+		<paramusu>Temporada para la estación verano</paramusu>
+		<exe>true</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>15324BD65171BB140D01855017360051659301</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9763</id>
+		<idnodo>31</idnodo>
+		<parametro>Temporada para la estación otoño</parametro>
+		<tipodato>C</tipodato>
+		<default>2</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Es la relación de la estación otoño de Lince con alguna temporada de Dragonfish.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>TemporadaParaLaEstacionOtono</paramint>
+		<paramusu>Temporada para la estación otoño</paramusu>
+		<exe>true</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>13E5C92B913BE614D911A9D111990402882161</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9764</id>
+		<idnodo>31</idnodo>
+		<parametro>Temporada para la estación invierno</parametro>
+		<tipodato>C</tipodato>
+		<default>3</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Es la relación de la estación invierno de Lince con alguna temporada de Dragonfish.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>TemporadaParaLaEstacionInvierno</paramint>
+		<paramusu>Temporada para la estación invierno</paramusu>
+		<exe>true</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>1EE014F20123F114D2818F7019670148241831</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9765</id>
+		<idnodo>31</idnodo>
+		<parametro>Temporada para la estación primavera</parametro>
+		<tipodato>C</tipodato>
+		<default>4</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Es la relación de la estación primavera de Lince con alguna temporada de Dragonfish.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>TemporadaParaLaEstacionPrimavera</paramint>
+		<paramusu>Temporada para la estación primavera</paramusu>
+		<exe>true</exe>
+		<longitud>5</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>65</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>1F37F37741BD62149D7199C018700833603801</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9530</id>
+		<idnodo>33</idnodo>
+		<parametro>CodigoDeZona</parametro>
+		<tipodato>C</tipodato>
+		<default>00</default>
+		<organizacion>0</organizacion>
+		<puesto>0</puesto>
+		<sucursal>1</sucursal>
+		<ayuda>Codigo de zona para e-flexware</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Codigodezona</paramint>
+		<paramusu>Codigo de zona</paramusu>
+		<exe>true</exe>
+		<longitud>3</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>510</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>159A1EDDD1676F148E71A2FD16053533150301</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9531</id>
+		<idnodo>33</idnodo>
+		<parametro>TipoDeCliente</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Tipo de cliente para exportar a eFlexware</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Tipodecliente</paramint>
+		<paramusu>Tipo de Cliente</paramusu>
+		<exe>false</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>510</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10084C511196CD14CD31A5E410640156937921</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9539</id>
+		<idnodo>33</idnodo>
+		<parametro>ActualizaStock</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Actualiza o no stock</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Actualizastock</paramint>
+		<paramusu>Actualiza stock</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>510</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>16EB2CA021C35A1418B197E110777071338891</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9540</id>
+		<idnodo>33</idnodo>
+		<parametro>CodigoDeCausaDeEmision</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Codigo de causa de emision</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Codigodecausadeemision</paramint>
+		<paramusu>Codigo de causa de emision</paramusu>
+		<exe>false</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>510</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1AA9757FA17AD71446B1A1FB17363932514001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9542</id>
+		<idnodo>33</idnodo>
+		<parametro>Permite pasar Id de base de datos en blanco</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite la exportacion aunque no exista conversión de valores para la base de datos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PermitePasarIdDeBaseDeDatosEnBlanco</paramint>
+		<paramusu>Permite Pasar Id De Base De Datos En Blanco</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>510</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>117F8E6851B86C149F41BB1310300865617311</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9544</id>
+		<idnodo>33</idnodo>
+		<parametro>Permite pasar código de apertura contable en blanco</parametro>
+		<tipodato>L</tipodato>
+		<default>.t.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite la exportacion aunque no exista conversión de código de apertura contable para la base de datos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>PermitePasarCodigoDeAperturaContableEnBlanco</paramint>
+		<paramusu>Permite Pasar Codigo De Apertura Contable En Blanco</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>510</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1710C44B614642144DF1B6D610344644229001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9534</id>
+		<idnodo>34</idnodo>
+		<parametro>NoExportarClientesEnComprobantesB</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>No exportar clientes en comprobantes B</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Noexportarclientesencomprobantesb</paramint>
+		<paramusu>No Exportar Clientes</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1AEF96723146711495B1963311928458628081</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9535</id>
+		<idnodo>34</idnodo>
+		<parametro>TipoDeCambio</parametro>
+		<tipodato>C</tipodato>
+		<default>UNI</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Tipo de cambio</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Tipodecambio</paramint>
+		<paramusu>Tipo de cambio</paramusu>
+		<exe>true</exe>
+		<longitud>3</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1506469D8192C8147FE1BBEA12184881888101</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9538</id>
+		<idnodo>34</idnodo>
+		<parametro>CodigoDeCondicionDeVenta</parametro>
+		<tipodato>C</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Codigo para la condicion de la venta</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Codigodecondiciondeventa</paramint>
+		<paramusu>Codigo de condicion de venta</paramusu>
+		<exe>false</exe>
+		<longitud>3</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>199944BF91537414C051BE9712516276779371</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9759</id>
+		<idnodo>34</idnodo>
+		<parametro>Separa descuentos y recargos</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite separar los recargos financieros de los descuentos comerciales.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>SeparaDescuentosYRecargos</paramint>
+		<paramusu>Separa descuentos y recargos</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>10F876413178861438A19AD612711148525401</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9761</id>
+		<idnodo>34</idnodo>
+		<parametro>InvertirSignoEnDescuentosYRecargos</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Deshabilitado: Los descuentos se exportaran en positivo y los recargos en negativo | Habilitado: Los descuentos se exportaran en negativo y los recargos en positivo</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Invertirsignoendescuentosyrecargos</paramint>
+		<paramusu>Exportar descuentos en negativo y recargos en positivo</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>174B190BC1B07A14EEC1A6A812558082827371</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9782</id>
+		<idnodo>34</idnodo>
+		<parametro>GrupoEnCabecera</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite indicar el valor con el que se exporta el campo “Grupo” en la cabecera.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Grupoencabecera</paramint>
+		<paramusu>Grupo en cabecera</paramusu>
+		<exe>true</exe>
+		<longitud>12</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>145962EC41496C142E31A56015403260017391</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9783</id>
+		<idnodo>34</idnodo>
+		<parametro>VendedorDefault</parametro>
+		<tipodato>C</tipodato>
+		<default>VEND</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Codigo de vendedor utilizado para comprobantes sin vendedor.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>VendedorDefault</paramint>
+		<paramusu>Codigo de vendedor</paramusu>
+		<exe>true</exe>
+		<longitud>4</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1A5BB209818F0714D09195FD14741875011801</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9784</id>
+		<idnodo>34</idnodo>
+		<parametro>ExportarValoresEnCero</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Exportar comprobantes en cero en el archivo VMEDPAG</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Exportarvaloresencero</paramint>
+		<paramusu>Exportar valores en cero</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1E457398A113BC1410F1A48915053672282501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9785</id>
+		<idnodo>34</idnodo>
+		<parametro>CondicionDeVentaCompEnCero</parametro>
+		<tipodato>C</tipodato>
+		<default>2</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código de condición de venta para comprobantes con total en cero</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Condiciondeventacompencero</paramint>
+		<paramusu>Código de condición de venta para comprobantes con total en cero</paramusu>
+		<exe>false</exe>
+		<longitud>3</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>19EA350301D84F142F8194AF10641635788421</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9786</id>
+		<idnodo>34</idnodo>
+		<parametro>CodigoClienteCompEnCero</parametro>
+		<tipodato>C</tipodato>
+		<default>999999</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código de cliente por defecto para los comprobantes de venta con total en cero si cliente asignado</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Codigoclientecompencero</paramint>
+		<paramusu>Código de cliente para comprobantes con total en cero sin personalizar</paramusu>
+		<exe>false</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>19B505DE01F100146CF1936919451111216131</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9788</id>
+		<idnodo>34</idnodo>
+		<parametro>ExportarVacioCodigoClasifAdic1</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite exportar vacío el campo "Código de la clasificación adicional del cliente 1"</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Exportarvaciocodigoclasifadic1</paramint>
+		<paramusu>Exportar vacío código de clasificación adicional 1</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>12138D950138DB14D321BC5211258566746601</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9789</id>
+		<idnodo>34</idnodo>
+		<parametro>ExportarVacioDescripcionAdicional1</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite exportar vacío el campo "Descripción de clasificación adicional 1" en el archivo de cabecera.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Exportarvaciodescripcionadicional1</paramint>
+		<paramusu>Exportar vacío descripción adicional 1</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1D49C27D21DBA114DA5191D318211705529801</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9797</id>
+		<idnodo>34</idnodo>
+		<parametro>DetalleSucursalCaja</parametro>
+		<tipodato>N</tipodato>
+		<default>2</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Indica si exporta el ID de sucursal y el número de caja</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Detallesucursalcaja</paramint>
+		<paramusu>Detalle de la sucursal y número de caja</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Incluir solo cuando sea efectivo,Incluir,No incluir</opciones>
+		<idunico>1568F31481593814C6F1AAAA12562035459061</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9798</id>
+		<idnodo>34</idnodo>
+		<parametro>ExportarRecFinComoConcep</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite exportar los recargos financieros como un item del comprobante.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Exportarrecfincomoconcep</paramint>
+		<paramusu>Exportar recargos financieros como concepto</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1DBA744821E06214CFB1AC5913518034925701</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9799</id>
+		<idnodo>34</idnodo>
+		<parametro>ConceptoParaRecargo</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite indicar el concepto con el que se exportarán los recargos financieros</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Conceptopararecargo</paramint>
+		<paramusu>Concepto para recargos</paramusu>
+		<exe>true</exe>
+		<longitud>23</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>520</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1C2AF89201C78514C8B1BFBE19177770234541</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9541</id>
+		<idnodo>35</idnodo>
+		<parametro>Codigo de movimiento predeterminado para vuelto</parametro>
+		<tipodato>C</tipodato>
+		<default>VUELTO</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Codigo de movimiento predeterminado para vuelto</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CodigoDeMovimientoPredeterminadoParaVuelto</paramint>
+		<paramusu>Codigo de movimiento predeterminado para vuelto</paramusu>
+		<exe>false</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>530</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1F9DC0A1A1CF6A1417C1ACBC13564254752001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9543</id>
+		<idnodo>35</idnodo>
+		<parametro>Código de moneda predeterminado para caja chica</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código de moneda predeterminado para caja chica</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CodigoDeMonedaPredeterminadoParaCajaChica</paramint>
+		<paramusu>Código de moneda predeterminado para caja chica</paramusu>
+		<exe>false</exe>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>530</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>197F0522A152701446B19CB218879063802131</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9553</id>
+		<idnodo>35</idnodo>
+		<parametro>Canje de Cupones (Entrada)</parametro>
+		<tipodato>C</tipodato>
+		<default>CANJE1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código de movimiento de entrada predeterminado para el Canje de Cupones</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CanjeDeCuponesEntrada</paramint>
+		<paramusu>Canje de Cupones (Entrada)</paramusu>
+		<exe>false</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>530</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>1A390FA02191A51487419CF217145303363201</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9554</id>
+		<idnodo>35</idnodo>
+		<parametro>Canje de Cupones (Salida)</parametro>
+		<tipodato>C</tipodato>
+		<default>CANJE2</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código de movimiento de salida predeterminado para el Canje de Cupones</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CanjeDeCuponesSalida</paramint>
+		<paramusu>Canje de Cupones (Salida)</paramusu>
+		<exe>false</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>530</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>16D3A2768110E3147AC19DAF11238320092001</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9555</id>
+		<idnodo>35</idnodo>
+		<parametro>Comprobantes de caja (Entrada)</parametro>
+		<tipodato>C</tipodato>
+		<default>COBMEN</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código de movimiento de entrada predeterminado para los Comprobantes de Caja</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ComprobantesDeCajaEntrada</paramint>
+		<paramusu>Comprobantes de caja (Entrada)</paramusu>
+		<exe>false</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>530</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>1812FFC951FC0F140E91B54117607180273601</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9556</id>
+		<idnodo>35</idnodo>
+		<parametro>Comprobantes de caja (Salida)</parametro>
+		<tipodato>C</tipodato>
+		<default>PAGMEN</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código de movimiento de salida predeterminado para los Comprobantes de Caja</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ComprobantesDeCajaSalida</paramint>
+		<paramusu>Comprobantes de caja (Salida)</paramusu>
+		<exe>false</exe>
+		<longitud>6</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>530</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>112BCADE317B6B14E671BA1518306174391371</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9790</id>
+		<idnodo>35</idnodo>
+		<parametro>CodigoDeProvincia</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código de provincia del librador a exportar en los comprobantes de caja</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Codigodeprovincia</paramint>
+		<paramusu>Código de provincia del librador a exportar</paramusu>
+		<exe>false</exe>
+		<longitud>3</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>530</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15143955D111E514B021AE7013322795823801</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9791</id>
+		<idnodo>35</idnodo>
+		<parametro>ExportarSoloEfectivo</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Al activar exportará solo los valores de tipo efectivo en comprobantes de caja</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Exportarsoloefectivo</paramint>
+		<paramusu>Exportar solo efectivo en comprobantes de caja</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>530</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>12DDD997A15908144301A2F612197005576301</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9792</id>
+		<idnodo>35</idnodo>
+		<parametro>DetalleSucursalCaja</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Indica si exporta el ID de sucursal y el numero de caja</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Detallesucursalcaja</paramint>
+		<paramusu>Detalle de la sucursal y número de caja</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>530</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Incluir solo cuando sea efectivo,Incluir,No incluir</opciones>
+		<idunico>14A480D8710983140CC186ED17664006958381</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9533</id>
+		<idnodo>36</idnodo>
+		<parametro>IncluirCodigoDeArticuloEquivalencia</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Incluir código de artículo en equivalencias</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Incluircodigodearticuloequivalencia</paramint>
+		<paramusu>Incluir código</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>540</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Artículos, Equivalencias</opciones>
+		<idunico>1BD407D4F1AA95146AD1A41B14454094812551</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9536</id>
+		<idnodo>36</idnodo>
+		<parametro>Proveedor</parametro>
+		<tipodato>C</tipodato>
+		<default>LINCE</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Indica el nombre del proveedor por default si no esta cargado el proveedor para el artículo</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Proveedor</paramint>
+		<paramusu>Proveedor</paramusu>
+		<exe>true</exe>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>540</idnodocliente>
+		<dominio>TEXTOMINMAY</dominio>
+		<opciones/>
+		<idunico>189CB5DE31B94E14B6318CA415653044541151</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9537</id>
+		<idnodo>36</idnodo>
+		<parametro>TipoDeCodigoParaAsignarleElPrefijo</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Tipo De Codigo Para Asignarle El Prefijo</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Tipodecodigoparaasignarleelprefijo</paramint>
+		<paramusu>Tipo De Codigo Para Asignarle El Prefijo</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>540</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1BB7087421FF94145851BA6110634647214881</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9778</id>
+		<idnodo>36</idnodo>
+		<parametro>TipoDeItemEnLaExportacion</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite seleccionar el carácter con el que se completa el campo “Tipo de ítem” al momento de exportar.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Tipodeitemenlaexportacion</paramint>
+		<paramusu>Tipo de item en la exportación</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>540</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Artículo,Concepto,Según comportamiento</opciones>
+		<idunico>1AF08D34D1FEA114D021B45418622938671501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9779</id>
+		<idnodo>36</idnodo>
+		<parametro>IncluirAlCodigo</parametro>
+		<tipodato>N</tipodato>
+		<default>1</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Permite seleccionar que atributos se exportan.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Incluiralcodigo</paramint>
+		<paramusu>Incluir al código</paramusu>
+		<exe>true</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>540</idnodocliente>
+		<dominio>COMBO</dominio>
+		<opciones>Artículo color y talle,Artículo y color,Artículo y talle,Artículo sin color ni talle</opciones>
+		<idunico>192F5634C1ABBA1457A1BAAC15304552631251</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9780</id>
+		<idnodo>36</idnodo>
+		<parametro>CantidadEnUnidadDeMedida1</parametro>
+		<tipodato>L</tipodato>
+		<default>.T.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Informa cantidad en unidad de medida 1.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Cantidadenunidaddemedida1</paramint>
+		<paramusu>Cantidad de unidad de medida 1</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>540</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>16005996C15BA4143A8189F612330535563791</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9781</id>
+		<idnodo>36</idnodo>
+		<parametro>CantidadEnUnidadDeMedida2</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Informa cantidad en unidad de medida 2.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Cantidadenunidaddemedida2</paramint>
+		<paramusu>Cantidad de unidad de medida 2</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>540</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1F3D392C41EF5B14A461803810998221133481</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9787</id>
+		<idnodo>36</idnodo>
+		<parametro>CodigoParaConceptoAgrupado</parametro>
+		<tipodato>C</tipodato>
+		<default>VENTAS</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código para concepto agrupado en la exportación eFlexware-Comprobantes de Venta (con detalle agrupado por concepto)</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Codigoparaconceptoagrupado</paramint>
+		<paramusu>Código para concepto agrupado</paramusu>
+		<exe>false</exe>
+		<longitud>23</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>540</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>18840F000142DF14BAC18F1016591818391301</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9793</id>
+		<idnodo>36</idnodo>
+		<parametro>Enviar como unidad de medida 1</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Exportar la cantiad de unidad de medida 1 en la base de datos seleccionada</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EnviarComoUnidadDeMedida1</paramint>
+		<paramusu>Exportar en base de datos (#1)</paramusu>
+		<exe>true</exe>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>540</idnodocliente>
+		<dominio>COMBOSUCYAGRUCONTODAS</dominio>
+		<opciones/>
+		<idunico>1F8CF46DB178A7149B5187B811135255500621</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9794</id>
+		<idnodo>36</idnodo>
+		<parametro>Enviar como unidad de medida 2</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Exportar la cantiad de unidad de medida 2 en la base de datos seleccionada</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>EnviarComoUnidadDeMedida2</paramint>
+		<paramusu>Exportar en base de datos (#2)</paramusu>
+		<exe>true</exe>
+		<longitud>40</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>540</idnodocliente>
+		<dominio>COMBOSUCYAGRUCONTODAS</dominio>
+		<opciones/>
+		<idunico>177CC507C157FB14DCE1A59B15558596052711</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9545</id>
+		<idnodo>37</idnodo>
+		<parametro>Habilitar</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Habilitar</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Habilitar</paramint>
+		<paramusu>Habilitar</paramusu>
+		<exe>false</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>600</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1FB10B6351DE3814E7F1BA8D12941207554701</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9546</id>
+		<idnodo>37</idnodo>
+		<parametro>Serie del comprobante</parametro>
+		<tipodato>C</tipodato>
+		<default>0</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Serie del comprobante</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>SerieDelComprobante</paramint>
+		<paramusu>Serie del comprobante</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>600</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1CAB5675D15ACF14A0B198A117155206130861</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9547</id>
+		<idnodo>37</idnodo>
+		<parametro>Rubro por defecto</parametro>
+		<tipodato>C</tipodato>
+		<default>SIN-RUBRO</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Rubro por defecto</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RubroPorDefecto</paramint>
+		<paramusu>Rubro por defecto</paramusu>
+		<exe>false</exe>
+		<longitud>20</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>600</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>13A06192316626141B819F4512064932092371</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9548</id>
+		<idnodo>37</idnodo>
+		<parametro>Archivo de retorno</parametro>
+		<tipodato>C</tipodato>
+		<default>RESULT.TXT</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Archivo de retorno</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ArchivoDeRetorno</paramint>
+		<paramusu>Archivo de retorno</paramusu>
+		<exe>false</exe>
+		<longitud>12</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>600</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1834E639C137E914D8018AD818505279506881</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9549</id>
+		<idnodo>37</idnodo>
+		<parametro>Ejecutable</parametro>
+		<tipodato>C</tipodato>
+		<default>CLIVENTA.EXE</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Ejecutable</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Ejecutable</paramint>
+		<paramusu>Ejecutable</paramusu>
+		<exe>false</exe>
+		<longitud>12</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>600</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>18F05DB4C1AAF914EB81B59618745185729071</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9551</id>
+		<idnodo>37</idnodo>
+		<parametro>Espera</parametro>
+		<tipodato>N</tipodato>
+		<default>5</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Espera en segundos</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Espera</paramint>
+		<paramusu>Espera</paramusu>
+		<exe>false</exe>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>600</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1051975C817D8A14C981877311738222011361</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9552</id>
+		<idnodo>38</idnodo>
+		<parametro>Comando externo a ejecutar en diseño de Movimiento de stock</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Comando externo a ejecutar en diseño de Movimiento de stock</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ComandoexternoaejecutarendiseñodeMovimientodestock</paramint>
+		<paramusu>Comando externo a ejecutar en diseño de Movimiento de stock</paramusu>
+		<exe>false</exe>
+		<longitud>254</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>700</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>16E39F6AC1BAEC1401418EA315014791871101</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9579</id>
+		<idnodo>41</idnodo>
+		<parametro>Enviar</parametro>
+		<tipodato>C</tipodato>
+		<default>TER.SND</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Nombre del archivo de salida.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Enviar</paramint>
+		<paramusu>Enviar</paramusu>
+		<exe>true</exe>
+		<longitud>15</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>601</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>148F358F71472714D401B11010720912659971</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9580</id>
+		<idnodo>41</idnodo>
+		<parametro>Recibir</parametro>
+		<tipodato>C</tipodato>
+		<default>TER.RCV</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Nombre del archivo en que se recibe la respuesta del envío de la transacción.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Recibir</paramint>
+		<paramusu>Recibir</paramusu>
+		<exe>true</exe>
+		<longitud>254</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>601</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1ED1C06E81C99214AB81AA5413802646201501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9581</id>
+		<idnodo>41</idnodo>
+		<parametro>Ejecutar</parametro>
+		<tipodato>C</tipodato>
+		<default>TER.COM</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Nombre del archivo ejecutable que realizaráel envío de las transacciones.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Ejecutar</paramint>
+		<paramusu>Ejecutar</paramusu>
+		<exe>true</exe>
+		<longitud>254</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>601</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>170A0E05811007142D219B9018250684704571</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9582</id>
+		<idnodo>41</idnodo>
+		<parametro>Cantidad de transacciones pendientes de envío</parametro>
+		<tipodato>N</tipodato>
+		<default>15</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Cantidad de transacciones pendientes que se pueden enviar junto con el último comprobante generado.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>CantidadDeTransaccionesPendientesDeEnvio</paramint>
+		<paramusu>Cantidad de transacciones pendientes de envío</paramusu>
+		<exe>true</exe>
+		<longitud>2</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>601</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>186B237E41D6AB1466F19B0613403184091331</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9583</id>
+		<idnodo>41</idnodo>
+		<parametro>Tiempo de espera de respuesta (segundos)</parametro>
+		<tipodato>N</tipodato>
+		<default>3</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Tiempo que se debe esperar la respuesta del servidor (en segundos).</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>TiempoDeEsperaDeRespuestaSegundos</paramint>
+		<paramusu>Tiempo de espera de respuesta (segundos)</paramusu>
+		<exe>false</exe>
+		<longitud>1</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>601</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15EE8AA8319B1C140F41A66513818253107751</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9585</id>
+		<idnodo>42</idnodo>
+		<parametro>Archivo de exportación</parametro>
+		<tipodato>C</tipodato>
+		<default>SUJVINC.txt</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Nombre del archivo que se exportará.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ArchivoDeExportacion</paramint>
+		<paramusu>Archivo de exportación</paramusu>
+		<exe>false</exe>
+		<longitud>20</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>602</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1032BEE1D151AF142531B59D10881573252991</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9597</id>
+		<idnodo>44</idnodo>
+		<parametro>Proveedor a exportar</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código del proveedor de los artículos a exportar.</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>ProveedorAExportar</paramint>
+		<paramusu>Proveedor a exportar</paramusu>
+		<exe>false</exe>
+		<longitud>200</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>620</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1FEE8928D16A2C14A0A1814915748965122501</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9760</id>
+		<idnodo>124</idnodo>
+		<parametro>HabilitarEquivalenciasErroresInterfazSap</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>1</organizacion>
+		<puesto>0</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Habilitar entidad Equivalencias / errores Interfaz SAP</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Habilitarequivalenciaserroresinterfazsap</paramint>
+		<paramusu>Habilitar Equivalencias Errores Interfaz Sap</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>621</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>15D429F6B18D1814CB919B3615172831064201</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9766</id>
+		<idnodo>125</idnodo>
+		<parametro>HabilitarEnvioDeVentasFiServ</parametro>
+		<tipodato>L</tipodato>
+		<default>.f.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Habilita el envío de informe de ventas FiServ</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Habilitarenviodeventasfiserv</paramint>
+		<paramusu>Habilitar envío de informe de ventas FiServ</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>622</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1F0F00AEC1405014605181DA11243026241101</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9767</id>
+		<idnodo>125</idnodo>
+		<parametro>Empresa</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código de empresa proporcionado por FiServ</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Empresa</paramint>
+		<paramusu>Empresa</paramusu>
+		<exe>true</exe>
+		<longitud>50</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>622</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1A098DBAD1CBCE140C91930E15364855357051</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9768</id>
+		<idnodo>125</idnodo>
+		<parametro>Terminal</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Código de terminal proporcionado por FiServ</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Terminal</paramint>
+		<paramusu>Terminal</paramusu>
+		<exe>true</exe>
+		<longitud>50</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>622</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>17AF096E71C093142601B80713792051231451</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9769</id>
+		<idnodo>125</idnodo>
+		<parametro>DireccionIp</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Dirección IP necesaria para conectar con el servidor SiTef</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Direccionip</paramint>
+		<paramusu>Dirección Ip</paramusu>
+		<exe>true</exe>
+		<longitud>254</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>622</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>13D47036D1521B145A41971814630138994801</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9770</id>
+		<idnodo>125</idnodo>
+		<parametro>Puerto</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Puerto de conexión requerido para conectarse con el servidor SiTef</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Puerto</paramint>
+		<paramusu>Puerto</paramusu>
+		<exe>true</exe>
+		<longitud>10</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>622</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1274719B8152D31470A184BC15229890843461</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9776</id>
+		<idnodo>125</idnodo>
+		<parametro>Ruta del certificado</parametro>
+		<tipodato>C</tipodato>
+		<default/>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Ubicación del certificado para comunicación TLS con el servidor de FiServ</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>RutaDelCertificado</paramint>
+		<paramusu>Ruta del certificado</paramusu>
+		<exe>true</exe>
+		<longitud>200</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>622</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1D280A0DF166EF14BFD1971F17474883064301</idunico>
+	</migrar2028>
+	<migrar2028>
+		<id>9801</id>
+		<idnodo>126</idnodo>
+		<parametro>Envío automático de email al finalizar la importación</parametro>
+		<tipodato>L</tipodato>
+		<default>.F.</default>
+		<organizacion>0</organizacion>
+		<puesto>1</puesto>
+		<sucursal>0</sucursal>
+		<ayuda>Envío automático de email al finalizar la importación</ayuda>
+		<version_exe>0.00</version_exe>
+		<version_zoo>0</version_zoo>
+		<version_cli>0</version_cli>
+		<paramint>Envioautomaticodeemailalfinalizarlaimportacion</paramint>
+		<paramusu>Envío automático de email al finalizar la importación</paramusu>
+		<exe>true</exe>
+		<longitud>0</longitud>
+		<decimales>0</decimales>
+		<idnodocliente>800</idnodocliente>
+		<dominio/>
+		<opciones/>
+		<idunico>1CE9C543C12D2C14D1E1AA9510221211871481</idunico>
+	</migrar2028>
+</VFPData>

@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<migrar2028>
+		<entidad>ItemRusia</entidad>
+		<componente>RIO</componente>
+	</migrar2028>
+	<migrar2028>
+		<entidad>RIO2</entidad>
+		<componente>RIO</componente>
+	</migrar2028>
+</VFPData>

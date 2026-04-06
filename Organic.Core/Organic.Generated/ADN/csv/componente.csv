@@ -1,0 +1,3 @@
+componente,descripcion,graba,version_exe,version_zoo,version_cli,entidad,orden,combinacion,componentesrelacionados,herencia
+"RIO","componente rio",T,0.00,0,0,"RIO",1,"rio","",""
+"muralla","componente muralla",F,7.00,0,0,"mexico",0,"mexico","",""
