@@ -1,0 +1,69 @@
+use zl;
+
+CREATE FULLTEXT CATALOG
+  textSearch_Funcionalidades
+    with ACCENT_SENSITIVITY = OFF
+GO
+
+CREATE FULLTEXT INDEX ON ZL.FComer ( 
+  Obs
+  , DESCRIP
+  , Nombre
+  ) KEY INDEX pk_CODIGO_FCOMER
+GO
+
+CREATE FULLTEXT CATALOG
+  textSearch_Bugs
+  with ACCENT_SENSITIVITY = OFF
+GO
+
+CREATE FULLTEXT INDEX ON ZL.REGBUG ( 
+  Desbug
+  , TITULO
+  , Msgsis
+  ) KEY INDEX pk_CODIN_REGBUG
+GO
+
+CREATE FULLTEXT CATALOG
+  textSearch_Reqs
+    with ACCENT_SENSITIVITY = OFF
+GO
+
+CREATE FULLTEXT INDEX ON ZL.Tipif2 ( 
+  Cdesc
+  ) KEY INDEX pk_CCOD_TIPIF2
+      ON textSearch_Reqs
+GO
+
+CREATE FULLTEXT INDEX ON ZL.Tipif ( 
+  Cdesc
+  ) KEY INDEX pk_CCOD_TIPIF
+      ON textSearch_Reqs
+GO
+
+CREATE FULLTEXT INDEX ON ZL.Incids ( 
+  Cmpconsult
+  ) KEY INDEX pk_CODIN_INCIDS
+      ON textSearch_Reqs
+GO
+
+CREATE FULLTEXT INDEX ON ZL.PNCEREQ ( 
+  Cmpconsult
+  , ASUNTO
+  ) KEY INDEX pk_CODIN_PNCEREQ
+      ON textSearch_Reqs
+GO
+
+CREATE FULLTEXT INDEX ON ZL.REQUER ( 
+  Titulo
+  , Obs
+  , Descr
+  ) KEY INDEX pk_CODIGO_REQUER
+      ON textSearch_Reqs
+GO
+
+CREATE FULLTEXT INDEX ON ZL.Zltask ( 
+  Ctitulo
+  ) KEY INDEX pk_NUMERO_ZLTASK
+      ON textSearch_Reqs
+GO

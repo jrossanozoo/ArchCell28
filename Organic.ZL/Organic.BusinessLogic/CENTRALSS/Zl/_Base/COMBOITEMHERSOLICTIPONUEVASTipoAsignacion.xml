@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Puesto</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>1</retorno>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Usuario</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>2</retorno>
+		<orden>2</orden>
+	</xml>
+
+</VFPData>

@@ -1,0 +1,6 @@
+OB = createobject("blankClaveLince.blankClaveLince")
+OB.pn_Serie = '205381'
+OB.pc_Version = '1.1.0'
+OB.pn_Operacion = 3
+ob.envioOperacion()
+ob = null

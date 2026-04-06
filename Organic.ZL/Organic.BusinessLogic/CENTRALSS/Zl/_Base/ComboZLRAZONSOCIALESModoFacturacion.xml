@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Todos los artículos juntos</valor>		
+		<cdefault>Posicion</cdefault>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Abono y servicios por separado</valor>		
+		<cdefault></cdefault>
+		<orden>2</orden>
+	</xml>
+</VFPData>

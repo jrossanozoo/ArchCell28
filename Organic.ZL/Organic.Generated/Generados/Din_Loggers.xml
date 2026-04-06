@@ -1,0 +1,68 @@
+
+
+	<logger name="ENTIDAD">
+		<level value="All"/>
+		<appender-ref ref="AP_ENTIDAD"/>
+	</logger>
+	<logger name="ENTIDADCOMPROBANTEDEVENTA">
+		<level value="All"/>
+		<appender-ref ref="AP_ENTIDADCOMPROBANTEDEVENTA"/>
+	</logger>
+	<logger name="IMPORTACION04974">
+		<level value="All"/>
+		<appender-ref ref="AP_IMPORTACION04974"/>
+	</logger>
+	<logger name="KONTROLER">
+		<level value="All"/>
+		<appender-ref ref="AP_KONTROLER"/>
+	</logger>
+	<logger name="LOG.ERR">
+		<level value="All"/>
+		<appender-ref ref="AP_LOG.ERR"/>
+	</logger>
+	<logger name="MANAGEREXPORTACIONES">
+		<level value="All"/>
+		<appender-ref ref="AP_MANAGEREXPORTACIONES"/>
+	</logger>
+	<logger name="MANAGERLOGUEOARBA">
+		<level value="All"/>
+		<appender-ref ref="AP_REMITOELECTRONICO"/>
+	</logger>
+	<logger name="MANAGERTRANSFERENCIAABASEDEDATOS">
+		<level value="All"/>
+		<appender-ref ref="AP_MANAGERTRANSFERENCIAABASEDEDATOS"/>
+	</logger>
+	<logger name="MANAGERTRANSFERENCIAS">
+		<level value="All"/>
+		<appender-ref ref="AP_MANAGERTRANSFERENCIAS"/>
+	</logger>
+	<logger name="MENSAJESMODOSILENCIOSO">
+		<level value="All"/>
+		<appender-ref ref="AP_MENSAJESMODOSILENCIOSO"/>
+	</logger>
+	<logger name="PLANTILLAIMPOEXPO">
+		<level value="All"/>
+		<appender-ref ref="AP_EVENTLOGAPPENDERADVERTENCIAS"/>
+		<appender-ref ref="AP_SMTPAPPENDERADVERTENCIAS"/>
+		<appender-ref ref="AP_PLANTILLAIMPOEXPO"/>
+	</logger>
+	<logger name="PREPARACIONIMPOEXPO">
+		<level value="All"/>
+		<appender-ref ref="AP_PREPARACIONIMPOEXPO"/>
+	</logger>
+	<logger name="PROCESOIMPORTACION">
+		<level value="All"/>
+		<appender-ref ref="AP_PROCESOIMPORTACION"/>
+	</logger>
+	<logger name="RECEPCIONTRANSFERENCIAS">
+		<level value="All"/>
+		<appender-ref ref="AP_RECEPCIONTRANSFERENCIAS"/>
+	</logger>
+	<logger name="SEGURIDAD">
+		<level value="All"/>
+		<appender-ref ref="AP_SEGURIDAD"/>
+	</logger>
+	<logger name="ZOOSESSION">
+		<level value="All"/>
+		<appender-ref ref="AP_ZOOSESSION"/>
+	</logger>

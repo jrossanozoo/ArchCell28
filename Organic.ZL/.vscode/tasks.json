@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Export VFP Breakpoints",
+            "type": "shell",
+            "command": "${command:vfp-breakpoint-exporter.exportBreakPointsToVFP}",
+            "presentation": {
+                "reveal": "never",
+                "echo": false,
+                "focus": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run VFP Program",
+            "type": "process",
+            "command": "dovfp",
+            "args": [
+                "run",
+                "-template",
+                "1",
+                "${file}"
+            ],
+            "dependsOn": [
+                "Export VFP Breakpoints"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Fecha de vigencia desde</valor>
+		<cdefault>Posicion</cdefault>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Fecha de alta de bonificación</valor>
+		<cdefault></cdefault>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>1er día del mes actual</valor>
+		<cdefault></cdefault>
+		<orden>3</orden>
+	</xml>
+	<xml>
+		<valor>1er día del mes siguiente</valor>
+		<cdefault></cdefault>
+		<orden>4</orden>
+	</xml>
+	<xml>
+		<valor>1er día del mes anterior</valor>
+		<cdefault></cdefault>
+		<orden>5</orden>
+	</xml>	
+</VFPData>

@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Base de datos</valor>
+		<cdefault>Posicion</cdefault>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Sitio</valor>
+		<cdefault></cdefault>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>Cliente</valor>
+		<cdefault></cdefault>
+		<orden>3</orden>
+	</xml>
+	<xml>
+		<valor>General</valor>
+		<cdefault></cdefault>
+		<orden>4</orden>
+	</xml>
+</VFPData>

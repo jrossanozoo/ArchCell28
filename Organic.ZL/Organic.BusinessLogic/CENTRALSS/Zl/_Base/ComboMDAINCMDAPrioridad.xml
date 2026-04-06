@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Alta</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>Alta</retorno>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Media</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>Media</retorno>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>Baja</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>Baja</retorno>
+		<orden>3</orden>
+	</xml>
+
+</VFPData>

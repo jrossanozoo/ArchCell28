@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Para</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>1</retorno>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>CC</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>2</retorno>
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>CCO</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>3</retorno>
+		<orden>3</orden>
+	</xml>
+
+</VFPData>

@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Fecha de vigencia hasta</valor>
+		<cdefault>Posicion</cdefault>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Cantidad de meses hasta último día del mes</valor>
+		<cdefault></cdefault>
+		<orden>2</orden>
+	</xml>
+</VFPData>

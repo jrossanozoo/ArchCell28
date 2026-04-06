@@ -1,0 +1,4 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<row driver="SQLOLEDB" host="192.168.0.20" user="blanqueo_lince" pass="24-05$uihDr2g0n-2013" database="ZL"/>
+</VFPData>

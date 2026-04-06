@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+ <Project Sdk="">
+	<PropertyGroup>
+		<OutputType>Test</OutputType>
+		<StartupObject>mainTest.prg</StartupObject>
+		<AssemblyName></AssemblyName>
+		<ApplicationIcon></ApplicationIcon>
+	    <Company>Zoo Logic S.A.</Company>
+	    <NoWarn>DVFP0001,DVFP0002,DVFP0003</NoWarn>
+	</PropertyGroup>
+	<ItemGroup Label="VFP_Files">		
+		<Content Include="..\Taspein_vie\_Base\controladordelogsadnimplant.prg" />
+		<Content Include=".legacy-tests-build/**/*.prg" />
+		<Content Include="*.prg" />
+		<Content Include="*.h" />
+		<Content Include="_dovfp_excluidos\old_entidad.prg" isExcluded="true" />
+		<Content Include="Tests/**/*.prg" />
+	</ItemGroup>
+	<PropertyGroup>
+		<!-- 
+			LegacyFoxUnitTestFiles: indica a DOVFP test dÃ³nde hacer discovery de tests legacy.
+			Los tests se descubren desde .legacy-tests-build/ (donde estÃ¡n los PRG transformados
+			que heredan de FxuTestCaseLegacy en lugar de FxuTestCase).
+			
+			IMPORTANTE: transform-legacy-tests.ps1 se ejecuta como PreBuild Target y copia
+			los tests desde Tests.Legacy/ a .legacy-tests-build/ aplicando la transformaciÃ³n.
+		-->
+		<LegacyFoxUnitTestFiles>.legacy-tests-build/**/*.prg</LegacyFoxUnitTestFiles>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Organic.BusinessLogic\Organic.ZL.vfpproj" />
+		<ProjectReference Include = "..\Organic.Mocks\Organic.Mocks.vfpproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<AppReference Include="Organic.AdnImplant.app" />
+		<AppReference Include="Organic.Core.app" />
+		<AppReference Include="Organic.Drawing.app" />
+		<AppReference Include="Organic.Generator.app" />
+		<AppReference Include="Organic.Feline.app" />
+		<AppReference Include="dovfp.FxuLegacy.app" />
+	</ItemGroup>
+
+	<!-- Copiar clasesdeprueba a bin\Test -->
+	<ItemGroup Label="TestAssets">
+		<!-- Copiar clasesdeprueba como carpeta -->
+		<None Update="clasesdeprueba">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>clasesdeprueba</TargetPath>
+		</None>
+
+		<!-- Copiar configuracionbasica como carpeta -->
+		<None Update="..\Organic.Assets\configuracionbasica">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>..\configuracionbasica</TargetPath>
+		</None>
+
+		<!-- Copiar adn como carpeta -->
+		<None Update="..\Organic.Generated\adn">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>adn</TargetPath>
+		</None>
+			<None Update="..\Organic.Generated\ActCom">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<TargetPath>ActCom</TargetPath>
+		</None>
+	</ItemGroup>
+
+	<!-- PreBuild: Transformar tests legacy antes de compilar -->
+	<Target Name="TransformLegacyTests" BeforeTargets="Build">
+		<Message Text="Transformando tests legacy..." Importance="high" />
+		<Exec Command="powershell -ExecutionPolicy Bypass -File scripts\transform-legacy-tests.ps1" />
+	</Target>
+</Project>
+
+

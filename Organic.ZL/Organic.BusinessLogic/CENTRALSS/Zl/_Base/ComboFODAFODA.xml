@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Fortaleza</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>Fortaleza</retorno>		
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Oportunidad</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>Oportunidad</retorno>		
+		<orden>2</orden>
+	</xml>
+	<xml>
+		<valor>Debilidad</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>Debilidad</retorno>		
+		<orden>3</orden>
+	</xml>
+	<xml>
+		<valor>Amenaza</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>Amenaza</retorno>		
+		<orden>4</orden>
+	</xml>
+
+</VFPData>

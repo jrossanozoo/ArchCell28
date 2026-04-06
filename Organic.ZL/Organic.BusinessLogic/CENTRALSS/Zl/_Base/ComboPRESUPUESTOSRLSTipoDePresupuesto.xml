@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xml>
+		<valor>Abono</valor>		
+		<cdefault>retorno</cdefault>
+		<retorno>ABON</retorno>
+		<orden>1</orden>
+	</xml>
+	<xml>
+		<valor>Servicios</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>SERV</retorno>
+		<orden>2</orden>
+	</xml>	
+	<xml>
+		<valor>Hardware</valor>
+		<cdefault>retorno</cdefault>
+		<retorno>HARD</retorno>
+		<orden>3</orden>
+	</xml>
+</VFPData>
